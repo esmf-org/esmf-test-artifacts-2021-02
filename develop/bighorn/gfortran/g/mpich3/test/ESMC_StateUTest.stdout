@@ -7,12 +7,12 @@ NUMBER_OF_PROCESSORS 4
 Beginning Test, file ESMC_StateUTest.C, line 53
 NUMBER_OF_PROCESSORS 4
 PASS StateCreate Unit test, ESMC_StateUTest.C, line 66
-PASS StateCreate Unit test, ESMC_StateUTest.C, line 66
 PASS ArraySpecSet, ESMC_StateUTest.C, line 75
 PASS StateCreate Unit test, ESMC_StateUTest.C, line 66
 PASS ArraySpecSet, ESMC_StateUTest.C, line 75
 PASS StateCreate Unit test, ESMC_StateUTest.C, line 66
 PASS ArraySpecSet, ESMC_StateUTest.C, line 75
+PASS StateCreate Unit test, ESMC_StateUTest.C, line 66
 PASS ArraySpecSet, ESMC_StateUTest.C, line 75
 PASS Set up minIndex, ESMC_StateUTest.C, line 85
 PASS Set up minIndex, ESMC_StateUTest.C, line 85
@@ -48,12 +48,13 @@ PASS Initialize data an ESMC_Array object, ESMC_StateUTest.C, line 136
 --- ESMCI::Array::print start ---
  Base name    = array1 Base name    = array1 Base name    = array1 Base name    = array1
 
+
  Status: Base = Ready
  Status: Base = Ready,  object = Ready
-
  Status: Base = Ready,  object = Ready
  Proxy        = no
- Root Info (Attributes): Status: Base = Ready,  object = Ready
+ Root Info (Attributes):
+ Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
 ,  object = Ready
@@ -61,7 +62,6 @@ PASS Initialize data an ESMC_Array object, ESMC_StateUTest.C, line 136
  Root Info (Attributes):
  Proxy        = no
  Root Info (Attributes):
-
 {}{}{}{}Array typekind/rank: Integer*4 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
@@ -77,40 +77,43 @@ DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0x1023750:
+LocalArrayPrint: Array at address 0x17a5750:
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 0 ~
+LocalArrayPrint: Array at address 0xac9770:
+            rank = 2, typekind = 3, base_addr = 0xac9aa0
+LocalArrayPrint: Array at address 0x1809750:
+            rank = 2, typekind = 3, base_addr = 0x18055b0
+            dim[0] = 1              rank = 2, typekind = 3, base_addr = 0x17a15b0
+            dim[0] = 1  dim[1] = 10  
 Array typekind/rank: Integer*4 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x2036750:
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x1853770:
-            rank = 2, typekind = 3, base_addr = 0x1853aa0
-            LocalArrayPrint: Array at address 0x1ed0750:
-            rank = 2, typekind = 3, base_addr = 0x1ecc5b0
-            dim[0] = 1  dim[1] = 10  
-            rank = 2, typekind = 3, base_addr = 0x101f5b0
+LocalArrayPrint: Array at address 0x1963750:
+            rank = 2, typekind = 3, base_addr = 0x195f5b0
             dim[0] = 1  dim[1] = 10  
   Integer, *4, Dim 2, Data values:
-            rank = 2, typekind = 3, base_addr = 0x20325b0
-            dim[0] = 1  dim[1] = 10  
-  Integer, *4, Dim 2, Data values:
-( 1, 1) =  33760592
-( 1, 2) =  0
-( 1, 3) =  0
-dim[0] = 2  dim[1] = 10  
+            dim[0] = 2  dim[1] = 10  
   Integer, *4, Dim 2, Data values:
 ( 1, 1) =  0
 ( 2, 1) =  0
 ( 1, 2) =  0
 ( 2, 2) =  0
 ( 1, 3) =  0
+dim[1] = 10  
   Integer, *4, Dim 2, Data values:
-( 1, 1) =  32294224
+( 1, 1) =  25187664
+( 1, 2) =  0
+( 1, 3) =  0
+( 1, 4) =  0
+( 1, 5) =  0
+( 1, 6) =  0
+  Integer, *4, Dim 2, Data values:
+( 1, 1) =  24778064
 ( 1, 2) =  0
 ( 1, 3) =  0
 ( 1, 4) =  0
@@ -118,7 +121,8 @@ dim[0] = 2  dim[1] = 10
 ( 1, 6) =  0
 ( 1, 7) =  0
 ( 1, 8) =  0
-( 1, 1) =  16905552
+( 1, 9) =  0
+( 1, 1) =  26604880
 ( 1, 2) =  0
 ( 1, 3) =  0
 ( 1, 4) =  0
@@ -128,15 +132,6 @@ dim[0] = 2  dim[1] = 10
 ( 1, 8) =  0
 ( 1, 9) =  0
 ( 1,10) =  0
-( 1, 4) =  0
-( 1, 5) =  0
-( 1, 6) =  0
-( 1, 7) =  0
-( 1, 8) =  0
-( 1, 9) =  0
-( 1,10) =  0
-dim 1: [0]: [1 [1 [1, 1] 1] 1]
-dim 2: [1]: [1 [1 [1, 10] 10] 10]
 ( 2, 3) =  0
 ( 1, 4) =  0
 ( 2, 4) =  0
@@ -147,14 +142,19 @@ dim 2: [1]: [1 [1 [1, 10] 10] 10]
 ( 1, 7) =  0
 ( 2, 7) =  0
 ( 1, 8) =  0
+( 1, 7) =  0
+( 1, 8) =  0
 ( 1, 9) =  0
+( 1,10) =  0
+dim 1: [0]: [1 [1 [1, 1] 1] 1]
+dim 2: [1]: [1 [1 [1, 10] 10] 10]
+--- ESMCI::Array::print end ---
 ( 1,10) =  0
 dim 1: [0]: [1 [1 [1, 1] 1] 1]
 dim 2: [1]: [1 [1 [1, 10] 10] 10]
 --- ESMCI::Array::print end ---
 dim 1: [0]: [1 [1 [1, 1] 1] 1]
 dim 2: [1]: [1 [1 [1, 10] 10] 10]
---- ESMCI::Array::print end ---
 --- ESMCI::Array::print end ---
 ( 2, 8) =  0
 ( 1, 9) =  0
@@ -196,7 +196,7 @@ Ending Test, file ESMC_StateUTest.C, line 200
 Ending Test, file ESMC_StateUTest.C, line 200
 Ending Test, file ESMC_StateUTest.C, line 200
 Ending Test, file ESMC_StateUTest.C, line 200
- PET 0 Test Elapsed Time  4.291000 msec.
- PET 3 Test Elapsed Time  4.285000 msec.
- PET 1 Test Elapsed Time  4.350000 msec.
- PET 2 Test Elapsed Time  4.418000 msec.
+ PET 0 Test Elapsed Time  4.142000 msec.
+ PET 1 Test Elapsed Time  4.344000 msec.
+ PET 3 Test Elapsed Time  4.407000 msec.
+ PET 2 Test Elapsed Time  4.462000 msec.
