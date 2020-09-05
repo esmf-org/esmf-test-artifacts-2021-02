@@ -13,7 +13,7 @@
 
 #----------------------------------------------
 ESMF_VERSION_STRING=8.1.0 beta snapshot
-ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_27-1-g38b4282252
+ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_27-50-gbd345323e0
 #----------------------------------------------
 
 ESMF_VERSION_MAJOR=8
@@ -33,16 +33,16 @@ ESMF_F90LINKER=mpif90
 
 ESMF_F90COMPILEOPTS=-O -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp
 ESMF_F90COMPILEPATHS=-I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modO/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include 
-ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_27-1-g38b4282252' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf
+ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_27-50-gbd345323e0' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf
 ESMF_F90COMPILEFREECPP=
 ESMF_F90COMPILEFREENOCPP=-ffree-form
 ESMF_F90COMPILEFIXCPP=-cpp -ffixed-form
 ESMF_F90COMPILEFIXNOCPP=
 
 ESMF_F90LINKOPTS=   -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -fopenmp
-ESMF_F90LINKPATHS=-L/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libO/Linux.gfortran.64.mpich3.default  -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/
+ESMF_F90LINKPATHS=-L/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libO/Linux.gfortran.64.mpich3.default  -L/usr/local/gcc-g++-gfortran-8.1.0/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib64/
 ESMF_F90ESMFLINKPATHS=-L/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libO/Linux.gfortran.64.mpich3.default
-ESMF_F90LINKRPATHS=-Wl,-rpath,/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libO/Linux.gfortran.64.mpich3.default  -Wl,-rpath,/usr/lib/gcc/x86_64-redhat-linux/4.8.5/
+ESMF_F90LINKRPATHS=-Wl,-rpath,/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libO/Linux.gfortran.64.mpich3.default  -Wl,-rpath,/usr/local/gcc-g++-gfortran-8.1.0/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib64/
 ESMF_F90ESMFLINKRPATHS=-Wl,-rpath,/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libO/Linux.gfortran.64.mpich3.default
 ESMF_F90LINKLIBS= -lrt -lstdc++ -ldl
 ESMF_F90ESMFLINKLIBS=-lesmf  -lrt -lstdc++ -ldl
@@ -52,12 +52,12 @@ ESMF_CXXLINKER=mpicxx
 
 ESMF_CXXCOMPILEOPTS=-std=c++11 -O -DNDEBUG -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp
 ESMF_CXXCOMPILEPATHS= -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_27-1-g38b4282252' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf -D__SDIR__='' -DESMF_CXXSTD=11
+ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_27-50-gbd345323e0' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf -D__SDIR__='' -DESMF_CXXSTD=11
 
 ESMF_CXXLINKOPTS=  -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -fopenmp
-ESMF_CXXLINKPATHS=-L/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libO/Linux.gfortran.64.mpich3.default  -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/
+ESMF_CXXLINKPATHS=-L/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libO/Linux.gfortran.64.mpich3.default  -L/usr/local/gcc-g++-gfortran-8.1.0/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib64/
 ESMF_CXXESMFLINKPATHS=-L/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libO/Linux.gfortran.64.mpich3.default
-ESMF_CXXLINKRPATHS=-Wl,-rpath,/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libO/Linux.gfortran.64.mpich3.default  -Wl,-rpath,/usr/lib/gcc/x86_64-redhat-linux/4.8.5/
+ESMF_CXXLINKRPATHS=-Wl,-rpath,/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libO/Linux.gfortran.64.mpich3.default  -Wl,-rpath,/usr/local/gcc-g++-gfortran-8.1.0/lib/gcc/x86_64-pc-linux-gnu/8.1.0/../../../../lib64/
 ESMF_CXXESMFLINKRPATHS=-Wl,-rpath,/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libO/Linux.gfortran.64.mpich3.default
 ESMF_CXXLINKLIBS= -lmpifort -lrt -lgfortran -ldl
 ESMF_CXXESMFLINKLIBS=-lesmf  -lmpifort -lrt -lgfortran -ldl
