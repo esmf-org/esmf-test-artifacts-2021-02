@@ -1,0 +1,193 @@
+version: 2.1
+
+commands:
+  run-meta-testing:
+    parameters:
+      branch:
+        type: string
+      platform:
+        type: string
+      compiler:
+        type: string
+      comm:
+        type: string
+    steps:
+      - run:
+          name: Checkout Code (esmf-test-scripts)
+           #tdk: revert branch
+          command: git clone --depth 1 --branch bekozi-pytest-summary https://github.com/esmf-org/esmf-test-scripts.git
+      - run:
+          name: Checkout Code (esmf-test-artifacts)
+          command: git clone --depth 1 --branch ${CIRCLE_BRANCH} https://github.com/esmf-org/esmf-test-artifacts.git
+      - run:
+          name: Install Dependencies
+          command: pip install jsonschema unittest-xml-reporting click gitpython
+      - run: mkdir -p /tmp/artifacts
+      - run:
+          name: Run Meta Testing
+          command: bash esmf-test-artifacts/.circleci/run.sh << parameters.branch >> << parameters.platform >> << parameters.compiler >> << parameters.comm >>
+      - store_test_results:
+          path: /tmp/artifacts/artifact-tests
+      - store_artifacts:
+          path: /tmp/artifacts/etsumm.log
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-tests.out
+      - run:
+          name: Compress XML Test Output
+          command: cd /tmp/artifacts && zip -r artifact-tests.zip artifact-tests
+      - store_artifacts:
+          path: /tmp/artifacts/artifact-tests.zip
+      - run:
+          name: Check for Failures
+          command: bash esmf-test-artifacts/.circleci/check-for-failures.sh
+
+jobs:
+
+  mt-develop-bighorn-gfortran-mpich3:
+    docker:
+      - image: circleci/python
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: bighorn
+          compiler: gfortran
+          comm: mpich3
+
+  mt-develop-bighorn-gfortran-openmpi:
+    docker:
+      - image: circleci/python
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: bighorn
+          compiler: gfortran
+          comm: openmpi
+
+  mt-develop-catania-intelclang-mpiuni:
+    docker:
+      - image: circleci/python
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: intelclang
+          comm: mpiuni
+
+  mt-develop-catania-intel-mpich3:
+    docker:
+      - image: circleci/python
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: intel
+          comm: mpich3
+
+  mt-develop-catania-intel-mpiuni:
+    docker:
+      - image: circleci/python
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: intel
+          comm: mpiuni
+
+  mt-develop-cheyenne-gfortran-mpich3:
+    docker:
+      - image: circleci/python
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: cheyenne
+          compiler: gfortran
+          comm: mpich3
+
+  mt-develop-cheyenne-gfortran-openmpi:
+    docker:
+      - image: circleci/python
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: cheyenne
+          compiler: gfortran
+          comm: openmpi
+
+  mt-develop-cheyenne-intel-intelmpi:
+    docker:
+      - image: circleci/python
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: cheyenne
+          compiler: intel
+          comm: intelmpi
+
+  mt-develop-cheyenne-intel-mpt:
+    docker:
+      - image: circleci/python
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: cheyenne
+          compiler: intel
+          comm: mpt
+
+  mt-develop-cheyenne-intel-openmpi:
+    docker:
+      - image: circleci/python
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: cheyenne
+          compiler: intel
+          comm: openmpi
+
+  mt-develop-cheyenne-pgi-openmpi:
+    docker:
+      - image: circleci/python
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: cheyenne
+          compiler: pgi
+          comm: openmpi
+
+  mt-develop-stampede-intel-intelmpi:
+    docker:
+      - image: circleci/python
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: stampede
+          compiler: intel
+          comm: intelmpi
+
+workflows:
+
+  run-meta-testing:
+    jobs:
+      - mt-develop-bighorn-gfortran-mpich3:
+          name: develop-bighorn-gfortran-mpich3
+      - mt-develop-bighorn-gfortran-openmpi:
+          name: develop-bighorn-gfortran-openmpi
+      - mt-develop-catania-intelclang-mpiuni:
+          name: develop-catania-intelclang-mpiuni
+      - mt-develop-catania-intel-mpich3:
+          name: develop-catania-intel-mpich3
+      - mt-develop-catania-intel-mpiuni:
+          name: develop-catania-intel-mpiuni
+      - mt-develop-cheyenne-gfortran-mpich3:
+          name: develop-cheyenne-gfortran-mpich3
+      - mt-develop-cheyenne-gfortran-openmpi:
+          name: develop-cheyenne-gfortran-openmpi
+      - mt-develop-cheyenne-intel-intelmpi:
+          name: develop-cheyenne-intel-intelmpi
+      - mt-develop-cheyenne-intel-mpt:
+          name: develop-cheyenne-intel-mpt
+      - mt-develop-cheyenne-intel-openmpi:
+          name: develop-cheyenne-intel-openmpi
+      - mt-develop-cheyenne-pgi-openmpi:
+          name: develop-cheyenne-pgi-openmpi
+      - mt-develop-stampede-intel-intelmpi:
+          name: develop-stampede-intel-intelmpi
