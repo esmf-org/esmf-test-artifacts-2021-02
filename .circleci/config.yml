@@ -43,6 +43,13 @@ commands:
 
 jobs:
 
+  passthru:
+    docker:
+      - image: cimg/base:2020.01
+    resource_class: small
+    steps:
+      - run: exit 0
+
   mt-develop-bighorn-gfortran-mpich3:
     docker:
       - image: circleci/python
@@ -165,7 +172,11 @@ jobs:
 
 workflows:
 
-run-meta-testing:
+run-meta-testing-commit:
+  jobs:
+    passthru
+
+run-meta-testing-nightly:
   triggers:
     - schedule:
         cron: "0 6 * * *"
