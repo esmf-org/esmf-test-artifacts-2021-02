@@ -167,13 +167,13 @@ workflows:
 
 run-meta-testing:
   triggers:
-      - schedule:
-          cron: "0 6 * * *"
-          filters:
-            branches:
-              only:
-                - master
-jobs:
+    - schedule:
+        cron: "0 6 * * *"
+        filters:
+          branches:
+            only:
+              - master
+  jobs:
       - mt-develop-bighorn-gfortran-mpich3:
           name: develop-bighorn-gfortran-mpich3
       - mt-develop-bighorn-gfortran-openmpi:
