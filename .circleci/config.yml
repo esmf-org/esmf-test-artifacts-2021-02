@@ -172,40 +172,40 @@ jobs:
 
 workflows:
 
-run-meta-testing-commit:
-  jobs:
-    - passthru
+#  run-meta-testing-commit:
+#    jobs:
+#      - passthru
 
-run-meta-testing-nightly:
-  triggers:
-    - schedule:
-        cron: "0 6 * * *"
-        filters:
-          branches:
-            only:
-              - master
-  jobs:
-      - mt-develop-bighorn-gfortran-mpich3:
-          name: develop-bighorn-gfortran-mpich3
-      - mt-develop-bighorn-gfortran-openmpi:
-          name: develop-bighorn-gfortran-openmpi
-      - mt-develop-catania-intelclang-mpiuni:
-          name: develop-catania-intelclang-mpiuni
-      - mt-develop-catania-intel-mpich3:
-          name: develop-catania-intel-mpich3
-      - mt-develop-catania-intel-mpiuni:
-          name: develop-catania-intel-mpiuni
-      - mt-develop-cheyenne-gfortran-mpich3:
-          name: develop-cheyenne-gfortran-mpich3
-      - mt-develop-cheyenne-gfortran-openmpi:
-          name: develop-cheyenne-gfortran-openmpi
-      - mt-develop-cheyenne-intel-intelmpi:
-          name: develop-cheyenne-intel-intelmpi
-      - mt-develop-cheyenne-intel-mpt:
-          name: develop-cheyenne-intel-mpt
-      - mt-develop-cheyenne-intel-openmpi:
-          name: develop-cheyenne-intel-openmpi
-      - mt-develop-cheyenne-pgi-openmpi:
-          name: develop-cheyenne-pgi-openmpi
-      - mt-develop-stampede-intel-intelmpi:
-          name: develop-stampede-intel-intelmpi
+  run-meta-testing-nightly:
+    triggers:
+      - schedule:
+          cron: "0 6 * * *"
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+        - mt-develop-bighorn-gfortran-mpich3:
+            name: develop-bighorn-gfortran-mpich3
+        - mt-develop-bighorn-gfortran-openmpi:
+            name: develop-bighorn-gfortran-openmpi
+        - mt-develop-catania-intelclang-mpiuni:
+            name: develop-catania-intelclang-mpiuni
+        - mt-develop-catania-intel-mpich3:
+            name: develop-catania-intel-mpich3
+        - mt-develop-catania-intel-mpiuni:
+            name: develop-catania-intel-mpiuni
+        - mt-develop-cheyenne-gfortran-mpich3:
+            name: develop-cheyenne-gfortran-mpich3
+        - mt-develop-cheyenne-gfortran-openmpi:
+            name: develop-cheyenne-gfortran-openmpi
+        - mt-develop-cheyenne-intel-intelmpi:
+            name: develop-cheyenne-intel-intelmpi
+        - mt-develop-cheyenne-intel-mpt:
+            name: develop-cheyenne-intel-mpt
+        - mt-develop-cheyenne-intel-openmpi:
+            name: develop-cheyenne-intel-openmpi
+        - mt-develop-cheyenne-pgi-openmpi:
+            name: develop-cheyenne-pgi-openmpi
+        - mt-develop-stampede-intel-intelmpi:
+            name: develop-stampede-intel-intelmpi
