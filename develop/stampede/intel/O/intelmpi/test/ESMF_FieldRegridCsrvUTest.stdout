@@ -1,153 +1,600 @@
-TACC:  Starting up job 6451742 
+TACC:  Starting up job 6459789 
 TACC:  Starting parallel tasks... 
-[mpiexec@c436-133.stampede2.tacc.utexas.edu] set_default_values (../../ui/mpich/utils.c:4669): no executable provided
-[mpiexec@c436-133.stampede2.tacc.utexas.edu] HYD_uii_mpx_get_parameters (../../ui/mpich/utils.c:5172): setting default values failed
-
-Usage: ./mpiexec [global opts] [exec1 local opts] : [exec2 local opts] : ...
-
-Global options (passed to all executables):
-
-  Global environment options:
-    -genv {name} {value}             environment variable name and value
-    -genvlist {env1,env2,...}        environment variable list to pass
-    -genvnone                        do not pass any environment variables
-    -genvall                         pass all environment variables not managed
-                                          by the launcher (default)
-
-  Other global options:
-    -f {name} | -hostfile {name}     file containing the host names
-    -hosts {host list}               comma separated host list
-    -configfile {name}               config file containing MPMD launch options
-    -machine {name} | -machinefile {name}
-                                     file mapping procs to machines
-    -pmi-connect {nocache|lazy-cache|cache}
-                                     set the PMI connections mode to use
-    -pmi-aggregate                   aggregate PMI messages
-    -pmi-noaggregate                 do not  aggregate PMI messages
-    -trace {<libraryname>}           trace the application using <libraryname>
-                                     profiling library; default is libVT.so
-    -trace-imbalance {<libraryname>} trace the application using <libraryname>
-                                     imbalance profiling library; default is libVTim.so
-    -check-mpi {<libraryname>}       check the application using <libraryname>
-                                     checking library; default is libVTmc.so
-    -ilp64                           Preload ilp64 wrapper library for support default size of
-                                     integer 8 bytes
-    -mps                             start statistics gathering for MPI Performance Snapshot (MPS)
-    -aps                             start statistics gathering for Application Performance Snapshot (APS)
-    -trace-pt2pt                     collect information about
-                                     Point to Point operations
-    -trace-collectives               collect information about
-                                     Collective operations
-    -tune [<confname>]               apply the tuned data produced by
-                                     the MPI Tuner utility
-    -use-app-topology <statfile>     perform optimized rank placement based statistics
-                                     and cluster topology
-    -noconf                          do not use any mpiexec's configuration files
-    -branch-count {leaves_num}       set the number of children in tree
-    -gwdir {dirname}                 working directory to use
-    -gpath {dirname}                 path to executable to use
-    -gumask {umask}                  mask to perform umask
-    -tmpdir {tmpdir}                 temporary directory for cleanup input file
-    -cleanup                         create input file for clean up
-    -gtool {options}                 apply a tool over the mpi application
-    -gtoolfile {file}                apply a tool over the mpi application. Parameters specified in the file
-
-
-Local options (passed to individual executables):
-
-  Local environment options:
-    -env {name} {value}              environment variable name and value
-    -envlist {env1,env2,...}         environment variable list to pass
-    -envnone                         do not pass any environment variables
-    -envall                          pass all environment variables (default)
-
-  Other local options:
-    -host {hostname}                 host on which processes are to be run
-    -hostos {OS name}                operating system on particular host
-    -wdir {dirname}                  working directory to use
-    -path {dirname}                  path to executable to use
-    -umask {umask}                   mask to perform umask
-    -n/-np {value}                   number of processes
-    {exec_name} {args}               executable name and arguments
-
-
-Hydra specific options (treated as global):
-
-  Bootstrap options:
-    -bootstrap                       bootstrap server to use
-     (ssh rsh pdsh fork slurm srun ll llspawn.stdio lsf blaunch sge qrsh persist service pbsdsh)
-    -bootstrap-exec                  executable to use to bootstrap processes
-    -bootstrap-exec-args             additional options to pass to bootstrap server
-    -prefork                         use pre-fork processes startup method
-    -enable-x/-disable-x             enable or disable X forwarding
-
-  Resource management kernel options:
-    -rmk                             resource management kernel to use (user slurm srun ll llspawn.stdio lsf blaunch sge qrsh pbs cobalt)
-
-  Processor topology options:
-    -binding                         process-to-core binding mode
-  Extended fabric control options:
-    -rdma                            select RDMA-capable network fabric (dapl). Fallback list is ofa,tcp,tmi,ofi
-    -RDMA                            select RDMA-capable network fabric (dapl). Fallback is ofa
-    -dapl                            select DAPL-capable network fabric. Fallback list is tcp,tmi,ofa,ofi
-    -DAPL                            select DAPL-capable network fabric. No fallback fabric is used
-    -ib                              select OFA-capable network fabric. Fallback list is dapl,tcp,tmi,ofi
-    -IB                              select OFA-capable network fabric. No fallback fabric is used
-    -tmi                             select TMI-capable network fabric. Fallback list is dapl,tcp,ofa,ofi
-    -TMI                             select TMI-capable network fabric. No fallback fabric is used
-    -mx                              select Myrinet MX* network fabric. Fallback list is dapl,tcp,ofa,ofi
-    -MX                              select Myrinet MX* network fabric. No fallback fabric is used
-    -psm                             select PSM-capable network fabric. Fallback list is dapl,tcp,ofa,ofi
-    -PSM                             select PSM-capable network fabric. No fallback fabric is used
-    -psm2                            select Intel* Omni-Path Fabric. Fallback list is dapl,tcp,ofa,ofi
-    -PSM2                            select Intel* Omni-Path Fabric. No fallback fabric is used
-    -ofi                             select OFI-capable network fabric. Fallback list is tmi,dapl,tcp,ofa
-    -OFI                             select OFI-capable network fabric. No fallback fabric is used
-
-  Checkpoint/Restart options:
-    -ckpoint {on|off}                enable/disable checkpoints for this run
-    -ckpoint-interval                checkpoint interval
-    -ckpoint-prefix                  destination for checkpoint files (stable storage, typically a cluster-wide file system)
-    -ckpoint-tmp-prefix              temporary/fast/local storage to speed up checkpoints
-    -ckpoint-preserve                number of checkpoints to keep (default: 1, i.e. keep only last checkpoint)
-    -ckpointlib                      checkpointing library (blcr)
-    -ckpoint-logfile                 checkpoint activity/status log file (appended)
-    -restart                         restart previously checkpointed application
-    -ckpoint-num                     checkpoint number to restart
-
-  Demux engine options:
-    -demux                           demux engine (poll select)
-
-  Debugger support options:
-    -tv                              run processes under TotalView
-    -tva {pid}                       attach existing mpiexec process to TotalView
-    -gdb                             run processes under GDB
-    -gdba {pid}                      attach existing mpiexec process to GDB
-    -gdb-ia                          run processes under Intel IA specific GDB
-
-  Other Hydra options:
-    -v | -verbose                    verbose mode
-    -V | -version                    show the version
-    -info                            build information
-    -print-rank-map                  print rank mapping
-    -print-all-exitcodes             print exit codes of all processes
-    -iface                           network interface to use
-    -help                            show this message
-    -perhost <n>                     place consecutive <n> processes on each host
-    -ppn <n>                         stand for "process per node"; an alias to -perhost <n>
-    -grr <n>                         stand for "group round robin"; an alias to -perhost <n>
-    -rr                              involve "round robin" startup scheme
-    -s <spec>                        redirect stdin to all or 1,2 or 2-4,6 MPI processes (0 by default)
-    -ordered-output                  avoid data output intermingling
-    -profile                         turn on internal profiling
-    -l | -prepend-rank               prepend rank to output
-    -prepend-pattern                 prepend pattern to output
-    -outfile-pattern                 direct stdout to file
-    -errfile-pattern                 direct stderr to file
-    -localhost                       local hostname for the launching node
-    -nolocal                         avoid running the application processes on the node where mpiexec.hydra started
-
-Intel(R) MPI Library for Linux* OS, Version 2018 Update 2 Build 20180125 (id: 18157)
-Copyright 2003-2018 Intel Corporation.
-TACC:  MPI job exited with code: 255 
+  Beginning Test, file ESMF_FieldRegridCsrvUTest.F90, line 53
+  Beginning Test, file ESMF_FieldRegridCsrvUTest.F90, line 53
+  Beginning Test, file ESMF_FieldRegridCsrvUTest.F90, line 53
+  NUMBER_OF_PROCESSORS           4
+  Beginning Test, file ESMF_FieldRegridCsrvUTest.F90, line 53
+  NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
+ === Spherical grids ===
+ Conservation:
+ Rel Error =   1.850504190175968E-015
+ SRC mass =    23.0383505057354     
+ DST mass =    23.0383505057354     
+  
+ Interpolation:
+ Max Error =   3.060906042426711E-003
+ Min Error =   1.552862122216304E-006
+ Avg Error =   1.531229452274463E-003
+  
+  PASS  Conservative regridding on a sphere, ESMF_FieldRegridCsrvUTest.F90, line
+  73
+  PASS  Conservative regridding on a sphere, ESMF_FieldRegridCsrvUTest.F90, line
+  73
+  PASS  Conservative regridding on a sphere, ESMF_FieldRegridCsrvUTest.F90, line
+  73
+  PASS  Conservative regridding on a sphere, ESMF_FieldRegridCsrvUTest.F90, line
+  73
+  PASS  Conservative regridding on a sphere interpolation error, ESMF_FieldRegri
+ dCsrvUTest.F90, line 85
+  PASS  Conservative regridding on a sphere interpolation error, ESMF_FieldRegri
+ dCsrvUTest.F90, line 85
+  PASS  Conservative regridding on a sphere interpolation error, ESMF_FieldRegri
+ dCsrvUTest.F90, line 85
+  PASS  Conservative regridding on a sphere conservation error, ESMF_FieldRegrid
+ CsrvUTest.F90, line 96
+  PASS  Conservative regridding on a sphere conservation error, ESMF_FieldRegrid
+ CsrvUTest.F90, line 96
+  PASS  Conservative regridding on a sphere interpolation error, ESMF_FieldRegri
+ dCsrvUTest.F90, line 85
+  PASS  Conservative regridding on a sphere conservation error, ESMF_FieldRegrid
+ CsrvUTest.F90, line 96
+  PASS  Conservative regridding on a sphere conservation error, ESMF_FieldRegrid
+ CsrvUTest.F90, line 96
+ === Spherical grids with masks ===
+ Conservation:
+ Rel Error =   1.252772015933058E-016
+ SRC mass =    7.08970513712038     
+ DST mass =    7.08970513712038     
+  
+ Interpolation:
+ Max Error =   3.600187915677140E-002
+ Min Error =   3.038095301445092E-006
+ Avg Error =   1.800245862603642E-002
+  
+  PASS  Conservative regridding on a sphere with masks, ESMF_FieldRegridCsrvUTes
+ t.F90, line 112
+  PASS  Conservative regridding on a sphere with masks, ESMF_FieldRegridCsrvUTes
+ t.F90, line 112
+  PASS  Conservative regridding on a sphere with masks, ESMF_FieldRegridCsrvUTes
+ t.F90, line 112
+  PASS  Conservative regridding on a sphere with masks, ESMF_FieldRegridCsrvUTes
+ t.F90, line 112
+  PASS  Conservative regridding on a sphere with masks interpolation error, ESMF
+  PASS  Conservative regridding on a sphere with masks interpolation error, ESMF
+ _FieldRegridCsrvUTest.F90, line 123
+  PASS  Conservative regridding on a sphere with masks interpolation error, ESMF
+ _FieldRegridCsrvUTest.F90, line 123
+ _FieldRegridCsrvUTest.F90, line 123
+  PASS  Conservative regridding on a sphere with masks conservation error, ESMF_
+ FieldRegridCsrvUTest.F90, line 134
+  PASS  Conservative regridding on a sphere with masks conservation error, ESMF_
+ FieldRegridCsrvUTest.F90, line 134
+  PASS  Conservative regridding on a sphere with masks conservation error, ESMF_
+ FieldRegridCsrvUTest.F90, line 134
+  PASS  Conservative regridding on a sphere with masks interpolation error, ESMF
+ _FieldRegridCsrvUTest.F90, line 123
+  PASS  Conservative regridding on a sphere with masks conservation error, ESMF_
+ FieldRegridCsrvUTest.F90, line 134
+ === Cartesian grid with masks ===
+ Conservation:
+ Rel Error =   0.000000000000000E+000
+ SRC mass =    2298.04851626380     
+ DST mass =    2298.04851626380     
+  
+ Interpolation:
+ Max Error =   2.743986097136960E-003
+ Min Error =   0.000000000000000E+000
+ Avg Error =   1.371993048568480E-003
+  
+  PASS  Conservative regridding on a cartesian grid with masks, ESMF_FieldRegrid
+ CsrvUTest.F90, line 150
+  PASS  Conservative regridding on a cartesian grid with masks, ESMF_FieldRegrid
+ CsrvUTest.F90, line 150
+  PASS  Conservative regridding on a cartesian grid with masks, ESMF_FieldRegrid
+ CsrvUTest.F90, line 150
+  PASS  Conservative regridding on a cartesian grid with masks, ESMF_FieldRegrid
+ CsrvUTest.F90, line 150
+  PASS  Conservative regridding on a cartesian grid with masks interpolation err
+ or, ESMF_FieldRegridCsrvUTest.F90, line 161
+  PASS  Conservative regridding on a cartesian grid with masks interpolation err
+ or, ESMF_FieldRegridCsrvUTest.F90, line 161
+  PASS  Conservative regridding on a cartesian grid with masks interpolation err
+ or, ESMF_FieldRegridCsrvUTest.F90, line 161
+  PASS  Conservative regridding on a cartesian grid with masks interpolation err
+ or, ESMF_FieldRegridCsrvUTest.F90, line 161
+  PASS  Conservative regridding on a cartesian grid with Masks conservation erro
+ r, ESMF_FieldRegridCsrvUTest.F90, line 172
+  PASS  Conservative regridding on a cartesian grid with Masks conservation erro
+ r, ESMF_FieldRegridCsrvUTest.F90, line 172
+  PASS  Conservative regridding on a cartesian grid with Masks conservation erro
+ r, ESMF_FieldRegridCsrvUTest.F90, line 172
+  PASS  Conservative regridding on a cartesian grid with Masks conservation erro
+ r, ESMF_FieldRegridCsrvUTest.F90, line 172
+ === 3D Cartesian grid with masks ===
+ Conservation:
+ Rel Error =   1.624097681737373E-016
+ SRC mass =    22400.0000000000     
+ DST mass =    22400.0000000000     
+  
+ Interpolation:
+ Max Error =   4.016064257028569E-003
+ Min Error =   5.698005697998572E-004
+ Avg Error =   2.292932413414213E-003
+  
+  PASS  Conservative regridding on a 3D cartesian grid with masks, ESMF_FieldReg
+ ridCsrvUTest.F90, line 190
+  PASS  Conservative regridding on a 3D cartesian grid with masks, ESMF_FieldReg
+ ridCsrvUTest.F90, line 190
+  PASS  Conservative regridding on a 3D cartesian grid with masks, ESMF_FieldReg
+ ridCsrvUTest.F90, line 190
+  PASS  Conservative regridding on a 3D cartesian grid with masks, ESMF_FieldReg
+ ridCsrvUTest.F90, line 190
+  PASS  Conservative regridding on a 3D cartesian grid with masks interpolation 
+ error, ESMF_FieldRegridCsrvUTest.F90, line 201
+  PASS  Conservative regridding on a 3D cartesian grid with masks interpolation 
+ error, ESMF_FieldRegridCsrvUTest.F90, line 201
+  PASS  Conservative regridding on a 3D cartesian grid with masks interpolation 
+ error, ESMF_FieldRegridCsrvUTest.F90, line 201
+  PASS  Conservative regridding on a 3D cartesian grid with masks interpolation 
+ error, ESMF_FieldRegridCsrvUTest.F90, line 201
+  PASS  Conservative regridding on a 3D cartesian grid with Masks conservation e
+  PASS  Conservative regridding on a 3D cartesian grid with Masks conservation e
+ rror, ESMF_FieldRegridCsrvUTest.F90, line 212
+  PASS  Conservative regridding on a 3D cartesian grid with Masks conservation e
+ rror, ESMF_FieldRegridCsrvUTest.F90, line 212
+ rror, ESMF_FieldRegridCsrvUTest.F90, line 212
+  PASS  Conservative regridding on a 3D cartesian grid with Masks conservation e
+ rror, ESMF_FieldRegridCsrvUTest.F90, line 212
+ === 3D Cartesian Mesh ===
+ Conservation:
+ Rel Error =   0.000000000000000E+000
+ SRC mass =    12.8750000000000     
+ DST mass =    12.8750000000000     
+  
+ Interpolation:
+ Max Error =   1.775147928994083E-002
+ Min Error =   5.714285714285714E-003
+ Avg Error =   1.173288250211327E-002
+  
+  PASS  Conservative regridding on a 3D cartesian Mesh, ESMF_FieldRegridCsrvUTes
+ t.F90, line 228
+  PASS  Conservative regridding on a 3D cartesian Mesh, ESMF_FieldRegridCsrvUTes
+ t.F90, line 228
+  PASS  Conservative regridding on a 3D cartesian Mesh, ESMF_FieldRegridCsrvUTes
+ t.F90, line 228
+  PASS  Conservative regridding on a 3D cartesian Mesh, ESMF_FieldRegridCsrvUTes
+ t.F90, line 228
+  PASS  Conservative regridding on a 3D cartesian Mesh interpolation error, ESMF
+ _FieldRegridCsrvUTest.F90, line 240
+  PASS  Conservative regridding on a 3D cartesian Mesh interpolation error, ESMF
+ _FieldRegridCsrvUTest.F90, line 240
+  PASS  Conservative regridding on a 3D cartesian Mesh interpolation error, ESMF
+ _FieldRegridCsrvUTest.F90, line 240
+  PASS  Conservative regridding on a 3D cartesian Mesh interpolation error, ESMF
+ _FieldRegridCsrvUTest.F90, line 240
+  PASS  Conservative regridding on a 3D cartesian Mesh conservation error, ESMF_
+ FieldRegridCsrvUTest.F90, line 251
+  PASS  Conservative regridding on a 3D cartesian Mesh conservation error, ESMF_
+ FieldRegridCsrvUTest.F90, line 251
+  PASS  Conservative regridding on a 3D cartesian Mesh conservation error, ESMF_
+ FieldRegridCsrvUTest.F90, line 251
+  PASS  Conservative regridding on a 3D cartesian Mesh conservation error, ESMF_
+ FieldRegridCsrvUTest.F90, line 251
+ === Spherical grids with masks and user area ===
+ Conservation:
+ Rel Error =   8.918796036078079E-016
+ SRC mass =   0.995850130563912     
+ DST mass =   0.995850130563912     
+  
+ Interpolation:
+ Max Error =   5.081482247519394E-002
+ Min Error =   7.479730333263825E-004
+ Avg Error =   2.578139775426016E-002
+  
+  PASS  Conservative regridding on a sphere with user areas, ESMF_FieldRegridCsr
+ vUTest.F90, line 269
+  PASS  Conservative regridding on a sphere with user areas, ESMF_FieldRegridCsr
+ vUTest.F90, line 269
+  PASS  Conservative regridding on a sphere with user areas, ESMF_FieldRegridCsr
+ vUTest.F90, line 269
+  PASS  Conservative regridding on a sphere with user areas, ESMF_FieldRegridCsr
+ vUTest.F90, line 269
+  PASS  Conservative regridding on a sphere with user areas: interpolation error
+ , ESMF_FieldRegridCsrvUTest.F90, line 280
+  PASS  Conservative regridding on a sphere with user areas: interpolation error
+ , ESMF_FieldRegridCsrvUTest.F90, line 280
+  PASS  Conservative regridding on a sphere with user areas: interpolation error
+ , ESMF_FieldRegridCsrvUTest.F90, line 280
+  PASS  Conservative regridding on a sphere with user areas: interpolation error
+ , ESMF_FieldRegridCsrvUTest.F90, line 280
+  PASS  Conservative regridding on a sphere with user areas: conservation error,
+  ESMF_FieldRegridCsrvUTest.F90, line 291
+  PASS  Conservative regridding on a sphere with user areas: conservation error,
+  ESMF_FieldRegridCsrvUTest.F90, line 291
+  PASS  Conservative regridding on a sphere with user areas: conservation error,
+  ESMF_FieldRegridCsrvUTest.F90, line 291
+  PASS  Conservative regridding on a sphere with user areas: conservation error,
+  ESMF_FieldRegridCsrvUTest.F90, line 291
+ === Mesh with Pentagons and Hexagons ===
+ Conservation:
+ Rel Error =   0.000000000000000E+000
+ SRC mass =    80.8708341921369     
+ DST mass =    80.8708341921369     
+  
+ Interpolation:
+ Max Error =   2.087832767384958E-002
+ Min Error =   1.492534444403399E-003
+ Avg Error =   1.118543105912649E-002
+  
+  PASS  Conservative regridding on a Mesh with a pentagon and hexagon, ESMF_Fiel
+ dRegridCsrvUTest.F90, line 309
+  PASS  Conservative regridding on a Mesh with a pentagon and hexagon, ESMF_Fiel
+ dRegridCsrvUTest.F90, line 309
+  PASS  Conservative regridding on a Mesh with a pentagon and hexagon, ESMF_Fiel
+ dRegridCsrvUTest.F90, line 309
+  PASS  Conservative regridding on a Mesh with a pentagon and hexagon, ESMF_Fiel
+ dRegridCsrvUTest.F90, line 309
+  PASS  Conservative regridding on a Mesh with a pentagon and hexagon interpolat
+ ion error, ESMF_FieldRegridCsrvUTest.F90, line 321
+  PASS  Conservative regridding on a Mesh with a pentagon and hexagon interpolat
+ ion error, ESMF_FieldRegridCsrvUTest.F90, line 321
+  PASS  Conservative regridding on a Mesh with a pentagon and hexagon interpolat
+ ion error, ESMF_FieldRegridCsrvUTest.F90, line 321
+  PASS  Conservative regridding on a Mesh with a pentagon and hexagon interpolat
+ ion error, ESMF_FieldRegridCsrvUTest.F90, line 321
+  PASS  Conservative regridding on a Mesh with a pentagon and hexagon conservati
+ on error, ESMF_FieldRegridCsrvUTest.F90, line 333
+  PASS  Conservative regridding on a Mesh with a pentagon and hexagon conservati
+ on error, ESMF_FieldRegridCsrvUTest.F90, line 333
+  PASS  Conservative regridding on a Mesh with a pentagon and hexagon conservati
+ on error, ESMF_FieldRegridCsrvUTest.F90, line 333
+  PASS  Conservative regridding on a Mesh with a pentagon and hexagon conservati
+ on error, ESMF_FieldRegridCsrvUTest.F90, line 333
+ === Spherical grids with frac normalization ===
+ Conservation:
+ Rel Error =   2.505544031866115E-016
+ SRC mass =    7.08970513712038     
+ DST mass =    7.08970513712038     
+  
+ Interpolation:
+ Max Error =   3.600187915677162E-002
+ Min Error =   3.038095301445092E-006
+ Avg Error =   1.800245862603653E-002
+  
+  PASS  Conservative regridding on a sphere with frac norm option, ESMF_FieldReg
+ ridCsrvUTest.F90, line 348
+  PASS  Conservative regridding on a sphere with frac norm option, ESMF_FieldReg
+ ridCsrvUTest.F90, line 348
+  PASS  Conservative regridding on a sphere with frac norm option, ESMF_FieldReg
+ ridCsrvUTest.F90, line 348
+  PASS  Conservative regridding on a sphere with frac norm option, ESMF_FieldReg
+ ridCsrvUTest.F90, line 348
+  PASS  Conservative regridding on a sphere with frac norm option: interpolation
+  error, ESMF_FieldRegridCsrvUTest.F90, line 359
+  PASS  Conservative regridding on a sphere with frac norm option: interpolation
+  error, ESMF_FieldRegridCsrvUTest.F90, line 359
+  PASS  Conservative regridding on a sphere with frac norm option: interpolation
+  error, ESMF_FieldRegridCsrvUTest.F90, line 359
+  PASS  Conservative regridding on a sphere with frac norm option: conservation 
+ error, ESMF_FieldRegridCsrvUTest.F90, line 370
+  PASS  Conservative regridding on a sphere with frac norm option: conservation 
+ error, ESMF_FieldRegridCsrvUTest.F90, line 370
+  PASS  Conservative regridding on a sphere with frac norm option: interpolation
+  error, ESMF_FieldRegridCsrvUTest.F90, line 359
+  PASS  Conservative regridding on a sphere with frac norm option: conservation 
+ error, ESMF_FieldRegridCsrvUTest.F90, line 370
+  PASS  Conservative regridding on a sphere with frac norm option: conservation 
+ error, ESMF_FieldRegridCsrvUTest.F90, line 370
+ === Mesh with Pentagons and Hexagons using frac. normalization ===
+ Conservation:
+ Rel Error =   0.000000000000000E+000
+ SRC mass =    83.4301012167173     
+ DST mass =    83.4301012167173     
+  
+ Interpolation:
+ Max Error =   1.430614959869595E-002
+ Min Error =   1.492534444403399E-003
+ Avg Error =   7.899342021549674E-003
+  
+  PASS  Conservative regridding on a pentagon and hexagon with frac norm, ESMF_F
+ ieldRegridCsrvUTest.F90, line 387
+  PASS  Conservative regridding on a pentagon and hexagon with frac norm, ESMF_F
+ ieldRegridCsrvUTest.F90, line 387
+  PASS  Conservative regridding on a pentagon and hexagon with frac norm, ESMF_F
+ ieldRegridCsrvUTest.F90, line 387
+  PASS  Conservative regridding on a pentagon and hexagon with frac norm, ESMF_F
+ ieldRegridCsrvUTest.F90, line 387
+  PASS  Conservative regridding on a pentagon and hexagon with frac norm: interp
+ olation error, ESMF_FieldRegridCsrvUTest.F90, line 399
+  PASS  Conservative regridding on a pentagon and hexagon with frac norm: interp
+ olation error, ESMF_FieldRegridCsrvUTest.F90, line 399
+  PASS  Conservative regridding on a pentagon and hexagon with frac norm: interp
+ olation error, ESMF_FieldRegridCsrvUTest.F90, line 399
+  PASS  Conservative regridding on a pentagon and hexagon with frac norm: interp
+ olation error, ESMF_FieldRegridCsrvUTest.F90, line 399
+  PASS  Conservative regridding on a pentagon and hexagon with frac norm: conser
+ vation error, ESMF_FieldRegridCsrvUTest.F90, line 411
+  PASS  Conservative regridding on a pentagon and hexagon with frac norm: conser
+ vation error, ESMF_FieldRegridCsrvUTest.F90, line 411
+  PASS  Conservative regridding on a pentagon and hexagon with frac norm: conser
+ vation error, ESMF_FieldRegridCsrvUTest.F90, line 411
+  PASS  Conservative regridding on a pentagon and hexagon with frac norm: conser
+ vation error, ESMF_FieldRegridCsrvUTest.F90, line 411
+ === Mesh with concave quads ===
+ Conservation:
+ Rel Error =   0.000000000000000E+000
+ SRC mass =    70.2849988543988     
+ DST mass =    70.2849988543988     
+  
+ Interpolation:
+ Max Error =   0.000000000000000E+000
+ Min Error =   0.000000000000000E+000
+ Avg Error =   0.000000000000000E+000
+  
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad., ESMF_Field
+ RegridCsrvUTest.F90, line 429
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad., ESMF_Field
+ RegridCsrvUTest.F90, line 429
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad., ESMF_Field
+ RegridCsrvUTest.F90, line 429
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad., ESMF_Field
+ RegridCsrvUTest.F90, line 429
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. interpolati
+ on error, ESMF_FieldRegridCsrvUTest.F90, line 441
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. interpolati
+ on error, ESMF_FieldRegridCsrvUTest.F90, line 441
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. interpolati
+ on error, ESMF_FieldRegridCsrvUTest.F90, line 441
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. interpolati
+ on error, ESMF_FieldRegridCsrvUTest.F90, line 441
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. conservatio
+ n error, ESMF_FieldRegridCsrvUTest.F90, line 453
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. conservatio
+ n error, ESMF_FieldRegridCsrvUTest.F90, line 453
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. conservatio
+ n error, ESMF_FieldRegridCsrvUTest.F90, line 453
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. conservatio
+ n error, ESMF_FieldRegridCsrvUTest.F90, line 453
+ === Mesh with concave quads ===
+ Conservation:
+ Rel Error =   0.000000000000000E+000
+ SRC mass =    70.2849988543988     
+ DST mass =    70.2849988543988     
+  
+ Interpolation:
+ Max Error =   0.000000000000000E+000
+ Min Error =   0.000000000000000E+000
+ Avg Error =   0.000000000000000E+000
+  
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad., ESMF_Field
+ RegridCsrvUTest.F90, line 472
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad., ESMF_Field
+ RegridCsrvUTest.F90, line 472
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad., ESMF_Field
+ RegridCsrvUTest.F90, line 472
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad., ESMF_Field
+ RegridCsrvUTest.F90, line 472
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. interpolati
+ on error, ESMF_FieldRegridCsrvUTest.F90, line 484
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. interpolati
+ on error, ESMF_FieldRegridCsrvUTest.F90, line 484
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. interpolati
+ on error, ESMF_FieldRegridCsrvUTest.F90, line 484
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. interpolati
+ on error, ESMF_FieldRegridCsrvUTest.F90, line 484
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. conservatio
+ n error, ESMF_FieldRegridCsrvUTest.F90, line 496
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. conservatio
+ n error, ESMF_FieldRegridCsrvUTest.F90, line 496
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. conservatio
+ n error, ESMF_FieldRegridCsrvUTest.F90, line 496
+  PASS  Conservative regridding on a Cart. Mesh with a concave quad. conservatio
+ n error, ESMF_FieldRegridCsrvUTest.F90, line 496
+ === Mesh with concave quads ===
+ Conservation:
+ Rel Error =   0.000000000000000E+000
+ SRC mass =    3.52877954907456     
+ DST mass =    3.52877954907456     
+  
+ Interpolation:
+ Max Error =   0.000000000000000E+000
+ Min Error =   0.000000000000000E+000
+ Avg Error =   0.000000000000000E+000
+  
+  PASS  Conservative regridding on a Sph. Mesh with a concave quad., ESMF_FieldR
+ egridCsrvUTest.F90, line 515
+  PASS  Conservative regridding on a Sph. Mesh with a concave quad., ESMF_FieldR
+ egridCsrvUTest.F90, line 515
+  PASS  Conservative regridding on a Sph. Mesh with a concave quad., ESMF_FieldR
+ egridCsrvUTest.F90, line 515
+  PASS  Conservative regridding on a Sph. Mesh with a concave quad., ESMF_FieldR
+ egridCsrvUTest.F90, line 515
+  PASS  Conservative regridding on a Sph. Mesh with a concave quad. interpolatio
+ n error, ESMF_FieldRegridCsrvUTest.F90, line 527
+  PASS  Conservative regridding on a Sph. Mesh with a concave quad. interpolatio
+ n error, ESMF_FieldRegridCsrvUTest.F90, line 527
+  PASS  Conservative regridding on a Sph. Mesh with a concave quad. interpolatio
+ n error, ESMF_FieldRegridCsrvUTest.F90, line 527
+  PASS  Conservative regridding on a Sph. Mesh with a concave quad. interpolatio
+ n error, ESMF_FieldRegridCsrvUTest.F90, line 527
+  PASS  Conservative regridding on a sph. Mesh with a concave quad. conservation
+  error, ESMF_FieldRegridCsrvUTest.F90, line 539
+  PASS  Conservative regridding on a sph. Mesh with a concave quad. conservation
+  error, ESMF_FieldRegridCsrvUTest.F90, line 539
+  PASS  Conservative regridding on a sph. Mesh with a concave quad. conservation
+  error, ESMF_FieldRegridCsrvUTest.F90, line 539
+  PASS  Conservative regridding on a sph. Mesh with a concave quad. conservation
+  error, ESMF_FieldRegridCsrvUTest.F90, line 539
+ === MOAB Mesh ===
+ Conservation:
+ Rel Error =   0.000000000000000E+000
+ SRC mass =    88.0000000000000     
+ DST mass =    88.0000000000000     
+  
+ Interpolation:
+ Max Error =   0.000000000000000E+000
+ Min Error =   0.000000000000000E+000
+ Avg Error =   0.000000000000000E+000
+  
+  PASS  Conservative regridding MOAB Mesh to Mesh., ESMF_FieldRegridCsrvUTest.F9
+ 0, line 559
+  PASS  Conservative regridding MOAB Mesh to Mesh. interpolation error, ESMF_Fie
+ ldRegridCsrvUTest.F90, line 571
+  PASS  Conservative regridding MOAB Mesh to Mesh. conservation error, ESMF_Fiel
+ dRegridCsrvUTest.F90, line 583
+  PASS  Conservative regridding MOAB Mesh to Mesh., ESMF_FieldRegridCsrvUTest.F9
+ 0, line 559
+  PASS  Conservative regridding MOAB Mesh to Mesh. interpolation error, ESMF_Fie
+ ldRegridCsrvUTest.F90, line 571
+  PASS  Conservative regridding MOAB Mesh to Mesh., ESMF_FieldRegridCsrvUTest.F9
+ 0, line 559
+  PASS  Conservative regridding MOAB Mesh to Mesh. conservation error, ESMF_Fiel
+ dRegridCsrvUTest.F90, line 583
+  PASS  Conservative regridding MOAB Mesh to Mesh. interpolation error, ESMF_Fie
+ ldRegridCsrvUTest.F90, line 571
+  PASS  Conservative regridding MOAB Mesh to Mesh. conservation error, ESMF_Fiel
+ dRegridCsrvUTest.F90, line 583
+  PASS  Conservative regridding MOAB Mesh to Mesh., ESMF_FieldRegridCsrvUTest.F9
+ 0, line 559
+  PASS  Conservative regridding MOAB Mesh to Mesh. interpolation error, ESMF_Fie
+ ldRegridCsrvUTest.F90, line 571
+  PASS  Conservative regridding MOAB Mesh to Mesh. conservation error, ESMF_Fiel
+ dRegridCsrvUTest.F90, line 583
+ === Mesh containing a Multipolygon Element ===
+ Conservation:
+ Rel Error =   0.000000000000000E+000
+ SRC mass =    102.679828502086     
+ DST mass =    102.679828502086     
+  
+ Interpolation:
+ Max Error =   0.000000000000000E+000
+ Min Error =   0.000000000000000E+000
+ Avg Error =   0.000000000000000E+000
+  
+  PASS  Conservative regridding on a Mesh with a multipolygon, ESMF_FieldRegridC
+ srvUTest.F90, line 601
+  PASS  Conservative regridding on a Mesh with a multipolygon, ESMF_FieldRegridC
+ srvUTest.F90, line 601
+  PASS  Conservative regridding on a Mesh with a multipolygon, ESMF_FieldRegridC
+ srvUTest.F90, line 601
+  PASS  Conservative regridding on a Mesh with a multipolygon, ESMF_FieldRegridC
+ srvUTest.F90, line 601
+  PASS  Conservative regridding on a Mesh with a multipolygon interpolation erro
+  PASS  Conservative regridding on a Mesh with a multipolygon interpolation erro
+  PASS  Conservative regridding on a Mesh with a multipolygon interpolation erro
+ r, ESMF_FieldRegridCsrvUTest.F90, line 613
+ r, ESMF_FieldRegridCsrvUTest.F90, line 613
+ r, ESMF_FieldRegridCsrvUTest.F90, line 613
+  PASS  Conservative regridding on a Mesh with a multipolygon interpolation erro
+ r, ESMF_FieldRegridCsrvUTest.F90, line 613
+  PASS  Conservative regridding on a Mesh with a multipolygon conservation error
+ , ESMF_FieldRegridCsrvUTest.F90, line 625
+  PASS  Conservative regridding on a Mesh with a multipolygon conservation error
+ , ESMF_FieldRegridCsrvUTest.F90, line 625
+  PASS  Conservative regridding on a Mesh with a multipolygon conservation error
+ , ESMF_FieldRegridCsrvUTest.F90, line 625
+  PASS  Conservative regridding on a Mesh with a multipolygon conservation error
+ , ESMF_FieldRegridCsrvUTest.F90, line 625
+ === 2 Tile ===
+ Conservation:
+ Rel Error =   0.000000000000000E+000
+ SRC mass =    5985.00000000000     
+ DST mass =    5985.00000000000     
+  
+ Interpolation:
+ Max Error =   1.094817195660896E-002
+ Min Error =   2.829654782118190E-004
+ Avg Error =   5.615568717410388E-003
+  
+  PASS  Conservative regridding on a 2 tile Grid, ESMF_FieldRegridCsrvUTest.F90,
+  line 642
+  PASS  Conservative regridding on a 2 tile Grid, ESMF_FieldRegridCsrvUTest.F90,
+  line 642
+  PASS  Conservative regridding on a 2 tile Grid, ESMF_FieldRegridCsrvUTest.F90,
+  line 642
+  PASS  Conservative regridding on a 2 tile Grid, ESMF_FieldRegridCsrvUTest.F90,
+  line 642
+  PASS  Conservative regridding on a 2 tile Grid interpolation error, ESMF_Field
+ RegridCsrvUTest.F90, line 654
+  PASS  Conservative regridding on a 2 tile Grid interpolation error, ESMF_Field
+ RegridCsrvUTest.F90, line 654
+  PASS  Conservative regridding on a 2 tile Grid interpolation error, ESMF_Field
+ RegridCsrvUTest.F90, line 654
+  PASS  Conservative regridding on a 2 tile Grid interpolation error, ESMF_Field
+ RegridCsrvUTest.F90, line 654
+  PASS  Conservative regridding on a 2 tile Grid conservation error, ESMF_FieldR
+ egridCsrvUTest.F90, line 666
+  PASS  Conservative regridding on a 2 tile Grid conservation error, ESMF_FieldR
+ egridCsrvUTest.F90, line 666
+  PASS  Conservative regridding on a 2 tile Grid conservation error, ESMF_FieldR
+ egridCsrvUTest.F90, line 666
+  PASS  Conservative regridding on a 2 tile Grid conservation error, ESMF_FieldR
+ egridCsrvUTest.F90, line 666
+ 
+ === Conservative Mesh to Mesh using easy elems ===
+ Conservation:
+ Rel Error =   1.505094076706544E-016
+ SRC mass =   2.881420342462479E-003
+ DST mass =   2.881420342462479E-003
+  
+ Interpolation:
+ Max Error =   8.482744771309910E-003
+ Min Error =   1.283605382836199E-004
+ Avg Error =   4.046793070965465E-003
+  
+  PASS  Conservative regridding on an easy elems Mesh, ESMF_FieldRegridCsrvUTest
+ .F90, line 684
+  PASS  Conservative regridding on an easy elems Mesh, ESMF_FieldRegridCsrvUTest
+ .F90, line 684
+  PASS  Conservative regridding on an easy elems Mesh, ESMF_FieldRegridCsrvUTest
+ .F90, line 684
+  PASS  Conservative regridding on an easy elems Mesh, ESMF_FieldRegridCsrvUTest
+ .F90, line 684
+  PASS  Conservative regridding on an easy elems Mesh interpolation error, ESMF_
+ FieldRegridCsrvUTest.F90, line 696
+  PASS  Conservative regridding on an easy elems Mesh interpolation error, ESMF_
+ FieldRegridCsrvUTest.F90, line 696
+  PASS  Conservative regridding on an easy elems Mesh interpolation error, ESMF_
+ FieldRegridCsrvUTest.F90, line 696
+  PASS  Conservative regridding on an easy elems Mesh interpolation error, ESMF_
+ FieldRegridCsrvUTest.F90, line 696
+  PASS  Conservative regridding on an easy elems Mesh conservation error, ESMF_F
+ ieldRegridCsrvUTest.F90, line 708
+  PASS  Conservative regridding on an easy elems Mesh conservation error, ESMF_F
+ ieldRegridCsrvUTest.F90, line 708
+  PASS  Conservative regridding on an easy elems Mesh conservation error, ESMF_F
+ ieldRegridCsrvUTest.F90, line 708
+  PASS  Conservative regridding on an easy elems Mesh conservation error, ESMF_F
+ ieldRegridCsrvUTest.F90, line 708
+  PASS  Test ignoreDegenerate, ESMF_FieldRegridCsrvUTest.F90, line 722
+  PASS  Test ignoreDegenerate, ESMF_FieldRegridCsrvUTest.F90, line 722
+  PASS  Test ignoreDegenerate, ESMF_FieldRegridCsrvUTest.F90, line 722
+  PASS  Test ignoreDegenerate, ESMF_FieldRegridCsrvUTest.F90, line 722
+  PASS  Test per location regrid status output, ESMF_FieldRegridCsrvUTest.F90, l
+ ine 737
+  PASS  Test per location regrid status output, ESMF_FieldRegridCsrvUTest.F90, l
+ ine 737
+  PASS  Test per location regrid status output, ESMF_FieldRegridCsrvUTest.F90, l
+ ine 737
+  PASS  Test per location regrid status output, ESMF_FieldRegridCsrvUTest.F90, l
+ ine 737
+  PASS  Test conservative regridding of disjoint meshes, ESMF_FieldRegridCsrvUTe
+ st.F90, line 753
+  PASS  Test conservative regridding of disjoint meshes, ESMF_FieldRegridCsrvUTe
+ st.F90, line 753
+  PASS  Test conservative regridding of disjoint meshes, ESMF_FieldRegridCsrvUTe
+ st.F90, line 753
+  PASS  Test conservative regridding of disjoint meshes, ESMF_FieldRegridCsrvUTe
+ st.F90, line 753
+  Ending Test, file ESMF_FieldRegridCsrvUTest.F90, line 760
+  Ending Test, file ESMF_FieldRegridCsrvUTest.F90, line 760
+  Ending Test, file ESMF_FieldRegridCsrvUTest.F90, line 760
+  Ending Test, file ESMF_FieldRegridCsrvUTest.F90, line 760
+  PET           2  Test Elapsed Time    10767.4970000000       msec.
+  PET           1  Test Elapsed Time    10769.7220000000       msec.
+  PET           3  Test Elapsed Time    10769.2060000000       msec.
+  PET           0  Test Elapsed Time    10772.2010000000       msec.
 TACC:  Shutdown complete. Exiting. 
