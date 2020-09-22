@@ -60,12 +60,12 @@
   PASS  DELayout Get DEMatchPET Test, ESMF_DELayoutUTest.F90, line 164
   PASS  DELayout Get DEMatchPET Test, ESMF_DELayoutUTest.F90, line 183
   PASS  DELayout Get DEMatchPET Test, ESMF_DELayoutUTest.F90, line 183
-  PASS  Verify matches, ESMF_DELayoutUTest.F90, line 192
+  PASS  DELayout Get DEMatchPET Test, ESMF_DELayoutUTest.F90, line 183
   PASS  DELayout Get DEMatchPET Test, ESMF_DELayoutUTest.F90, line 183
   PASS  Verify matches, ESMF_DELayoutUTest.F90, line 192
-  PASS  DELayout Get DEMatchPET Test, ESMF_DELayoutUTest.F90, line 183
   PASS  Verify matches, ESMF_DELayoutUTest.F90, line 192
   PASS  Verify matches, ESMF_DELayoutUTest.F90, line 192
+  PASS  Verify matches, ESMF_DELayoutUTest.F90, line 192
   PASS  Default OLDSTYLE DELayout Destroy Test, ESMF_DELayoutUTest.F90, line 202
   PASS  Default OLDSTYLE DELayout Destroy Test, ESMF_DELayoutUTest.F90, line 202
   PASS  Default OLDSTYLE DELayout Destroy Test, ESMF_DELayoutUTest.F90, line 202
@@ -102,21 +102,21 @@
  ine 245
   PASS  Testing DELayout IsCreated for created object, ESMF_DELayoutUTest.F90, l
  ine 245
+  PASS  Destroy test DELayout for IsCreated, ESMF_DELayoutUTest.F90, line 253
   PASS  Testing DELayout IsCreated for created object, ESMF_DELayoutUTest.F90, l
  ine 245
   PASS  Destroy test DELayout for IsCreated, ESMF_DELayoutUTest.F90, line 253
+  PASS  Testing DELayout IsCreated for destroyed object, ESMF_DELayoutUTest.F90,
+  line 261
+  PASS  Testing DELayout IsCreated for destroyed object, ESMF_DELayoutUTest.F90,
+  line 261
   PASS  Destroy test DELayout for IsCreated, ESMF_DELayoutUTest.F90, line 253
-  PASS  Destroy test DELayout for IsCreated, ESMF_DELayoutUTest.F90, line 253
-  PASS  Testing DELayout IsCreated for destroyed object, ESMF_DELayoutUTest.F90,
-  line 261
-  PASS  Testing DELayout IsCreated for destroyed object, ESMF_DELayoutUTest.F90,
-  line 261
-  PASS  Testing DELayout IsCreated for destroyed object, ESMF_DELayoutUTest.F90,
-  line 261
   PASS  Testing DELayout IsCreated for destroyed object, ESMF_DELayoutUTest.F90,
   line 269
   PASS  Testing DELayout IsCreated for destroyed object, ESMF_DELayoutUTest.F90,
   line 269
+  PASS  Testing DELayout IsCreated for destroyed object, ESMF_DELayoutUTest.F90,
+  line 261
   PASS  Testing DELayout IsCreated for destroyed object, ESMF_DELayoutUTest.F90,
   line 269
   PASS  Default DELayout Create Test, ESMF_DELayoutUTest.F90, line 277
@@ -126,21 +126,21 @@
  84
   PASS  DELayout equality before assignment Test, ESMF_DELayoutUTest.F90, line 2
  84
+  PASS  DELayout assignment and equality Test, ESMF_DELayoutUTest.F90, line 293
+  PASS  DELayout assignment and equality Test, ESMF_DELayoutUTest.F90, line 293
   PASS  DELayout equality before assignment Test, ESMF_DELayoutUTest.F90, line 2
  84
   PASS  DELayout assignment and equality Test, ESMF_DELayoutUTest.F90, line 293
-  PASS  DELayout assignment and equality Test, ESMF_DELayoutUTest.F90, line 293
-  PASS  DELayout assignment and equality Test, ESMF_DELayoutUTest.F90, line 293
-  PASS  DELayoutDestroy Test, ESMF_DELayoutUTest.F90, line 300
   PASS  DELayoutDestroy Test, ESMF_DELayoutUTest.F90, line 300
   PASS  DELayoutDestroy Test, ESMF_DELayoutUTest.F90, line 300
   PASS  DELayout equality after destroy Test, ESMF_DELayoutUTest.F90, line 308
   PASS  DELayout equality after destroy Test, ESMF_DELayoutUTest.F90, line 308
-  PASS  DELayout equality after destroy Test, ESMF_DELayoutUTest.F90, line 308
+  PASS  DELayoutDestroy Test, ESMF_DELayoutUTest.F90, line 300
   PASS  DELayout non-equality after destroy Test, ESMF_DELayoutUTest.F90, line 3
  16
   PASS  DELayout non-equality after destroy Test, ESMF_DELayoutUTest.F90, line 3
  16
+  PASS  DELayout equality after destroy Test, ESMF_DELayoutUTest.F90, line 308
   PASS  DELayout non-equality after destroy Test, ESMF_DELayoutUTest.F90, line 3
  16
   PASS  Double DELayoutDestroy through alias Test, ESMF_DELayoutUTest.F90, line 
@@ -206,50 +206,58 @@
 --- ESMCI::VM::print() start ---
 --- ESMCI::VM::print() start ---
 --- ESMCI::VM::print() start ---
---- ESMCI::VMId::print() start ------ ESMCI::VMId::print() start ---
---- ESMCI::VMId::print() start ---  vmKeyWidth = 1
-  vmKey=0xF0000000
-  localID = 0
+--- ESMCI::VMId::print() start ------ ESMCI::VMId::print() start ------ ESMCI::VMId::print() start ---
+  vmKeyWidth = 
   vmKeyWidth = 
   vmKeyWidth = 1
-
+  vmKey=0xF0000000
+  localID = 0
 --- ESMCI::VMId::print() end ---
---- VMK::print() start ---
-vm located at: 0x7f6020
-npets = 4, mypet=1
-  pth_mutex =		 0x830f70
-  pth_finish_count =	 (nil)
-MPI_Comm_size: 4
+1
+  vmKey=0xF0000000
+  localID = 0
 1
   vmKey=0xF0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x9f7020
-npets = 4, mypet=2
-  pth_mutex =		 0xa2ff60
+vm located at: 0x2530020
+npets = 4, mypet=1
+  pth_mutex =		 0x2568f60
   pth_finish_count =	 (nil)
-  vmKey=0xF0000000
-  localID = 0
+MPI_Comm_size: 4
+MPI_Comm_rank in local MPI communicator: 1
+MPI_Comm_rank in MPI_COMM_WORLD: 1
+MPI thread level support: 3
+mpi_mutex_flag: 0
+mpionly: 1
+nothreadsflag: 1
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0xe0d020
+vm located at: 0x949020
+npets = 4, mypet=2
+  pth_mutex =		 0x981f60
+  pth_finish_count =	 (nil)
+MPI_Comm_size: 4
+MPI_Comm_rank in local MPI communicator: 2
+--- VMK::print() start ---
+vm located at: 0xadb020
 npets = 4, mypet=3
-  pth_mutex =		 0xe45f60
+  pth_mutex =		 0xb13f60
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 3
-MPI_Comm_rank in local MPI communicator: 1
-MPI_Comm_rank in MPI_COMM_WORLD: 1
+MPI_Comm_rank in MPI_COMM_WORLD: 3
 MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
-nothreadsflag: 1
   lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
-  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3MPI_Comm_size: 4
-MPI_Comm_rank in local MPI communicator: 2
+  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
+ncores = 4
+  cpuid[0]=0, ssiid[0]=0
+  cpuid[1]=1, ssiid[1]=0
 MPI_Comm_rank in MPI_COMM_WORLD: 2
 MPI thread level support: 3
 mpi_mutex_flag: 0
@@ -257,26 +265,22 @@ mpionly: 1
 nothreadsflag: 1
   lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
-  lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2MPI_Comm_rank in MPI_COMM_WORLD: 3
-MPI thread level support: 3
-mpi_mutex_flag: 0
-mpionly: 1
+  lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
 nothreadsflag: 1
   lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
   lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
-
 ncores = 4
-  cpuid[0]=0, ssiid[0]=0
-  cpuid[1]=1, ssiid[1]=0
   cpuid[2]=2, ssiid[2]=0
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
 --- ESMCI::VM::print() start ---
 --- ESMCI::VMId::print() start ---
-
+  vmKeyWidth = 1
+  vmKey=0xF0000000
+  localID = 0
   lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
 ncores = 4
   cpuid[0]=0, ssiid[0]=0
@@ -286,8 +290,7 @@ ncores = 4
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
 --- ESMCI::VM::print() start ---
---- ESMCI::VMId::print() start ---ncores = 4
-  cpuid[0]=0, ssiid[0]=0
+--- ESMCI::VMId::print() start ---  cpuid[0]=0, ssiid[0]=0
   cpuid[1]=1, ssiid[1]=0
   cpuid[2]=2, ssiid[2]=0
   cpuid[3]=3, ssiid[3]=0
@@ -296,40 +299,40 @@ ncores = 4
 --- ESMCI::VM::print() start ---
 --- ESMCI::VMId::print() start ---
   vmKeyWidth = 1
-  vmKey=0x  vmKeyWidth = 1
   vmKey=0xF0000000
-  localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x7f6020
+vm located at: 0x2530020
 npets = 4, mypet=1
-  pth_mutex =		 0x830f70
+  pth_mutex =		 0x2568f60
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 1
 MPI_Comm_rank in MPI_COMM_WORLD: 1
-
+MPI thread level support: 3
+mpi_mutex_flag: 0
+mpionly: 1
+nothreadsflag: 1
+  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
+  lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0
   vmKeyWidth = 1
   vmKey=0xF0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x9f7020
+vm located at: 0x949020
 npets = 4, mypet=2
-  pth_mutex =		 0xa2ff60
+  pth_mutex =		 0x981f60
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 2
 MPI_Comm_rank in MPI_COMM_WORLD: 2
-MPI thread level support: 3
-mpi_mutex_flag: 0
-F0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0xe0d020
+vm located at: 0xadb020
 npets = 4, mypet=3
-  pth_mutex =		 0xe45f60
+  pth_mutex =		 0xb13f60
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 3
@@ -338,15 +341,24 @@ MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
 nothreadsflag: 1
-  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0MPI thread level support: 3
+, cid[1][0]=1
+  lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
+  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
+ncores = 4
+  cpuid[0]=0, ssiid[0]=0
+  cpuid[1]=1, ssiid[1]=0
+  cpuid[2]=2, ssiid[2]=0
+  cpuid[3]=3, ssiid[3]=0
+--- VMK::print() end ---
+--- ESMCI::VM::print() end ---
+MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
 nothreadsflag: 1
   lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
-  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0mpionly: 1
-nothreadsflag: 1
+  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
   lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
@@ -354,10 +366,10 @@ nothreadsflag: 1
 ncores = 4
   cpuid[0]=0, ssiid[0]=0
   cpuid[1]=1, ssiid[1]=0
-, cid[0][0]=0
-  lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
-  lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
-  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
+  cpuid[2]=2, ssiid[2]=0
+  cpuid[3]=3, ssiid[3]=0
+  PASS  DELayout with deCount and deGrouping Destroy Test, ESMF_DELayoutUTest.F9
+ 0, line 433
 ncores = 4
   cpuid[0]=0, ssiid[0]=0
   cpuid[1]=1, ssiid[1]=0
@@ -365,94 +377,82 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
-, cid[3][0]=3
-ncores = 4
-  cpuid[0]=0, ssiid[0]=0
-  cpuid[1]=1, ssiid[1]=0
-  cpuid[2]=2, ssiid[2]=0
-  cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
-  cpuid[2]=2, ssiid[2]=0
-  cpuid[3]=3, ssiid[3]=0
---- VMK::print() end ---
---- ESMCI::VM::print() end ---
+  PASS  DELayout with deCount and deGrouping Destroy Test, ESMF_DELayoutUTest.F9
+ 0, line 433
+  PASS  DELayout with deCount and deGrouping Destroy Test, ESMF_DELayoutUTest.F9
+ 0, line 433
+  PASS  Destroy a destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 441
   PASS  Testing DELayout IsCreated for created object, ESMF_DELayoutUTest.F90, l
  ine 245
-  PASS  DELayout with deCount and deGrouping Destroy Test, ESMF_DELayoutUTest.F9
- 0, line 433
-  PASS  DELayout with deCount and deGrouping Destroy Test, ESMF_DELayoutUTest.F9
- 0, line 433
-  PASS  DELayout with deCount and deGrouping Destroy Test, ESMF_DELayoutUTest.F9
- 0, line 433
+  PASS  Destroy a destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 441
+  PASS  Destroy a destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 441
+  PASS  Destroy a non-created DELayout Test, ESMF_DELayoutUTest.F90, line 449
   PASS  Destroy test DELayout for IsCreated, ESMF_DELayoutUTest.F90, line 253
-  PASS  Destroy a destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 441
-  PASS  Destroy a destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 441
-  PASS  Destroy a destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 441
+  PASS  Destroy a non-created DELayout Test, ESMF_DELayoutUTest.F90, line 449
+  PASS  Destroy a non-created DELayout Test, ESMF_DELayoutUTest.F90, line 449
   PASS  Testing DELayout IsCreated for destroyed object, ESMF_DELayoutUTest.F90,
   line 261
+  PASS  DELayoutGet from destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 4
+ 58
   PASS  Testing DELayout IsCreated for destroyed object, ESMF_DELayoutUTest.F90,
   line 269
-  PASS  Destroy a non-created DELayout Test, ESMF_DELayoutUTest.F90, line 449
-  PASS  Destroy a non-created DELayout Test, ESMF_DELayoutUTest.F90, line 449
-  PASS  Destroy a non-created DELayout Test, ESMF_DELayoutUTest.F90, line 449
   PASS  DELayoutGet from destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 4
  58
   PASS  DELayoutGet from destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 4
  58
-  PASS  DELayoutGet from destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 4
- 58
+  PASS  DELayoutGet from non-created DELayout Test, ESMF_DELayoutUTest.F90, line
+  468
   PASS  Default DELayout Create Test, ESMF_DELayoutUTest.F90, line 277
+  PASS  DELayoutGet from non-created DELayout Test, ESMF_DELayoutUTest.F90, line
+  468
+  PASS  DELayoutGet from non-created DELayout Test, ESMF_DELayoutUTest.F90, line
+  468
   PASS  DELayout equality before assignment Test, ESMF_DELayoutUTest.F90, line 2
  84
-  PASS  DELayoutGet from non-created DELayout Test, ESMF_DELayoutUTest.F90, line
-  468
-  PASS  DELayoutGet from non-created DELayout Test, ESMF_DELayoutUTest.F90, line
-  468
-  PASS  DELayoutGet from non-created DELayout Test, ESMF_DELayoutUTest.F90, line
-  468
+  PASS  Print a destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 477
+  PASS  Print a destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 477
+  PASS  Print a destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 477
   PASS  DELayout assignment and equality Test, ESMF_DELayoutUTest.F90, line 293
-  PASS  DELayoutDestroy Test, ESMF_DELayoutUTest.F90, line 300
-  PASS  Print a destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 477
-  PASS  Print a destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 477
-  PASS  Print a destroyed DELayout Test, ESMF_DELayoutUTest.F90, line 477
-  PASS  DELayout equality after destroy Test, ESMF_DELayoutUTest.F90, line 308
   PASS  Print a non-created DELayout Test, ESMF_DELayoutUTest.F90, line 485
+  PASS  DELayoutDestroy Test, ESMF_DELayoutUTest.F90, line 300
+  PASS  Print a non-created DELayout Test, ESMF_DELayoutUTest.F90, line 485
+  PASS  Print a non-created DELayout Test, ESMF_DELayoutUTest.F90, line 485
+  PASS  DELayout equality after destroy Test, ESMF_DELayoutUTest.F90, line 308
   PASS  DELayout non-equality after destroy Test, ESMF_DELayoutUTest.F90, line 3
  16
-  PASS  Print a non-created DELayout Test, ESMF_DELayoutUTest.F90, line 485
-  PASS  Print a non-created DELayout Test, ESMF_DELayoutUTest.F90, line 485
+  PASS  Default DELayout Create Test for serialization, ESMF_DELayoutUTest.F90, 
+ line 498
+  PASS  Default DELayout Create Test for serialization, ESMF_DELayoutUTest.F90, 
+ line 498
+  PASS  Default DELayout Create Test for serialization, ESMF_DELayoutUTest.F90, 
+ line 498
   PASS  Double DELayoutDestroy through alias Test, ESMF_DELayoutUTest.F90, line 
  323
-  PASS  Default DELayout Create Test for serialization, ESMF_DELayoutUTest.F90, 
- line 498
-  PASS  Default DELayout Create Test for serialization, ESMF_DELayoutUTest.F90, 
- line 498
-  PASS  Default DELayout Create Test for serialization, ESMF_DELayoutUTest.F90, 
- line 498
+ computed serialization buffer length =         984  bytes
+  PASS  Computing space for serialization buffer, ESMF_DELayoutUTest.F90, line 5
+ 11
+ computed serialization buffer length =         984  bytes
+  PASS  Computing space for serialization buffer, ESMF_DELayoutUTest.F90, line 5
+ 11
+ computed serialization buffer length =         984  bytes
+  PASS  Computing space for serialization buffer, ESMF_DELayoutUTest.F90, line 5
+ 11
   PASS  Default DELayout Create Test, ESMF_DELayoutUTest.F90, line 330
- computed serialization buffer length =         984  bytes
-  PASS  Computing space for serialization buffer, ESMF_DELayoutUTest.F90, line 5
- 11
- computed serialization buffer length =         984  bytes
-  PASS  Computing space for serialization buffer, ESMF_DELayoutUTest.F90, line 5
- 11
- computed serialization buffer length =         984  bytes
-  PASS  Computing space for serialization buffer, ESMF_DELayoutUTest.F90, line 5
- 11
+  PASS  Allocate serialization buffer, ESMF_DELayoutUTest.F90, line 522
+  PASS  Allocate serialization buffer, ESMF_DELayoutUTest.F90, line 522
+  PASS  Allocate serialization buffer, ESMF_DELayoutUTest.F90, line 522
   PASS  Default DELayout Destroy Test, ESMF_DELayoutUTest.F90, line 339
-  PASS  Allocate serialization buffer, ESMF_DELayoutUTest.F90, line 522
-  PASS  Allocate serialization buffer, ESMF_DELayoutUTest.F90, line 522
-  PASS  Allocate serialization buffer, ESMF_DELayoutUTest.F90, line 522
   PASS  Serialization DELayout data, ESMF_DELayoutUTest.F90, line 537
   PASS  Serialization DELayout data, ESMF_DELayoutUTest.F90, line 537
   PASS  Serialization DELayout data, ESMF_DELayoutUTest.F90, line 537
+  Ending Test, file ESMF_DELayoutUTest.F90, line 545
+  Ending Test, file ESMF_DELayoutUTest.F90, line 545
+  Ending Test, file ESMF_DELayoutUTest.F90, line 545
   PASS  Default DELayout Destroy Twice Test, ESMF_DELayoutUTest.F90, line 346
-  Ending Test, file ESMF_DELayoutUTest.F90, line 545
-  Ending Test, file ESMF_DELayoutUTest.F90, line 545
   PASS  DELayout Destroy again through shallow copy Test, ESMF_DELayoutUTest.F90
  , line 353
-  Ending Test, file ESMF_DELayoutUTest.F90, line 545
   PASS  DELayout Destroy again through shallow copy Test, ESMF_DELayoutUTest.F90
  , line 360
   PASS  DELayout with petList Create Test, ESMF_DELayoutUTest.F90, line 368
@@ -473,9 +473,9 @@ ncores = 4
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x8c3020
+vm located at: 0x1ea8020
 npets = 4, mypet=0
-  pth_mutex =		 0x8fbf80
+  pth_mutex =		 0x1ee2fa0
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 0
@@ -502,9 +502,9 @@ ncores = 4
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x8c3020
+vm located at: 0x1ea8020
 npets = 4, mypet=0
-  pth_mutex =		 0x8fbf80
+  pth_mutex =		 0x1ee2fa0
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 0
@@ -542,7 +542,7 @@ ncores = 4
   PASS  Allocate serialization buffer, ESMF_DELayoutUTest.F90, line 522
   PASS  Serialization DELayout data, ESMF_DELayoutUTest.F90, line 537
   Ending Test, file ESMF_DELayoutUTest.F90, line 545
-  PET           0  Test Elapsed Time    2.86600000000000       msec.
-  PET           1  Test Elapsed Time    3.79600000000000       msec.
-  PET           3  Test Elapsed Time    3.85500000000000       msec.
-  PET           2  Test Elapsed Time    4.07900000000000       msec.
+  PET           1  Test Elapsed Time    3.82500000000000       msec.
+  PET           2  Test Elapsed Time    3.86200000000000       msec.
+  PET           3  Test Elapsed Time    3.87500000000000       msec.
+  PET           0  Test Elapsed Time    3.15600000000000       msec.
