@@ -1,10 +1,10 @@
   Beginning Test, file ESMF_CalRangeUTest.F90, line 95
-  Beginning Test, file ESMF_CalRangeUTest.F90, line 95
   NUMBER_OF_PROCESSORS           4
   Beginning Test, file ESMF_CalRangeUTest.F90, line 95
   NUMBER_OF_PROCESSORS           4
   Beginning Test, file ESMF_CalRangeUTest.F90, line 95
   NUMBER_OF_PROCESSORS           4
+  Beginning Test, file ESMF_CalRangeUTest.F90, line 95
   NUMBER_OF_PROCESSORS           4
   PASS  Gregorian/Fliegel Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 176
   PASS  Gregorian/Fliegel Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 176
@@ -17,6 +17,8 @@
   PASS  Gregorian/Fliegel High Range Test, ESMF_CalRangeUTest.F90, line 233
   PASS  Gregorian/Fliegel High Range Test, ESMF_CalRangeUTest.F90, line 233
   PASS  Gregorian/Fliegel High Range Test, ESMF_CalRangeUTest.F90, line 233
+  PASS  Julian/Hatcher Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 268
+  PASS  Julian/Hatcher Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 281
   PASS  Gregorian/Fliegel High Range Test, ESMF_CalRangeUTest.F90, line 233
   PASS  Julian/Hatcher Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 268
   PASS  Julian/Hatcher Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 281
@@ -24,8 +26,6 @@
   PASS  Julian/Hatcher Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 281
   PASS  Julian/Hatcher Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 268
   PASS  Julian/Hatcher Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 281
-  PASS  Julian/Hatcher Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 268
-  PASS  Julian/Hatcher Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 281
   PASS  Julian/Hatcher High Range Test, ESMF_CalRangeUTest.F90, line 326
   PASS  Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 380
   PASS  Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 430
@@ -50,30 +50,7 @@
   PASS  Modified Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 486
   PASS  Modified Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 538
   Ending Test, file ESMF_CalRangeUTest.F90, line 550
-  PET           3  Test Elapsed Time    1267.5829999999999       msec.
-  PET           1  Test Elapsed Time    1281.0150000000001       msec.
-  PET           2  Test Elapsed Time    1239.5650000000001       msec.
-  PET           0  Test Elapsed Time    1258.1489999999999       msec.
---------------------------------------------------------------------------
-mpirun has exited due to process rank 1 with PID 0 on
-node r11i3n24 exiting improperly. There are three reasons this could occur:
-
-1. this process did not call "init" before exiting, but others in
-the job did. This can cause a job to hang indefinitely while it waits
-for all processes to call "init". By rule, if one process calls "init",
-then ALL processes must call "init" prior to termination.
-
-2. this process called "init", but exited without calling "finalize".
-By rule, all processes that call "init" MUST call "finalize" prior to
-exiting or it will be considered an "abnormal termination"
-
-3. this process called "MPI_Abort" or "orte_abort" and the mca parameter
-orte_create_session_dirs is set to false. In this case, the run-time cannot
-detect that the abort call was an abnormal termination. Hence, the only
-error message you will receive is this one.
-
-This may have caused other processes in the application to be
-terminated by signals sent by mpirun (as reported here).
-
-You can avoid this message by specifying -quiet on the mpirun command line.
---------------------------------------------------------------------------
+  PET           1  Test Elapsed Time    1237.3579999999999       msec.
+  PET           0  Test Elapsed Time    1257.1230000000000       msec.
+  PET           2  Test Elapsed Time    1241.7310000000000       msec.
+  PET           3  Test Elapsed Time    1314.0409999999997       msec.
