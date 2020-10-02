@@ -60,48 +60,51 @@
   PASS  Gather() Test for ESMF_KIND_R8, ESMF_VMGatherUTest.F90, line 154
   PASS  Verifying farray1 data after Gather() Test for ESMF_KIND_R8, ESMF_VMGatherUTest.F90, line 171
   PASS  Verifying farray1 data after Gather() Test for ESMF_KIND_R8, ESMF_VMGatherUTest.F90, line 171
- contents after gather (should be 1.,2.,... at localPet=petCount-1 , 0. elsewhere), :
-  PASS  Verifying farray1 data after Gather() Test for ESMF_KIND_R8, ESMF_VMGatherUTest.F90, line 171
- contents after gather (should be 1.,2.,... at localPet=petCount-1 , 0. elsewhere), :
   PASS  Verifying farray1 data after Gather() Test for ESMF_KIND_R8, ESMF_VMGatherUTest.F90, line 171
  contents after gather (should be 1.,2.,... at localPet=petCount-1 , 0. elsewhere), :
  contents after gather (should be 1.,2.,... at localPet=petCount-1 , 0. elsewhere), :
-           2  farray1:    0.0000000000000000     
-           2  farray1:    0.0000000000000000     
-           2  farray1:    0.0000000000000000     
-           2  farray1:    0.0000000000000000     
-           2  farray1:    0.0000000000000000     
-           2  farray1:    0.0000000000000000     
-           2  farray1:    0.0000000000000000     
-           2  farray1:    0.0000000000000000     
+  PASS  Verifying farray1 data after Gather() Test for ESMF_KIND_R8, ESMF_VMGatherUTest.F90, line 171
+ contents after gather (should be 1.,2.,... at localPet=petCount-1 , 0. elsewhere), :
            1  farray1:    0.0000000000000000     
            1  farray1:    0.0000000000000000     
            1  farray1:    0.0000000000000000     
            1  farray1:    0.0000000000000000     
-           0  farray1:    0.0000000000000000     
-           0  farray1:    0.0000000000000000     
-           0  farray1:    0.0000000000000000     
-           0  farray1:    0.0000000000000000     
-           0  farray1:    0.0000000000000000     
-           0  farray1:    0.0000000000000000     
-           0  farray1:    0.0000000000000000     
-           0  farray1:    0.0000000000000000     
+           1  farray1:    0.0000000000000000     
+           1  farray1:    0.0000000000000000     
+           1  farray1:    0.0000000000000000     
+           2  farray1:    0.0000000000000000     
+           2  farray1:    0.0000000000000000     
+           2  farray1:    0.0000000000000000     
+           2  farray1:    0.0000000000000000     
+           2  farray1:    0.0000000000000000     
+           2  farray1:    0.0000000000000000     
+           2  farray1:    0.0000000000000000     
+           2  farray1:    0.0000000000000000     
+ contents after gather (should be 1.,2.,... at localPet=petCount-1 , 0. elsewhere), :
            3  farray1:    1.0000000000000000     
            3  farray1:    2.0000000000000000     
            3  farray1:    3.0000000000000000     
            3  farray1:    4.0000000000000000     
            3  farray1:    5.0000000000000000     
+           0  farray1:    0.0000000000000000     
+           0  farray1:    0.0000000000000000     
+           0  farray1:    0.0000000000000000     
+           0  farray1:    0.0000000000000000     
+           0  farray1:    0.0000000000000000     
+           0  farray1:    0.0000000000000000     
+           0  farray1:    0.0000000000000000     
+           0  farray1:    0.0000000000000000     
            3  farray1:    6.0000000000000000     
            1  farray1:    0.0000000000000000     
-           1  farray1:    0.0000000000000000     
-           1  farray1:    0.0000000000000000     
+ contents after gather (should be localPet*2+1, localPet*2+2):
+           1  farray2:    3.0000000000000000     
  contents after gather (should be localPet*2+1, localPet*2+2):
            2  farray2:    5.0000000000000000     
            2  farray2:    6.0000000000000000     
-  PASS  Verifying farray2 data after Gather() Test for ESMF_KIND_R8, ESMF_VMGatherUTest.F90, line 193
  contents after gather (should be localPet*2+1, localPet*2+2):
            0  farray2:    1.0000000000000000     
            0  farray2:    2.0000000000000000     
+  PASS  Verifying farray2 data after Gather() Test for ESMF_KIND_R8, ESMF_VMGatherUTest.F90, line 193
   PASS  Verifying farray2 data after Gather() Test for ESMF_KIND_R8, ESMF_VMGatherUTest.F90, line 193
   PASS  Gather() Test for ESMF_KIND_R4, ESMF_VMGatherUTest.F90, line 204
   PASS  Verifying f4array1 data after Gather() Test for ESMF_KIND_R4, ESMF_VMGatherUTest.F90, line 221
@@ -225,9 +228,6 @@
            3  f4array2:    8.00000000    
   PASS  Verifying f4array2 data after GatherV() Test for ESMF_KIND_R4, ESMF_VMGatherUTest.F90, line 419
   Ending Test, file ESMF_VMGatherUTest.F90, line 432
-           1  farray1:    0.0000000000000000     
- contents after gather (should be localPet*2+1, localPet*2+2):
-           1  farray2:    3.0000000000000000     
            1  farray2:    4.0000000000000000     
   PASS  Verifying farray2 data after Gather() Test for ESMF_KIND_R8, ESMF_VMGatherUTest.F90, line 193
   PASS  Gather() Test for ESMF_KIND_R4, ESMF_VMGatherUTest.F90, line 204
@@ -346,7 +346,7 @@
            0  f4array2:    2.00000000    
   PASS  Verifying f4array2 data after GatherV() Test for ESMF_KIND_R4, ESMF_VMGatherUTest.F90, line 419
   Ending Test, file ESMF_VMGatherUTest.F90, line 432
-  PET           2  Test Elapsed Time    7.6620000000000026       msec.
-  PET           0  Test Elapsed Time    7.5309999999999961       msec.
-  PET           3  Test Elapsed Time    7.6800000000000059       msec.
-  PET           1  Test Elapsed Time    8.0210000000000079       msec.
+  PET           0  Test Elapsed Time    7.7059999999999906       msec.
+  PET           3  Test Elapsed Time    8.0619999999999923       msec.
+  PET           2  Test Elapsed Time    7.7260000000000035       msec.
+  PET           1  Test Elapsed Time    7.5880000000000045       msec.
