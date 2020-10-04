@@ -1,11 +1,11 @@
   Beginning Test, file ESMF_InfoArrayUTest.F90, line 72
-  NUMBER_OF_PROCESSORS           4
   Beginning Test, file ESMF_InfoArrayUTest.F90, line 72
   NUMBER_OF_PROCESSORS           4
   Beginning Test, file ESMF_InfoArrayUTest.F90, line 72
   NUMBER_OF_PROCESSORS           4
   Beginning Test, file ESMF_InfoArrayUTest.F90, line 72
   NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
   PASS  ESMF_Info Array Setting/Getting R4, ESMF_InfoArrayUTest.F90, line 104
   PASS  ESMF_Info Array Setting/Getting R4, ESMF_InfoArrayUTest.F90, line 104
   PASS  ESMF_Info Array Setting/Getting R4, ESMF_InfoArrayUTest.F90, line 104
@@ -74,15 +74,46 @@
   PASS  ESMF_Info Get Array with Scalar Conversion Character, ESMF_InfoArrayUTest.F90, line 419
   PASS  ESMF_Info Get Array with Scalar Conversion Character, ESMF_InfoArrayUTest.F90, line 419
   PASS  ESMF_Info Get Array with Scalar Conversion Character, ESMF_InfoArrayUTest.F90, line 419
-  PASS  ESMF_Info Get Array with Scalar Conversion Logical, ESMF_InfoArrayUTest.F90, line 435
-  PASS  ESMF_Info Get Array with Scalar Conversion Logical, ESMF_InfoArrayUTest.F90, line 435
-  PASS  ESMF_Info Get Array with Scalar Conversion Logical, ESMF_InfoArrayUTest.F90, line 435
+At line 2544 of file /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90
+Fortran runtime error: Index '1' of dimension 1 of array 'local_values' above upper bound of 0
+
+Error termination. Backtrace:
+At line 2544 of file /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90
+Fortran runtime error: Index '1' of dimension 1 of array 'local_values' above upper bound of 0
+
+Error termination. Backtrace:
+At line 2544 of file /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90
+Fortran runtime error: Index '1' of dimension 1 of array 'local_values' above upper bound of 0
+
+Error termination. Backtrace:
   PASS  ESMF_Info Get Array with Scalar Conversion Logical, ESMF_InfoArrayUTest.F90, line 435
   Ending Test, file ESMF_InfoArrayUTest.F90, line 443
-  Ending Test, file ESMF_InfoArrayUTest.F90, line 443
-  Ending Test, file ESMF_InfoArrayUTest.F90, line 443
-  Ending Test, file ESMF_InfoArrayUTest.F90, line 443
-  PET           3  Test Elapsed Time    11.167000000000003       msec.
-  PET           1  Test Elapsed Time    11.316000000000006       msec.
-  PET           0  Test Elapsed Time    11.396000000000003       msec.
-  PET           2  Test Elapsed Time    11.630000000000001       msec.
+#0  0x7f5612405a00 in __esmf_infomod_MOD_esmf_infogetarraylg
+	at /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90:2544
+#1  0x40527a in esmf_infoarrayutest
+	at /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/tests/ESMF_InfoArrayUTest.F90:432
+#2  0x405396 in main
+	at /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/tests/ESMF_InfoArrayUTest.F90:29
+#0  0x7ff396bd4a00 in __esmf_infomod_MOD_esmf_infogetarraylg
+	at /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90:2544
+#0  0x7f4b7278da00 in __esmf_infomod_MOD_esmf_infogetarraylg
+	at /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90:2544
+#1  0x40527a in esmf_infoarrayutest
+	at /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/tests/ESMF_InfoArrayUTest.F90:432
+#2  0x405396 in main
+	at /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/tests/ESMF_InfoArrayUTest.F90:29
+#1  0x40527a in esmf_infoarrayutest
+	at /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/tests/ESMF_InfoArrayUTest.F90:432
+#2  0x405396 in main
+	at /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/tests/ESMF_InfoArrayUTest.F90:29
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[42758,1],0]
+  Exit code:    2
+--------------------------------------------------------------------------
