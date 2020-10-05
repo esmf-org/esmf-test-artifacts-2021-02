@@ -27,25 +27,22 @@ PASS Create ESMC_Clock object, ESMC_ClockUTest.C, line 103
 PASS Create ESMC_Clock object, ESMC_ClockUTest.C, line 103
 PASS Create ESMC_Clock object, ESMC_ClockUTest.C, line 103
 Clock ----------------------------------
-name = TEST_CLOCK
 Clock ----------------------------------
 name = TEST_CLOCK
 timeStep = Clock ----------------------------------
 name = TEST_CLOCK
 timeStep = 
-TimeInterval ---------------------------
 Clock ----------------------------------
 name = TEST_CLOCK
 timeStep = 
-TimeInterval ---------------------------
+TimeInterval ---------------------------name = TEST_CLOCK
 timeStep = 
 TimeInterval ---------------------------
 
 TimeInterval ---------------------------
-P0Y0M0DT1H0M0S
-end TimeInterval -----------------------
+TimeInterval ---------------------------
 
-startTime = P0Y0M0DT1H0M0S
+P0Y0M0DT1H0M0S
 end TimeInterval -----------------------
 
 startTime = 
@@ -58,9 +55,16 @@ end TimeInterval -----------------------
 
 startTime = 
 Time -----------------------------------
+Time -----------------------------------
+2006-01-01T00:00:00P0Y0M0DT1H0M0S
+end TimeInterval -----------------------
 
+startTime = 
 Time -----------------------------------
 2006-01-01T00:00:00
+end Time -------------------------------
+
+stopTime = 
 Time -----------------------------------
 2006-01-01T00:00:00
 end Time -------------------------------
@@ -69,10 +73,6 @@ stopTime =
 Time -----------------------------------
 2006-01-01T00:00:00
 end Time -------------------------------
-
-stopTime = 
-Time -----------------------------------
-2006-01-01T01:00:00end Time -------------------------------
 
 stopTime = 
 Time -----------------------------------
@@ -80,22 +80,7 @@ Time -----------------------------------
 end Time -------------------------------
 
 stopTimeEnabled = true
-refTime = Time -----------------------------------
-2006-01-01T01:00:00
-end Time -------------------------------
 
-stopTimeEnabled = true
-refTime = 
-Time -----------------------------------
-
-end Time -------------------------------
-
-stopTimeEnabled = true
-refTime = 
-Time -----------------------------------
-2006-01-01T00:00:00
-end Time -------------------------------
-2006-01-01T00:00:00
 end Time -------------------------------
 
 stopTime = 
@@ -106,10 +91,24 @@ end Time -------------------------------
 stopTimeEnabled = true
 refTime = 
 Time -----------------------------------
+Time -----------------------------------
+2006-01-01T01:00:00
+end Time -------------------------------
+
+stopTimeEnabled = true
+refTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
+2006-01-01T01:00:00
+end Time -------------------------------
+
+stopTimeEnabled = true
+refTime = 
+Time -----------------------------------
 2006-01-01T00:00:00
 end Time -------------------------------
 
-
+currTime = refTime = 
 Time -----------------------------------
 2006-01-01T00:00:00
 end Time -------------------------------
@@ -119,8 +118,16 @@ Time -----------------------------------
 2006-01-01T00:00:00
 end Time -------------------------------
 
-prevTime = 2006-01-01T00:00:00
+2006-01-01T00:00:00
 end Time -------------------------------
+
+currTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
+
+prevTime = 
+Time -----------------------------------end Time -------------------------------
 
 currTime = 
 Time -----------------------------------
@@ -129,8 +136,12 @@ end Time -------------------------------
 
 prevTime = 
 Time -----------------------------------
+2006-01-01T00:00:00
+Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
 
-currTime = 
+prevTime = 
 Time -----------------------------------
 2006-01-01T00:00:00
 end Time -------------------------------
@@ -142,23 +153,10 @@ end Time -------------------------------
 
 advanceCount = 0
 direction = 1
-currTime = 
-Time -----------------------------------
-2006-01-01T00:00:00
-end Time -------------------------------
-
-prevTime = 
-Time -----------------------------------
-
-Time -----------------------------------
-2006-01-01T00:00:00
-end Time -------------------------------
-
-advanceCount = 0
-direction = 1
 userChangedDirection = false
 alarmCount = 0
 alarmList = 
+
 2006-01-01T00:00:00
 end Time -------------------------------
 
@@ -169,13 +167,15 @@ alarmCount = 0
 alarmList = 
 end Clock ------------------------------
 
+
+end Time -------------------------------
+
+advanceCount = 0
+direction = 1
 userChangedDirection = false
 alarmCount = 0
 alarmList = 
 end Clock ------------------------------
-
-2006-01-01T00:00:00
-end Time -------------------------------
 
 advanceCount = 0
 direction = 1
@@ -209,11 +209,11 @@ PASS Get currSimTime in seconds and in hours, ESMC_ClockUTest.C, line 144
 PASS Verify that currSimTime in second units, ESMC_ClockUTest.C, line 151
 PASS Verify that currSimTime in second units, ESMC_ClockUTest.C, line 151
 PASS Verify that currSimTime in second units, ESMC_ClockUTest.C, line 151
-PASS Verify that currSimTime in hour units, ESMC_ClockUTest.C, line 159
 PASS Verify that currSimTime in second units, ESMC_ClockUTest.C, line 151
 PASS Verify that currSimTime in hour units, ESMC_ClockUTest.C, line 159
 PASS Verify that currSimTime in hour units, ESMC_ClockUTest.C, line 159
 PASS Verify that currSimTime in hour units, ESMC_ClockUTest.C, line 159
+PASS Verify that currSimTime in hour units, ESMC_ClockUTest.C, line 159
 PASS Destroy ESMC_Clock object, ESMC_ClockUTest.C, line 168
 PASS Destroy ESMC_Clock object, ESMC_ClockUTest.C, line 168
 PASS Destroy ESMC_Clock object, ESMC_ClockUTest.C, line 168
@@ -226,11 +226,11 @@ Ending Test, file ESMC_ClockUTest.C, line 287
 Ending Test, file ESMC_ClockUTest.C, line 287
 Ending Test, file ESMC_ClockUTest.C, line 287
 Ending Test, file ESMC_ClockUTest.C, line 287
- PET 2 Test Elapsed Time  1.358000 msec.
+ PET 1 Test Elapsed Time  1.417000 msec.
 result = 0
- PET 1 Test Elapsed Time  1.550000 msec.
+ PET 2 Test Elapsed Time  1.578000 msec.
 result = 0
- PET 3 Test Elapsed Time  1.662000 msec.
+ PET 0 Test Elapsed Time  1.662000 msec.
 result = 0
- PET 0 Test Elapsed Time  1.793000 msec.
+ PET 3 Test Elapsed Time  1.716000 msec.
 result = 0
