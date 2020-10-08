@@ -160,7 +160,7 @@ jobs:
           compiler: intel
           comm: intelmpi
 
-  mt-develop-catania-NO-RESULTS:
+  mt-develop-catania-MISSING-ARTIFACTS:
     docker:
       - image: circleci/python
         auth:
@@ -170,8 +170,8 @@ jobs:
       - run-meta-testing:
           branch: develop
           platform: catania
-          compiler: NO
-          comm: RESULTS
+          compiler: MISSING
+          comm: ARTIFACTS
 
 workflows:
 
@@ -202,5 +202,5 @@ workflows:
           name: develop-cheyenne-pgi-openmpi
       - mt-develop-stampede-intel-intelmpi:
           name: develop-stampede-intel-intelmpi
-      - mt-develop-catania-NO-RESULTS:
-          name: develop-catania-NO-RESULTS
+      - mt-develop-catania-MISSING-ARTIFACTS:
+          name: develop-catania-MISSING-ARTIFACTS
