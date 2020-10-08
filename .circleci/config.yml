@@ -14,8 +14,7 @@ commands:
     steps:
       - run:
           name: Checkout Code (esmf-test-scripts)
-           #tdk: revert branch
-          command: git clone --depth 1 --branch bekozi-pytest-summary https://github.com/esmf-org/esmf-test-scripts.git
+          command: git clone --depth 1 https://github.com/esmf-org/esmf-test-scripts.git
       - run:
           name: Checkout Code (esmf-test-artifacts)
           command: git clone --depth 1 --branch ${CIRCLE_BRANCH} https://github.com/esmf-org/esmf-test-artifacts.git
@@ -176,13 +175,13 @@ jobs:
 workflows:
 
   run-meta-testing:
-#    triggers:
-#      - schedule:
-#          cron: "0 6 * * *"
-#          filters:
-#            branches:
-#              only:
-#                - master
+    triggers:
+      - schedule:
+          cron: "0 6 * * *"
+          filters:
+            branches:
+              only:
+                - master
     jobs:
       - mt-develop-bighorn-gfortran-mpich3:
           name: develop-bighorn-gfortran-mpich3
