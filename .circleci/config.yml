@@ -160,6 +160,19 @@ jobs:
           compiler: intel
           comm: intelmpi
 
+  mt-develop-catania-NO-RESULTS:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: NO
+          comm: RESULTS
+
 workflows:
 
   run-meta-testing:
@@ -189,3 +202,5 @@ workflows:
           name: develop-cheyenne-pgi-openmpi
       - mt-develop-stampede-intel-intelmpi:
           name: develop-stampede-intel-intelmpi
+      - mt-develop-catania-NO-RESULTS:
+          name: develop-catania-NO-RESULTS
