@@ -46,6 +46,9 @@ jobs:
   mt-develop-bighorn-gfortran-mpich3:
     docker:
       - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
     steps:
       - run-meta-testing:
           branch: develop
@@ -56,6 +59,9 @@ jobs:
   mt-develop-bighorn-gfortran-openmpi:
     docker:
       - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
     steps:
       - run-meta-testing:
           branch: develop
@@ -63,39 +69,12 @@ jobs:
           compiler: gfortran
           comm: openmpi
 
-  mt-develop-catania-intelclang-mpiuni:
-    docker:
-      - image: circleci/python
-    steps:
-      - run-meta-testing:
-          branch: develop
-          platform: catania
-          compiler: intelclang
-          comm: mpiuni
-
-  mt-develop-catania-intel-mpich3:
-    docker:
-      - image: circleci/python
-    steps:
-      - run-meta-testing:
-          branch: develop
-          platform: catania
-          compiler: intel
-          comm: mpich3
-
-  mt-develop-catania-intel-mpiuni:
-    docker:
-      - image: circleci/python
-    steps:
-      - run-meta-testing:
-          branch: develop
-          platform: catania
-          compiler: intel
-          comm: mpiuni
-
   mt-develop-cheyenne-gfortran-mpich3:
     docker:
       - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
     steps:
       - run-meta-testing:
           branch: develop
@@ -106,6 +85,9 @@ jobs:
   mt-develop-cheyenne-gfortran-openmpi:
     docker:
       - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
     steps:
       - run-meta-testing:
           branch: develop
@@ -116,6 +98,9 @@ jobs:
   mt-develop-cheyenne-intel-intelmpi:
     docker:
       - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
     steps:
       - run-meta-testing:
           branch: develop
@@ -126,6 +111,9 @@ jobs:
   mt-develop-cheyenne-intel-mpt:
     docker:
       - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
     steps:
       - run-meta-testing:
           branch: develop
@@ -136,6 +124,9 @@ jobs:
   mt-develop-cheyenne-intel-openmpi:
     docker:
       - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
     steps:
       - run-meta-testing:
           branch: develop
@@ -146,6 +137,9 @@ jobs:
   mt-develop-cheyenne-pgi-openmpi:
     docker:
       - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
     steps:
       - run-meta-testing:
           branch: develop
@@ -156,6 +150,9 @@ jobs:
   mt-develop-stampede-intel-intelmpi:
     docker:
       - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
     steps:
       - run-meta-testing:
           branch: develop
@@ -166,13 +163,13 @@ jobs:
 workflows:
 
   run-meta-testing:
-    triggers:
-      - schedule:
-          cron: "0 6 * * *"
-          filters:
-            branches:
-              only:
-                - master
+#    triggers:
+#      - schedule:
+#          cron: "0 6 * * *"
+#          filters:
+#            branches:
+#              only:
+#                - master
     jobs:
       - mt-develop-bighorn-gfortran-mpich3:
           name: develop-bighorn-gfortran-mpich3
