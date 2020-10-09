@@ -17,11 +17,11 @@ PASS ArraySpecSet, ESMC_StateUTest.C, line 75
 PASS Set up minIndex, ESMC_StateUTest.C, line 85
 PASS Set up minIndex, ESMC_StateUTest.C, line 85
 PASS Set up minIndex, ESMC_StateUTest.C, line 85
+PASS Set up maxIndex, ESMC_StateUTest.C, line 96
 PASS Set up minIndex, ESMC_StateUTest.C, line 85
 PASS Set up maxIndex, ESMC_StateUTest.C, line 96
 PASS Set up maxIndex, ESMC_StateUTest.C, line 96
 PASS Set up maxIndex, ESMC_StateUTest.C, line 96
-PASS Set up maxIndex, ESMC_StateUTest.C, line 96
 PASS Create 5 x 10 ESMC_DistGrid object, ESMC_StateUTest.C, line 104
 PASS Create 5 x 10 ESMC_DistGrid object, ESMC_StateUTest.C, line 104
 PASS Create 5 x 10 ESMC_DistGrid object, ESMC_StateUTest.C, line 104
@@ -46,24 +46,25 @@ PASS Initialize data an ESMC_Array object, ESMC_StateUTest.C, line 136
 --- ESMCI::Array::print start ---
 --- ESMCI::Array::print start ---
 --- ESMCI::Array::print start ---
- Base name    = array1 Base name    = array1 Base name    = array1 Base name    = array1
+ Base name    =  Base name    = array1 Base name    = array1 Base name    = array1array1
 
- Status: Base = Ready
- Status: Base = Ready,  object =  Status: Base = Ready,  object = Ready
- Proxy        = no
+ Status: Base = 
+ Status: Base = Ready, 
  Status: Base = Ready,  object = Ready
- Proxy        = no
-,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-Ready
+ Proxy        =  Status: Base = Ready,  object = Ready
+ Proxy        = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-
+ object = Ready
+ Proxy        = no
  Root Info (Attributes):
+no
+ Root Info (Attributes):
+no
  Root Info (Attributes):
 {}{}{}{}Array typekind/rank: Integer*4 / 2 
 ~ lower class' values ~
+DistGrid dimCount = 2
 Array typekind/rank: Integer*4 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
@@ -74,48 +75,42 @@ Array typekind/rank: Integer*4 / 2
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
-~ local data in LocalArray for DE 2 ~
 Array typekind/rank: Integer*4 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 3 ~
-DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x1a8ecb0:
+LocalArrayPrint: Array at address 0x852cb0:
 ~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0x22b5c70:
-            rank = 2, typekind = 3, base_addr = 0x22b55f0
-            LocalArrayPrint: Array at address 0x81cc70:
-            rank = 2, typekind = 3, base_addr = 0x81c5f0
-            dim[0] = 1  dim[1] = 10  
-            rank = 2, typekind = 3, base_addr = 0x1a8efe0
+LocalArrayPrint: Array at address 0x1894c70:
+            rank = 2, typekind = 3, ~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0xc04c70:
+            rank = 2, typekind = 3, base_addr = 0xc045f0
+            dim[0] = 1              rank = 2, typekind = 3, base_addr = 0x852fe0
             dim[0] = 2  dim[1] = 10  
-  Integer, *4, Dim 2, Data values:
-dim[0] = 1  dim[1] = 10  
-  Integer, *4, Dim 2, Data values:
-( 1, 1) =  36394384
-( 1, 2) =  0
-( 1, 3) =  1
-  Integer, *4, Dim 2, Data values:
-( 1, 1) =  8504720
-( 1, 2) =  0
-( 1, 3) =  1
-( 1, 4) =  2
-( 1, 5) =  0
-LocalArrayPrint: Array at address 0x22dfc70:
-            rank = 2, typekind = 3, base_addr = 0x22df5f0
+base_addr = 0x18945f0
             dim[0] = 1  dim[1] = 10  
   Integer, *4, Dim 2, Data values:
-( 1, 1) =  36566416
+dim[1] = 10  
+  Integer, *4, Dim 2, Data values:
+( 1, 1) =  12600720
+( 1, 2) =  0
+( 1, 3) =  1
+LocalArrayPrint: Array at address 0x21d6c70:
+            rank = 2, typekind = 3, base_addr = 0x21d65f0
+            dim[0] = 1  dim[1] = 10  
+  Integer, *4, Dim 2, Data values:
+( 1, 1) =  35480976
 ( 1, 2) =  0
 ( 1, 3) =  1
 ( 1, 4) =  2
 ( 1, 5) =  0
 ( 1, 6) =  0
+  Integer, *4, Dim 2, Data values:
 ( 1, 1) =  0
 ( 2, 1) =  0
 ( 1, 2) =  0
@@ -125,6 +120,16 @@ LocalArrayPrint: Array at address 0x22dfc70:
 ( 1, 4) =  0
 ( 2, 4) =  0
 ( 1, 5) =  0
+( 1, 1) =  25773456
+( 1, 2) =  0
+( 1, 3) =  1
+( 1, 4) =  2
+( 1, 5) =  0
+( 1, 6) =  0
+( 1, 7) =  0
+( 1, 8) =  0
+( 1, 9) =  0
+( 1,10) =  0
 ( 1, 4) =  2
 ( 1, 5) =  0
 ( 1, 6) =  0
@@ -134,14 +139,6 @@ LocalArrayPrint: Array at address 0x22dfc70:
 ( 1,10) =  0
 dim 1: [0]: [1 [1 [1, 1] 1] 1]
 dim 2: [1]: [1 [1 [1, 10] 10] 10]
-( 1, 6) =  0
-( 1, 7) =  0
-( 1, 8) =  0
-( 1, 9) =  0
-( 1,10) =  0
-dim 1: [0]: [1 [1 [1, 1] 1] 1]
-dim 2: [1]: [1 [1 [1, 10] 10] 10]
---- ESMCI::Array::print end ---
 ( 1, 7) =  0
 ( 1, 8) =  0
 ( 1, 9) =  0
@@ -158,8 +155,11 @@ dim 2: [1]: [1 [1 [1, 10] 10] 10]
 ( 2, 8) =  0
 ( 1, 9) =  0
 ( 2, 9) =  0
---- ESMCI::Array::print end ---
 ( 1,10) =  0
+dim 1: [0]: [1 [1 [1, 1] 1] 1]
+dim 2: [1]: [1 [1 [1, 10] 10] 10]
+--- ESMCI::Array::print end ---
+--- ESMCI::Array::print end ---
 ( 2,10) =  0
 dim 1: [0]: [1 [1 [1, 2] 2] 2]
 dim 2: [1]: [1 [1 [1, 10] 10] 10]
@@ -170,12 +170,12 @@ PASS Print ESMC_Array object, ESMC_StateUTest.C, line 144
 PASS Print ESMC_Array object, ESMC_StateUTest.C, line 144
 PASS Add an Array to a State object, ESMC_StateUTest.C, line 151
 PASS Add an Array to a State object, ESMC_StateUTest.C, line 151
+PASS Get an array from a state, based on its name, ESMC_StateUTest.C, line 159
 PASS Add an Array to a State object, ESMC_StateUTest.C, line 151
+PASS Get an array from a state, based on its name, ESMC_StateUTest.C, line 159
 PASS Add an Array to a State object, ESMC_StateUTest.C, line 151
 PASS Get an array from a state, based on its name, ESMC_StateUTest.C, line 159
 PASS Get an array from a state, based on its name, ESMC_StateUTest.C, line 159
-PASS Get an array from a state, based on its name, ESMC_StateUTest.C, line 159
-PASS Get an array from a state, based on its name, ESMC_StateUTest.C, line 159
 PASS Compare array stored into and array retrieved from a state, ESMC_StateUTest.C, line 167
 PASS Compare array stored into and array retrieved from a state, ESMC_StateUTest.C, line 167
 PASS Compare array stored into and array retrieved from a state, ESMC_StateUTest.C, line 167
@@ -196,7 +196,7 @@ Ending Test, file ESMC_StateUTest.C, line 200
 Ending Test, file ESMC_StateUTest.C, line 200
 Ending Test, file ESMC_StateUTest.C, line 200
 Ending Test, file ESMC_StateUTest.C, line 200
- PET 0 Test Elapsed Time  2.387000 msec.
- PET 2 Test Elapsed Time  2.387000 msec.
- PET 1 Test Elapsed Time  2.513000 msec.
- PET 3 Test Elapsed Time  2.654000 msec.
+ PET 1 Test Elapsed Time  2.365000 msec.
+ PET 2 Test Elapsed Time  2.655000 msec.
+ PET 3 Test Elapsed Time  2.694000 msec.
+ PET 0 Test Elapsed Time  2.868000 msec.
