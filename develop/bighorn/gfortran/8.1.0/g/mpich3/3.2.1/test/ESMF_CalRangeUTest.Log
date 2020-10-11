@@ -1,188 +1,188 @@
-20201010 024345.770 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20201010 024345.770 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
-20201010 024345.770 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
-20201010 024345.770 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
-20201010 024345.770 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
-20201010 024345.770 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20201010 024345.770 INFO             PET0 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_33-10-gfc95e5a8d3
-20201010 024345.770 INFO             PET0 ESMF library build date/time: "Oct 10 2020" "02:21:29"
-20201010 024345.770 INFO             PET0 ESMF library build location : /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf
-20201010 024345.770 INFO             PET0 ESMF_COMM                   : mpich3
-20201010 024345.770 INFO             PET0 ESMF_NETCDF                 : disabled
-20201010 024345.770 INFO             PET0 ESMF_PNETCDF                : disabled
-20201010 024345.770 INFO             PET0 ESMF_PIO                    : enabled
-20201010 024345.770 INFO             PET0 ESMF_YAMLCPP                : enabled
-20201010 024345.770 INFO             PET0 ESMF_MOAB                   : enabled
-20201010 024345.770 INFO             PET0  Beginning Test, file ESMF_CalRangeUTest.F90, line 95
-20201010 024345.771 INFO             PET0  NUMBER_OF_PROCESSORS           4
-20201010 024346.296 ERROR            PET0 ESMCI_Calendar.C:1032 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Gregorian 2/29/-4800 is before 3/1/-4800.
-20201010 024346.296 ERROR            PET0 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.296 ERROR            PET0 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.296 INFO             PET0  PASS  Gregorian/Fliegel Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 176
-20201010 024346.394 ERROR            PET0 ESMCI_Calendar.C:1409 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=-68570 < -68569, out-of-range for valid conversion to Gregorian date.
-20201010 024346.394 ERROR            PET0 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.394 ERROR            PET0 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.395 INFO             PET0  PASS  Gregorian/Fliegel Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 188
-20201010 024347.456 ERROR            PET0 ESMCI_Time.C:1181 ESMCI::Time::validate() Invalid object  - ; Gregorian time is before -4800/3/1
-20201010 024347.456 ERROR            PET0 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
-20201010 024347.456 ERROR            PET0 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
-20201010 024347.456 INFO             PET0  PASS  Gregorian/Fliegel High Range Test, ESMF_CalRangeUTest.F90, line 233
-20201010 024347.557 ERROR            PET0 ESMCI_Calendar.C:1097 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Julian 2/29/-4712 is before 3/1/-4712.
-20201010 024347.557 ERROR            PET0 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.557 ERROR            PET0 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.557 INFO             PET0  PASS  Julian/Hatcher Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 268
-20201010 024347.557 ERROR            PET0 ESMCI_Calendar.C:1540 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=58 < 59, out-of-range for valid conversion to Julian date.
-20201010 024347.557 ERROR            PET0 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.557 ERROR            PET0 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.557 INFO             PET0  PASS  Julian/Hatcher Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 281
-20201010 024347.781 ERROR            PET0 ESMCI_Time.C:1190 ESMCI::Time::validate() Invalid object  - ; Julian time is before -4712/3/1
-20201010 024347.781 ERROR            PET0 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
-20201010 024347.781 ERROR            PET0 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
-20201010 024347.781 INFO             PET0  PASS  Julian/Hatcher High Range Test, ESMF_CalRangeUTest.F90, line 326
-20201010 024347.781 INFO             PET0  PASS  Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 380
-20201010 024347.781 INFO             PET0  PASS  Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 430
-20201010 024347.781 INFO             PET0  PASS  Modified Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 486
-20201010 024347.781 INFO             PET0  PASS  Modified Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 538
-20201010 024347.781 INFO             PET0  Ending Test, file ESMF_CalRangeUTest.F90, line 550
-20201010 024347.781 INFO             PET0 Finalizing ESMF
-20201010 024345.770 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20201010 024345.770 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
-20201010 024345.770 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
-20201010 024345.770 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
-20201010 024345.770 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
-20201010 024345.770 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20201010 024345.770 INFO             PET1 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_33-10-gfc95e5a8d3
-20201010 024345.770 INFO             PET1 ESMF library build date/time: "Oct 10 2020" "02:21:29"
-20201010 024345.770 INFO             PET1 ESMF library build location : /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf
-20201010 024345.770 INFO             PET1 ESMF_COMM                   : mpich3
-20201010 024345.770 INFO             PET1 ESMF_NETCDF                 : disabled
-20201010 024345.770 INFO             PET1 ESMF_PNETCDF                : disabled
-20201010 024345.770 INFO             PET1 ESMF_PIO                    : enabled
-20201010 024345.770 INFO             PET1 ESMF_YAMLCPP                : enabled
-20201010 024345.770 INFO             PET1 ESMF_MOAB                   : enabled
-20201010 024345.770 INFO             PET1  Beginning Test, file ESMF_CalRangeUTest.F90, line 95
-20201010 024345.771 INFO             PET1  NUMBER_OF_PROCESSORS           4
-20201010 024346.241 ERROR            PET1 ESMCI_Calendar.C:1032 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Gregorian 2/29/-4800 is before 3/1/-4800.
-20201010 024346.241 ERROR            PET1 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.241 ERROR            PET1 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.241 INFO             PET1  PASS  Gregorian/Fliegel Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 176
-20201010 024346.336 ERROR            PET1 ESMCI_Calendar.C:1409 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=-68570 < -68569, out-of-range for valid conversion to Gregorian date.
-20201010 024346.336 ERROR            PET1 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.336 ERROR            PET1 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.336 INFO             PET1  PASS  Gregorian/Fliegel Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 188
-20201010 024347.364 ERROR            PET1 ESMCI_Time.C:1181 ESMCI::Time::validate() Invalid object  - ; Gregorian time is before -4800/3/1
-20201010 024347.364 ERROR            PET1 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
-20201010 024347.364 ERROR            PET1 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
-20201010 024347.364 INFO             PET1  PASS  Gregorian/Fliegel High Range Test, ESMF_CalRangeUTest.F90, line 233
-20201010 024347.460 ERROR            PET1 ESMCI_Calendar.C:1097 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Julian 2/29/-4712 is before 3/1/-4712.
-20201010 024347.460 ERROR            PET1 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.460 ERROR            PET1 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.460 INFO             PET1  PASS  Julian/Hatcher Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 268
-20201010 024347.460 ERROR            PET1 ESMCI_Calendar.C:1540 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=58 < 59, out-of-range for valid conversion to Julian date.
-20201010 024347.460 ERROR            PET1 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.460 ERROR            PET1 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.460 INFO             PET1  PASS  Julian/Hatcher Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 281
-20201010 024347.672 ERROR            PET1 ESMCI_Time.C:1190 ESMCI::Time::validate() Invalid object  - ; Julian time is before -4712/3/1
-20201010 024347.672 ERROR            PET1 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
-20201010 024347.672 ERROR            PET1 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
-20201010 024347.672 INFO             PET1  PASS  Julian/Hatcher High Range Test, ESMF_CalRangeUTest.F90, line 326
-20201010 024347.672 INFO             PET1  PASS  Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 380
-20201010 024347.672 INFO             PET1  PASS  Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 430
-20201010 024347.672 INFO             PET1  PASS  Modified Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 486
-20201010 024347.672 INFO             PET1  PASS  Modified Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 538
-20201010 024347.672 INFO             PET1  Ending Test, file ESMF_CalRangeUTest.F90, line 550
-20201010 024347.672 INFO             PET1 Finalizing ESMF
-20201010 024345.770 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20201010 024345.770 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
-20201010 024345.770 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
-20201010 024345.770 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
-20201010 024345.770 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
-20201010 024345.770 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20201010 024345.770 INFO             PET2 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_33-10-gfc95e5a8d3
-20201010 024345.770 INFO             PET2 ESMF library build date/time: "Oct 10 2020" "02:21:29"
-20201010 024345.770 INFO             PET2 ESMF library build location : /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf
-20201010 024345.770 INFO             PET2 ESMF_COMM                   : mpich3
-20201010 024345.770 INFO             PET2 ESMF_NETCDF                 : disabled
-20201010 024345.770 INFO             PET2 ESMF_PNETCDF                : disabled
-20201010 024345.770 INFO             PET2 ESMF_PIO                    : enabled
-20201010 024345.770 INFO             PET2 ESMF_YAMLCPP                : enabled
-20201010 024345.770 INFO             PET2 ESMF_MOAB                   : enabled
-20201010 024345.770 INFO             PET2  Beginning Test, file ESMF_CalRangeUTest.F90, line 95
-20201010 024345.771 INFO             PET2  NUMBER_OF_PROCESSORS           4
-20201010 024346.236 ERROR            PET2 ESMCI_Calendar.C:1032 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Gregorian 2/29/-4800 is before 3/1/-4800.
-20201010 024346.236 ERROR            PET2 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.236 ERROR            PET2 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.237 INFO             PET2  PASS  Gregorian/Fliegel Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 176
-20201010 024346.326 ERROR            PET2 ESMCI_Calendar.C:1409 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=-68570 < -68569, out-of-range for valid conversion to Gregorian date.
-20201010 024346.326 ERROR            PET2 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.326 ERROR            PET2 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.326 INFO             PET2  PASS  Gregorian/Fliegel Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 188
-20201010 024347.313 ERROR            PET2 ESMCI_Time.C:1181 ESMCI::Time::validate() Invalid object  - ; Gregorian time is before -4800/3/1
-20201010 024347.313 ERROR            PET2 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
-20201010 024347.313 ERROR            PET2 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
-20201010 024347.313 INFO             PET2  PASS  Gregorian/Fliegel High Range Test, ESMF_CalRangeUTest.F90, line 233
-20201010 024347.406 ERROR            PET2 ESMCI_Calendar.C:1097 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Julian 2/29/-4712 is before 3/1/-4712.
-20201010 024347.406 ERROR            PET2 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.406 ERROR            PET2 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.406 INFO             PET2  PASS  Julian/Hatcher Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 268
-20201010 024347.406 ERROR            PET2 ESMCI_Calendar.C:1540 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=58 < 59, out-of-range for valid conversion to Julian date.
-20201010 024347.406 ERROR            PET2 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.406 ERROR            PET2 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.406 INFO             PET2  PASS  Julian/Hatcher Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 281
-20201010 024347.610 ERROR            PET2 ESMCI_Time.C:1190 ESMCI::Time::validate() Invalid object  - ; Julian time is before -4712/3/1
-20201010 024347.610 ERROR            PET2 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
-20201010 024347.610 ERROR            PET2 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
-20201010 024347.610 INFO             PET2  PASS  Julian/Hatcher High Range Test, ESMF_CalRangeUTest.F90, line 326
-20201010 024347.610 INFO             PET2  PASS  Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 380
-20201010 024347.610 INFO             PET2  PASS  Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 430
-20201010 024347.610 INFO             PET2  PASS  Modified Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 486
-20201010 024347.610 INFO             PET2  PASS  Modified Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 538
-20201010 024347.611 INFO             PET2  Ending Test, file ESMF_CalRangeUTest.F90, line 550
-20201010 024347.611 INFO             PET2 Finalizing ESMF
-20201010 024345.770 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20201010 024345.770 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
-20201010 024345.770 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
-20201010 024345.770 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
-20201010 024345.770 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
-20201010 024345.770 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20201010 024345.770 INFO             PET3 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_33-10-gfc95e5a8d3
-20201010 024345.770 INFO             PET3 ESMF library build date/time: "Oct 10 2020" "02:21:29"
-20201010 024345.770 INFO             PET3 ESMF library build location : /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf
-20201010 024345.770 INFO             PET3 ESMF_COMM                   : mpich3
-20201010 024345.770 INFO             PET3 ESMF_NETCDF                 : disabled
-20201010 024345.770 INFO             PET3 ESMF_PNETCDF                : disabled
-20201010 024345.770 INFO             PET3 ESMF_PIO                    : enabled
-20201010 024345.770 INFO             PET3 ESMF_YAMLCPP                : enabled
-20201010 024345.770 INFO             PET3 ESMF_MOAB                   : enabled
-20201010 024345.770 INFO             PET3  Beginning Test, file ESMF_CalRangeUTest.F90, line 95
-20201010 024345.771 INFO             PET3  NUMBER_OF_PROCESSORS           4
-20201010 024346.240 ERROR            PET3 ESMCI_Calendar.C:1032 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Gregorian 2/29/-4800 is before 3/1/-4800.
-20201010 024346.240 ERROR            PET3 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.240 ERROR            PET3 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.240 INFO             PET3  PASS  Gregorian/Fliegel Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 176
-20201010 024346.335 ERROR            PET3 ESMCI_Calendar.C:1409 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=-68570 < -68569, out-of-range for valid conversion to Gregorian date.
-20201010 024346.335 ERROR            PET3 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.335 ERROR            PET3 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024346.335 INFO             PET3  PASS  Gregorian/Fliegel Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 188
-20201010 024347.362 ERROR            PET3 ESMCI_Time.C:1181 ESMCI::Time::validate() Invalid object  - ; Gregorian time is before -4800/3/1
-20201010 024347.362 ERROR            PET3 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
-20201010 024347.362 ERROR            PET3 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
-20201010 024347.362 INFO             PET3  PASS  Gregorian/Fliegel High Range Test, ESMF_CalRangeUTest.F90, line 233
-20201010 024347.459 ERROR            PET3 ESMCI_Calendar.C:1097 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Julian 2/29/-4712 is before 3/1/-4712.
-20201010 024347.459 ERROR            PET3 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.459 ERROR            PET3 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.459 INFO             PET3  PASS  Julian/Hatcher Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 268
-20201010 024347.459 ERROR            PET3 ESMCI_Calendar.C:1540 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=58 < 59, out-of-range for valid conversion to Julian date.
-20201010 024347.459 ERROR            PET3 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.459 ERROR            PET3 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
-20201010 024347.459 INFO             PET3  PASS  Julian/Hatcher Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 281
-20201010 024347.670 ERROR            PET3 ESMCI_Time.C:1190 ESMCI::Time::validate() Invalid object  - ; Julian time is before -4712/3/1
-20201010 024347.670 ERROR            PET3 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
-20201010 024347.670 ERROR            PET3 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
-20201010 024347.670 INFO             PET3  PASS  Julian/Hatcher High Range Test, ESMF_CalRangeUTest.F90, line 326
-20201010 024347.670 INFO             PET3  PASS  Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 380
-20201010 024347.670 INFO             PET3  PASS  Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 430
-20201010 024347.671 INFO             PET3  PASS  Modified Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 486
-20201010 024347.671 INFO             PET3  PASS  Modified Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 538
-20201010 024347.671 INFO             PET3  Ending Test, file ESMF_CalRangeUTest.F90, line 550
-20201010 024347.671 INFO             PET3 Finalizing ESMF
+20201011 024137.810 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20201011 024137.810 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20201011 024137.810 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20201011 024137.810 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20201011 024137.810 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20201011 024137.810 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20201011 024137.810 INFO             PET0 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_33-12-g659f088597
+20201011 024137.810 INFO             PET0 ESMF library build date/time: "Oct 11 2020" "02:20:27"
+20201011 024137.810 INFO             PET0 ESMF library build location : /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf
+20201011 024137.810 INFO             PET0 ESMF_COMM                   : mpich3
+20201011 024137.811 INFO             PET0 ESMF_NETCDF                 : disabled
+20201011 024137.811 INFO             PET0 ESMF_PNETCDF                : disabled
+20201011 024137.811 INFO             PET0 ESMF_PIO                    : enabled
+20201011 024137.811 INFO             PET0 ESMF_YAMLCPP                : enabled
+20201011 024137.811 INFO             PET0 ESMF_MOAB                   : enabled
+20201011 024137.811 INFO             PET0  Beginning Test, file ESMF_CalRangeUTest.F90, line 95
+20201011 024137.811 INFO             PET0  NUMBER_OF_PROCESSORS           4
+20201011 024138.288 ERROR            PET0 ESMCI_Calendar.C:1032 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Gregorian 2/29/-4800 is before 3/1/-4800.
+20201011 024138.288 ERROR            PET0 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.288 ERROR            PET0 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.288 INFO             PET0  PASS  Gregorian/Fliegel Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 176
+20201011 024138.381 ERROR            PET0 ESMCI_Calendar.C:1409 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=-68570 < -68569, out-of-range for valid conversion to Gregorian date.
+20201011 024138.381 ERROR            PET0 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.381 ERROR            PET0 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.381 INFO             PET0  PASS  Gregorian/Fliegel Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 188
+20201011 024139.411 ERROR            PET0 ESMCI_Time.C:1181 ESMCI::Time::validate() Invalid object  - ; Gregorian time is before -4800/3/1
+20201011 024139.411 ERROR            PET0 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
+20201011 024139.411 ERROR            PET0 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
+20201011 024139.411 INFO             PET0  PASS  Gregorian/Fliegel High Range Test, ESMF_CalRangeUTest.F90, line 233
+20201011 024139.507 ERROR            PET0 ESMCI_Calendar.C:1097 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Julian 2/29/-4712 is before 3/1/-4712.
+20201011 024139.507 ERROR            PET0 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.507 ERROR            PET0 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.507 INFO             PET0  PASS  Julian/Hatcher Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 268
+20201011 024139.507 ERROR            PET0 ESMCI_Calendar.C:1540 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=58 < 59, out-of-range for valid conversion to Julian date.
+20201011 024139.507 ERROR            PET0 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.507 ERROR            PET0 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.507 INFO             PET0  PASS  Julian/Hatcher Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 281
+20201011 024139.718 ERROR            PET0 ESMCI_Time.C:1190 ESMCI::Time::validate() Invalid object  - ; Julian time is before -4712/3/1
+20201011 024139.718 ERROR            PET0 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
+20201011 024139.718 ERROR            PET0 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
+20201011 024139.718 INFO             PET0  PASS  Julian/Hatcher High Range Test, ESMF_CalRangeUTest.F90, line 326
+20201011 024139.718 INFO             PET0  PASS  Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 380
+20201011 024139.719 INFO             PET0  PASS  Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 430
+20201011 024139.719 INFO             PET0  PASS  Modified Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 486
+20201011 024139.719 INFO             PET0  PASS  Modified Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 538
+20201011 024139.719 INFO             PET0  Ending Test, file ESMF_CalRangeUTest.F90, line 550
+20201011 024139.719 INFO             PET0 Finalizing ESMF
+20201011 024137.810 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20201011 024137.810 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20201011 024137.810 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20201011 024137.810 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20201011 024137.810 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20201011 024137.810 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20201011 024137.810 INFO             PET1 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_33-12-g659f088597
+20201011 024137.810 INFO             PET1 ESMF library build date/time: "Oct 11 2020" "02:20:27"
+20201011 024137.810 INFO             PET1 ESMF library build location : /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf
+20201011 024137.810 INFO             PET1 ESMF_COMM                   : mpich3
+20201011 024137.811 INFO             PET1 ESMF_NETCDF                 : disabled
+20201011 024137.811 INFO             PET1 ESMF_PNETCDF                : disabled
+20201011 024137.811 INFO             PET1 ESMF_PIO                    : enabled
+20201011 024137.811 INFO             PET1 ESMF_YAMLCPP                : enabled
+20201011 024137.811 INFO             PET1 ESMF_MOAB                   : enabled
+20201011 024137.811 INFO             PET1  Beginning Test, file ESMF_CalRangeUTest.F90, line 95
+20201011 024137.811 INFO             PET1  NUMBER_OF_PROCESSORS           4
+20201011 024138.270 ERROR            PET1 ESMCI_Calendar.C:1032 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Gregorian 2/29/-4800 is before 3/1/-4800.
+20201011 024138.270 ERROR            PET1 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.270 ERROR            PET1 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.270 INFO             PET1  PASS  Gregorian/Fliegel Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 176
+20201011 024138.360 ERROR            PET1 ESMCI_Calendar.C:1409 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=-68570 < -68569, out-of-range for valid conversion to Gregorian date.
+20201011 024138.360 ERROR            PET1 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.360 ERROR            PET1 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.360 INFO             PET1  PASS  Gregorian/Fliegel Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 188
+20201011 024139.364 ERROR            PET1 ESMCI_Time.C:1181 ESMCI::Time::validate() Invalid object  - ; Gregorian time is before -4800/3/1
+20201011 024139.364 ERROR            PET1 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
+20201011 024139.364 ERROR            PET1 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
+20201011 024139.364 INFO             PET1  PASS  Gregorian/Fliegel High Range Test, ESMF_CalRangeUTest.F90, line 233
+20201011 024139.456 ERROR            PET1 ESMCI_Calendar.C:1097 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Julian 2/29/-4712 is before 3/1/-4712.
+20201011 024139.456 ERROR            PET1 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.456 ERROR            PET1 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.456 INFO             PET1  PASS  Julian/Hatcher Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 268
+20201011 024139.456 ERROR            PET1 ESMCI_Calendar.C:1540 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=58 < 59, out-of-range for valid conversion to Julian date.
+20201011 024139.456 ERROR            PET1 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.456 ERROR            PET1 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.456 INFO             PET1  PASS  Julian/Hatcher Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 281
+20201011 024139.663 ERROR            PET1 ESMCI_Time.C:1190 ESMCI::Time::validate() Invalid object  - ; Julian time is before -4712/3/1
+20201011 024139.663 ERROR            PET1 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
+20201011 024139.663 ERROR            PET1 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
+20201011 024139.663 INFO             PET1  PASS  Julian/Hatcher High Range Test, ESMF_CalRangeUTest.F90, line 326
+20201011 024139.663 INFO             PET1  PASS  Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 380
+20201011 024139.663 INFO             PET1  PASS  Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 430
+20201011 024139.663 INFO             PET1  PASS  Modified Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 486
+20201011 024139.663 INFO             PET1  PASS  Modified Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 538
+20201011 024139.663 INFO             PET1  Ending Test, file ESMF_CalRangeUTest.F90, line 550
+20201011 024139.663 INFO             PET1 Finalizing ESMF
+20201011 024137.810 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20201011 024137.810 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20201011 024137.810 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20201011 024137.810 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20201011 024137.810 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20201011 024137.810 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20201011 024137.810 INFO             PET2 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_33-12-g659f088597
+20201011 024137.810 INFO             PET2 ESMF library build date/time: "Oct 11 2020" "02:20:27"
+20201011 024137.810 INFO             PET2 ESMF library build location : /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf
+20201011 024137.810 INFO             PET2 ESMF_COMM                   : mpich3
+20201011 024137.811 INFO             PET2 ESMF_NETCDF                 : disabled
+20201011 024137.811 INFO             PET2 ESMF_PNETCDF                : disabled
+20201011 024137.811 INFO             PET2 ESMF_PIO                    : enabled
+20201011 024137.811 INFO             PET2 ESMF_YAMLCPP                : enabled
+20201011 024137.811 INFO             PET2 ESMF_MOAB                   : enabled
+20201011 024137.811 INFO             PET2  Beginning Test, file ESMF_CalRangeUTest.F90, line 95
+20201011 024137.811 INFO             PET2  NUMBER_OF_PROCESSORS           4
+20201011 024138.262 ERROR            PET2 ESMCI_Calendar.C:1032 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Gregorian 2/29/-4800 is before 3/1/-4800.
+20201011 024138.262 ERROR            PET2 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.262 ERROR            PET2 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.262 INFO             PET2  PASS  Gregorian/Fliegel Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 176
+20201011 024138.353 ERROR            PET2 ESMCI_Calendar.C:1409 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=-68570 < -68569, out-of-range for valid conversion to Gregorian date.
+20201011 024138.353 ERROR            PET2 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.353 ERROR            PET2 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.353 INFO             PET2  PASS  Gregorian/Fliegel Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 188
+20201011 024139.353 ERROR            PET2 ESMCI_Time.C:1181 ESMCI::Time::validate() Invalid object  - ; Gregorian time is before -4800/3/1
+20201011 024139.353 ERROR            PET2 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
+20201011 024139.353 ERROR            PET2 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
+20201011 024139.353 INFO             PET2  PASS  Gregorian/Fliegel High Range Test, ESMF_CalRangeUTest.F90, line 233
+20201011 024139.445 ERROR            PET2 ESMCI_Calendar.C:1097 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Julian 2/29/-4712 is before 3/1/-4712.
+20201011 024139.446 ERROR            PET2 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.446 ERROR            PET2 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.446 INFO             PET2  PASS  Julian/Hatcher Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 268
+20201011 024139.446 ERROR            PET2 ESMCI_Calendar.C:1540 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=58 < 59, out-of-range for valid conversion to Julian date.
+20201011 024139.446 ERROR            PET2 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.446 ERROR            PET2 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.446 INFO             PET2  PASS  Julian/Hatcher Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 281
+20201011 024139.651 ERROR            PET2 ESMCI_Time.C:1190 ESMCI::Time::validate() Invalid object  - ; Julian time is before -4712/3/1
+20201011 024139.651 ERROR            PET2 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
+20201011 024139.651 ERROR            PET2 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
+20201011 024139.651 INFO             PET2  PASS  Julian/Hatcher High Range Test, ESMF_CalRangeUTest.F90, line 326
+20201011 024139.651 INFO             PET2  PASS  Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 380
+20201011 024139.651 INFO             PET2  PASS  Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 430
+20201011 024139.651 INFO             PET2  PASS  Modified Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 486
+20201011 024139.651 INFO             PET2  PASS  Modified Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 538
+20201011 024139.651 INFO             PET2  Ending Test, file ESMF_CalRangeUTest.F90, line 550
+20201011 024139.651 INFO             PET2 Finalizing ESMF
+20201011 024137.810 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20201011 024137.810 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20201011 024137.810 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20201011 024137.810 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20201011 024137.810 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20201011 024137.810 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20201011 024137.810 INFO             PET3 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_33-12-g659f088597
+20201011 024137.810 INFO             PET3 ESMF library build date/time: "Oct 11 2020" "02:20:27"
+20201011 024137.810 INFO             PET3 ESMF library build location : /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf
+20201011 024137.810 INFO             PET3 ESMF_COMM                   : mpich3
+20201011 024137.811 INFO             PET3 ESMF_NETCDF                 : disabled
+20201011 024137.811 INFO             PET3 ESMF_PNETCDF                : disabled
+20201011 024137.811 INFO             PET3 ESMF_PIO                    : enabled
+20201011 024137.811 INFO             PET3 ESMF_YAMLCPP                : enabled
+20201011 024137.811 INFO             PET3 ESMF_MOAB                   : enabled
+20201011 024137.811 INFO             PET3  Beginning Test, file ESMF_CalRangeUTest.F90, line 95
+20201011 024137.811 INFO             PET3  NUMBER_OF_PROCESSORS           4
+20201011 024138.267 ERROR            PET3 ESMCI_Calendar.C:1032 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Gregorian 2/29/-4800 is before 3/1/-4800.
+20201011 024138.267 ERROR            PET3 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.267 ERROR            PET3 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.267 INFO             PET3  PASS  Gregorian/Fliegel Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 176
+20201011 024138.355 ERROR            PET3 ESMCI_Calendar.C:1409 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=-68570 < -68569, out-of-range for valid conversion to Gregorian date.
+20201011 024138.355 ERROR            PET3 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.355 ERROR            PET3 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024138.356 INFO             PET3  PASS  Gregorian/Fliegel Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 188
+20201011 024139.336 ERROR            PET3 ESMCI_Time.C:1181 ESMCI::Time::validate() Invalid object  - ; Gregorian time is before -4800/3/1
+20201011 024139.336 ERROR            PET3 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
+20201011 024139.336 ERROR            PET3 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
+20201011 024139.336 INFO             PET3  PASS  Gregorian/Fliegel High Range Test, ESMF_CalRangeUTest.F90, line 233
+20201011 024139.428 ERROR            PET3 ESMCI_Calendar.C:1097 ESMCI::Calendar::convertToTime() Input argument out of range  - ; Julian 2/29/-4712 is before 3/1/-4712.
+20201011 024139.428 ERROR            PET3 ESMCI_Time.C:333 ESMCI::Time::set() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.428 ERROR            PET3 ESMF_Time.F90:1369 ESMF_TimeSet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.428 INFO             PET3  PASS  Julian/Hatcher Low Range (convert to time) Test, ESMF_CalRangeUTest.F90, line 268
+20201011 024139.428 ERROR            PET3 ESMCI_Calendar.C:1540 ESMCI::Calendar::convertToDate() Input argument out of range  - ; Julian Day: d=58 < 59, out-of-range for valid conversion to Julian date.
+20201011 024139.428 ERROR            PET3 ESMCI_Time.C:473 ESMCI::Time::get() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.428 ERROR            PET3 ESMF_Time.F90:837 ESMF_TimeGet() Input argument out of range  - Internal subroutine call returned Error
+20201011 024139.428 INFO             PET3  PASS  Julian/Hatcher Low Range (convert to date) Test, ESMF_CalRangeUTest.F90, line 281
+20201011 024139.632 ERROR            PET3 ESMCI_Time.C:1190 ESMCI::Time::validate() Invalid object  - ; Julian time is before -4712/3/1
+20201011 024139.632 ERROR            PET3 ESMCI_Time.C:386 ESMCI::Time::set() Invalid object  - Internal subroutine call returned Error
+20201011 024139.632 ERROR            PET3 ESMF_Time.F90:1369 ESMF_TimeSet() Invalid object  - Internal subroutine call returned Error
+20201011 024139.632 INFO             PET3  PASS  Julian/Hatcher High Range Test, ESMF_CalRangeUTest.F90, line 326
+20201011 024139.632 INFO             PET3  PASS  Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 380
+20201011 024139.632 INFO             PET3  PASS  Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 430
+20201011 024139.633 INFO             PET3  PASS  Modified Julian Day Low Range Test, ESMF_CalRangeUTest.F90, line 486
+20201011 024139.633 INFO             PET3  PASS  Modified Julian Day High Range Test, ESMF_CalRangeUTest.F90, line 538
+20201011 024139.633 INFO             PET3  Ending Test, file ESMF_CalRangeUTest.F90, line 550
+20201011 024139.633 INFO             PET3 Finalizing ESMF
