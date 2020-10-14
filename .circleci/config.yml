@@ -159,7 +159,7 @@ jobs:
           compiler: intel
           comm: intelmpi
 
-  mt-develop-catania-MISSING-ARTIFACTS:
+  mt-develop-catania-gfortran-mpiuni:
     docker:
       - image: circleci/python
         auth:
@@ -169,9 +169,61 @@ jobs:
       - run-meta-testing:
           branch: develop
           platform: catania
-          compiler: MISSING
-          comm: ARTIFACTS
-
+          compiler: gfortran
+          comm: mpiuni
+          
+mt-develop-catania-gfortran-mpich3:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: gfortran
+          comm: mpich3
+          
+mt-develop-catania-intel-mpiuni:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: intel
+          comm: mpiuni
+          
+mt-develop-catania-intel-mpich3:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: intel
+          comm: mpich3
+          
+mt-develop-catania-intelclang-mpiuni:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: intelclang
+          comm: mpiuni    
+          
 workflows:
 
   run-meta-testing:
@@ -201,5 +253,13 @@ workflows:
           name: develop-cheyenne-pgi-openmpi
       - mt-develop-stampede-intel-intelmpi:
           name: develop-stampede-intel-intelmpi
-      - mt-develop-catania-MISSING-ARTIFACTS:
-          name: develop-catania-MISSING-ARTIFACTS
+      - mt-develop-catania-gfortran-mpiuni:
+          name: develop-catania-gfortran-mpiuni
+      - mt-develop-catania-gfortran-mpich3:
+          name: develop-catania-gfortran-mpich3
+      - mt-develop-catania-intel-mpiuni:
+          name: develop-catania-intel-mpiuni
+      - mt-develop-catania-intel-mpich3:
+          name: develop-catania-intel-mpich3
+      - mt-develop-catania-intelclang-mpiuni:
+          name: develop-catania-intelclang-mpiuni
