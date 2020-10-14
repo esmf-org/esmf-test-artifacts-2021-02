@@ -159,19 +159,6 @@ jobs:
           compiler: intel
           comm: intelmpi
 
-  mt-develop-catania-gfortran-mpiuni:
-    docker:
-      - image: circleci/python
-        auth:
-          username: $ESMF_DOCKER_USERNAME
-          password: $ESMF_DOCKER_PASSWORD
-    steps:
-      - run-meta-testing:
-          branch: develop
-          platform: catania
-          compiler: gfortran
-          comm: mpiuni
-          
   mt-develop-catania-gfortran-mpich3:
     docker:
       - image: circleci/python
@@ -184,6 +171,19 @@ jobs:
           platform: catania
           compiler: gfortran
           comm: mpich3
+          
+  mt-develop-catania-gfortran-mpiuni:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: gfortran
+          comm: mpiuni
           
   mt-develop-catania-intel-mpiuni:
     docker:
