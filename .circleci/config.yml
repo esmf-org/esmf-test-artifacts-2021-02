@@ -68,6 +68,84 @@ jobs:
           compiler: gfortran
           comm: openmpi
 
+  mt-develop-catania-gfortran-mpich3:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: gfortran
+          comm: mpich3
+
+  mt-develop-catania-gfortran-mpiuni:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: gfortran
+          comm: mpiuni
+
+  mt-develop-catania-gfortran-openmpi:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: gfortran
+          comm: openmpi
+
+  mt-develop-catania-intelclang-mpiuni:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: intelclang
+          comm: mpiuni
+
+  mt-develop-catania-intel-mpich3:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: intel
+          comm: mpich3
+
+  mt-develop-catania-intel-mpiuni:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: catania
+          compiler: intel
+          comm: mpiuni
+
   mt-develop-cheyenne-gfortran-mpich3:
     docker:
       - image: circleci/python
@@ -159,86 +237,26 @@ jobs:
           compiler: intel
           comm: intelmpi
 
-  mt-develop-catania-gfortran-mpich3:
-    docker:
-      - image: circleci/python
-        auth:
-          username: $ESMF_DOCKER_USERNAME
-          password: $ESMF_DOCKER_PASSWORD
-    steps:
-      - run-meta-testing:
-          branch: develop
-          platform: catania
-          compiler: gfortran
-          comm: mpich3
-          
-  mt-develop-catania-gfortran-mpiuni:
-    docker:
-      - image: circleci/python
-        auth:
-          username: $ESMF_DOCKER_USERNAME
-          password: $ESMF_DOCKER_PASSWORD
-    steps:
-      - run-meta-testing:
-          branch: develop
-          platform: catania
-          compiler: gfortran
-          comm: mpiuni
-          
-  mt-develop-catania-intel-mpiuni:
-    docker:
-      - image: circleci/python
-        auth:
-          username: $ESMF_DOCKER_USERNAME
-          password: $ESMF_DOCKER_PASSWORD
-    steps:
-      - run-meta-testing:
-          branch: develop
-          platform: catania
-          compiler: intel
-          comm: mpiuni
-          
-  mt-develop-catania-intel-mpich3:
-    docker:
-      - image: circleci/python
-        auth:
-          username: $ESMF_DOCKER_USERNAME
-          password: $ESMF_DOCKER_PASSWORD
-    steps:
-      - run-meta-testing:
-          branch: develop
-          platform: catania
-          compiler: intel
-          comm: mpich3
-          
-  mt-develop-catania-intelclang-mpiuni:
-    docker:
-      - image: circleci/python
-        auth:
-          username: $ESMF_DOCKER_USERNAME
-          password: $ESMF_DOCKER_PASSWORD
-    steps:
-      - run-meta-testing:
-          branch: develop
-          platform: catania
-          compiler: intelclang
-          comm: mpiuni    
-          
 workflows:
 
   run-meta-testing:
-    triggers:
-      - schedule:
-          cron: "0 6 * * *"
-          filters:
-            branches:
-              only:
-                - master
     jobs:
       - mt-develop-bighorn-gfortran-mpich3:
           name: develop-bighorn-gfortran-mpich3
       - mt-develop-bighorn-gfortran-openmpi:
           name: develop-bighorn-gfortran-openmpi
+      - mt-develop-catania-gfortran-mpich3:
+          name: develop-catania-gfortran-mpich3
+      - mt-develop-catania-gfortran-mpiuni:
+          name: develop-catania-gfortran-mpiuni
+      - mt-develop-catania-gfortran-openmpi:
+          name: develop-catania-gfortran-openmpi
+      - mt-develop-catania-intelclang-mpiuni:
+          name: develop-catania-intelclang-mpiuni
+      - mt-develop-catania-intel-mpich3:
+          name: develop-catania-intel-mpich3
+      - mt-develop-catania-intel-mpiuni:
+          name: develop-catania-intel-mpiuni
       - mt-develop-cheyenne-gfortran-mpich3:
           name: develop-cheyenne-gfortran-mpich3
       - mt-develop-cheyenne-gfortran-openmpi:
@@ -253,13 +271,3 @@ workflows:
           name: develop-cheyenne-pgi-openmpi
       - mt-develop-stampede-intel-intelmpi:
           name: develop-stampede-intel-intelmpi
-      - mt-develop-catania-gfortran-mpiuni:
-          name: develop-catania-gfortran-mpiuni
-      - mt-develop-catania-gfortran-mpich3:
-          name: develop-catania-gfortran-mpich3
-      - mt-develop-catania-intel-mpiuni:
-          name: develop-catania-intel-mpiuni
-      - mt-develop-catania-intel-mpich3:
-          name: develop-catania-intel-mpich3
-      - mt-develop-catania-intelclang-mpiuni:
-          name: develop-catania-intelclang-mpiuni
