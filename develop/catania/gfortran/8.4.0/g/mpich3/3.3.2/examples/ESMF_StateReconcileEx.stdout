@@ -3,13 +3,13 @@
  State Reconcile Example 1: Component Creation
  State Reconcile Example 1: Component Creation
  GridComp Create returned, name = Atmosphere
- GridComp Create returned, name = Ocean
- GridComp Create returned, name = Atmosphere
- GridComp Create returned, name = Ocean
  GridComp Create returned, name = Atmosphere
  GridComp Create returned, name = Atmosphere
  GridComp Create returned, name = Ocean
  GridComp Create returned, name = Ocean
+ GridComp Create returned, name = Atmosphere
+ GridComp Create returned, name = Ocean
+ GridComp Create returned, name = Ocean
  State Create returned, name = Ocn2Atm
  State Example 1 finished
  State Create returned, name = Ocn2Atm
@@ -18,6 +18,9 @@
  State Example 1 finished
  State Create returned, name = Ocn2Atm
  State Example 1 finished
+ ready to set entry point 1
+ ready to set entry point 2
+ ready to call init for comp 1
  ready to set entry point 1
  ready to set entry point 2
  ready to call init for comp 1
@@ -26,9 +29,6 @@
  ready to set entry point 2
  ready to call init for comp 1
  i am comp1_init
- ready to set entry point 1
- ready to set entry point 2
- ready to call init for comp 1
  ready to call init for comp 2
  i am comp2_init
  ready to set entry point 1
@@ -37,6 +37,8 @@
  ready to call init for comp 2
  i am comp2_init
  ready to call init for comp 2
+ State Example 2 finished
+ State before calling StateReconcile()
  State Example 2 finished
  State before calling StateReconcile()
  ready to call init for comp 2
@@ -44,20 +46,12 @@
  State before calling StateReconcile()
  ESMF_StatePrint: (pet 0):
   State name: Ocn2Atm
- State Example 2 finished
- State before calling StateReconcile()
      status: Unspecified intent direction, object count: 0
      reconcile needed: F
+ Base name    = Ocn2Atm
  ESMF_StatePrint: (pet 1):
   State name: Ocn2Atm
- State Example 2 finished
- State before calling StateReconcile()
- ESMF_StatePrint: (pet 3):
-  State name: Ocn2Atm
      status: Unspecified intent direction, object count: 0
- Base name    = Ocn2Atm
-     status: Unspecified intent direction, object count: 0
-     reconcile needed: F
  ESMF_StatePrint: (pet 2):
   State name: Ocn2Atm
      status: Unspecified intent direction, object count: 0
@@ -66,13 +60,19 @@
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
- Base name    = Ocn2Atm
- Status: Base = Ready,      reconcile needed: F
+ State Example 2 finished
+ State before calling StateReconcile()
+ ESMF_StatePrint: (pet 3):
+  State name: Ocn2Atm
+     status: Unspecified intent direction, object count: 0
+     reconcile needed: F
  Base name    = Ocn2Atm
  Status: Base =  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
- object = Ready
+     reconcile needed: F
+ Base name    = Ocn2Atm
+ Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
 Ready,  object = Ready
@@ -82,34 +82,34 @@ Ready,  object = Ready
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-#0  0x1119cd48d
-#1  0x1119cc8c3
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x1120ea48d
+#1  0x1120e98c3
 #2  0x7fff688abb5c
 
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-#0  0x10891348d
-#1  0x1089128c3
+#0  0x1138b448d
+#1  0x1138b38c3
+#2  0x7fff688abb5c
+#0  0x11251e48d
+#1  0x11251d8c3
 #2  0x7fff688abb5c
 
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-
-Program received signal SIGABRT: Process abort signal.
-
-Backtrace for this error:
-#0  0x10804648d
-#1  0x1080458c3
-#2  0x7fff688abb5c
-#0  0x1092e948d
-#1  0x1092e88c3
+#0  0x10aab748d
+#1  0x10aab68c3
 #2  0x7fff688abb5c
 
 ===================================================================================
 =   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
-=   PID 97915 RUNNING AT cgdm-catania
+=   PID 23399 RUNNING AT cgdm-catania
 =   EXIT CODE: 6
 =   CLEANING UP REMAINING PROCESSES
 =   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
