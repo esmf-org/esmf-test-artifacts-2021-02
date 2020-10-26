@@ -68,6 +68,19 @@ jobs:
           compiler: gfortran
           comm: openmpi
 
+  mt-develop-bighorn-intel-mpiuni:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: bighorn
+          compiler: intel
+          comm: mpiuni
+          
   mt-develop-catania-gfortran-mpich3:
     docker:
       - image: circleci/python
@@ -245,6 +258,8 @@ workflows:
           name: develop-bighorn-gfortran-mpich3
       - mt-develop-bighorn-gfortran-openmpi:
           name: develop-bighorn-gfortran-openmpi
+      - mt-develop-bighorn-intel-mpiuni:
+          name: develop-bighorn-intel-mpiuni
       - mt-develop-catania-gfortran-mpich3:
           name: develop-catania-gfortran-mpich3
       - mt-develop-catania-gfortran-mpiuni:
