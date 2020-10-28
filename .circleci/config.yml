@@ -249,7 +249,59 @@ jobs:
           platform: stampede
           compiler: intel
           comm: intelmpi
-
+  
+  mt-develop-izumi-intel-mpiuni:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: izumi
+          compiler: intel
+          comm: mpiuni
+  
+  mt-develop-izumi-intel-openmpi:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: izumi
+          compiler: intel
+          comm: openmpi
+          
+  mt-develop-izumi-gfortran-openmpi:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: izumi
+          compiler: gfortran
+          comm: openmpi
+  
+  mt-develop-izumi-gfortran-mpiuni:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - run-meta-testing:
+          branch: develop
+          platform: izumi
+          compiler: gfortran
+          comm: mpiuni
+          
 workflows:
 
   run-meta-testing:
@@ -286,3 +338,11 @@ workflows:
           name: develop-cheyenne-pgi-openmpi
       - mt-develop-stampede-intel-intelmpi:
           name: develop-stampede-intel-intelmpi
+      - mt-develop-izumi-gfortran-mpiuni:
+          name: develop-izumi-gfortran-mpiuni
+      - mt-develop-izumi-gfortran-openmpi:
+          name: develop-izumi-gfortran-openmpi
+      - mt-develop-izumi-intel-mpiuni:
+          name: develop-izumi-intel-mpiuni
+      - mt-develop-izumi-intel-openmpi:
+          name: develop-izumi-intel-openmpi
