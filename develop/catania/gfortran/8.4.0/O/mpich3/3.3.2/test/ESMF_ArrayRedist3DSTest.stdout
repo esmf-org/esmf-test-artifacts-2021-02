@@ -13,17 +13,15 @@
  --------------------------------------- 
  Start of  System Test ESMF_ArrayRedistSTest
  --------------------------------------- 
+ Start of  System Test ESMF_ArrayRedistSTest
+ --------------------------------------- 
+ --------------------------------------- 
  --------------------------------------- 
  Start of  System Test ESMF_ArrayRedistSTest
  --------------------------------------- 
  --------------------------------------- 
  Start of  System Test ESMF_ArrayRedistSTest
  --------------------------------------- 
- --------------------------------------- 
- Start of  System Test ESMF_ArrayRedistSTest
- --------------------------------------- 
- Created component user model 1rc =           0
- Created component user model 2rc =           0
  Created component user model 1rc =           0
  Created component user model 2rc =           0
  Created component user model 1rc =           0
@@ -40,8 +38,8 @@
  Created component user model 2rc =           0
  Created component user one-way coupler, rc =           0
  Comp Creates finished
- Created component user one-way coupler, rc =           0
- Comp Creates finished
+ Created component user model 1rc =           0
+ Created component user model 2rc =           0
  Created component user one-way coupler, rc =           0
  Comp Creates finished
  Created component user one-way coupler, rc =           0
@@ -59,19 +57,14 @@
  Created component user one-way coupler, rc =           0
  Comp Creates finished
  Comp1 SetVM finished, rc=            0
+ Created component user one-way coupler, rc =           0
+ Comp Creates finished
  Comp1 SetVM finished, rc=            0
  Comp1 SetVM finished, rc=            0
  Comp1 SetVM finished, rc=            0
  User Comp1 Register starting
  Registered Initialize, Run, and Finalize routines
  User Comp1 Register returning
- User Comp1 Register starting
- Registered Initialize, Run, and Finalize routines
- User Comp1 Register returning
- Comp1 SetServices finished, rc=            0
- Comp2 SetVM finished, rc=            0
- Comp2 SetServices finished, rc=            0
- Cpl SetVM finished, rc=            0
  User Comp1 Register starting
  Registered Initialize, Run, and Finalize routines
  User Comp1 Register returning
@@ -81,21 +74,11 @@
  User Comp1 Register returning
  Comp1 SetServices finished, rc=            0
  Comp2 SetVM finished, rc=            0
- User Comp1 Register starting
- Registered Initialize, Run, and Finalize routines
- User Comp1 Register returning
- Comp1 SetServices finished, rc=            0
- User Comp1 Register starting
- Registered Initialize, Run, and Finalize routines
- User Comp1 Register returning
  Comp1 SetServices finished, rc=            0
  Comp2 SetVM finished, rc=            0
  User Comp1 Register starting
  Registered Initialize, Run, and Finalize routines
  User Comp1 Register returning
- Comp1 SetServices finished, rc=            0
- Comp2 SetVM finished, rc=            0
- Comp1 SetServices finished, rc=            0
  Comp2 SetVM finished, rc=            0
  Comp2 SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
@@ -106,12 +89,29 @@
  Comp2 SetVM finished, rc=            0
  Comp2 SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
+ User Comp1 Register starting
+ Registered Initialize, Run, and Finalize routines
+ User Comp1 Register returning
+ Comp1 SetServices finished, rc=            0
+ Comp2 SetVM finished, rc=            0
+ User Comp1 Register starting
+ Registered Initialize, Run, and Finalize routines
+ User Comp1 Register returning
+ Comp1 SetServices finished, rc=            0
+ Comp2 SetVM finished, rc=            0
+ Comp1 SetServices finished, rc=            0
+ Comp2 SetVM finished, rc=            0
+ User Comp1 Register starting
+ Registered Initialize, Run, and Finalize routines
+ User Comp1 Register returning
+ Comp1 SetServices finished, rc=            0
  Comp2 SetVM finished, rc=            0
  Comp2 SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
  Comp2 SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
- Comp2 SetVM finished, rc=            0
+ Comp2 SetServices finished, rc=            0
+ Cpl SetVM finished, rc=            0
  Comp2 SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
  User Comp2 Register starting
@@ -148,16 +148,16 @@
  Registered Initialize, Run, and Finalize routines
  User Coupler Register returning
  Cpl SetServices finished, rc=            0
- User Coupler Register starting
- Registered Initialize, Run, and Finalize routines
- User Coupler Register returning
- Cpl SetServices finished, rc=            0
+ User Comp1 Init starting
  User Coupler Register starting
  Registered Initialize, Run, and Finalize routines
  User Coupler Register returning
  Cpl SetServices finished, rc=            0
  User Comp1 Init starting
- User Comp1 Init starting
+ User Coupler Register starting
+ Registered Initialize, Run, and Finalize routines
+ User Coupler Register returning
+ Cpl SetServices finished, rc=            0
  User Comp1 Init starting
  User Comp1 Init starting
  User Comp1 Init starting
@@ -169,6 +169,10 @@
  Comp 2 Initialize finished, rc =           0           0
  User Coupler Init starting
  Import State contains            1  items.
+ User Comp1 Init returning
+ Comp 1 Initialize finished, rc =           0           0
+ Comp 2 Initialize finished, rc =           0           0
+ User Coupler Init starting
  User Comp1 Init returning
  Comp 1 Initialize finished, rc =           0           0
  Comp 2 Initialize finished, rc =           0           0
@@ -190,10 +194,6 @@
  User Comp1 Init returning
  Comp 1 Initialize finished, rc =           0           0
  User Comp2 Init starting
- User Comp1 Init returning
- Comp 1 Initialize finished, rc =           0           0
- Comp 2 Initialize finished, rc =           0           0
- User Coupler Init starting
  Import State contains            1  items.
  User Comp1 Init returning
  Comp 1 Initialize finished, rc =           0           0
@@ -203,11 +203,11 @@
  User Comp2 Init returning
  Comp 2 Initialize finished, rc =           0           0
  User Coupler Init starting
- Import State contains            1  items.
  User Comp2 Init returning
  Comp 2 Initialize finished, rc =           0           0
  User Coupler Init starting
  Import State contains            1  items.
+ Import State contains            1  items.
 
 Program received signal SIGABRT: Process abort signal.
 
@@ -216,8 +216,11 @@ Backtrace for this error:
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-#0  0x106af748d
-#1  0x106af68c3
+#0  0x10c79948d
+#1  0x10c7988c3
+#2  0x7fff688abb5c
+#0  0x10957f48d
+#1  0x10957e8c3
 #2  0x7fff688abb5c
 
 Program received signal SIGABRT: Process abort signal.
@@ -243,31 +246,22 @@ Backtrace for this error:
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-#0  0x103fad48d
-#1  0x103fac8c3
+#0  0x110cb448d
+#1  0x110cb38c3
 #2  0x7fff688abb5c
-#0  0x10597148d
-#1  0x1059708c3
+#0  0x10d0e048d
+#1  0x10d0df8c3
 #2  0x7fff688abb5c
-#0  0x107f5648d
-#1  0x107f558c3
+#0  0x10249148d
+#1  0x1024908c3
 #2  0x7fff688abb5c
-#0  0x1022d048d
-#1  0x1022cf8c3
-#2  0x7fff688abb5c
-#0  0x102b9e48d
-#1  0x102b9d8c3
-#2  0x7fff688abb5c
-#0  0x10cb7748d
-#1  0x10cb768c3
-#2  0x7fff688abb5c
-#0  0x111a6748d
-#1  0x111a668c3
+#0  0x10d48448d
+#1  0x10d4838c3
 #2  0x7fff688abb5c
 
 ===================================================================================
 =   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
-=   PID 38350 RUNNING AT cgdm-catania
+=   PID 46802 RUNNING AT cgdm-catania
 =   EXIT CODE: 6
 =   CLEANING UP REMAINING PROCESSES
 =   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
