@@ -1,4 +1,4 @@
-TACC:  Starting up job 6717738 
+TACC:  Starting up job 6725540 
 TACC:  Starting parallel tasks... 
   Beginning Test, file ESMF_NUOPC_UTest.F90, line 224
   Beginning Test, file ESMF_NUOPC_UTest.F90, line 224
@@ -76,38 +76,38 @@ TACC:  Starting parallel tasks...
   PASS  NUOPC_DriverGetComp() Test, ESMF_NUOPC_UTest.F90, line 326
   PASS  NUOPC_DriverGetComp() Test, ESMF_NUOPC_UTest.F90, line 326
   PASS  NUOPC_DriverGetComp() Test, ESMF_NUOPC_UTest.F90, line 326
- NUOPC_DriverPrint for PET:           1
+ NUOPC_DriverPrint for PET:           2
+   Model, Mediator, and Driver components, in the order
+   that they were added to the Driver:
+ NUOPC_DriverPrint for PET:           3
    Model, Mediator, and Driver components, in the order
    that they were added to the Driver:
  NUOPC_DriverPrint for PET:           0
    Model, Mediator, and Driver components, in the order
    that they were added to the Driver:
            1 :  testComp1
-           2 :  testComp2
- NUOPC_DriverPrint for PET:           2
+ NUOPC_DriverPrint for PET:           1
    Model, Mediator, and Driver components, in the order
    that they were added to the Driver:
            1 :  testComp1
            2 :  testComp2
- NUOPC_DriverPrint for PET:           3
-   Model, Mediator, and Driver components, in the order
-   that they were added to the Driver:
-           1 :  testComp1
-           2 :  testComp2
-   Connector components, in the order
            1 :  testComp1
            2 :  testComp2
    Connector components, in the order
    that they were added to the Driver:
            1 :  testComp1-TO-testComp2
+           1 :  testComp1
+           2 :  testComp2
+   Connector components, in the order
+   that they were added to the Driver:
+           1 :  testComp1-TO-testComp2
+           2 :  testComp2
    Connector components, in the order
    that they were added to the Driver:
            1 :  testComp1-TO-testComp2
    Connector components, in the order
    that they were added to the Driver:
            1 :  testComp1-TO-testComp2
-   that they were added to the Driver:
-           1 :  testComp1-TO-testComp2
 NUOPC_RunSequenceArrayPrint: element     1 out of      1
 NUOPC_RunSequenceArrayPrint: element     1 out of      1
 runSeq::
@@ -122,15 +122,15 @@ runSeq::
  runElementPrint:      1     2     1
  runElementPrint:      2     1     1
  runElementPrint:      1     2     1
+ runElementPrint:      2     1     1
  runElementPrint:      2     1     1
  runElementPrint:      1    -1     1
  runElementPrint:      2    -1     1
- runElementPrint:      2     1     1
+ runElementPrint:      1    -1     1
+ runElementPrint:      2    -1     1
  runElementPrint:      1    -1     1
  runElementPrint:      2    -1     1
  runElementPrint:     -1    -1     0
- runElementPrint:      1    -1     1
- runElementPrint:      2    -1     1
  runElementPrint:     -1    -1     0
  runElementPrint:      1    -1     1
  runElementPrint:      2    -1     1
@@ -139,10 +139,10 @@ runSeq::
 ::
 ::
   PASS  NUOPC_DriverPrint() Test, ESMF_NUOPC_UTest.F90, line 334
-  PASS  NUOPC_DriverPrint() Test, ESMF_NUOPC_UTest.F90, line 334
 ::
   PASS  NUOPC_DriverPrint() Test, ESMF_NUOPC_UTest.F90, line 334
 ::
+  PASS  NUOPC_DriverPrint() Test, ESMF_NUOPC_UTest.F90, line 334
   PASS  NUOPC_DriverPrint() Test, ESMF_NUOPC_UTest.F90, line 334
   PASS  NUOPC_DriverGet() slotCount Test, ESMF_NUOPC_UTest.F90, line 342
   PASS  NUOPC_DriverGet() slotCount Test, ESMF_NUOPC_UTest.F90, line 342
@@ -547,13 +547,29 @@ Printing stopTime to stdout:    0  1  1  0 30  0   0
  CompLabel = _uninitialized
  Diagnostic = 0
  FinalizePhaseMap
+ CompLabel = _uninitialized
+ Diagnostic = 0
+ FinalizePhaseMap
  HierarchyProtocol
+ IPDvX
+ HierarchyProtocol
+ IPDvX
+ InitializeDataComplete = false
+ InitializeDataProgress = false
+ InitializePhaseMap
+ InitializeDataComplete = false
+ InitializeDataProgress = false
+ InitializePhaseMap
+ InternalFinalizePhaseMap
  CompLabel = _uninitialized
  Diagnostic = 0
  FinalizePhaseMap
  HierarchyProtocol
  IPDvX
  InitializeDataComplete = false
+ InitializeDataProgress = false
+ InitializePhaseMap
+ InternalFinalizePhaseMap
  CompLabel = _uninitialized
  Diagnostic = 0
  FinalizePhaseMap
@@ -562,27 +578,8 @@ Printing stopTime to stdout:    0  1  1  0 30  0   0
  InitializeDataComplete = false
  InitializeDataProgress = false
  InitializePhaseMap
- CompLabel = _uninitialized
- Diagnostic = 0
- FinalizePhaseMap
- HierarchyProtocol
- IPDvX
- InitializeDataComplete = false
- InitializeDataProgress = false
- InitializePhaseMap
  InternalFinalizePhaseMap
  InternalInitializePhaseMap
- IPDvX
- InitializeDataComplete = false
- InitializeDataProgress = false
- InitializePhaseMap
- InternalFinalizePhaseMap
- InternalInitializePhaseMap
- InternalRunPhaseMap
- Kind = Model
- NestingGeneration =            0
- InitializeDataProgress = false
- InitializePhaseMap
  InternalFinalizePhaseMap
  InternalInitializePhaseMap
  InternalRunPhaseMap
@@ -590,7 +587,6 @@ Printing stopTime to stdout:    0  1  1  0 30  0   0
  NestingGeneration =            0
  Nestling =            0
  Profiling = 0
- InternalFinalizePhaseMap
  InternalInitializePhaseMap
  InternalRunPhaseMap
  Kind = Model
@@ -598,7 +594,13 @@ Printing stopTime to stdout:    0  1  1  0 30  0   0
  Nestling =            0
  Profiling = 0
  RunPhaseMap
- Verbosity = 0
+ InternalInitializePhaseMap
+ InternalRunPhaseMap
+ Kind = Model
+ NestingGeneration =            0
+ Nestling =            0
+ Profiling = 0
+ RunPhaseMap
  InternalRunPhaseMap
  Kind = Model
  NestingGeneration =            0
@@ -606,19 +608,17 @@ Printing stopTime to stdout:    0  1  1  0 30  0   0
  Profiling = 0
  RunPhaseMap
  Verbosity = 0
- myAttribute = test
- Nestling =            0
- Profiling = 0
- RunPhaseMap
- Verbosity = 0
- myAttribute = test
  RunPhaseMap
  Verbosity = 0
  myAttribute = test
   PASS  NUOPC_FreeFormatPrint() for attrFF Test, ESMF_NUOPC_UTest.F90, line 912
+ Verbosity = 0
  myAttribute = test
   PASS  NUOPC_FreeFormatPrint() for attrFF Test, ESMF_NUOPC_UTest.F90, line 912
+ Verbosity = 0
+ myAttribute = test
   PASS  NUOPC_FreeFormatPrint() for attrFF Test, ESMF_NUOPC_UTest.F90, line 912
+ myAttribute = test
   PASS  NUOPC_FreeFormatPrint() for attrFF Test, ESMF_NUOPC_UTest.F90, line 912
   PASS  NUOPC_CompAttributeIngest() for GridComp w/o addFlag Test, ESMF_NUOPC_UT
  est.F90, line 920
@@ -737,13 +737,13 @@ Printing stopTime to stdout:    0  1  1  0 30  0   0
   PASS  NUOPC_GetStateMemberLists() for nested State namespace Test, ESMF_NUOPC_
  UTest.F90, line 1104
 Printing time to stdout:    0  1  1  0  0  0   0
-  PASS  ESMF_TimePrint() Test, ESMF_NUOPC_UTest.F90, line 1114
 Printing time to stdout:    0  1  1  0  0  0   0
   PASS  ESMF_TimePrint() Test, ESMF_NUOPC_UTest.F90, line 1114
 Printing time to stdout:    0  1  1  0  0  0   0
   PASS  ESMF_TimePrint() Test, ESMF_NUOPC_UTest.F90, line 1114
 Printing time to stdout:    0  1  1  0  0  0   0
   PASS  ESMF_TimePrint() Test, ESMF_NUOPC_UTest.F90, line 1114
+  PASS  ESMF_TimePrint() Test, ESMF_NUOPC_UTest.F90, line 1114
   PASS  ESMF_TimePrint() Test, ESMF_NUOPC_UTest.F90, line 1123
   PASS  ESMF_TimePrint() Test, ESMF_NUOPC_UTest.F90, line 1123
   PASS  ESMF_TimePrint() Test, ESMF_NUOPC_UTest.F90, line 1123
@@ -816,9 +816,9 @@ Printing time to stdout:    0  1  1  0  0  0   0
   Ending Test, file ESMF_NUOPC_UTest.F90, line 1253
   Ending Test, file ESMF_NUOPC_UTest.F90, line 1253
   Ending Test, file ESMF_NUOPC_UTest.F90, line 1253
-  PET           0  Test Elapsed Time    341.154000000000       msec.
-  PET           3  Test Elapsed Time    350.957000000000       msec.
-  PET           2  Test Elapsed Time    352.034000000000       msec.
-  PET           1  Test Elapsed Time    355.609000000000       msec.
+  PET           3  Test Elapsed Time    352.090000000000       msec.
+  PET           0  Test Elapsed Time    343.003000000000       msec.
+  PET           1  Test Elapsed Time    352.401000000000       msec.
+  PET           2  Test Elapsed Time    355.958000000000       msec.
 TACC:  Shutdown complete. Exiting. 
-Thu Oct 29 06:51:26 CDT 2020
+Fri Oct 30 07:23:06 CDT 2020
