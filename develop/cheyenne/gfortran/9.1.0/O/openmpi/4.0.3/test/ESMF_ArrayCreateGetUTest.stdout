@@ -20,23 +20,23 @@
   PASS  Create test Array for IsCreated, ESMF_ArrayCreateGetUTest.F90, line 142
   PASS  Testing Array IsCreated for created object, ESMF_ArrayCreateGetUTest.F90, line 149
   PASS  Testing Array IsCreated for created object, ESMF_ArrayCreateGetUTest.F90, line 149
+  PASS  Testing Array IsCreated for created object, ESMF_ArrayCreateGetUTest.F90, line 156
   PASS  Testing Array IsCreated for created object, ESMF_ArrayCreateGetUTest.F90, line 149
+  PASS  Testing Array IsCreated for created object, ESMF_ArrayCreateGetUTest.F90, line 156
   PASS  Testing Array IsCreated for created object, ESMF_ArrayCreateGetUTest.F90, line 149
   PASS  Testing Array IsCreated for created object, ESMF_ArrayCreateGetUTest.F90, line 156
   PASS  Testing Array IsCreated for created object, ESMF_ArrayCreateGetUTest.F90, line 156
-  PASS  Testing Array IsCreated for created object, ESMF_ArrayCreateGetUTest.F90, line 156
-  PASS  Testing Array IsCreated for created object, ESMF_ArrayCreateGetUTest.F90, line 156
   PASS  Destroy test Array for IsCreated, ESMF_ArrayCreateGetUTest.F90, line 163
   PASS  Destroy test Array for IsCreated, ESMF_ArrayCreateGetUTest.F90, line 163
   PASS  Destroy test Array for IsCreated, ESMF_ArrayCreateGetUTest.F90, line 163
   PASS  Destroy test Array for IsCreated, ESMF_ArrayCreateGetUTest.F90, line 163
+  PASS  Testing Array IsCreated for destroyed object, ESMF_ArrayCreateGetUTest.F90, line 170
   PASS  Testing Array IsCreated for destroyed object, ESMF_ArrayCreateGetUTest.F90, line 170
   PASS  Testing Array IsCreated for destroyed object, ESMF_ArrayCreateGetUTest.F90, line 177
   PASS  Testing Array IsCreated for destroyed object, ESMF_ArrayCreateGetUTest.F90, line 170
   PASS  Testing Array IsCreated for destroyed object, ESMF_ArrayCreateGetUTest.F90, line 177
   PASS  Testing Array IsCreated for destroyed object, ESMF_ArrayCreateGetUTest.F90, line 170
   PASS  Testing Array IsCreated for destroyed object, ESMF_ArrayCreateGetUTest.F90, line 177
-  PASS  Testing Array IsCreated for destroyed object, ESMF_ArrayCreateGetUTest.F90, line 170
   PASS  Testing Array IsCreated for destroyed object, ESMF_ArrayCreateGetUTest.F90, line 177
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 185
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 185
@@ -46,7 +46,6 @@
   PASS  Array equality before assignment Test, ESMF_ArrayCreateGetUTest.F90, line 192
   PASS  Array equality before assignment Test, ESMF_ArrayCreateGetUTest.F90, line 192
   PASS  Array equality before assignment Test, ESMF_ArrayCreateGetUTest.F90, line 192
-  PASS  Array assignment and equality Test, ESMF_ArrayCreateGetUTest.F90, line 201
   PASS  Array assignment and equality Test, ESMF_ArrayCreateGetUTest.F90, line 201
   PASS  Array assignment and equality Test, ESMF_ArrayCreateGetUTest.F90, line 201
   PASS  Array assignment and equality Test, ESMF_ArrayCreateGetUTest.F90, line 201
@@ -54,6 +53,7 @@
   PASS  Array equality after destroy Test, ESMF_ArrayCreateGetUTest.F90, line 216
   PASS  Array non-equality after destroy Test, ESMF_ArrayCreateGetUTest.F90, line 224
   PASS  Double ArrayDestroy through alias Test, ESMF_ArrayCreateGetUTest.F90, line 231
+  PASS  Array assignment and equality Test, ESMF_ArrayCreateGetUTest.F90, line 201
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 208
   PASS  Array equality after destroy Test, ESMF_ArrayCreateGetUTest.F90, line 216
   PASS  Array non-equality after destroy Test, ESMF_ArrayCreateGetUTest.F90, line 224
@@ -67,18 +67,125 @@
   PASS  Array non-equality after destroy Test, ESMF_ArrayCreateGetUTest.F90, line 224
   PASS  Double ArrayDestroy through alias Test, ESMF_ArrayCreateGetUTest.F90, line 231
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 rank inconsistency Test, ESMF_ArrayCreateGetUTest.F90, line 240
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 248
+  PASS  ArraySet Test, ESMF_ArrayCreateGetUTest.F90, line 255
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 262
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test w/ ArraySpec, ESMF_ArrayCreateGetUTest.F90, line 276
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test with ArraySpec, ESMF_ArrayCreateGetUTest.F90, line 284
+--- ESMCI::Array::print start ---
+ Base name    = MyArray with ArraySpec
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 0 ~
+LocalArrayPrint: Array at address 0x25fab70:
+            rank = 2, typekind = 6, base_addr = 0x25faea0
+            dim[0] = 8  dim[1] = 12  
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  2.33989e-310
+( 2, 1) =  2.33989e-310
+( 3, 1) =  0
+( 4, 1) =  0
+( 5, 1) =  0
+( 6, 1) =  0
+( 7, 1) =  0
+( 8, 1) =  0
+( 1, 2) =  0
+( 2, 2) =  0
+  skipping to end ...
+( 7,11) =  0
+( 8,11) =  0
+( 1,12) =  0
+( 2,12) =  0
+( 3,12) =  0
+( 4,12) =  0
+( 5,12) =  0
+( 6,12) =  0
+( 7,12) =  0
+( 8,12) =  0
+dim 1: [0]: [1 [1 [1, 8] 8] 8]
+dim 2: [1]: [1 [1 [1, 12] 12] 12]
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 291
+ Array name: MyArray with ArraySpec                                                          
+  PASS  ArrayGet name, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 299
+  PASS  ArrayGet Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 306
+  PASS  Getting Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 313
+  PASS  Verify Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 319
+  PASS  ArrayCreate from Copy, uninitialized Array Test, ESMF_ArrayCreateGetUTest.F90, line 326
+  PASS  ArrayCreate from Copy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 333
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 340
+--- ESMCI::Array::print start ---
+ Base name    = Array007
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 rank inconsistency Test, ESMF_ArrayCreateGetUTest.F90, line 240
+localDeCount = 1
+~ local data in LocalArray for DE 0 ~
+LocalArrayPrint: Array at address 0x25fbb70:
+            rank = 2, typekind = 6, base_addr = 0x25fbea0
+            dim[0] = 8  dim[1] = 12  
+  Real, *8, Dim 2, Data values:
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 rank inconsistency Test, ESMF_ArrayCreateGetUTest.F90, line 240
+( 1, 1) =  2.33989e-310
+( 2, 1) =  2.33989e-310
+( 3, 1) =  0
+( 4, 1) =  0
+( 5, 1) =  0
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 rank inconsistency Test, ESMF_ArrayCreateGetUTest.F90, line 240
+( 6, 1) =  0
+( 7, 1) =  0
+( 8, 1) =  0
+( 1, 2) =  0
+( 2, 2) =  0
+  skipping to end ...
+( 7,11) =  0
+( 8,11) =  0
+( 1,12) =  0
+( 2,12) =  0
+( 3,12) =  0
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 248
+( 4,12) =  0
+( 5,12) =  0
+( 6,12) =  0
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 248
+( 7,12) =  0
+( 8,12) =  0
+dim 1: [0]: [1 [1 [1, 8] 8] 8]
+dim 2: [1]: [1 [1 [1, 12] 12] 12]
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint from Copy after original destroy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 347
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 248
   PASS  ArraySet Test, ESMF_ArrayCreateGetUTest.F90, line 255
+  PASS  ArrayDestroy of Copy Test, ESMF_ArrayCreateGetUTest.F90, line 354
+  PASS  ArraySet Test, ESMF_ArrayCreateGetUTest.F90, line 255
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 262
   PASS  ArraySet Test, ESMF_ArrayCreateGetUTest.F90, line 255
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 262
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 262
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test w/ ArraySpec, ESMF_ArrayCreateGetUTest.F90, line 276
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test w/ ArraySpec, ESMF_ArrayCreateGetUTest.F90, line 276
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test with ArraySpec, ESMF_ArrayCreateGetUTest.F90, line 284
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test w/ ArraySpec, ESMF_ArrayCreateGetUTest.F90, line 276
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test with ArraySpec, ESMF_ArrayCreateGetUTest.F90, line 284
+  PASS  ArrayCreate from Ptr with 3D farray on 2D DistGrid Test as Ptr, ESMF_ArrayCreateGetUTest.F90, line 363
+--- ESMCI::Array::print start ---
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test with ArraySpec, ESMF_ArrayCreateGetUTest.F90, line 284
 --- ESMCI::Array::print start ---
+ Base name    = MyArray
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
 --- ESMCI::Array::print start ---
  Base name    = MyArray with ArraySpec
  Status: Base = Ready,  object = Ready
@@ -88,238 +195,42 @@
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-{}{}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 0 ~
-Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x24eb250:
-            rank = 2, typekind = 6, base_addr = 0x24eb580
-LocalArrayPrint: Array at address 0x1c54a20:
-            rank = 2, typekind = 6, base_addr = 0x1c54d50
-            dim[0] = 8  dim[1] = 12  
-  Real, *8, Dim 2, Data values:
-            dim[0] = 7  dim[1] = 11  
-  Real, *8, Dim 2, Data values:
-( 1, 1) =  2.32991e-310
-( 2, 1) =  2.32991e-310
-( 3, 1) =  0
-( 4, 1) =  0
-( 5, 1) =  0
-( 6, 1) =  0
-( 9,13) =  2.33582e-310
-(10,13) =  2.33582e-310
-(11,13) =  0
-(12,13) =  0
-(13,13) =  0
-(14,13) =  0
-(15,13) =  0
-( 7, 1) =  0
-( 8, 1) =  0
-( 1, 2) =  0
-( 2, 2) =  0
-( 9,14) =  0
-(10,14) =  0
-(11,14) =  0
-  skipping to end ...
-( 7,11) =  0
-( 8,11) =  0
-( 1,12) =  0
-( 2,12) =  0
-( 3,12) =  0
-( 4,12) =  0
-( 5,12) =  0
-  skipping to end ...
-(13,22) =  0
-(14,22) =  0
-(15,22) =  0
-( 9,23) =  0
-(10,23) =  0
-(11,23) =  0
-(12,23) =  0
-(13,23) =  0
-( 6,12) =  0
-( 7,12) =  0
-(14,23) =  0
-(15,23) =  0
-dim 1: [0]: [9 [9 [9, 15] 15] 15]
-( 8,12) =  0
-dim 1: [0]: [1 [1 [1, 8] 8] 8]
-dim 2: [1]: [1 [1 [1, 12] 12] 12]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 291
-dim 2: [1]: [13 [13 [13, 23] 23] 23]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 291
- Array name: MyArray with ArraySpec                                                          
-  PASS  ArrayGet name, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 299
- Array name: MyArray with ArraySpec                                                          
-  PASS  ArrayGet name, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 299
-  PASS  ArrayGet Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 306
-  PASS  ArrayGet Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 306
-  PASS  Getting Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 313
-  PASS  Getting Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 313
-  PASS  Verify Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 319
-  PASS  Verify Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 319
-  PASS  ArrayCreate from Copy, uninitialized Array Test, ESMF_ArrayCreateGetUTest.F90, line 326
-  PASS  ArrayCreate from Copy, uninitialized Array Test, ESMF_ArrayCreateGetUTest.F90, line 326
-  PASS  ArrayCreate from Copy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 333
-  PASS  ArrayCreate from Copy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 333
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 340
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 340
 --- ESMCI::Array::print start ---
- Base name    = Array007
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
---- ESMCI::Array::print start ---
- Base name    = Array007
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 0 ~
-{}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x1d34a20:
-            rank = 2, typekind = 6, base_addr = 0x1d34d50
-            dim[0] = 8  dim[1] = 12  
-  Real, *8, Dim 2, Data values:
-( 1, 1) =  2.32991e-310
-( 2, 1) =  2.32991e-310
-LocalArrayPrint: Array at address 0x24ec150:
-            rank = 2, typekind = 6, base_addr = 0x24ec480
-            dim[0] = 7  dim[1] = 11  
-  Real, *8, Dim 2, Data values:
-( 9,13) =  2.33582e-310
-(10,13) =  2.33582e-310
-(11,13) =  0
-(12,13) =  0
-(13,13) =  0
-(14,13) =  0
-( 3, 1) =  0
-( 4, 1) =  0
-( 5, 1) =  0
-( 6, 1) =  0
-( 7, 1) =  0
-( 8, 1) =  0
-(15,13) =  0
-( 9,14) =  0
-( 1, 2) =  0
-( 2, 2) =  0
-  skipping to end ...
-( 7,11) =  0
-( 8,11) =  0
-( 1,12) =  0
-(10,14) =  0
-(11,14) =  0
-  skipping to end ...
-(13,22) =  0
-(14,22) =  0
-(15,22) =  0
-( 9,23) =  0
-( 2,12) =  0
-( 3,12) =  0
-( 4,12) =  0
-(10,23) =  0
-(11,23) =  0
-(12,23) =  0
-( 5,12) =  0
-( 6,12) =  0
-( 7,12) =  0
-( 8,12) =  0
-dim 1: [0]: [1 [1 [1, 8] 8] 8]
-dim 2: [1]: [1 [1 [1, 12] 12] 12]
---- ESMCI::Array::print end ---
-(13,23) =  0
-(14,23) =  0
-(15,23) =  0
-dim 1: [0]: [9 [9 [9, 15] 15] 15]
-dim 2: [1]: [13 [13 [13, 23] 23] 23]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint from Copy after original destroy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 347
-  PASS  ArrayPrint from Copy after original destroy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 347
-  PASS  ArrayDestroy of Copy Test, ESMF_ArrayCreateGetUTest.F90, line 354
-  PASS  ArrayDestroy of Copy Test, ESMF_ArrayCreateGetUTest.F90, line 354
-  PASS  ArrayCreate from Ptr with 3D farray on 2D DistGrid Test as Ptr, ESMF_ArrayCreateGetUTest.F90, line 363
---- ESMCI::Array::print start ---
- Base name    = MyArray
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-  PASS  ArrayCreate from Ptr with 3D farray on 2D DistGrid Test as Ptr, ESMF_ArrayCreateGetUTest.F90, line 363
 {}Array typekind/rank: Real*4 / 3 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
---- ESMCI::Array::print start ---
- Base name    = MyArray
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-LocalArrayPrint: Array at address 0x1c54a20:
-            rank = 3, typekind = 5, base_addr = 0x1d35220
+LocalArrayPrint: Array at address 0x25fab10:
+            rank = 3, typekind = 5, base_addr = 0x25fc3b0
             dim[0] = 9  dim[1] = 12  dim[2] = 8  
   Real, *4, Dim 3, Data values:
-(-2, 1, 3) =  -1.05968e+08
-(-1, 1, 3) =  1.53849e-41
-( 0, 1, 3) =  7.34914e-38
-( 1, 1, 3) =  0
-{}Array typekind/rank: Real*4 / 3 
+{}Array typekind/rank: Real*8 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x24eb210:
-( 2, 1, 3) =  7.34914e-38
+LocalArrayPrint: Array at address 0x96bcf0:
+            rank = 2, typekind = 6, base_addr = 0x96c020
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+ Base name    = MyArray with ArraySpec
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+(-2, 1, 3) =  -3.47761e+15
+(-1, 1, 3) =  1.54507e-41
+( 0, 1, 3) =  -3.47761e+15
+( 1, 1, 3) =  1.54507e-41
+( 2, 1, 3) =  1.64396e-37
 ( 3, 1, 3) =  0
-( 4, 1, 3) =  7.34914e-38
+( 4, 1, 3) =  1.64396e-37
 ( 5, 1, 3) =  0
-( 6, 1, 3) =  8.46648e+11
-(-2, 2, 3) =  13.9547
-  skipping to end ...
-            rank = 3, typekind = 5, base_addr = 0x24ec930
-            dim[0] = 9  dim[1] = 12  dim[2] = 8  
-  Real, *4, Dim 3, Data values:
-(-2, 1, 3) =  -1.41535e-16
-(-1, 1, 3) =  1.54241e-41
-( 0, 1, 3) =  -1.41535e-16
-( 1, 1, 3) =  1.54241e-41
-( 2, 1, 3) =  1.51922e-37
-( 3, 1, 3) =  0
-( 6,11,10) =  0
-(-2,12,10) =  0
-(-1,12,10) =  0
-( 0,12,10) =  0
-( 1,12,10) =  0
-( 2,12,10) =  0
-( 3,12,10) =  0
-( 4,12,10) =  0
-( 5,12,10) =  0
-( 4, 1, 3) =  1.51922e-37
-( 5, 1, 3) =  0
-( 6, 1, 3) =  1.51923e-37
-( 6,12,10) =  0
-dim 1: [0]: [-2 [-2 [-2, 5] 5] 6]
-dim 2: [1]: [1 [1 [1, 12] 12] 12]
+( 6, 1, 3) =  1.64397e-37
 (-2, 2, 3) =  0
   skipping to end ...
 ( 6,11,10) =  0
@@ -327,42 +238,161 @@ dim 2: [1]: [1 [1 [1, 12] 12] 12]
 (-1,12,10) =  0
 ( 0,12,10) =  0
 ( 1,12,10) =  0
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+            dim[0] = 7  dim[1] = 11  
+  Real, *8, Dim 2, Data values:
+( 9,13) =  2.32915e-310
+(10,13) =  2.32915e-310
+(11,13) =  0
+localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0x9b5fe0:
+            rank = 2, typekind = 6, base_addr = 0x9b6310
+            dim[0] = 8  dim[1] = 11  
+  Real, *8, Dim 2, Data values:
 ( 2,12,10) =  0
 ( 3,12,10) =  0
-dim 3: undistLBound[0]=3            undistUBound[0]=10
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint for ArrayCreate from Ptr Test, ESMF_ArrayCreateGetUTest.F90, line 370
 ( 4,12,10) =  0
 ( 5,12,10) =  0
 ( 6,12,10) =  0
-dim 1: [0]: [-2 [-1 [-1, 5] 5] 6]
-dim 2: [1]: [1 [1 [1, 11] 11] 12]
+dim 1: [0]: [-2 [-2 [-2, 5] 5] 6]
+dim 2: [1]: [1 [1 [1, 12] 12] 12]
+( 1,13) =  2.32359e-310
+( 2,13) =  2.32359e-310
+( 3,13) =  0
+( 4,13) =  0
+( 5,13) =  0
+( 6,13) =  0
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 1 ~
+LocalArrayPrint: Array at address 0x26fd240:
+            rank = 2, typekind = 6, base_addr = 0x26fd570
+            dim[0] = 7  dim[1] = 12  
+  Real, *8, Dim 2, Data values:
+(12,13) =  0
+(13,13) =  0
+(14,13) =  0
+(15,13) =  0
+( 9,14) =  0
+(10,14) =  0
+(11,14) =  0
+  skipping to end ...
+(13,22) =  0
+(14,22) =  0
+(15,22) =  0
 dim 3: undistLBound[0]=3            undistUBound[0]=10
 --- ESMCI::Array::print end ---
-  PASS  ArrayGet Test, ESMF_ArrayCreateGetUTest.F90, line 377
   PASS  ArrayPrint for ArrayCreate from Ptr Test, ESMF_ArrayCreateGetUTest.F90, line 370
-  PASS  Deallocate returned pointer Test, ESMF_ArrayCreateGetUTest.F90, line 384
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 391
+( 9,23) =  0
+(10,23) =  0
+(11,23) =  0
+(12,23) =  0
+(13,23) =  0
+(14,23) =  0
+(15,23) =  0
+dim 1: [0]: [9 [9 [9, 15] 15] 15]
+dim 2: [1]: [13 [13 [13, 23] 23] 23]
+( 7,13) =  0
+( 8,13) =  0
+( 1,14) =  0
+( 2,14) =  0
+  skipping to end ...
+( 7,22) =  0
+( 8,22) =  0
+( 1,23) =  0
+( 2,23) =  0
+( 3,23) =  0
+( 9, 1) =  2.33606e-310
+(10, 1) =  2.33606e-310
+(11, 1) =  0
+(12, 1) =  0
+(13, 1) =  0
+(14, 1) =  0
+(15, 1) =  0
   PASS  ArrayGet Test, ESMF_ArrayCreateGetUTest.F90, line 377
   PASS  Deallocate returned pointer Test, ESMF_ArrayCreateGetUTest.F90, line 384
+( 9, 2) =  0
+(10, 2) =  0
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 291
+( 4,23) =  0
+( 5,23) =  0
+( 6,23) =  0
+( 7,23) =  0
+( 8,23) =  0
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 391
+(11, 2) =  0
+  skipping to end ...
+(13,11) =  0
+(14,11) =  0
+(15,11) =  0
+( 9,12) =  0
+(10,12) =  0
+(11,12) =  0
+(12,12) =  0
+(13,12) =  0
+(14,12) =  0
+(15,12) =  0
+dim 1: [0]: [9 [9 [9, 15] 15] 15]
+dim 2: [1]: [1 [1 [1, 12] 12] 12]
+--- ESMCI::Array::print end ---
+dim 1: [0]: [1 [1 [1, 8] 8] 8]
+dim 2: [1]: [13 [13 [13, 23] 23] 23]
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 291
+  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 291
   PASS  ArrayCreate with 3D farray on 2D DistGrid Test, ESMF_ArrayCreateGetUTest.F90, line 400
+ Array name: MyArray with ArraySpec                                                          
+  PASS  ArrayGet name, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 299
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 407
+ Array name: MyArray with ArraySpec                                                          
+  PASS  ArrayGet name, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 299
+  PASS  ArrayGet Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 306
+ Array name: MyArray with ArraySpec                                                          
+  PASS  ArrayGet name, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 299
+  PASS  ArrayGet Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 306
   PASS  ArrayCreate with 3D farray on 2D DistGrid w/ ESMF_DATACOPY_VALUE Test, ESMF_ArrayCreateGetUTest.F90, line 418
-  PASS  ArrayCreate with 3D farray on 2D DistGrid Test, ESMF_ArrayCreateGetUTest.F90, line 400
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 425
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 407
-  PASS  ArrayCreate with 3D farrayPtr on 2D DistGrid w/ ESMF_DATACOPY_VALUE Test, ESMF_ArrayCreateGetUTest.F90, line 436
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 443
-  PASS  ArrayCreate with 3D farray on 2D DistGrid w/ ESMF_DATACOPY_VALUE Test, ESMF_ArrayCreateGetUTest.F90, line 418
+  PASS  ArrayGet Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 306
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 425
   PASS  ArrayCreate with 3D farrayPtr on 2D DistGrid w/ ESMF_DATACOPY_VALUE Test, ESMF_ArrayCreateGetUTest.F90, line 436
+  PASS  Getting Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 313
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 443
-  PASS  ArrayCreate with 3D farray on 2D DistGrid w/ distgridToArrayMap Test, ESMF_ArrayCreateGetUTest.F90, line 455
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 462
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ negative computational widths Test, ESMF_ArrayCreateGetUTest.F90, line 472
+  PASS  Getting Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 313
+  PASS  Verify Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 319
+  PASS  Verify Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 319
+  PASS  Getting Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 313
+  PASS  ArrayCreate from Copy, uninitialized Array Test, ESMF_ArrayCreateGetUTest.F90, line 326
+  PASS  Verify Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 319
+  PASS  ArrayCreate from Copy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 333
+  PASS  ArrayCreate from Copy, uninitialized Array Test, ESMF_ArrayCreateGetUTest.F90, line 326
+  PASS  ArrayCreate from Copy, uninitialized Array Test, ESMF_ArrayCreateGetUTest.F90, line 326
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 340
+  PASS  ArrayCreate from Copy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 333
 --- ESMCI::Array::print start ---
- Base name    = MyArray Negative
+ Base name    = Array007
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 340
+--- ESMCI::Array::print start ---
+  PASS  ArrayCreate from Copy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 333
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 3 ~
+LocalArrayPrint: Array at address 0x96cc50:
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 340
+--- ESMCI::Array::print start ---
+ Base name    = Array007
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+ Base name    = Array007
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
@@ -371,15 +401,124 @@ dim 3: undistLBound[0]=3            undistUBound[0]=10
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0x9b6f40:
+            rank = 2, typekind = 6, base_addr = 0x96cf80
+            dim[0] = 7  dim[1] = 11  
+  Real, *8, Dim 2, Data values:
+( 9,13) =  2.32915e-310
+(10,13) =  2.32915e-310
+(11,13) =  0
+(12,13) =  0
+(13,13) =  0
+(14,13) =  0
+(15,13) =  0
+( 9,14) =  0
+            rank = 2, typekind = 6, base_addr = 0x9b7270
+            dim[0] = 8  dim[1] = 11  
+  Real, *8, Dim 2, Data values:
+( 1,13) =  2.32359e-310
+( 2,13) =  2.32359e-310
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+(10,14) =  0
+(11,14) =  0
+  skipping to end ...
+(13,22) =  0
+(14,22) =  0
+(15,22) =  0
+  PASS  ArrayCreate with 3D farray on 2D DistGrid w/ distgridToArrayMap Test, ESMF_ArrayCreateGetUTest.F90, line 455
+localDeCount = 1
+~ local data in LocalArray for DE 1 ~
+LocalArrayPrint: Array at address 0x26fe180:
+            rank = 2, typekind = 6, base_addr = 0x26fe4b0
+            dim[0] = 7  dim[1] = 12  
+  Real, *8, Dim 2, Data values:
+( 3,13) =  0
+( 4,13) =  0
+( 5,13) =  0
+( 6,13) =  0
+( 7,13) =  0
+( 8,13) =  0
+( 1,14) =  0
+( 2,14) =  0
+  skipping to end ...
+( 9,23) =  0
+(10,23) =  0
+(11,23) =  0
+(12,23) =  0
+(13,23) =  0
+(14,23) =  0
+(15,23) =  0
+dim 1: [0]: [9 [9 [9, 15] 15] 15]
+dim 2: [1]: [13 [13 [13, 23] 23] 23]
+( 7,22) =  0
+( 8,22) =  0
+( 1,23) =  0
+( 2,23) =  0
+( 3,23) =  0
+( 4,23) =  0
+( 5,23) =  0
+( 6,23) =  0
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 462
+( 9, 1) =  2.33606e-310
+(10, 1) =  2.33606e-310
+(11, 1) =  0
+(12, 1) =  0
+(13, 1) =  0
+(14, 1) =  0
+(15, 1) =  0
+( 9, 2) =  0
+(10, 2) =  0
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint from Copy after original destroy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 347
+(11, 2) =  0
+  skipping to end ...
+(13,11) =  0
+(14,11) =  0
+( 7,23) =  0
+( 8,23) =  0
+dim 1: [0]: [1 [1 [1, 8] 8] 8]
+dim 2: [1]: [13 [13 [13, 23] 23] 23]
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint from Copy after original destroy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 347
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ negative computational widths Test, ESMF_ArrayCreateGetUTest.F90, line 472
+--- ESMCI::Array::print start ---
+ Base name    = MyArray Negative
+  PASS  ArrayDestroy of Copy Test, ESMF_ArrayCreateGetUTest.F90, line 354
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+(15,11) =  0
+( 9,12) =  0
+(10,12) =  0
+(11,12) =  0
+(12,12) =  0
+(13,12) =  0
+(14,12) =  0
+(15,12) =  0
+dim 1: [0]: [9 [9 [9, 15] 15] 15]
+dim 2: [1]: [1 [1 [1, 12] 12] 12]
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint from Copy after original destroy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 347
+  PASS  ArrayDestroy of Copy Test, ESMF_ArrayCreateGetUTest.F90, line 354
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x1c54a20:
-            rank = 2, typekind = 6, base_addr = 0x1d388a0
+LocalArrayPrint: Array at address 0x25fceb0:
+  PASS  ArrayDestroy of Copy Test, ESMF_ArrayCreateGetUTest.F90, line 354
+            rank = 2, typekind = 6, base_addr = 0x25ffb40
             dim[0] = 8  dim[1] = 12  
   Real, *8, Dim 2, Data values:
-( 1, 1) =  2.32991e-310
-( 2, 1) =  2.32991e-310
-( 3, 1) =  1.51383e-316
-( 4, 1) =  1.51383e-316
+( 1, 1) =  2.33989e-310
+( 2, 1) =  2.33989e-310
+( 3, 1) =  1.96859e-316
+( 4, 1) =  1.96859e-316
 ( 5, 1) =  1.9098e-313
 ( 6, 1) =  2.3342e-313
 ( 7, 1) =  2.75859e-313
@@ -387,102 +526,411 @@ LocalArrayPrint: Array at address 0x1c54a20:
 ( 1, 2) =  3.60739e-313
 ( 2, 2) =  4.03179e-313
   skipping to end ...
-( 7,11) =  1.03978e-312
-( 8,11) =  1.08222e-312
-( 1,12) =  1.12466e-312
-( 2,12) =  1.1671e-312
-( 3,12) =  1.20954e-312
-( 4,12) =  1.25198e-312
-( 5,12) =  3.33153e-312
-( 6,12) =  3.37397e-312
-( 7,12) =  3.41641e-312
-( 8,12) =  3.45885e-312
+( 7,11) =  3.50129e-312
+( 8,11) =  3.54373e-312
+( 1,12) =  3.58617e-312
+( 2,12) =  3.62861e-312
+( 3,12) =  3.67105e-312
+( 4,12) =  3.71349e-312
+( 5,12) =  3.75593e-312
+( 6,12) =  3.79837e-312
+( 7,12) =  3.84081e-312
+( 8,12) =  3.88325e-312
 dim 1: [0]: [1 [2 [1, 8] 6] 8]
 dim 2: [1]: [1 [2 [1, 12] 9] 12]
 --- ESMCI::Array::print end ---
   PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computational widths Test, ESMF_ArrayCreateGetUTest.F90, line 479
+  PASS  ArrayCreate from Ptr with 3D farray on 2D DistGrid Test as Ptr, ESMF_ArrayCreateGetUTest.F90, line 363
+  PASS  ArrayCreate from Ptr with 3D farray on 2D DistGrid Test as Ptr, ESMF_ArrayCreateGetUTest.F90, line 363
+--- ESMCI::Array::print start ---
+ Base name    = MyArray
+ Status: Base = Ready,  object = Ready
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 486
+--- ESMCI::Array::print start ---
+ Base name    = MyArray
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*4 / 3 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+{}Array typekind/rank: Real*4 / 3 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 3 ~
+LocalArrayPrint: Array at address 0x96bc30:
+            rank = 3, typekind = 5, base_addr = 0x96d3f0
+            dim[0] = 9  dim[1] = 12  dim[2] = 8  
+  Real, *4, Dim 3, Data values:
+localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0x9b5fe0:
+            rank = 3, typekind = 5, base_addr = 0x9b7700
+            dim[0] = 9  dim[1] = 12  dim[2] = 8  
+  Real, *4, Dim 3, Data values:
+(-2, 1, 3) =  2.28257e-36
+(-1, 1, 3) =  1.53442e-41
+( 0, 1, 3) =  2.28257e-36
+( 1, 1, 3) =  1.53442e-41
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 495
 --- ESMCI::Array::print start ---
  Base name    = MyArray Negative Edge
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+  PASS  ArrayCreate from Ptr with 3D farray on 2D DistGrid Test as Ptr, ESMF_ArrayCreateGetUTest.F90, line 363
+--- ESMCI::Array::print start ---
+ Base name    = MyArray
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+(-2, 1, 3) =  6.57018e-07
+(-1, 1, 3) =  1.53807e-41
+( 0, 1, 3) =  6.57018e-07
+( 1, 1, 3) =  1.53807e-41
+( 2, 1, 3) =  1.38513e-38
+( 3, 1, 3) =  0
+( 4, 1, 3) =  1.38513e-38
+( 5, 1, 3) =  0
+( 6, 1, 3) =  1.38514e-38
+ Root Info (Attributes):
+( 2, 1, 3) =  1.42772e-38
+( 3, 1, 3) =  0
+( 4, 1, 3) =  1.42772e-38
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+(-2, 2, 3) =  0
+  skipping to end ...
+( 6,11,10) =  0
+localDeCount = 1
+~ local data in LocalArray for DE 0 ~
+LocalArrayPrint: Array at address 0x25fceb0:
+            rank = 2, typekind = 6, base_addr = 0x2600300
+{}Array typekind/rank: Real*4 / 3 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 1 ~
+( 5, 1, 3) =  0
+( 6, 1, 3) =  1.42773e-38
+(-2, 2, 3) =  0
+  skipping to end ...
+( 6,11,10) =  0
+(-2,12,10) =  0
+(-2,12,10) =  0
+(-1,12,10) =  0
+( 0,12,10) =  0
+( 1,12,10) =  0
+(-1,12,10) =  0
+( 0,12,10) =  0
+( 1,12,10) =  0
+( 2,12,10) =  0
+( 3,12,10) =  0
+( 4,12,10) =  0
+            dim[0] = 8  dim[1] = 12  
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  2.33989e-310
+( 2, 1) =  2.33989e-310
+( 3, 1) =  1.96869e-316
+( 4, 1) =  1.96869e-316
+( 5, 1) =  1.9098e-313
+( 6, 1) =  2.3342e-313
+LocalArrayPrint: Array at address 0x26fd200:
+            rank = 3, typekind = 5, base_addr = 0x26fe980
+            dim[0] = 9  dim[1] = 12  dim[2] = 8  
+  Real, *4, Dim 3, Data values:
+(-2, 1, 3) =  -22007
+(-1, 1, 3) =  1.54255e-41
+( 0, 1, 3) =  -22007
+( 2,12,10) =  0
+( 3,12,10) =  0
+( 4,12,10) =  0
+( 5,12,10) =  0
+( 6,12,10) =  0
+dim 1: [0]: [-2 [-1 [-1, 5] 5] 6]
+dim 2: [1]: [1 [1 [1, 11] 11] 12]
+( 1, 1, 3) =  1.54255e-41
+( 5,12,10) =  0
+( 6,12,10) =  0
+dim 1: [0]: [-2 [-2 [-2, 5] 5] 6]
+dim 2: [1]: [1 [1 [1, 11] 11] 12]
+( 7, 1) =  2.75859e-313
+( 8, 1) =  3.18299e-313
+( 1, 2) =  3.60739e-313
+dim 3: undistLBound[0]=3            undistUBound[0]=10
+--- ESMCI::Array::print end ---
+( 2, 2) =  4.03179e-313
+  skipping to end ...
+( 7,11) =  7.74528e-312
+( 8,11) =  7.78772e-312
+( 1,12) =  7.83016e-312
+( 2,12) =  7.8726e-312
+( 3,12) =  9.95216e-312
+( 4,12) =  9.9946e-312
+( 5,12) =  1.0037e-311
+( 6,12) =  1.00795e-311
+( 2, 1, 3) =  1.76259e-37
+( 3, 1, 3) =  0
+( 4, 1, 3) =  1.76259e-37
+( 5, 1, 3) =  0
+( 6, 1, 3) =  1.7626e-37
+(-2, 2, 3) =  0
+  skipping to end ...
+( 6,11,10) =  0
+(-2,12,10) =  0
+(-1,12,10) =  0
+( 0,12,10) =  0
+( 1,12,10) =  0
+dim 3: undistLBound[0]=3            undistUBound[0]=10
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint for ArrayCreate from Ptr Test, ESMF_ArrayCreateGetUTest.F90, line 370
+  PASS  ArrayGet Test, ESMF_ArrayCreateGetUTest.F90, line 377
+  PASS  ArrayPrint for ArrayCreate from Ptr Test, ESMF_ArrayCreateGetUTest.F90, line 370
+  PASS  ArrayGet Test, ESMF_ArrayCreateGetUTest.F90, line 377
+( 7,12) =  1.01219e-311
+( 8,12) =  1.01644e-311
+dim 1: [0]: [1 [1 [1, 8] 8] 8]
+dim 2: [1]: [1 [2 [1, 12] 12] 12]
+--- ESMCI::Array::print end ---
+( 2,12,10) =  0
+( 3,12,10) =  0
+( 4,12,10) =  0
+( 5,12,10) =  0
+  PASS  Deallocate returned pointer Test, ESMF_ArrayCreateGetUTest.F90, line 384
+  PASS  Deallocate returned pointer Test, ESMF_ArrayCreateGetUTest.F90, line 384
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 391
+( 6,12,10) =  0
+dim 1: [0]: [-2 [-1 [-1, 5] 5] 6]
+dim 2: [1]: [1 [1 [1, 12] 12] 12]
+dim 3: undistLBound[0]=3            undistUBound[0]=10
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint for ArrayCreate from Ptr Test, ESMF_ArrayCreateGetUTest.F90, line 370
+  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 502
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 391
+  PASS  ArrayGet Test, ESMF_ArrayCreateGetUTest.F90, line 377
+  PASS  ArrayGet 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 515
+  PASS  Deallocate returned pointer Test, ESMF_ArrayCreateGetUTest.F90, line 384
+  PASS  Check total widths for 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 525
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 391
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 534
+  PASS  ArrayCreate with 3D farray on 2D DistGrid Test, ESMF_ArrayCreateGetUTest.F90, line 400
+  PASS  ArrayCreate with 3D farray on 2D DistGrid Test, ESMF_ArrayCreateGetUTest.F90, line 400
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 407
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 407
+  PASS  ArrayCreate with 3D farray on 2D DistGrid Test, ESMF_ArrayCreateGetUTest.F90, line 400
+  PASS  ArrayCreate with 3D farray on 2D DistGrid w/ ESMF_DATACOPY_VALUE Test, ESMF_ArrayCreateGetUTest.F90, line 418
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 407
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 544
+--- ESMCI::Array::print start ---
+ Base name    = MyArray Negative Edge
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 425
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
 {}Array typekind/rank: Real*8 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
+  PASS  ArrayCreate with 3D farray on 2D DistGrid w/ ESMF_DATACOPY_VALUE Test, ESMF_ArrayCreateGetUTest.F90, line 418
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x1c54a20:
-            rank = 2, typekind = 6, base_addr = 0x1d388a0
-            dim[0] = 8  dim[1] = 12  
+LocalArrayPrint: Array at address 0x25fab10:
+            rank = 2, typekind = 6, base_addr = 0x25fd870
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 425
+  PASS  ArrayCreate with 3D farray on 2D DistGrid w/ ESMF_DATACOPY_VALUE Test, ESMF_ArrayCreateGetUTest.F90, line 418
+  PASS  ArrayCreate with 3D farrayPtr on 2D DistGrid w/ ESMF_DATACOPY_VALUE Test, ESMF_ArrayCreateGetUTest.F90, line 436
+            dim[0] = 12  dim[1] = 18  
   Real, *8, Dim 2, Data values:
-( 1, 1) =  2.32991e-310
-( 2, 1) =  2.32991e-310
-( 3, 1) =  1.51383e-316
-( 4, 1) =  1.51383e-316
-( 5, 1) =  1.9098e-313
-( 6, 1) =  2.3342e-313
-( 7, 1) =  2.75859e-313
-( 8, 1) =  3.18299e-313
-( 1, 2) =  3.60739e-313
-( 2, 2) =  4.03179e-313
+( 0,-1) =  2.33989e-310
+( 1,-1) =  2.33989e-310
+( 2,-1) =  1.96815e-316
+( 3,-1) =  1.96815e-316
+( 4,-1) =  1.5319e-94
+( 5,-1) =  2.31676e+242
+( 6,-1) =  3.98568e+252
+( 7,-1) =  7.45668e+247
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 425
+( 8,-1) =  6.80561e+212
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 443
+( 9,-1) =  1.70172e+213
   skipping to end ...
-( 7,11) =  1.03978e-312
-( 8,11) =  1.08222e-312
-( 1,12) =  1.12466e-312
-  PASS  ArrayCreate with 3D farray on 2D DistGrid w/ distgridToArrayMap Test, ESMF_ArrayCreateGetUTest.F90, line 455
-( 2,12) =  1.1671e-312
-( 3,12) =  1.20954e-312
-( 4,12) =  1.25198e-312
-( 5,12) =  3.33153e-312
-( 6,12) =  3.37397e-312
-( 7,12) =  3.41641e-312
-( 8,12) =  3.45885e-312
-dim 1: [0]: [1 [1 [1, 8] 8] 8]
-dim 2: [1]: [1 [2 [1, 12] 12] 12]
+( 2,16) =  0
+( 3,16) =  0
+( 4,16) =  0
+( 5,16) =  0
+( 6,16) =  0
+( 7,16) =  0
+( 8,16) =  0
+( 9,16) =  0
+(10,16) =  0
+(11,16) =  0
+dim 1: [0]: [0 [1 [1, 8] 8] 11]
+dim 2: [1]: [-1 [2 [1, 12] 12] 16]
 --- ESMCI::Array::print end ---
+  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 551
+  PASS  ArrayCreate with 3D farrayPtr on 2D DistGrid w/ ESMF_DATACOPY_VALUE Test, ESMF_ArrayCreateGetUTest.F90, line 436
+  PASS  ArrayCreate with 3D farrayPtr on 2D DistGrid w/ ESMF_DATACOPY_VALUE Test, ESMF_ArrayCreateGetUTest.F90, line 436
+  PASS  ArrayGet 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 563
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 443
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 443
+  PASS  Check total widths for 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 571
+  PASS  Check total bounds for 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 581
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 602
+  PASS  Create test Array with ESMF_PIN_DE_TO_PET, ESMF_ArrayCreateGetUTest.F90, line 611
+  PASS  ArrayGet Fortran array pointer for ESMF_PIN_DE_TO_PET Test, ESMF_ArrayCreateGetUTest.F90, line 618
+  PASS  ArrayCreate with 3D farray on 2D DistGrid w/ distgridToArrayMap Test, ESMF_ArrayCreateGetUTest.F90, line 455
+  PASS  ArrayDestroy Test for array with ESMF_PIN_DE_TO_PET, ESMF_ArrayCreateGetUTest.F90, line 632
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 462
-  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 502
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 rank inconsistency Test, ESMF_ArrayCreateGetUTest.F90, line 240
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 rank inconsistency Test, ESMF_ArrayCreateGetUTest.F90, line 240
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ negative computational widths Test, ESMF_ArrayCreateGetUTest.F90, line 472
-  PASS  ArrayGet 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 515
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 248
 --- ESMCI::Array::print start ---
  Base name    = MyArray Negative
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
 {}Array typekind/rank: Real*8 / 2 
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 248
-  PASS  Check total widths for 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 525
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0x9b97a0:
+            rank = 2, typekind = 6, base_addr = 0x9b9ad0
+            dim[0] = 8  dim[1] = 11  
+  Real, *8, Dim 2, Data values:
+( 1,13) =  2.32359e-310
+( 2,13) =  2.32359e-310
+( 3,13) =  0
+( 4,13) =  0
+( 5,13) =  1.05251e-311
+( 6,13) =  1.05675e-311
+( 7,13) =  1.061e-311
+( 8,13) =  1.06524e-311
+( 1,14) =  1.06949e-311
+( 2,14) =  1.07373e-311
+  skipping to end ...
+( 7,22) =  1.74004e-311
+( 8,22) =  1.74428e-311
+( 1,23) =  1.74852e-311
+( 2,23) =  1.75277e-311
+( 3,23) =  1.75701e-311
+( 4,23) =  1.76126e-311
+( 5,23) =  1.7655e-311
+( 6,23) =  1.76974e-311
+( 7,23) =  1.77399e-311
+( 8,23) =  1.77823e-311
+dim 1: [0]: [1 [2 [1, 8] 6] 8]
+dim 2: [1]: [13 [14 [13, 23] 20] 23]
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computational widths Test, ESMF_ArrayCreateGetUTest.F90, line 479
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 486
+  PASS  ArrayCreate with 3D farray on 2D DistGrid w/ distgridToArrayMap Test, ESMF_ArrayCreateGetUTest.F90, line 455
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 462
+  PASS  ArrayCreate with 3D farray on 2D DistGrid w/ distgridToArrayMap Test, ESMF_ArrayCreateGetUTest.F90, line 455
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 495
+--- ESMCI::Array::print start ---
+ Base name    = MyArray Negative Edge
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 462
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 2 
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ negative computational widths Test, ESMF_ArrayCreateGetUTest.F90, line 472
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0x9b7700:
+            rank = 2, typekind = 6, base_addr = 0x9b97a0
+            dim[0] = 8  dim[1] = 12  
+  Real, *8, Dim 2, Data values:
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ negative computational widths Test, ESMF_ArrayCreateGetUTest.F90, line 472
+--- ESMCI::Array::print start ---
+--- ESMCI::Array::print start ---
+ Base name    = MyArray Negative
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+( 1,13) =  2.32359e-310
+( 2,13) =  2.32359e-310
+( 3,13) =  5.03793e-317
+( 4,13) =  5.03793e-317
+( 5,13) =  0
+( 6,13) =  2.122e-314
+{}Array typekind/rank: Real*8 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x24ee600:
-            rank = 2, typekind = 6, base_addr = 0x24eb2b0
-            dim[0] = 7  dim[1] = 11  
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 534
-  PASS  ArraySet Test, ESMF_ArrayCreateGetUTest.F90, line 255
-  PASS  ArraySet Test, ESMF_ArrayCreateGetUTest.F90, line 255
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 262
-  Real, *8, Dim 2, Data values:
-( 9,13) =  2.33582e-310
-(10,13) =  2.33582e-310
-(11,13) =  2.122e-314
-(12,13) =  1.32413e-310
-(13,13) =  1.91421e-316
-(14,13) =  1.91421e-316
-(15,13) =  -nan
-( 9,14) =  1.97626e-323
-(10,14) =  1.63606e-311
-(11,14) =  1.97626e-323
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 262
+LocalArrayPrint: Array at address 0x970870:
+            rank = 2, typekind = 6, base_addr = 0x96f1a0
+ Base name    = MyArray Negative
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+( 7,13) =  2.122e-314
+( 8,13) =  2.122e-314
+( 1,14) =  2.122e-314
+( 2,14) =  4.88059e-313
   skipping to end ...
+( 7,23) =  7.80894e-312
+( 8,23) =  7.85138e-312
+localDeCount = 1
+~ local data in LocalArray for DE 1 ~
+LocalArrayPrint: Array at address 0x2701450:
+            rank = 2, typekind = 6, base_addr = 0x2701c30
+            dim[0] = 7  dim[1] = 11  
+  Real, *8, Dim 2, Data values:
+( 9,13) =  2.32915e-310
+(10,13) =  2.32915e-310
+(11,13) =  2.54639e-313
+(12,13) =  2.122e-313
+( 1,24) =  8.12724e-312
+( 2,24) =  8.63652e-312
+( 3,24) =  9.1458e-312
+( 4,24) =  9.65508e-312
+(13,13) =  0
+(14,13) =  0
+(15,13) =  2.54639e-313
+( 9,14) =  7.70742e-322
+(10,14) =  2.32915e-310
+(11,14) =  3.59058e-312
+  skipping to end ...
+            dim[0] = 7  dim[1] = 12  
+  Real, *8, Dim 2, Data values:
+( 9, 1) =  2.33606e-310
+(10, 1) =  2.33606e-310
+(11, 1) =  2.02081e-316
+(12, 1) =  2.02081e-316
+(13, 1) =  1.9098e-313
+( 5,24) =  9.93094e-312
+( 6,24) =  9.97338e-312
+( 7,24) =  1.00158e-311
+( 8,24) =  1.00583e-311
+dim 1: [0]: [1 [1 [1, 8] 8] 8]
+dim 2: [1]: [13 [13 [13, 23] 24] 24]
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 502
+(14, 1) =  2.3342e-313
+(15, 1) =  2.75859e-313
+( 9, 2) =  3.18299e-313
+(10, 2) =  3.60739e-313
+(11, 2) =  4.03179e-313
+  skipping to end ...
+(13,11) =  9.54898e-313
+(14,11) =  9.97338e-313
 (13,22) =  7.90586e+25
 (14,22) =  1.814e-153
 (15,22) =  1.37708e+93
@@ -490,30 +938,31 @@ LocalArrayPrint: Array at address 0x24ee600:
 (10,23) =  7.58464e+179
 (11,23) =  1.20644e+30
 (12,23) =  3.94357e+180
-(13,23) =  6.01347e-154
-(14,23) =  3.64126e-321
-(15,23) =  1.91291e-316
+(15,11) =  1.03978e-312
+( 9,12) =  1.08222e-312
+(10,12) =  1.12466e-312
+(11,12) =  1.1671e-312
+(12,12) =  1.20954e-312
+(13,23) =  3.39917e-321
+(14,23) =  6.32404e-322
+(15,23) =  0
 dim 1: [0]: [9 [10 [9, 15] 13] 15]
 dim 2: [1]: [13 [14 [13, 23] 20] 23]
 --- ESMCI::Array::print end ---
+  PASS  ArrayGet 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 515
+(13,12) =  1.25198e-312
+(14,12) =  3.07689e-312
+(15,12) =  3.11933e-312
+dim 1: [0]: [9 [10 [9, 15] 13] 15]
+dim 2: [1]: [1 [2 [1, 12] 9] 12]
+--- ESMCI::Array::print end ---
   PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computational widths Test, ESMF_ArrayCreateGetUTest.F90, line 479
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 544
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test w/ ArraySpec, ESMF_ArrayCreateGetUTest.F90, line 276
+  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computational widths Test, ESMF_ArrayCreateGetUTest.F90, line 479
+  PASS  Check total widths for 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 525
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 486
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test w/ ArraySpec, ESMF_ArrayCreateGetUTest.F90, line 276
---- ESMCI::Array::print start ---
- Base name    = MyArray Negative Edge
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*8 / 2 
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test with ArraySpec, ESMF_ArrayCreateGetUTest.F90, line 284
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 Test with ArraySpec, ESMF_ArrayCreateGetUTest.F90, line 284
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 0 ~
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 486
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 534
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 495
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 495
 --- ESMCI::Array::print start ---
  Base name    = MyArray Negative Edge
@@ -521,166 +970,54 @@ localDeCount = 1
  Proxy        = no
  Root Info (Attributes):
 --- ESMCI::Array::print start ---
- Base name    = MyArray with ArraySpec
---- ESMCI::Array::print start ---
-LocalArrayPrint: Array at address 0x1c54a20:
-            rank = 2, typekind = 6, base_addr = 0x1d365d0
-            dim[0] = 12  dim[1] = 18  
-  Real, *8, Dim 2, Data values:
-( 0,-1) =  2.32991e-310
-( 1,-1) =  2.32991e-310
-( 2,-1) =  1.51339e-316
-( 3,-1) =  1.51339e-316
-( 4,-1) =  6.01347e-154
-( 5,-1) =  6.01347e-154
-( 6,-1) =  6.01347e-154
-( 7,-1) =  6.01347e-154
- Base name    = MyArray with ArraySpec
+ Base name    = MyArray Negative Edge
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
 {}Array typekind/rank: Real*8 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
- Status: Base = Ready,  object = Ready
- Proxy        = no
-( 8,-1) =  6.01347e-154
-( 9,-1) =  6.01347e-154
-  skipping to end ...
- Root Info (Attributes):
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
 ~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x24ee600:
-            rank = 2, typekind = 6, base_addr = 0x24f0680
-            dim[0] = 7  dim[1] = 12  
-  Real, *8, Dim 2, Data values:
-( 9,13) =  2.33582e-310
-(10,13) =  2.33582e-310
-(11,13) =  1.91369e-316
-( 2,16) =  0
-( 3,16) =  2.122e-314
-( 4,16) =  2.122e-314
-( 5,16) =  0
-( 6,16) =  0
-( 7,16) =  0
-( 8,16) =  0
-( 9,16) =  0
-(10,16) =  0
-(12,13) =  1.91369e-316
-(13,13) =  4.24399e-314
-(14,13) =  4.24399e-314
-(15,13) =  4.24399e-314
-( 9,14) =  6.36599e-314
-(10,14) =  4.24399e-314
-(11,14) =  4.24399e-314
-  skipping to end ...
-{}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
+LocalArrayPrint: Array at address 0x970870:
+            rank = 2, typekind = 6, base_addr = 0x96f930
 localDeCount = 1
 ~ local data in LocalArray for DE 1 ~
-{}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 2 ~
-(11,16) =  0
-dim 1: [0]: [0 [1 [1, 8] 8] 11]
-dim 2: [1]: [-1 [2 [1, 12] 12] 16]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 551
-LocalArrayPrint: Array at address 0xd58df0:
-            rank = 2, typekind = 6, base_addr = 0xd59120
-(13,23) =  0
-(14,23) =  0
-(15,23) =  0
-( 9,24) =  0
-(10,24) =  0
-LocalArrayPrint: Array at address 0xd62380:
-            rank = 2, typekind = 6, base_addr = 0xd626b0
+LocalArrayPrint: Array at address 0x2701450:
             dim[0] = 7  dim[1] = 12  
   Real, *8, Dim 2, Data values:
-  PASS  ArrayGet 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 563
-            dim[0] = 8  dim[1] = 11  
-  Real, *8, Dim 2, Data values:
-( 1,13) =  2.32843e-310
-( 2,13) =  2.32843e-310
-( 3,13) =  0
-( 4,13) =  0
-(11,24) =  0
-(12,24) =  0
-(13,24) =  0
-(14,24) =  0
-(15,24) =  0
-dim 1: [0]: [9 [9 [9, 15] 13] 15]
-dim 2: [1]: [13 [13 [13, 23] 24] 24]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 502
-( 9, 1) =  2.33034e-310
-(10, 1) =  2.33034e-310
-(11, 1) =  0
-(12, 1) =  0
-(13, 1) =  0
-(14, 1) =  0
-(15, 1) =  0
-  PASS  Check total widths for 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 571
-( 5,13) =  0
-( 6,13) =  0
-( 7,13) =  0
-( 8,13) =  0
-( 1,14) =  0
-( 2,14) =  0
-  skipping to end ...
-( 7,22) =  0
-( 8,22) =  0
-( 1,23) =  0
-( 2,23) =  0
-( 3,23) =  0
-( 4,23) =  0
-( 9, 2) =  0
-(10, 2) =  0
-(11, 2) =  0
-  skipping to end ...
-(13,11) =  0
-(14,11) =  0
-(15,11) =  0
-( 9,12) =  0
-(10,12) =  0
-(11,12) =  0
-( 5,23) =  0
-( 6,23) =  0
-( 7,23) =  0
-( 8,23) =  0
-dim 1: [0]: [1 [1 [1, 8] 8] 8]
-dim 2: [1]: [13 [13 [13, 23] 23] 23]
-  PASS  Check total bounds for 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 581
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 602
-(12,12) =  0
-(13,12) =  0
-(14,12) =  0
-(15,12) =  0
-dim 1: [0]: [9 [9 [9, 15] 15] 15]
-dim 2: [1]: [1 [1 [1, 12] 12] 12]
-  PASS  ArrayGet 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 515
-  PASS  Check total widths for 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 525
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 534
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 291
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 291
-  PASS  Create test Array with ESMF_PIN_DE_TO_PET, ESMF_ArrayCreateGetUTest.F90, line 611
-  PASS  ArrayGet Fortran array pointer for ESMF_PIN_DE_TO_PET Test, ESMF_ArrayCreateGetUTest.F90, line 618
- Array name: MyArray with ArraySpec                                                          
-  PASS  ArrayGet name, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 299
- Array name: MyArray with ArraySpec                                                          
-  PASS  ArrayGet name, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 299
-  PASS  ArrayDestroy Test for array with ESMF_PIN_DE_TO_PET, ESMF_ArrayCreateGetUTest.F90, line 632
-  PASS  ArrayGet Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 306
+( 9,13) =  2.32915e-310
+(10,13) =  2.32915e-310
+(11,13) =  1.45913e-152
   PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 544
-  PASS  ArrayGet Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 306
+            rank = 2, typekind = 6, base_addr = 0x2701c30
+            dim[0] = 7  dim[1] = 12  
+  Real, *8, Dim 2, Data values:
+( 9, 1) =  2.33606e-310
+(10, 1) =  2.33606e-310
+(11, 1) =  2.02081e-316
+(12, 1) =  2.02081e-316
+(13, 1) =  1.9098e-313
+(14, 1) =  2.3342e-313
+(12,13) =  2.59345e+161
+(13,13) =  3.01254e-153
+(14,13) =  5.03494e+175
+(15,13) =  8.89487e+252
+( 9,14) =  2.32512e+242
+(10,14) =  1.75567e+97
+(11,14) =  3.17089e+64
+  skipping to end ...
+(15, 1) =  2.75859e-313
+( 9, 2) =  3.18299e-313
+(10, 2) =  3.60739e-313
+(11, 2) =  4.03179e-313
+  skipping to end ...
+(13,11) =  9.54898e-313
 --- ESMCI::Array::print start ---
  Base name    = MyArray Negative Edge
  Status: Base = Ready,  object = Ready
@@ -691,492 +1028,147 @@ dim 2: [1]: [1 [1 [1, 12] 12] 12]
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
-~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x24ee600:
-            rank = 2, typekind = 6, base_addr = 0x24ecde0
-            dim[0] = 11  dim[1] = 17  
+~ local data in LocalArray for DE 2 ~
+(13,23) =  4.88738e-317
+(14,23) =  8.88749e+252
+(15,23) =  8.8876e+252
+( 9,24) =  8.19845e+06
+LocalArrayPrint: Array at address 0x9b7700:
+            rank = 2, typekind = 6, base_addr = 0x9ba880
+            dim[0] = 12  dim[1] = 17  
   Real, *8, Dim 2, Data values:
-( 8,11) =  2.33582e-310
-( 9,11) =  2.33582e-310
-(10,11) =  1.91297e-316
-(11,11) =  1.91297e-316
-(12,11) =  1.33261e-311
-(13,11) =  1.33686e-311
-(14,11) =  1.3411e-311
-(15,11) =  1.34535e-311
-(16,11) =  1.34959e-311
-(17,11) =  1.35383e-311
+( 0,11) =  2.32359e-310
+( 1,11) =  2.32359e-310
+(14,11) =  9.97338e-313
+(15,11) =  1.03978e-312
+( 9,12) =  1.08222e-312
+(10,12) =  1.12466e-312
+(11,12) =  1.1671e-312
+(12,12) =  1.20954e-312
+(13,12) =  1.25198e-312
+(14,12) =  3.07689e-312
+(10,24) =  1.50758e+161
+(11,24) =  1.31837e+180
+(12,24) =  1.05119e-153
+(13,24) =  8.23578e-67
+(14,24) =  7.90505e-322
+(15,24) =  3.95253e-322
+dim 1: [0]: [9 [9 [9, 15] 13] 15]
+(15,12) =  3.11933e-312
+dim 1: [0]: [9 [9 [9, 15] 13] 15]
+dim 2: [1]: [1 [2 [1, 12] 12] 12]
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 502
+( 2,11) =  5.04006e-317
+( 3,11) =  5.04006e-317
+( 4,11) =  3.05416e+169
+( 5,11) =  9.75025e+199
+( 6,11) =  3.03325e+180
+( 7,11) =  2.31603e-152
+dim 2: [1]: [13 [13 [13, 23] 24] 24]
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 502
+( 8,11) =  1.37708e+93
+( 9,11) =  4.83246e+276
   skipping to end ...
-( 9,27) =  6.45087e-312
-(10,27) =  6.49331e-312
-(11,27) =  6.53575e-312
-  PASS  Getting Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 313
-(12,27) =  6.57819e-312
-(13,27) =  6.62063e-312
-(14,27) =  6.66307e-312
-(15,27) =  6.70551e-312
-(16,27) =  6.74795e-312
-(17,27) =  6.79039e-312
-(18,27) =  6.83283e-312
-  PASS  Getting Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 313
-  PASS  Verify Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 319
-dim 1: [0]: [8 [9 [9, 15] 13] 18]
+( 2,27) =  1.061e-313
+( 3,27) =  1.061e-313
+( 4,27) =  1.061e-313
+( 5,27) =  1.061e-313
+( 6,27) =  1.061e-313
+( 7,27) =  1.061e-313
+  PASS  ArrayGet 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 515
+  PASS  ArrayGet 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 515
+( 8,27) =  1.061e-313
+( 9,27) =  1.061e-313
+(10,27) =  1.061e-313
+(11,27) =  1.061e-313
+dim 1: [0]: [0 [1 [1, 8] 8] 11]
 dim 2: [1]: [11 [13 [13, 23] 24] 27]
 --- ESMCI::Array::print end ---
+  PASS  Check total widths for 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 525
+  PASS  Check total widths for 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 525
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 534
   PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 551
-  PASS  Verify Attribute count from an Array, ESMF_ArrayCreateGetUTest.F90, line 319
-  PASS  ArrayCreate from Copy, uninitialized Array Test, ESMF_ArrayCreateGetUTest.F90, line 326
-  PASS  ArrayCreate from Copy, uninitialized Array Test, ESMF_ArrayCreateGetUTest.F90, line 326
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 534
   PASS  ArrayGet 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 563
-  PASS  ArrayCreate from Copy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 333
   PASS  Check total widths for 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 571
-  PASS  Check total bounds for 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 593
-  PASS  ArrayCreate from Copy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 333
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 340
+  PASS  Check total bounds for 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 589
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 602
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 340
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 544
+  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 544
 --- ESMCI::Array::print start ---
- Base name    = Array007
+ Base name    = MyArray Negative Edge
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+{}  PASS  Create test Array with ESMF_PIN_DE_TO_PET, ESMF_ArrayCreateGetUTest.F90, line 611
 --- ESMCI::Array::print start ---
- Base name    = Array007
+ Base name    = MyArray Negative Edge
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-{}{}Array typekind/rank: Real*8 / 2 
+{}Array typekind/rank: Real*8 / 2 
 ~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 2 ~
-  PASS  Create test Array with ESMF_PIN_DE_TO_PET, ESMF_ArrayCreateGetUTest.F90, line 611
 Array typekind/rank: Real*8 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
+~ local data in LocalArray for DE 3 ~
+LocalArrayPrint: Array at address 0x970870:
+            rank = 2, typekind = 6, base_addr = 0x96d8a0
+            dim[0] = 11  dim[1] = 17  
+  Real, *8, Dim 2, Data values:
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
 ~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0xd632c0:
-            rank = 2, typekind = 6, base_addr = 0xd635f0
-            dim[0] = 7  dim[1] = 12  
-  Real, *8, Dim 2, Data values:
-LocalArrayPrint: Array at address 0xd59db0:
-            rank = 2, typekind = 6, base_addr = 0xd5a0e0
-            dim[0] = 8  dim[1] = 11  
-  Real, *8, Dim 2, Data values:
-( 1,13) =  2.32843e-310
-( 2,13) =  2.32843e-310
-( 3,13) =  0
-( 9, 1) =  2.33034e-310
-(10, 1) =  2.33034e-310
-(11, 1) =  0
-(12, 1) =  0
-(13, 1) =  0
-(14, 1) =  0
-(15, 1) =  0
-( 9, 2) =  0
-(10, 2) =  0
   PASS  ArrayGet Fortran array pointer for ESMF_PIN_DE_TO_PET Test, ESMF_ArrayCreateGetUTest.F90, line 618
-( 4,13) =  0
-( 5,13) =  0
-( 6,13) =  0
-( 7,13) =  0
-( 8,13) =  0
-( 1,14) =  0
-( 2,14) =  0
-  skipping to end ...
-( 7,22) =  0
-( 8,22) =  0
-( 1,23) =  0
-( 2,23) =  0
-( 3,23) =  0
-  PASS  ArrayDestroy Test for array with ESMF_PIN_DE_TO_PET, ESMF_ArrayCreateGetUTest.F90, line 632
-(11, 2) =  0
-  skipping to end ...
-(13,11) =  0
-(14,11) =  0
-(15,11) =  0
-( 9,12) =  0
-(10,12) =  0
-(11,12) =  0
-(12,12) =  0
-(13,12) =  0
-(14,12) =  0
-(15,12) =  0
-( 4,23) =  0
-( 5,23) =  0
-( 6,23) =  0
-( 7,23) =  0
-( 8,23) =  0
-dim 1: [0]: [1 [1 [1, 8] 8] 8]
-dim 1: [0]: [9 [9 [9, 15] 15] 15]
-dim 2: [1]: [1 [1 [1, 12] 12] 12]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint from Copy after original destroy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 347
-dim 2: [1]: [13 [13 [13, 23] 23] 23]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint from Copy after original destroy, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 347
-  PASS  ArrayDestroy of Copy Test, ESMF_ArrayCreateGetUTest.F90, line 354
-  PASS  ArrayDestroy of Copy Test, ESMF_ArrayCreateGetUTest.F90, line 354
-  PASS  ArrayCreate from Ptr with 3D farray on 2D DistGrid Test as Ptr, ESMF_ArrayCreateGetUTest.F90, line 363
-  PASS  ArrayCreate from Ptr with 3D farray on 2D DistGrid Test as Ptr, ESMF_ArrayCreateGetUTest.F90, line 363
---- ESMCI::Array::print start ---
- Base name    = MyArray
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
---- ESMCI::Array::print start ---
- Base name    = MyArray
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*4 / 3 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0xd58db0:
-{}Array typekind/rank: Real*4 / 3 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 1 ~
-            rank = 3, typekind = 5, base_addr = 0xd5a5b0
-            dim[0] = 9  dim[1] = 12  dim[2] = 8  
-  Real, *4, Dim 3, Data values:
-(-2, 1, 3) =  -1.6127e+13
-(-1, 1, 3) =  1.5375e-41
-LocalArrayPrint: Array at address 0xd62380:
-            rank = 3, typekind = 5, base_addr = 0xd63ae0
-            dim[0] = 9  dim[1] = 12  dim[2] = 8  
-  Real, *4, Dim 3, Data values:
-(-2, 1, 3) =  -6.83516e+12
-(-1, 1, 3) =  1.53877e-41
-( 0, 1, 3) =  -1.6127e+13
-( 1, 1, 3) =  1.5375e-41
-( 2, 1, 3) =  1.96204e-38
-( 3, 1, 3) =  0
-( 4, 1, 3) =  1.96204e-38
-( 5, 1, 3) =  0
-( 0, 1, 3) =  -6.83516e+12
-( 1, 1, 3) =  1.53877e-41
-( 2, 1, 3) =  1.96739e-38
-( 3, 1, 3) =  0
-( 4, 1, 3) =  1.96739e-38
-( 5, 1, 3) =  0
-( 6, 1, 3) =  1.9674e-38
-(-2, 2, 3) =  0
-  skipping to end ...
-( 6, 1, 3) =  1.96205e-38
-(-2, 2, 3) =  0
-  skipping to end ...
-( 6,11,10) =  0
-(-2,12,10) =  0
-(-1,12,10) =  0
-( 0,12,10) =  0
-( 1,12,10) =  0
-( 2,12,10) =  0
-( 6,11,10) =  4.59416e-41
-(-2,12,10) =  0
-(-1,12,10) =  1.97252e-38
-( 0,12,10) =  0
-( 1,12,10) =  -6.83416e+12
-( 2,12,10) =  1.53877e-41
-( 3,12,10) =  0
-( 4,12,10) =  0
-( 5,12,10) =  0
-( 6,12,10) =  0
-dim 1: [0]: [-2 [-2 [-2, 5] 5] 6]
-dim 2: [1]: [1 [1 [1, 11] 11] 12]
-( 3,12,10) =  0
-( 4,12,10) =  0
-( 5,12,10) =  0
-( 6,12,10) =  0
-dim 1: [0]: [-2 [-1 [-1, 5] 5] 6]
-dim 2: [1]: [1 [1 [1, 12] 12] 12]
-dim 3: undistLBound[0]=3            undistUBound[0]=10
---- ESMCI::Array::print end ---
-dim 3: undistLBound[0]=3            undistUBound[0]=10
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint for ArrayCreate from Ptr Test, ESMF_ArrayCreateGetUTest.F90, line 370
-  PASS  ArrayPrint for ArrayCreate from Ptr Test, ESMF_ArrayCreateGetUTest.F90, line 370
-  PASS  ArrayGet Test, ESMF_ArrayCreateGetUTest.F90, line 377
-  PASS  ArrayGet Test, ESMF_ArrayCreateGetUTest.F90, line 377
-  PASS  Deallocate returned pointer Test, ESMF_ArrayCreateGetUTest.F90, line 384
-  PASS  Deallocate returned pointer Test, ESMF_ArrayCreateGetUTest.F90, line 384
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 391
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 391
-  PASS  ArrayCreate with 3D farray on 2D DistGrid Test, ESMF_ArrayCreateGetUTest.F90, line 400
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 407
-  PASS  ArrayCreate with 3D farray on 2D DistGrid Test, ESMF_ArrayCreateGetUTest.F90, line 400
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 407
-  PASS  ArrayCreate with 3D farray on 2D DistGrid w/ ESMF_DATACOPY_VALUE Test, ESMF_ArrayCreateGetUTest.F90, line 418
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 425
-  PASS  ArrayCreate with 3D farray on 2D DistGrid w/ ESMF_DATACOPY_VALUE Test, ESMF_ArrayCreateGetUTest.F90, line 418
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 425
-  PASS  ArrayCreate with 3D farrayPtr on 2D DistGrid w/ ESMF_DATACOPY_VALUE Test, ESMF_ArrayCreateGetUTest.F90, line 436
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 443
-  PASS  ArrayCreate with 3D farrayPtr on 2D DistGrid w/ ESMF_DATACOPY_VALUE Test, ESMF_ArrayCreateGetUTest.F90, line 436
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 443
-  PASS  ArrayCreate with 3D farray on 2D DistGrid w/ distgridToArrayMap Test, ESMF_ArrayCreateGetUTest.F90, line 455
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 462
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ negative computational widths Test, ESMF_ArrayCreateGetUTest.F90, line 472
---- ESMCI::Array::print start ---
- Base name    = MyArray Negative
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0xd5c280:
-            rank = 2, typekind = 6, base_addr = 0xd5ca60
-            dim[0] = 8  dim[1] = 11  
-  Real, *8, Dim 2, Data values:
-( 1,13) =  2.32843e-310
-( 2,13) =  2.32843e-310
-( 3,13) =  6.92233e-317
-( 4,13) =  6.92233e-317
-( 5,13) =  2.32843e-310
-( 6,13) =  6.92005e-317
-( 7,13) =  5.09279e-313
-( 8,13) =  5.51719e-313
-( 1,14) =  5.94159e-313
-( 2,14) =  6.36599e-313
-  skipping to end ...
-( 7,22) =  3.98935e-312
-( 8,22) =  4.03179e-312
-( 1,23) =  4.07423e-312
-( 2,23) =  4.11667e-312
-( 3,23) =  4.15911e-312
-( 4,23) =  4.20155e-312
-( 5,23) =  4.24399e-312
-( 6,23) =  4.28643e-312
-( 7,23) =  4.32887e-312
-( 8,23) =  4.37131e-312
-dim 1: [0]: [1 [2 [1, 8] 6] 8]
-dim 2: [1]: [13 [14 [13, 23] 20] 23]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computational widths Test, ESMF_ArrayCreateGetUTest.F90, line 479
-  PASS  ArrayCreate with 3D farray on 2D DistGrid w/ distgridToArrayMap Test, ESMF_ArrayCreateGetUTest.F90, line 455
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 486
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 462
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 495
---- ESMCI::Array::print start ---
- Base name    = MyArray Negative Edge
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ negative computational widths Test, ESMF_ArrayCreateGetUTest.F90, line 472
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
---- ESMCI::Array::print start ---
- Base name    = MyArray Negative
- Status: Base = Ready,  object = Ready
-{}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0xd5c280:
-            rank = 2, typekind = 6, base_addr = 0xd5ca60
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-            dim[0] = 8  dim[1] = 12  
-  Real, *8, Dim 2, Data values:
-( 1,13) =  2.32843e-310
-( 2,13) =  2.32843e-310
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0xd665b0:
-            rank = 2, typekind = 6, base_addr = 0xd66d90
-( 3,13) =  6.92233e-317
-( 4,13) =  6.92233e-317
-( 5,13) =  2.32843e-310
-( 6,13) =  6.92005e-317
-( 7,13) =  5.09279e-313
-( 8,13) =  5.51719e-313
-( 1,14) =  5.94159e-313
-( 2,14) =  6.36599e-313
-  skipping to end ...
-            dim[0] = 7  dim[1] = 12  
-  Real, *8, Dim 2, Data values:
-( 9, 1) =  2.33034e-310
-(10, 1) =  2.33034e-310
-(11, 1) =  6.94297e-317
-(12, 1) =  6.94297e-317
-(13, 1) =  1.9098e-313
-(14, 1) =  2.3342e-313
-(15, 1) =  2.75859e-313
-( 9, 2) =  3.18299e-313
-( 7,23) =  4.32887e-312
-( 8,23) =  4.37131e-312
-( 1,24) =  4.41375e-312
-( 2,24) =  5.53848e-321
-( 3,24) =  2.32843e-310
-(10, 2) =  3.60739e-313
-(11, 2) =  4.03179e-313
-  skipping to end ...
-(13,11) =  5.30499e-313
-(14,11) =  5.72939e-313
-(15,11) =  6.15379e-313
-( 4,24) =  2.32843e-310
-( 5,24) =  6.92269e-317
-( 6,24) =  6.92269e-317
-( 7,24) =  5.83549e-312
-( 8,24) =  6.34477e-312
-dim 1: [0]: [1 [1 [1, 8] 8] 8]
-dim 2: [1]: [13 [13 [13, 23] 24] 24]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 502
-( 9,12) =  6.57819e-313
-(10,12) =  7.00259e-313
-(11,12) =  7.42699e-313
-(12,12) =  7.85138e-313
-(13,12) =  8.27578e-313
-(14,12) =  8.70018e-313
-(15,12) =  9.12458e-313
-dim 1: [0]: [9 [10 [9, 15] 13] 15]
-dim 2: [1]: [1 [2 [1, 12] 9] 12]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computational widths Test, ESMF_ArrayCreateGetUTest.F90, line 479
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 486
-  PASS  ArrayGet 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 515
-  PASS  Check total widths for 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 525
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 495
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 534
---- ESMCI::Array::print start ---
- Base name    = MyArray Negative Edge
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0xd665b0:
-            rank = 2, typekind = 6, base_addr = 0xd66d90
-            dim[0] = 7  dim[1] = 12  
-  Real, *8, Dim 2, Data values:
-( 9, 1) =  2.33034e-310
-(10, 1) =  2.33034e-310
-(11, 1) =  6.94297e-317
-(12, 1) =  6.94297e-317
-(13, 1) =  1.9098e-313
-(14, 1) =  2.3342e-313
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 544
-(15, 1) =  2.75859e-313
-( 9, 2) =  3.18299e-313
-(10, 2) =  3.60739e-313
-(11, 2) =  4.03179e-313
-  skipping to end ...
-(13,11) =  5.30499e-313
-(14,11) =  5.72939e-313
-(15,11) =  6.15379e-313
---- ESMCI::Array::print start ---
- Base name    = MyArray Negative Edge
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-( 9,12) =  6.57819e-313
-(10,12) =  7.00259e-313
-(11,12) =  7.42699e-313
-(12,12) =  7.85138e-313
-(13,12) =  8.27578e-313
-(14,12) =  8.70018e-313
-(15,12) =  9.12458e-313
-{}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0xd5c280:
-            rank = 2, typekind = 6, base_addr = 0xd5ca60
-dim 1: [0]: [9 [9 [9, 15] 13] 15]
-dim 2: [1]: [1 [2 [1, 12] 12] 12]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 502
-            dim[0] = 12  dim[1] = 17  
-  Real, *8, Dim 2, Data values:
-( 0,11) =  2.32843e-310
-( 1,11) =  2.32843e-310
-( 2,11) =  6.92233e-317
-( 3,11) =  6.92233e-317
-( 4,11) =  1.50758e+161
-( 5,11) =  1.31837e+180
-( 6,11) =  1.05119e-153
-  PASS  ArrayGet 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 515
-( 7,11) =  3.05994e-57
-( 8,11) =  3.95253e-322
-( 9,11) =  3.95253e-322
-  skipping to end ...
-( 2,27) =  9.1458e-312
-( 3,27) =  9.65508e-312
-( 4,27) =  9.93094e-312
-( 5,27) =  9.97338e-312
-( 6,27) =  1.00158e-311
-  PASS  Check total widths for 2D ESMF_TYPEKIND_R8 w/ computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 525
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 534
-( 7,27) =  1.00583e-311
-( 8,27) =  1.01007e-311
-( 9,27) =  1.01431e-311
-(10,27) =  1.01856e-311
-(11,27) =  1.0228e-311
-dim 1: [0]: [0 [1 [1, 8] 8] 11]
-dim 2: [1]: [11 [13 [13, 23] 24] 27]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 551
-  PASS  ArrayGet 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 563
-  PASS  Check total widths for 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 571
-  PASS  ArrayCreate Allocate 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 544
-  PASS  Check total bounds for 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 589
---- ESMCI::Array::print start ---
- Base name    = MyArray Negative Edge
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 602
-{}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0xd64440:
-            rank = 2, typekind = 6, base_addr = 0xd66d90
+( 8,11) =  2.32915e-310
+( 9,11) =  2.32915e-310
+LocalArrayPrint: Array at address 0x26ff2e0:
+            rank = 2, typekind = 6, base_addr = 0x2701c30
             dim[0] = 11  dim[1] = 18  
   Real, *8, Dim 2, Data values:
-  PASS  Create test Array with ESMF_PIN_DE_TO_PET, ESMF_ArrayCreateGetUTest.F90, line 611
-( 8,-1) =  2.33034e-310
-( 9,-1) =  2.33034e-310
-(10,-1) =  6.94297e-317
-(11,-1) =  6.94297e-317
+( 8,-1) =  2.33606e-310
+( 9,-1) =  2.33606e-310
+(10,-1) =  2.02081e-316
+(11,-1) =  2.02081e-316
 (12,-1) =  1.9098e-313
 (13,-1) =  2.3342e-313
-  PASS  ArrayGet Fortran array pointer for ESMF_PIN_DE_TO_PET Test, ESMF_ArrayCreateGetUTest.F90, line 618
+(10,11) =  4.88425e-317
+(11,11) =  4.88425e-317
+(12,11) =  2.10424e+122
+(13,11) =  6.21989e+88
+(14,11) =  1.38497e+219
+(15,11) =  9.08367e+223
+(16,11) =  6.60856e+265
+(17,11) =  1.30494e+180
+  skipping to end ...
+  PASS  ArrayDestroy Test for array with ESMF_PIN_DE_TO_PET, ESMF_ArrayCreateGetUTest.F90, line 632
 (14,-1) =  2.75859e-313
 (15,-1) =  3.18299e-313
+( 9,27) =  0
+(10,27) =  0
+(11,27) =  0
 (16,-1) =  3.60739e-313
 (17,-1) =  4.03179e-313
   skipping to end ...
 ( 9,16) =  8.74485e+199
 (10,16) =  7.22941e+159
 (11,16) =  9.77635e+24
-  PASS  ArrayDestroy Test for array with ESMF_PIN_DE_TO_PET, ESMF_ArrayCreateGetUTest.F90, line 632
 (12,16) =  2.59339e+161
+(12,27) =  0
+(13,27) =  0
+(14,27) =  0
+(15,27) =  2.38737e-319
+(16,27) =  2.32915e-310
+(17,27) =  2.32915e-310
+(18,27) =  4.88498e-317
+dim 1: [0]: [8 [9 [9, 15] 13] 18]
+dim 2: [1]: [11 [13 [13, 23] 24] 27]
+--- ESMCI::Array::print end ---
 (13,16) =  8.9119e+35
 (14,16) =  6.57947e-85
 (15,16) =  7.35162e+223
@@ -1185,14 +1177,22 @@ LocalArrayPrint: Array at address 0xd64440:
 (18,16) =  3.32506e-321
 dim 1: [0]: [8 [9 [9, 15] 13] 18]
 dim 2: [1]: [-1 [2 [1, 12] 12] 16]
+  PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 551
 --- ESMCI::Array::print end ---
   PASS  ArrayPrint 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 551
   PASS  ArrayGet 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 563
+  PASS  ArrayGet 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 563
+  PASS  Check total widths for 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 571
+  PASS  Check total bounds for 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 593
   PASS  Check total widths for 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 571
   PASS  Check total bounds for 2D ESMF_TYPEKIND_R8 w/ computationalEdge and total widths Test, ESMF_ArrayCreateGetUTest.F90, line 585
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 602
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 602
+  PASS  Create test Array with ESMF_PIN_DE_TO_PET, ESMF_ArrayCreateGetUTest.F90, line 611
   PASS  Create test Array with ESMF_PIN_DE_TO_PET, ESMF_ArrayCreateGetUTest.F90, line 611
   PASS  ArrayGet Fortran array pointer for ESMF_PIN_DE_TO_PET Test, ESMF_ArrayCreateGetUTest.F90, line 618
+  PASS  ArrayGet Fortran array pointer for ESMF_PIN_DE_TO_PET Test, ESMF_ArrayCreateGetUTest.F90, line 618
+  PASS  ArrayDestroy Test for array with ESMF_PIN_DE_TO_PET, ESMF_ArrayCreateGetUTest.F90, line 632
   PASS  ArrayDestroy Test for array with ESMF_PIN_DE_TO_PET, ESMF_ArrayCreateGetUTest.F90, line 632
   PASS  Create test Array with ESMF_PIN_DE_TO_SSI, ESMF_ArrayCreateGetUTest.F90, line 642
   PASS  Create test Array with ESMF_PIN_DE_TO_SSI, ESMF_ArrayCreateGetUTest.F90, line 642
@@ -1236,160 +1236,26 @@ dim 2: [1]: [-1 [2 [1, 12] 12] 16]
   PASS  ArrayGet Fortran array pointer, 1D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 796
   PASS  ArrayGet w/ incompatible Fortran array pointer, 1D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 803
 --- ESMCI::Array::print start ---
+ Base name    = Array020
+ Status: Base = Ready,  object = Ready
+  PASS  ArrayGet w/ incompatible Fortran array pointer, 1D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 803
   PASS  ArrayGet w/ incompatible Fortran array pointer, 1D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 803
 --- ESMCI::Array::print start ---
  Base name    = Array020
   PASS  ArrayGet w/ incompatible Fortran array pointer, 1D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 803
 --- ESMCI::Array::print start ---
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+ Proxy        = no
+ Root Info (Attributes):
+--- ESMCI::Array::print start ---
+ Base name    = Array020
  Base name    = Array020
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-  PASS  ArrayGet w/ incompatible Fortran array pointer, 1D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 803
---- ESMCI::Array::print start ---
- Base name    = Array020
-{}Array typekind/rank: Real*8 / 1 
-~ lower class' values ~
-DistGrid dimCount = 1
-deCount = 4
- Base name    = Array020
  Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*8 / 1 
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*8 / 1 
-~ lower class' values ~
-DistGrid dimCount = 1
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*8 / 1 
-~ lower class' values ~
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0xd665b0:
-            rank = 1, typekind = 6, base_addr = 0x7ffdf444e650
-localDeCount = 1
-~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x1d3edd0:
-            rank = 1, typekind = 6, base_addr = 0x7ffd35b2b9e0
-            dim[0] = 10  
-  Real, *8, Dim 1, Data values:
-( 1) =  0
-~ lower class' values ~
-DistGrid dimCount = 1
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x24fc430:
-            rank = 1, typekind = 6, base_addr = 0x7ffdd2578750
-            dim[0] = 10  
-DistGrid dimCount = 1
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0xd603b0:
-            rank = 1, typekind = 6, base_addr = 0x7fff3b250500
-  Real, *8, Dim 1, Data values:
-( 1) =  0
-( 2) =  0
-( 3) =  0
-( 4) =  0
-            dim[0] = 10  
-  Real, *8, Dim 1, Data values:
-( 1) =  0
-( 2) =  0
-( 3) =  0
-( 4) =  0
-( 5) =  0
-( 6) =  0
-( 2) =  0
-( 3) =  0
-( 4) =  0
-( 5) =  0
-( 6) =  0
-( 7) =  0
-( 8) =  0
-( 9) =  0
-(10) =  0
-            dim[0] = 10  
-  Real, *8, Dim 1, Data values:
-( 1) =  0
-( 2) =  0
-( 3) =  0
-( 4) =  0
-( 5) =  0
-dim 1: [0]: [1 [1 [1, 10] 10] 10]
---- ESMCI::Array::print end ---
-( 5) =  0
-( 6) =  0
-( 7) =  0
-( 8) =  0
-( 9) =  0
-( 7) =  0
-( 8) =  0
-( 9) =  0
-(10) =  0
-( 6) =  0
-( 7) =  0
-( 8) =  0
-dim 1: [0]: [1 [1 [1, 10] 10] 10]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint AssmdShape 1D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 810
-  PASS  ArrayPrint AssmdShape 1D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 810
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 817
-(10) =  0
-dim 1: [0]: [1 [1 [1, 10] 10] 10]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint AssmdShape 1D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 810
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 817
-( 9) =  0
-(10) =  0
-dim 1: [0]: [1 [1 [1, 10] 10] 10]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint AssmdShape 1D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 810
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 817
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 817
-  PASS  ArrayCreate AssmdShape 1D ESMF_TYPEKIND_R8 w/ negative computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 826
-  PASS  ArrayCreate AssmdShape 1D ESMF_TYPEKIND_R8 w/ negative computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 826
-  PASS  ArrayCreate AssmdShape 1D ESMF_TYPEKIND_R8 w/ negative computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 826
---- ESMCI::Array::print start ---
- Base name    = Array021
- Status: Base = Ready,  object = Ready
-  PASS  ArrayCreate AssmdShape 1D ESMF_TYPEKIND_R8 w/ negative computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 826
---- ESMCI::Array::print start ---
- Base name    = Array021
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*8 / 1 
-~ lower class' values ~
-DistGrid dimCount = 1
---- ESMCI::Array::print start ---
- Base name    = Array021
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*8 / 1 
-~ lower class' values ~
-DistGrid dimCount = 1
-deCount = 4
---- ESMCI::Array::print start ---
- Base name    = Array021
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*8 / 1 
-~ lower class' values ~
-DistGrid dimCount = 1
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x24f8730:
  Proxy        = no
  Root Info (Attributes):
 {}Array typekind/rank: Real*8 / 1 
@@ -1398,19 +1264,37 @@ DistGrid dimCount = 1
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 1 ~
+{}Array typekind/rank: Real*8 / 1 
+~ lower class' values ~
+DistGrid dimCount = 1
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x1d41e30:
-            rank = 1, typekind = 6, base_addr = 0x7ffd35b2b9e0
+LocalArrayPrint: Array at address 0x2606040:
+            rank = 1, typekind = 6, base_addr = 0x7ffe8cb0cfa0
+{}Array typekind/rank: Real*8 / 1 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0x9b9760:
+            rank = 1, typekind = 6, base_addr = 0x7ffc88a81df0
+            dim[0] = 10  
+{}Array typekind/rank: Real*8 / 1 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 3 ~
+LocalArrayPrint: Array at address 0x974580:
+  Real, *8, Dim 1, Data values:
+LocalArrayPrint: Array at address 0x270a0e0:
+            rank = 1, typekind = 6, base_addr = 0x7ffda7db0250
             dim[0] = 10  
   Real, *8, Dim 1, Data values:
 ( 1) =  0
-LocalArrayPrint: Array at address 0xd714a0:
-            rank = 1, typekind = 6, base_addr = 0x7ffdf444e650
-localDeCount = 1
-~ local data in LocalArray for DE 2 ~
-            rank = 1, typekind = 6, base_addr = 0x7ffdd2578750
+            rank = 1, typekind = 6, base_addr = 0x7fffa8f48010
             dim[0] = 10  
   Real, *8, Dim 1, Data values:
 ( 2) =  0
@@ -1418,6 +1302,8 @@ localDeCount = 1
 ( 4) =  0
 ( 5) =  0
 ( 6) =  0
+( 7) =  0
+( 8) =  0
 ( 1) =  0
 ( 2) =  0
 ( 3) =  0
@@ -1426,7 +1312,103 @@ localDeCount = 1
 ( 6) =  0
 ( 7) =  0
 ( 8) =  0
+( 9) =  0
+(10) =  0
             dim[0] = 10  
+  Real, *8, Dim 1, Data values:
+( 1) =  0
+( 2) =  0
+( 3) =  0
+( 4) =  0
+( 5) =  0
+( 1) =  0
+( 2) =  0
+( 3) =  0
+( 4) =  0
+( 5) =  0
+( 6) =  0
+( 6) =  0
+( 7) =  0
+( 8) =  0
+( 9) =  0
+(10) =  0
+dim 1: [0]: [1 [1 [1, 10] 10] 10]
+( 9) =  0
+(10) =  0
+dim 1: [0]: [1 [1 [1, 10] 10] 10]
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint AssmdShape 1D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 810
+dim 1: [0]: [1 [1 [1, 10] 10] 10]
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint AssmdShape 1D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 810
+( 7) =  0
+( 8) =  0
+( 9) =  0
+(10) =  0
+dim 1: [0]: [1 [1 [1, 10] 10] 10]
+--- ESMCI::Array::print end ---
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint AssmdShape 1D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 810
+  PASS  ArrayPrint AssmdShape 1D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 810
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 817
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 817
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 817
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 817
+  PASS  ArrayCreate AssmdShape 1D ESMF_TYPEKIND_R8 w/ negative computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 826
+  PASS  ArrayCreate AssmdShape 1D ESMF_TYPEKIND_R8 w/ negative computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 826
+  PASS  ArrayCreate AssmdShape 1D ESMF_TYPEKIND_R8 w/ negative computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 826
+--- ESMCI::Array::print start ---
+ Base name    = Array021
+--- ESMCI::Array::print start ---
+ Base name    = Array021
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+  PASS  ArrayCreate AssmdShape 1D ESMF_TYPEKIND_R8 w/ negative computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 826
+--- ESMCI::Array::print start ---
+ Base name    = Array021
+ Status: Base = Ready,  object = Ready
+--- ESMCI::Array::print start ---
+ Base name    = Array021
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 1 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 4
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 1 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 1 ~
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 1 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 3 ~
+{}Array typekind/rank: Real*8 / 1 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 0 ~
+LocalArrayPrint: Array at address 0x25425e0:
+            rank = 1, typekind = 6, base_addr = 0x7ffe8cb0cfa0
+            dim[0] = 10  
+localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0x9bd250:
+            rank = 1, typekind = 6, base_addr = 0x7ffc88a81df0
+            dim[0] = 10  
+  Real, *8, Dim 1, Data values:
   Real, *8, Dim 1, Data values:
 ( 1) =  0
 ( 2) =  0
@@ -1434,8 +1416,9 @@ localDeCount = 1
 ( 4) =  0
 ( 5) =  0
 ( 6) =  0
-LocalArrayPrint: Array at address 0xd66660:
-            rank = 1, typekind = 6, base_addr = 0x7fff3b250500
+( 7) =  0
+LocalArrayPrint: Array at address 0x2700650:
+            rank = 1, typekind = 6, base_addr = 0x7ffda7db0250
             dim[0] = 10  
   Real, *8, Dim 1, Data values:
 ( 1) =  0
@@ -1443,7 +1426,27 @@ LocalArrayPrint: Array at address 0xd66660:
 ( 3) =  0
 ( 4) =  0
 ( 5) =  0
+LocalArrayPrint: Array at address 0x974150:
+            rank = 1, typekind = 6, base_addr = 0x7fffa8f48010
+            dim[0] = 10  
+  Real, *8, Dim 1, Data values:
+( 1) =  0
+( 2) =  0
+( 3) =  0
+( 4) =  0
+( 5) =  0
+( 1) =  0
+( 2) =  0
+( 3) =  0
+( 4) =  0
+( 5) =  0
+( 6) =  0
 ( 7) =  0
+( 8) =  0
+( 6) =  0
+( 7) =  0
+( 8) =  0
+( 9) =  0
 ( 8) =  0
 ( 9) =  0
 (10) =  0
@@ -1453,53 +1456,50 @@ dim 1: [0]: [1 [2 [1, 10] 10] 10]
 ( 7) =  0
 ( 8) =  0
 ( 9) =  0
+( 9) =  0
 (10) =  0
 dim 1: [0]: [1 [1 [1, 10] 10] 10]
 --- ESMCI::Array::print end ---
-( 9) =  0
+(10) =  0
+dim 1: [0]: [1 [1 [1, 10] 10] 10]
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint AssmdShape 1D ESMF_TYPEKIND_R8 w/ negative computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 833
 (10) =  0
 dim 1: [0]: [1 [1 [1, 10] 9] 10]
 --- ESMCI::Array::print end ---
   PASS  ArrayPrint AssmdShape 1D ESMF_TYPEKIND_R8 w/ negative computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 833
-( 7) =  0
-( 8) =  0
-( 9) =  0
-(10) =  0
-dim 1: [0]: [1 [1 [1, 10] 10] 10]
---- ESMCI::Array::print end ---
-  PASS  ArrayPrint AssmdShape 1D ESMF_TYPEKIND_R8 w/ negative computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 833
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 840
   PASS  ArrayPrint AssmdShape 1D ESMF_TYPEKIND_R8 w/ negative computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 833
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 840
   PASS  ArrayPrint AssmdShape 1D ESMF_TYPEKIND_R8 w/ negative computationalEdge widths Test, ESMF_ArrayCreateGetUTest.F90, line 833
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 840
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 840
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 840
   PASS  ArrayCreate AssmdShape 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 859
   PASS  ArrayCreate AssmdShape 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 859
-  PASS  ArrayGet Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 866
   PASS  ArrayCreate AssmdShape 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 859
   PASS  ArrayCreate AssmdShape 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 859
   PASS  ArrayGet Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 866
   PASS  ArrayGet Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 866
   PASS  ArrayGet Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 866
+  PASS  ArrayGet Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 866
+  PASS  ArrayGet w/ incompatible Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 873
+  PASS  ArrayGet w/ incompatible Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 873
   PASS  ArrayGet w/ incompatible Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 873
   PASS  ArrayGet w/ incompatible Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 873
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 880
-  PASS  ArrayGet w/ incompatible Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 873
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 880
-  PASS  ArrayGet w/ incompatible Fortran array pointer, 2D ESMF_TYPEKIND_R8 Test, ESMF_ArrayCreateGetUTest.F90, line 873
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 880
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 880
   PASS  ArrayCreate AssmdShape 3D ESMF_TYPEKIND_R4 Test, ESMF_ArrayCreateGetUTest.F90, line 899
   PASS  ArrayCreate AssmdShape 3D ESMF_TYPEKIND_R4 Test, ESMF_ArrayCreateGetUTest.F90, line 899
   PASS  ArrayCreate AssmdShape 3D ESMF_TYPEKIND_R4 Test, ESMF_ArrayCreateGetUTest.F90, line 899
+  PASS  ArrayGet Fortran array pointer, 3D ESMF_TYPEKIND_R4 Test, ESMF_ArrayCreateGetUTest.F90, line 906
+  PASS  ArrayCreate AssmdShape 3D ESMF_TYPEKIND_R4 Test, ESMF_ArrayCreateGetUTest.F90, line 899
+  PASS  ArrayGet Fortran array pointer, 3D ESMF_TYPEKIND_R4 Test, ESMF_ArrayCreateGetUTest.F90, line 906
   PASS  ArrayGet Fortran array pointer, 3D ESMF_TYPEKIND_R4 Test, ESMF_ArrayCreateGetUTest.F90, line 906
   PASS  ArrayGet Fortran array pointer, 3D ESMF_TYPEKIND_R4 Test, ESMF_ArrayCreateGetUTest.F90, line 906
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 913
-  PASS  ArrayCreate AssmdShape 3D ESMF_TYPEKIND_R4 Test, ESMF_ArrayCreateGetUTest.F90, line 899
-  PASS  ArrayGet Fortran array pointer, 3D ESMF_TYPEKIND_R4 Test, ESMF_ArrayCreateGetUTest.F90, line 906
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 913
-  PASS  ArrayGet Fortran array pointer, 3D ESMF_TYPEKIND_R4 Test, ESMF_ArrayCreateGetUTest.F90, line 906
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 913
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 913
   PASS  ArrayCreate AssmdShape 4D ESMF_TYPEKIND_I4 Test, ESMF_ArrayCreateGetUTest.F90, line 932
@@ -1535,80 +1535,80 @@ dim 1: [0]: [1 [1 [1, 10] 10] 10]
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+--- ESMCI::Array::print start ---
+ Base name    = MyArray
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
  Root Info (Attributes):
 {}Array typekind/rank: Real*8 / 1 
 ~ lower class' values ~
 DistGrid dimCount = 1
 deCount = 1
 localDeCount = 0
---- ESMCI::Array::print start ---
- Base name    = MyArray
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}--- ESMCI::Array::print start ---
- Base name    = MyArray
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*8 / 1 
-~ lower class' values ~
-{}Array typekind/rank: Real*8 / 1 
-~ lower class' values ~
-DistGrid dimCount = 1
-deCount = 1
-localDeCount = 0
 --- ESMCI::Array::print end ---
-DistGrid dimCount = 1
---- ESMCI::Array::print end ---
-Array typekind/rank: Real*8 / 1 
-~ lower class' values ~
-DistGrid dimCount = 1
-deCount = 1
   PASS  ArrayPrint Array on single DE DistGrid, ESMF_ArrayCreateGetUTest.F90, line 1062
+--- ESMCI::Array::print start ---
+ Base name    = MyArray
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 1 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 1
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 1 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 1
+localDeCount = 0
+--- ESMCI::Array::print end ---
+  PASS  ArrayPrint Array on single DE DistGrid, ESMF_ArrayCreateGetUTest.F90, line 1062
+{}Array typekind/rank: Real*8 / 1 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 1
 localDeCount = 0
 --- ESMCI::Array::print end ---
   PASS  ArrayPrint Array on single DE DistGrid, ESMF_ArrayCreateGetUTest.F90, line 1062
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1069
-deCount = 1
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x1d3e970:
-            rank = 1, typekind = 6, base_addr = 0x1d3d830
+LocalArrayPrint: Array at address 0x2606040:
+            rank = 1, typekind = 6, base_addr = 0x25fac40
             dim[0] = 4  
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1069
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1069
   Real, *8, Dim 1, Data values:
-( 1) =  1.51483e-316
+( 1) =  1.96758e-316
 ( 2) =  6.32404e-322
 ( 3) =  0
 ( 4) =  0
 dim 1: [0]: [1 [1 [1, 4] 4] 4]
 --- ESMCI::Array::print end ---
   PASS  ArrayPrint Array on single DE DistGrid, ESMF_ArrayCreateGetUTest.F90, line 1062
+  PASS  Create Array on single DE DistGrid with Fortran allocation, ESMF_ArrayCreateGetUTest.F90, line 1085
+  PASS  Create Array on single DE DistGrid with Fortran allocation, ESMF_ArrayCreateGetUTest.F90, line 1085
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1092
+  PASS  Create Array on single DE DistGrid with Fortran allocation, ESMF_ArrayCreateGetUTest.F90, line 1085
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1092
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1069
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1069
-  PASS  Create Array on single DE DistGrid with Fortran allocation, ESMF_ArrayCreateGetUTest.F90, line 1085
-  PASS  ArrayPrint Array on single DE DistGrid, ESMF_ArrayCreateGetUTest.F90, line 1062
-  PASS  Create Array on single DE DistGrid with Fortran allocation, ESMF_ArrayCreateGetUTest.F90, line 1085
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1069
-  PASS  Create Array on single DE DistGrid with Fortran allocation, ESMF_ArrayCreateGetUTest.F90, line 1085
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1092
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1092
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1092
   PASS  Create Array on single DE DistGrid with Fortran allocation, ESMF_ArrayCreateGetUTest.F90, line 1085
   PASS  Create Array on 4 DE DistGrid with only DE 0 elements, with Fortran allocation, ESMF_ArrayCreateGetUTest.F90, line 1120
   PASS  Create Array on 4 DE DistGrid with only DE 0 elements, with Fortran allocation, ESMF_ArrayCreateGetUTest.F90, line 1120
+  PASS  Create Array on 4 DE DistGrid with only DE 0 elements, with Fortran allocation, ESMF_ArrayCreateGetUTest.F90, line 1120
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1092
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1127
+  Ending Test, file ESMF_ArrayCreateGetUTest.F90, line 1137
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1127
+  Ending Test, file ESMF_ArrayCreateGetUTest.F90, line 1137
+  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1127
+  Ending Test, file ESMF_ArrayCreateGetUTest.F90, line 1137
   PASS  Create Array on 4 DE DistGrid with only DE 0 elements, with Fortran allocation, ESMF_ArrayCreateGetUTest.F90, line 1120
-  Ending Test, file ESMF_ArrayCreateGetUTest.F90, line 1137
-  Ending Test, file ESMF_ArrayCreateGetUTest.F90, line 1137
-  PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1127
-  PASS  Create Array on 4 DE DistGrid with only DE 0 elements, with Fortran allocation, ESMF_ArrayCreateGetUTest.F90, line 1120
   PASS  ArrayDestroy Test, ESMF_ArrayCreateGetUTest.F90, line 1127
   Ending Test, file ESMF_ArrayCreateGetUTest.F90, line 1137
-  Ending Test, file ESMF_ArrayCreateGetUTest.F90, line 1137
-  PET           2  Test Elapsed Time    9.1180000000000003       msec.
-  PET           0  Test Elapsed Time    11.261999999999993       msec.
-  PET           3  Test Elapsed Time    11.436999999999989       msec.
-  PET           1  Test Elapsed Time    9.4070000000000125       msec.
+  PET           0  Test Elapsed Time    10.153999999999996       msec.
+  PET           2  Test Elapsed Time    9.2319999999999904       msec.
+  PET           3  Test Elapsed Time    9.4190000000000111       msec.
+  PET           1  Test Elapsed Time    9.4459999999999962       msec.
