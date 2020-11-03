@@ -41,11 +41,14 @@ for i in range(len(arry)):
     final_days = leftRotatebyOne(arry, 7)
 
 # print(final_days)
+pass_day_list = []
 tr_date = '<tr>\n' 
 tr_date += '\t\t\t\t\t\t\t<th></th>\n'
 for i in range(6,0,-1):
     week_date = today_d - DT.timedelta(days=(i))
+    pass_day_list.append(str(week_date))
     tr_date += '\t\t\t\t\t\t\t<th>'+str(week_date.month)+'/'+str(week_date.day)+'</th>\n'
+pass_day_list.append(str(today_d))
 tr_date += '\t\t\t\t\t\t\t<th>'+str(today_d.month)+'/'+str(today_d.day)+'</th>\n'
 tr_date += '\t\t\t\t\t\t</tr>\n'
 
@@ -54,20 +57,38 @@ tr_days += '\t\t\t\t\t\t\t<th></th>\n'
 for i in range(7): 
     tr_days += '\t\t\t\t\t\t\t<th>'+final_days[i]+'</th>\n'
 tr_days += '\t\t\t\t\t\t</tr>\n'
-
+#print(pass_day_list)
 #color_list = { 1: ['green', 0 , "link"], 2: ['red', 20, "link"], 3: ['red', 24, "link"], 4: ['yellow', 2, "link"], 5: ['yellow', 1, "link"], 6: ['green', 0, "link"], 7: ['yellow', 3, "link"] }
-color_list = read_summary(data)
-
+color_list = read_summary(data, pass_day_list)
+# print(color_list['catania'])
 def sup_com_data(name,comm,color_list):
     color_list = color_list[name][comm]
-    print(color_list)
+    # print(color_list)
     tr_data = '<tr>\n' 
     # tr_data += '\t\t\t\t\t\t\t<th></th>\n'
-    tr_data += '<td class="name"><div class="popup" ><a href="https://www.earthsystemcog.org/projects/esmf/'+name+'"><button type="button" class="btn btn-primary" data-toggle="popover" title=""><B>'+name+'<font color=#e41b17>NetCDF YAML</font> </B></a></div><!-- <span> <ul><li>Last updated 11/22/2019.</li></ul></span></div></td> -->'
+    tr_data += '<td class="name"><div class="popup" ><a href="https://www.earthsystemcog.org/projects/esmf/'+name+'"><button type="button" class="btn btn-primary" data-toggle="popover" title=""><B>'+name+"  "+ comm+"  "+'<font color=#e41b17>NetCDF YAML</font> </B></a></div><!-- <span> <ul><li>Last updated 11/22/2019.</li></ul></span></div></td> -->'
     for i,(color, val, link) in color_list.items():
         tr_data += '<td class = "{1}"><a href="{3}"></a>{2}</td>'.format(i,color,val,link)
     tr_data += '\t\t\t\t\t\t</tr>\n'
     return(tr_data)
+
+def sup_com_data1(tr_days,tr_date,color_list,data):
+    tr_data = '<table class="results">'
+    tr_data += tr_days
+    tr_data += tr_date
+    for plat in data["platform"]:
+        if plat in color_list:
+            color_list_p = color_list[plat]
+            for comm in (data["platform"][plat]):
+                color_list1 = color_list_p[comm]
+                tr_data += '<tr>\n' 
+                tr_data += '<td class="name"><div class="popup" ><a href="https://www.earthsystemcog.org/projects/esmf/'+plat+'"><button type="button" class="btn btn-primary" data-toggle="popover" title=""><B>'+plat+"  "+ comm+"  "+'<font color=#e41b17>NetCDF YAML</font> </B></a></div><!-- <span> <ul><li>Last updated 11/22/2019.</li></ul></span></div></td> -->'
+                for i,(color, val, link) in color_list1.items():
+                    tr_data += '<td class = "{1}"><a href="{3}"></a>{2}</td>'.format(i,color,val,link)
+                tr_data += '\t\t\t\t\t\t</tr>\n'
+    tr_data += '\t\t\t\t\t</table>\n'
+    return(tr_data)
+
 
 style  ='''<style>
     body{
@@ -231,6 +252,9 @@ style  ='''<style>
         text-decoration: none;
         padding: 10px;
     }
+    .space{
+        height:150px;
+    }
 </style>
 '''
 code = f'''<!DOCTYPE html>
@@ -279,11 +303,10 @@ code = f'''<!DOCTYPE html>
 						<p>Updated: {day_time} </p> 
 						<table class="results">
 					
-						{tr_days}
-                        {tr_date}
-                        {sup_com_data("stampede","intel",color_list)}
-						</ul>
+						
                 </table>
+                {sup_com_data1(tr_days,tr_date,color_list,data)}
+                <div class="space"></div>
             </div>
         </div>
     </section>
@@ -292,6 +315,6 @@ code = f'''<!DOCTYPE html>
 </body>
 </html>'''
 
-f1= open("him.html","w+")
+f1= open("index.html","w+")
 f1.write(code)
 f1.close()
