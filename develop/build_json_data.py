@@ -4,8 +4,8 @@ import re
 import datetime
 import base64
 import requests
-import parse
 from datetime import date as datee
+from dateutil.parser import parse
 from tempfile import mkstemp
 from shutil import move, copymode
 from os import fdopen, remove
