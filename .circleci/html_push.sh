@@ -12,5 +12,5 @@ cp -rf ../../../../project/develop/index.html .
 cd  ../../..
 git add .
 git commit -m "html result table pushed by CircleCI to esmf-org.github.io"
-git remote prune origin
-git push origin master
+git remote add origin "https://github.com/esmf-org/esmf-org.github.io.git"
+git push -u origin master
