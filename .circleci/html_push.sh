@@ -8,7 +8,7 @@ cd
 pwd
 git clone git@github.com:esmf-org/esmf-test-artifacts.git
 cd esmf-test-artifacts/develop/
-cp -rf ../../../../project/develop/index.html .
+cp -rf ../../project/develop/index.html .
 cd  ..
 git add .
 git commit -m "html result table pushed by CircleCI to artifacts"
