@@ -83,8 +83,8 @@ def sup_com_data1(tr_days,tr_date,color_list,data):
                 color_list1 = color_list_p[comm]
                 tr_data += '<tr>\n' 
                 tr_data += '<td class="name"><div class="popup" ><a href="https://www.earthsystemcog.org/projects/esmf/'+plat+'"><button type="button" class="btn btn-primary" data-toggle="popover" title=""><B>'+plat+"  "+ comm+"  "+'<font color=#e41b17>NetCDF YAML</font> </B></a></div><!-- <span> <ul><li>Last updated 11/22/2019.</li></ul></span></div></td> -->'
-                for color, val, link in color_list1.items():
-                    tr_data += '<td class = "{0}"><a href="{2}"></a>{1}</td>'.format(color,val,link)
+                for i,(color, val, link) in color_list1.items():
+                    tr_data += '<td class = "{1}"><a href="{3}"></a>{2}</td>'.format(i,color,val,link)
                 tr_data += '\t\t\t\t\t\t</tr>\n'
     tr_data += '\t\t\t\t\t</table>\n'
     return(tr_data)
