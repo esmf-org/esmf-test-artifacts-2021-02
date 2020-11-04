@@ -52,7 +52,13 @@ def read_summary(data,pass_day_list):
                     for date in pass_day_list:
                         if date == str(datee.today()):
                             result_log_url = 'https://raw.githubusercontent.com/esmf-org/esmf-test-artifacts/master/develop/{0}/{1}/result.html'.format(platform_name,compiler_name)
-                            day_7[date] = read_one_summary(summ_file,result_log_url)
+                            if(platform_name == "stampede"):
+                                sum_file.close()
+                                read_one_summary1(platform_name+'/'+compiler_name+"/summary.log")
+                                sum_file = open(platform_name+'/'+compiler_name+"/summary.log", "+r")
+                                day_7[date] = read_one_summary(sum_file,result_log_url)
+                            else:
+                                day_7[date] = read_one_summary(summ_file,result_log_url)
                         elif date in commit_list_dict.keys():
                             commit_no = commit_list_dict[date]
                             url = 'https://raw.githubusercontent.com/esmf-org/esmf-test-artifacts/{0}/develop/{1}/{2}/summary.log'.format(commit_no,platform_name,compiler_name)
@@ -107,4 +113,4 @@ def read_one_summary1(file_path,pattern="Test_Failures :\n",subst = "Test_Status
     
 
 
-# print(read_summary(data,['2020-10-28', '2020-10-29', '2020-10-30', '2020-10-31', '2020-11-01', '2020-11-02', '2020-11-03']))
+# print(read_summary(data,['2020-10-29', '2020-10-30', '2020-10-31', '2020-10-1', '2020-11-02', '2020-11-03', '2020-11-04']))
