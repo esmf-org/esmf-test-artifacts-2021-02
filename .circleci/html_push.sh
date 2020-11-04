@@ -6,11 +6,10 @@ git config --global user.name "him-28"
 
 cd
 pwd
-git clone git@github.com:esmf-org/esmf-org.github.io.git
-cd esmf-org.github.io/regression_test_result/nightly/develop/
+git clone git@github.com:esmf-org/esmf-test-artifacts.git
+cd esmf-test-artifacts/develop/
 cp -rf ../../../../project/develop/index.html .
-cd  ../../..
+cd  ..
 git add .
-git commit -m "html result table pushed by CircleCI to esmf-org.github.io"
-git remote add origin "https://github.com/esmf-org/esmf-org.github.io.git"
-git push -u origin master
+git commit -m "html result table pushed by CircleCI to artifacts"
+git push origin master
