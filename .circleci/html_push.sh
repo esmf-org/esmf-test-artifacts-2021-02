@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -Eeuxo pipefail
 
-git config --global user.email "himanshu@ucar.edu"
-git config --global user.name "esmf-orgbot"
+git config --global user.email "himanshupillai@gmail.com"
+git config --global user.name "him-28"
 
 cd
 pwd
