@@ -34,11 +34,10 @@ for i in range(len(arry)):
     #print(leftRotatebyOne(arry, 7))
     # print(arry[-1])
     # print(arry_dict[day])
-    # if(arry[-1] == arry_dict[day]):
-    #     pass
-    # else:
-        #print(leftRotatebyOne(arry, 7))
-    final_days = leftRotatebyOne(arry, 7)
+    if(arry[-1] == arry_dict[day]):
+        pass
+    else:
+        final_days = leftRotatebyOne(arry, 7)
 
 # print(final_days)
 pass_day_list = []
