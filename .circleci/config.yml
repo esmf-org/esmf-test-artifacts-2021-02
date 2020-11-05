@@ -20,7 +20,10 @@ commands:
           command: git clone --depth 1 --branch ${CIRCLE_BRANCH} https://github.com/esmf-org/esmf-test-artifacts.git
       - run:
           name: Install Dependencies
-          command: pip install jsonschema unittest-xml-reporting click gitpython
+          command: pip3 install jsonschema unittest-xml-reporting click gitpython requests python-dateutil pytest-shutil
+      - run:
+          name: python-dateutil dependencies
+          command: sudo pip3 install python-dateutil
       - run: mkdir -p /tmp/artifacts
       - run:
           name: Run Meta Testing
@@ -187,18 +190,23 @@ jobs:
           compiler: intel
           comm: intelmpi
 
-  commit-read:
-    docker:
-      - image: circleci/python
-        auth:
-          username: $ESMF_DOCKER_USERNAME
-          password: $ESMF_DOCKER_PASSWORD
-    steps:
-      - checkout
-      - run:
-          name: Read Commit Log file 
-          command: ls && cd develop && python3.7 build_json_data.py
-        
+#  commit-read:
+#    docker:
+#      - image: circleci/python
+#       auth:
+#          username: $ESMF_DOCKER_USERNAME
+#         password: $ESMF_DOCKER_PASSWORD
+#    steps:
+#      - checkout
+#      - run:
+#          name: python-dateutil dependencies
+#          command: sudo pip3 install python-dateutil
+#      - run:
+#          name: Read Commit Log file 
+#          command: pwd && cd develop && python3 build_html.py
+#      - run:
+#          name: Push HTML 
+#          command: pwd && bash .circleci/html_push.sh 
 
 workflows:
 
@@ -230,6 +238,6 @@ workflows:
           name: develop-stampede-intel-intelmpi
 
 
-  run-read-commit:
-    jobs:
-      - commit-read
+ # run-read-commit:
+ #   jobs:
+ #     - commit-read
