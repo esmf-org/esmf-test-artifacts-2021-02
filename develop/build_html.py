@@ -34,11 +34,10 @@ for i in range(len(arry)):
     #print(leftRotatebyOne(arry, 7))
     # print(arry[-1])
     # print(arry_dict[day])
-    # if(arry[-1] == arry_dict[day]):
-    #     pass
-    # else:
-        #print(leftRotatebyOne(arry, 7))
-    final_days = leftRotatebyOne(arry, 7)
+    if(arry[-1] == arry_dict[day]):
+        pass
+    else:
+        final_days = leftRotatebyOne(arry, 7)
 
 # print(final_days)
 pass_day_list = []
@@ -80,9 +79,12 @@ def sup_com_data1(tr_days,tr_date,color_list,data):
         if plat in color_list:
             color_list_p = color_list[plat]
             for comm in (data["platform"][plat]):
+                # print(plat)
+                # print(color_list_p)
                 color_list1 = color_list_p[comm]
                 tr_data += '<tr>\n' 
                 tr_data += '<td class="name"><div class="popup" ><a href="https://www.earthsystemcog.org/projects/esmf/'+plat+'"><button type="button" class="btn btn-primary" data-toggle="popover" title=""><B>'+plat+"  "+ comm+"  "+'<font color=#e41b17>NetCDF YAML</font> </B></a></div><!-- <span> <ul><li>Last updated 11/22/2019.</li></ul></span></div></td> -->'
+                # print(color_list1.items())
                 for i,(color, val, link) in color_list1.items():
                     tr_data += '<td class = "{1}"><a href="{3}"></a>{2}</td>'.format(i,color,val,link)
                 tr_data += '\t\t\t\t\t\t</tr>\n'

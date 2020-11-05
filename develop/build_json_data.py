@@ -46,7 +46,7 @@ def read_summary(data,pass_day_list):
                             # date_time_obj = datetime.datetime.strptime(commit_string, '%x %b %d %H:%M:%S %y%f')
                             datess1 = str(dt.date())
                             commit_date.append(datess1)
-                    for i in range(0,len(commit_list)):
+                    for i in range(0,len(commit_date)):
                         commit_list_dict[commit_date[i]] = commit_list[i]
                     # print(commit_list_dict)
                     for date in pass_day_list:

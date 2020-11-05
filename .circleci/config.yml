@@ -1,6 +1,6 @@
 version: 2.1
 
-commands:
+#commands:
   run-meta-testing:
     parameters:
       branch:
@@ -190,23 +190,23 @@ jobs:
           compiler: intel
           comm: intelmpi
 
-#  commit-read:
-#    docker:
-#      - image: circleci/python
-#       auth:
-#          username: $ESMF_DOCKER_USERNAME
-#         password: $ESMF_DOCKER_PASSWORD
-#    steps:
-#      - checkout
-#      - run:
-#          name: python-dateutil dependencies
-#          command: sudo pip3 install python-dateutil
-#      - run:
-#          name: Read Commit Log file 
-#          command: pwd && cd develop && python3 build_html.py
-#      - run:
-#          name: Push HTML 
-#          command: pwd && bash .circleci/html_push.sh 
+  commit-read:
+    docker:
+      - image: circleci/python
+        auth:
+          username: $ESMF_DOCKER_USERNAME
+          password: $ESMF_DOCKER_PASSWORD
+    steps:
+      - checkout
+      - run:
+          name: python-dateutil dependencies
+          command: sudo pip3 install python-dateutil
+      - run:
+          name: Read Commit Log file 
+          command: pwd && cd develop && python3 build_html.py
+      - run:
+          name: Push HTML 
+          command: pwd && bash .circleci/html_push.sh 
 
 workflows:
 
@@ -238,6 +238,6 @@ workflows:
           name: develop-stampede-intel-intelmpi
 
 
- # run-read-commit:
- #   jobs:
- #     - commit-read
+  run-read-commit:
+    jobs:
+      - commit-read
