@@ -340,6 +340,10 @@ cp -r data /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/test/testO
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_Dual NP=1 ctest
 /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMC_MBMesh_DualUTest 1> ./ESMC_MBMesh_DualUTest.stdout 2>&1
 cat: ./PET*MBMesh_DualUTest.Log: No such file or directory
+/Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_Error NP=1 ctest
+/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMC_MBMesh_ErrorUTest 1> ./ESMC_MBMesh_ErrorUTest.stdout 2>&1
+/Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_Glue NP=1 ctest
+/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMC_MBMesh_GlueUTest 1> ./ESMC_MBMesh_GlueUTest.stdout 2>&1
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_Search NP=1 ctest
 /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMC_MBMesh_SearchUTest 1> ./ESMC_MBMesh_SearchUTest.stdout 2>&1
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_Serialize NP=1 ctest
@@ -758,6 +762,7 @@ PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRedistArbUTest.F90
 PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridCSUTest.F90
 PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridCsrv2ndUTest.F90
 PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridCsrvUTest.F90
+PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridUTest.F90
 PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridXGUTest.F90
 PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldSMMFromFileUTest.F90
 PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldStressUTest.F90
@@ -785,6 +790,7 @@ PASS: mpiuni/O: src/Infrastructure/LogErr/tests/ESMF_LogErrUTest.F90
 PASS: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_BilinearSingleElemUTest.C
 PASS: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_BilinearUTest.C
 PASS: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_CreateUTest.C
+PASS: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_ErrorUTest.C
 PASS: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_SearchUTest.C
 PASS: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_SerializeUTest.C
 PASS: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_UtilUTest.C
@@ -891,14 +897,9 @@ PASS: mpiuni/O: src/prologue/tests/ESMF_StringUTest.F90
 PASS: mpiuni/O: src/prologue/tests/ESMF_WordsizeUTest.F90
 
 
-The following unit test files had failed unit tests:
+The following unit test files failed to build, failed to execute or crashed during execution:
 
-FAIL: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridUTest.F90
-
-
-The following individual unit tests fail:
-
-   FAIL: mpiuni/O:   Test per location status output with extrap, ESMF_FieldRegridUTest.F90, line 1305:  Test unsuccessful
+CRASHED: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_GlueUTest.C
 
 
 The following test harness unit tests pass:
@@ -910,6 +911,6 @@ The log and stdout files for the unit tests can be found at:
 /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/test/testO/Darwin.intel.64.mpiuni.default
 
 
-Found 7265 exhaustive single processor unit tests, 7264 passed and 1 failed.
+Found 7269 exhaustive single processor unit tests, 7267 passed and 2 failed.
 
-Thu Nov  5 06:28:02 MST 2020
+Fri Nov  6 16:08:28 MST 2020
