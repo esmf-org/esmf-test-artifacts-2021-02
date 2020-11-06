@@ -779,6 +779,14 @@ gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/intel/esmf/
 /scratch/esmf/esmf_test/cronjobs/trunk/intel/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMC_MBMesh_DualUTest 1> ./ESMC_MBMesh_DualUTest.stdout 2>&1
 cat: ./PET*MBMesh_DualUTest.Log: No such file or directory
 gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/intel/esmf/src/Infrastructure/Mesh/tests'
+gmake TNAME=MBMesh_Error NP=1 ctest
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/intel/esmf/src/Infrastructure/Mesh/tests'
+/scratch/esmf/esmf_test/cronjobs/trunk/intel/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMC_MBMesh_ErrorUTest 1> ./ESMC_MBMesh_ErrorUTest.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/intel/esmf/src/Infrastructure/Mesh/tests'
+gmake TNAME=MBMesh_Glue NP=1 ctest
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/intel/esmf/src/Infrastructure/Mesh/tests'
+/scratch/esmf/esmf_test/cronjobs/trunk/intel/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMC_MBMesh_GlueUTest 1> ./ESMC_MBMesh_GlueUTest.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/intel/esmf/src/Infrastructure/Mesh/tests'
 gmake TNAME=MBMesh_Search NP=1 ctest
 gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/intel/esmf/src/Infrastructure/Mesh/tests'
 /scratch/esmf/esmf_test/cronjobs/trunk/intel/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMC_MBMesh_SearchUTest 1> ./ESMC_MBMesh_SearchUTest.stdout 2>&1
@@ -1730,6 +1738,7 @@ PASS: mpiuni/g: src/Infrastructure/LogErr/tests/ESMF_LogErrPerfUTest.F90
 PASS: mpiuni/g: src/Infrastructure/LogErr/tests/ESMF_LogErrUTest.F90
 PASS: mpiuni/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_BilinearUTest.C
 PASS: mpiuni/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_CreateUTest.C
+PASS: mpiuni/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_ErrorUTest.C
 PASS: mpiuni/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_SearchUTest.C
 PASS: mpiuni/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_SerializeUTest.C
 PASS: mpiuni/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_UtilUTest.C
@@ -1841,6 +1850,16 @@ The following unit test files failed to build, failed to execute or crashed duri
 CRASHED: mpiuni/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_BilinearSingleElemUTest.C
 
 
+The following unit test files had failed unit tests:
+
+FAIL: mpiuni/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_GlueUTest.C
+
+
+The following individual unit tests fail:
+
+   FAIL: mpiuni/g:  MBMeshGet - Spherical quadrilateral, ESMC_MBMesh_GlueUTest.C, line 783, FAIL
+
+
 The following test harness unit tests pass:
 PASS: mpiuni/g: ESMF_array_2_NP1UTest
 PASS: mpiuni/g: ESMF_field_1_NP1UTest
@@ -1850,7 +1869,7 @@ The log and stdout files for the unit tests can be found at:
 /scratch/esmf/esmf_test/cronjobs/trunk/intel/esmf/test/testg/Linux.intel.64.mpiuni.default
 
 
-Found 7265 exhaustive single processor unit tests, 7259 passed and 6 failed.
+Found 7269 exhaustive single processor unit tests, 7262 passed and 7 failed.
 
 gmake[1]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/intel/esmf'
-Thu Nov  5 02:58:51 MST 2020
+Fri Nov  6 03:08:42 MST 2020

@@ -779,6 +779,14 @@ gmake[6]: Entering directory '/project/esmf/himanshu/gfortran/esmf/src/Infrastru
 /project/esmf/himanshu/gfortran/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMC_MBMesh_DualUTest 1> ./ESMC_MBMesh_DualUTest.stdout 2>&1
 cat: ./PET*MBMesh_DualUTest.Log: No such file or directory
 gmake[6]: Leaving directory '/project/esmf/himanshu/gfortran/esmf/src/Infrastructure/Mesh/tests'
+gmake TNAME=MBMesh_Error NP=1 ctest
+gmake[6]: Entering directory '/project/esmf/himanshu/gfortran/esmf/src/Infrastructure/Mesh/tests'
+/project/esmf/himanshu/gfortran/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMC_MBMesh_ErrorUTest 1> ./ESMC_MBMesh_ErrorUTest.stdout 2>&1
+gmake[6]: Leaving directory '/project/esmf/himanshu/gfortran/esmf/src/Infrastructure/Mesh/tests'
+gmake TNAME=MBMesh_Glue NP=1 ctest
+gmake[6]: Entering directory '/project/esmf/himanshu/gfortran/esmf/src/Infrastructure/Mesh/tests'
+/project/esmf/himanshu/gfortran/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMC_MBMesh_GlueUTest 1> ./ESMC_MBMesh_GlueUTest.stdout 2>&1
+gmake[6]: Leaving directory '/project/esmf/himanshu/gfortran/esmf/src/Infrastructure/Mesh/tests'
 gmake TNAME=MBMesh_Search NP=1 ctest
 gmake[6]: Entering directory '/project/esmf/himanshu/gfortran/esmf/src/Infrastructure/Mesh/tests'
 /project/esmf/himanshu/gfortran/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMC_MBMesh_SearchUTest 1> ./ESMC_MBMesh_SearchUTest.stdout 2>&1
@@ -1731,6 +1739,7 @@ PASS: mpiuni/O: src/Infrastructure/LogErr/tests/ESMF_LogErrUTest.F90
 PASS: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_BilinearSingleElemUTest.C
 PASS: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_BilinearUTest.C
 PASS: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_CreateUTest.C
+PASS: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_ErrorUTest.C
 PASS: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_SearchUTest.C
 PASS: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_SerializeUTest.C
 PASS: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_UtilUTest.C
@@ -1837,6 +1846,16 @@ PASS: mpiuni/O: src/prologue/tests/ESMF_StringUTest.F90
 PASS: mpiuni/O: src/prologue/tests/ESMF_WordsizeUTest.F90
 
 
+The following unit test files had failed unit tests:
+
+FAIL: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_GlueUTest.C
+
+
+The following individual unit tests fail:
+
+   FAIL: mpiuni/O:  MBMeshGet - Spherical quadrilateral, ESMC_MBMesh_GlueUTest.C, line 783, FAIL
+
+
 The following test harness unit tests pass:
 PASS: mpiuni/O: ESMF_array_2_NP1UTest
 PASS: mpiuni/O: ESMF_field_1_NP1UTest
@@ -1846,7 +1865,7 @@ The log and stdout files for the unit tests can be found at:
 /project/esmf/himanshu/gfortran/esmf/test/testO/Linux.gfortran.64.mpiuni.default
 
 
-Found 7265 exhaustive single processor unit tests, 7265 passed and 0 failed.
+Found 7269 exhaustive single processor unit tests, 7268 passed and 1 failed.
 
 gmake[1]: Leaving directory '/project/esmf/himanshu/gfortran/esmf'
-Thu Nov  5 03:09:53 MST 2020
+Fri Nov  6 03:20:49 MST 2020
