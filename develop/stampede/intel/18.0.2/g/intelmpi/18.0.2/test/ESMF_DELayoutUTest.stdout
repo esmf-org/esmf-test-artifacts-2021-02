@@ -1,4 +1,4 @@
-TACC:  Starting up job 6759029 
+TACC:  Starting up job 6766271 
 TACC:  Starting parallel tasks... 
   Beginning Test, file ESMF_DELayoutUTest.F90, line 82
   Beginning Test, file ESMF_DELayoutUTest.F90, line 82
@@ -178,10 +178,6 @@ TACC:  Starting parallel tasks...
   PASS  Default DELayout Destroy Test, ESMF_DELayoutUTest.F90, line 339
   PASS  Default DELayout Destroy Twice Test, ESMF_DELayoutUTest.F90, line 346
   PASS  Default DELayout Destroy Twice Test, ESMF_DELayoutUTest.F90, line 346
-  PASS  DELayout Destroy again through shallow copy Test, ESMF_DELayoutUTest.F90
- , line 353
-  PASS  DELayout Destroy again through shallow copy Test, ESMF_DELayoutUTest.F90
- , line 353
   PASS  Default DELayout Destroy Twice Test, ESMF_DELayoutUTest.F90, line 346
   PASS  Default DELayout Destroy Twice Test, ESMF_DELayoutUTest.F90, line 346
   PASS  DELayout Destroy again through shallow copy Test, ESMF_DELayoutUTest.F90
@@ -189,13 +185,17 @@ TACC:  Starting parallel tasks...
   PASS  DELayout Destroy again through shallow copy Test, ESMF_DELayoutUTest.F90
  , line 353
   PASS  DELayout Destroy again through shallow copy Test, ESMF_DELayoutUTest.F90
- , line 360
+ , line 353
+  PASS  DELayout Destroy again through shallow copy Test, ESMF_DELayoutUTest.F90
+ , line 353
   PASS  DELayout Destroy again through shallow copy Test, ESMF_DELayoutUTest.F90
  , line 360
   PASS  DELayout Destroy again through shallow copy Test, ESMF_DELayoutUTest.F90
  , line 360
   PASS  DELayout Destroy again through shallow copy Test, ESMF_DELayoutUTest.F90
  , line 360
+  PASS  DELayout Destroy again through shallow copy Test, ESMF_DELayoutUTest.F90
+ , line 360
   PASS  DELayout with petList Create Test, ESMF_DELayoutUTest.F90, line 368
   PASS  DELayout with petList Create Test, ESMF_DELayoutUTest.F90, line 368
   PASS  DELayout with petList Create Test, ESMF_DELayoutUTest.F90, line 368
@@ -244,55 +244,55 @@ TACC:  Starting parallel tasks...
 --- ESMCI::VM::print() start ---
 --- ESMCI::VM::print() start ---
 --- ESMCI::VM::print() start ---
---- ESMCI::VMId::print() start ------ ESMCI::VMId::print() start ---
---- ESMCI::VMId::print() start ------ ESMCI::VMId::print() start ---
+--- ESMCI::VMId::print() start ------ ESMCI::VMId::print() start ------ ESMCI::VMId::print() start ------ ESMCI::VMId::print() start ---
+
+
   vmKeyWidth = 
-  vmKeyWidth = 
-  vmKeyWidth = 1
+  vmKeyWidth =   vmKeyWidth =   vmKeyWidth = 1
+1
+  vmKey=0x1
   vmKey=0xF0000000
-  localID = 0  vmKeyWidth = 1
-  vmKey=0xF0000000
+  localID = 0  vmKey=0xF0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
 1
   vmKey=0xF0000000
   localID = 0
-1
-  vmKey=0xF0000000
+--- ESMCI::VMId::print() end ---
+F0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
 
 --- ESMCI::VMId::print() end ---
---- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
+vm located at: 0x269c520
+npets = 4, mypet=0
 --- VMK::print() start ---
-vm located at: 0x22e39d0
+vm located at: 0x14159d0
 npets = 4, mypet=1
-  pth_mutex =		 0x24136c0
+  pth_mutex =		 0x1545700
   pth_finish_count =	 (nil)
+MPI_Comm_size: 4
 --- VMK::print() start ---
-vm located at: 0xb9e9d0
+vm located at: 0x8ea9d0
 npets = 4, mypet=2
-  pth_mutex =		 0xcce6c0
+  pth_mutex =		 0xa1a6c0
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 2
 MPI_Comm_rank in MPI_COMM_WORLD: 2
+MPI thread level support: 3
 --- VMK::print() start ---
-vm located at: 0xf679d0
+vm located at: 0x200f9d0
 npets = 4, mypet=3
-  pth_mutex =		 0x10976c0
+  pth_mutex =		 0x213f700
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 3
 MPI_Comm_rank in MPI_COMM_WORLD: 3
 MPI thread level support: 3
 mpi_mutex_flag: 0
-mpionly: 1
-nothreadsflag: 1
-vm located at: 0x2149520
-npets = 4, mypet=0
-  pth_mutex =		 0x22786d0
+  pth_mutex =		 0x27cb6d0
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 0
@@ -300,7 +300,8 @@ MPI_Comm_rank in MPI_COMM_WORLD: 0
 MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
-MPI_Comm_size: 4
+nothreadsflag: 1
+  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
 MPI_Comm_rank in local MPI communicator: 1
 MPI_Comm_rank in MPI_COMM_WORLD: 1
 MPI thread level support: 3
@@ -308,19 +309,17 @@ mpi_mutex_flag: 0
 mpionly: 1
 nothreadsflag: 1
   lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
-MPI thread level support: 3
+  lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
 mpi_mutex_flag: 0
 mpionly: 1
 nothreadsflag: 1
   lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
+  lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2mpionly: 1
+nothreadsflag: 1
   lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
-  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0nothreadsflag: 1
-  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
-  lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
-  lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
   lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
@@ -333,8 +332,8 @@ ncores = 4
   cpuid[1]=1, ssiid[1]=0
   cpuid[2]=2, ssiid[2]=0
   cpuid[3]=3, ssiid[3]=0
---- VMK::print() end ---
-, cid[3][0]=3
+
+  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
 ncores = 4
   cpuid[0]=0, ssiid[0]=0
   cpuid[1]=1, ssiid[1]=0
@@ -349,21 +348,25 @@ ncores = 4
   cpuid[2]=2, ssiid[2]=0
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
+--- ESMCI::VM::print() end ---
   cpuid[1]=1, ssiid[1]=0
   cpuid[2]=2, ssiid[2]=0
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
+--- ESMCI::VM::print() start ---
+--- VMK::print() end ---
 --- ESMCI::VM::print() end ---
 --- ESMCI::VM::print() start ---
 --- ESMCI::VMId::print() start ---
-  vmKeyWidth = --- ESMCI::VM::print() end ---
---- ESMCI::VM::print() start ---
---- ESMCI::VMId::print() start ---
-  vmKeyWidth = --- ESMCI::VM::print() start ---
 --- ESMCI::VMId::print() start ---
   vmKeyWidth = 1
-  vmKey=0x1
+  vmKey=0x  vmKeyWidth = 1
+  vmKey=0xF0000000
+  localID = 0
+--- ESMCI::VM::print() start ---
+--- ESMCI::VMId::print() start ---
+  vmKeyWidth = 1
   vmKey=0xF0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
@@ -374,27 +377,31 @@ ncores = 4
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0xf679d0
-npets = 4, mypet=3
-1
-  vmKey=0xF0000000
-  localID = 0
---- ESMCI::VMId::print() end ---
---- VMK::print() start ---
-vm located at: 0x2149520
+vm located at: 0x200f9d0
 F0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x22e39d0
-npets = 4, mypet=1
-  pth_mutex =		 0x24136c0
+vm located at: 0x269c520
+npets = 4, mypet=0
+  pth_mutex =		 0x27cb6d0
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
+--- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0xb9e9d0
+vm located at: 0x14159d0
+npets = 4, mypet=1
+  pth_mutex =		 0x1545700
+  pth_finish_count =	 (nil)
+MPI_Comm_size: 4
+MPI_Comm_rank in local MPI communicator: 1
+MPI_Comm_rank in MPI_COMM_WORLD: 1
+MPI thread level support: 3
+mpi_mutex_flag: 0
+--- VMK::print() start ---
+vm located at: 0x8ea9d0
 npets = 4, mypet=2
-  pth_mutex =		 0xcce6c0
+  pth_mutex =		 0xa1a6c0
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 2
@@ -403,7 +410,8 @@ MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
 nothreadsflag: 1
-  pth_mutex =		 0x10976c0
+npets = 4, mypet=3
+  pth_mutex =		 0x213f700
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 3
@@ -412,37 +420,25 @@ MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
 nothreadsflag: 1
-  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
-npets = 4, mypet=0
-  pth_mutex =		 0x22786d0
-  pth_finish_count =	 (nil)
-MPI_Comm_size: 4
-MPI_Comm_rank in local MPI communicator: 0
+  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0MPI_Comm_rank in local MPI communicator: 0
 MPI_Comm_rank in MPI_COMM_WORLD: 0
 MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
 nothreadsflag: 1
-  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0MPI_Comm_rank in local MPI communicator: 1
-MPI_Comm_rank in MPI_COMM_WORLD: 1
-MPI thread level support: 3
-mpi_mutex_flag: 0
-mpionly: 1
+  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
+  lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1mpionly: 1
 nothreadsflag: 1
   lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
-  lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
-  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0  lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
+  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
+  lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
-  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
-ncores = 4
-  cpuid[0]=0, ssiid[0]=0
-
+  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
   lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
-ncores = 4
 
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
   lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
@@ -450,6 +446,14 @@ ncores = 4
   cpuid[0]=0, ssiid[0]=0
   cpuid[1]=1, ssiid[1]=0
   cpuid[2]=2, ssiid[2]=0
+  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
+ncores = 4
+  cpuid[0]=0, ssiid[0]=0
+  cpuid[1]=1, ssiid[1]=0
+  cpuid[2]=2, ssiid[2]=0
+  cpuid[3]=3, ssiid[3]=0
+--- VMK::print() end ---
+--- ESMCI::VM::print() end ---
 , cid[3][0]=3
 ncores = 4
   cpuid[0]=0, ssiid[0]=0
@@ -458,11 +462,7 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
-  cpuid[1]=1, ssiid[1]=0
-  cpuid[2]=2, ssiid[2]=0
-  cpuid[3]=3, ssiid[3]=0
---- VMK::print() end ---
---- ESMCI::VM::print() end ---
+ncores = 4
   cpuid[0]=0, ssiid[0]=0
   cpuid[1]=1, ssiid[1]=0
   cpuid[2]=2, ssiid[2]=0
@@ -523,12 +523,12 @@ ncores = 4
  computed serialization buffer length =         992  bytes
  computed serialization buffer length =         992  bytes
   PASS  Computing space for serialization buffer, ESMF_DELayoutUTest.F90, line 5
+  PASS  Computing space for serialization buffer, ESMF_DELayoutUTest.F90, line 5
+ 11
  11
  computed serialization buffer length =         992  bytes
   PASS  Computing space for serialization buffer, ESMF_DELayoutUTest.F90, line 5
  11
-  PASS  Computing space for serialization buffer, ESMF_DELayoutUTest.F90, line 5
- 11
  computed serialization buffer length =         992  bytes
   PASS  Computing space for serialization buffer, ESMF_DELayoutUTest.F90, line 5
  11
@@ -544,9 +544,9 @@ ncores = 4
   Ending Test, file ESMF_DELayoutUTest.F90, line 545
   Ending Test, file ESMF_DELayoutUTest.F90, line 545
   Ending Test, file ESMF_DELayoutUTest.F90, line 545
-  PET           1  Test Elapsed Time    30.5650000000000       msec.
-  PET           2  Test Elapsed Time    30.5620000000000       msec.
-  PET           3  Test Elapsed Time    30.9480000000000       msec.
-  PET           0  Test Elapsed Time    32.0340000000000       msec.
+  PET           1  Test Elapsed Time    31.4370000000000       msec.
+  PET           0  Test Elapsed Time    32.4090000000000       msec.
+  PET           3  Test Elapsed Time    31.7360000000000       msec.
+  PET           2  Test Elapsed Time    32.4330000000000       msec.
 TACC:  Shutdown complete. Exiting. 
-Wed Nov  4 08:38:24 CST 2020
+Thu Nov  5 19:42:18 CST 2020
