@@ -1,0 +1,88 @@
+--------------------------------------------------------------------------
+By default, for Open MPI 4.0 and later, infiniband ports on a device
+are not used by default.  The intent is to use UCX for these devices.
+You can override this policy by setting the btl_openib_allow_ib MCA parameter
+to true.
+
+  Local host:              i041
+  Local adapter:           hfi1_0
+  Local port:              1
+
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: There was an error initializing an OpenFabrics device.
+
+  Local host:   i041
+  Local device: hfi1_0
+--------------------------------------------------------------------------
+Beginning Test, file ESMC_MBMesh_GlueUTest.C, line 743
+NUMBER_OF_PROCESSORS 4
+Beginning Test, file ESMC_MBMesh_GlueUTest.C, line 743
+NUMBER_OF_PROCESSORS 4
+Beginning Test, file ESMC_MBMesh_GlueUTest.C, line 743
+NUMBER_OF_PROCESSORS 4
+Beginning Test, file ESMC_MBMesh_GlueUTest.C, line 743
+NUMBER_OF_PROCESSORS 4
+PASS MBMeshGet - Quadrilateral, ESMC_MBMesh_GlueUTest.C, line 765
+PASS MBMeshGet - Quadrilateral, ESMC_MBMesh_GlueUTest.C, line 765
+PASS MBMeshGet - Quadrilateral, ESMC_MBMesh_GlueUTest.C, line 765
+PASS MBMeshGet - Quadrilateral, ESMC_MBMesh_GlueUTest.C, line 765
+[i041:250468] *** Process received signal ***
+[i041:250468] Signal: Segmentation fault (11)
+[i041:250468] Signal code: Address not mapped (1)
+[i041:250468] Failing at address: 0x31
+[i041:250466] *** Process received signal ***
+[i041:250466] Signal: Segmentation fault (11)
+[i041:250466] Signal code: Address not mapped (1)
+[i041:250466] Failing at address: 0x31
+[i041:250467] *** Process received signal ***
+[i041:250467] Signal: Segmentation fault (11)
+[i041:250467] Signal code: Address not mapped (1)
+[i041:250467] Failing at address: 0x31
+[i041:250469] *** Process received signal ***
+[i041:250469] Signal: Segmentation fault (11)
+[i041:250469] Signal code: Address not mapped (1)
+[i041:250469] Failing at address: 0x31
+[i041:250466] [ 0] /lib64/libpthread.so.0(+0xf5f0)[0x7fe5bffef5f0]
+[i041:250468] [ 0] /lib64/libpthread.so.0(+0xf5f0)[0x7fef32dfb5f0]
+[i041:250468] [ 1] [i041:250467] [ 0] [i041:250466] [ 1] ./ESMC_MBMesh_GlueUTest[0x6d5b27]
+[i041:250466] [ 2] ./ESMC_MBMesh_GlueUTest[0x6d2379]
+[i041:250466] ./ESMC_MBMesh_GlueUTest[0x6d5b27]
+[i041:250468] [ 2] ./ESMC_MBMesh_GlueUTest[0x6d2379]
+[i041:250468] [ 3] [ 3] ./ESMC_MBMesh_GlueUTest[0x417b1e]
+[i041:250466] [ 4] ./ESMC_MBMesh_GlueUTest[0x415d38]
+[i041:250466] [ 5] /lib64/libpthread.so.0(+0xf5f0)[0x7f32b819a5f0]
+[i041:250467] [ 1] ./ESMC_MBMesh_GlueUTest[0x6d5b27]
+[i041:250467] [ 2] ./ESMC_MBMesh_GlueUTest[0x6d2379]
+[i041:250467] [ 3] ./ESMC_MBMesh_GlueUTest[0x417b1e]
+[i041:250467] [ 4] ./ESMC_MBMesh_GlueUTest[0x415d38]
+[i041:250467] [ 5] ./ESMC_MBMesh_GlueUTest[0x417b1e]
+[i041:250468] [ 4] ./ESMC_MBMesh_GlueUTest[0x415d38]
+[i041:250468] [ 5] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7fef3224a505]
+[i041:250468] [ 6] [i041:250469] [ 0] /lib64/libpthread.so.0(+0xf5f0)[0x7fd3f895d5f0]
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7fe5bf43e505]
+[i041:250466] [ 6] ./ESMC_MBMesh_GlueUTest[0x415a29]
+[i041:250466] *** End of error message ***
+./ESMC_MBMesh_GlueUTest[0x415a29]
+[i041:250468] *** End of error message ***
+/lib64/libc.so.6(__libc_start_main+0xf5)[0x7f32b75e9505]
+[i041:250467] [ 6] ./ESMC_MBMesh_GlueUTest[0x415a29]
+[i041:250467] *** End of error message ***
+[i041:250469] [ 1] ./ESMC_MBMesh_GlueUTest[0x6d5b27]
+[i041:250469] [ 2] ./ESMC_MBMesh_GlueUTest[0x6d2379]
+[i041:250469] [ 3] ./ESMC_MBMesh_GlueUTest[0x417b1e]
+[i041:250469] [ 4] ./ESMC_MBMesh_GlueUTest[0x415d38]
+[i041:250469] [ 5] /lib64/libc.so.6(__libc_start_main+0xf5)[0x7fd3f7dac505]
+[i041:250469] [ 6] ./ESMC_MBMesh_GlueUTest[0x415a29]
+[i041:250469] *** End of error message ***
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 1 with PID 0 on node i041 exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+[i041.unified.ucar.edu:250462] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[i041.unified.ucar.edu:250462] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[i041.unified.ucar.edu:250462] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+Fri Nov  6 06:00:39 MST 2020
