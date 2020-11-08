@@ -800,6 +800,7 @@ gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esm
 gmake TNAME=Proj4 NP=1 ctest
 gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/tests'
 mpirun -np 1 ./ESMC_Proj4UTest 1> ./ESMC_Proj4UTest.stdout 2>&1
+cat: ./PET*Proj4UTest.Log: No such file or directory
 gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/tests'
 cp -r data /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testg/Linux.gfortran.64.openmpi.default
 chmod u+rw /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testg/Linux.gfortran.64.openmpi.default/data/*
@@ -1946,7 +1947,6 @@ PASS: openmpi/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_UtilUTest.C
 PASS: openmpi/g: src/Infrastructure/Mesh/tests/ESMC_MeshMOABUTest.C
 PASS: openmpi/g: src/Infrastructure/Mesh/tests/ESMC_MeshUTest.C
 PASS: openmpi/g: src/Infrastructure/Mesh/tests/ESMC_MeshVTKUTest.C
-PASS: openmpi/g: src/Infrastructure/Mesh/tests/ESMC_Proj4UTest.C
 PASS: openmpi/g: src/Infrastructure/Mesh/tests/ESMF_MeshOpUTest.F90
 PASS: openmpi/g: src/Infrastructure/Mesh/tests/ESMF_MeshUTest.F90
 PASS: openmpi/g: src/Infrastructure/PointList/tests/ESMF_PointListUTest.F90
@@ -2058,6 +2058,11 @@ PASS: openmpi/g: src/prologue/tests/ESMF_StringUTest.F90
 PASS: openmpi/g: src/prologue/tests/ESMF_WordsizeUTest.F90
 
 
+The following unit test files failed to build, failed to execute or crashed during execution:
+
+CRASHED: openmpi/g: src/Infrastructure/Mesh/tests/ESMC_Proj4UTest.C
+
+
 The following unit test files had failed unit tests:
 
 FAIL: openmpi/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_GlueUTest.C
@@ -2077,7 +2082,7 @@ The log and stdout files for the unit tests can be found at:
 /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testg/Linux.gfortran.64.openmpi.default
 
 
-Found 8737 exhaustive multi-processor unit tests, 8736 passed and 1 failed.
+Found 8737 exhaustive multi-processor unit tests, 8735 passed and 2 failed.
 
 gmake[1]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf'
-Sat Nov  7 05:41:06 MST 2020
+Sun Nov  8 05:13:56 MST 2020
