@@ -1,4 +1,4 @@
-TACC:  Starting up job 6789206 
+TACC:  Starting up job 6794061 
 TACC:  Starting parallel tasks... 
   Beginning Test, file ESMF_StringUTest.F90, line 46
   Beginning Test, file ESMF_StringUTest.F90, line 46
@@ -17,28 +17,28 @@ TACC:  Starting parallel tasks...
  -- entering f90string2 subroutine
  -- entering f90string2 subroutine
   ints=         102         204         409         819
-  ints=         102         204         409         819
   strlen =          60
   fstr=0123456789abcdefghijklmnopqrstuvwxyz
  -- leaving f90string2 subroutine
+  ints=         102         204         409         819
   strlen =          60
   fstr=0123456789abcdefghijklmnopqrstuvwxyz
  -- leaving f90string2 subroutine
   PASS  Calling f90string2() directly from F90, ESMF_StringUTest.F90, line 76
   PASS  Calling f90string2() directly from F90, ESMF_StringUTest.F90, line 76
- -- entering f90string3 subroutine
-  ints=         102         204         409         819
  -- entering f90string3 subroutine
   ints=         102         204         409         819
   strlen =         120
+ -- entering f90string3 subroutine
+  ints=         102         204         409         819
   strlen =         120
   fstr=abcdefghijklmnopqrstuvwxyz0123456789
   strlen2 =          60
-  fstr2=0123456789abcdefghijklmnopqrstuvwxyz
   fstr=abcdefghijklmnopqrstuvwxyz0123456789
   strlen2 =          60
   fstr2=0123456789abcdefghijklmnopqrstuvwxyz
  -- leaving f90string3 subroutine
+  fstr2=0123456789abcdefghijklmnopqrstuvwxyz
  -- leaving f90string3 subroutine
   PASS  Calling f90string3() directly from F90, ESMF_StringUTest.F90, line 83
   PASS  Calling f90string3() directly from F90, ESMF_StringUTest.F90, line 83
@@ -61,10 +61,10 @@ TACC:  Starting parallel tasks...
  -- entering f90ints subroutine
  -- entering f90ints subroutine
   ints=         102         204         409         819
+  rc=           0
   ints=         102         204         409         819
   rc=           0
  -- exiting f90ints subroutine
-  rc=           0
  -- exiting f90ints subroutine
 
 
@@ -82,35 +82,35 @@ TACC:  Starting parallel tasks...
  -- entering f90ints subroutine
   ints=         102         204         409         819
   rc=           0
+ -- exiting f90ints subroutine
   ints=         102         204         409         819
   rc=           0
  -- exiting f90ints subroutine
 
 
 -- returned from call of f90int by callback with local ints
- -- exiting f90ints subroutine
 
 
 -- returned from call of f90int by callback with local ints
 
 
 -- ready to call f90string2 by callback, passing 15
+ -- entering f90string2 subroutine
 
 
 -- ready to call f90string2 by callback, passing 15
  -- entering f90string2 subroutine
   ints=         102         204         409         819
- -- entering f90string2 subroutine
   ints=         102         204         409         819
   strlen =          15
   fstr=ABCDEFGHIJKLMNO
+ -- leaving f90string2 subroutine
   strlen =          15
   fstr=ABCDEFGHIJKLMNO
  -- leaving f90string2 subroutine
 
 
 -- returned from call f90string2 by callback
- -- leaving f90string2 subroutine
 
 
 -- returned from call f90string2 by callback
@@ -123,48 +123,48 @@ TACC:  Starting parallel tasks...
 -- ready to call f90string2 by callback, passing 25
  -- entering f90string2 subroutine
   ints=         102         204         409         819
-  strlen =          25
   ints=         102         204         409         819
   strlen =          25
   fstr=ABCDEFGHIJKLMNOPQRSTUVWXY
+ -- leaving f90string2 subroutine
+  strlen =          25
   fstr=ABCDEFGHIJKLMNOPQRSTUVWXY
  -- leaving f90string2 subroutine
 
 
 -- returned from call f90string2 by callback
-
-
--- ready to call f90string3 by callback, passing 14, 24 -- leaving f90string2 subroutine
 
 
 -- returned from call f90string2 by callback
 
 
 -- ready to call f90string3 by callback, passing 14, 24
+ -- entering f90string3 subroutine
 
+
+-- ready to call f90string3 by callback, passing 14, 24
  -- entering f90string3 subroutine
   ints=         102         204         409         819
-  strlen =          14
- -- entering f90string3 subroutine
   ints=         102         204         409         819
   strlen =          14
   fstr=ABCDEFGHIJKLMN
+  strlen =          14
   fstr=ABCDEFGHIJKLMN
   strlen2 =          24
   fstr2=0123456789abcdefghijklmn
- -- leaving f90string3 subroutine
   strlen2 =          24
   fstr2=0123456789abcdefghijklmn
  -- leaving f90string3 subroutine
 
 
 -- returned from call f90string3 by callback
+ -- leaving f90string3 subroutine
+
 
 -- returned from call f90string3 by callback
 
 
 -- leaving c_strings
-
 
 
 -- leaving c_strings
@@ -178,8 +178,8 @@ TACC:  Starting parallel tasks...
 
 
 -- entering c_strings, slen = 60
-102 204102 204 409 819
- 409 819
+102 204 102 204 409 819
+409 819
  strlen = 60, str='0123456789abcdefghijklmnopqrstuvwxyz                         strlen = 60, str='0123456789abcdefghijklmnopqrstuvwxyz                        '
 
 
@@ -214,9 +214,7 @@ TACC:  Starting parallel tasks...
   ints=         102         204         409         819
   rc=           0
  -- exiting f90ints subroutine
-
-
--- returned from call of f90int by callback with local ints  rc=           0
+  rc=           0
  -- exiting f90ints subroutine
 
 
@@ -226,20 +224,20 @@ TACC:  Starting parallel tasks...
 -- ready to call f90string2 by callback, passing 15
 
 
+-- returned from call of f90int by callback with local ints
+
 
 -- ready to call f90string2 by callback, passing 15
  -- entering f90string2 subroutine
-  ints=         102         204         409         819
  -- entering f90string2 subroutine
   ints=         102         204         409         819
   strlen =          15
-  fstr=ABCDEFGHIJKLMNO
+  ints=         102         204         409         819
   strlen =          15
   fstr=ABCDEFGHIJKLMNO
  -- leaving f90string2 subroutine
-
-
--- returned from call f90string2 by callback -- leaving f90string2 subroutine
+  fstr=ABCDEFGHIJKLMNO
+ -- leaving f90string2 subroutine
 
 
 -- returned from call f90string2 by callback
@@ -248,20 +246,26 @@ TACC:  Starting parallel tasks...
 -- ready to call f90string2 by callback, passing 25
 
 
+-- returned from call f90string2 by callback
+
 
 -- ready to call f90string2 by callback, passing 25
  -- entering f90string2 subroutine
-  ints=         102         204         409         819
  -- entering f90string2 subroutine
   ints=         102         204         409         819
   strlen =          25
-  fstr=ABCDEFGHIJKLMNOPQRSTUVWXY
+  ints=         102         204         409         819
   strlen =          25
+  fstr=ABCDEFGHIJKLMNOPQRSTUVWXY
+ -- leaving f90string2 subroutine
   fstr=ABCDEFGHIJKLMNOPQRSTUVWXY
  -- leaving f90string2 subroutine
 
 
--- returned from call f90string2 by callback -- leaving f90string2 subroutine
+-- returned from call f90string2 by callback
+
+
+-- ready to call f90string3 by callback, passing 14, 24
 
 
 -- returned from call f90string2 by callback
@@ -269,26 +273,22 @@ TACC:  Starting parallel tasks...
 
 -- ready to call f90string3 by callback, passing 14, 24
  -- entering f90string3 subroutine
-
-
-
--- ready to call f90string3 by callback, passing 14, 24
  -- entering f90string3 subroutine
+  ints=         102         204         409         819
+  strlen =          14
   ints=         102         204         409         819
   strlen =          14
   fstr=ABCDEFGHIJKLMN
-  ints=         102         204         409         819
-  strlen =          14
   fstr=ABCDEFGHIJKLMN
   strlen2 =          24
+  fstr2=0123456789abcdefghijklmn
+ -- leaving f90string3 subroutine
   strlen2 =          24
   fstr2=0123456789abcdefghijklmn
  -- leaving f90string3 subroutine
 
 
 -- returned from call f90string3 by callback
-  fstr2=0123456789abcdefghijklmn
- -- leaving f90string3 subroutine
 
 
 -- returned from call f90string3 by callback
@@ -302,7 +302,7 @@ TACC:  Starting parallel tasks...
   PASS  Calling c_strings with fstr2, ESMF_StringUTest.F90, line 112
   Ending Test, file ESMF_StringUTest.F90, line 120
   Ending Test, file ESMF_StringUTest.F90, line 120
-  PET           1  Test Elapsed Time    14.6760000000000       msec.
-  PET           0  Test Elapsed Time    15.1730000000000       msec.
+  PET           0  Test Elapsed Time    13.6070000000000       msec.
+  PET           1  Test Elapsed Time    13.9560000000000       msec.
 TACC:  Shutdown complete. Exiting. 
-Mon Nov  9 18:11:40 CST 2020
+Tue Nov 10 06:06:51 CST 2020
