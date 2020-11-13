@@ -4,7 +4,7 @@ are not used by default.  The intent is to use UCX for these devices.
 You can override this policy by setting the btl_openib_allow_ib MCA parameter
 to true.
 
-  Local host:              i039
+  Local host:              i040
   Local adapter:           hfi1_0
   Local port:              1
 
@@ -12,7 +12,7 @@ to true.
 --------------------------------------------------------------------------
 WARNING: There was an error initializing an OpenFabrics device.
 
-  Local host:   i039
+  Local host:   i040
   Local device: hfi1_0
 --------------------------------------------------------------------------
  State Reconcile Example 1: Component Creation
@@ -26,6 +26,8 @@ WARNING: There was an error initializing an OpenFabrics device.
  GridComp Create returned, name = Ocean
  GridComp Create returned, name = Ocean
  GridComp Create returned, name = Ocean
+ State Create returned, name = Ocn2Atm
+ State Example 1 finished
  GridComp Create returned, name = Ocean
  State Create returned, name = Ocn2Atm
  State Example 1 finished
@@ -33,69 +35,79 @@ WARNING: There was an error initializing an OpenFabrics device.
  State Example 1 finished
  State Create returned, name = Ocn2Atm
  State Example 1 finished
- State Create returned, name = Ocn2Atm
- State Example 1 finished
  ready to set entry point 1
  ready to set entry point 2
  ready to call init for comp 1
  ready to set entry point 1
  ready to set entry point 2
- i am comp1_init
  ready to call init for comp 1
  i am comp1_init
- ready to call init for comp 2
- State Example 2 finished
- State before calling StateReconcile()
+ i am comp1_init
+ ready to set entry point 1
+ ready to set entry point 2
  ready to set entry point 1
  ready to set entry point 2
  ready to call init for comp 1
- ready to set entry point 1
- ready to set entry point 2
- ready to call init for comp 1
- ready to call init for comp 2
- i am comp2_init
  ready to call init for comp 2
  State Example 2 finished
  State before calling StateReconcile()
  ESMF_StatePrint: (pet 1):
+ ready to call init for comp 2
+ State Example 2 finished
+ State before calling StateReconcile()
  ESMF_StatePrint: (pet 0):
-  State name: Ocn2Atm
-     status: Unspecified intent direction, object count: 0
+ ready to call init for comp 2
+ i am comp2_init
+ ready to call init for comp 1
  ready to call init for comp 2
  i am comp2_init
   State name: Ocn2Atm
      status: Unspecified intent direction, object count: 0
      reconcile needed: F
-     reconcile needed: F
- Base name    = Ocn2Atm
- State Example 2 finished
- State before calling StateReconcile()
- State Example 2 finished
- State before calling StateReconcile()
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
- Base name    = Ocn2Atm
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
- ESMF_StatePrint: (pet 2):
-  State name: Ocn2Atm
- ESMF_StatePrint: (pet 3):
   State name: Ocn2Atm
      status: Unspecified intent direction, object count: 0
-{}     status: Unspecified intent direction, object count: 0
      reconcile needed: F
-     reconcile needed: F
-{} Base name    = Ocn2Atm
+ Base name    = Ocn2Atm
+ Status: Base = Ready,  object = Ready
+ State Example 2 finished
+ State before calling StateReconcile()
+ ESMF_StatePrint: (pet 3):
  Base name    = Ocn2Atm
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+ State Example 2 finished
+ State before calling StateReconcile()
+ ESMF_StatePrint: (pet 2):
+  State name: Ocn2Atm
+ Proxy        = no
+ Root Info (Attributes):
+     status: Unspecified intent direction, object count: 0
+     reconcile needed: F
+  State name: Ocn2Atm
+     status: Unspecified intent direction, object count: 0
+     reconcile needed: F
+{}{} Base name    = Ocn2Atm
  Status: Base = Ready,  object = Ready
+ Base name    = Ocn2Atm
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
  Proxy        = no
  Root Info (Attributes):
 {}{} State after calling StateReconcile()
+ ESMF_StatePrint: (pet 0):
+  State name: Ocn2Atm
+     status: Unspecified intent direction, object count: 0
+ State after calling StateReconcile()
+ ESMF_StatePrint: (pet 1):
+  State name: Ocn2Atm
+     status: Unspecified intent direction, object count: 0
+     reconcile needed: F
+ State after calling StateReconcile()
+ ESMF_StatePrint: (pet 2):
+  State name: Ocn2Atm
+ State after calling StateReconcile()
  ESMF_StatePrint: (pet 3):
   State name: Ocn2Atm
      status: Unspecified intent direction, object count: 0
@@ -105,35 +117,23 @@ WARNING: There was an error initializing an OpenFabrics device.
  Proxy        = no
  Root Info (Attributes):
 {} State Example 3 finished
- State after calling StateReconcile()
- ESMF_StatePrint: (pet 1):
-  State name: Ocn2Atm
-     status: Unspecified intent direction, object count: 0
      reconcile needed: F
  Base name    = Ocn2Atm
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
 {} State Example 3 finished
- State after calling StateReconcile()
- ESMF_StatePrint: (pet 0):
-  State name: Ocn2Atm
      status: Unspecified intent direction, object count: 0
      reconcile needed: F
+ Base name    = Ocn2Atm
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
  Base name    = Ocn2Atm
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
 {} State Example 3 finished
- State after calling StateReconcile()
- ESMF_StatePrint: (pet 2):
-  State name: Ocn2Atm
-     status: Unspecified intent direction, object count: 0
-     reconcile needed: F
- Base name    = Ocn2Atm
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
 {} State Example 3 finished
   PASS  Example ESMF_StateReconcileEx, ESMF_StateReconcileEx.F90, line 297
   PASS  Example ESMF_StateReconcileEx, ESMF_StateReconcileEx.F90, line 297
@@ -143,7 +143,7 @@ WARNING: There was an error initializing an OpenFabrics device.
  PASS: ESMF_StateReconcileEx.F90
  PASS: ESMF_StateReconcileEx.F90
  PASS: ESMF_StateReconcileEx.F90
-[i039.unified.ucar.edu:214098] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
-[i039.unified.ucar.edu:214098] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-[i039.unified.ucar.edu:214098] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
-Thu Nov 12 05:17:58 MST 2020
+[i040.unified.ucar.edu:08517] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[i040.unified.ucar.edu:08517] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[i040.unified.ucar.edu:08517] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+Fri Nov 13 05:12:56 MST 2020
