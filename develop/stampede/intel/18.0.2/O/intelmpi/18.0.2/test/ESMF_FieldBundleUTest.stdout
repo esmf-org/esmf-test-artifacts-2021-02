@@ -1,4 +1,4 @@
-TACC:  Starting up job 6815687 
+TACC:  Starting up job 6821188 
 TACC:  Starting parallel tasks... 
   Beginning Test, file ESMF_FieldBundleUTest.F90, line 101
   Beginning Test, file ESMF_FieldBundleUTest.F90, line 101
@@ -108,6 +108,10 @@ TACC:  Starting parallel tasks...
  line 225
   PASS  FieldBundle non-equality after destroy Test, ESMF_FieldBundleUTest.F90, 
  line 225
+  PASS  Double FieldBundleDestroy through alias Test, ESMF_FieldBundleUTest.F90,
+  line 232
+  PASS  Double FieldBundleDestroy through alias Test, ESMF_FieldBundleUTest.F90,
+  line 232
   PASS  FieldBundle non-equality after destroy Test, ESMF_FieldBundleUTest.F90, 
  line 225
   PASS  FieldBundle non-equality after destroy Test, ESMF_FieldBundleUTest.F90, 
@@ -116,10 +120,6 @@ TACC:  Starting parallel tasks...
   line 232
   PASS  Double FieldBundleDestroy through alias Test, ESMF_FieldBundleUTest.F90,
   line 232
-  PASS  Double FieldBundleDestroy through alias Test, ESMF_FieldBundleUTest.F90,
-  line 232
-  PASS  Double FieldBundleDestroy through alias Test, ESMF_FieldBundleUTest.F90,
-  line 232
   PASS  Test of creating a FieldBundle on fields built on LocStreams, ESMF_Field
  BundleUTest.F90, line 331
   PASS  Test of creating a FieldBundle on fields built on LocStreams, ESMF_Field
@@ -292,21 +292,6 @@ TACC:  Starting parallel tasks...
  heat flux                                                                      
                                                                                 
                                                                                 
- The Field names are:
- heat flux                                                                      
-                                                                                
-                                                                                
-                    
- pressure                                                                       
-                                                                                
- The Field names are:
- heat flux                                                                      
-                                                                                
-                                                                                
-                    
- pressure                                                                       
-                                                                                
-                                                                                
                     
  The Field names are:
  heat flux                                                                      
@@ -317,10 +302,34 @@ TACC:  Starting parallel tasks...
                                                                                 
                                                                                 
                     
+ pressure                                                                       
+                                                                                
+                                                                                
+                    
  temperature                                                                    
                                                                                 
                                                                                 
                     
+ temperature                                                                    
+                                                                                
+                                                                                
+                    
+ The Field names are:
+ heat flux                                                                      
+                                                                                
+                                                                                
+                    
+ pressure                                                                       
+                                                                                
+                                                                                
+                    
+ temperature                                                                    
+                                                                                
+                                                                                
+ The Field names are:
+ heat flux                                                                      
+                                                                                
+                                                                                
                     
  pressure                                                                       
                                                                                 
@@ -331,20 +340,11 @@ TACC:  Starting parallel tasks...
                                                                                 
                     
   PASS  Verifying Field count from a FieldBundle Test, ESMF_FieldBundleUTest.F90
-                                                                                
-                    
- temperature                                                                    
-                                                                                
-                                                                                
-                    
+ , line 1578
   PASS  Verifying Field count from a FieldBundle Test, ESMF_FieldBundleUTest.F90
  , line 1578
- temperature                                                                    
-                                                                                
-                                                                                
                     
   PASS  Verifying Field count from a FieldBundle Test, ESMF_FieldBundleUTest.F90
- , line 1578
  , line 1578
   PASS  Verifying Field count from a FieldBundle Test, ESMF_FieldBundleUTest.F90
  , line 1578
@@ -420,10 +420,6 @@ TACC:  Starting parallel tasks...
  rh                                                                             
                                                                                 
                                                                                 
- The Field names is:
- rh                                                                             
-                                                                                
-                                                                                
                     
  The Field names is:
  rh                                                                             
@@ -435,6 +431,10 @@ TACC:  Starting parallel tasks...
                                                                                 
                                                                                 
                     
+ The Field names is:
+ rh                                                                             
+                                                                                
+                                                                                
                     
   PASS  Creating a FieldBundle that has already been created Test, ESMF_FieldBun
  dleUTest.F90, line 1677
@@ -445,16 +445,16 @@ TACC:  Starting parallel tasks...
   PASS  Creating a FieldBundle that has already been created Test, ESMF_FieldBun
  dleUTest.F90, line 1677
  fieldcount =            1
- fieldcount =            1
- fieldcount =            0
  fieldcount =            1
  fieldcount =            0
  fieldcount =            1
  fieldcount =            0
   PASS  Getting Field count from an empty FieldBundle Test, ESMF_FieldBundleUTes
+ fieldcount =            1
  fieldcount =            0
   PASS  Getting Field count from an empty FieldBundle Test, ESMF_FieldBundleUTes
  t.F90, line 1688
+ fieldcount =            0
   PASS  Getting Field count from an empty FieldBundle Test, ESMF_FieldBundleUTes
  t.F90, line 1688
   PASS  Getting Field count from an empty FieldBundle Test, ESMF_FieldBundleUTes
@@ -604,41 +604,40 @@ TACC:  Starting parallel tasks...
  UTest.F90, line 1843
   PASS  Getting a third Field by index from a FieldBundle Test, ESMF_FieldBundle
  UTest.F90, line 1843
+ Field Print Starts ====>
  Field Print Starts ====>
  Field Print Starts ====>
  Field Print Starts ====>
  Field base status = Ready
- Field base status = Ready
- Field Print Starts ====>
  Field base status = Ready
  Field base status = Ready
    Name = 'heat flux'
+ Field base status = Ready
    Name = 'heat flux'
    Name = 'heat flux'
    Name = 'heat flux'
  Base name    = heat flux Base name    = heat flux Base name    = heat flux
  Base name    = heat flux
 
- Status: Base = Ready, 
+ Status: Base = Ready,  object = 
  Status: Base = Ready,  object = Ready
- Status: Base = Ready,  object = Ready
+ Proxy        =  Status: Base = Ready,  object = Ready
  Proxy        = no
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
- object = Ready
+ Root Info (Attributes): Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+Ready
  Proxy        = no
  Root Info (Attributes):
+no
  Root Info (Attributes):
+
 {}{}{}{} Field status =            2
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
  Field status =            2
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
  Field status =            2
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-          -1          -1          -1               -1          -1
  Field status =            2
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
           -1          -1          -1               -1          -1
@@ -663,117 +662,120 @@ TACC:  Starting parallel tasks...
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
- Field Print Ends   ====>
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
  Field Print Ends   ====>
  Field Print Starts ====>
           -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
  Field Print Ends   ====>
- Field Print Starts ====>
- Field base status = Ready
+          -1          -1          -1               -1          -1
  Field Print Ends   ====>
  Field Print Starts ====>
  Field base status = Ready
    Name = 'pressure'
+ Field Print Ends   ====>
  Field Print Starts ====>
  Field base status = Ready
    Name = 'pressure'
- Base name    =  Field base status = Ready
+ Field base status = Ready
    Name = 'pressure'
  Base name    = pressure
+ Field Print Starts ====>
+ Field base status = Ready
    Name = 'pressure'
  Base name    = pressure
- Status: Base = Ready, pressure
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes): Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
- object = Ready
- Proxy        = no
- Root Info (Attributes):
  Base name    = pressure
  Status: Base = Ready,  object = Ready
+ Base name    = pressure
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+ Proxy        = no
+ Root Info (Attributes):
+{} Root Info (Attributes):
+{} Field status =            2
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+{} Field status =            2
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+          -1          -1          -1               -1          -1
+{} Field status =            2
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+          -1          -1          -1               -1          -1
+ Field status =            2
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
+ Field Print Starts ====>
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'temperature'
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'temperature'
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'temperature'
+ Base name    = temperature
+ Status: Base =  Field base status = Ready
+   Name = 'temperature'
+ Base name    = temperature
+ Status: Base = Ready,  object =  Base name    = temperature
+ Status: Base = Ready,  object = Ready
+ Proxy        = no Base name    = temperature
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Ready
  Proxy        = no
  Root Info (Attributes):
 {}
-{} Field status =            2
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-{} Field status =            2
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-          -1          -1          -1               -1          -1
-{} Field status =            2
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
- Field status =            2
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
- Field Print Ends   ====>
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
- Field Print Ends   ====>
- Field Print Starts ====>
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
- Field Print Ends   ====>
- Field Print Starts ====>
- Field base status = Ready
-          -1          -1          -1               -1          -1
- Field Print Ends   ====>
- Field Print Starts ====>
- Field base status = Ready
-   Name = 'temperature'
- Field Print Starts ====>
- Field base status = Ready
-   Name = 'temperature'
- Base name    = temperature
- Field base status = Ready
-   Name = 'temperature'
- Base name    = temperature
- Status: Base = Ready   Name = 'temperature'
- Base name    = temperature
- Status: Base = Ready,  object = Ready
- Base name    = temperature
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes): Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{} Proxy        = no
  Root Info (Attributes):
 {} Field status =            2
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
 
 {} Field status =            2
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
           -1          -1          -1               -1          -1
-{} Field status =            2
+ Field status =            2
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+          -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
  Field status =            2
@@ -781,7 +783,6 @@ TACC:  Starting parallel tasks...
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
@@ -795,9 +796,6 @@ TACC:  Starting parallel tasks...
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
- Field Print Ends   ====>
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
@@ -805,8 +803,10 @@ TACC:  Starting parallel tasks...
  Field Print Ends   ====>
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
  Field Print Ends   ====>
           -1          -1          -1               -1          -1
+ Field Print Ends   ====>
  Field Print Ends   ====>
   PASS  Printing a FieldBundle Test, ESMF_FieldBundleUTest.F90, line 1862
   PASS  Printing a FieldBundle Test, ESMF_FieldBundleUTest.F90, line 1862
@@ -1136,9 +1136,9 @@ TACC:  Starting parallel tasks...
   Ending Test, file ESMF_FieldBundleUTest.F90, line 2416
   Ending Test, file ESMF_FieldBundleUTest.F90, line 2416
   Ending Test, file ESMF_FieldBundleUTest.F90, line 2416
-  PET           1  Test Elapsed Time    82.2680000000000       msec.
-  PET           2  Test Elapsed Time    82.3750000000000       msec.
-  PET           0  Test Elapsed Time    82.6570000000000       msec.
-  PET           3  Test Elapsed Time    84.1840000000000       msec.
+  PET           2  Test Elapsed Time    82.6620000000000       msec.
+  PET           3  Test Elapsed Time    83.2260000000000       msec.
+  PET           1  Test Elapsed Time    82.7820000000000       msec.
+  PET           0  Test Elapsed Time    83.9160000000000       msec.
 TACC:  Shutdown complete. Exiting. 
-Fri Nov 13 15:55:38 CST 2020
+Sat Nov 14 17:42:42 CST 2020
