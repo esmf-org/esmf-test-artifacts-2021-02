@@ -1,4 +1,4 @@
-TACC:  Starting up job 6828396 
+TACC:  Starting up job 6832393 
 TACC:  Starting parallel tasks... 
   Beginning Test, file ESMF_NUOPC_UTest.F90, line 224
   Beginning Test, file ESMF_NUOPC_UTest.F90, line 224
@@ -76,6 +76,9 @@ TACC:  Starting parallel tasks...
   PASS  NUOPC_DriverGetComp() Test, ESMF_NUOPC_UTest.F90, line 326
   PASS  NUOPC_DriverGetComp() Test, ESMF_NUOPC_UTest.F90, line 326
   PASS  NUOPC_DriverGetComp() Test, ESMF_NUOPC_UTest.F90, line 326
+ NUOPC_DriverPrint for PET:           0
+   Model, Mediator, and Driver components, in the order
+   that they were added to the Driver:
  NUOPC_DriverPrint for PET:           1
    Model, Mediator, and Driver components, in the order
    that they were added to the Driver:
@@ -85,13 +88,12 @@ TACC:  Starting parallel tasks...
  NUOPC_DriverPrint for PET:           3
    Model, Mediator, and Driver components, in the order
    that they were added to the Driver:
- NUOPC_DriverPrint for PET:           0
-   Model, Mediator, and Driver components, in the order
-   that they were added to the Driver:
-           1 :  testComp1
            1 :  testComp1
            1 :  testComp1
            2 :  testComp2
+           1 :  testComp1
+           2 :  testComp2
+   Connector components, in the order
            1 :  testComp1
            2 :  testComp2
    Connector components, in the order
@@ -99,11 +101,9 @@ TACC:  Starting parallel tasks...
            2 :  testComp2
    Connector components, in the order
    that they were added to the Driver:
-           2 :  testComp2
    Connector components, in the order
    that they were added to the Driver:
            1 :  testComp1-TO-testComp2
-   Connector components, in the order
    that they were added to the Driver:
            1 :  testComp1-TO-testComp2
            1 :  testComp1-TO-testComp2
@@ -120,26 +120,26 @@ runSeq::
  runElementPrint:      1     2     1
  runElementPrint:      1     2     1
  runElementPrint:      2     1     1
+ runElementPrint:      2     1     1
  runElementPrint:      1    -1     1
  runElementPrint:      1     2     1
  runElementPrint:      2     1     1
  runElementPrint:      1    -1     1
- runElementPrint:      2     1     1
  runElementPrint:      1    -1     1
+ runElementPrint:      2    -1     1
+ runElementPrint:      2    -1     1
+ runElementPrint:     -1    -1     0
  runElementPrint:      2     1     1
  runElementPrint:      1    -1     1
  runElementPrint:      2    -1     1
- runElementPrint:     -1    -1     0
- runElementPrint:      2    -1     1
- runElementPrint:     -1    -1     0
  runElementPrint:      2    -1     1
  runElementPrint:     -1    -1     0
 ::
- runElementPrint:      2    -1     1
  runElementPrint:     -1    -1     0
 ::
 ::
   PASS  NUOPC_DriverPrint() Test, ESMF_NUOPC_UTest.F90, line 334
+ runElementPrint:     -1    -1     0
 ::
   PASS  NUOPC_DriverPrint() Test, ESMF_NUOPC_UTest.F90, line 334
   PASS  NUOPC_DriverPrint() Test, ESMF_NUOPC_UTest.F90, line 334
@@ -267,11 +267,11 @@ runSeq::
 Printing currTime to stdout:    0  1  1  0  0  0   0
 Printing currTime to stdout:    0  1  1  0  0  0   0
   PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 534
+Printing currTime to stdout:    0  1  1  0  0  0   0
+  PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 534
   PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 534
 Printing currTime to stdout:    0  1  1  0  0  0   0
   PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 534
-Printing currTime to stdout:    0  1  1  0  0  0   0
-  PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 534
   PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 543
   PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 543
   PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 543
@@ -279,8 +279,8 @@ Printing currTime to stdout:    0  1  1  0  0  0   0
 Printing startTime to stdout:    0  1  1  0  0  0   0
 Printing startTime to stdout:    0  1  1  0  0  0   0
   PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 552
-  PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 552
 Printing startTime to stdout:    0  1  1  0  0  0   0
+  PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 552
 Printing startTime to stdout:    0  1  1  0  0  0   0
   PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 552
   PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 552
@@ -291,8 +291,8 @@ Printing startTime to stdout:    0  1  1  0  0  0   0
 Printing stopTime to stdout:    0  1  1  0 30  0   0
 Printing stopTime to stdout:    0  1  1  0 30  0   0
   PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 570
-  PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 570
 Printing stopTime to stdout:    0  1  1  0 30  0   0
+  PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 570
 Printing stopTime to stdout:    0  1  1  0 30  0   0
   PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 570
   PASS  ESMF_ClockPrint() Test, ESMF_NUOPC_UTest.F90, line 570
@@ -352,190 +352,190 @@ forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array te
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B352B06AE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B234B755E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
 ESMF_NUOPC_UTest   0000000000417CDC  MAIN__                    634  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B35302213D5  __libc_start_main     Unknown  Unknown
-ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
-forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
-
-Image              PC                Routine            Line        Source             
-ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B2FC6902E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-ESMF_NUOPC_UTest   0000000000417CDC  MAIN__                    634  ESMF_NUOPC_UTest.F90
-ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B2FCBAB93D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B235090C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
   PASS  NUOPC_InitAttributes() Test, ESMF_NUOPC_UTest.F90, line 635
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B7A86BABE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B4014FE5E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
 ESMF_NUOPC_UTest   0000000000417CDC  MAIN__                    634  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B7A8BD623D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B401A19C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
   PASS  NUOPC_GetAttribute() Test, ESMF_NUOPC_UTest.F90, line 643
-  PASS  NUOPC_InitAttributes() Test, ESMF_NUOPC_UTest.F90, line 635
   PASS  NUOPC_SetAttribute() Test, ESMF_NUOPC_UTest.F90, line 651
+  PASS  NUOPC_InitAttributes() Test, ESMF_NUOPC_UTest.F90, line 635
+  PASS  NUOPC_UpdateTimestamp() Test, ESMF_NUOPC_UTest.F90, line 659
   PASS  NUOPC_GetAttribute() Test, ESMF_NUOPC_UTest.F90, line 643
+  PASS  NUOPC_FieldDictionaryAddEntry() Test, ESMF_NUOPC_UTest.F90, line 667
+  PASS  NUOPC_SetAttribute() Test, ESMF_NUOPC_UTest.F90, line 651
+  PASS  NUOPC_FieldDictionaryGetEntry() Test, ESMF_NUOPC_UTest.F90, line 675
+  PASS  NUOPC_FieldDictionaryHasEntry() (existing entry) Test, ESMF_NUOPC_UTest.
+ F90, line 683
+  PASS  NUOPC_UpdateTimestamp() Test, ESMF_NUOPC_UTest.F90, line 659
+  PASS  NUOPC_FieldDictionaryHasEntry() return value (existing entry) Test, ESMF
+ _NUOPC_UTest.F90, line 690
+  PASS  NUOPC_FieldDictionaryAddEntry() Test, ESMF_NUOPC_UTest.F90, line 667
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B1D85E9CE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B3CE67D3E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
 ESMF_NUOPC_UTest   0000000000417CDC  MAIN__                    634  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B1D8B0533D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B3CEB98A3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
-  PASS  NUOPC_SetAttribute() Test, ESMF_NUOPC_UTest.F90, line 651
-  PASS  NUOPC_UpdateTimestamp() Test, ESMF_NUOPC_UTest.F90, line 659
+  PASS  NUOPC_FieldDictionaryHasEntry() (not existing entry) Test, ESMF_NUOPC_UT
+ est.F90, line 698
+  PASS  NUOPC_FieldDictionaryGetEntry() Test, ESMF_NUOPC_UTest.F90, line 675
+  PASS  NUOPC_FieldDictionaryHasEntry() return value (not existing entry) Test, 
+ ESMF_NUOPC_UTest.F90, line 705
+  PASS  NUOPC_FieldDictionaryHasEntry() (existing entry) Test, ESMF_NUOPC_UTest.
+ F90, line 683
+  PASS  NUOPC_FieldDictionaryHasEntry() return value (existing entry) Test, ESMF
+ _NUOPC_UTest.F90, line 690
+  PASS  NUOPC_FieldDictionarySetSyno() (existing entry) Test, ESMF_NUOPC_UTest.F
+ 90, line 714
+  PASS  NUOPC_FieldDictionaryHasEntry() (not existing entry) Test, ESMF_NUOPC_UT
+ est.F90, line 698
+forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
+
+Image              PC                Routine            Line        Source             
+ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
+libesmf.so         00002AD4E1ED2E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+ESMF_NUOPC_UTest   0000000000417CDC  MAIN__                    634  ESMF_NUOPC_UTest.F90
+ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD4E70893D5  __libc_start_main     Unknown  Unknown
+ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
+  PASS  NUOPC_FieldDictionaryHasEntry() return value (not existing entry) Test, 
+ ESMF_NUOPC_UTest.F90, line 705
+  PASS  NUOPC_FieldDictionarySetSyno() (existing entry) Test, ESMF_NUOPC_UTest.F
+ 90, line 714
   PASS  NUOPC_InitAttributes() Test, ESMF_NUOPC_UTest.F90, line 635
-  PASS  NUOPC_UpdateTimestamp() Test, ESMF_NUOPC_UTest.F90, line 659
-  PASS  NUOPC_FieldDictionaryAddEntry() Test, ESMF_NUOPC_UTest.F90, line 667
-  PASS  NUOPC_FieldDictionaryGetEntry() Test, ESMF_NUOPC_UTest.F90, line 675
-  PASS  NUOPC_FieldDictionaryAddEntry() Test, ESMF_NUOPC_UTest.F90, line 667
+  PASS  NUOPC_FieldDictionarySetSyno() (non existing entry) Test, ESMF_NUOPC_UTe
+ st.F90, line 723
+  PASS  NUOPC_FieldDictionaryMatchSyno() (existing entry) Test, ESMF_NUOPC_UTest
+ .F90, line 732
   PASS  NUOPC_GetAttribute() Test, ESMF_NUOPC_UTest.F90, line 643
+  PASS  NUOPC_FieldDictionaryMatchSyno() return value (existing entry) Test, ESM
+ F_NUOPC_UTest.F90, line 739
   PASS  NUOPC_InitAttributes() Test, ESMF_NUOPC_UTest.F90, line 635
-  PASS  NUOPC_FieldDictionaryGetEntry() Test, ESMF_NUOPC_UTest.F90, line 675
-  PASS  NUOPC_FieldDictionaryHasEntry() (existing entry) Test, ESMF_NUOPC_UTest.
- F90, line 683
-  PASS  NUOPC_FieldDictionaryHasEntry() (existing entry) Test, ESMF_NUOPC_UTest.
- F90, line 683
-  PASS  NUOPC_FieldDictionaryHasEntry() return value (existing entry) Test, ESMF
- _NUOPC_UTest.F90, line 690
+  PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry1) Test, ESMF_NUOPC_
+ UTest.F90, line 748
+  PASS  NUOPC_FieldDictionarySetSyno() (non existing entry) Test, ESMF_NUOPC_UTe
+ st.F90, line 723
+  PASS  NUOPC_SetAttribute() Test, ESMF_NUOPC_UTest.F90, line 651
+  PASS  NUOPC_FieldDictionaryMatchSyno() return value (not existing entry1) Test
+ , ESMF_NUOPC_UTest.F90, line 755
+  PASS  NUOPC_FieldDictionaryMatchSyno() (existing entry) Test, ESMF_NUOPC_UTest
+ .F90, line 732
   PASS  NUOPC_GetAttribute() Test, ESMF_NUOPC_UTest.F90, line 643
-  PASS  NUOPC_SetAttribute() Test, ESMF_NUOPC_UTest.F90, line 651
-  PASS  NUOPC_FieldDictionaryHasEntry() return value (existing entry) Test, ESMF
- _NUOPC_UTest.F90, line 690
-  PASS  NUOPC_FieldDictionaryHasEntry() (not existing entry) Test, ESMF_NUOPC_UT
- est.F90, line 698
-  PASS  NUOPC_FieldDictionaryHasEntry() return value (not existing entry) Test, 
- ESMF_NUOPC_UTest.F90, line 705
-  PASS  NUOPC_FieldDictionaryHasEntry() (not existing entry) Test, ESMF_NUOPC_UT
- est.F90, line 698
-  PASS  NUOPC_SetAttribute() Test, ESMF_NUOPC_UTest.F90, line 651
+  PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry2) Test, ESMF_NUOPC_
+ UTest.F90, line 764
+  PASS  NUOPC_FieldDictionaryMatchSyno() return value (existing entry) Test, ESM
+ F_NUOPC_UTest.F90, line 739
   PASS  NUOPC_UpdateTimestamp() Test, ESMF_NUOPC_UTest.F90, line 659
-  PASS  NUOPC_FieldDictionaryHasEntry() return value (not existing entry) Test, 
- ESMF_NUOPC_UTest.F90, line 705
-  PASS  NUOPC_FieldDictionarySetSyno() (existing entry) Test, ESMF_NUOPC_UTest.F
- 90, line 714
-  PASS  NUOPC_FieldDictionarySetSyno() (existing entry) Test, ESMF_NUOPC_UTest.F
- 90, line 714
-  PASS  NUOPC_UpdateTimestamp() Test, ESMF_NUOPC_UTest.F90, line 659
+  PASS  NUOPC_FieldDictionaryMatchSyno() return value (not existing entry2) Test
+ , ESMF_NUOPC_UTest.F90, line 771
+  PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry1) Test, ESMF_NUOPC_
+ UTest.F90, line 748
+  PASS  NUOPC_SetAttribute() Test, ESMF_NUOPC_UTest.F90, line 651
+  PASS  NUOPC_FieldDictionaryMatchSyno() return value (not existing entry1) Test
+ , ESMF_NUOPC_UTest.F90, line 755
+  PASS  NUOPC_FieldDictionarySetup() Test, ESMF_NUOPC_UTest.F90, line 779
   PASS  NUOPC_FieldDictionaryAddEntry() Test, ESMF_NUOPC_UTest.F90, line 667
+  PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry2) Test, ESMF_NUOPC_
+ UTest.F90, line 764
   PASS  NUOPC_FieldDictionaryGetEntry() Test, ESMF_NUOPC_UTest.F90, line 675
-  PASS  NUOPC_FieldDictionaryAddEntry() Test, ESMF_NUOPC_UTest.F90, line 667
+  PASS  NUOPC_UpdateTimestamp() Test, ESMF_NUOPC_UTest.F90, line 659
+  PASS  NUOPC_FieldDictionaryMatchSyno() return value (not existing entry2) Test
+ , ESMF_NUOPC_UTest.F90, line 771
   PASS  NUOPC_FieldDictionaryHasEntry() (existing entry) Test, ESMF_NUOPC_UTest.
  F90, line 683
+  PASS  NUOPC_FieldDictionarySetup() Test, ESMF_NUOPC_UTest.F90, line 779
+  PASS  NUOPC_FieldDictionaryAddEntry() Test, ESMF_NUOPC_UTest.F90, line 667
+  PASS  NUOPC_FieldDictionaryHasEntry() return value (existing entry) Test, ESMF
+ _NUOPC_UTest.F90, line 690
   PASS  NUOPC_FieldDictionaryGetEntry() Test, ESMF_NUOPC_UTest.F90, line 675
-  PASS  NUOPC_FieldDictionarySetSyno() (non existing entry) Test, ESMF_NUOPC_UTe
- st.F90, line 723
   PASS  NUOPC_FieldDictionaryHasEntry() (existing entry) Test, ESMF_NUOPC_UTest.
  F90, line 683
-  PASS  NUOPC_FieldDictionarySetSyno() (non existing entry) Test, ESMF_NUOPC_UTe
- st.F90, line 723
-  PASS  NUOPC_FieldDictionaryHasEntry() return value (existing entry) Test, ESMF
- _NUOPC_UTest.F90, line 690
-  PASS  NUOPC_FieldDictionaryMatchSyno() (existing entry) Test, ESMF_NUOPC_UTest
- .F90, line 732
-  PASS  NUOPC_FieldDictionaryMatchSyno() (existing entry) Test, ESMF_NUOPC_UTest
- .F90, line 732
-  PASS  NUOPC_FieldDictionaryMatchSyno() return value (existing entry) Test, ESM
- F_NUOPC_UTest.F90, line 739
+  PASS  NUOPC_FieldDictionaryHasEntry() (not existing entry) Test, ESMF_NUOPC_UT
+ est.F90, line 698
+  PASS  NUOPC_FieldDictionaryEgest() Test, ESMF_NUOPC_UTest.F90, line 787
+  PASS  NUOPC_FieldDictionaryHasEntry() return value (not existing entry) Test, 
+ ESMF_NUOPC_UTest.F90, line 705
   PASS  NUOPC_FieldDictionaryHasEntry() return value (existing entry) Test, ESMF
  _NUOPC_UTest.F90, line 690
   PASS  NUOPC_FieldDictionaryHasEntry() (not existing entry) Test, ESMF_NUOPC_UT
  est.F90, line 698
-  PASS  NUOPC_FieldDictionaryMatchSyno() return value (existing entry) Test, ESM
- F_NUOPC_UTest.F90, line 739
-  PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry1) Test, ESMF_NUOPC_
- UTest.F90, line 748
-  PASS  NUOPC_FieldDictionaryHasEntry() return value (not existing entry) Test, 
- ESMF_NUOPC_UTest.F90, line 705
-  PASS  NUOPC_FieldDictionaryHasEntry() (not existing entry) Test, ESMF_NUOPC_UT
- est.F90, line 698
-  PASS  NUOPC_FieldDictionaryMatchSyno() return value (not existing entry1) Test
- , ESMF_NUOPC_UTest.F90, line 755
-  PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry1) Test, ESMF_NUOPC_
- UTest.F90, line 748
-  PASS  NUOPC_FieldDictionaryHasEntry() return value (not existing entry) Test, 
- ESMF_NUOPC_UTest.F90, line 705
-  PASS  NUOPC_FieldDictionaryMatchSyno() return value (not existing entry1) Test
- , ESMF_NUOPC_UTest.F90, line 755
   PASS  NUOPC_FieldDictionarySetSyno() (existing entry) Test, ESMF_NUOPC_UTest.F
  90, line 714
-  PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry2) Test, ESMF_NUOPC_
- UTest.F90, line 764
+  PASS  NUOPC_FieldDictionaryEgest() Test, ESMF_NUOPC_UTest.F90, line 787
+  PASS  NUOPC_FieldDictionaryHasEntry() return value (not existing entry) Test, 
+ ESMF_NUOPC_UTest.F90, line 705
   PASS  NUOPC_FieldDictionarySetSyno() (existing entry) Test, ESMF_NUOPC_UTest.F
  90, line 714
-  PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry2) Test, ESMF_NUOPC_
- UTest.F90, line 764
-  PASS  NUOPC_FieldDictionaryMatchSyno() return value (not existing entry2) Test
- , ESMF_NUOPC_UTest.F90, line 771
-  PASS  NUOPC_FieldDictionaryMatchSyno() return value (not existing entry2) Test
- , ESMF_NUOPC_UTest.F90, line 771
-  PASS  NUOPC_FieldDictionarySetup() Test, ESMF_NUOPC_UTest.F90, line 779
-  PASS  NUOPC_FieldDictionarySetup() Test, ESMF_NUOPC_UTest.F90, line 779
-  PASS  NUOPC_FieldDictionarySetSyno() (non existing entry) Test, ESMF_NUOPC_UTe
- st.F90, line 723
   PASS  NUOPC_FieldDictionarySetSyno() (non existing entry) Test, ESMF_NUOPC_UTe
  st.F90, line 723
   PASS  NUOPC_FieldDictionaryMatchSyno() (existing entry) Test, ESMF_NUOPC_UTest
  .F90, line 732
+  PASS  NUOPC_FieldDictionarySetSyno() (non existing entry) Test, ESMF_NUOPC_UTe
+ st.F90, line 723
+  PASS  NUOPC_FieldDictionaryMatchSyno() return value (existing entry) Test, ESM
+ F_NUOPC_UTest.F90, line 739
+  PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry1) Test, ESMF_NUOPC_
+ UTest.F90, line 748
   PASS  NUOPC_FieldDictionaryMatchSyno() (existing entry) Test, ESMF_NUOPC_UTest
  .F90, line 732
   PASS  NUOPC_FieldDictionaryMatchSyno() return value (existing entry) Test, ESM
  F_NUOPC_UTest.F90, line 739
-  PASS  NUOPC_FieldDictionaryEgest() Test, ESMF_NUOPC_UTest.F90, line 787
-  PASS  NUOPC_FieldDictionaryMatchSyno() return value (existing entry) Test, ESM
- F_NUOPC_UTest.F90, line 739
-  PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry1) Test, ESMF_NUOPC_
- UTest.F90, line 748
-  PASS  NUOPC_FieldDictionaryEgest() Test, ESMF_NUOPC_UTest.F90, line 787
   PASS  NUOPC_FieldDictionaryMatchSyno() return value (not existing entry1) Test
  , ESMF_NUOPC_UTest.F90, line 755
   PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry1) Test, ESMF_NUOPC_
  UTest.F90, line 748
+  PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry2) Test, ESMF_NUOPC_
+ UTest.F90, line 764
   PASS  NUOPC_FieldDictionaryMatchSyno() return value (not existing entry1) Test
  , ESMF_NUOPC_UTest.F90, line 755
-  PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry2) Test, ESMF_NUOPC_
- UTest.F90, line 764
-  PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry2) Test, ESMF_NUOPC_
- UTest.F90, line 764
   PASS  NUOPC_FieldDictionaryMatchSyno() return value (not existing entry2) Test
  , ESMF_NUOPC_UTest.F90, line 771
-  PASS  NUOPC_FieldDictionaryMatchSyno() return value (not existing entry2) Test
- , ESMF_NUOPC_UTest.F90, line 771
+  PASS  NUOPC_FieldDictionaryMatchSyno() (non existing entry2) Test, ESMF_NUOPC_
+ UTest.F90, line 764
   PASS  NUOPC_FieldDictionarySetup() Test, ESMF_NUOPC_UTest.F90, line 779
+  PASS  NUOPC_FieldDictionaryMatchSyno() return value (not existing entry2) Test
+ , ESMF_NUOPC_UTest.F90, line 771
   PASS  NUOPC_FieldDictionarySetup() Test, ESMF_NUOPC_UTest.F90, line 779
   PASS  NUOPC_FieldDictionaryEgest() Test, ESMF_NUOPC_UTest.F90, line 787
   PASS  NUOPC_FieldDictionaryEgest() Test, ESMF_NUOPC_UTest.F90, line 787
   PASS  NUOPC_FreeFormatLog() for fdFF Test, ESMF_NUOPC_UTest.F90, line 795
+  PASS  NUOPC_FreeFormatDestroy() Test, ESMF_NUOPC_UTest.F90, line 803
+  PASS  NUOPC_GetTimestamp() for Field Test, ESMF_NUOPC_UTest.F90, line 811
   PASS  NUOPC_FreeFormatLog() for fdFF Test, ESMF_NUOPC_UTest.F90, line 795
   PASS  NUOPC_FreeFormatDestroy() Test, ESMF_NUOPC_UTest.F90, line 803
-  PASS  NUOPC_FreeFormatDestroy() Test, ESMF_NUOPC_UTest.F90, line 803
-  PASS  NUOPC_GetTimestamp() for Field Test, ESMF_NUOPC_UTest.F90, line 811
-  PASS  NUOPC_GetTimestamp() for Field Test, ESMF_NUOPC_UTest.F90, line 811
   PASS  NUOPC_IsAtTime() for Field Test, ESMF_NUOPC_UTest.F90, line 819
+  PASS  NUOPC_GetTimestamp() for Field Test, ESMF_NUOPC_UTest.F90, line 811
   PASS  NUOPC_IsAtTime() for Field Test, ESMF_NUOPC_UTest.F90, line 819
   PASS  NUOPC_FreeFormatLog() for fdFF Test, ESMF_NUOPC_UTest.F90, line 795
+  PASS  NUOPC_FreeFormatDestroy() Test, ESMF_NUOPC_UTest.F90, line 803
   PASS  NUOPC_FreeFormatLog() for fdFF Test, ESMF_NUOPC_UTest.F90, line 795
   PASS  NUOPC_FreeFormatDestroy() Test, ESMF_NUOPC_UTest.F90, line 803
-  PASS  NUOPC_FreeFormatDestroy() Test, ESMF_NUOPC_UTest.F90, line 803
   PASS  NUOPC_GetTimestamp() for Field Test, ESMF_NUOPC_UTest.F90, line 811
   PASS  NUOPC_GetTimestamp() for Field Test, ESMF_NUOPC_UTest.F90, line 811
   PASS  NUOPC_IsAtTime() for Field Test, ESMF_NUOPC_UTest.F90, line 819
   PASS  NUOPC_IsAtTime() for Field Test, ESMF_NUOPC_UTest.F90, line 819
   PASS  ESMF_GridCreate1PeriDimUfrm() Test, ESMF_NUOPC_UTest.F90, line 830
   PASS  ESMF_GridCreate1PeriDimUfrm() Test, ESMF_NUOPC_UTest.F90, line 830
+  PASS  Complete field for further testing Test, ESMF_NUOPC_UTest.F90, line 840
+  PASS  Complete field for further testing Test, ESMF_NUOPC_UTest.F90, line 840
   PASS  ESMF_GridCreate1PeriDimUfrm() Test, ESMF_NUOPC_UTest.F90, line 830
   PASS  ESMF_GridCreate1PeriDimUfrm() Test, ESMF_NUOPC_UTest.F90, line 830
   PASS  Complete field for further testing Test, ESMF_NUOPC_UTest.F90, line 840
   PASS  Complete field for further testing Test, ESMF_NUOPC_UTest.F90, line 840
-  PASS  Complete field for further testing Test, ESMF_NUOPC_UTest.F90, line 840
-  PASS  Complete field for further testing Test, ESMF_NUOPC_UTest.F90, line 840
   PASS  NUOPC_Write() Test, ESMF_NUOPC_UTest.F90, line 864
   PASS  NUOPC_Write() Test, ESMF_NUOPC_UTest.F90, line 864
   PASS  NUOPC_Write() Test, ESMF_NUOPC_UTest.F90, line 864
@@ -572,6 +572,10 @@ ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
  96
   PASS  NUOPC_CompAttributeSet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 8
  96
+  PASS  NUOPC_CompAttributeEgest() for GridComp Test, ESMF_NUOPC_UTest.F90, line
+  904
+  PASS  NUOPC_CompAttributeEgest() for GridComp Test, ESMF_NUOPC_UTest.F90, line
+  904
   PASS  NUOPC_CompAttributeEgest() for GridComp Test, ESMF_NUOPC_UTest.F90, line
   904
   PASS  NUOPC_CompAttributeEgest() for GridComp Test, ESMF_NUOPC_UTest.F90, line
@@ -588,65 +592,61 @@ ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
  IPDvX
  InitializeDataComplete = false
  InitializeDataProgress = false
- InitializePhaseMap
  InitializeDataComplete = false
  InitializeDataProgress = false
  InitializePhaseMap
  InternalFinalizePhaseMap
+ InitializePhaseMap
  InternalFinalizePhaseMap
  InternalInitializePhaseMap
  InternalRunPhaseMap
- Kind = Model
  InternalInitializePhaseMap
  InternalRunPhaseMap
  Kind = Model
  NestingGeneration =            0
- Nestling =            0
+ CompLabel = _uninitialized
+ Diagnostic = 0
+ FinalizePhaseMap
+ HierarchyProtocol
+ IPDvX
+ InitializeDataComplete = false
+ InitializeDataProgress = false
+ CompLabel = _uninitialized
+ Diagnostic = 0
+ FinalizePhaseMap
+ HierarchyProtocol
+ IPDvX
+ InitializeDataComplete = false
+ InitializeDataProgress = false
+ InitializePhaseMap
+ Kind = Model
  NestingGeneration =            0
  Nestling =            0
  Profiling = 0
  RunPhaseMap
+ Verbosity = 0
+ myAttribute = test
+ Nestling =            0
  Profiling = 0
  RunPhaseMap
  Verbosity = 0
  myAttribute = test
- Verbosity = 0
- myAttribute = test
-  PASS  NUOPC_CompAttributeEgest() for GridComp Test, ESMF_NUOPC_UTest.F90, line
-  PASS  NUOPC_CompAttributeEgest() for GridComp Test, ESMF_NUOPC_UTest.F90, line
-  904
-  PASS  NUOPC_FreeFormatPrint() for attrFF Test, ESMF_NUOPC_UTest.F90, line 912
-  PASS  NUOPC_FreeFormatPrint() for attrFF Test, ESMF_NUOPC_UTest.F90, line 912
-  904
- CompLabel = _uninitialized
- Diagnostic = 0
- FinalizePhaseMap
- HierarchyProtocol
- CompLabel = _uninitialized
- Diagnostic = 0
- FinalizePhaseMap
- HierarchyProtocol
- IPDvX
- InitializeDataComplete = false
- IPDvX
- InitializeDataComplete = false
- InitializeDataProgress = false
  InitializePhaseMap
  InternalFinalizePhaseMap
- InitializeDataProgress = false
- InitializePhaseMap
- InternalFinalizePhaseMap
- InternalInitializePhaseMap
- InternalRunPhaseMap
  InternalInitializePhaseMap
  InternalRunPhaseMap
  Kind = Model
  NestingGeneration =            0
  Nestling =            0
+ InternalFinalizePhaseMap
+ InternalInitializePhaseMap
+ InternalRunPhaseMap
  Kind = Model
  NestingGeneration =            0
  Nestling =            0
  Profiling = 0
+  PASS  NUOPC_FreeFormatPrint() for attrFF Test, ESMF_NUOPC_UTest.F90, line 912
+  PASS  NUOPC_FreeFormatPrint() for attrFF Test, ESMF_NUOPC_UTest.F90, line 912
  Profiling = 0
  RunPhaseMap
  Verbosity = 0
@@ -692,31 +692,43 @@ forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array te
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B2FC6902E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B2FC68F222D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
+libesmf.so         00002B4014FE5E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B4014FD522D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041DFB3  MAIN__                    959  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B2FCBAB93D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B401A19C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B352B06AE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B352B05A22D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
+libesmf.so         00002B234B755E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B234B74522D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041DFB3  MAIN__                    959  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B35302213D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B235090C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
+  PASS  NUOPC_Advertise() Test, ESMF_NUOPC_UTest.F90, line 960
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B7A86BABE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B7A86B9B22D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
+libesmf.so         00002B3CE67D3E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B3CE67C322D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041DFB3  MAIN__                    959  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B7A8BD623D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B3CEB98A3D5  __libc_start_main     Unknown  Unknown
+ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
+  PASS  NUOPC_Advertise() Test, ESMF_NUOPC_UTest.F90, line 960
+forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
+
+Image              PC                Routine            Line        Source             
+ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
+libesmf.so         00002AD4E1ED2E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002AD4E1EC222D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
+ESMF_NUOPC_UTest   000000000041DFB3  MAIN__                    959  ESMF_NUOPC_UTest.F90
+ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
+libc-2.17.so       00002AD4E70893D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
   PASS  NUOPC_Advertise() Test, ESMF_NUOPC_UTest.F90, line 960
   PASS  NUOPC_Advertise() Test, ESMF_NUOPC_UTest.F90, line 960
@@ -724,79 +736,67 @@ forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array te
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B1D85E9CE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B1D85E8C22D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
-ESMF_NUOPC_UTest   000000000041DFB3  MAIN__                    959  ESMF_NUOPC_UTest.F90
-ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B1D8B0533D5  __libc_start_main     Unknown  Unknown
-ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
-  PASS  NUOPC_Advertise() Test, ESMF_NUOPC_UTest.F90, line 960
-  PASS  NUOPC_Advertise() Test, ESMF_NUOPC_UTest.F90, line 960
-forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
-
-Image              PC                Routine            Line        Source             
-ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B2FC6902E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B2FC68F222D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
-libesmf.so         00002B2FC68F4041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
+libesmf.so         00002B234B755E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B234B74522D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
+libesmf.so         00002B234B747041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041E415  MAIN__                    967  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B2FCBAB93D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B235090C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B352B06AE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B352B05A22D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
-libesmf.so         00002B352B05C041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
+libesmf.so         00002B4014FE5E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B4014FD522D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
+libesmf.so         00002B4014FD7041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041E415  MAIN__                    967  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B35302213D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B401A19C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B7A86BABE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B7A86B9B22D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
-libesmf.so         00002B7A86B9D041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
+libesmf.so         00002B3CE67D3E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B3CE67C322D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
+libesmf.so         00002B3CE67C5041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041E415  MAIN__                    967  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B7A8BD623D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B3CEB98A3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B1D85E9CE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B1D85E8C22D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
-libesmf.so         00002B1D85E8E041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
+libesmf.so         00002AD4E1ED2E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002AD4E1EC222D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
+libesmf.so         00002AD4E1EC4041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041E415  MAIN__                    967  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B1D8B0533D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002AD4E70893D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B2FC6902E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B2FC68F222D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
-libesmf.so         00002B2FC68F4041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
+libesmf.so         00002B234B755E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B234B74522D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
+libesmf.so         00002B234B747041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041E415  MAIN__                    967  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B2FCBAB93D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B235090C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B352B06AE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B352B05A22D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
-libesmf.so         00002B352B05C041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
+libesmf.so         00002B4014FE5E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B4014FD522D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
+libesmf.so         00002B4014FD7041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041E415  MAIN__                    967  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B35302213D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B401A19C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
   PASS  NUOPC_Advertise() Test, ESMF_NUOPC_UTest.F90, line 969
   PASS  NUOPC_Advertise() Test, ESMF_NUOPC_UTest.F90, line 969
@@ -814,75 +814,75 @@ ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
  e 1011
   PASS  NUOPC_IsAtTime() - all fields in state - Test, ESMF_NUOPC_UTest.F90, lin
  e 1011
+  PASS  NUOPC_IsConnected() - specific field in state - Test, ESMF_NUOPC_UTest.F
+ 90, line 1019
+  PASS  NUOPC_IsConnected() - specific field in state - Test, ESMF_NUOPC_UTest.F
+ 90, line 1019
+  PASS  NUOPC_IsUpdated() Test, ESMF_NUOPC_UTest.F90, line 1027
+  PASS  NUOPC_IsUpdated() Test, ESMF_NUOPC_UTest.F90, line 1027
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B7A86BABE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B7A86B9B22D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
-libesmf.so         00002B7A86B9D041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
+libesmf.so         00002B3CE67D3E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B3CE67C322D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
+libesmf.so         00002B3CE67C5041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041E415  MAIN__                    967  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B7A8BD623D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B3CEB98A3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
-  PASS  NUOPC_IsConnected() - specific field in state - Test, ESMF_NUOPC_UTest.F
- 90, line 1019
-  PASS  NUOPC_IsConnected() - specific field in state - Test, ESMF_NUOPC_UTest.F
- 90, line 1019
-  PASS  NUOPC_IsUpdated() Test, ESMF_NUOPC_UTest.F90, line 1027
-  PASS  NUOPC_IsUpdated() Test, ESMF_NUOPC_UTest.F90, line 1027
   PASS  NUOPC_Advertise() Test, ESMF_NUOPC_UTest.F90, line 969
   PASS  NUOPC_InitAttributes() Test, ESMF_NUOPC_UTest.F90, line 977
   PASS  NUOPC_SetAttribute() Test, ESMF_NUOPC_UTest.F90, line 985
+  PASS  NUOPC_GetStateMemberLists() Test, ESMF_NUOPC_UTest.F90, line 994
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B1D85E9CE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B1D85E8C22D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
-libesmf.so         00002B1D85E8E041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
+libesmf.so         00002AD4E1ED2E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002AD4E1EC222D  nuopc_base_mp_nuo         474  NUOPC_Base.F90
+libesmf.so         00002AD4E1EC4041  nuopc_base_mp_nuo         675  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041E415  MAIN__                    967  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B1D8B0533D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002AD4E70893D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
-  PASS  NUOPC_GetStateMemberLists() Test, ESMF_NUOPC_UTest.F90, line 994
+  PASS  NUOPC_IsConnected() - all fields in state - Test, ESMF_NUOPC_UTest.F90, 
+ line 1003
+  PASS  NUOPC_IsAtTime() - all fields in state - Test, ESMF_NUOPC_UTest.F90, lin
+ e 1011
   PASS  NUOPC_Advertise() Test, ESMF_NUOPC_UTest.F90, line 969
+  PASS  NUOPC_IsConnected() - specific field in state - Test, ESMF_NUOPC_UTest.F
+ 90, line 1019
+  PASS  NUOPC_IsUpdated() Test, ESMF_NUOPC_UTest.F90, line 1027
+  PASS  NUOPC_InitAttributes() Test, ESMF_NUOPC_UTest.F90, line 977
+  PASS  NUOPC_SetAttribute() Test, ESMF_NUOPC_UTest.F90, line 985
+  PASS  NUOPC_GetStateMemberLists() Test, ESMF_NUOPC_UTest.F90, line 994
   PASS  NUOPC_IsConnected() - all fields in state - Test, ESMF_NUOPC_UTest.F90, 
  line 1003
   PASS  NUOPC_IsAtTime() - all fields in state - Test, ESMF_NUOPC_UTest.F90, lin
  e 1011
   PASS  NUOPC_IsConnected() - specific field in state - Test, ESMF_NUOPC_UTest.F
  90, line 1019
-  PASS  NUOPC_InitAttributes() Test, ESMF_NUOPC_UTest.F90, line 977
-  PASS  NUOPC_IsUpdated() Test, ESMF_NUOPC_UTest.F90, line 1027
-  PASS  NUOPC_SetAttribute() Test, ESMF_NUOPC_UTest.F90, line 985
-  PASS  NUOPC_GetStateMemberLists() Test, ESMF_NUOPC_UTest.F90, line 994
-  PASS  NUOPC_IsConnected() - all fields in state - Test, ESMF_NUOPC_UTest.F90, 
- line 1003
-  PASS  NUOPC_IsAtTime() - all fields in state - Test, ESMF_NUOPC_UTest.F90, lin
- e 1011
-  PASS  NUOPC_IsConnected() - specific field in state - Test, ESMF_NUOPC_UTest.F
- 90, line 1019
   PASS  NUOPC_IsUpdated() Test, ESMF_NUOPC_UTest.F90, line 1027
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B352B06AE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B352B07FD08  nuopc_base_mp_nuo        3864  NUOPC_Base.F90
+libesmf.so         00002B234B755E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B234B76AD08  nuopc_base_mp_nuo        3864  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041F671  MAIN__                   1034  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B35302213D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B235090C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B2FC6902E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B2FC6917D08  nuopc_base_mp_nuo        3864  NUOPC_Base.F90
+libesmf.so         00002B4014FE5E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B4014FFAD08  nuopc_base_mp_nuo        3864  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041F671  MAIN__                   1034  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B2FCBAB93D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B401A19C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
   PASS  NUOPC_Realize() Test, ESMF_NUOPC_UTest.F90, line 1035
   PASS  NUOPC_Realize() Test, ESMF_NUOPC_UTest.F90, line 1035
@@ -890,158 +890,158 @@ forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array te
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B7A86BABE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B7A86BC0D08  nuopc_base_mp_nuo        3864  NUOPC_Base.F90
+libesmf.so         00002B3CE67D3E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002B3CE67E8D08  nuopc_base_mp_nuo        3864  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041F671  MAIN__                   1034  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B7A8BD623D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B3CEB98A3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
   PASS  NUOPC_Realize() Test, ESMF_NUOPC_UTest.F90, line 1035
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B1D85E9CE14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
-libesmf.so         00002B1D85EB1D08  nuopc_base_mp_nuo        3864  NUOPC_Base.F90
+libesmf.so         00002B4015000BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
+libesmf.so         00002B4015001A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
+libesmf.so         00002B401500205F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
+ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
+ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
+libc-2.17.so       00002B401A19C3D5  __libc_start_main     Unknown  Unknown
+ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
+forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
+
+Image              PC                Routine            Line        Source             
+ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
+libesmf.so         00002AD4E1ED2E14  nuopc_base_mp_nuo        2170  NUOPC_Base.F90
+libesmf.so         00002AD4E1EE7D08  nuopc_base_mp_nuo        3864  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041F671  MAIN__                   1034  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B1D8B0533D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002AD4E70893D5  __libc_start_main     Unknown  Unknown
+ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
+forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
+
+Image              PC                Routine            Line        Source             
+ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
+libesmf.so         00002B234B770BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
+libesmf.so         00002B234B771A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
+libesmf.so         00002B234B77205F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
+ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
+ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
+libc-2.17.so       00002B235090C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
   PASS  NUOPC_Realize() Test, ESMF_NUOPC_UTest.F90, line 1035
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B352B085BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
-libesmf.so         00002B352B086A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
-libesmf.so         00002B352B08705F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
+libesmf.so         00002B4015000BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
+libesmf.so         00002B4015001A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
+libesmf.so         00002B401500205F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B35302213D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B401A19C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B2FC691DBB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
-libesmf.so         00002B2FC691EA19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
-libesmf.so         00002B2FC691F05F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
+libesmf.so         00002B3CE67EEBB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
+libesmf.so         00002B3CE67EFA19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
+libesmf.so         00002B3CE67F005F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B2FCBAB93D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B3CEB98A3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B7A86BC6BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
-libesmf.so         00002B7A86BC7A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
-libesmf.so         00002B7A86BC805F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
+libesmf.so         00002B234B770BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
+libesmf.so         00002B234B771A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
+libesmf.so         00002B234B77205F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B7A8BD623D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B235090C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B2FC691DBB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
-libesmf.so         00002B2FC691EA19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
-libesmf.so         00002B2FC691F05F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
+libesmf.so         00002AD4E1EEDBB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
+libesmf.so         00002AD4E1EEEA19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
+libesmf.so         00002AD4E1EEF05F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B2FCBAB93D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002AD4E70893D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B352B085BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
-libesmf.so         00002B352B086A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
-libesmf.so         00002B352B08705F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
+libesmf.so         00002B4015000BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
+libesmf.so         00002B4015001A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
+libesmf.so         00002B401500205F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B35302213D5  __libc_start_main     Unknown  Unknown
-ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
-forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
-
-Image              PC                Routine            Line        Source             
-ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B1D85EB7BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
-libesmf.so         00002B1D85EB8A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
-libesmf.so         00002B1D85EB905F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
-ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
-ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B1D8B0533D5  __libc_start_main     Unknown  Unknown
-ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
-forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
-
-Image              PC                Routine            Line        Source             
-ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B7A86BC6BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
-libesmf.so         00002B7A86BC7A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
-libesmf.so         00002B7A86BC805F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
-ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
-ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B7A8BD623D5  __libc_start_main     Unknown  Unknown
-ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
-forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
-
-Image              PC                Routine            Line        Source             
-ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B352B085BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
-libesmf.so         00002B352B086A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
-libesmf.so         00002B352B08705F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
-ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
-ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B35302213D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B401A19C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
   PASS  NUOPC_SetTimestamp() Test, ESMF_NUOPC_UTest.F90, line 1043
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B2FC691DBB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
-libesmf.so         00002B2FC691EA19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
-libesmf.so         00002B2FC691F05F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
+libesmf.so         00002B234B770BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
+libesmf.so         00002B234B771A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
+libesmf.so         00002B234B77205F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B2FCBAB93D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B235090C3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
   PASS  NUOPC_SetTimestamp() Test, ESMF_NUOPC_UTest.F90, line 1043
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B1D85EB7BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
-libesmf.so         00002B1D85EB8A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
-libesmf.so         00002B1D85EB905F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
+libesmf.so         00002B3CE67EEBB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
+libesmf.so         00002B3CE67EFA19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
+libesmf.so         00002B3CE67F005F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B1D8B0533D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002B3CEB98A3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B7A86BC6BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
-libesmf.so         00002B7A86BC7A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
-libesmf.so         00002B7A86BC805F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
+libesmf.so         00002AD4E1EEDBB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
+libesmf.so         00002AD4E1EEEA19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
+libesmf.so         00002AD4E1EEF05F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B7A8BD623D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002AD4E70893D5  __libc_start_main     Unknown  Unknown
+ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
+forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
+
+Image              PC                Routine            Line        Source             
+ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
+libesmf.so         00002B3CE67EEBB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
+libesmf.so         00002B3CE67EFA19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
+libesmf.so         00002B3CE67F005F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
+ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
+ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
+libc-2.17.so       00002B3CEB98A3D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
   PASS  NUOPC_SetTimestamp() Test, ESMF_NUOPC_UTest.F90, line 1043
 forrtl: warning (406): fort: (1): In call to ESMF_FIELDSETTIMESTAMP, an array temporary was created for argument #2
 
 Image              PC                Routine            Line        Source             
 ESMF_NUOPC_UTest   0000000000437DB0  Unknown               Unknown  Unknown
-libesmf.so         00002B1D85EB7BB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
-libesmf.so         00002B1D85EB8A19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
-libesmf.so         00002B1D85EB905F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
+libesmf.so         00002AD4E1EEDBB7  nuopc_base_mp_nuo        4458  NUOPC_Base.F90
+libesmf.so         00002AD4E1EEEA19  nuopc_base_mp_nuo        4555  NUOPC_Base.F90
+libesmf.so         00002AD4E1EEF05F  nuopc_base_mp_nuo        4618  NUOPC_Base.F90
 ESMF_NUOPC_UTest   000000000041F86D  MAIN__                   1042  ESMF_NUOPC_UTest.F90
 ESMF_NUOPC_UTest   000000000040EBBE  Unknown               Unknown  Unknown
-libc-2.17.so       00002B1D8B0533D5  __libc_start_main     Unknown  Unknown
+libc-2.17.so       00002AD4E70893D5  __libc_start_main     Unknown  Unknown
 ESMF_NUOPC_UTest   000000000040EAA9  Unknown               Unknown  Unknown
   PASS  NUOPC_SetTimestamp() Test, ESMF_NUOPC_UTest.F90, line 1043
   PASS  NUOPC_UpdateTimestamp() Test, ESMF_NUOPC_UTest.F90, line 1051
@@ -1121,9 +1121,9 @@ Printing time to stdout:    0  1  1  0  0  0   0
   PASS  NUOPC_CompFilterPhaseMap() for CplComp Test, ESMF_NUOPC_UTest.F90, line 
  1190
   PASS  NUOPC_CompFilterPhaseMap() for CplComp Test, ESMF_NUOPC_UTest.F90, line 
- 1190
   PASS  NUOPC_CompFilterPhaseMap() for CplComp Test, ESMF_NUOPC_UTest.F90, line 
  1190
+ 1190
   PASS  NUOPC_CompSearchPhaseMap() for GridComp Test, ESMF_NUOPC_UTest.F90, line
   1199
   PASS  NUOPC_CompSearchPhaseMap() for GridComp Test, ESMF_NUOPC_UTest.F90, line
@@ -1152,9 +1152,9 @@ Printing time to stdout:    0  1  1  0  0  0   0
   Ending Test, file ESMF_NUOPC_UTest.F90, line 1253
   Ending Test, file ESMF_NUOPC_UTest.F90, line 1253
   Ending Test, file ESMF_NUOPC_UTest.F90, line 1253
-  PET           0  Test Elapsed Time    1384.58300000000       msec.
-  PET           1  Test Elapsed Time    1397.65700000000       msec.
-  PET           2  Test Elapsed Time    1394.36300000000       msec.
-  PET           3  Test Elapsed Time    1398.84800000000       msec.
+  PET           3  Test Elapsed Time    1400.39600000000       msec.
+  PET           0  Test Elapsed Time    1392.68000000000       msec.
+  PET           2  Test Elapsed Time    1401.62000000000       msec.
+  PET           1  Test Elapsed Time    1405.17100000000       msec.
 TACC:  Shutdown complete. Exiting. 
-Sun Nov 15 22:22:21 CST 2020
+Mon Nov 16 08:36:15 CST 2020
