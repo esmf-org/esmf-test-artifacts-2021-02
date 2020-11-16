@@ -58,7 +58,6 @@
  Land Register starting
  Registered Initialize, Run, and Finalize routines
  Land Register returning
- land SetServices finished, rc=            0
  Land Register starting
  Registered Initialize, Run, and Finalize routines
  Land Register returning
@@ -70,6 +69,7 @@
  Registered Initialize, Run, and Finalize routines
  Land Register returning
  land SetServices finished, rc=            0
+ land SetServices finished, rc=            0
  ocean SetVM finished, rc=            0
  ocean SetVM finished, rc=            0
  ocean SetVM finished, rc=            0
@@ -95,11 +95,6 @@
  Cpl SetVM finished, rc=            0
  Cpl SetVM finished, rc=            0
  User Coupler Register starting
- Registered Initialize, Run, and Finalize routines
- User Coupler Register starting
- Registered Initialize, Run, and Finalize routines
- User Coupler Register returning
- Cpl SetServices finished, rc=            0
  User Coupler Register starting
  Registered Initialize, Run, and Finalize routines
  User Coupler Register returning
@@ -108,6 +103,11 @@
  Registered Initialize, Run, and Finalize routines
  User Coupler Register returning
  Cpl SetServices finished, rc=            0
+ User Coupler Register starting
+ Registered Initialize, Run, and Finalize routines
+ User Coupler Register returning
+ Cpl SetServices finished, rc=            0
+ Registered Initialize, Run, and Finalize routines
  User Coupler Register returning
  Cpl SetServices finished, rc=            0
  Land Init starting, localPet =           0
@@ -131,22 +131,24 @@
      reconcile needed: T
      reconcile needed: T
  Base name    = land_export Base name    = land_export Base name    = land_export Base name    = land_export
+ Status: Base = Ready, 
  Status: Base = Ready,  object = Ready
- Proxy        = 
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
 
  Status: Base = Ready,  object = Ready
  Proxy        = no
- Root Info (Attributes):
-
  Status: Base = Ready,  object = Ready
  Proxy        = no
+ Root Info (Attributes): object = Ready
+ Proxy        = no
  Root Info (Attributes):
-no
+ Proxy        = no
  Root Info (Attributes):
+
+ Root Info (Attributes):
+
 {}{}{}{}     object: 1,name: F_lnd
+     object: 1,name: F_lnd
+            type: Field
      object: 1,name: F_lnd
             type: Field
      object: 1,name: F_lnd
@@ -155,67 +157,63 @@ no
             type: Field
  land Init returning
  Land Initialize finished, rc =           0
-     object: 1,name: F_lnd
-            type: Field
  land Init returning
  Land Initialize finished, rc =           0
  land Init returning
  Land Initialize finished, rc =           0
  Land Initialize finished, rc =           0
  Ocean Init starting, localPet =           1
- Ocean Init starting, localPet =           2
  Ocean Init starting, localPet =           3
  Ocean Init starting, localPet =           0
+ Ocean Init starting, localPet =           2
+ ocean Init returning
  ocean Init returning
  ocean Init returning
  ocean Init returning
  Ocean Initialize finished, rc =           0
- ocean Init returning
  Ocean Initialize finished, rc =           0
  Ocean Initialize finished, rc =           0
  Ocean Initialize finished, rc =           0
+ Atmosphere Init starting, localPet =           0
  Atmosphere Init starting, localPet =           1
  Atmosphere Init starting, localPet =           2
  Atmosphere Init starting, localPet =           3
- Atmosphere Init starting, localPet =           0
  Atmos Init returning
  Atmos Init returning
  Atmosphere Initialize finished, rc =           0
+ Atmosphere Initialize finished, rc =           0
  Atmos Init returning
+ User Coupler Init starting, localPet =           3
  Atmosphere Initialize finished, rc =           0
  Atmos Init returning
  Atmosphere Initialize finished, rc =           0
  User Coupler Init starting, localPet =           2
- User Coupler Init starting, localPet =           3
- Atmosphere Initialize finished, rc =           0
  User Coupler Init starting, localPet =           0
  User Coupler Init starting, localPet =           1
  User Coupler Init returning
  Coupler Initialize finished, rc =           0
- Land Run starting
- User Coupler Init returning
- Coupler Initialize finished, rc =           0
  User Coupler Init returning
  Coupler Initialize finished, rc =           0
  Land Run starting
  User Coupler Init returning
  Land Run starting
+ User Coupler Init returning
+ Coupler Initialize finished, rc =           0
+ Land Run starting
  Coupler Initialize finished, rc =           0
  Land Run starting
  Land Run returning
+ Land Run returned, rc =           0
  Land Run returning
  Land Run returned, rc =           0
- Land Run returned, rc =           0
- Ocean Run starting
- Ocean Run starting
  Land Run returning
  Land Run returned, rc =           0
- Ocean Run starting
  Land Run returning
  Land Run returned, rc =           0
  Ocean Run starting
- Ocean Run returning
- Ocean Run returned, rc =           0
+ Ocean Run starting
+ Ocean Run starting
+ Ocean Run starting
  Ocean Run returning
  Ocean Run returned, rc =           0
  Ocean Run returning
@@ -225,22 +223,24 @@ no
  User Coupler Run starting
  User Coupler Run starting
  User Coupler Run starting
+ Ocean Run returning
+ Ocean Run returned, rc =           0
  User Coupler Run starting
  User Coupler Run returning
  Coupler Run returned, rc =           0
  Atmosphere Run starting
- User Coupler Run returning
- Coupler Run returned, rc =           0
  Atmosphere Run returning
  Atmosphere Run returned, rc =           0
+ User Coupler Run returning
+ User Coupler Final starting
+ Coupler Run returned, rc =           0
+ Atmosphere Run starting
+ User Coupler Run returning
+ Coupler Run returned, rc =           0
  Atmosphere Run starting
  Atmosphere Run returning
  Atmosphere Run returned, rc =           0
  User Coupler Final starting
- User Coupler Final starting
- User Coupler Run returning
- Coupler Run returned, rc =           0
- Atmosphere Run starting
  Atmosphere Run returning
  Atmosphere Run returned, rc =           0
  User Coupler Run returning
@@ -253,10 +253,10 @@ no
  User Coupler Final returning
  Coupler Finalize finished, rc =           0
  User Coupler Final returning
- Coupler Finalize finished, rc =           0
  User Coupler Final returning
  Coupler Finalize finished, rc =           0
  Land Final starting
+ Coupler Finalize finished, rc =           0
  Land Final starting
  Land Final starting
  User Coupler Final returning
@@ -274,17 +274,17 @@ no
  Land Final returning
  Land Finalize finished, rc =           0
  Ocean Final starting
- Ocean Final returning
- Ocean Final returning
- Ocean Finalize finished, rc =           0
  Ocean Final returning
  Ocean Finalize finished, rc =           0
+ Ocean Final returning
  Ocean Finalize finished, rc =           0
  Ocean Final returning
  Ocean Finalize finished, rc =           0
  Atmosphere Final starting
+ Ocean Final returning
  Atmosphere Final starting
  Atmosphere Final starting
+ Ocean Finalize finished, rc =           0
  Atmosphere Final starting
  Atmosphere Final returning
  Atmosphere Finalize finished, rc =           0
@@ -298,22 +298,17 @@ no
   System Test ESMF_XGridSerialSTest                                             
                                                                                 
                                                                                 
+ All Destroy routines done
+  System Test ESMF_XGridSerialSTest                                             
+                                                                                
                      complete.
  All Destroy routines done
   System Test ESMF_XGridSerialSTest                                             
                                                                                 
                                                                                 
- All Destroy routines done
-  System Test ESMF_XGridSerialSTest                                             
-                                                                                
+                     complete.
                                                                                 
                      complete.
- 
-  System Test ESMF_XGridSerialSTest
-  SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
- 
-                     complete.
- ------------------------------------------------------------
  ------------------------------------------------------------
  ------------------------------------------------------------
  Test finished, localPet =            2
@@ -327,23 +322,28 @@ no
   System Test ESMF_XGridSerialSTest
   SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
  
+ 
+  System Test ESMF_XGridSerialSTest
+  SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
+ 
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ Test finished, localPet =            0
+ ------------------------------------------------------------
+ ------------------------------------------------------------
  All Destroy routines done
   System Test ESMF_XGridSerialSTest                                             
                                                                                 
                                                                                 
                      complete.
  ------------------------------------------------------------
- Test finished, localPet =            1
  ------------------------------------------------------------
+ Test finished, localPet =            1
  ------------------------------------------------------------
  ------------------------------------------------------------
  ------------------------------------------------------------
  Test finished, localPet =            3
  ------------------------------------------------------------
- ------------------------------------------------------------
- ------------------------------------------------------------
- ------------------------------------------------------------
- Test finished, localPet =            0
  ------------------------------------------------------------
  
   System Test ESMF_XGridSerialSTest
@@ -354,4 +354,4 @@ no
   PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
   PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
   PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
-Sun Nov 15 18:41:12 MST 2020
+Mon Nov 16 11:30:38 MST 2020
