@@ -4,7 +4,7 @@ are not used by default.  The intent is to use UCX for these devices.
 You can override this policy by setting the btl_openib_allow_ib MCA parameter
 to true.
 
-  Local host:              i041
+  Local host:              i040
   Local adapter:           hfi1_0
   Local port:              1
 
@@ -12,25 +12,58 @@ to true.
 --------------------------------------------------------------------------
 WARNING: There was an error initializing an OpenFabrics device.
 
-  Local host:   i041
+  Local host:   i040
   Local device: hfi1_0
 --------------------------------------------------------------------------
 --- ESMCI::VM::print() start ---
 --- ESMCI::VMId::print() start ---
   vmKeyWidth = 1
---- ESMCI::VM::print() start ---
---- ESMCI::VM::print() start ---
---- ESMCI::VMId::print() start ---
-  vmKeyWidth = 1
---- ESMCI::VM::print() start ---
   vmKey=0xF0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x3c217d0
+vm located at: 0x31197d0
 npets = 4, mypet=0
-  pth_mutex =		 0x3d6fcf0
+  pth_mutex =		 0x32670e0
   pth_finish_count =	 (nil)
+--- ESMCI::VM::print() start ---
+--- ESMCI::VMId::print() start ---
+  vmKeyWidth = 1
+  vmKey=0xF0000000
+  localID = 0
+--- ESMCI::VMId::print() end ---
+--- VMK::print() start ---
+vm located at: 0x32287d0
+npets = 4, mypet=1
+  pth_mutex =		 0x3376840
+  pth_finish_count =	 (nil)
+MPI_Comm_size: 4
+MPI_Comm_rank in local MPI communicator: 1
+--- ESMCI::VM::print() start ---
+--- ESMCI::VMId::print() start ---
+  vmKeyWidth = 1
+  vmKey=0xF0000000
+  localID = 0
+--- ESMCI::VMId::print() end ---
+--- VMK::print() start ---
+vm located at: 0x44487d0
+npets = 4, mypet=2
+  pth_mutex =		 0x45964a0
+  pth_finish_count =--- ESMCI::VM::print() start ---
+--- ESMCI::VMId::print() start ---
+  vmKeyWidth = 1
+  vmKey=0xF0000000
+  localID = 0
+--- ESMCI::VMId::print() end ---
+--- VMK::print() start ---
+vm located at: 0x44a37d0
+npets = 4, mypet=3
+  pth_mutex =		 0x45f1830
+  pth_finish_count =	 (nil)
+MPI_Comm_size: 4
+MPI_Comm_rank in local MPI communicator: 3
+MPI_Comm_rank in MPI_COMM_WORLD: 3
+MPI thread level support: 3
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 0
 MPI_Comm_rank in MPI_COMM_WORLD: 0
@@ -38,30 +71,6 @@ MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
 nothreadsflag: 1
---- ESMCI::VMId::print() start ---
-  vmKeyWidth = 1
-  vmKey=0xF0000000
-  localID = 0
-  vmKey=0xF0000000
-  localID = 0
---- ESMCI::VMId::print() end ---
---- VMK::print() start ---
-vm located at: 0x44c27d0
-npets = 4, mypet=2
-  pth_mutex =		 0x4610b70
---- ESMCI::VMId::print() start ---
-  vmKeyWidth = 1
-  vmKey=0xF0000000
-  localID = 0
-  pth_finish_count =	 (nil)
-MPI_Comm_size: 4
-MPI_Comm_rank in local MPI communicator: 2
-MPI_Comm_rank in MPI_COMM_WORLD: 2
-MPI thread level support: 3
-mpi_mutex_flag: 0
-mpionly: 1
-nothreadsflag: 1
-  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
@@ -75,28 +84,11 @@ ncores = 4
 --- ESMCI::VM::print() end ---
  This PET is localPet:            0
  of a total of            4  PETs in this VM.
- There are            4  PEs referenced by this VM
- This PET is executing in virtual address space (VAS)            0
- located on single system image (SSI)            0
- and is associated with            1  PEs.
---- ESMCI::VMId::print() end ---
---- VMK::print() start ---
-vm located at: 0x31197d0
-npets = 4, mypet=1
-  pth_mutex =		 0x3267c20
-  pth_finish_count =	 (nil)
-MPI_Comm_size: 4
-MPI_Comm_rank in local MPI communicator: 1
 MPI_Comm_rank in MPI_COMM_WORLD: 1
 MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
---- ESMCI::VMId::print() end ---
---- VMK::print() start ---
-vm located at: 0x473d7d0
-npets = 4, mypet=3
-  pth_mutex =		 0x488bbb0
-  pth_finish_count =nothreadsflag: 1
+nothreadsflag: 1
   lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
@@ -106,13 +98,27 @@ ncores = 4
   cpuid[1]=1, ssiid[1]=0
   cpuid[2]=2, ssiid[2]=0
   cpuid[3]=3, ssiid[3]=0
-  PASS  Example ESMF_VMDefaultBasicsEx, ESMF_VMDefaultBasicsEx.F90, line 107
+--- VMK::print() end ---
+--- ESMCI::VM::print() end ---
 	 (nil)
 MPI_Comm_size: 4
-MPI_Comm_rank in local MPI communicator: 3
-MPI_Comm_rank in MPI_COMM_WORLD: 3
+MPI_Comm_rank in local MPI communicator: 2
+MPI_Comm_rank in MPI_COMM_WORLD: 2
 MPI thread level support: 3
 mpi_mutex_flag: 0
+mpionly: 1
+nothreadsflag: 1
+  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
+  lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
+  lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
+  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
+ncores = 4
+  cpuid[0]=0, ssiid[0]=0
+  cpuid[1]=1, ssiid[1]=0
+mpi_mutex_flag: 0
+mpionly: 1
+nothreadsflag: 1
+  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
   lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
@@ -123,21 +129,13 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
+  cpuid[2]=2, ssiid[2]=0
+  cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
-mpionly: 1
-nothreadsflag: 1
- This PET is localPet:            2
- of a total of            4  PETs in this VM.
  There are            4  PEs referenced by this VM
- This PET is executing in virtual address space (VAS)            2
+ This PET is executing in virtual address space (VAS)            0
  located on single system image (SSI)            0
-  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
-  lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
-  lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
-  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
-ncores = 4
-  cpuid[0]=0, ssiid[0]=0
  and is associated with            1  PEs.
   PASS  Example ESMF_VMDefaultBasicsEx, ESMF_VMDefaultBasicsEx.F90, line 107
  This PET is localPet:            1
@@ -146,12 +144,7 @@ ncores = 4
  This PET is executing in virtual address space (VAS)            1
  located on single system image (SSI)            0
  and is associated with            1  PEs.
-  cpuid[1]=1, ssiid[1]=0
-  cpuid[2]=2, ssiid[2]=0
-  cpuid[3]=3, ssiid[3]=0
---- VMK::print() end ---
   PASS  Example ESMF_VMDefaultBasicsEx, ESMF_VMDefaultBasicsEx.F90, line 107
---- ESMCI::VM::print() end ---
  This PET is localPet:            3
  of a total of            4  PETs in this VM.
  There are            4  PEs referenced by this VM
@@ -159,11 +152,18 @@ ncores = 4
  located on single system image (SSI)            0
  and is associated with            1  PEs.
   PASS  Example ESMF_VMDefaultBasicsEx, ESMF_VMDefaultBasicsEx.F90, line 107
+ This PET is localPet:            2
+ of a total of            4  PETs in this VM.
+ There are            4  PEs referenced by this VM
+ This PET is executing in virtual address space (VAS)            2
+ located on single system image (SSI)            0
+ and is associated with            1  PEs.
+  PASS  Example ESMF_VMDefaultBasicsEx, ESMF_VMDefaultBasicsEx.F90, line 107
  PASS: ESMF_VMDefaultBasicsEx.F90
  PASS: ESMF_VMDefaultBasicsEx.F90
  PASS: ESMF_VMDefaultBasicsEx.F90
  PASS: ESMF_VMDefaultBasicsEx.F90
-[i041.unified.ucar.edu:76671] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
-[i041.unified.ucar.edu:76671] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-[i041.unified.ucar.edu:76671] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
-Sat Nov 21 05:06:22 MST 2020
+[i040.unified.ucar.edu:216017] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[i040.unified.ucar.edu:216017] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[i040.unified.ucar.edu:216017] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+Sun Nov 22 05:19:36 MST 2020
