@@ -1,8 +1,8 @@
 <pre>
 
-Script start time: Mon Nov 16 00:31:10 MST 2020
+Script start time: Sun Nov 22 00:24:26 MST 2020
 
-Script end: Mon Nov 16 08:29:04 MST 2020
+Script end: Sun Nov 22 08:16:43 MST 2020
 
 
 _____________________________________ESMF TRUNK BUILD AND TEST SUMMARY___________________________
@@ -15,18 +15,18 @@ _____________________________________ESMF TRUNK BUILD AND TEST SUMMARY__________
 ______________________________________________________________________________________________________
           PASS/FAIL PASS/FAIL                           PASS/FAIL   PASS/FAIL  PASS/FAIL   PASS/FAIL
 ______________________________________________________________________________________________________
-i042(g)     PASS      PASS    Linux.pgi.mpiuni.64               /         /       0/7      0/18
-i042(g)     PASS      PASS    Linux.pgi.mpiuni.64               / Benchmark      test   results
-i042(O)     PASS      PASS    Linux.pgi.mpiuni.64               /         /       0/7      0/18
-i042(O)     PASS      PASS    Linux.pgi.mpiuni.64               / Benchmark      test   results
-i042(g)     PASS      PASS    Linux.pgi.openmpi.64              /         /       0/7      0/18
-i042(g)     PASS      PASS    Linux.pgi.openmpi.64              / Benchmark      test   results
-i042(O)     PASS      PASS    Linux.pgi.openmpi.64              /         /       0/7      0/18
-i042(O)     PASS      PASS    Linux.pgi.openmpi.64              / Benchmark      test   results
+i041(g)     PASS      PASS    Linux.pgi.mpiuni.64               /         /       0/7      0/18
+i041(g)     PASS      PASS    Linux.pgi.mpiuni.64               / Benchmark      test   results
+i041(O)     PASS      PASS    Linux.pgi.mpiuni.64               /         /       0/7      0/18
+i041(O)     PASS      PASS    Linux.pgi.mpiuni.64               / Benchmark      test   results
+i041(g)     PASS      PASS    Linux.pgi.openmpi.64              /         /       0/7      0/18
+i041(g)     PASS      PASS    Linux.pgi.openmpi.64              / Benchmark      test   results
+i041(O)     PASS      PASS    Linux.pgi.openmpi.64              /         /       0/7      0/18
+i041(O)     PASS      PASS    Linux.pgi.openmpi.64              / Benchmark      test   results
 
 _______________________________________________________________________________________________
 
-Mon Nov 16 00:37:00 MST 2020 on i042.unified.ucar.edu 
+Sun Nov 22 00:30:03 MST 2020 on i041.unified.ucar.edu 
 
 ESMF Checkout Source: https://github.com/esmf-org/esmf.git
 
@@ -34,21 +34,21 @@ Compiler and configuration information:
 
 -------------------------------------------------------------- 
 Currently Loaded Modulefiles:
-  1) mpi/2.3.3/pgi/20.1           3) tool/netcdf/4.7.4/pgi/20.1
-  2) tool/hdf5/1.12.0/gnu/9.3.0   4) compiler/pgi/20.1
+  1) tool/hdf5/1.12.0/gnu/9.3.0   3) compiler/pgi/20.1
+  2) tool/netcdf/4.7.4/pgi/20.1
  
 Repository:
 origin	https://github.com/esmf-org/esmf.git (fetch)
 origin	https://github.com/esmf-org/esmf.git (push)
  
-ESMF_8_1_0_beta_snapshot_37
+ESMF_8_1_0_beta_snapshot_38
  
  
  
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.1.0 beta snapshot
-ESMF_8_1_0_beta_snapshot_37
+ESMF_8_1_0_beta_snapshot_38
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -99,6 +99,9 @@ Copyright (C) 2015 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
+--------------------------------------------------------------
+NetCDF library version: netCDF 4.7.4
+NetCDF Fortran version: netCDF-Fortran 4.5.2
  
 --------------------------------------------------------------
  * User set ESMF environment variables *
@@ -109,6 +112,7 @@ ESMF_COMPILER=pgi
 ESMF_DIR=/project/esmf/himanshu/pgi/esmf
 ESMF_INSTALL_PREFIX=/project/esmf/himanshu/pgi/install_dir
 ESMF_MPIRUN=/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni/mpirun
+ESMF_NETCDF=nc-config
 ESMF_OS=Linux
 ESMF_SITE=default
 ESMF_TESTEXHAUSTIVE=ON
@@ -156,6 +160,14 @@ ESMF_MPIRUN:            /project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs
 ESMF_MOAB:               internal
 ESMF_LAPACK:             internal
 ESMF_ACC_SOFTWARE_STACK: none
+ESMF_NETCDF:             nc-config
+ESMF_NETCDF_INCLUDE:     /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDF_LIBS:        -lnetcdf
+ESMF_NETCDF_LIBPATH:     /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
+ESMF_NFCONFIG:           nf-config
+ESMF_NETCDFF_INCLUDE:    /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDFF_LIBS:       -lnetcdff -lnetcdf -lnetcdf
+ESMF_NETCDFF_LIBPATH:    /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
 ESMF_YAMLCPP:            internal
  
 --------------------------------------------------------------
@@ -175,8 +187,8 @@ ESMF_BENCHMARK_THRESHOLD_MSEC: 500
  
 --------------------------------------------------------------
  * Other relevant environment variables *
-PATH:    /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/bin:/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/bin:/cluster/mvapich2-2.3.3-pgi-pgcc-pgf-20.1/bin:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/bin:/home/himanshu/bin:/usr/lib64/qt-3.3/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin
-LD_LIBRARY_PATH: /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib:/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib:/cluster/torque/lib:/cluster/mvapich2-2.3.3-pgi-pgcc-pgf-20.1/lib:/usr/local/gcc-g++-gfortran-9.3.0/lib64:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/lib-small:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/lib
+PATH:    /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/bin:/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/bin:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/bin:/home/himanshu/bin:/usr/lib64/qt-3.3/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+LD_LIBRARY_PATH: /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib:/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib:/usr/local/gcc-g++-gfortran-9.3.0/lib64:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/lib-small:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/lib
  
 --------------------------------------------------------------
  * Compilers, Linkers, Flags, and Libraries *
@@ -189,8 +201,8 @@ Location of the C++ linker:        /usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/
 Fortran compiler flags:
 ESMF_F90COMPILER: pgf90
 ESMF_F90COMPILEOPTS: -g -fpic -Mallocatable=03 -lpthread
-ESMF_F90COMPILEPATHS: -I/project/esmf/himanshu/pgi/esmf/mod/modg/Linux.pgi.64.mpiuni.default -I/project/esmf/himanshu/pgi/esmf/src/include 
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_37' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_F90COMPILEPATHS: -I/project/esmf/himanshu/pgi/esmf/mod/modg/Linux.pgi.64.mpiuni.default -I/project/esmf/himanshu/pgi/esmf/src/include -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_38' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -Mfreeform
 ESMF_F90COMPILEFIXCPP: -Mpreprocess -Mnofreeform
@@ -198,23 +210,23 @@ ESMF_F90COMPILEFIXNOCPP:
 
 Fortran linker flags:
 ESMF_F90LINKOPTS:   -lpthread -Wl,--no-as-needed
-ESMF_F90LINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.mpiuni.default  -L/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
-ESMF_F90LINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.mpiuni.default  -Wl,-rpath,/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
-ESMF_F90LINKLIBS:  -pgc++libs -ldl
-ESMF_F90ESMFLINKLIBS: -lesmf  -pgc++libs -ldl
+ESMF_F90LINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.mpiuni.default -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
+ESMF_F90LINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.mpiuni.default -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
+ESMF_F90LINKLIBS:  -pgc++libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_F90ESMFLINKLIBS: -lesmf  -pgc++libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
 
 C++ compiler flags:
 ESMF_CXXCOMPILER: pgc++
 ESMF_CXXCOMPILEOPTS: -std=c++11 -g -fpic -lpthread
-ESMF_CXXCOMPILEPATHS:  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_37' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_CXXCOMPILEPATHS:  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_38' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:   -lpthread -Wl,--no-as-needed
-ESMF_CXXLINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.mpiuni.default  -L/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
-ESMF_CXXLINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.mpiuni.default  -Wl,-rpath,/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
-ESMF_CXXLINKLIBS:  -pgf90libs -ldl
-ESMF_CXXESMFLINKLIBS: -lesmf  -pgf90libs -ldl
+ESMF_CXXLINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.mpiuni.default -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
+ESMF_CXXLINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.mpiuni.default -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
+ESMF_CXXLINKLIBS:  -pgf90libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_CXXESMFLINKLIBS: -lesmf  -pgf90libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
 
 Shared library build:
 ESMF_SL_LIBS_TO_MAKE: libesmf
@@ -230,21 +242,21 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Mon Nov 16 00:37:04 MST 2020 on i042.unified.ucar.edu
-Machine characteristics: Linux i042.unified.ucar.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sun Nov 22 00:30:07 MST 2020 on i041.unified.ucar.edu
+Machine characteristics: Linux i041.unified.ucar.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
-Mon Nov 16 00:57:50 MST 2020 library build ................PASS
+Sun Nov 22 00:50:28 MST 2020 library build ................PASS
 Builds with warnings.
-Mon Nov 16 00:57:52 MST 2020 library install ..............PASS
-Mon Nov 16 00:57:53 MST 2020 library installcheck .........PASS
-Mon Nov 16 01:02:17 MST 2020 quickstart build .............PASS
+Sun Nov 22 00:50:29 MST 2020 library install ..............PASS
+Sun Nov 22 00:50:31 MST 2020 library installcheck .........PASS
+Sun Nov 22 00:54:47 MST 2020 quickstart build .............PASS
 
 |------------------------ APPs TESTS --------------------------|
-Mon Nov 16 01:13:58 MST 2020 apps build ...................PASS
+Sun Nov 22 01:06:10 MST 2020 apps build ...................PASS
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_Regrid --help ***********FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_Regrid --help ***********FAIL
 The following is the output of ESMF_Regrid --help
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 282: ./ESMF_Regrid: No such file or directory
@@ -252,7 +264,7 @@ The following is the output of ESMF_Regrid --help
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_Regrid --version ********FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_Regrid --version ********FAIL
 The following is the output of ESMF_Regrid --version
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 323: ./ESMF_Regrid: No such file or directory
@@ -260,7 +272,7 @@ The following is the output of ESMF_Regrid --version
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_Regrid -V ***************FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_Regrid -V ***************FAIL
 The following is the output of ESMF_Regrid -V
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 364: ./ESMF_Regrid: No such file or directory
@@ -268,7 +280,7 @@ The following is the output of ESMF_Regrid -V
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_Info --help *************FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_Info --help *************FAIL
 The following is the output of ESMF_Info --help 
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 406: ./ESMF_Info: No such file or directory
@@ -276,7 +288,7 @@ The following is the output of ESMF_Info --help
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_Info --version **********FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_Info --version **********FAIL
 The following is the output of ESMF_Info --version 
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 448: ./ESMF_Info: No such file or directory
@@ -284,7 +296,7 @@ The following is the output of ESMF_Info --version
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_Info -V *****************FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_Info -V *****************FAIL
 The following is the output of ESMF_Info -V 
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 490: ./ESMF_Info: No such file or directory
@@ -292,7 +304,7 @@ The following is the output of ESMF_Info -V
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_InfoC --help ************FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_InfoC --help ************FAIL
 The following is the output of ESMF_InfoC --help
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 530: ./ESMF_InfoC: No such file or directory
@@ -300,7 +312,7 @@ The following is the output of ESMF_InfoC --help
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_InfoC --version *********FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_InfoC --version *********FAIL
 The following is the output of ESMF_InfoC --version
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 571: ./ESMF_InfoC: No such file or directory
@@ -308,7 +320,7 @@ The following is the output of ESMF_InfoC --version
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_InfoC -V ****************FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_InfoC -V ****************FAIL
 The following is the output of ESMF_InfoC -V
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 614: ./ESMF_InfoC: No such file or directory
@@ -316,7 +328,7 @@ The following is the output of ESMF_InfoC -V
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_RegridWeightGen --help **FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_RegridWeightGen --help **FAIL
 The following is the output of ESMF_RegridWeightGen --help
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 658: ./ESMF_RegridWeightGen: No such file or directory
@@ -324,7 +336,7 @@ The following is the output of ESMF_RegridWeightGen --help
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_RegridWeightGen --version FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_RegridWeightGen --version FAIL
 The following is the output of ESMF_RegridWeightGen --version
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 701: ./ESMF_RegridWeightGen: No such file or directory
@@ -332,7 +344,7 @@ The following is the output of ESMF_RegridWeightGen --version
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_RegridWeightGen -V ******FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_RegridWeightGen -V ******FAIL
 The following is the output of ESMF_RegridWeightGen -V
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 746: ./ESMF_RegridWeightGen: No such file or directory
@@ -340,7 +352,7 @@ The following is the output of ESMF_RegridWeightGen -V
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_Scrip2Unstruct --help ***FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_Scrip2Unstruct --help ***FAIL
 The following is the output of ESMF_Scrip2Unstruct --help
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 791: ./ESMF_Scrip2Unstruct: No such file or directory
@@ -348,7 +360,7 @@ The following is the output of ESMF_Scrip2Unstruct --help
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_Scrip2Unstruct --version FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_Scrip2Unstruct --version FAIL
 The following is the output of ESMF_Scrip2Unstruct --version
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 836: ./ESMF_Scrip2Unstruct: No such file or directory
@@ -356,7 +368,7 @@ The following is the output of ESMF_Scrip2Unstruct --version
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_Scrip2Unstruct -V *******FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_Scrip2Unstruct -V *******FAIL
 The following is the output of ESMF_Scrip2Unstruct -V
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 880: ./ESMF_Scrip2Unstruct: No such file or directory
@@ -364,7 +376,7 @@ The following is the output of ESMF_Scrip2Unstruct -V
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_WebServController --help FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_WebServController --help FAIL
 The following is the output of ESMF_WebServController --help
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 919: ./ESMF_WebServController: No such file or directory
@@ -372,7 +384,7 @@ The following is the output of ESMF_WebServController --help
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_WebServController --version FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_WebServController --version FAIL
 The following is the output of ESMF_WebServController --version
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 956: ./ESMF_WebServController: No such file or directory
@@ -380,7 +392,7 @@ The following is the output of ESMF_WebServController --version
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 01:13:58 MST 2020 ESMF_WebServController -V ****FAIL
+Sun Nov 22 01:06:10 MST 2020 ESMF_WebServController -V ****FAIL
 The following is the output of ESMF_WebServController -V
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 994: ./ESMF_WebServController: No such file or directory
@@ -393,8 +405,8 @@ Ran 18 applications tests, 0 pass and 18 fail.
 
 
 |----------------------- SYSTEM TESTS -------------------------|
-Mon Nov 16 01:26:09 MST 2020 build_system_tests ...........PASS
-Mon Nov 16 01:27:19 MST 2020 run_system_tests_uni .........PASS
+Sun Nov 22 01:17:45 MST 2020 build_system_tests ...........PASS
+Sun Nov 22 01:18:55 MST 2020 run_system_tests_uni .........PASS
 The following system tests failed, did not build, or did not execute:
 
 
@@ -421,8 +433,8 @@ Found 7 single processor system tests, 0 passed and 7 failed.
 
 
 |------------------------- EXAMPLES ---------------------------|
-Mon Nov 16 01:38:56 MST 2020 build_examples ...............PASS
-Mon Nov 16 01:45:33 MST 2020 run_examples_uni .............PASS
+Sun Nov 22 01:30:19 MST 2020 build_examples ...............PASS
+Sun Nov 22 01:36:43 MST 2020 run_examples_uni .............PASS
 
 
 NOTE: Unable to open /project/esmf/himanshu/pgi/esmf/examples/examplesg/Linux.pgi.64.mpiuni.default/examples.config file.
@@ -431,8 +443,8 @@ Either the 'gmake ESMF_BOPT=g build_examples_tests' has not been run or the 'gma
 
 
 |-------------------- EXHAUSTIVE UNIT TESTS -------------------|
-Mon Nov 16 01:57:43 MST 2020 build_unit_tests .............PASS
-Mon Nov 16 02:07:04 MST 2020 run_unit_tests_uni ...........PASS
+Sun Nov 22 01:49:03 MST 2020 build_unit_tests .............PASS
+Sun Nov 22 01:58:11 MST 2020 run_unit_tests_uni ...........PASS
 
 
 
@@ -442,7 +454,7 @@ Either the 'gmake ESMF_BOPT=g build_unit_tests' has not been run or the 'gmake E
 
 
 
-Mon Nov 16 02:07:08 MST 2020 run_unit_tests_benchmark .....PASS
+Sun Nov 22 01:58:15 MST 2020 run_unit_tests_benchmark .....PASS
 
 
 
@@ -452,7 +464,7 @@ Either the 'gmake ESMF_BOPT=g build_unit_tests' has not been run or the 'gmake E
 
 _______________________________________________________________________________________________
 
-Mon Nov 16 02:12:56 MST 2020 on i042.unified.ucar.edu 
+Sun Nov 22 02:03:50 MST 2020 on i041.unified.ucar.edu 
 
 ESMF Checkout Source: https://github.com/esmf-org/esmf.git
 
@@ -460,21 +472,21 @@ Compiler and configuration information:
 
 -------------------------------------------------------------- 
 Currently Loaded Modulefiles:
-  1) mpi/2.3.3/pgi/20.1           3) tool/netcdf/4.7.4/pgi/20.1
-  2) tool/hdf5/1.12.0/gnu/9.3.0   4) compiler/pgi/20.1
+  1) tool/hdf5/1.12.0/gnu/9.3.0   3) compiler/pgi/20.1
+  2) tool/netcdf/4.7.4/pgi/20.1
  
 Repository:
 origin	https://github.com/esmf-org/esmf.git (fetch)
 origin	https://github.com/esmf-org/esmf.git (push)
  
-ESMF_8_1_0_beta_snapshot_37
+ESMF_8_1_0_beta_snapshot_38
  
  
  
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.1.0 beta snapshot
-ESMF_8_1_0_beta_snapshot_37
+ESMF_8_1_0_beta_snapshot_38
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -525,6 +537,9 @@ Copyright (C) 2015 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
+--------------------------------------------------------------
+NetCDF library version: netCDF 4.7.4
+NetCDF Fortran version: netCDF-Fortran 4.5.2
  
 --------------------------------------------------------------
  * User set ESMF environment variables *
@@ -535,6 +550,7 @@ ESMF_COMPILER=pgi
 ESMF_DIR=/project/esmf/himanshu/pgi/esmf
 ESMF_INSTALL_PREFIX=/project/esmf/himanshu/pgi/install_dir
 ESMF_MPIRUN=/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni/mpirun
+ESMF_NETCDF=nc-config
 ESMF_OS=Linux
 ESMF_SITE=default
 ESMF_TESTEXHAUSTIVE=ON
@@ -582,6 +598,14 @@ ESMF_MPIRUN:            /project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs
 ESMF_MOAB:               internal
 ESMF_LAPACK:             internal
 ESMF_ACC_SOFTWARE_STACK: none
+ESMF_NETCDF:             nc-config
+ESMF_NETCDF_INCLUDE:     /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDF_LIBS:        -lnetcdf
+ESMF_NETCDF_LIBPATH:     /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
+ESMF_NFCONFIG:           nf-config
+ESMF_NETCDFF_INCLUDE:    /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDFF_LIBS:       -lnetcdff -lnetcdf -lnetcdf
+ESMF_NETCDFF_LIBPATH:    /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
 ESMF_YAMLCPP:            internal
  
 --------------------------------------------------------------
@@ -601,8 +625,8 @@ ESMF_BENCHMARK_THRESHOLD_MSEC: 500
  
 --------------------------------------------------------------
  * Other relevant environment variables *
-PATH:    /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/bin:/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/bin:/cluster/mvapich2-2.3.3-pgi-pgcc-pgf-20.1/bin:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/bin:/home/himanshu/bin:/usr/lib64/qt-3.3/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin
-LD_LIBRARY_PATH: /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib:/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib:/cluster/torque/lib:/cluster/mvapich2-2.3.3-pgi-pgcc-pgf-20.1/lib:/usr/local/gcc-g++-gfortran-9.3.0/lib64:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/lib-small:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/lib
+PATH:    /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/bin:/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/bin:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/bin:/home/himanshu/bin:/usr/lib64/qt-3.3/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+LD_LIBRARY_PATH: /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib:/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib:/usr/local/gcc-g++-gfortran-9.3.0/lib64:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/lib-small:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/lib
  
 --------------------------------------------------------------
  * Compilers, Linkers, Flags, and Libraries *
@@ -615,8 +639,8 @@ Location of the C++ linker:        /usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/
 Fortran compiler flags:
 ESMF_F90COMPILER: pgf90
 ESMF_F90COMPILEOPTS: -O -fpic -Mallocatable=03 -lpthread
-ESMF_F90COMPILEPATHS: -I/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default -I/project/esmf/himanshu/pgi/esmf/src/include 
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_37' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_F90COMPILEPATHS: -I/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default -I/project/esmf/himanshu/pgi/esmf/src/include -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_38' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -Mfreeform
 ESMF_F90COMPILEFIXCPP: -Mpreprocess -Mnofreeform
@@ -624,23 +648,23 @@ ESMF_F90COMPILEFIXNOCPP:
 
 Fortran linker flags:
 ESMF_F90LINKOPTS:   -lpthread -Wl,--no-as-needed
-ESMF_F90LINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default  -L/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
-ESMF_F90LINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default  -Wl,-rpath,/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
-ESMF_F90LINKLIBS:  -pgc++libs -ldl
-ESMF_F90ESMFLINKLIBS: -lesmf  -pgc++libs -ldl
+ESMF_F90LINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
+ESMF_F90LINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
+ESMF_F90LINKLIBS:  -pgc++libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_F90ESMFLINKLIBS: -lesmf  -pgc++libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
 
 C++ compiler flags:
 ESMF_CXXCOMPILER: pgc++
 ESMF_CXXCOMPILEOPTS: -std=c++11 -O -DNDEBUG -fpic -lpthread
-ESMF_CXXCOMPILEPATHS:  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_37' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_CXXCOMPILEPATHS:  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_38' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:   -lpthread -Wl,--no-as-needed
-ESMF_CXXLINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default  -L/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
-ESMF_CXXLINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default  -Wl,-rpath,/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
-ESMF_CXXLINKLIBS:  -pgf90libs -ldl
-ESMF_CXXESMFLINKLIBS: -lesmf  -pgf90libs -ldl
+ESMF_CXXLINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
+ESMF_CXXLINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
+ESMF_CXXLINKLIBS:  -pgf90libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_CXXESMFLINKLIBS: -lesmf  -pgf90libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
 
 Shared library build:
 ESMF_SL_LIBS_TO_MAKE: libesmf
@@ -656,21 +680,21 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Mon Nov 16 02:13:00 MST 2020 on i042.unified.ucar.edu
-Machine characteristics: Linux i042.unified.ucar.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sun Nov 22 02:03:54 MST 2020 on i041.unified.ucar.edu
+Machine characteristics: Linux i041.unified.ucar.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
-Mon Nov 16 02:33:27 MST 2020 library build ................PASS
+Sun Nov 22 02:24:16 MST 2020 library build ................PASS
 Builds with warnings.
-Mon Nov 16 02:33:29 MST 2020 library install ..............PASS
-Mon Nov 16 02:33:30 MST 2020 library installcheck .........PASS
-Mon Nov 16 02:37:57 MST 2020 quickstart build .............PASS
+Sun Nov 22 02:24:17 MST 2020 library install ..............PASS
+Sun Nov 22 02:24:19 MST 2020 library installcheck .........PASS
+Sun Nov 22 02:28:41 MST 2020 quickstart build .............PASS
 
 |------------------------ APPs TESTS --------------------------|
-Mon Nov 16 02:49:46 MST 2020 apps build ...................PASS
+Sun Nov 22 02:40:07 MST 2020 apps build ...................PASS
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_Regrid --help ***********FAIL
+Sun Nov 22 02:40:07 MST 2020 ESMF_Regrid --help ***********FAIL
 The following is the output of ESMF_Regrid --help
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 282: ./ESMF_Regrid: No such file or directory
@@ -678,7 +702,7 @@ The following is the output of ESMF_Regrid --help
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_Regrid --version ********FAIL
+Sun Nov 22 02:40:07 MST 2020 ESMF_Regrid --version ********FAIL
 The following is the output of ESMF_Regrid --version
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 323: ./ESMF_Regrid: No such file or directory
@@ -686,7 +710,7 @@ The following is the output of ESMF_Regrid --version
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_Regrid -V ***************FAIL
+Sun Nov 22 02:40:07 MST 2020 ESMF_Regrid -V ***************FAIL
 The following is the output of ESMF_Regrid -V
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 364: ./ESMF_Regrid: No such file or directory
@@ -694,7 +718,7 @@ The following is the output of ESMF_Regrid -V
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_Info --help *************FAIL
+Sun Nov 22 02:40:07 MST 2020 ESMF_Info --help *************FAIL
 The following is the output of ESMF_Info --help 
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 406: ./ESMF_Info: No such file or directory
@@ -702,7 +726,7 @@ The following is the output of ESMF_Info --help
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_Info --version **********FAIL
+Sun Nov 22 02:40:07 MST 2020 ESMF_Info --version **********FAIL
 The following is the output of ESMF_Info --version 
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 448: ./ESMF_Info: No such file or directory
@@ -710,7 +734,7 @@ The following is the output of ESMF_Info --version
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_Info -V *****************FAIL
+Sun Nov 22 02:40:07 MST 2020 ESMF_Info -V *****************FAIL
 The following is the output of ESMF_Info -V 
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 490: ./ESMF_Info: No such file or directory
@@ -718,7 +742,7 @@ The following is the output of ESMF_Info -V
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_InfoC --help ************FAIL
+Sun Nov 22 02:40:07 MST 2020 ESMF_InfoC --help ************FAIL
 The following is the output of ESMF_InfoC --help
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 530: ./ESMF_InfoC: No such file or directory
@@ -726,7 +750,7 @@ The following is the output of ESMF_InfoC --help
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_InfoC --version *********FAIL
+Sun Nov 22 02:40:07 MST 2020 ESMF_InfoC --version *********FAIL
 The following is the output of ESMF_InfoC --version
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 571: ./ESMF_InfoC: No such file or directory
@@ -734,7 +758,7 @@ The following is the output of ESMF_InfoC --version
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_InfoC -V ****************FAIL
+Sun Nov 22 02:40:07 MST 2020 ESMF_InfoC -V ****************FAIL
 The following is the output of ESMF_InfoC -V
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 614: ./ESMF_InfoC: No such file or directory
@@ -742,7 +766,7 @@ The following is the output of ESMF_InfoC -V
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_RegridWeightGen --help **FAIL
+Sun Nov 22 02:40:08 MST 2020 ESMF_RegridWeightGen --help **FAIL
 The following is the output of ESMF_RegridWeightGen --help
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 658: ./ESMF_RegridWeightGen: No such file or directory
@@ -750,7 +774,7 @@ The following is the output of ESMF_RegridWeightGen --help
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_RegridWeightGen --version FAIL
+Sun Nov 22 02:40:08 MST 2020 ESMF_RegridWeightGen --version FAIL
 The following is the output of ESMF_RegridWeightGen --version
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 701: ./ESMF_RegridWeightGen: No such file or directory
@@ -758,7 +782,7 @@ The following is the output of ESMF_RegridWeightGen --version
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_RegridWeightGen -V ******FAIL
+Sun Nov 22 02:40:08 MST 2020 ESMF_RegridWeightGen -V ******FAIL
 The following is the output of ESMF_RegridWeightGen -V
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 746: ./ESMF_RegridWeightGen: No such file or directory
@@ -766,7 +790,7 @@ The following is the output of ESMF_RegridWeightGen -V
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_Scrip2Unstruct --help ***FAIL
+Sun Nov 22 02:40:08 MST 2020 ESMF_Scrip2Unstruct --help ***FAIL
 The following is the output of ESMF_Scrip2Unstruct --help
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 791: ./ESMF_Scrip2Unstruct: No such file or directory
@@ -774,7 +798,7 @@ The following is the output of ESMF_Scrip2Unstruct --help
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_Scrip2Unstruct --version FAIL
+Sun Nov 22 02:40:08 MST 2020 ESMF_Scrip2Unstruct --version FAIL
 The following is the output of ESMF_Scrip2Unstruct --version
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 836: ./ESMF_Scrip2Unstruct: No such file or directory
@@ -782,7 +806,7 @@ The following is the output of ESMF_Scrip2Unstruct --version
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_Scrip2Unstruct -V *******FAIL
+Sun Nov 22 02:40:08 MST 2020 ESMF_Scrip2Unstruct -V *******FAIL
 The following is the output of ESMF_Scrip2Unstruct -V
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 880: ./ESMF_Scrip2Unstruct: No such file or directory
@@ -790,7 +814,7 @@ The following is the output of ESMF_Scrip2Unstruct -V
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:46 MST 2020 ESMF_WebServController --help FAIL
+Sun Nov 22 02:40:08 MST 2020 ESMF_WebServController --help FAIL
 The following is the output of ESMF_WebServController --help
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 919: ./ESMF_WebServController: No such file or directory
@@ -798,7 +822,7 @@ The following is the output of ESMF_WebServController --help
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:47 MST 2020 ESMF_WebServController --version FAIL
+Sun Nov 22 02:40:08 MST 2020 ESMF_WebServController --version FAIL
 The following is the output of ESMF_WebServController --version
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 956: ./ESMF_WebServController: No such file or directory
@@ -806,7 +830,7 @@ The following is the output of ESMF_WebServController --version
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 02:49:47 MST 2020 ESMF_WebServController -V ****FAIL
+Sun Nov 22 02:40:08 MST 2020 ESMF_WebServController -V ****FAIL
 The following is the output of ESMF_WebServController -V
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 994: ./ESMF_WebServController: No such file or directory
@@ -819,8 +843,8 @@ Ran 18 applications tests, 0 pass and 18 fail.
 
 
 |----------------------- SYSTEM TESTS -------------------------|
-Mon Nov 16 03:01:35 MST 2020 build_system_tests ...........PASS
-Mon Nov 16 03:02:46 MST 2020 run_system_tests_uni .........PASS
+Sun Nov 22 02:51:46 MST 2020 build_system_tests ...........PASS
+Sun Nov 22 02:52:55 MST 2020 run_system_tests_uni .........PASS
 The following system tests failed, did not build, or did not execute:
 
 
@@ -847,8 +871,8 @@ Found 7 single processor system tests, 0 passed and 7 failed.
 
 
 |------------------------- EXAMPLES ---------------------------|
-Mon Nov 16 03:14:26 MST 2020 build_examples ...............PASS
-Mon Nov 16 03:21:04 MST 2020 run_examples_uni .............PASS
+Sun Nov 22 03:04:46 MST 2020 build_examples ...............PASS
+Sun Nov 22 03:11:13 MST 2020 run_examples_uni .............PASS
 
 
 NOTE: Unable to open /project/esmf/himanshu/pgi/esmf/examples/examplesO/Linux.pgi.64.mpiuni.default/examples.config file.
@@ -857,8 +881,8 @@ Either the 'gmake ESMF_BOPT=O build_examples_tests' has not been run or the 'gma
 
 
 |-------------------- EXHAUSTIVE UNIT TESTS -------------------|
-Mon Nov 16 03:34:10 MST 2020 build_unit_tests .............PASS
-Mon Nov 16 03:43:39 MST 2020 run_unit_tests_uni ...........PASS
+Sun Nov 22 03:22:43 MST 2020 build_unit_tests .............PASS
+Sun Nov 22 03:31:54 MST 2020 run_unit_tests_uni ...........PASS
 
 
 
@@ -868,7 +892,7 @@ Either the 'gmake ESMF_BOPT=O build_unit_tests' has not been run or the 'gmake E
 
 
 
-Mon Nov 16 03:43:42 MST 2020 run_unit_tests_benchmark .....PASS
+Sun Nov 22 03:31:58 MST 2020 run_unit_tests_benchmark .....PASS
 
 
 
@@ -878,7 +902,7 @@ Either the 'gmake ESMF_BOPT=O build_unit_tests' has not been run or the 'gmake E
 
 _______________________________________________________________________________________________
 
-Mon Nov 16 03:57:07 MST 2020 on i042.unified.ucar.edu 
+Sun Nov 22 03:45:22 MST 2020 on i041.unified.ucar.edu 
 
 ESMF Checkout Source: https://github.com/esmf-org/esmf.git
 
@@ -893,14 +917,14 @@ Repository:
 origin	https://github.com/esmf-org/esmf.git (fetch)
 origin	https://github.com/esmf-org/esmf.git (push)
  
-ESMF_8_1_0_beta_snapshot_37
+ESMF_8_1_0_beta_snapshot_38
  
  
  
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.1.0 beta snapshot
-ESMF_8_1_0_beta_snapshot_37
+ESMF_8_1_0_beta_snapshot_38
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -957,6 +981,9 @@ Copyright (C) 2015 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
+--------------------------------------------------------------
+NetCDF library version: netCDF 4.7.4
+NetCDF Fortran version: netCDF-Fortran 4.5.2
  
 --------------------------------------------------------------
  * User set ESMF environment variables *
@@ -969,13 +996,14 @@ ESMF_DIR=/project/esmf/himanshu/pgi/esmf
 ESMF_F90LINKOPTS=-lnl-3 -lfabric
 ESMF_INSTALL_PREFIX=/project/esmf/himanshu/pgi/install_dir
 ESMF_MPIRUN=mpirun
+ESMF_NETCDF=nc-config
 ESMF_OS=Linux
 ESMF_SITE=default
 ESMF_TESTEXHAUSTIVE=ON
 ESMF_TESTHARNESS_ARRAY=RUN_ESMF_TestHarnessArrayUNI_2
 ESMF_TESTHARNESS_FIELD=RUN_ESMF_TestHarnessFieldUNI_1
 ESMF_TESTMPMD=OFF
-ESMF_TESTWITHTHREADS=ON
+ESMF_TESTWITHTHREADS=OFF
  
 --------------------------------------------------------------
  * ESMF environment variables *
@@ -1002,7 +1030,7 @@ ESMF_SHARED_LIB_BUILD:  ON
 ESMF_TRACE_LIB_BUILD:   ON
 ESMF_TESTEXHAUSTIVE:    ON
 ESMF_TESTCOMPTUNNEL:    ON
-ESMF_TESTWITHTHREADS:   ON
+ESMF_TESTWITHTHREADS:   OFF
 ESMF_TESTMPMD:          OFF
 ESMF_TESTSHAREDOBJ:     OFF
 ESMF_TESTFORCEOPENMP:   OFF
@@ -1016,6 +1044,14 @@ ESMF_MPIRUN:            mpirun
 ESMF_MOAB:               internal
 ESMF_LAPACK:             internal
 ESMF_ACC_SOFTWARE_STACK: none
+ESMF_NETCDF:             nc-config
+ESMF_NETCDF_INCLUDE:     /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDF_LIBS:        -lnetcdf
+ESMF_NETCDF_LIBPATH:     /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
+ESMF_NFCONFIG:           nf-config
+ESMF_NETCDFF_INCLUDE:    /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDFF_LIBS:       -lnetcdff -lnetcdf -lnetcdf
+ESMF_NETCDFF_LIBPATH:    /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
 ESMF_YAMLCPP:            internal
 ESMF_PIO:                internal
  
@@ -1050,8 +1086,8 @@ Location of the C++ linker:        /cluster/openmpi-4.0.3-pgi-pgcc-pgf-20.1/bin/
 Fortran compiler flags:
 ESMF_F90COMPILER: mpifort
 ESMF_F90COMPILEOPTS: -g -fpic -Mallocatable=03 -lpthread
-ESMF_F90COMPILEPATHS: -I/project/esmf/himanshu/pgi/esmf/mod/modg/Linux.pgi.64.openmpi.default -I/project/esmf/himanshu/pgi/esmf/src/include 
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_37' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -DESMF_PGIVERSION_MAJOR= -DESMF_PGIVERSION_MINOR= -DESMF_PGIVERSION_PATCH= -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_F90COMPILEPATHS: -I/project/esmf/himanshu/pgi/esmf/mod/modg/Linux.pgi.64.openmpi.default -I/project/esmf/himanshu/pgi/esmf/src/include -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_38' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -DESMF_PGIVERSION_MAJOR= -DESMF_PGIVERSION_MINOR= -DESMF_PGIVERSION_PATCH= -DESMF_NO_F2018ASSUMEDTYPE
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -Mfreeform
 ESMF_F90COMPILEFIXCPP: -Mpreprocess -Mnofreeform
@@ -1059,23 +1095,23 @@ ESMF_F90COMPILEFIXNOCPP:
 
 Fortran linker flags:
 ESMF_F90LINKOPTS: -lnl-3 -lfabric   -lpthread -Wl,--no-as-needed
-ESMF_F90LINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default  -LTermX
-ESMF_F90LINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default  -Wl,-rpath,TermX
-ESMF_F90LINKLIBS:   -pgcpplibs -ldl
-ESMF_F90ESMFLINKLIBS: -lesmf   -pgcpplibs -ldl
+ESMF_F90LINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -LTermX
+ESMF_F90LINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,TermX
+ESMF_F90LINKLIBS:   -pgcpplibs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_F90ESMFLINKLIBS: -lesmf   -pgcpplibs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
 
 C++ compiler flags:
 ESMF_CXXCOMPILER: mpicxx
 ESMF_CXXCOMPILEOPTS: -std=c++11 -g -fpic -lpthread
-ESMF_CXXCOMPILEPATHS:  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_37' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 -DESMF_PGIVERSION_MAJOR= -DESMF_PGIVERSION_MINOR= -DESMF_PGIVERSION_PATCH= -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_CXXCOMPILEPATHS:  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_38' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 -DESMF_PGIVERSION_MAJOR= -DESMF_PGIVERSION_MINOR= -DESMF_PGIVERSION_PATCH= -DESMF_NO_F2018ASSUMEDTYPE
 
 C++ linker flags:
 ESMF_CXXLINKOPTS: -lnl-3 -lfabric   -lpthread -Wl,--no-as-needed
-ESMF_CXXLINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default  -LTermX
-ESMF_CXXLINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default  -Wl,-rpath,TermX
-ESMF_CXXLINKLIBS:  -lmpi_mpifh -pgf90libs -ldl
-ESMF_CXXESMFLINKLIBS: -lesmf  -lmpi_mpifh -pgf90libs -ldl
+ESMF_CXXLINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -LTermX
+ESMF_CXXLINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,TermX
+ESMF_CXXLINKLIBS:  -lmpi_mpifh -pgf90libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_CXXESMFLINKLIBS: -lesmf  -lmpi_mpifh -pgf90libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
 
 Shared library build:
 ESMF_SL_LIBS_TO_MAKE: libesmf
@@ -1091,20 +1127,20 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Mon Nov 16 03:57:15 MST 2020 on i042.unified.ucar.edu
-Machine characteristics: Linux i042.unified.ucar.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sun Nov 22 03:45:31 MST 2020 on i041.unified.ucar.edu
+Machine characteristics: Linux i041.unified.ucar.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
-Mon Nov 16 04:11:35 MST 2020 library build ................PASS
-Mon Nov 16 04:11:38 MST 2020 library install ..............PASS
-Mon Nov 16 04:11:41 MST 2020 library installcheck .........PASS
-Mon Nov 16 04:21:58 MST 2020 quickstart build .............PASS
+Sun Nov 22 03:59:49 MST 2020 library build ................PASS
+Sun Nov 22 03:59:52 MST 2020 library install ..............PASS
+Sun Nov 22 03:59:54 MST 2020 library installcheck .........PASS
+Sun Nov 22 04:10:10 MST 2020 quickstart build .............PASS
 
 |------------------------ APPs TESTS --------------------------|
-Mon Nov 16 04:36:18 MST 2020 apps build ...................PASS
+Sun Nov 22 04:24:26 MST 2020 apps build ...................PASS
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:18 MST 2020 ESMF_Regrid --help ***********FAIL
+Sun Nov 22 04:24:26 MST 2020 ESMF_Regrid --help ***********FAIL
 The following is the output of ESMF_Regrid --help
 
 --------------------------------------------------------------------------
@@ -1112,7 +1148,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Regrid
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1121,7 +1157,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:19 MST 2020 ESMF_Regrid --version ********FAIL
+Sun Nov 22 04:24:27 MST 2020 ESMF_Regrid --version ********FAIL
 The following is the output of ESMF_Regrid --version
 
 --------------------------------------------------------------------------
@@ -1129,7 +1165,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Regrid
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1138,7 +1174,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:19 MST 2020 ESMF_Regrid -V ***************FAIL
+Sun Nov 22 04:24:27 MST 2020 ESMF_Regrid -V ***************FAIL
 The following is the output of ESMF_Regrid -V
 
 --------------------------------------------------------------------------
@@ -1146,7 +1182,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Regrid
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1155,7 +1191,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:19 MST 2020 ESMF_Info --help *************FAIL
+Sun Nov 22 04:24:27 MST 2020 ESMF_Info --help *************FAIL
 The following is the output of ESMF_Info --help 
 
 --------------------------------------------------------------------------
@@ -1163,7 +1199,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Info
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1172,7 +1208,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:20 MST 2020 ESMF_Info --version **********FAIL
+Sun Nov 22 04:24:28 MST 2020 ESMF_Info --version **********FAIL
 The following is the output of ESMF_Info --version 
 
 --------------------------------------------------------------------------
@@ -1180,7 +1216,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Info
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1189,7 +1225,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:20 MST 2020 ESMF_Info -V *****************FAIL
+Sun Nov 22 04:24:28 MST 2020 ESMF_Info -V *****************FAIL
 The following is the output of ESMF_Info -V 
 
 --------------------------------------------------------------------------
@@ -1197,7 +1233,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Info
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1206,7 +1242,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:20 MST 2020 ESMF_InfoC --help ************FAIL
+Sun Nov 22 04:24:28 MST 2020 ESMF_InfoC --help ************FAIL
 The following is the output of ESMF_InfoC --help
 
 --------------------------------------------------------------------------
@@ -1214,7 +1250,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_InfoC
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1223,7 +1259,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:21 MST 2020 ESMF_InfoC --version *********FAIL
+Sun Nov 22 04:24:28 MST 2020 ESMF_InfoC --version *********FAIL
 The following is the output of ESMF_InfoC --version
 
 --------------------------------------------------------------------------
@@ -1231,7 +1267,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_InfoC
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1240,7 +1276,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:21 MST 2020 ESMF_InfoC -V ****************FAIL
+Sun Nov 22 04:24:29 MST 2020 ESMF_InfoC -V ****************FAIL
 The following is the output of ESMF_InfoC -V
 
 --------------------------------------------------------------------------
@@ -1248,7 +1284,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_InfoC
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1257,7 +1293,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:21 MST 2020 ESMF_RegridWeightGen --help **FAIL
+Sun Nov 22 04:24:29 MST 2020 ESMF_RegridWeightGen --help **FAIL
 The following is the output of ESMF_RegridWeightGen --help
 
 --------------------------------------------------------------------------
@@ -1265,7 +1301,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_RegridWeightGen
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1274,7 +1310,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:22 MST 2020 ESMF_RegridWeightGen --version FAIL
+Sun Nov 22 04:24:29 MST 2020 ESMF_RegridWeightGen --version FAIL
 The following is the output of ESMF_RegridWeightGen --version
 
 --------------------------------------------------------------------------
@@ -1282,7 +1318,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_RegridWeightGen
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1291,7 +1327,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:22 MST 2020 ESMF_RegridWeightGen -V ******FAIL
+Sun Nov 22 04:24:30 MST 2020 ESMF_RegridWeightGen -V ******FAIL
 The following is the output of ESMF_RegridWeightGen -V
 
 --------------------------------------------------------------------------
@@ -1299,7 +1335,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_RegridWeightGen
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1308,7 +1344,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:22 MST 2020 ESMF_Scrip2Unstruct --help ***FAIL
+Sun Nov 22 04:24:30 MST 2020 ESMF_Scrip2Unstruct --help ***FAIL
 The following is the output of ESMF_Scrip2Unstruct --help
 
 --------------------------------------------------------------------------
@@ -1316,7 +1352,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Scrip2Unstruct
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1325,7 +1361,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:22 MST 2020 ESMF_Scrip2Unstruct --version FAIL
+Sun Nov 22 04:24:30 MST 2020 ESMF_Scrip2Unstruct --version FAIL
 The following is the output of ESMF_Scrip2Unstruct --version
 
 --------------------------------------------------------------------------
@@ -1333,7 +1369,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Scrip2Unstruct
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1342,7 +1378,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:23 MST 2020 ESMF_Scrip2Unstruct -V *******FAIL
+Sun Nov 22 04:24:31 MST 2020 ESMF_Scrip2Unstruct -V *******FAIL
 The following is the output of ESMF_Scrip2Unstruct -V
 
 --------------------------------------------------------------------------
@@ -1350,7 +1386,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Scrip2Unstruct
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1359,7 +1395,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:23 MST 2020 ESMF_WebServController --help FAIL
+Sun Nov 22 04:24:31 MST 2020 ESMF_WebServController --help FAIL
 The following is the output of ESMF_WebServController --help
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 919: ./ESMF_WebServController: No such file or directory
@@ -1367,7 +1403,7 @@ The following is the output of ESMF_WebServController --help
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:23 MST 2020 ESMF_WebServController --version FAIL
+Sun Nov 22 04:24:31 MST 2020 ESMF_WebServController --version FAIL
 The following is the output of ESMF_WebServController --version
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 956: ./ESMF_WebServController: No such file or directory
@@ -1375,7 +1411,7 @@ The following is the output of ESMF_WebServController --version
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 04:36:23 MST 2020 ESMF_WebServController -V ****FAIL
+Sun Nov 22 04:24:31 MST 2020 ESMF_WebServController -V ****FAIL
 The following is the output of ESMF_WebServController -V
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 994: ./ESMF_WebServController: No such file or directory
@@ -1388,8 +1424,8 @@ Ran 18 applications tests, 0 pass and 18 fail.
 
 
 |----------------------- SYSTEM TESTS -------------------------|
-Mon Nov 16 04:50:43 MST 2020 build_system_tests ...........PASS
-Mon Nov 16 04:55:28 MST 2020 run_system_tests .............PASS
+Sun Nov 22 04:38:47 MST 2020 build_system_tests ...........PASS
+Sun Nov 22 04:43:33 MST 2020 run_system_tests .............PASS
 The following system tests failed, did not build, or did not execute:
 
 
@@ -1416,8 +1452,8 @@ Found 7 single processor system tests, 0 passed and 7 failed.
 
 
 |------------------------- EXAMPLES ---------------------------|
-Mon Nov 16 05:09:52 MST 2020 build_examples ...............PASS
-Mon Nov 16 05:27:07 MST 2020 run_examples .................PASS
+Sun Nov 22 04:57:53 MST 2020 build_examples ...............PASS
+Sun Nov 22 05:15:09 MST 2020 run_examples .................PASS
 
 
 NOTE: Unable to open /project/esmf/himanshu/pgi/esmf/examples/examplesg/Linux.pgi.64.openmpi.default/examples.config file.
@@ -1426,8 +1462,8 @@ Either the 'gmake ESMF_BOPT=g build_examples_tests' has not been run or the 'gma
 
 
 |-------------------- EXHAUSTIVE UNIT TESTS -------------------|
-Mon Nov 16 05:41:30 MST 2020 build_unit_tests .............PASS
-Mon Nov 16 06:05:58 MST 2020 run_unit_tests ...............PASS
+Sun Nov 22 05:29:31 MST 2020 build_unit_tests .............PASS
+Sun Nov 22 05:54:00 MST 2020 run_unit_tests ...............PASS
 
 
 
@@ -1437,7 +1473,7 @@ Either the 'gmake ESMF_BOPT=g build_unit_tests' has not been run or the 'gmake E
 
 
 
-Mon Nov 16 06:06:05 MST 2020 run_unit_tests_benchmark .....PASS
+Sun Nov 22 05:54:07 MST 2020 run_unit_tests_benchmark .....PASS
 
 
 
@@ -1447,7 +1483,7 @@ Either the 'gmake ESMF_BOPT=g build_unit_tests' has not been run or the 'gmake E
 
 _______________________________________________________________________________________________
 
-Mon Nov 16 06:19:28 MST 2020 on i042.unified.ucar.edu 
+Sun Nov 22 06:07:27 MST 2020 on i041.unified.ucar.edu 
 
 ESMF Checkout Source: https://github.com/esmf-org/esmf.git
 
@@ -1462,14 +1498,14 @@ Repository:
 origin	https://github.com/esmf-org/esmf.git (fetch)
 origin	https://github.com/esmf-org/esmf.git (push)
  
-ESMF_8_1_0_beta_snapshot_37
+ESMF_8_1_0_beta_snapshot_38
  
  
  
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.1.0 beta snapshot
-ESMF_8_1_0_beta_snapshot_37
+ESMF_8_1_0_beta_snapshot_38
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -1526,6 +1562,9 @@ Copyright (C) 2015 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
+--------------------------------------------------------------
+NetCDF library version: netCDF 4.7.4
+NetCDF Fortran version: netCDF-Fortran 4.5.2
  
 --------------------------------------------------------------
  * User set ESMF environment variables *
@@ -1538,13 +1577,14 @@ ESMF_DIR=/project/esmf/himanshu/pgi/esmf
 ESMF_F90LINKOPTS=-lnl-3 -lfabric
 ESMF_INSTALL_PREFIX=/project/esmf/himanshu/pgi/install_dir
 ESMF_MPIRUN=mpirun
+ESMF_NETCDF=nc-config
 ESMF_OS=Linux
 ESMF_SITE=default
 ESMF_TESTEXHAUSTIVE=ON
 ESMF_TESTHARNESS_ARRAY=RUN_ESMF_TestHarnessArrayUNI_2
 ESMF_TESTHARNESS_FIELD=RUN_ESMF_TestHarnessFieldUNI_1
 ESMF_TESTMPMD=OFF
-ESMF_TESTWITHTHREADS=ON
+ESMF_TESTWITHTHREADS=OFF
  
 --------------------------------------------------------------
  * ESMF environment variables *
@@ -1571,7 +1611,7 @@ ESMF_SHARED_LIB_BUILD:  ON
 ESMF_TRACE_LIB_BUILD:   ON
 ESMF_TESTEXHAUSTIVE:    ON
 ESMF_TESTCOMPTUNNEL:    ON
-ESMF_TESTWITHTHREADS:   ON
+ESMF_TESTWITHTHREADS:   OFF
 ESMF_TESTMPMD:          OFF
 ESMF_TESTSHAREDOBJ:     OFF
 ESMF_TESTFORCEOPENMP:   OFF
@@ -1585,6 +1625,14 @@ ESMF_MPIRUN:            mpirun
 ESMF_MOAB:               internal
 ESMF_LAPACK:             internal
 ESMF_ACC_SOFTWARE_STACK: none
+ESMF_NETCDF:             nc-config
+ESMF_NETCDF_INCLUDE:     /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDF_LIBS:        -lnetcdf
+ESMF_NETCDF_LIBPATH:     /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
+ESMF_NFCONFIG:           nf-config
+ESMF_NETCDFF_INCLUDE:    /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDFF_LIBS:       -lnetcdff -lnetcdf -lnetcdf
+ESMF_NETCDFF_LIBPATH:    /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
 ESMF_YAMLCPP:            internal
 ESMF_PIO:                internal
  
@@ -1619,8 +1667,8 @@ Location of the C++ linker:        /cluster/openmpi-4.0.3-pgi-pgcc-pgf-20.1/bin/
 Fortran compiler flags:
 ESMF_F90COMPILER: mpifort
 ESMF_F90COMPILEOPTS: -O -fpic -Mallocatable=03 -lpthread
-ESMF_F90COMPILEPATHS: -I/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.openmpi.default -I/project/esmf/himanshu/pgi/esmf/src/include 
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_37' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -DESMF_PGIVERSION_MAJOR= -DESMF_PGIVERSION_MINOR= -DESMF_PGIVERSION_PATCH= -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_F90COMPILEPATHS: -I/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.openmpi.default -I/project/esmf/himanshu/pgi/esmf/src/include -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_38' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -DESMF_PGIVERSION_MAJOR= -DESMF_PGIVERSION_MINOR= -DESMF_PGIVERSION_PATCH= -DESMF_NO_F2018ASSUMEDTYPE
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -Mfreeform
 ESMF_F90COMPILEFIXCPP: -Mpreprocess -Mnofreeform
@@ -1628,23 +1676,23 @@ ESMF_F90COMPILEFIXNOCPP:
 
 Fortran linker flags:
 ESMF_F90LINKOPTS: -lnl-3 -lfabric   -lpthread -Wl,--no-as-needed
-ESMF_F90LINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.openmpi.default  -LTermX
-ESMF_F90LINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.openmpi.default  -Wl,-rpath,TermX
-ESMF_F90LINKLIBS:   -pgcpplibs -ldl
-ESMF_F90ESMFLINKLIBS: -lesmf   -pgcpplibs -ldl
+ESMF_F90LINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.openmpi.default -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -LTermX
+ESMF_F90LINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.openmpi.default -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,TermX
+ESMF_F90LINKLIBS:   -pgcpplibs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_F90ESMFLINKLIBS: -lesmf   -pgcpplibs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
 
 C++ compiler flags:
 ESMF_CXXCOMPILER: mpicxx
 ESMF_CXXCOMPILEOPTS: -std=c++11 -O -DNDEBUG -fpic -lpthread
-ESMF_CXXCOMPILEPATHS:  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_37' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 -DESMF_PGIVERSION_MAJOR= -DESMF_PGIVERSION_MINOR= -DESMF_PGIVERSION_PATCH= -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_CXXCOMPILEPATHS:  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_38' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 -DESMF_PGIVERSION_MAJOR= -DESMF_PGIVERSION_MINOR= -DESMF_PGIVERSION_PATCH= -DESMF_NO_F2018ASSUMEDTYPE
 
 C++ linker flags:
 ESMF_CXXLINKOPTS: -lnl-3 -lfabric   -lpthread -Wl,--no-as-needed
-ESMF_CXXLINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.openmpi.default  -LTermX
-ESMF_CXXLINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.openmpi.default  -Wl,-rpath,TermX
-ESMF_CXXLINKLIBS:  -lmpi_mpifh -pgf90libs -ldl
-ESMF_CXXESMFLINKLIBS: -lesmf  -lmpi_mpifh -pgf90libs -ldl
+ESMF_CXXLINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.openmpi.default -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -LTermX
+ESMF_CXXLINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.openmpi.default -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,TermX
+ESMF_CXXLINKLIBS:  -lmpi_mpifh -pgf90libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_CXXESMFLINKLIBS: -lesmf  -lmpi_mpifh -pgf90libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
 
 Shared library build:
 ESMF_SL_LIBS_TO_MAKE: libesmf
@@ -1660,20 +1708,20 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Mon Nov 16 06:19:37 MST 2020 on i042.unified.ucar.edu
-Machine characteristics: Linux i042.unified.ucar.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sun Nov 22 06:07:36 MST 2020 on i041.unified.ucar.edu
+Machine characteristics: Linux i041.unified.ucar.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
-Mon Nov 16 06:33:54 MST 2020 library build ................PASS
-Mon Nov 16 06:33:57 MST 2020 library install ..............PASS
-Mon Nov 16 06:34:00 MST 2020 library installcheck .........PASS
-Mon Nov 16 06:44:16 MST 2020 quickstart build .............PASS
+Sun Nov 22 06:21:49 MST 2020 library build ................PASS
+Sun Nov 22 06:21:52 MST 2020 library install ..............PASS
+Sun Nov 22 06:21:55 MST 2020 library installcheck .........PASS
+Sun Nov 22 06:32:10 MST 2020 quickstart build .............PASS
 
 |------------------------ APPs TESTS --------------------------|
-Mon Nov 16 06:58:35 MST 2020 apps build ...................PASS
+Sun Nov 22 06:46:25 MST 2020 apps build ...................PASS
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:36 MST 2020 ESMF_Regrid --help ***********FAIL
+Sun Nov 22 06:46:25 MST 2020 ESMF_Regrid --help ***********FAIL
 The following is the output of ESMF_Regrid --help
 
 --------------------------------------------------------------------------
@@ -1681,7 +1729,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Regrid
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1690,7 +1738,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:36 MST 2020 ESMF_Regrid --version ********FAIL
+Sun Nov 22 06:46:26 MST 2020 ESMF_Regrid --version ********FAIL
 The following is the output of ESMF_Regrid --version
 
 --------------------------------------------------------------------------
@@ -1698,7 +1746,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Regrid
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1707,7 +1755,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:36 MST 2020 ESMF_Regrid -V ***************FAIL
+Sun Nov 22 06:46:26 MST 2020 ESMF_Regrid -V ***************FAIL
 The following is the output of ESMF_Regrid -V
 
 --------------------------------------------------------------------------
@@ -1715,7 +1763,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Regrid
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1724,7 +1772,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:37 MST 2020 ESMF_Info --help *************FAIL
+Sun Nov 22 06:46:26 MST 2020 ESMF_Info --help *************FAIL
 The following is the output of ESMF_Info --help 
 
 --------------------------------------------------------------------------
@@ -1732,7 +1780,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Info
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1741,7 +1789,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:37 MST 2020 ESMF_Info --version **********FAIL
+Sun Nov 22 06:46:27 MST 2020 ESMF_Info --version **********FAIL
 The following is the output of ESMF_Info --version 
 
 --------------------------------------------------------------------------
@@ -1749,7 +1797,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Info
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1758,7 +1806,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:37 MST 2020 ESMF_Info -V *****************FAIL
+Sun Nov 22 06:46:27 MST 2020 ESMF_Info -V *****************FAIL
 The following is the output of ESMF_Info -V 
 
 --------------------------------------------------------------------------
@@ -1766,7 +1814,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Info
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1775,7 +1823,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:38 MST 2020 ESMF_InfoC --help ************FAIL
+Sun Nov 22 06:46:27 MST 2020 ESMF_InfoC --help ************FAIL
 The following is the output of ESMF_InfoC --help
 
 --------------------------------------------------------------------------
@@ -1783,7 +1831,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_InfoC
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1792,7 +1840,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:38 MST 2020 ESMF_InfoC --version *********FAIL
+Sun Nov 22 06:46:27 MST 2020 ESMF_InfoC --version *********FAIL
 The following is the output of ESMF_InfoC --version
 
 --------------------------------------------------------------------------
@@ -1800,7 +1848,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_InfoC
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1809,7 +1857,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:38 MST 2020 ESMF_InfoC -V ****************FAIL
+Sun Nov 22 06:46:28 MST 2020 ESMF_InfoC -V ****************FAIL
 The following is the output of ESMF_InfoC -V
 
 --------------------------------------------------------------------------
@@ -1817,7 +1865,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_InfoC
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1826,7 +1874,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:39 MST 2020 ESMF_RegridWeightGen --help **FAIL
+Sun Nov 22 06:46:28 MST 2020 ESMF_RegridWeightGen --help **FAIL
 The following is the output of ESMF_RegridWeightGen --help
 
 --------------------------------------------------------------------------
@@ -1834,7 +1882,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_RegridWeightGen
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1843,7 +1891,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:39 MST 2020 ESMF_RegridWeightGen --version FAIL
+Sun Nov 22 06:46:28 MST 2020 ESMF_RegridWeightGen --version FAIL
 The following is the output of ESMF_RegridWeightGen --version
 
 --------------------------------------------------------------------------
@@ -1851,7 +1899,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_RegridWeightGen
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1860,7 +1908,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:39 MST 2020 ESMF_RegridWeightGen -V ******FAIL
+Sun Nov 22 06:46:29 MST 2020 ESMF_RegridWeightGen -V ******FAIL
 The following is the output of ESMF_RegridWeightGen -V
 
 --------------------------------------------------------------------------
@@ -1868,7 +1916,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_RegridWeightGen
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1877,7 +1925,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:39 MST 2020 ESMF_Scrip2Unstruct --help ***FAIL
+Sun Nov 22 06:46:29 MST 2020 ESMF_Scrip2Unstruct --help ***FAIL
 The following is the output of ESMF_Scrip2Unstruct --help
 
 --------------------------------------------------------------------------
@@ -1885,7 +1933,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Scrip2Unstruct
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1894,7 +1942,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:40 MST 2020 ESMF_Scrip2Unstruct --version FAIL
+Sun Nov 22 06:46:29 MST 2020 ESMF_Scrip2Unstruct --version FAIL
 The following is the output of ESMF_Scrip2Unstruct --version
 
 --------------------------------------------------------------------------
@@ -1902,7 +1950,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Scrip2Unstruct
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1911,7 +1959,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:40 MST 2020 ESMF_Scrip2Unstruct -V *******FAIL
+Sun Nov 22 06:46:30 MST 2020 ESMF_Scrip2Unstruct -V *******FAIL
 The following is the output of ESMF_Scrip2Unstruct -V
 
 --------------------------------------------------------------------------
@@ -1919,7 +1967,7 @@ mpirun was unable to launch the specified application as it could not access
 or execute an executable:
 
 Executable: ./ESMF_Scrip2Unstruct
-Node: i042
+Node: i041
 
 while attempting to start process rank 0.
 --------------------------------------------------------------------------
@@ -1928,7 +1976,7 @@ while attempting to start process rank 0.
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:40 MST 2020 ESMF_WebServController --help FAIL
+Sun Nov 22 06:46:30 MST 2020 ESMF_WebServController --help FAIL
 The following is the output of ESMF_WebServController --help
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 919: ./ESMF_WebServController: No such file or directory
@@ -1936,7 +1984,7 @@ The following is the output of ESMF_WebServController --help
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:40 MST 2020 ESMF_WebServController --version FAIL
+Sun Nov 22 06:46:30 MST 2020 ESMF_WebServController --version FAIL
 The following is the output of ESMF_WebServController --version
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 956: ./ESMF_WebServController: No such file or directory
@@ -1944,7 +1992,7 @@ The following is the output of ESMF_WebServController --version
 
 
 |--------------------------------------------------------------|
-Mon Nov 16 06:58:40 MST 2020 ESMF_WebServController -V ****FAIL
+Sun Nov 22 06:46:30 MST 2020 ESMF_WebServController -V ****FAIL
 The following is the output of ESMF_WebServController -V
 
 /project/esmf/himanshu/pgi/bin/test_esmf_bm_noq: line 994: ./ESMF_WebServController: No such file or directory
@@ -1957,8 +2005,8 @@ Ran 18 applications tests, 0 pass and 18 fail.
 
 
 |----------------------- SYSTEM TESTS -------------------------|
-Mon Nov 16 07:13:00 MST 2020 build_system_tests ...........PASS
-Mon Nov 16 07:17:44 MST 2020 run_system_tests .............PASS
+Sun Nov 22 07:00:44 MST 2020 build_system_tests ...........PASS
+Sun Nov 22 07:05:30 MST 2020 run_system_tests .............PASS
 The following system tests failed, did not build, or did not execute:
 
 
@@ -1985,8 +2033,8 @@ Found 7 single processor system tests, 0 passed and 7 failed.
 
 
 |------------------------- EXAMPLES ---------------------------|
-Mon Nov 16 07:32:08 MST 2020 build_examples ...............PASS
-Mon Nov 16 07:49:23 MST 2020 run_examples .................PASS
+Sun Nov 22 07:19:48 MST 2020 build_examples ...............PASS
+Sun Nov 22 07:37:02 MST 2020 run_examples .................PASS
 
 
 NOTE: Unable to open /project/esmf/himanshu/pgi/esmf/examples/examplesO/Linux.pgi.64.openmpi.default/examples.config file.
@@ -1995,8 +2043,8 @@ Either the 'gmake ESMF_BOPT=O build_examples_tests' has not been run or the 'gma
 
 
 |-------------------- EXHAUSTIVE UNIT TESTS -------------------|
-Mon Nov 16 08:03:46 MST 2020 build_unit_tests .............PASS
-Mon Nov 16 08:28:14 MST 2020 run_unit_tests ...............PASS
+Sun Nov 22 07:51:19 MST 2020 build_unit_tests .............PASS
+Sun Nov 22 08:15:46 MST 2020 run_unit_tests ...............PASS
 
 
 
@@ -2006,7 +2054,7 @@ Either the 'gmake ESMF_BOPT=O build_unit_tests' has not been run or the 'gmake E
 
 
 
-Mon Nov 16 08:28:21 MST 2020 run_unit_tests_benchmark .....PASS
+Sun Nov 22 08:15:53 MST 2020 run_unit_tests_benchmark .....PASS
 
 
 
