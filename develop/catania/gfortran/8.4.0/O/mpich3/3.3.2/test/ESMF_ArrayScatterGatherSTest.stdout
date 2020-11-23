@@ -17,7 +17,6 @@
  Start of  System Test ESMF_ArrayScatterGatherSTest
  --------------------------------------- 
  Created component user model 1rc =           0
- Created component user model 2rc =           0
  Created component user model 1rc =           0
  Created component user model 2rc =           0
  Created component user model 1rc =           0
@@ -28,6 +27,9 @@
  Created component user model 2rc =           0
  Created component user model 1rc =           0
  Created component user model 2rc =           0
+ Created component user model 2rc =           0
+ Created component user one-way coupler, rc =           0
+ Comp Creates finished
  Created component user one-way coupler, rc =           0
  Comp Creates finished
  Created component user one-way coupler, rc =           0
@@ -39,38 +41,41 @@
  Created component user one-way coupler, rc =           0
  Comp Creates finished
  Comp1 SetVM finished, rc=            0
- Created component user one-way coupler, rc =           0
- Comp Creates finished
  Comp1 SetVM finished, rc=            0
  Comp1 SetVM finished, rc=            0
  Comp1 SetVM finished, rc=            0
  Comp1 SetVM finished, rc=            0
  Comp1 SetServices finished, rc=            0
- Comp1 SetServices finished, rc=            0
- Comp2 SetVM finished, rc=            0
  Comp1 SetVM finished, rc=            0
  Comp1 SetServices finished, rc=            0
- Comp2 SetVM finished, rc=            0
+ Comp1 SetServices finished, rc=            0
  Comp2 SetVM finished, rc=            0
  Comp2 SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
- User Comp1 Register starting
+ Comp2 SetVM finished, rc=            0
+ Comp2 SetVM finished, rc=            0
+ User Comp2 Register starting
  Registered Initialize, Run, and Finalize routines
- User Comp1 Register returning
+ User Comp2 Register returning
+ User Comp1 Register starting
  User Comp1 Register starting
  Registered Initialize, Run, and Finalize routines
  User Comp1 Register returning
  Comp1 SetServices finished, rc=            0
- Comp2 SetVM finished, rc=            0
  Comp2 SetServices finished, rc=            0
+ Cpl SetVM finished, rc=            0
  User Comp2 Register starting
  Registered Initialize, Run, and Finalize routines
  User Comp2 Register returning
  Comp2 SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
- User Comp2 Register starting
  Registered Initialize, Run, and Finalize routines
- User Comp2 Register returning
+ User Comp1 Register returning
+ Comp1 SetServices finished, rc=            0
+ Comp2 SetVM finished, rc=            0
+ Comp2 SetServices finished, rc=            0
+ Cpl SetVM finished, rc=            0
+ Comp2 SetVM finished, rc=            0
  Comp2 SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
  User Comp1 Register starting
@@ -79,11 +84,6 @@
  Comp1 SetServices finished, rc=            0
  Comp2 SetVM finished, rc=            0
  Comp2 SetServices finished, rc=            0
- Comp1 SetServices finished, rc=            0
- Comp2 SetVM finished, rc=            0
- Comp2 SetServices finished, rc=            0
- Cpl SetVM finished, rc=            0
- Cpl SetVM finished, rc=            0
  Cpl SetVM finished, rc=            0
  User Coupler Register starting
  Registered Initialize, Run, and Finalize routines
@@ -101,24 +101,24 @@
  Registered Initialize, Run, and Finalize routines
  User Coupler Register returning
  Cpl SetServices finished, rc=            0
- User Coupler Register starting
- Registered Initialize, Run, and Finalize routines
- User Coupler Register returning
- Cpl SetServices finished, rc=            0
- User Coupler Register starting
- Registered Initialize, Run, and Finalize routines
- User Coupler Register returning
- Cpl SetServices finished, rc=            0
  User Comp1 Init starting
- User Comp1 Init starting
- User Comp1 Init starting
- Comp 1 Initialize finished, rc =           0           0
- User Comp2 Init starting
- Comp 1 Initialize finished, rc =           0           0
- User Comp2 Init starting
  Comp 1 Initialize finished, rc =           0           0
  Comp 2 Initialize finished, rc =           0           0
  User Coupler Init starting
+ User Coupler Register starting
+ Registered Initialize, Run, and Finalize routines
+ User Coupler Register returning
+ Cpl SetServices finished, rc=            0
+ User Coupler Register starting
+ Registered Initialize, Run, and Finalize routines
+ User Coupler Register returning
+ Cpl SetServices finished, rc=            0
+ User Comp1 Init starting
+ User Comp1 Init starting
+ Comp 1 Initialize finished, rc =           0           0
+ User Comp2 Init starting
+ Comp 1 Initialize finished, rc =           0           0
+ User Comp2 Init starting
  User Comp2 Init returning
  Comp 2 Initialize finished, rc =           0           0
  User Coupler Init starting
@@ -128,15 +128,15 @@
  User Comp1 Init returning
  Comp 1 Initialize finished, rc =           0           0
  Comp 2 Initialize finished, rc =           0           0
- User Comp1 Init returning
- Comp 1 Initialize finished, rc =           0           0
- Comp 2 Initialize finished, rc =           0           0
- User Coupler Init starting
  User Coupler Init starting
  User Comp1 Init returning
  Comp 1 Initialize finished, rc =           0           0
  Comp 2 Initialize finished, rc =           0           0
  User Coupler Init starting
+ User Comp1 Init returning
+ Comp 1 Initialize finished, rc =           0           0
+ Comp 2 Initialize finished, rc =           0           0
+ User Coupler Init starting
 
 Program received signal SIGABRT: Process abort signal.
 
@@ -145,12 +145,11 @@ Backtrace for this error:
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-
-Program received signal SIGABRT: Process abort signal.
-
-Backtrace for this error:
-#0  0x10c2e448d
-#1  0x10c2e38c3
+#0  0x11051148d
+#1  0x1105108c3
+#2  0x7fff688abb5c
+#0  0x10e1f248d
+#1  0x10e1f18c3
 #2  0x7fff688abb5c
 
 Program received signal SIGABRT: Process abort signal.
@@ -164,25 +163,17 @@ Backtrace for this error:
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-#0  0x108bcf48d
-#1  0x108bce8c3
-#2  0x7fff688abb5c
-#0  0x10469c48d
-#1  0x10469b8c3
-#2  0x7fff688abb5c
-#0  0x11002648d
-#1  0x1100258c3
-#2  0x7fff688abb5c
-#0  0x1080de48d
-#1  0x1080dd8c3
-#2  0x7fff688abb5c
-#0  0x10d96448d
-#1  0x10d9638c3
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x10c06248d
+#1  0x10c0618c3
 #2  0x7fff688abb5c
 
 ===================================================================================
 =   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
-=   PID 20103 RUNNING AT cgdm-catania
+=   PID 30885 RUNNING AT cgdm-catania
 =   EXIT CODE: 6
 =   CLEANING UP REMAINING PROCESSES
 =   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
@@ -190,4 +181,4 @@ Backtrace for this error:
 YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Abort trap: 6 (signal 6)
 This typically refers to a problem with your application.
 Please see the FAQ page for debugging suggestions
-Fri Nov 20 17:14:09 MST 2020
+Mon Nov 23 09:26:49 MST 2020
