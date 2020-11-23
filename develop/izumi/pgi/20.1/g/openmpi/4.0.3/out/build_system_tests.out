@@ -3,7 +3,7 @@ Making directory /project/esmf/himanshu/pgi/esmf/test/testg/Linux.pgi.64.openmpi
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.1.0 beta snapshot
-ESMF_8_1_0_beta_snapshot_37
+ESMF_8_1_0_beta_snapshot_38
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -60,6 +60,9 @@ Copyright (C) 2015 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
+--------------------------------------------------------------
+NetCDF library version: netCDF 4.7.4
+NetCDF Fortran version: netCDF-Fortran 4.5.2
  
 --------------------------------------------------------------
  * User set ESMF environment variables *
@@ -89,6 +92,14 @@ ESMF_MAPPER_BUILD=OFF
 ESMF_MOAB=internal
 ESMF_MPIIO=supported
 ESMF_MPIRUN=mpirun
+ESMF_NETCDFF_INCLUDE=/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDFF_LIBPATH=/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
+ESMF_NETCDFF_LIBS=-lnetcdff -lnetcdf -lnetcdf
+ESMF_NETCDF_INCLUDE=/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDF_LIBPATH=/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
+ESMF_NETCDF_LIBS=-lnetcdf
+ESMF_NETCDF=nc-config
+ESMF_NFCONFIG=nf-config
 ESMF_NO_INTEGER_1_BYTE=TRUE
 ESMF_NO_INTEGER_2_BYTE=TRUE
 ESMF_OPENACC=OFF
@@ -108,9 +119,9 @@ ESMF_TESTHARNESS_ARRAY=RUN_ESMF_TestHarnessArrayUNI_2
 ESMF_TESTHARNESS_FIELD=RUN_ESMF_TestHarnessFieldUNI_1
 ESMF_TESTMPMD=OFF
 ESMF_TESTSHAREDOBJ=OFF
-ESMF_TESTWITHTHREADS=ON
+ESMF_TESTWITHTHREADS=OFF
 ESMF_TRACE_LIB_BUILD=ON
-ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_37
+ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_38
 ESMF_YAMLCPP=internal
 MAKEFLAGS= -j --jobserver-fds=3,4 -- ESMF_BOPT=g
  
@@ -139,7 +150,7 @@ ESMF_SHARED_LIB_BUILD:  ON
 ESMF_TRACE_LIB_BUILD:   ON
 ESMF_TESTEXHAUSTIVE:    ON
 ESMF_TESTCOMPTUNNEL:    ON
-ESMF_TESTWITHTHREADS:   ON
+ESMF_TESTWITHTHREADS:   OFF
 ESMF_TESTMPMD:          OFF
 ESMF_TESTSHAREDOBJ:     OFF
 ESMF_TESTFORCEOPENMP:   OFF
@@ -153,6 +164,14 @@ ESMF_MPIRUN:            mpirun
 ESMF_MOAB:               internal
 ESMF_LAPACK:             internal
 ESMF_ACC_SOFTWARE_STACK: none
+ESMF_NETCDF:             nc-config
+ESMF_NETCDF_INCLUDE:     /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDF_LIBS:        -lnetcdf
+ESMF_NETCDF_LIBPATH:     /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
+ESMF_NFCONFIG:           nf-config
+ESMF_NETCDFF_INCLUDE:    /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDFF_LIBS:       -lnetcdff -lnetcdf -lnetcdf
+ESMF_NETCDFF_LIBPATH:    /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
 ESMF_YAMLCPP:            internal
 ESMF_PIO:                internal
  
@@ -187,8 +206,8 @@ Location of the C++ linker:        /cluster/openmpi-4.0.3-pgi-pgcc-pgf-20.1/bin/
 Fortran compiler flags:
 ESMF_F90COMPILER: mpifort
 ESMF_F90COMPILEOPTS: -g -fpic -Mallocatable=03 -lpthread
-ESMF_F90COMPILEPATHS: -I/project/esmf/himanshu/pgi/esmf/mod/modg/Linux.pgi.64.openmpi.default -I/project/esmf/himanshu/pgi/esmf/src/include 
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_37' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -DESMF_PGIVERSION_MAJOR= -DESMF_PGIVERSION_MINOR= -DESMF_PGIVERSION_PATCH= -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_F90COMPILEPATHS: -I/project/esmf/himanshu/pgi/esmf/mod/modg/Linux.pgi.64.openmpi.default -I/project/esmf/himanshu/pgi/esmf/src/include -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_38' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -DESMF_PGIVERSION_MAJOR= -DESMF_PGIVERSION_MINOR= -DESMF_PGIVERSION_PATCH= -DESMF_NO_F2018ASSUMEDTYPE
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -Mfreeform
 ESMF_F90COMPILEFIXCPP: -Mpreprocess -Mnofreeform
@@ -196,23 +215,23 @@ ESMF_F90COMPILEFIXNOCPP:
 
 Fortran linker flags:
 ESMF_F90LINKOPTS: -lnl-3 -lfabric  -lpthread -Wl,--no-as-needed
-ESMF_F90LINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default  -LTermX
-ESMF_F90LINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default  -Wl,-rpath,TermX
-ESMF_F90LINKLIBS:   -pgcpplibs -ldl
-ESMF_F90ESMFLINKLIBS: -lesmf   -pgcpplibs -ldl
+ESMF_F90LINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -LTermX
+ESMF_F90LINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,TermX
+ESMF_F90LINKLIBS:   -pgcpplibs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_F90ESMFLINKLIBS: -lesmf   -pgcpplibs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
 
 C++ compiler flags:
 ESMF_CXXCOMPILER: mpicxx
 ESMF_CXXCOMPILEOPTS: -std=c++11 -g -fpic -lpthread
-ESMF_CXXCOMPILEPATHS:  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_37' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 -DESMF_PGIVERSION_MAJOR= -DESMF_PGIVERSION_MINOR= -DESMF_PGIVERSION_PATCH= -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_CXXCOMPILEPATHS:  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_38' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 -DESMF_PGIVERSION_MAJOR= -DESMF_PGIVERSION_MINOR= -DESMF_PGIVERSION_PATCH= -DESMF_NO_F2018ASSUMEDTYPE
 
 C++ linker flags:
 ESMF_CXXLINKOPTS: -lnl-3 -lfabric  -lpthread -Wl,--no-as-needed
-ESMF_CXXLINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default  -LTermX
-ESMF_CXXLINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default  -Wl,-rpath,TermX
-ESMF_CXXLINKLIBS:  -lmpi_mpifh -pgf90libs -ldl
-ESMF_CXXESMFLINKLIBS: -lesmf  -lmpi_mpifh -pgf90libs -ldl
+ESMF_CXXLINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -LTermX
+ESMF_CXXLINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libg/Linux.pgi.64.openmpi.default -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,TermX
+ESMF_CXXLINKLIBS:  -lmpi_mpifh -pgf90libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_CXXESMFLINKLIBS: -lesmf  -lmpi_mpifh -pgf90libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
 
 Shared library build:
 ESMF_SL_LIBS_TO_MAKE: libesmf
@@ -228,8 +247,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Mon Nov 16 04:36:34 MST 2020 on i042.unified.ucar.edu
-Machine characteristics: Linux i042.unified.ucar.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sun Nov 22 04:24:42 MST 2020 on i041.unified.ucar.edu
+Machine characteristics: Linux i041.unified.ucar.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 gmake[2]: Entering directory '/project/esmf/himanshu/pgi/esmf'
@@ -1141,7 +1160,7 @@ gmake[7]: Entering directory '/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-
 dir=`pwd`; cd /project/esmf/himanshu/pgi/esmf/mod/modg/Linux.pgi.64.openmpi.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
 gmake[8]: Entering directory '/project/esmf/himanshu/pgi/esmf/mod/modg/Linux.pgi.64.openmpi.default'
 gmake[9]: Entering directory '/project/esmf/himanshu/pgi/esmf/mod/modg/Linux.pgi.64.openmpi.default'
-mpicxx -c -std=c++11 -g -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/src -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_37"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/prologue/yaml-cpp/src"' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 -DESMF_PGIVERSION_MAJOR= -DESMF_PGIVERSION_MINOR= -DESMF_PGIVERSION_PATCH= -DESMF_NO_F2018ASSUMEDTYPE /project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/src/binary.cpp -o /project/esmf/himanshu/pgi/esmf/obj/objg/Linux.pgi.64.openmpi.default/binary.o
+mpicxx -c -std=c++11 -g -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/src -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/prologue/yaml-cpp/src"' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2 -DESMF_PGIVERSION_MAJOR= -DESMF_PGIVERSION_MINOR= -DESMF_PGIVERSION_PATCH= -DESMF_NO_F2018ASSUMEDTYPE /project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/src/binary.cpp -o /project/esmf/himanshu/pgi/esmf/obj/objg/Linux.pgi.64.openmpi.default/binary.o
 In file included from /usr/include/c++/4.8.2/cstdlib:72:0,
                  from /usr/include/c++/4.8.2/ext/string_conversions.h:41,
                  from /usr/include/c++/4.8.2/bits/basic_string.h:2815,
@@ -1199,4 +1218,4 @@ gmake[1]: *** [lib] Error 2
 gmake[1]: Leaving directory '/project/esmf/himanshu/pgi/esmf'
 /project/esmf/himanshu/pgi/esmf/build/common.mk:2077: recipe for target 'reqfile_libesmf' failed
 gmake: *** [reqfile_libesmf] Error 2
-Mon Nov 16 08:28:49 MST 2020
+Sun Nov 22 08:16:28 MST 2020

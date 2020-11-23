@@ -3,7 +3,7 @@ Making directory /project/esmf/himanshu/pgi/esmf/examples/examplesO/Linux.pgi.64
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.1.0 beta snapshot
-ESMF_8_1_0_beta_snapshot_37
+ESMF_8_1_0_beta_snapshot_38
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -54,6 +54,9 @@ Copyright (C) 2015 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
+--------------------------------------------------------------
+NetCDF library version: netCDF 4.7.4
+NetCDF Fortran version: netCDF-Fortran 4.5.2
  
 --------------------------------------------------------------
  * User set ESMF environment variables *
@@ -80,6 +83,14 @@ ESMF_MACHINE=x86_64
 ESMF_MAPPER_BUILD=OFF
 ESMF_MOAB=internal
 ESMF_MPIRUN=/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni/mpirun
+ESMF_NETCDFF_INCLUDE=/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDFF_LIBPATH=/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
+ESMF_NETCDFF_LIBS=-lnetcdff -lnetcdf -lnetcdf
+ESMF_NETCDF_INCLUDE=/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDF_LIBPATH=/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
+ESMF_NETCDF_LIBS=-lnetcdf
+ESMF_NETCDF=nc-config
+ESMF_NFCONFIG=nf-config
 ESMF_NO_INTEGER_1_BYTE=TRUE
 ESMF_NO_INTEGER_2_BYTE=TRUE
 ESMF_OPENACC=OFF
@@ -101,7 +112,7 @@ ESMF_TESTMPMD=OFF
 ESMF_TESTSHAREDOBJ=OFF
 ESMF_TESTWITHTHREADS=OFF
 ESMF_TRACE_LIB_BUILD=ON
-ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_37
+ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_38
 ESMF_YAMLCPP=internal
 MAKEFLAGS= -j --jobserver-fds=3,4 -- ESMF_BOPT=O
  
@@ -144,6 +155,14 @@ ESMF_MPIRUN:            /project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs
 ESMF_MOAB:               internal
 ESMF_LAPACK:             internal
 ESMF_ACC_SOFTWARE_STACK: none
+ESMF_NETCDF:             nc-config
+ESMF_NETCDF_INCLUDE:     /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDF_LIBS:        -lnetcdf
+ESMF_NETCDF_LIBPATH:     /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
+ESMF_NFCONFIG:           nf-config
+ESMF_NETCDFF_INCLUDE:    /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_NETCDFF_LIBS:       -lnetcdff -lnetcdf -lnetcdf
+ESMF_NETCDFF_LIBPATH:    /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib /usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib
 ESMF_YAMLCPP:            internal
  
 --------------------------------------------------------------
@@ -163,8 +182,8 @@ ESMF_BENCHMARK_THRESHOLD_MSEC: 500
  
 --------------------------------------------------------------
  * Other relevant environment variables *
-PATH:    /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/bin:/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/bin:/cluster/mvapich2-2.3.3-pgi-pgcc-pgf-20.1/bin:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/bin:/home/himanshu/bin:/usr/lib64/qt-3.3/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin
-LD_LIBRARY_PATH: /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib:/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib:/cluster/torque/lib:/cluster/mvapich2-2.3.3-pgi-pgcc-pgf-20.1/lib:/usr/local/gcc-g++-gfortran-9.3.0/lib64:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/lib-small:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/lib
+PATH:    /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/bin:/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/bin:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/bin:/home/himanshu/bin:/usr/lib64/qt-3.3/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+LD_LIBRARY_PATH: /usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib:/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib:/usr/local/gcc-g++-gfortran-9.3.0/lib64:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/lib-small:/usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/lib
  
 --------------------------------------------------------------
  * Compilers, Linkers, Flags, and Libraries *
@@ -177,8 +196,8 @@ Location of the C++ linker:        /usr/local/pgi-pgcc-pgf-20.1/linux86-64/20.1/
 Fortran compiler flags:
 ESMF_F90COMPILER: pgf90
 ESMF_F90COMPILEOPTS: -O -fpic -Mallocatable=03 -lpthread
-ESMF_F90COMPILEPATHS: -I/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default -I/project/esmf/himanshu/pgi/esmf/src/include 
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_37' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_F90COMPILEPATHS: -I/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default -I/project/esmf/himanshu/pgi/esmf/src/include -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_38' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -Mfreeform
 ESMF_F90COMPILEFIXCPP: -Mpreprocess -Mnofreeform
@@ -186,23 +205,23 @@ ESMF_F90COMPILEFIXNOCPP:
 
 Fortran linker flags:
 ESMF_F90LINKOPTS:   -lpthread -Wl,--no-as-needed
-ESMF_F90LINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default  -L/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
-ESMF_F90LINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default  -Wl,-rpath,/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
-ESMF_F90LINKLIBS:  -pgc++libs -ldl
-ESMF_F90ESMFLINKLIBS: -lesmf  -pgc++libs -ldl
+ESMF_F90LINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
+ESMF_F90LINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
+ESMF_F90LINKLIBS:  -pgc++libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_F90ESMFLINKLIBS: -lesmf  -pgc++libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
 
 C++ compiler flags:
 ESMF_CXXCOMPILER: pgc++
 ESMF_CXXCOMPILEOPTS: -std=c++11 -O -DNDEBUG -fpic -lpthread
-ESMF_CXXCOMPILEPATHS:  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_37' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
+ESMF_CXXCOMPILEPATHS:  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_38' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE
 
 C++ linker flags:
 ESMF_CXXLINKOPTS:   -lpthread -Wl,--no-as-needed
-ESMF_CXXLINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default  -L/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
-ESMF_CXXLINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default  -Wl,-rpath,/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
-ESMF_CXXLINKLIBS:  -pgf90libs -ldl
-ESMF_CXXESMFLINKLIBS: -lesmf  -pgf90libs -ldl
+ESMF_CXXLINKPATHS: -L/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -L/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -L/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
+ESMF_CXXLINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/pgi/esmf/lib/libO/Linux.pgi.64.mpiuni.default -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/hdf5-1.12.0-gcc-g++-gfortran-9.3.0/lib -Wl,-rpath,/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/lib -Wl,-rpath,/usr/local/pgi-pgcc-pgf-20.1/linux86-64-llvm/20.1/libso
+ESMF_CXXLINKLIBS:  -pgf90libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
+ESMF_CXXESMFLINKLIBS: -lesmf  -pgf90libs -ldl -lnetcdf -lnetcdff -lnetcdf -lnetcdf
 
 Shared library build:
 ESMF_SL_LIBS_TO_MAKE: libesmf
@@ -218,8 +237,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Mon Nov 16 03:02:53 MST 2020 on i042.unified.ucar.edu
-Machine characteristics: Linux i042.unified.ucar.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Sun Nov 22 02:53:01 MST 2020 on i041.unified.ucar.edu
+Machine characteristics: Linux i041.unified.ucar.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 gmake[2]: Entering directory '/project/esmf/himanshu/pgi/esmf'
@@ -1893,341 +1912,510 @@ gmake[7]: Entering directory '/project/esmf/himanshu/pgi/esmf/src/Infrastructure
 dir=`pwd`; cd /project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
 gmake[8]: Entering directory '/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default'
 gmake[9]: Entering directory '/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default'
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_37"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Conserve.o
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_37"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Dual.o
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_37"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_Glue.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_GToM_Glue.o
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_37"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Mapping.o
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_37"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Rendez_Elem.o
-"/project/esmf/himanshu/pgi/esmf/src/include/ESMCI_TraceMacros.h", line 94:
-          warning: last line of file ends without a newline
-  #endif
-        ^
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conse
-          rve.C", line 428: warning: variable "num_sintd_nodes" was declared
-          but never referenced
-      int num_sintd_nodes;
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Mesh_GToM_Glue.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Redist.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Regrid_Glue.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Rendez_Elem.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Gl
+          ue.C", line 589: warning: variable "buf" was declared but never
+          referenced
+     char buf[512];
           ^
 
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conse
-          rve.C", line 429: warning: variable "sintd_coords" was declared but
-          never referenced
-      double sintd_coords[MAX_NUM_POLY_COORDS_3D];
-             ^
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conse
-          rve.C", line 767: warning: variable "src_elem_area2" is used before
-          its value is set
-        *src_elem_area=*src_elem_area+src_elem_area2;
-                                      ^
-
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_37"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Rendez_EtoP.o
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.
-          C", line 1065: warning: variable "localrc" was declared but never
-          referenced
-    int localrc;
-        ^
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.
-          C", line 1411: warning: variable "mpi_comm" was set but never used
-      MPI_Comm mpi_comm;
-               ^
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_
-          Glue.C", line 180: warning: integer conversion resulted in a change
-          of sign
-        int elem_gid=GTOM_BAD_ID;
-                     ^
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_
-          Glue.C", line 309: warning: variable "nonde_index" was declared but
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Gl
+          ue.C", line 1423: warning: variable "nonde_index" was declared but
           never referenced
         int nonde_index[2];
             ^
 
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_
-          Glue.C", line 642: warning: variable "index" was set but never used
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Gl
+          ue.C", line 1857: warning: integer conversion resulted in a change of
+          sign
+      int proc=BAD_PROC;
+               ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Gl
+          ue.C", line 2160: warning: variable "index" was set but never used
          int index[2];
              ^
 
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_
-          Glue.C", line 697: warning: variable "index" was set but never used
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Gl
+          ue.C", line 2219: warning: variable "index" was set but never used
      int index[2];
          ^
 
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_
-          Glue.C", line 698: warning: variable "nonde_index" was declared but
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Gl
+          ue.C", line 2220: warning: variable "nonde_index" was declared but
           never referenced
      int nonde_index[2];
          ^
 
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_
-          Glue.C", line 752: warning: variable "index" was set but never used
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Gl
+          ue.C", line 2273: warning: variable "index" was set but never used
      int index[2];
          ^
 
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_
-          Glue.C", line 753: warning: variable "nonde_index" was declared but
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Gl
+          ue.C", line 2274: warning: variable "nonde_index" was declared but
           never referenced
      int nonde_index[2];
          ^
 
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_
-          Glue.C", line 885: warning: last line of file ends without a newline
-  } // namespace
-                ^
-
-"/project/esmf/himanshu/pgi/esmf/src/include/json.hpp", line 14370: warning:
-          pointless comparison of unsigned integer with zero
-          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
-                                                                                               ^
-          detected during:
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
-                      (NumberType) [with
-                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
-                      std::string, bool, int64_t, uint64_t, double,
-                      std::allocator, nlohmann::adl_serializer>,
-                      NumberType=uint64_t, <unnamed>=0]" at line 14005
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump(const
-                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
-                      [with BasicJsonType=nlohmann::basic_json<std::map,
-                      std::vector, std::string, bool, int64_t, uint64_t,
-                      double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 16570
-            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
-                      StringType, BooleanType, NumberIntegerType,
-                      NumberUnsignedType, NumberFloatType, AllocatorType,
-                      JSONSerializer>::string_t
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::dump(int, char, bool,
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::error_handler_t) const [with
-                      ObjectType=std::map, ArrayType=std::vector,
-                      StringType=std::string, BooleanType=bool,
-                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
-                      NumberFloatType=double, AllocatorType=std::allocator,
-                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
-
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_37"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Search_EtoE.o
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mappi
-          ng.C", line 878: warning: statement is unreachable
-    return false;
-    ^
-
-"/project/esmf/himanshu/pgi/esmf/src/include/json.hpp", line 14370: warning:
-          pointless comparison of unsigned integer with zero
-          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
-                                                                                               ^
-          detected during:
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
-                      (NumberType) [with
-                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
-                      std::string, bool, int64_t, uint64_t, double,
-                      std::allocator, nlohmann::adl_serializer>,
-                      NumberType=uint64_t, <unnamed>=0]" at line 14005
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump(const
-                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
-                      [with BasicJsonType=nlohmann::basic_json<std::map,
-                      std::vector, std::string, bool, int64_t, uint64_t,
-                      double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 16570
-            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
-                      StringType, BooleanType, NumberIntegerType,
-                      NumberUnsignedType, NumberFloatType, AllocatorType,
-                      JSONSerializer>::string_t
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::dump(int, char, bool,
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::error_handler_t) const [with
-                      ObjectType=std::map, ArrayType=std::vector,
-                      StringType=std::string, BooleanType=bool,
-                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
-                      NumberFloatType=double, AllocatorType=std::allocator,
-                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mappi
-          ng.C", line 890: warning: variable "ndof" was declared but never
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Gl
+          ue.C", line 2430: warning: variable "rc" was declared but never
           referenced
-    int pdim=2, sdim=2, ndof=2;
-                        ^
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conse
-          rve.C", line 52: warning: variable "version" was declared but never
-          referenced
-  static const char *const version = "$Id$";
-                           ^
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conse
-          rve.C", line 63: warning: variable "debug" was declared but never
-          referenced
-  static bool debug=false;
-              ^
-
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_37"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Search_EtoP.o
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.
-          C", line 57: warning: variable "version" was declared but never
-          referenced
-  static const char *const version = "$Id: ESMCI_MeshDual.C,v 1.23 2012/01/06 20:17:51 svasquez Exp $";
-                           ^
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rende
-          z_Elem.C", line 260: warning: variable "rc" was set but never used
-    int rc, localrc;
+    int rc;
         ^
 
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mappi
-          ng.C", line 317: warning: statement is unreachable
-      if (is_outside_hex_sph3D_xyz(mdata, point)) {
-      ^
-          detected during instantiation of "bool
-                    ESMCI::MB_POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM,
-                    PARAMETRIC_DIM>::is_in_cell(const double *, const double *,
-                    double *, double *) const [with
-                    SFUNC_TYPE=ESMCI::quad_shape_func,
-                    MPTRAITS=ESMCI::MBTraits<double, double>, SPATIAL_DIM=2,
-                    PARAMETRIC_DIM=2]" at line 652
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Gl
+          ue.C", line 2525: warning: variable "rc" was declared but never
+          referenced
+      int rc;
+          ^
 
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mappi
-          ng.C", line 283: warning: statement is unreachable
-    return false;
-    ^
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_ShapeFunc.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_ShapeFunc.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 205: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
 
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mappi
-          ng.C", line 317: warning: statement is unreachable
-      if (is_outside_hex_sph3D_xyz(mdata, point)) {
-      ^
-          detected during instantiation of "bool
-                    ESMCI::MB_POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM,
-                    PARAMETRIC_DIM>::is_in_cell(const double *, const double *,
-                    double *, double *) const [with
-                    SFUNC_TYPE=ESMCI::tri_shape_func,
-                    MPTRAITS=ESMCI::MBTraits<double, double>, SPATIAL_DIM=2,
-                    PARAMETRIC_DIM=2]" at line 648
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 260: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
 
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mappi
-          ng.C", line 317: warning: statement is unreachable
-      if (is_outside_hex_sph3D_xyz(mdata, point)) {
-      ^
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 358: warning: variable "localrc" was declared but never
+          referenced
+    int merr,localrc;
+             ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 461: warning: variable "localrc" was declared but never
+          referenced
+      int localrc, merr;
+          ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 725: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 739: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 754: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 771: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 789: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 807: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 914: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 953: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/include/json.hpp", line 14370: warning:
+          pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
           detected during:
-            instantiation of "bool ESMCI::MB_POLY_Mapping<SFUNC_TYPE, MPTRAITS,
-                      SPATIAL_DIM, PARAMETRIC_DIM>::is_in_cell(const double *,
-                      const double *, double *, double *) const [with
-                      SFUNC_TYPE=ESMCI::quad9_shape_func,
-                      MPTRAITS=ESMCI::MBTraits<double, double>, SPATIAL_DIM=2,
-                      PARAMETRIC_DIM=2]" at line 153 of
-                      "/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/
-                      include/ESMCI_MBMesh_Mapping.h"
-            implicit generation of "ESMCI::MB_POLY_Mapping<SFUNC_TYPE,
-                      MPTRAITS, SPATIAL_DIM,
-                      PARAMETRIC_DIM>::~MB_POLY_Mapping() [with
-                      SFUNC_TYPE=ESMCI::quad9_shape_func,
-                      MPTRAITS=ESMCI::MBTraits<double, double>, SPATIAL_DIM=2,
-                      PARAMETRIC_DIM=2]" at line 153 of
-                      "/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/
-                      include/ESMCI_MBMesh_Mapping.h"
-            instantiation of class "ESMCI::MB_POLY_Mapping<SFUNC_TYPE,
-                      MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM> [with
-                      SFUNC_TYPE=ESMCI::quad9_shape_func,
-                      MPTRAITS=ESMCI::MBTraits<double, double>, SPATIAL_DIM=2,
-                      PARAMETRIC_DIM=2]" at line 153 of
-                      "/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/
-                      include/ESMCI_MBMesh_Mapping.h"
-            instantiation of "ESMCI::MB_POLY_Mapping<SFUNC_TYPE, MPTRAITS,
-                      SPATIAL_DIM, PARAMETRIC_DIM>::MB_POLY_Mapping(const
-                      std::string &) [with SFUNC_TYPE=ESMCI::quad9_shape_func,
-                      MPTRAITS=ESMCI::MBTraits<double, double>, SPATIAL_DIM=2,
-                      PARAMETRIC_DIM=2]" at line 41
-            instantiation of "ESMCI::MB_POLY_Mapping<SFUNC_TYPE, MPTRAITS,
-                      SPATIAL_DIM, PARAMETRIC_DIM>
-                      *ESMCI::MB_POLY_Mapping<SFUNC_TYPE, MPTRAITS,
-                      SPATIAL_DIM, PARAMETRIC_DIM>::instance() [with
-                      SFUNC_TYPE=ESMCI::quad9_shape_func,
-                      MPTRAITS=ESMCI::MBTraits<double, double>, SPATIAL_DIM=2,
-                      PARAMETRIC_DIM=2]" at line 624
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mappi
-          ng.C", line 317: warning: statement is unreachable
-      if (is_outside_hex_sph3D_xyz(mdata, point)) {
-      ^
-          detected during instantiation of "bool
-                    ESMCI::MB_POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM,
-                    PARAMETRIC_DIM>::is_in_cell(const double *, const double *,
-                    double *, double *) const [with
-                    SFUNC_TYPE=ESMCI::tet_shape_func,
-                    MPTRAITS=ESMCI::MBTraits<double, double>, SPATIAL_DIM=3,
-                    PARAMETRIC_DIM=3]" at line 659
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1114: warning: variable "localrc" was declared but never
+          referenced
+    int merr,localrc;
+             ^
 
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_37"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_ShapeFunc.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_ShapeFunc.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1135: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1151: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1168: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1186: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1204: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1222: warning: variable "localrc" was declared but never
+          referenced
+    int merr,localrc;
+             ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1236: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1251: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1266: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1284: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1301: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1320: warning: variable "localrc" was declared but never
+          referenced
+    int merr,localrc;
+             ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1344: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1375: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1416: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1428: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1443: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1457: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1472: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1487: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1502: warning: variable "localrc" was declared but never
+          referenced
+    int localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1833: warning: variable "merr" was declared but never referenced
+    int merr,localrc;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 1998: warning: variable "localrc" was declared but never
+          referenced
+    int merr, localrc;
+              ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C",
+          line 2046: warning: variable "localrc" was declared but never
+          referenced
+    int merr, localrc;
+              ^
+
 "/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Shape
           Func.C", line 21: warning: variable "version" was declared but never
           referenced
   static const char *const version = "$Id$";
                            ^
 
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Util.o
+"/project/esmf/himanshu/pgi/esmf/src/include/json.hpp", line 14370: warning:
+          pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
 "/project/esmf/himanshu/pgi/esmf/src/include/ESMCI_TraceMacros.h", line 94:
           warning: last line of file ends without a newline
   #endif
         ^
 
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redis
+          t.C", line 123: warning: variable "mpi_comm" was set but never used
+    MPI_Comm mpi_comm;
+             ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redis
+          t.C", line 528: warning: variable "merr" was declared but never
+          referenced
+      int merr;
+          ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redis
+          t.C", line 708: warning: expression has no effect
+      for (pb; pb !=  pe; ++pb) {
+           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redis
+          t.C", line 682: warning: variable "merr" was declared but never
+          referenced
+      int merr;
+          ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redis
+          t.C", line 1382: warning: missing return statement at end of non-void
+          function "ESMCI::_get_entity_type"
+     }
+     ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redis
+          t.C", line 1569: warning: variable "merr" was declared but never
+          referenced
+    int localrc, merr;
+                 ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redis
+          t.C", line 2150: warning: variable "merr" was declared but never
+          referenced
+      int localrc, merr;
+                   ^
+
+"/project/esmf/himanshu/pgi/esmf/src/include/ESMCI_TraceMacros.h", line 94:
+          warning: last line of file ends without a newline
+  #endif
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regri
+          d_Glue.C", line 161: warning: variable "ignoreDegenerate" was set but
+          never used
+      bool ignoreDegenerate=false;
+           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regri
+          d_Glue.C", line 167: warning: variable "concave" was declared but
+          never referenced
+      bool concave=false;
+           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regri
+          d_Glue.C", line 168: warning: variable "clockwise" was declared but
+          never referenced
+      bool clockwise=false;
+           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regri
+          d_Glue.C", line 169: warning: variable "degenerate" was declared but
+          never referenced
+      bool degenerate=false;
+           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regri
+          d_Glue.C", line 134: warning: variable "srcarray" was declared but
+          never referenced
+    ESMCI::Array &srcarray = **arraysrcpp;
+                  ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regri
+          d_Glue.C", line 135: warning: variable "dstarray" was declared but
+          never referenced
+    ESMCI::Array &dstarray = **arraydstpp;
+                  ^
+
 "/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rende
-          z_EtoP.C", line 322: warning: variable "rc" was set but never used
+          z_Elem.C", line 260: warning: variable "rc" was set but never used
     int rc, localrc;
         ^
 
-pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include   -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_37"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Util.o
+"/project/esmf/himanshu/pgi/esmf/src/include/json.hpp", line 14370: warning:
+          pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redis
+          t.C", line 48: warning: variable "version" was declared but never
+          referenced
+   static const char *const version = "$Id$";
+                            ^
+
 "/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rende
           z_Elem.C", line 39: warning: variable "version" was declared but
           never referenced
    static const char *const version = "$Id$";
                             ^
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Searc
-          h_EtoE.C", line 212: warning: variable "moab_meshA" was declared but
-          never referenced
-    Interface *moab_meshA=mbmAp->mesh;
-               ^
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Searc
-          h_EtoE.C", line 213: warning: variable "moab_meshB" was declared but
-          never referenced
-    Interface *moab_meshB=mbmBp->mesh;
-               ^
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rende
-          z_EtoP.C", line 49: warning: variable "version" was declared but
-          never referenced
-   static const char *const version = "$Id$";
-                            ^
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Searc
-          h_EtoP.C", line 547: warning: variable "merr" was declared but never
-          referenced
-    int merr;
-        ^
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Searc
-          h_EtoE.C", line 50: warning: variable "version" was declared but
-          never referenced
-  static const char *const version = "$Id$";
-                           ^
-
-"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Searc
-          h_EtoP.C", line 72: warning: variable "version" was declared but
-          never referenced
-  static const char *const version = "$Id$";
-                           ^
 
 "/project/esmf/himanshu/pgi/esmf/src/include/json.hpp", line 14370: warning:
           pointless comparison of unsigned integer with zero
@@ -2272,34 +2460,403 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esm
   static const char *const version = "$Id$";
                            ^
 
+gmake[9]: Leaving directory '/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default'
+tree_lib in: /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy
+gmake[8]: Entering directory '/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy'
+dir=`pwd`; cd /project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[9]: Entering directory '/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default'
+gmake[10]: Entering directory '/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default'
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Attr.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Attr.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_BBox.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_CommReg.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Attr.
+          C", line 18: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_CommRel.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Context.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Context.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_DDir.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_DDir.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommR
+          el.C", line 1247: warning: pointless comparison of unsigned integer
+          with zero
+      if ((orig_proc < 0) || (orig_proc > num_procs-1)) {
+                     ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommR
+          el.C", line 1273: warning: pointless comparison of unsigned integer
+          with zero
+      if ((orig_proc < 0) || (orig_proc > num_procs-1)) {
+                     ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.
+          C", line 29: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Exception.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Exception.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommR
+          el.C", line 32: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Conte
+          xt.C", line 21: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Excep
+          tion.C", line 17: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_FieldReg.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommR
+          eg.C", line 22: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_DDir.
+          C", line 60: warning: integer conversion resulted in a change of sign
+    int lmin = std::numeric_limits<UInt>::max(),
+               ^
+          detected during instantiation of "void
+                    ESMCI::DDir<HASH>::Create(ESMCI::UInt, const ESMCI::UInt *,
+                    const ESMCI::UInt *) [with HASH=ESMCI::DDir_lin_hash]" at
+                    line 43
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_DDir.
+          C", line 151: warning: variable "csize" was set but never used
+    int csize, rank;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_DDir.
+          C", line 26: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_GeomRendezvous.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_GlobalIds.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_GlobalIds.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Field
+          Reg.C", line 22: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_HAdapt.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_IOField.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_IOField.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomR
+          endezvous.C", line 380: warning: variable "id" was declared but never
+          referenced
+      int id;
+          ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Globa
+          lIds.C", line 23: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Kernel.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_Kernel.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MasterElement.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomR
+          endezvous.C", line 33: warning: variable "version" was declared but
+          never referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_IOFie
+          ld.C", line 17: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Kerne
+          l.C", line 284: warning: variable "done" was declared but never
+          referenced
+    bool done = false;
+         ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Kerne
+          l.C", line 22: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdap
+          t.C", line 29: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdap
+          t.C", line 771: warning: function "ESMCI::OldProlongField" was
+          declared but never referenced
+  static void OldProlongField(std::vector<MeshObj*> &elems, MEField<> &coord) {
+              ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Maste
+          rElement.C", line 27: warning: variable "version" was declared but
+          never referenced
+  static const char *const version = "$Id$";
+                           ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MCoord.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MCoord.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEFamily.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MEFamily.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MEField.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MEImprint.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshDB.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshDB.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshExodus.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshField.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshField.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshGen.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MCoor
+          d.C", line 18: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshllField.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshllField.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEFam
+          ily.C", line 21: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshMerge.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshD
+          B.C", line 34: warning: variable "ESMCI::version" was declared but
+          never referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEFie
+          ld.C", line 193: warning: variable "dof_count" was declared but never
+          referenced
+    UInt dof_count;
+         ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEFie
+          ld.C", line 272: warning: variable "idx" was declared but never
+          referenced
+    UInt idx = offset;
+         ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshNC.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshF
+          ield.C", line 23: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_Meshl
+          lField.C", line 17: warning: variable "version" was declared but
+          never referenced
+  static const char *const version = "$Id$";
+                           ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObj.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshObj.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImp
+          rint.C", line 23: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEFie
+          ld.C", line 22: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshE
+          xodus.C", line 39: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshObjConn.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshE
+          xodus.C", line 44: warning: function "ESMCI::share_parametric_dim"
+          was declared but never referenced
+  static UInt share_parametric_dim(UInt pdim) {
+              ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjPack.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshObjPack.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshM
+          erge.C", line 190: warning: variable "num_pnts" was declared but
+          never referenced
+    int num_pnts;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshG
+          en.C", line 25: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshM
+          erge.C", line 225: warning: variable "num_components" was declared
+          but never referenced
+    unsigned int num_components = 0;
+                 ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshM
+          erge.C", line 394: warning: variable "num_pnts" was declared but
+          never referenced
+    int num_pnts;
+        ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshM
+          erge.C", line 858: warning: variable "subject_area" was declared but
+          never referenced
+              double subject_area = 0.;    
+                     ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshM
+          erge.C", line 859: warning: variable "cd_sph" was declared but never
+          referenced
+              double *cd_sph, *clip_cd_sph;
+                      ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshM
+          erge.C", line 859: warning: variable "clip_cd_sph" was declared but
+          never referenced
+              double *cd_sph, *clip_cd_sph;
+                               ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshM
+          erge.C", line 1538: warning: variable "cd_sph" was declared but never
+          referenced
+              double *cd_sph, *clip_cd_sph;
+                      ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshM
+          erge.C", line 1538: warning: variable "clip_cd_sph" was declared but
+          never referenced
+              double *cd_sph, *clip_cd_sph;
+                               ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshO
+          bj.C", line 21: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshN
+          C.C", line 888: warning: statement is unreachable
+    return true;
+    ^
+
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjTopo.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshObjTopo.o
+pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../include -I/project/esmf/himanshu/pgi/esmf/build_config/Linux.pgi.default -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure -I/project/esmf/himanshu/pgi/esmf/src/Superstructure -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/pthread  -I/project/esmf/himanshu/pgi/esmf/src/include  -I/usr/local/netcdf-c-4.7.4-f-4.5.2-pgi-pgcc-pghf-20.1/include -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/pgi/esmf/src/prologue/yaml-cpp/include -DMPICH_IGNORE_CXX_SEEK -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_38"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/pgi/esmf -D__SDIR__='"src/Infrastructure/Mesh/src/Legacy"' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_PGIVERSION_MAJOR=20 -DESMF_PGIVERSION_MINOR=1 -DESMF_PGIVERSION_PATCH=0 -DESMF_NO_F2018ASSUMEDTYPE -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/.. -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/parallel -I/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/../Moab/LocalDiscretization /project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPartition.C -o /project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshPartition.o
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshN
+          C.C", line 40: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshM
+          erge.C", line 48: warning: variable "version" was declared but never
+          referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshO
+          bjPack.C", line 19: warning: variable "version" was declared but
+          never referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshO
+          bjTopo.C", line 20: warning: variable "version" was declared but
+          never referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/usr/include/c++/4.8.5/array", line 49: catastrophic error: error while
+          writing intermediate language (5) file: No space left on device
+        typedef _Tp _Type[_Nm];
+                         ^
+
+"/usr/include/c++/4.8.5/array", line 49: catastrophic error: error while
+          writing intermediate language (5) file: No space left on device
+        typedef _Tp _Type[_Nm];
+                         ^
+
+"/usr/include/c++/4.8.5/functional", line 1812: catastrophic error: error while
+          writing intermediate language (5) file: No space left on device
+      char _M_pod_data[sizeof(_Nocopy_types)];
+                      ^
+
 "/usr/include/c++/4.8.5/array", line 49: catastrophic error: error while
           writing intermediate language (4) file: No space left on device
         typedef _Tp _Type[_Nm];
                          ^
 
-PGC++-F-0010-File write error occurred (data init file) (/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C)
-PGC++/x86-64 Linux 20.1-0: compilation aborted
-PGC++-F-0010-File write error occurred (data init file) (/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C)
-PGC++/x86-64 Linux 20.1-0: compilation aborted
-PGC++-F-0010-File write error occurred (data init file) (/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_Glue.C)
-PGC++/x86-64 Linux 20.1-0: compilation aborted
-/project/esmf/himanshu/pgi/esmf/build/common.mk:3888: recipe for target '/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Mapping.o' failed
-gmake[9]: *** [/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Mapping.o] Error 2
-gmake[9]: *** Waiting for unfinished jobs....
-/project/esmf/himanshu/pgi/esmf/build/common.mk:3888: recipe for target '/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Rendez_Elem.o' failed
-gmake[9]: *** [/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Rendez_Elem.o] Error 2
-/project/esmf/himanshu/pgi/esmf/build/common.mk:3888: recipe for target '/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_GToM_Glue.o' failed
-gmake[9]: *** [/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_GToM_Glue.o] Error 2
-1 catastrophic error detected in the compilation of "/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C".
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/include/Legacy/ESMCI_C
+          ontext.h", line 69: catastrophic error: error while writing
+          intermediate language (4) file: No space left on device
+    UChar bits[NUM_CONTEXT_CHARS];
+              ^
+
+1 catastrophic error detected in the compilation of "/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjTopo.C".
 Compilation terminated.
-/project/esmf/himanshu/pgi/esmf/build/common.mk:3888: recipe for target '/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Util.o' failed
-gmake[9]: *** [/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MBMesh_Util.o] Error 2
-gmake[9]: Leaving directory '/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default'
+1 catastrophic error detected in the compilation of "/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjPack.C".
+Compilation terminated.
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshO
+          bjConn.C", line 26: warning: variable "version" was declared but
+          never referenced
+  static const char *const version = "$Id$";
+                           ^
+
+1 catastrophic error detected in the compilation of "/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C".
+Compilation terminated.
+1 catastrophic error detected in the compilation of "/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C".
+Compilation terminated.
+"/usr/include/c++/4.8.5/array", line 49: catastrophic error: error while
+          writing intermediate language (4) file: No space left on device
+        typedef _Tp _Type[_Nm];
+                         ^
+
+/project/esmf/himanshu/pgi/esmf/build/common.mk:3888: recipe for target '/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshMerge.o' failed
+gmake[10]: *** [/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshMerge.o] Error 2
+gmake[10]: *** Waiting for unfinished jobs....
+/project/esmf/himanshu/pgi/esmf/build/common.mk:3888: recipe for target '/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshNC.o' failed
+gmake[10]: *** [/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshNC.o] Error 2
+/project/esmf/himanshu/pgi/esmf/build/common.mk:3888: recipe for target '/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshObjPack.o' failed
+gmake[10]: *** [/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshObjPack.o] Error 2
+/project/esmf/himanshu/pgi/esmf/build/common.mk:3888: recipe for target '/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshObjTopo.o' failed
+gmake[10]: *** [/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshObjTopo.o] Error 2
+1 catastrophic error detected in the compilation of "/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C".
+Compilation terminated.
+/project/esmf/himanshu/pgi/esmf/build/common.mk:3888: recipe for target '/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshObjConn.o' failed
+gmake[10]: *** [/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshObjConn.o] Error 2
+"/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshP
+          artition.C", line 36: warning: variable "version" was declared but
+          never referenced
+  static const char *const version = "$Id$";
+                           ^
+
+1 catastrophic error detected in the compilation of "/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C".
+Compilation terminated.
+/project/esmf/himanshu/pgi/esmf/build/common.mk:3888: recipe for target '/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshGen.o' failed
+gmake[10]: *** [/project/esmf/himanshu/pgi/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_MeshGen.o] Error 2
+gmake[10]: *** wait: No child processes.  Stop.
 /project/esmf/himanshu/pgi/esmf/build/common.mk:2171: recipe for target 'esmflib' failed
-gmake[8]: *** [esmflib] Error 2
-gmake[8]: Leaving directory '/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default'
+gmake[9]: *** [esmflib] Error 2
+gmake[9]: Leaving directory '/project/esmf/himanshu/pgi/esmf/mod/modO/Linux.pgi.64.mpiuni.default'
 /project/esmf/himanshu/pgi/esmf/build/common.mk:2167: recipe for target 'tree_lib' failed
-gmake[7]: *** [tree_lib] Error 2
+gmake[8]: *** [tree_lib] Error 2
+gmake[8]: Leaving directory '/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src/Legacy'
+/project/esmf/himanshu/pgi/esmf/build/common.mk:3816: recipe for target 'tree' failed
+gmake[7]: *** [tree] Error 1
 gmake[7]: Leaving directory '/project/esmf/himanshu/pgi/esmf/src/Infrastructure/Mesh/src'
 /project/esmf/himanshu/pgi/esmf/build/common.mk:3816: recipe for target 'tree' failed
 gmake[6]: *** [tree] Error 1
@@ -2321,4 +2878,4 @@ gmake[1]: *** [lib] Error 2
 gmake[1]: Leaving directory '/project/esmf/himanshu/pgi/esmf'
 /project/esmf/himanshu/pgi/esmf/build/common.mk:2077: recipe for target 'reqfile_libesmf' failed
 gmake: *** [reqfile_libesmf] Error 2
-Mon Nov 16 08:28:49 MST 2020
+Sun Nov 22 08:16:28 MST 2020
