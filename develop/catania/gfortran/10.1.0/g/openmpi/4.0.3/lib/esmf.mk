@@ -31,7 +31,7 @@ ESMF_LIBSDIR=/project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/lib/l
 ESMF_F90COMPILER=/project/esmf/himanshu/GCC/Homebrew/10.1.0/openmpi/4.0.3/bin/mpif90
 ESMF_F90LINKER=/project/esmf/himanshu/GCC/Homebrew/10.1.0/openmpi/4.0.3/bin/mpif90
 
-ESMF_F90COMPILEOPTS=-fallow-argument-mismatch -fallow-argument-mismatch -fallow-invalid-boz -g -Wall -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fbounds-check   -m64 -mcmodel=small -ffree-line-length-none  -fopenmp
+ESMF_F90COMPILEOPTS=-fallow-argument-mismatch -fallow-invalid-boz -fallow-argument-mismatch -fallow-invalid-boz -g -Wall -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fbounds-check   -m64 -mcmodel=small -ffree-line-length-none  -fopenmp
 ESMF_F90COMPILEPATHS=-I/project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/mod/modg/Darwin.gfortran.64.openmpi.default -I/project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/include -I/project/esmf/himanshu/GCC/Homebrew/10.1.0/netcdf/4.7.4/include -I/project/esmf/himanshu/GCC/Homebrew/10.1.0/netcdf/4.7.4/include
 ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_38' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_PTHREADS -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Darwin=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf
 ESMF_F90COMPILEFREECPP=
@@ -50,7 +50,7 @@ ESMF_F90ESMFLINKLIBS=-lesmf   -lstdc++ -lnetcdf -lnetcdff
 ESMF_CXXCOMPILER=/project/esmf/himanshu/GCC/Homebrew/10.1.0/openmpi/4.0.3/bin/mpicxx
 ESMF_CXXLINKER=/project/esmf/himanshu/GCC/Homebrew/10.1.0/openmpi/4.0.3/bin/mpicxx
 
-ESMF_CXXCOMPILEOPTS=-fallow-argument-mismatch -fallow-argument-mismatch -fallow-invalid-boz -std=c++11 -g -Wall -Wextra -Wno-unused  -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small  -fopenmp
+ESMF_CXXCOMPILEOPTS=-fallow-argument-mismatch -std=c++11 -g -Wall -Wextra -Wno-unused  -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small  -fopenmp
 ESMF_CXXCOMPILEPATHS= -I/project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/include  -I/project/esmf/himanshu/GCC/Homebrew/10.1.0/netcdf/4.7.4/include -I/project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/prologue/yaml-cpp/include
 ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_38' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_PTHREADS -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Darwin=1 -DESMF_COMM=openmpi -DESMF_DIR=/project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_SIGUSR2
 
