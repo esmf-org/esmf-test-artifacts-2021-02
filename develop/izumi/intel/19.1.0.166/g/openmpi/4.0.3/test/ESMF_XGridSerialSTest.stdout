@@ -7,8 +7,8 @@
  --------------------------------------- 
  Start of  System Test ESMF_XGridSerialSTest
  --------------------------------------- 
- --------------------------------------- 
  Start of  System Test ESMF_XGridSerialSTest
+ --------------------------------------- 
  --------------------------------------- 
 --------------------------------------------------------------------------
 By default, for Open MPI 4.0 and later, infiniband ports on a device
@@ -54,19 +54,19 @@ WARNING: There was an error initializing an OpenFabrics device.
  Atmosphere Register starting
  Registered Initialize, Run, and Finalize routines
  Atmosphere Register returning
+ atmos SetServices finished, rc=            0
+ land SetVM finished, rc=            0
  Atmosphere Register starting
  Registered Initialize, Run, and Finalize routines
  Atmosphere Register returning
  Atmosphere Register starting
+ atmos SetServices finished, rc=            0
  Registered Initialize, Run, and Finalize routines
  Atmosphere Register returning
- atmos SetServices finished, rc=            0
- atmos SetServices finished, rc=            0
  land SetVM finished, rc=            0
  atmos SetServices finished, rc=            0
- land SetVM finished, rc=            0
- land SetVM finished, rc=            0
  Atmosphere Register starting
+ land SetVM finished, rc=            0
  Registered Initialize, Run, and Finalize routines
  Atmosphere Register returning
  atmos SetServices finished, rc=            0
@@ -75,19 +75,19 @@ WARNING: There was an error initializing an OpenFabrics device.
  Registered Initialize, Run, and Finalize routines
  Land Register returning
  Land Register starting
- Registered Initialize, Run, and Finalize routines
- Land Register returning
- Land Register starting
- Registered Initialize, Run, and Finalize routines
- Land Register returning
- land SetServices finished, rc=            0
- land SetServices finished, rc=            0
- ocean SetVM finished, rc=            0
  land SetServices finished, rc=            0
  ocean SetVM finished, rc=            0
  Land Register starting
  Registered Initialize, Run, and Finalize routines
  Land Register returning
+ Registered Initialize, Run, and Finalize routines
+ Land Register returning
+ land SetServices finished, rc=            0
+ Land Register starting
+ Registered Initialize, Run, and Finalize routines
+ land SetServices finished, rc=            0
+ ocean SetVM finished, rc=            0
+ Land Register returning
  ocean SetVM finished, rc=            0
  land SetServices finished, rc=            0
  ocean SetVM finished, rc=            0
@@ -95,9 +95,14 @@ WARNING: There was an error initializing an OpenFabrics device.
  Registered Initialize, Run, and Finalize routines
  Ocean Register returning
  Ocean Register starting
+ ocean SetServices finished, rc=            0
  Registered Initialize, Run, and Finalize routines
  Ocean Register returning
  ocean SetServices finished, rc=            0
+ Ocean Register starting
+ Registered Initialize, Run, and Finalize routines
+ Ocean Register returning
+ Cpl SetVM finished, rc=            0
  Ocean Register starting
  Registered Initialize, Run, and Finalize routines
  Ocean Register returning
@@ -105,11 +110,6 @@ WARNING: There was an error initializing an OpenFabrics device.
  Cpl SetVM finished, rc=            0
  ocean SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
- Ocean Register starting
- Registered Initialize, Run, and Finalize routines
- Ocean Register returning
- ocean SetServices finished, rc=            0
- Cpl SetVM finished, rc=            0
  Cpl SetVM finished, rc=            0
  User Coupler Register starting
  Registered Initialize, Run, and Finalize routines
@@ -117,30 +117,22 @@ WARNING: There was an error initializing an OpenFabrics device.
  Cpl SetServices finished, rc=            0
  User Coupler Register starting
  Registered Initialize, Run, and Finalize routines
- User Coupler Register returning
- Cpl SetServices finished, rc=            0
  User Coupler Register starting
  Registered Initialize, Run, and Finalize routines
  User Coupler Register returning
- Cpl SetServices finished, rc=            0
  User Coupler Register starting
  Registered Initialize, Run, and Finalize routines
  User Coupler Register returning
+ User Coupler Register returning
  Cpl SetServices finished, rc=            0
- Land Init starting, localPet =           3
+ Cpl SetServices finished, rc=            0
  Land Init starting, localPet =           0
+ Cpl SetServices finished, rc=            0
  Land Init starting, localPet =           1
  Land Init starting, localPet =           2
- ESMF_StatePrint: (pet 3):
-  State name: land_export
-     status: Export State, object count: 1
-     reconcile needed: T
+ Land Init starting, localPet =           3
  ESMF_StatePrint: (pet 0):
   State name: land_export
- Base name    = land_export
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
      status: Export State, object count: 1
      reconcile needed: T
  Base name    = land_export
@@ -148,68 +140,78 @@ WARNING: There was an error initializing an OpenFabrics device.
  Proxy        = no
  Root Info (Attributes):
 {}     object: 1,name: F_lnd
-            type: Field
- land Init returning
- Land Initialize finished, rc =           0
-{} Ocean Init starting, localPet =           3
-     object: 1,name: F_lnd
             type: Field
  land Init returning
  Land Initialize finished, rc =           0
  Ocean Init starting, localPet =           0
+ ESMF_StatePrint: (pet 2):
+  State name: land_export
  ESMF_StatePrint: (pet 1):
   State name: land_export
      status: Export State, object count: 1
      reconcile needed: T
- Base name    = land_export
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}     object: 1,name: F_lnd
-            type: Field
- land Init returning
- Land Initialize finished, rc =           0
- Ocean Init starting, localPet =           1
- ocean Init returning
- Ocean Initialize finished, rc =           0
- Atmosphere Init starting, localPet =           3
- ESMF_StatePrint: (pet 2):
-  State name: land_export
- ocean Init returning
      status: Export State, object count: 1
      reconcile needed: T
- Ocean Initialize finished, rc =           0
- Atmosphere Init starting, localPet =           0
  Base name    = land_export
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-{}     object: 1,name: F_lnd
+ Base name    = land_export
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}{}     object: 1,name: F_lnd
+            type: Field
+ land Init returning
+ ocean Init returning
+ Land Initialize finished, rc =           0
+ Ocean Initialize finished, rc =           0
+     object: 1,name: F_lnd
             type: Field
  land Init returning
  Land Initialize finished, rc =           0
  Ocean Init starting, localPet =           2
- ocean Init returning
- Ocean Initialize finished, rc =           0
- Atmosphere Init starting, localPet =           1
- Atmos Init returning
- Atmosphere Initialize finished, rc =           0
- User Coupler Init starting, localPet =           3
+ Atmosphere Init starting, localPet =           0
+ Ocean Init starting, localPet =           1
+ ESMF_StatePrint: (pet 3):
+  State name: land_export
+     status: Export State, object count: 1
+     reconcile needed: T
+ Base name    = land_export
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}     object: 1,name: F_lnd
+            type: Field
+ land Init returning
+ Land Initialize finished, rc =           0
+ Ocean Init starting, localPet =           3
  Atmos Init returning
  Atmosphere Initialize finished, rc =           0
  User Coupler Init starting, localPet =           0
- Atmos Init returning
- Atmosphere Initialize finished, rc =           0
- User Coupler Init starting, localPet =           1
  ocean Init returning
  Ocean Initialize finished, rc =           0
  Atmosphere Init starting, localPet =           2
+ ocean Init returning
+ Ocean Initialize finished, rc =           0
+ Atmosphere Init starting, localPet =           1
+ ocean Init returning
+ Ocean Initialize finished, rc =           0
  Atmos Init returning
  Atmosphere Initialize finished, rc =           0
  User Coupler Init starting, localPet =           2
-[i041.unified.ucar.edu:217103] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
-[i041.unified.ucar.edu:217103] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-[i041.unified.ucar.edu:217103] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+ Atmosphere Init starting, localPet =           3
+ Atmos Init returning
+ Atmosphere Initialize finished, rc =           0
+ User Coupler Init starting, localPet =           1
+ Atmos Init returning
+ Atmosphere Initialize finished, rc =           0
+ User Coupler Init starting, localPet =           3
+[i041.unified.ucar.edu:15223] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[i041.unified.ucar.edu:15223] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[i041.unified.ucar.edu:15223] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+ User Coupler Init returning
+ Coupler Initialize finished, rc =           0
  User Coupler Init returning
  Coupler Initialize finished, rc =           0
  Land Run starting
@@ -219,8 +221,6 @@ WARNING: There was an error initializing an OpenFabrics device.
  User Coupler Init returning
  Coupler Initialize finished, rc =           0
  Land Run starting
- User Coupler Init returning
- Coupler Initialize finished, rc =           0
  Land Run starting
  Land Run returning
  Land Run returned, rc =           0
@@ -236,27 +236,24 @@ WARNING: There was an error initializing an OpenFabrics device.
  Ocean Run starting
  Ocean Run returning
  Ocean Run returned, rc =           0
+ User Coupler Run starting
+ Ocean Run returning
+ Ocean Run returned, rc =           0
+ User Coupler Run starting
+ Ocean Run returning
+ Ocean Run returned, rc =           0
  Ocean Run returning
  Ocean Run returned, rc =           0
  User Coupler Run starting
  User Coupler Run starting
- Ocean Run returning
- Ocean Run returned, rc =           0
- Ocean Run returning
- Ocean Run returned, rc =           0
- User Coupler Run starting
- User Coupler Run starting
- User Coupler Run returning
- Coupler Run returned, rc =           0
  User Coupler Run returning
  Coupler Run returned, rc =           0
  User Coupler Run returning
  Coupler Run returned, rc =           0
  Atmosphere Run starting
- Atmosphere Run returning
+ User Coupler Run returning
+ Coupler Run returned, rc =           0
  Atmosphere Run starting
- Atmosphere Run returned, rc =           0
- User Coupler Final starting
  Atmosphere Run starting
  Atmosphere Run returning
  Atmosphere Run returned, rc =           0
@@ -270,46 +267,49 @@ WARNING: There was an error initializing an OpenFabrics device.
  Atmosphere Run returning
  Atmosphere Run returned, rc =           0
  User Coupler Final starting
- User Coupler Final returning
- Coupler Finalize finished, rc =           0
+ Atmosphere Run returning
+ Atmosphere Run returned, rc =           0
+ User Coupler Final starting
  User Coupler Final returning
  Coupler Finalize finished, rc =           0
  User Coupler Final returning
  Coupler Finalize finished, rc =           0
  Land Final starting
+ User Coupler Final returning
+ Coupler Finalize finished, rc =           0
  Land Final starting
  User Coupler Final returning
  Coupler Finalize finished, rc =           0
  Land Final starting
+ Land Final returning
+ Land Finalize finished, rc =           0
+ Ocean Final starting
  Land Final starting
  Land Final returning
  Land Finalize finished, rc =           0
  Ocean Final starting
  Land Final returning
  Land Finalize finished, rc =           0
+ Land Final returning
  Ocean Final starting
- Land Final returning
- Land Finalize finished, rc =           0
- Land Final returning
  Land Finalize finished, rc =           0
  Ocean Final starting
- Ocean Final starting
- Ocean Final returning
- Ocean Finalize finished, rc =           0
  Ocean Final returning
  Ocean Finalize finished, rc =           0
  Atmosphere Final starting
  Ocean Final returning
  Ocean Finalize finished, rc =           0
  Atmosphere Final starting
+ Ocean Final returning
+ Ocean Finalize finished, rc =           0
  Atmosphere Final starting
  Ocean Final returning
  Ocean Finalize finished, rc =           0
+ Atmosphere Final starting
  Atmosphere Final returning
  Atmosphere Finalize finished, rc =           0
  Atmosphere Final returning
  Atmosphere Finalize finished, rc =           0
- Atmosphere Final starting
  Atmosphere Final returning
  Atmosphere Finalize finished, rc =           0
  Atmosphere Final returning
@@ -324,8 +324,24 @@ WARNING: There was an error initializing an OpenFabrics device.
                                                                                 
                                                                                 
                      complete.
+ 
+  System Test ESMF_XGridSerialSTest
+  SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
+ 
+ 
+  System Test ESMF_XGridSerialSTest
+  SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
+ 
  ------------------------------------------------------------
  ------------------------------------------------------------
+ Test finished, localPet =            3
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ All Destroy routines done
+  System Test ESMF_XGridSerialSTest                                             
+                                                                                
+                                                                                
+                     complete.
  All Destroy routines done
   System Test ESMF_XGridSerialSTest                                             
                                                                                 
@@ -334,6 +350,8 @@ WARNING: There was an error initializing an OpenFabrics device.
  ------------------------------------------------------------
  ------------------------------------------------------------
  Test finished, localPet =            0
+ ------------------------------------------------------------
+ ------------------------------------------------------------
  
   System Test ESMF_XGridSerialSTest
   SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
@@ -342,36 +360,18 @@ WARNING: There was an error initializing an OpenFabrics device.
   System Test ESMF_XGridSerialSTest
   SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
  
- 
-  System Test ESMF_XGridSerialSTest
-  SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
- 
- 
-  System Test ESMF_XGridSerialSTest
-  SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
- 
- All Destroy routines done
-  System Test ESMF_XGridSerialSTest                                             
-                                                                                
-                                                                                
-                     complete.
- ------------------------------------------------------------
- ------------------------------------------------------------
- Test finished, localPet =            1
- ------------------------------------------------------------
- ------------------------------------------------------------
  ------------------------------------------------------------
  ------------------------------------------------------------
  Test finished, localPet =            2
  ------------------------------------------------------------
  ------------------------------------------------------------
- Test finished, localPet =            3
- ------------------------------------------------------------
- ------------------------------------------------------------
   PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
  ------------------------------------------------------------
  ------------------------------------------------------------
+ Test finished, localPet =            1
+ ------------------------------------------------------------
+ ------------------------------------------------------------
   PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
   PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
   PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
-Fri Nov 27 05:23:54 MST 2020
+Sat Nov 28 05:25:39 MST 2020
