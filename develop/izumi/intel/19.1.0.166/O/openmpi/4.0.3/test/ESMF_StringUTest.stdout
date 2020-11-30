@@ -28,23 +28,20 @@ WARNING: There was an error initializing an OpenFabrics device.
   fstr=0123456789abcdefghijklmnopqrstuvwxyz
  -- leaving f90string2 subroutine
   PASS  Calling f90string2() directly from F90, ESMF_StringUTest.F90, line 76
+ -- entering f90string3 subroutine
+  ints=         102         204         409         819
+  strlen =         120
+  fstr=abcdefghijklmnopqrstuvwxyz0123456789
   Beginning Test, file ESMF_StringUTest.F90, line 46
   NUMBER_OF_PROCESSORS           2
  -- entering f90ints subroutine
   ints=         102         204         409         819
- -- entering f90string3 subroutine
-  ints=         102         204         409         819
-  strlen =         120
-  fstr=abcdefghijklmnopqrstuvwxyz0123456789
   strlen2 =          60
   fstr2=0123456789abcdefghijklmnopqrstuvwxyz
  -- leaving f90string3 subroutine
   PASS  Calling f90string3() directly from F90, ESMF_StringUTest.F90, line 83
 
 
-  rc=           0
- -- exiting f90ints subroutine
-  PASS  Calling f90ints() directly from F90, ESMF_StringUTest.F90, line 69
 -- entering c_strings, slen = 120
 102 204 409 819
  strlen = 120, str='abcdefghijklmnopqrstuvwxyz0123456789                                                                                    '
@@ -55,44 +52,47 @@ WARNING: There was an error initializing an OpenFabrics device.
   ints=         102         204         409         819
   rc=           0
  -- exiting f90ints subroutine
+  rc=           0
+ -- exiting f90ints subroutine
+  PASS  Calling f90ints() directly from F90, ESMF_StringUTest.F90, line 69
 
 
+-- returned from call of f90int by callback with passed ints
+
+
+-- ready to call f90int by callback with local ints
+ -- entering f90ints subroutine
+  ints=         102         204         409         819
+  rc=           0
+ -- exiting f90ints subroutine
+
+
+-- returned from call of f90int by callback with local ints
+
+
+-- ready to call f90string2 by callback, passing 15
+ -- entering f90string2 subroutine
+  ints=         102         204         409         819
+  strlen =          15
+  fstr=ABCDEFGHIJKLMNO
+ -- leaving f90string2 subroutine
+
+
+-- returned from call f90string2 by callback
+
+
+-- ready to call f90string2 by callback, passing 25
+ -- entering f90string2 subroutine
+  ints=         102         204         409         819
  -- entering f90string2 subroutine
   ints=         102         204         409         819
   strlen =          60
   fstr=0123456789abcdefghijklmnopqrstuvwxyz
--- returned from call of f90int by callback with passed ints
-
-
--- ready to call f90int by callback with local ints
- -- entering f90ints subroutine
-  ints=         102         204         409         819
-  rc=           0
- -- exiting f90ints subroutine
-
-
--- returned from call of f90int by callback with local ints
-
-
--- ready to call f90string2 by callback, passing 15
- -- entering f90string2 subroutine
-  ints=         102         204         409         819
-  strlen =          15
-  fstr=ABCDEFGHIJKLMNO
  -- leaving f90string2 subroutine
-
-
--- returned from call f90string2 by callback
-
-
--- ready to call f90string2 by callback, passing 25
- -- entering f90string2 subroutine
-  ints=         102         204         409         819
+  PASS  Calling f90string2() directly from F90, ESMF_StringUTest.F90, line 76
   strlen =          25
   fstr=ABCDEFGHIJKLMNOPQRSTUVWXY
  -- leaving f90string2 subroutine
- -- leaving f90string2 subroutine
-  PASS  Calling f90string2() directly from F90, ESMF_StringUTest.F90, line 76
 
 
 -- returned from call f90string2 by callback
@@ -102,11 +102,6 @@ WARNING: There was an error initializing an OpenFabrics device.
  -- entering f90string3 subroutine
   ints=         102         204         409         819
   strlen =          14
- -- entering f90string3 subroutine
-  ints=         102         204         409         819
-  strlen =         120
-  fstr=abcdefghijklmnopqrstuvwxyz0123456789
-  strlen2 =          60
   fstr=ABCDEFGHIJKLMN
   strlen2 =          24
   fstr2=0123456789abcdefghijklmn
@@ -119,6 +114,11 @@ WARNING: There was an error initializing an OpenFabrics device.
 -- leaving c_strings
   PASS  Calling c_strings with fstr, ESMF_StringUTest.F90, line 90
   PASS  Calling c_5strings, ESMF_StringUTest.F90, line 97
+ -- entering f90string3 subroutine
+  ints=         102         204         409         819
+  strlen =         120
+  fstr=abcdefghijklmnopqrstuvwxyz0123456789
+  strlen2 =          60
 
 
 -- entering c_strings, slen = 60
@@ -133,9 +133,6 @@ WARNING: There was an error initializing an OpenFabrics device.
  -- exiting f90ints subroutine
 
 
-  fstr2=0123456789abcdefghijklmnopqrstuvwxyz
- -- leaving f90string3 subroutine
-  PASS  Calling f90string3() directly from F90, ESMF_StringUTest.F90, line 83
 -- returned from call of f90int by callback with passed ints
 
 
@@ -146,6 +143,9 @@ WARNING: There was an error initializing an OpenFabrics device.
  -- exiting f90ints subroutine
 
 
+  fstr2=0123456789abcdefghijklmnopqrstuvwxyz
+ -- leaving f90string3 subroutine
+  PASS  Calling f90string3() directly from F90, ESMF_StringUTest.F90, line 83
 -- returned from call of f90int by callback with local ints
 
 
@@ -165,6 +165,8 @@ WARNING: There was an error initializing an OpenFabrics device.
   ints=         102         204         409         819
   strlen =          25
   fstr=ABCDEFGHIJKLMNOPQRSTUVWXY
+
+
  -- leaving f90string2 subroutine
 
 
@@ -172,8 +174,6 @@ WARNING: There was an error initializing an OpenFabrics device.
 
 
 -- ready to call f90string3 by callback, passing 14, 24
-
-
  -- entering f90string3 subroutine
   ints=         102         204         409         819
   strlen =          14
@@ -317,9 +317,9 @@ WARNING: There was an error initializing an OpenFabrics device.
 -- leaving c_strings
   PASS  Calling c_strings with fstr2, ESMF_StringUTest.F90, line 112
   Ending Test, file ESMF_StringUTest.F90, line 120
-  PET           0  Test Elapsed Time    2.65699999999999       msec.
-  PET           1  Test Elapsed Time    4.67200000000000       msec.
-[i041.unified.ucar.edu:112423] 1 more process has sent help message help-mpi-btl-openib.txt / ib port not selected
-[i041.unified.ucar.edu:112423] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-[i041.unified.ucar.edu:112423] 1 more process has sent help message help-mpi-btl-openib.txt / error in device init
-Sun Nov 29 05:27:04 MST 2020
+  PET           0  Test Elapsed Time    2.24500000000000       msec.
+  PET           1  Test Elapsed Time    5.88000000000000       msec.
+[i041.unified.ucar.edu:198415] 1 more process has sent help message help-mpi-btl-openib.txt / ib port not selected
+[i041.unified.ucar.edu:198415] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[i041.unified.ucar.edu:198415] 1 more process has sent help message help-mpi-btl-openib.txt / error in device init
+Mon Nov 30 06:47:20 MST 2020
