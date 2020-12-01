@@ -4,7 +4,7 @@ are not used by default.  The intent is to use UCX for these devices.
 You can override this policy by setting the btl_openib_allow_ib MCA parameter
 to true.
 
-  Local host:              i041
+  Local host:              i040
   Local adapter:           hfi1_0
   Local port:              1
 
@@ -12,7 +12,7 @@ to true.
 --------------------------------------------------------------------------
 WARNING: There was an error initializing an OpenFabrics device.
 
-  Local host:   i041
+  Local host:   i040
   Local device: hfi1_0
 --------------------------------------------------------------------------
 Beginning Test, file ESMC_ArrayUTest.C, line 46
@@ -22,7 +22,13 @@ PASS Set up minIndex, ESMC_ArrayUTest.C, line 65
 PASS Set up maxIndex, ESMC_ArrayUTest.C, line 76
 Beginning Test, file ESMC_ArrayUTest.C, line 46
 NUMBER_OF_PROCESSORS 4
+Beginning Test, file ESMC_ArrayUTest.C, line 46
 PASS ArraySpecSet, ESMC_ArrayUTest.C, line 55
+NUMBER_OF_PROCESSORS 4
+PASS Set up minIndex, ESMC_ArrayUTest.C, line 65
+PASS Set up maxIndex, ESMC_ArrayUTest.C, line 76
+PASS ArraySpecSet, ESMC_ArrayUTest.C, line 55
+PASS Create 5 x 10 ESMC_DistGrid object, ESMC_ArrayUTest.C, line 84
 PASS Set up minIndex, ESMC_ArrayUTest.C, line 65
 PASS Set up maxIndex, ESMC_ArrayUTest.C, line 76
 PASS Create 5 x 10 ESMC_DistGrid object, ESMC_ArrayUTest.C, line 84
@@ -30,71 +36,84 @@ PASS Create 5 x 10 ESMC_DistGrid object, ESMC_ArrayUTest.C, line 84
 PASS Create ESMC_Array object, ESMC_ArrayUTest.C, line 96
 --- ESMCI::Array::print start ---
  Base name    = array1
+--- ESMCI::Array::print start ---
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
 PASS Create ESMC_Array object, ESMC_ArrayUTest.C, line 96
-Beginning Test, file ESMC_ArrayUTest.C, line 46
---- ESMCI::Array::print start ---
-{}Array typekind/rank: Integer*4 / 2 
+ Base name    = array1
+ Status: Base = Ready,  object = Ready
+{} Proxy        = no
+ Root Info (Attributes):
+PASS Create ESMC_Array object, ESMC_ArrayUTest.C, line 96
+Array typekind/rank: Integer*4 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
+--- ESMCI::Array::print start ---
 localDeCount = 1
+~ local data in LocalArray for DE 1 ~
+LocalArrayPrint: Array at address 0x6525100:
+            rank = 2, typekind = 3, base_addr = 0x7fa0c3bcfc80
+            dim[0] = 1  dim[1] = 10  
+  Integer, *4, Dim 2, Data values:
  Base name    = array1
  Status: Base = Ready,  object = Ready
  Proxy        = no
- Root Info (Attributes):
-~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x5567130:
-            rank = 2, typekind = 3, base_addr = 0x7f30bcce7c80
-            dim[0] = 1  dim[1] = 10  
-  Integer, *4, Dim 2, Data values:
-( 1, 1) =  -1127318464
-( 1, 2) =  32560
+{}( 1, 1) =  -1011024832
+( 1, 2) =  32672
 ( 1, 3) =  544240928
 ( 1, 4) =  1232626029
 ( 1, 5) =  2019910766
 ( 1, 6) =  1397039148
 ( 1, 7) =  1096762189
 ( 1, 8) =  2036429426
+ Root Info (Attributes):
 ( 1, 9) =  1936020565
 ( 1,10) =  742600308
-dim 1: [0]: [1 [1 [1, 1] 1] 1]
-dim 2: [1]: [1 [1 [1, 10] 10] 10]
---- ESMCI::Array::print end ---
-NUMBER_OF_PROCESSORS 4
-PASS ArraySpecSet, ESMC_ArrayUTest.C, line 55
-PASS Set up minIndex, ESMC_ArrayUTest.C, line 65
-PASS Set up maxIndex, ESMC_ArrayUTest.C, line 76
-PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
-PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
-{}Array typekind/rank: Integer*4 / 2 
+Array typekind/rank: Integer*4 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
+dim 1: [0]: [1 [1 [1, 1] 1] 1]
+dim 2: [1]: [1 [1 [1, 10] 10] 10]
+--- ESMCI::Array::print end ---
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x609b1f0:
-            rank = 2, typekind = 3, base_addr = 0x7f61509abfa0
+LocalArrayPrint: Array at address 0x55b8150:
+            rank = 2, typekind = 3, base_addr = 0x7f5df756ffa0
             dim[0] = 2  dim[1] = 10  
-PASS Create 5 x 10 ESMC_DistGrid object, ESMC_ArrayUTest.C, line 84
-PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
-Ending Test, file ESMC_ArrayUTest.C, line 124
-  Integer, *4, Dim 2, Data values:
+{}  Integer, *4, Dim 2, Data values:
 ( 1, 1) =  1397965136
 ( 2, 1) =  1701987104
+PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
+PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
+Array typekind/rank: Integer*4 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
 ( 1, 2) =  543519841
 ( 2, 2) =  544743477
 ( 1, 3) =  1159737393
 ( 2, 3) =  1598246227
 ( 1, 4) =  1953720644
 ( 2, 4) =  1684632135
+localDeCount = 1
+~ local data in LocalArray for DE 3 ~
+LocalArrayPrint: Array at address 0x66180d0:
 ( 1, 5) =  1784835872
 ( 2, 5) =  745825125
 ( 1, 6) =  1297302816
 ( 2, 6) =  1916886851
 ( 1, 7) =  1434018162
+PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
+Ending Test, file ESMC_ArrayUTest.C, line 124
+            rank = 2, typekind = 3, base_addr = 0x7f68a5ed3c80
+            dim[0] = 1  dim[1] = 10  
+  Integer, *4, Dim 2, Data values:
+( 1, 1) =  -1511179200
+( 1, 2) =  32616
+( 1, 3) =  544240928
 ( 2, 7) =  1953719636
 ( 1, 8) =  539771694
 ( 2, 8) =  1701734764
@@ -102,43 +121,24 @@ Ending Test, file ESMC_ArrayUTest.C, line 124
 ( 2, 9) =  0
 ( 1,10) =  0
 ( 2,10) =  0
-dim 1: [0]: [1 [1 [1, 2] 2] 2]
-dim 2: [1]: [1 [1 [1, 10] 10] 10]
---- ESMCI::Array::print end ---
-PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
-PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
-PASS Create ESMC_Array object, ESMC_ArrayUTest.C, line 96
---- ESMCI::Array::print start ---
-PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
-Ending Test, file ESMC_ArrayUTest.C, line 124
- Base name    = array1
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Integer*4 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0x518b100:
-            rank = 2, typekind = 3, base_addr = 0x7f154854fc80
-            dim[0] = 1  dim[1] = 10  
-  Integer, *4, Dim 2, Data values:
-( 1, 1) =  1213529152
-( 1, 2) =  32533
-( 1, 3) =  544240928
 ( 1, 4) =  1232626029
 ( 1, 5) =  2019910766
 ( 1, 6) =  1397039148
 ( 1, 7) =  1096762189
 ( 1, 8) =  2036429426
+dim 1: [0]: [1 [1 [1, 2] 2] 2]
+dim 2: [1]: [1 [1 [1, 10] 10] 10]
+--- ESMCI::Array::print end ---
 ( 1, 9) =  1936020565
 ( 1,10) =  742600308
 dim 1: [0]: [1 [1 [1, 1] 1] 1]
 dim 2: [1]: [1 [1 [1, 10] 10] 10]
 --- ESMCI::Array::print end ---
 PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
+PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
+PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
+PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
+Ending Test, file ESMC_ArrayUTest.C, line 124
 PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
 PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
 Ending Test, file ESMC_ArrayUTest.C, line 124
@@ -160,12 +160,12 @@ DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0x660c1b0:
-            rank = 2, typekind = 3, base_addr = 0x7f787ce9fc80
+LocalArrayPrint: Array at address 0x5885150:
+            rank = 2, typekind = 3, base_addr = 0x7f8c78fefc80
             dim[0] = 1  dim[1] = 10  
   Integer, *4, Dim 2, Data values:
-( 1, 1) =  2095709248
-( 1, 2) =  32632
+( 1, 1) =  2029976640
+( 1, 2) =  32652
 ( 1, 3) =  544240928
 ( 1, 4) =  1232626029
 ( 1, 5) =  2019910766
@@ -181,11 +181,11 @@ PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
 PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
 PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
 Ending Test, file ESMC_ArrayUTest.C, line 124
- PET 3 Test Elapsed Time  47.898000 msec.
- PET 2 Test Elapsed Time  46.015000 msec.
- PET 0 Test Elapsed Time  48.138000 msec.
- PET 1 Test Elapsed Time  47.693000 msec.
-[i041.unified.ucar.edu:58627] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
-[i041.unified.ucar.edu:58627] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
-[i041.unified.ucar.edu:58627] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
-Mon Nov 30 06:47:16 MST 2020
+ PET 2 Test Elapsed Time  46.337000 msec.
+ PET 1 Test Elapsed Time  47.975000 msec.
+ PET 3 Test Elapsed Time  47.856000 msec.
+ PET 0 Test Elapsed Time  48.094000 msec.
+[i040.unified.ucar.edu:84384] 3 more processes have sent help message help-mpi-btl-openib.txt / ib port not selected
+[i040.unified.ucar.edu:84384] Set MCA parameter "orte_base_help_aggregate" to 0 to see all help / error messages
+[i040.unified.ucar.edu:84384] 3 more processes have sent help message help-mpi-btl-openib.txt / error in device init
+Tue Dec  1 05:13:29 MST 2020
