@@ -371,8 +371,6 @@ chmod u+rw /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/test/te
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_Dual NP=4 ctest
 /project/esmf/himanshu/GCC/Homebrew/8.4.0/mpich/3.3.2/bin/mpirun -np 4 ./ESMC_MBMesh_DualUTest 1> ./ESMC_MBMesh_DualUTest.stdout 2>&1
 cat: ./PET*MBMesh_DualUTest.Log: No such file or directory
-/Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_Error NP=4 ctest
-/project/esmf/himanshu/GCC/Homebrew/8.4.0/mpich/3.3.2/bin/mpirun -np 4 ./ESMC_MBMesh_ErrorUTest 1> ./ESMC_MBMesh_ErrorUTest.stdout 2>&1
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_Extrapolate NP=4 ctest
 /project/esmf/himanshu/GCC/Homebrew/8.4.0/mpich/3.3.2/bin/mpirun -np 4 ./ESMC_MBMesh_ExtrapolateUTest 1> ./ESMC_MBMesh_ExtrapolateUTest.stdout 2>&1
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_Glue NP=4 ctest
@@ -885,16 +883,12 @@ PASS: mpich3/g: src/Infrastructure/LogErr/tests/ESMC_LogErrUTest.C
 PASS: mpich3/g: src/Infrastructure/LogErr/tests/ESMF_LogErrPerfUTest.F90
 PASS: mpich3/g: src/Infrastructure/LogErr/tests/ESMF_LogErrUTest.F90
 PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_BilinearParUTest.C
-PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_BilinearSingleElemUTest.C
 PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_BilinearUTest.C
 PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_CreateParUTest.C
 PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_CreateUTest.C
-PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_ErrorUTest.C
-PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_GlueUTest.C
 PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_SearchUTest.C
 PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_SerializeUTest.C
 PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_UtilParUTest.C
-PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_UtilUTest.C
 PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MeshMOABUTest.C
 PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MeshUTest.C
 PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MeshVTKUTest.C
@@ -987,6 +981,7 @@ CRASHED: mpich3/g: src/Infrastructure/FieldBundle/tests/ESMF_FieldBundleIOUTest.
 CRASHED: mpich3/g: src/Infrastructure/FieldBundle/tests/ESMF_FieldBundleUTest.F90
 CRASHED: mpich3/g: src/Infrastructure/IO/tests/ESMCI_IO_NetCDFUTest.C
 CRASHED: mpich3/g: src/Infrastructure/IO/tests/ESMF_IOUTest.F90
+CRASHED: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_BilinearSingleElemUTest.C
 CRASHED: mpich3/g: src/Infrastructure/Route/tests/ESMF_RouteHandleAdvancedUTest.F90
 CRASHED: mpich3/g: src/Infrastructure/Trace/tests/ESMF_ProfileUTest.F90
 CRASHED: mpich3/g: src/Infrastructure/Trace/tests/ESMF_TraceUTest.F90
@@ -1030,6 +1025,16 @@ CRASHED: mpich3/g: src/Superstructure/StateReconcile/tests/ESMF_StateReconcileUT
 CRASHED: mpich3/g: src/addon/NUOPC/tests/ESMF_NUOPC_UTest.F90
 
 
+The following unit test files had failed unit tests:
+
+FAIL: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_UtilUTest.C
+
+
+The following individual unit tests fail:
+
+   FAIL: mpich3/g:  Throw an error from the MBMesh, ESMC_MBMesh_UtilUTest.C, line 148, Did not return ESMC_RC_ARG_SIZE
+
+
 The following test harness unit tests pass:
 PASS: mpich3/g: ESMF_array_2_NP1UTest
 PASS: mpich3/g: ESMF_field_1_NP1UTest
@@ -1039,6 +1044,6 @@ The log and stdout files for the unit tests can be found at:
 /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/test/testg/Darwin.gfortran.64.mpich3.default
 
 
-Found 8738 exhaustive multi-processor unit tests, 5470 passed and 3268 failed.
+Found 8735 exhaustive multi-processor unit tests, 5459 passed and 3276 failed.
 
-Wed Dec  2 23:36:27 MST 2020
+Sun Dec  6 00:41:44 MST 2020
