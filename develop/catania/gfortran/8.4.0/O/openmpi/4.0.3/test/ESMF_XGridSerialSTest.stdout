@@ -15,44 +15,44 @@
  Created component landrc =           0
  Created component landrc =           0
  Created component oceanrc =           0
- Created component landrc =           0
+ Created component oceanrc =           0
+ Created component oceanrc =           0
  Created component oceanrc =           0
  Created component landrc =           0
- Created component user one-way coupler, rc =           0
- Created component oceanrc =           0
+ Created component landrc =           0
  Created component landrc =           0
  Created component user one-way coupler, rc =           0
  Comp Creates finished
- Created component oceanrc =           0
+ atmos SetVM finished, rc=            0           0
  Created component landrc =           0
  Created component user one-way coupler, rc =           0
  Comp Creates finished
+ atmos SetVM finished, rc=            0           0
  Created component user one-way coupler, rc =           0
  Comp Creates finished
+ atmos SetVM finished, rc=            0           0
+ Created component user one-way coupler, rc =           0
  Comp Creates finished
  atmos SetVM finished, rc=            0           0
- atmos SetVM finished, rc=            0           0
- atmos SetVM finished, rc=            0           0
- atmos SetVM finished, rc=            0           0
- Atmosphere Register starting
- Registered Initialize, Run, and Finalize routines
- Atmosphere Register returning
- atmos SetServices finished, rc=            0
- Atmosphere Register starting
- Registered Initialize, Run, and Finalize routines
- Atmosphere Register returning
- atmos SetServices finished, rc=            0
- Atmosphere Register starting
- Registered Initialize, Run, and Finalize routines
- Atmosphere Register returning
- atmos SetServices finished, rc=            0
  Atmosphere Register starting
  Registered Initialize, Run, and Finalize routines
  Atmosphere Register returning
  atmos SetServices finished, rc=            0
  land SetVM finished, rc=            0
+ Atmosphere Register starting
+ Registered Initialize, Run, and Finalize routines
+ Atmosphere Register returning
+ atmos SetServices finished, rc=            0
  land SetVM finished, rc=            0
+ Atmosphere Register starting
+ Registered Initialize, Run, and Finalize routines
+ Atmosphere Register returning
+ atmos SetServices finished, rc=            0
  land SetVM finished, rc=            0
+ Atmosphere Register starting
+ Registered Initialize, Run, and Finalize routines
+ Atmosphere Register returning
+ atmos SetServices finished, rc=            0
  land SetVM finished, rc=            0
  Land Register starting
  Registered Initialize, Run, and Finalize routines
@@ -83,30 +83,30 @@
  Registered Initialize, Run, and Finalize routines
  Ocean Register returning
  ocean SetServices finished, rc=            0
+ Cpl SetVM finished, rc=            0
+ User Coupler Register starting
  Ocean Register starting
  Registered Initialize, Run, and Finalize routines
  Ocean Register returning
  ocean SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
+ User Coupler Register starting
  Ocean Register starting
  Registered Initialize, Run, and Finalize routines
  Ocean Register returning
  ocean SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
- Cpl SetVM finished, rc=            0
+ User Coupler Register starting
  User Coupler Register starting
  Registered Initialize, Run, and Finalize routines
  User Coupler Register returning
  Cpl SetServices finished, rc=            0
- User Coupler Register starting
  Registered Initialize, Run, and Finalize routines
  User Coupler Register returning
  Cpl SetServices finished, rc=            0
- User Coupler Register starting
  Registered Initialize, Run, and Finalize routines
  User Coupler Register returning
  Cpl SetServices finished, rc=            0
- User Coupler Register starting
  Registered Initialize, Run, and Finalize routines
  User Coupler Register returning
  Cpl SetServices finished, rc=            0
@@ -123,7 +123,6 @@
      status: Export State, object count: 1
      reconcile needed: T
  Base name    = land_export
- Status: Base = Ready,  object = Ready
  ESMF_StatePrint: (pet 2):
   State name: land_export
      status: Export State, object count: 1
@@ -133,38 +132,39 @@
   State name: land_export
      status: Export State, object count: 1
      reconcile needed: T
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
  Base name    = land_export
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}{}{}     object: 1,name: F_lnd
+            type: Field
  Base name    = land_export
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
- Proxy        = no
- Root Info (Attributes):
-{}     object: 1,name: F_lnd
 {}     object: 1,name: F_lnd
             type: Field
  land Init returning
  Land Initialize finished, rc =           0
-{}     object: 1,name: F_lnd
-            type: Field
+ Ocean Init starting, localPet =           1
  land Init returning
  Land Initialize finished, rc =           0
-{}     object: 1,name: F_lnd
-            type: Field
- land Init returning
- Land Initialize finished, rc =           0
+ Ocean Init starting, localPet =           2
+     object: 1,name: F_lnd
             type: Field
  land Init returning
  Land Initialize finished, rc =           0
  Ocean Init starting, localPet =           0
- Ocean Init starting, localPet =           1
- Ocean Init starting, localPet =           2
+     object: 1,name: F_lnd
+            type: Field
+ land Init returning
+ Land Initialize finished, rc =           0
  Ocean Init starting, localPet =           3
  ocean Init returning
  Ocean Initialize finished, rc =           0
@@ -228,9 +228,16 @@
  User Coupler Run starting
  User Coupler Run returning
  Coupler Run returned, rc =           0
+ User Coupler Run returning
+ Coupler Run returned, rc =           0
+ Atmosphere Run starting
  Atmosphere Run starting
  Atmosphere Run returning
  Atmosphere Run returned, rc =           0
+ User Coupler Final starting
+ Atmosphere Run returning
+ Atmosphere Run returned, rc =           0
+ User Coupler Final starting
  User Coupler Run returning
  Coupler Run returned, rc =           0
  Atmosphere Run starting
@@ -243,13 +250,9 @@
  Atmosphere Run returning
  Atmosphere Run returned, rc =           0
  User Coupler Final starting
- User Coupler Run returning
- Coupler Run returned, rc =           0
- Atmosphere Run starting
- Atmosphere Run returning
- Atmosphere Run returned, rc =           0
- User Coupler Final starting
- User Coupler Final starting
+ User Coupler Final returning
+ Coupler Finalize finished, rc =           0
+ Land Final starting
  User Coupler Final returning
  Coupler Finalize finished, rc =           0
  Land Final starting
@@ -265,23 +268,15 @@
  Land Final returning
  Land Finalize finished, rc =           0
  Ocean Final starting
- User Coupler Final returning
- Coupler Finalize finished, rc =           0
- Land Final starting
- Ocean Final returning
- Ocean Finalize finished, rc =           0
- Atmosphere Final starting
+ Land Final returning
+ Land Finalize finished, rc =           0
+ Ocean Final starting
  Land Final returning
  Land Finalize finished, rc =           0
  Ocean Final starting
  Ocean Final returning
  Ocean Finalize finished, rc =           0
  Atmosphere Final starting
- Land Final returning
- Land Finalize finished, rc =           0
- Ocean Final starting
- Atmosphere Final returning
- Atmosphere Finalize finished, rc =           0
  Ocean Final returning
  Ocean Finalize finished, rc =           0
  Atmosphere Final starting
@@ -292,20 +287,13 @@
  Atmosphere Final starting
  Atmosphere Final returning
  Atmosphere Finalize finished, rc =           0
+ Ocean Final returning
+ Ocean Finalize finished, rc =           0
+ Atmosphere Final starting
  Atmosphere Final returning
  Atmosphere Finalize finished, rc =           0
- All Destroy routines done
-  System Test ESMF_XGridSerialSTest                                                                                                                                                                                                                               complete.
- ------------------------------------------------------------
- ------------------------------------------------------------
- Test finished, localPet =            2
- ------------------------------------------------------------
- ------------------------------------------------------------
-  PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
- 
-  System Test ESMF_XGridSerialSTest
-  SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
- 
+ Atmosphere Final returning
+ Atmosphere Finalize finished, rc =           0
  All Destroy routines done
   System Test ESMF_XGridSerialSTest                                                                                                                                                                                                                               complete.
  ------------------------------------------------------------
@@ -321,10 +309,6 @@
  All Destroy routines done
   System Test ESMF_XGridSerialSTest                                                                                                                                                                                                                               complete.
  ------------------------------------------------------------
- ------------------------------------------------------------
- Test finished, localPet =            0
- ------------------------------------------------------------
- ------------------------------------------------------------
  All Destroy routines done
   System Test ESMF_XGridSerialSTest                                                                                                                                                                                                                               complete.
  ------------------------------------------------------------
@@ -332,7 +316,12 @@
  Test finished, localPet =            3
  ------------------------------------------------------------
  ------------------------------------------------------------
-  PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
+ All Destroy routines done
+  System Test ESMF_XGridSerialSTest                                                                                                                                                                                                                               complete.
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ Test finished, localPet =            0
+ ------------------------------------------------------------
  
   System Test ESMF_XGridSerialSTest
   SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
@@ -341,9 +330,20 @@
   System Test ESMF_XGridSerialSTest
   SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
  
+ 
+  System Test ESMF_XGridSerialSTest
+  SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
+ 
+ ------------------------------------------------------------
+ Test finished, localPet =            2
+ ------------------------------------------------------------
+ ------------------------------------------------------------
   PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
-[cgdm-catania:20528] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 206
-[cgdm-catania:20529] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 206
-[cgdm-catania:20530] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 206
-[cgdm-catania:20527] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 206
-Wed Dec  2 23:36:14 MST 2020
+ ------------------------------------------------------------
+  PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
+  PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
+[cgdm-catania:73166] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 206
+[cgdm-catania:73167] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 206
+[cgdm-catania:73168] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 206
+[cgdm-catania:73165] PMIX ERROR: ERROR in file gds_ds12_lock_pthread.c at line 206
+Sun Dec  6 00:41:31 MST 2020
