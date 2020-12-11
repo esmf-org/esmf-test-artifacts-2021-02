@@ -601,7 +601,7 @@ gmake TNAME=TestHarness HNAME=array_2_NP1 run_test_harness_sec
 gmake[7]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/tests'
 gmake[8]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/tests'
 mpirun -np 1 ./ESMF_TestHarnessUTest -case array_2_test.rc -xml array_2.xml
-xsltproc -o array_2.html /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/test_harness/src/HarnessHttp.xslt array_2.xml
+cat: ./PET*TestHarnessUTest.Log: No such file or directory
 gmake[8]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/tests'
 gmake[7]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/tests'
 gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/tests'
@@ -2030,15 +2030,18 @@ PASS: openmpi/g: src/prologue/tests/ESMF_WordsizeUTest.F90
 
 
 The following test harness unit tests pass:
-PASS: openmpi/g: ESMF_array_2_NP1UTest
 PASS: openmpi/g: ESMF_field_1_NP1UTest
+
+
+The following test harness unit tests fail, did not build, or did not execute:
+FAIL: openmpi/g: ESMF_array_2_NP1UTest
 
 
 The log and stdout files for the unit tests can be found at:
 /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testg/Linux.gfortran.64.openmpi.default
 
 
-Found 8803 exhaustive multi-processor unit tests, 8803 passed and 0 failed.
+Found 8803 exhaustive multi-processor unit tests, 8802 passed and 1 failed.
 
 gmake[1]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf'
-Wed Dec  9 05:39:22 MST 2020
+Thu Dec 10 05:39:27 MST 2020
