@@ -1830,7 +1830,6 @@ PASS: mpich3/O: src/Infrastructure/Array/tests/ESMF_ArrayDataUTest.F90
 PASS: mpich3/O: src/Infrastructure/Array/tests/ESMF_ArrayGatherUTest.F90
 PASS: mpich3/O: src/Infrastructure/Array/tests/ESMF_ArrayHaloUTest.F90
 PASS: mpich3/O: src/Infrastructure/Array/tests/ESMF_ArrayIOUTest.F90
-PASS: mpich3/O: src/Infrastructure/Array/tests/ESMF_ArrayRedistPerfUTest.F90
 PASS: mpich3/O: src/Infrastructure/Array/tests/ESMF_ArrayRedistUTest.F90
 PASS: mpich3/O: src/Infrastructure/Array/tests/ESMF_ArraySMMFromFileUTest.F90
 PASS: mpich3/O: src/Infrastructure/Array/tests/ESMF_ArraySMMUTest.F90
@@ -1996,6 +1995,7 @@ PASS: mpich3/O: src/Superstructure/AttributeAPI/tests/ESMF_AttributeUpdateUTest.
 PASS: mpich3/O: src/Superstructure/AttributeAPI/tests/ESMF_AttributeUtilUTest.F90
 PASS: mpich3/O: src/Superstructure/Component/tests/ESMC_ComponentUTest.C
 PASS: mpich3/O: src/Superstructure/Component/tests/ESMF_CompSetServUTest.F90
+PASS: mpich3/O: src/Superstructure/Component/tests/ESMF_CompTunnelUTest.F90
 PASS: mpich3/O: src/Superstructure/Component/tests/ESMF_ComponentUTest.F90
 PASS: mpich3/O: src/Superstructure/Component/tests/ESMF_CplCompCreateUTest.F90
 PASS: mpich3/O: src/Superstructure/Component/tests/ESMF_GridCompCreateUTest.F90
@@ -2030,7 +2030,20 @@ PASS: mpich3/O: src/prologue/tests/ESMF_WordsizeUTest.F90
 
 The following unit test files failed to build, failed to execute or crashed during execution:
 
-CRASHED: mpich3/O: src/Superstructure/Component/tests/ESMF_CompTunnelUTest.F90
+CRASHED: mpich3/O: src/Infrastructure/Array/tests/ESMF_ArrayRedistPerfUTest.F90
+
+
+The following individual unit tests fail:
+
+   FAIL: mpich3/O:   Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243:  ArrayRedistStore() performance problem!    4.2609529495239258      >   2.0000000000000000
+   FAIL: mpich3/O:   Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243:  ArrayRedistStore() performance problem!    4.2500004768371582      >   2.0000000000000000
+   FAIL: mpich3/O:   Check ArrayRedist() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 257:  ArrayRedist() performance problem!    2.7104377746582031E-002 >   1.0000000000000000E-002
+   FAIL: mpich3/O:   Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243:  ArrayRedistStore() performance problem!    4.2554557323455811      >   2.0000000000000000
+   FAIL: mpich3/O:   Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243:  ArrayRedistStore() performance problem!    4.2557990550994873      >   2.0000000000000000
+   FAIL: mpich3/O:   Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243:  ArrayRedistStore() performance problem!    4.2536110877990723      >   2.0000000000000000
+   FAIL: mpich3/O:   Check ArrayRedist() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 257:  ArrayRedist() performance problem!    1.0120868682861328E-002 >   1.0000000000000000E-002
+   FAIL: mpich3/O:   Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243:  ArrayRedistStore() performance problem!    4.2415907382965088      >   2.0000000000000000
+   FAIL: mpich3/O:   Check ArrayRedist() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 257:  ArrayRedist() performance problem!    2.0117282867431641E-002 >   1.0000000000000000E-002
 
 
 The following test harness unit tests pass:
@@ -2042,7 +2055,7 @@ The log and stdout files for the unit tests can be found at:
 /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testO/Linux.gfortran.64.mpich3.default
 
 
-Found 8803 exhaustive multi-processor unit tests, 8802 passed and 1 failed.
+Found 8803 exhaustive multi-processor unit tests, 8801 passed and 2 failed.
 
 gmake[1]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf'
-Sun Dec 13 00:04:06 MST 2020
+Sun Dec 13 05:31:09 MST 2020
