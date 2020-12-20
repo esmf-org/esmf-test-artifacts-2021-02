@@ -341,28 +341,18 @@ tree_run_unit_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/es
 tree_run_unit_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/Infrastructure/Mesh/interface
 tree_run_unit_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/Infrastructure/Mesh/doc
 tree_run_unit_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/Infrastructure/Mesh/tests
-/Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_Bilinear NP=1 ctest
-/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 1 ./ESMC_MBMesh_BilinearUTest 1> ./ESMC_MBMesh_BilinearUTest.stdout 2>&1
-/Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_BilinearPar NP=4 ctest
-/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 4 ./ESMC_MBMesh_BilinearParUTest 1> ./ESMC_MBMesh_BilinearParUTest.stdout 2>&1
-/Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_BilinearSingleElem NP=1 ctest
-/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 1 ./ESMC_MBMesh_BilinearSingleElemUTest 1> ./ESMC_MBMesh_BilinearSingleElemUTest.stdout 2>&1
-/Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_BilinearEdgeCases NP=1 ctest
-/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 1 ./ESMC_MBMesh_BilinearEdgeCasesUTest 1> ./ESMC_MBMesh_BilinearEdgeCasesUTest.stdout 2>&1
-/Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_BilinearEdgeCases3D NP=1 ctest
-/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 1 ./ESMC_MBMesh_BilinearEdgeCases3DUTest 1> ./ESMC_MBMesh_BilinearEdgeCases3DUTest.stdout 2>&1
+/Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh NP=4 ctest
+/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 4 ./ESMC_MBMeshUTest 1> ./ESMC_MBMeshUTest.stdout 2>&1
+/Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMeshRegrid NP=4 ctest
+/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 4 ./ESMC_MBMeshRegridUTest 1> ./ESMC_MBMeshRegridUTest.stdout 2>&1
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_Extrapolate NP=4 ctest
 /project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 4 ./ESMC_MBMesh_ExtrapolateUTest 1> ./ESMC_MBMesh_ExtrapolateUTest.stdout 2>&1
-/Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_Search NP=4 ctest
-/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 4 ./ESMC_MBMesh_SearchUTest 1> ./ESMC_MBMesh_SearchUTest.stdout 2>&1
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh_Util NP=4 ctest
 /project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 4 ./ESMC_MBMesh_UtilUTest 1> ./ESMC_MBMesh_UtilUTest.stdout 2>&1
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=MeshMOAB NP=1 ctest
 /project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 1 ./ESMC_MeshMOABUTest 1> ./ESMC_MeshMOABUTest.stdout 2>&1
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=Integrate NP=1 citest
 /project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 1 ./ESMCI_IntegrateUTest 1> ./ESMCI_IntegrateUTest.stdout 2>&1
-/Library/Developer/CommandLineTools/usr/bin/make TNAME=MBMesh NP=4 ctest
-/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 4 ./ESMC_MBMeshUTest 1> ./ESMC_MBMeshUTest.stdout 2>&1
 cp -r data /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/test/testg/Darwin.intel.64.mpich3.default
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=Mesh NP=1 ctest
 /project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 1 ./ESMC_MeshUTest 1> ./ESMC_MeshUTest.stdout 2>&1
@@ -887,11 +877,8 @@ PASS: mpich3/g: src/Infrastructure/LogErr/tests/ESMC_LogErrPerfUTest.C
 PASS: mpich3/g: src/Infrastructure/LogErr/tests/ESMC_LogErrUTest.C
 PASS: mpich3/g: src/Infrastructure/LogErr/tests/ESMF_LogErrPerfUTest.F90
 PASS: mpich3/g: src/Infrastructure/LogErr/tests/ESMF_LogErrUTest.F90
+PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMeshRegridUTest.C
 PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMeshUTest.C
-PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_BilinearParUTest.C
-PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_BilinearSingleElemUTest.C
-PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_BilinearUTest.C
-PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_SearchUTest.C
 PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MBMesh_UtilUTest.C
 PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MeshMOABUTest.C
 PASS: mpich3/g: src/Infrastructure/Mesh/tests/ESMC_MeshUTest.C
@@ -1017,6 +1004,6 @@ The log and stdout files for the unit tests can be found at:
 /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/test/testg/Darwin.intel.64.mpich3.default
 
 
-Found 8803 exhaustive multi-processor unit tests, 8803 passed and 0 failed.
+Found 8837 exhaustive multi-processor unit tests, 8837 passed and 0 failed.
 
-Fri Dec 18 05:39:03 MST 2020
+Sat Dec 19 08:33:08 MST 2020
