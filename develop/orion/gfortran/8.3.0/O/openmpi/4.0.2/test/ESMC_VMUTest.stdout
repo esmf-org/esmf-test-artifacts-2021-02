@@ -29,9 +29,6 @@ localPet= 1 , petCount= 4, peCount= 4, pthreadsEnabledFlag= 1, openMPEnabledFlag
 --- ESMCI::VM::print() start ---
 --- ESMCI::VMId::print() start ---
   vmKeyWidth = 1
-  vmKey=0xF0000000
-  localID = 0
---- ESMCI::VMId::print() end ---
 localPet= 2 , petCount= 4, peCount= 4, pthreadsEnabledFlag= 1, openMPEnabledFlag= 1 
 --- ESMCI::VM::print() start ---
 --- ESMCI::VMId::print() start ---
@@ -50,6 +47,9 @@ localPet= 3 , petCount= 4, peCount= 4, pthreadsEnabledFlag= 1, openMPEnabledFlag
   vmKey=0xF0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
+  vmKey=0xF0000000
+  localID = 0
+--- ESMCI::VMId::print() end ---
 PASS VMPrint, ESMC_VMUTest.C, line 99
 PASS VMPrint, ESMC_VMUTest.C, line 99
 PASS VMPrint, ESMC_VMUTest.C, line 99
@@ -59,18 +59,17 @@ PASS VMReduceI4, ESMC_VMUTest.C, line 124
 PASS VMReduceI8, ESMC_VMUTest.C, line 150
 PASS VMReduceI4, ESMC_VMUTest.C, line 124
 PASS VMReduceI8, ESMC_VMUTest.C, line 150
-PASS VMReduceI8, ESMC_VMUTest.C, line 150
-PASS VMReduceR4, ESMC_VMUTest.C, line 176
-PASS VMReduceR4, ESMC_VMUTest.C, line 176
-PASS VMReduceR8, ESMC_VMUTest.C, line 202
 PASS VMReduceR4, ESMC_VMUTest.C, line 176
 PASS VMReduceR8, ESMC_VMUTest.C, line 202
 PASS VMReduceI4, ESMC_VMUTest.C, line 124
+PASS VMReduceR4, ESMC_VMUTest.C, line 176
 PASS VMReduceR8, ESMC_VMUTest.C, line 202
 PASS VMReduceI8, ESMC_VMUTest.C, line 150
 PASS VMReduceR4, ESMC_VMUTest.C, line 176
 PASS VMReduceR8, ESMC_VMUTest.C, line 202
-PASS VMBroadcastI4, ESMC_VMUTest.C, line 227
+PASS VMReduceI8, ESMC_VMUTest.C, line 150
+PASS VMReduceR4, ESMC_VMUTest.C, line 176
+PASS VMReduceR8, ESMC_VMUTest.C, line 202
 PASS VMBroadcastI4, ESMC_VMUTest.C, line 227
 PASS VMBroadcastI4, ESMC_VMUTest.C, line 227
 PASS VMBroadcastI8, ESMC_VMUTest.C, line 252
@@ -78,6 +77,7 @@ PASS VMBroadcastI4, ESMC_VMUTest.C, line 227
 PASS VMBroadcastI8, ESMC_VMUTest.C, line 252
 PASS VMBroadcastI8, ESMC_VMUTest.C, line 252
 PASS VMBroadcastR4, ESMC_VMUTest.C, line 277
+PASS VMBroadcastI4, ESMC_VMUTest.C, line 227
 PASS VMBroadcastI8, ESMC_VMUTest.C, line 252
 PASS VMBroadcastR4, ESMC_VMUTest.C, line 277
 PASS VMBroadcastR4, ESMC_VMUTest.C, line 277
@@ -95,9 +95,9 @@ Ending Test, file ESMC_VMUTest.C, line 358
 PASS VMBroadcastLogical, ESMC_VMUTest.C, line 327
 Ending Test, file ESMC_VMUTest.C, line 358
 --- VMK::print() start ---
-vm located at: 0x163a880
+vm located at: 0x1ef6880
 npets = 4, mypet=1
-  pth_mutex =		 0x18391e0
+  pth_mutex =		 0x20265c0
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 1
@@ -117,11 +117,11 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
- PET 1 Test Elapsed Time  8.092000 msec.
+ PET 1 Test Elapsed Time  8.712000 msec.
 --- VMK::print() start ---
-vm located at: 0x1a9e880
+vm located at: 0x164a880
 npets = 4, mypet=2
-  pth_mutex =		 0x1cb3720
+  pth_mutex =		 0x177a120
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 2
@@ -141,11 +141,11 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
- PET 2 Test Elapsed Time  8.527000 msec.
+ PET 2 Test Elapsed Time  8.420000 msec.
 --- VMK::print() start ---
-vm located at: 0x2212880
+vm located at: 0x6bc880
 npets = 4, mypet=3
-  pth_mutex =		 0x233e230
+  pth_mutex =		 0x7e81a0
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 3
@@ -165,11 +165,11 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
- PET 3 Test Elapsed Time  10.680000 msec.
+ PET 3 Test Elapsed Time  9.453000 msec.
 --- VMK::print() start ---
-vm located at: 0x17c2880
+vm located at: 0x10b9880
 npets = 4, mypet=0
-  pth_mutex =		 0x19e5fe0
+  pth_mutex =		 0x12cba20
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 0
@@ -189,5 +189,5 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
- PET 0 Test Elapsed Time  10.364000 msec.
-Fri Dec 25 00:35:07 CST 2020
+ PET 0 Test Elapsed Time  9.287000 msec.
+Fri Dec 25 21:19:58 CST 2020
