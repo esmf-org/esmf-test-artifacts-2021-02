@@ -183,7 +183,7 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Sat Dec 26 15:48:19 MST 2020 on bighorn.cgd.ucar.edu
+Compiling on Sun Dec 27 22:16:45 MST 2020 on bighorn.cgd.ucar.edu
 Machine characteristics: Linux bighorn.cgd.ucar.edu 3.10.0-1160.6.1.el7.x86_64 #1 SMP Tue Nov 17 13:59:11 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
@@ -1474,6 +1474,17 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch/esmf/manual/pgi_mpiun
     int rc = ESMC_RC_NOT_IMPL;   // final return code
         ^
 
+"/scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastructure/VM/src/ESMCI_VM.C",
+          line 3592: warning: expression has no effect
+      MPI_Error_string(mpiErrorToCheck, mpierr, &resultlen);
+      ^
+
+"/scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastructure/VM/src/ESMCI_VM.C",
+          line 3593: warning: variable "resultlen" is used before its value is
+          set
+      char msg[20+resultlen];
+                  ^
+
 "/scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastructure/VM/src/ESMCI_VMKernel.
           C", line 825: warning: this declaration has no storage class or type
           specifier
@@ -2389,17 +2400,6 @@ pgc++ -c -std=c++11 -O -DNDEBUG -fpic -lpthread -I/scratch/esmf/manual/pgi_mpiun
 Error limit reached.
 100 errors detected in the compilation of "/scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastructure/VM/src/ESMCI_VMKernel.C".
 Compilation terminated.
-"/scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastructure/VM/src/ESMCI_VM.C",
-          line 3592: warning: expression has no effect
-      MPI_Error_string(mpiErrorToCheck, mpierr, &resultlen);
-      ^
-
-"/scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastructure/VM/src/ESMCI_VM.C",
-          line 3593: warning: variable "resultlen" is used before its value is
-          set
-      char msg[20+resultlen];
-                  ^
-
 gmake[8]: *** [/scratch/esmf/manual/pgi_mpiuni/esmf/obj/objO/Linux.pgi.64.mpiuni.default/ESMCI_VMKernel.o] Error 2
 gmake[8]: *** Waiting for unfinished jobs....
 "/scratch/esmf/manual/pgi_mpiuni/esmf/src/include/json.hpp", line 14370:
@@ -2467,4 +2467,4 @@ gmake[2]: Leaving directory `/scratch/esmf/manual/pgi_mpiuni/esmf'
 gmake[1]: *** [build_libs] Error 2
 gmake[1]: Leaving directory `/scratch/esmf/manual/pgi_mpiuni/esmf'
 gmake: *** [lib] Error 2
-Sun Dec 27 00:01:38 MST 2020
+Sun Dec 27 23:51:20 MST 2020
