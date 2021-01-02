@@ -11,6 +11,14 @@
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
+vm located at: 0xa32660
+npets = 4, mypet=1
+  pth_mutex =		 0xa5b410
+  pth_finish_count =	 (nil)
+MPI_Comm_size: 4
+MPI_Comm_rank in local MPI communicator: 1
+MPI_Comm_rank in MPI_COMM_WORLD: 1
+MPI thread level support: 3
   Beginning Test, file ESMF_VMComponentUTest.F90, line 192
   NUMBER_OF_PROCESSORS           4
 --- ESMCI::VM::print() start ---
@@ -20,9 +28,9 @@
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x212e660
+vm located at: 0x1a8c660
 npets = 4, mypet=2
-  pth_mutex =		 0x2157410
+  pth_mutex =		 0x1ab5410
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 2
@@ -31,6 +39,7 @@ MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
 nothreadsflag: 1
+  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   Beginning Test, file ESMF_VMComponentUTest.F90, line 192
   NUMBER_OF_PROCESSORS           4
 --- ESMCI::VM::print() start ---
@@ -40,9 +49,9 @@ nothreadsflag: 1
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x1e2f660
+vm located at: 0x1785660
 npets = 4, mypet=3
-  pth_mutex =		 0x1e58410
+  pth_mutex =		 0x17ae410
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 3
@@ -54,14 +63,22 @@ nothreadsflag: 1
   lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
+  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
+ncores = 4
+  cpuid[0]=0, ssiid[0]=0
+  cpuid[1]=1, ssiid[1]=0
+  cpuid[2]=2, ssiid[2]=0
+  cpuid[3]=3, ssiid[3]=0
+--- VMK::print() end ---
+--- ESMCI::VM::print() end ---
   vmKeyWidth = 1
   vmKey=0xF0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x238b660
+vm located at: 0x2627660
 npets = 4, mypet=0
-  pth_mutex =		 0x23b4410
+  pth_mutex =		 0x2650410
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 0
@@ -81,14 +98,6 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
-vm located at: 0x13c8660
-npets = 4, mypet=1
-  pth_mutex =		 0x1443920
-  pth_finish_count =	 (nil)
-MPI_Comm_size: 4
-MPI_Comm_rank in local MPI communicator: 1
-MPI_Comm_rank in MPI_COMM_WORLD: 1
-MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
 nothreadsflag: 1
@@ -103,7 +112,6 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
-  lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
   lpid[2]=2, tid[2]=0, vas[2]=2, ncpet[2]=1, nadevs[2]=0, cid[2][0]=2
   lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
@@ -114,14 +122,6 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
-  lpid[3]=3, tid[3]=0, vas[3]=3, ncpet[3]=1, nadevs[3]=0, cid[3][0]=3
-ncores = 4
-  cpuid[0]=0, ssiid[0]=0
-  cpuid[1]=1, ssiid[1]=0
-  cpuid[2]=2, ssiid[2]=0
-  cpuid[3]=3, ssiid[3]=0
---- VMK::print() end ---
---- ESMCI::VM::print() end ---
   PASS  Component Create/SetServices/Destroy Test, ESMF_VMComponentUTest.F90, li
  ne 230
   PASS  Testing VM IsCreated for uncreated object, ESMF_VMComponentUTest.F90, li
@@ -157,6 +157,10 @@ ncores = 4
   PASS  Get test VM for IsCreated, ESMF_VMComponentUTest.F90, line 270
   PASS  Get test VM for IsCreated, ESMF_VMComponentUTest.F90, line 270
   PASS  Get test VM for IsCreated, ESMF_VMComponentUTest.F90, line 270
+  PASS  Testing VM IsCreated for created object, ESMF_VMComponentUTest.F90, line
+  278
+  PASS  Testing VM IsCreated for created object, ESMF_VMComponentUTest.F90, line
+  278
   PASS  Get test VM for IsCreated, ESMF_VMComponentUTest.F90, line 270
   PASS  Testing VM IsCreated for created object, ESMF_VMComponentUTest.F90, line
   278
@@ -167,11 +171,7 @@ ncores = 4
   PASS  Testing VM IsCreated for created object, ESMF_VMComponentUTest.F90, line
   286
   PASS  Testing VM IsCreated for created object, ESMF_VMComponentUTest.F90, line
-  278
-  PASS  Testing VM IsCreated for created object, ESMF_VMComponentUTest.F90, line
   286
-  PASS  Testing VM IsCreated for created object, ESMF_VMComponentUTest.F90, line
-  278
   PASS  Testing VM IsCreated for created object, ESMF_VMComponentUTest.F90, line
   286
   PASS  Destroy test VM for IsCreated, ESMF_VMComponentUTest.F90, line 294
@@ -186,12 +186,12 @@ ncores = 4
   Ending Test, file ESMF_VMComponentUTest.F90, line 356
   PASS  Exhaustive Component Create/SetServices/Destroy Test, ESMF_VMComponentUT
  est.F90, line 351
-  Ending Test, file ESMF_VMComponentUTest.F90, line 356
   PASS  Exhaustive Component Create/SetServices/Destroy Test, ESMF_VMComponentUT
  est.F90, line 351
   Ending Test, file ESMF_VMComponentUTest.F90, line 356
-  PET           0  Test Elapsed Time    3071.19800000000       msec.
-  PET           3  Test Elapsed Time    3070.51600000000       msec.
-  PET           1  Test Elapsed Time    3070.60800000000       msec.
-  PET           2  Test Elapsed Time    3070.55600000000       msec.
-Thu Dec 31 18:59:58 CST 2020
+  Ending Test, file ESMF_VMComponentUTest.F90, line 356
+  PET           0  Test Elapsed Time    2765.29700000000       msec.
+  PET           1  Test Elapsed Time    2764.11600000000       msec.
+  PET           3  Test Elapsed Time    2763.76800000000       msec.
+  PET           2  Test Elapsed Time    2765.21300000000       msec.
+Fri Jan  1 19:38:01 CST 2021
