@@ -8,8 +8,6 @@
  Start of System Test ConcurrentComponent.
  Comp1 SetVM finished, rc=            0
  Comp1 SetVM finished, rc=            0
- Comp1 SetServices finished, rc=            0
- Comp2 SetVM finished, rc=            0
  Comp1 SetVM finished, rc=            0
  Comp1 SetVM finished, rc=            0
  Comp1 SetVM finished, rc=            0
@@ -17,6 +15,8 @@
  Comp1 SetServices finished, rc=            0
  Comp2 SetVM finished, rc=            0
  Comp1 SetVM finished, rc=            0
+ Comp1 SetServices finished, rc=            0
+ Comp2 SetVM finished, rc=            0
  Comp1 SetServices finished, rc=            0
  Comp2 SetVM finished, rc=            0
  Comp1 SetVM finished, rc=            0
@@ -25,16 +25,12 @@
  Comp2 SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
  Cpl SetServices finished, rc=            0
- In user 2 register routine
  In user 1 register routine
  Comp1 SetServices finished, rc=            0
- In user 2 register routine
- Comp2 SetServices finished, rc=            0
- Cpl SetVM finished, rc=            0
  In user 1 register routine
  Comp1 SetServices finished, rc=            0
- In user 2 register routine
- Comp2 SetServices finished, rc=            0
+ In user 1 register routine
+ Comp1 SetServices finished, rc=            0
  Comp2 SetVM finished, rc=            0
  Comp2 SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
@@ -42,24 +38,28 @@
  Comp1 SetServices finished, rc=            0
  Comp2 SetVM finished, rc=            0
  Comp2 SetServices finished, rc=            0
+ Cpl SetVM finished, rc=            0
  Comp2 SetVM finished, rc=            0
  Comp2 SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
- Comp2 SetServices finished, rc=            0
- Cpl SetVM finished, rc=            0
- In user 1 register routine
- Comp1 SetServices finished, rc=            0
  Comp2 SetVM finished, rc=            0
  Comp2 SetServices finished, rc=            0
- Cpl SetVM finished, rc=            0
  Cpl SetVM finished, rc=            0
  System Test ConcurrentComponent complete.
+  PASS  System Test ConcurrentComponent: Field Concurrent Components, ESMF_FieldConCompSTest.F90, line 510
  
   System Test ConcurrentComponent: Field Concurrent Components
   SUCCESS: Concurrent Component test finished correctly.
  
+ In user 2 register routine
+ In user 2 register routine
+ Comp2 SetServices finished, rc=            0
+ In user 2 register routine
+ Comp2 SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
-  PASS  System Test ConcurrentComponent: Field Concurrent Components, ESMF_FieldConCompSTest.F90, line 510
+ Comp2 SetServices finished, rc=            0
+ Cpl SetVM finished, rc=            0
+ Cpl SetVM finished, rc=            0
  in user coupler register routine
  Cpl SetServices finished, rc=            0
  in user coupler register routine
@@ -74,12 +74,12 @@
  Cpl SetServices finished, rc=            0
  in user coupler register routine
  Cpl SetServices finished, rc=            0
+ In user 1 init routine
+ In user 1 init routine
  In user 1 init routine
  In user 1 init routine
  In user 2 init routine
- In user 1 init routine
  In user 2 init routine
- In user 1 init routine
  In user 2 init routine
  User Coupler Init starting
  User Coupler Init starting
@@ -96,6 +96,19 @@ Backtrace for this error:
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
+#0  0x110878b6d
+#1  0x110877f9d
+#2  0x7fff71a71b5c
+#0  0x112d41b6d
+#1  0x112d40f9d
+#2  0x7fff71a71b5c
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x10859ab6d
+#1  0x108599f9d
+#2  0x7fff71a71b5c
 
 Program received signal SIGABRT: Process abort signal.
 
@@ -112,35 +125,22 @@ Backtrace for this error:
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-
-Program received signal SIGABRT: Process abort signal.
-
-Backtrace for this error:
-#0  0x10cdddb6d
-#1  0x10cddcf9d
+#0  0x112930b6d
+#1  0x11292ff9d
 #2  0x7fff71a71b5c
-#0  0x10fe12b6d
-#1  0x10fe11f9d
+#0  0x112d4cb6d
+#1  0x112d4bf9d
 #2  0x7fff71a71b5c
-#0  0x106785b6d
-#1  0x106784f9d
+#0  0x10513db6d
+#1  0x10513cf9d
 #2  0x7fff71a71b5c
-#0  0x110301b6d
-#1  0x110300f9d
-#2  0x7fff71a71b5c
-#0  0x10a603b6d
-#1  0x10a602f9d
-#2  0x7fff71a71b5c
-#0  0x10e4b2b6d
-#1  0x10e4b1f9d
-#2  0x7fff71a71b5c
-#0  0x1043c5b6d
-#1  0x1043c4f9d
+#0  0x106e79b6d
+#1  0x106e78f9d
 #2  0x7fff71a71b5c
 
 ===================================================================================
 =   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
-=   PID 72204 RUNNING AT cgdm-catania
+=   PID 24495 RUNNING AT cgdm-catania
 =   EXIT CODE: 6
 =   CLEANING UP REMAINING PROCESSES
 =   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
@@ -148,4 +148,4 @@ Backtrace for this error:
 YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Abort trap: 6 (signal 6)
 This typically refers to a problem with your application.
 Please see the FAQ page for debugging suggestions
-Fri Jan  1 15:10:34 MST 2021
+Sat Jan  2 09:32:18 MST 2021
