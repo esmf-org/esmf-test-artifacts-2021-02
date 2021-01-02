@@ -601,7 +601,7 @@ gmake TNAME=TestHarness HNAME=array_2_NP1 run_test_harness_sec
 gmake[7]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/tests'
 gmake[8]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/tests'
 mpirun -np 1 ./ESMF_TestHarnessUTest -case array_2_test.rc -xml array_2.xml
-cat: ./PET*TestHarnessUTest.Log: No such file or directory
+xsltproc -o array_2.html /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/test_harness/src/HarnessHttp.xslt array_2.xml
 gmake[8]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/tests'
 gmake[7]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/tests'
 gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/tests'
@@ -981,6 +981,7 @@ rm -f /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testg/Linux.gfor
 gmake TNAME=FieldRegrid NP=1 ctest
 gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/tests'
 mpirun -np 1 ./ESMC_FieldRegridUTest 1> ./ESMC_FieldRegridUTest.stdout 2>&1
+cat: ./PET*FieldRegridUTest.Log: No such file or directory
 gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/tests'
 gmake TNAME=FieldRegridCsrv NP=1 ctest
 gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/tests'
@@ -1841,7 +1842,6 @@ PASS: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldGridRegridCsrvUTest.C
 PASS: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldGridRegridParUTest.C
 PASS: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldGridRegridUTest.C
 PASS: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldRegridCsrvUTest.C
-PASS: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldRegridUTest.C
 PASS: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldSMMFromFileUTest.C
 PASS: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldUTest.C
 PASS: openmpi/g: src/Infrastructure/Field/tests/ESMF_FieldArbGridUTest.F90
@@ -2006,19 +2006,21 @@ PASS: openmpi/g: src/prologue/tests/ESMF_StringUTest.F90
 PASS: openmpi/g: src/prologue/tests/ESMF_WordsizeUTest.F90
 
 
+The following unit test files failed to build, failed to execute or crashed during execution:
+
+CRASHED: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldRegridUTest.C
+
+
 The following test harness unit tests pass:
+PASS: openmpi/g: ESMF_array_2_NP1UTest
 PASS: openmpi/g: ESMF_field_1_NP1UTest
-
-
-The following test harness unit tests fail, did not build, or did not execute:
-FAIL: openmpi/g: ESMF_array_2_NP1UTest
 
 
 The log and stdout files for the unit tests can be found at:
 /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testg/Linux.gfortran.64.openmpi.default
 
 
-Found 8837 exhaustive multi-processor unit tests, 8836 passed and 1 failed.
+Found 8837 exhaustive multi-processor unit tests, 8797 passed and 40 failed.
 
 gmake[1]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf'
-Fri Jan  1 13:33:22 MST 2021
+Sat Jan  2 07:56:49 MST 2021
