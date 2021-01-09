@@ -1,5 +1,4 @@
 gmake[1]: Entering directory `/scratch/esmf/manual/pgi_mpiuni/esmf'
-sed: can't read /scratch/esmf/manual/pgi_mpiuni/esmf/test/testO/Linux.pgi.64.mpiuni.default/unit_tests.config: No such file or directory
 gmake[1]: Leaving directory `/scratch/esmf/manual/pgi_mpiuni/esmf'
 gmake[1]: Entering directory `/scratch/esmf/manual/pgi_mpiuni/esmf'
 rm -rf /scratch/esmf/manual/pgi_mpiuni/esmf/test/testO/Linux.pgi.64.mpiuni.default/test_harness.*
@@ -290,12 +289,14 @@ gmake[6]: Leaving directory `/scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastruc
 gmake TNAME=TraceIO NP=1 ftest_profile_preload 
 gmake[6]: Entering directory `/scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastructure/Trace/tests'
 env ESMF_RUNTIME_TRACE=ON LD_PRELOAD=/scratch/esmf/manual/pgi_mpiuni/esmf/lib/libO/Linux.pgi.64.mpiuni.default/libesmftrace_preload.so /scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMF_TraceIOUTest 1> ./ESMF_TraceIOUTest.stdout 2>&1
+/bin/sh: line 12: 29408 Segmentation fault      (core dumped) env ESMF_RUNTIME_TRACE=ON LD_PRELOAD=/scratch/esmf/manual/pgi_mpiuni/esmf/lib/libO/Linux.pgi.64.mpiuni.default/libesmftrace_preload.so /scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMF_TraceIOUTest > ./ESMF_TraceIOUTest.stdout 2>&1
 cat: ./PET*TraceIOUTest.Log: No such file or directory
 mv: cannot stat ‘./traceout’: No such file or directory
 gmake[6]: Leaving directory `/scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastructure/Trace/tests'
 gmake TNAME=TraceMPI NP=1 ftest_profile_preload
 gmake[6]: Entering directory `/scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastructure/Trace/tests'
 env ESMF_RUNTIME_TRACE=ON LD_PRELOAD=/scratch/esmf/manual/pgi_mpiuni/esmf/lib/libO/Linux.pgi.64.mpiuni.default/libesmftrace_preload.so /scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMF_TraceMPIUTest 1> ./ESMF_TraceMPIUTest.stdout 2>&1
+/bin/sh: line 12: 29651 Segmentation fault      (core dumped) env ESMF_RUNTIME_TRACE=ON LD_PRELOAD=/scratch/esmf/manual/pgi_mpiuni/esmf/lib/libO/Linux.pgi.64.mpiuni.default/libesmftrace_preload.so /scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMF_TraceMPIUTest > ./ESMF_TraceMPIUTest.stdout 2>&1
 cat: ./PET*TraceMPIUTest.Log: No such file or directory
 mv: cannot stat ‘./traceout’: No such file or directory
 gmake[6]: Leaving directory `/scratch/esmf/manual/pgi_mpiuni/esmf/src/Infrastructure/Trace/tests'
@@ -1814,8 +1815,185 @@ gmake check_unit_tests
 gmake[1]: Entering directory `/scratch/esmf/manual/pgi_mpiuni/esmf'
 
 
-NOTE: Unable to open /scratch/esmf/manual/pgi_mpiuni/esmf/test/testO/Linux.pgi.64.mpiuni.default/unit_tests.config file.
-Either the 'gmake ESMF_BOPT=O build_unit_tests' has not been run or the 'gmake ESMF_BOPT=O' did not build successfully. 
+The following unit test files failed to build, failed to execute or crashed during execution:
+
+CRASHED: mpiuni/O: src/Infrastructure/Array/tests/ESMC_ArrayUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Array/tests/ESMF_ArrayDataUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Array/tests/ESMF_ArraySMMFromFileUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Array/tests/ESMF_ArraySMMUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/ArrayBundle/tests/ESMF_ArrayBundleCreateUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/ArrayBundle/tests/ESMF_ArrayBundleRedistUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/ArraySpec/tests/ESMC_ArraySpecUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/ArraySpec/tests/ESMF_ArraySpecUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Base/tests/ESMC_BaseUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Base/tests/ESMC_InfoUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Base/tests/ESMC_NlohmannJSONUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Base/tests/ESMF_BaseUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Base/tests/ESMF_InfoArrayUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Base/tests/ESMF_InfoUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Config/tests/ESMC_ConfigUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Config/tests/ESMF_ConfigUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Container/tests/ESMF_ContainerUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/DELayout/tests/ESMF_DELayoutUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/DELayout/tests/ESMF_DELayoutWorkQueueUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/DistGrid/tests/ESMC_DistGridUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/DistGrid/tests/ESMF_DistGridCreateGetUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMC_FieldGridGridRegridCsrvUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMC_FieldGridGridRegridUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMC_FieldGridRegrid2UTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMC_FieldGridRegridCsrv2UTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMC_FieldGridRegridCsrvUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMC_FieldGridRegridUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMC_FieldRegridCsrvUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMC_FieldRegridUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMC_FieldSMMFromFileUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMC_FieldUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldArbGridUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRedistArbUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridCSUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridCsrv2ndUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridCsrvUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridXGUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldSMMFromFileUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldStressUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/FieldBundle/tests/ESMF_FieldBundleRegridUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/FieldBundle/tests/ESMF_FieldBundleUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Grid/tests/ESMC_GridUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Grid/tests/ESMF_GridArbitraryUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Grid/tests/ESMF_GridCoordUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Grid/tests/ESMF_GridCreateUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Grid/tests/ESMF_GridItemUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/IO/tests/ESMCI_IO_NetCDFUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/IO/tests/ESMCI_IO_PIOUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/IO/tests/ESMC_IO_InqUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/IO/tests/ESMF_IOUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/IO/tests/ESMF_IO_PIOUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/IO/tests/ESMF_IO_YAMLUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/LocStream/tests/ESMC_LocStreamUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/LocStream/tests/ESMF_LocStreamUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/LocalArray/tests/ESMF_LocalArrayDataUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/LocalArray/tests/ESMF_LocalArrayUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/LogErr/tests/ESMC_LogErrPerfUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/LogErr/tests/ESMC_LogErrUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/LogErr/tests/ESMF_LogErrPerfUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/LogErr/tests/ESMF_LogErrUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMeshRegridUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMeshUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MBMesh_UtilUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MeshMOABUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_MeshUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Mesh/tests/ESMC_Proj4UTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Mesh/tests/ESMF_MeshOpUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Mesh/tests/ESMF_MeshUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/PointList/tests/ESMF_PointListUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Route/tests/ESMF_RouteHandleUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/TimeMgr/tests/ESMC_CalendarUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/TimeMgr/tests/ESMC_ClockUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/TimeMgr/tests/ESMC_TimeIntervalUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/TimeMgr/tests/ESMC_TimeUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/TimeMgr/tests/ESMF_AlarmUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/TimeMgr/tests/ESMF_CalRangeUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/TimeMgr/tests/ESMF_CalendarUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/TimeMgr/tests/ESMF_ClockUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/TimeMgr/tests/ESMF_TimeIntervalUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/TimeMgr/tests/ESMF_TimeUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Trace/tests/ESMC_TraceRegionUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/Trace/tests/ESMF_ProfileUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Trace/tests/ESMF_TraceClkMonoSyncUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Trace/tests/ESMF_TraceClkMonoUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Trace/tests/ESMF_TraceIOUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Trace/tests/ESMF_TraceMPIUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Trace/tests/ESMF_TraceUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Util/tests/ESMF_FortranWordsizeUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Util/tests/ESMF_InitMacrosUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Util/tests/ESMF_TypeKindGetUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/Util/tests/ESMF_UtilUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMC_VMUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMAccUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMAllGatherUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMAllGatherVUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMAllToAllUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMAllToAllVUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMBarrierUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMBroadcastUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMComponentUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMGatherUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMOpenMPUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMScatterUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMSendNbVMRecvNbUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMSendRecvNbUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMSendRecvUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMUserMpiInitUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/XGrid/tests/ESMC_XGridUTest.C
+CRASHED: mpiuni/O: src/Infrastructure/XGrid/tests/ESMF_XGridMaskingUTest.F90
+CRASHED: mpiuni/O: src/Infrastructure/XGrid/tests/ESMF_XGridUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttPackABundleUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttPackArrayUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttPackCplCompUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttPackDistGridUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttPackFBundleUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttPackFieldUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttPackGridCompUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttPackGridUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttPackLocStreamUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttPackSciCompUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttPackStateUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttributeABundleUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttributeArrayUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttributeCplCompUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttributeDistGridUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttributeFBundleUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttributeFieldUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttributeGridCompUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttributeGridUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttributeLocStreamUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttributeSciCompUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttributeStateUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/AttributeAPI/tests/ESMF_AttributeUtilUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/Component/tests/ESMC_ComponentUTest.C
+CRASHED: mpiuni/O: src/Superstructure/Component/tests/ESMF_CompSetServUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/Component/tests/ESMF_ComponentUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/Component/tests/ESMF_CplCompCreateUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/Component/tests/ESMF_GridCompCreateUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/Component/tests/ESMF_SciCompCreateUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/Component/tests/ESMF_StdCompMethodsUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/ESMFMod/tests/ESMF_FrameworkUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/IOAPI/tests/ESMF_IOCompUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/InfoAPI/tests/ESMF_InfoCacheUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/InfoAPI/tests/ESMF_InfoDescribeUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/InfoAPI/tests/ESMF_InfoGetInterfaceArrayUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/InfoAPI/tests/ESMF_InfoSyncUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/PreESMFMod/tests/ESMF_FileRegridUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/PreESMFMod/tests/ESMF_RegridWeightGenUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/State/tests/ESMC_StateUTest.C
+CRASHED: mpiuni/O: src/Superstructure/State/tests/ESMF_StateCreateUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/State/tests/ESMF_StateReadWriteUTest.F90
+CRASHED: mpiuni/O: src/Superstructure/State/tests/ESMF_StateUTest.F90
+CRASHED: mpiuni/O: src/addon/NUOPC/tests/ESMF_NUOPC_UTest.F90
+CRASHED: mpiuni/O: src/epilogue/tests/ESMCI_TestUTest.C
+CRASHED: mpiuni/O: src/epilogue/tests/ESMC_TestUTest.C
+CRASHED: mpiuni/O: src/epilogue/tests/ESMF_TestUTest.F90
+CRASHED: mpiuni/O: src/prologue/tests/ESMCI_ExceptionsUTest.C
+CRASHED: mpiuni/O: src/prologue/tests/ESMCI_FeatureUTest.C
+CRASHED: mpiuni/O: src/prologue/tests/ESMF_F90ArrayPtrUTest.F90
+CRASHED: mpiuni/O: src/prologue/tests/ESMF_FeatureUTest.F90
+CRASHED: mpiuni/O: src/prologue/tests/ESMF_LAPACKUTest.F90
+CRASHED: mpiuni/O: src/prologue/tests/ESMF_StringUTest.F90
+CRASHED: mpiuni/O: src/prologue/tests/ESMF_WordsizeUTest.F90
+
+
+The following test harness unit tests fail, did not build, or did not execute:
+FAIL: mpiuni/O: ESMF_array_default_NP1UTest
+FAIL: mpiuni/O: ESMF_field_default_NP1UTest
+
+
+The log and stdout files for the unit tests can be found at:
+/scratch/esmf/manual/pgi_mpiuni/esmf/test/testO/Linux.pgi.64.mpiuni.default
+
+
+Found 7377 exhaustive single processor unit tests, 0 passed and 7377 failed.
 
 gmake[1]: Leaving directory `/scratch/esmf/manual/pgi_mpiuni/esmf'
-Thu Jan  7 21:14:23 MST 2021
+Fri Jan  8 23:08:02 MST 2021
