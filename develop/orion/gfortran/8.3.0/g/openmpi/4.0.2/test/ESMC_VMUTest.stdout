@@ -25,16 +25,23 @@ PASS VMBarrier, ESMC_VMUTest.C, line 90
 localPet= 0 , petCount= 4, peCount= 4, pthreadsEnabledFlag= 1, openMPEnabledFlag= 1 
 --- ESMCI::VM::print() start ---
 --- ESMCI::VMId::print() start ---
-localPet= 1 , petCount= 4, peCount= 4, pthreadsEnabledFlag= 1, openMPEnabledFlag= 1 
---- ESMCI::VM::print() start ---
---- ESMCI::VMId::print() start ---
-  vmKeyWidth = 1
 localPet= 2 , petCount= 4, peCount= 4, pthreadsEnabledFlag= 1, openMPEnabledFlag= 1 
 --- ESMCI::VM::print() start ---
 --- ESMCI::VMId::print() start ---
   vmKeyWidth = 1
   vmKey=0xF0000000
   localID = 0
+  vmKeyWidth = 1
+  vmKey=0xF0000000
+  localID = 0
+--- ESMCI::VMId::print() end ---
+localPet= 1 , petCount= 4, peCount= 4, pthreadsEnabledFlag= 1, openMPEnabledFlag= 1 
+--- ESMCI::VM::print() start ---
+--- ESMCI::VMId::print() start ---
+  vmKeyWidth = 1
+  vmKey=0xF0000000
+  localID = 0
+--- ESMCI::VMId::print() end ---
 --- ESMCI::VMId::print() end ---
 localPet= 3 , petCount= 4, peCount= 4, pthreadsEnabledFlag= 1, openMPEnabledFlag= 1 
 --- ESMCI::VM::print() start ---
@@ -43,43 +50,36 @@ localPet= 3 , petCount= 4, peCount= 4, pthreadsEnabledFlag= 1, openMPEnabledFlag
   vmKey=0xF0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
-  vmKeyWidth = 1
-  vmKey=0xF0000000
-  localID = 0
---- ESMCI::VMId::print() end ---
-  vmKey=0xF0000000
-  localID = 0
---- ESMCI::VMId::print() end ---
 PASS VMPrint, ESMC_VMUTest.C, line 99
 PASS VMPrint, ESMC_VMUTest.C, line 99
 PASS VMPrint, ESMC_VMUTest.C, line 99
 PASS VMPrint, ESMC_VMUTest.C, line 99
 PASS VMReduceI4, ESMC_VMUTest.C, line 124
 PASS VMReduceI4, ESMC_VMUTest.C, line 124
+PASS VMReduceI8, ESMC_VMUTest.C, line 150
+PASS VMReduceR4, ESMC_VMUTest.C, line 176
 PASS VMReduceI4, ESMC_VMUTest.C, line 124
 PASS VMReduceI8, ESMC_VMUTest.C, line 150
-PASS VMReduceI8, ESMC_VMUTest.C, line 150
-PASS VMReduceI8, ESMC_VMUTest.C, line 150
-PASS VMReduceR4, ESMC_VMUTest.C, line 176
-PASS VMReduceR8, ESMC_VMUTest.C, line 202
-PASS VMReduceR4, ESMC_VMUTest.C, line 176
-PASS VMReduceR8, ESMC_VMUTest.C, line 202
-PASS VMReduceR4, ESMC_VMUTest.C, line 176
-PASS VMReduceR8, ESMC_VMUTest.C, line 202
 PASS VMReduceI4, ESMC_VMUTest.C, line 124
 PASS VMReduceI8, ESMC_VMUTest.C, line 150
 PASS VMReduceR4, ESMC_VMUTest.C, line 176
 PASS VMReduceR8, ESMC_VMUTest.C, line 202
+PASS VMReduceR4, ESMC_VMUTest.C, line 176
+PASS VMReduceR8, ESMC_VMUTest.C, line 202
+PASS VMReduceI8, ESMC_VMUTest.C, line 150
+PASS VMReduceR8, ESMC_VMUTest.C, line 202
+PASS VMReduceR4, ESMC_VMUTest.C, line 176
+PASS VMReduceR8, ESMC_VMUTest.C, line 202
+PASS VMBroadcastI4, ESMC_VMUTest.C, line 227
 PASS VMBroadcastI4, ESMC_VMUTest.C, line 227
 PASS VMBroadcastI4, ESMC_VMUTest.C, line 227
 PASS VMBroadcastI8, ESMC_VMUTest.C, line 252
+PASS VMBroadcastR4, ESMC_VMUTest.C, line 277
 PASS VMBroadcastI4, ESMC_VMUTest.C, line 227
 PASS VMBroadcastI8, ESMC_VMUTest.C, line 252
 PASS VMBroadcastI8, ESMC_VMUTest.C, line 252
 PASS VMBroadcastR4, ESMC_VMUTest.C, line 277
-PASS VMBroadcastI4, ESMC_VMUTest.C, line 227
 PASS VMBroadcastI8, ESMC_VMUTest.C, line 252
-PASS VMBroadcastR4, ESMC_VMUTest.C, line 277
 PASS VMBroadcastR4, ESMC_VMUTest.C, line 277
 PASS VMBroadcastR8, ESMC_VMUTest.C, line 302
 PASS VMBroadcastR4, ESMC_VMUTest.C, line 277
@@ -91,13 +91,13 @@ Ending Test, file ESMC_VMUTest.C, line 358
 PASS VMBroadcastLogical, ESMC_VMUTest.C, line 327
 Ending Test, file ESMC_VMUTest.C, line 358
 PASS VMBroadcastLogical, ESMC_VMUTest.C, line 327
-PASS VMBroadcastLogical, ESMC_VMUTest.C, line 327
 Ending Test, file ESMC_VMUTest.C, line 358
+PASS VMBroadcastLogical, ESMC_VMUTest.C, line 327
 Ending Test, file ESMC_VMUTest.C, line 358
 --- VMK::print() start ---
-vm located at: 0x1a24880
+vm located at: 0x198b880
 npets = 4, mypet=1
-  pth_mutex =		 0x1b50ca0
+  pth_mutex =		 0x1abc4b0
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 1
@@ -117,11 +117,11 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
- PET 1 Test Elapsed Time  8.862000 msec.
+ PET 1 Test Elapsed Time  7.585000 msec.
 --- VMK::print() start ---
-vm located at: 0x1442880
+vm located at: 0x2432880
 npets = 4, mypet=2
-  pth_mutex =		 0x159a040
+  pth_mutex =		 0x2560820
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 2
@@ -141,11 +141,11 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
- PET 2 Test Elapsed Time  9.076000 msec.
+ PET 2 Test Elapsed Time  9.584000 msec.
 --- VMK::print() start ---
-vm located at: 0xb6f880
+vm located at: 0x174a880
 npets = 4, mypet=3
-  pth_mutex =		 0xc9e930
+  pth_mutex =		 0x187a8b0
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 3
@@ -165,11 +165,11 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
- PET 3 Test Elapsed Time  9.666000 msec.
+ PET 3 Test Elapsed Time  9.683000 msec.
 --- VMK::print() start ---
-vm located at: 0xa1f880
+vm located at: 0x720880
 npets = 4, mypet=0
-  pth_mutex =		 0xc32d60
+  pth_mutex =		 0x84bc70
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 0
@@ -189,5 +189,5 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
- PET 0 Test Elapsed Time  10.205000 msec.
-Thu Jan  7 21:44:35 CST 2021
+ PET 0 Test Elapsed Time  11.434000 msec.
+Fri Jan  8 22:13:09 CST 2021
