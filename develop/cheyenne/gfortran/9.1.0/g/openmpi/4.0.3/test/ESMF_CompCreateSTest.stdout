@@ -7,12 +7,12 @@
  Gridded Component:
  Gridded Component:
   Component name = System Test CompCreate
-  Component name = System Test CompCreate
  Comp Create finished, name = System Test CompCreate
   Component name = System Test CompCreate
  Comp Create finished, name = System Test CompCreate
   Component name = System Test CompCreate
  Comp Create finished, name = System Test CompCreate
+  Component name = System Test CompCreate
  Comp Create finished, name = System Test CompCreate
  Comp SetVM finished, rc=            0
  Comp SetVM finished, rc=            0
@@ -22,11 +22,11 @@
  In user register routine
  In user register routine
  In user register routine
- Registered Initialize, Run, and Finalize routines
  Registered Initialize, Run, and Finalize routines
  Registered Initialize, Run, and Finalize routines
  Registered Initialize, Run, and Finalize routines
  Registered local datablock
+ Registered Initialize, Run, and Finalize routines
  Registered local datablock
  Registered local datablock
  Registered local datablock
@@ -48,7 +48,6 @@
  Comp Initialize 1 finished
  User Comp Init 2 starting
  Gridded Component:
-  Component name = System Test CompCreate
  User Comp Init 2 starting
  Gridded Component:
   Component name = System Test CompCreate
@@ -58,9 +57,10 @@
  User Comp Init 2 starting
  Gridded Component:
   Component name = System Test CompCreate
- ESMF_StatePrint: (pet 2):
- ESMF_StatePrint: (pet 0):
+  Component name = System Test CompCreate
  ESMF_StatePrint: (pet 1):
+ ESMF_StatePrint: (pet 0):
+ ESMF_StatePrint: (pet 2):
  ESMF_StatePrint: (pet 3):
   State name: igrid export state
   State name: igrid export state
@@ -68,12 +68,15 @@
   State name: igrid export state
      status: Export State, object count: 0
      status: Export State, object count: 0
-     reconcile needed: F
-     status: Export State, object count: 0
      status: Export State, object count: 0
      reconcile needed: F
+     status: Export State, object count: 0
      reconcile needed: F
      reconcile needed: F
+     reconcile needed: F
+ Base name    = igrid export state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
  Base name    = igrid export state
  Status: Base = Ready,  object = Ready
  Proxy        = no
@@ -86,14 +89,9 @@
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
- Base name    = igrid export state
- Status: Base = Ready,  object = Ready
- Proxy        = no
  Root Info (Attributes):
 {}{}{}{} init, ready to call get data ptr
  init, back from data ptr
- init, ready to call get data ptr
- init, back from data ptr
  init, data =           13  0.660000026              25
  init, ready to call get data ptr
  init, back from data ptr
@@ -101,12 +99,14 @@
  init, ready to call get data ptr
  init, back from data ptr
  init, data =           13  0.660000026              25
+ init, ready to call get data ptr
+ init, back from data ptr
  init, data =           13  0.660000026              25
- ESMF_StatePrint: (pet 0):
+ ESMF_StatePrint: (pet 2):
   State name: igrid export state
  ESMF_StatePrint: (pet 3):
   State name: igrid export state
- ESMF_StatePrint: (pet 2):
+ ESMF_StatePrint: (pet 0):
   State name: igrid export state
  ESMF_StatePrint: (pet 1):
   State name: igrid export state
@@ -114,12 +114,6 @@
      reconcile needed: T
  Base name    = igrid export state
  Status: Base = Ready,  object = Ready
- Proxy        = no
-     status: Export State, object count: 1
-     reconcile needed: T
- Base name    = igrid export state
- Status: Base = Ready,  object = Ready
- Proxy        = no
      status: Export State, object count: 1
      reconcile needed: T
  Base name    = igrid export state
@@ -132,7 +126,13 @@
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+     status: Export State, object count: 1
+     reconcile needed: T
+ Base name    = igrid export state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
  Root Info (Attributes):
+ Proxy        = no
  Root Info (Attributes):
 {}     object: 1,name: humidity
             type: Field
@@ -706,4 +706,4 @@
  All Destroy routines done
  System Test CompCreate complete
   PASS  System Test CompCreate: Component Create Test, ESMF_CompCreateSTest.F90, line 199
-Mon Jan 11 13:58:14 MST 2021
+Tue Jan 12 14:24:53 MST 2021
