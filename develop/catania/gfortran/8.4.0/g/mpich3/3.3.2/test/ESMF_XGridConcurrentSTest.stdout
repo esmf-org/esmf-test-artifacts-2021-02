@@ -17,11 +17,11 @@
  Start of  System Test ESMF_XGridConcurrentSTest
  --------------------------------------- 
  --------------------------------------- 
- --------------------------------------- 
- Start of  System Test ESMF_XGridConcurrentSTest
  Start of  System Test ESMF_XGridConcurrentSTest
  --------------------------------------- 
  --------------------------------------- 
+ Start of  System Test ESMF_XGridConcurrentSTest
+ --------------------------------------- 
  Created component landrc =           0
  Created component landrc =           0
  Created component landrc =           0
@@ -38,6 +38,10 @@
  Created component landrc =           0
  Created component landrc =           0
  Created component landrc =           0
+ Created component user one-way coupler, rc =           0
+ Comp Creates finished
+ Created component user one-way coupler, rc =           0
+ Comp Creates finished
  Created component user one-way coupler, rc =           0
  Comp Creates finished
  Created component user one-way coupler, rc =           0
@@ -51,20 +55,16 @@
  Created component user one-way coupler, rc =           0
  Comp Creates finished
  atmos SetVM finished, rc=            0           0
- Created component user one-way coupler, rc =           0
- Comp Creates finished
  atmos SetVM finished, rc=            0           0
- Created component user one-way coupler, rc =           0
- Comp Creates finished
+ atmos SetVM finished, rc=            0           0
+ atmos SetVM finished, rc=            0           0
+ atmos SetVM finished, rc=            0           0
+ atmos SetVM finished, rc=            0           0
  atmos SetVM finished, rc=            0           0
  atmos SetVM finished, rc=            0           0
  atmos SetServices finished, rc=            0
- atmos SetVM finished, rc=            0           0
- atmos SetServices finished, rc=            0
- atmos SetVM finished, rc=            0           0
- atmos SetVM finished, rc=            0           0
- atmos SetVM finished, rc=            0           0
  land SetVM finished, rc=            0
+ atmos SetServices finished, rc=            0
  land SetVM finished, rc=            0
  Land Register starting
  Registered Initialize, Run, and Finalize routines
@@ -74,18 +74,6 @@
  Land Register starting
  Registered Initialize, Run, and Finalize routines
  Land Register returning
- land SetServices finished, rc=            0
- Cpl SetVM finished, rc=            0
- Atmosphere Register starting
- Registered Initialize, Run, and Finalize routines
- Atmosphere Register returning
- atmos SetServices finished, rc=            0
- land SetVM finished, rc=            0
- land SetServices finished, rc=            0
- Atmosphere Register starting
- Registered Initialize, Run, and Finalize routines
- Atmosphere Register returning
- Cpl SetVM finished, rc=            0
  Atmosphere Register starting
  Registered Initialize, Run, and Finalize routines
  Atmosphere Register returning
@@ -96,10 +84,12 @@
  Atmosphere Register returning
  atmos SetServices finished, rc=            0
  land SetVM finished, rc=            0
+ land SetServices finished, rc=            0
+ Atmosphere Register starting
+ Registered Initialize, Run, and Finalize routines
+ Atmosphere Register returning
  atmos SetServices finished, rc=            0
  land SetVM finished, rc=            0
- land SetServices finished, rc=            0
- Cpl SetVM finished, rc=            0
  land SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
  land SetServices finished, rc=            0
@@ -110,6 +100,16 @@
  atmos SetServices finished, rc=            0
  land SetVM finished, rc=            0
  land SetServices finished, rc=            0
+ Cpl SetVM finished, rc=            0
+ Atmosphere Register starting
+ Registered Initialize, Run, and Finalize routines
+ Atmosphere Register returning
+ atmos SetServices finished, rc=            0
+ land SetVM finished, rc=            0
+ land SetServices finished, rc=            0
+ Cpl SetVM finished, rc=            0
+ land SetServices finished, rc=            0
+ Cpl SetVM finished, rc=            0
  Cpl SetVM finished, rc=            0
  Atmosphere Register starting
  Registered Initialize, Run, and Finalize routines
@@ -153,6 +153,8 @@
  Land Init starting, localPet =           0
  Land Init starting, localPet =           1
  Land Initialize finished, rc =           0
+ Atmosphere Init starting, localPet =           0
+ Land Initialize finished, rc =           0
  Atmosphere Init starting, localPet =           1
  Land Initialize finished, rc =           0
  Atmosphere Init starting, localPet =           2
@@ -162,47 +164,38 @@
  Atmosphere Init starting, localPet =           4
  Land Initialize finished, rc =           0
  Atmosphere Init starting, localPet =           5
- Land Initialize finished, rc =           0
- Atmosphere Init starting, localPet =           0
- land Init returning
- Land Initialize finished, rc =           0
- Atmosphere Initialize finished, rc =           0
- User Coupler Init starting, localPet =           0
- Atmos Init returning
- Atmosphere Initialize finished, rc =           0
- User Coupler Init starting, localPet =           5
  Atmos Init returning
  Atmosphere Initialize finished, rc =           0
  Atmos Init returning
  Atmosphere Initialize finished, rc =           0
- User Coupler Init starting, localPet =           6
  User Coupler Init starting, localPet =           7
- Atmos Init returning
- Atmosphere Initialize finished, rc =           0
+ User Coupler Init starting, localPet =           6
  Atmos Init returning
  Atmosphere Initialize finished, rc =           0
  User Coupler Init starting, localPet =           4
- land Init returning
- Land Initialize finished, rc =           0
- User Coupler Init starting, localPet =           2
  Atmos Init returning
  Atmosphere Initialize finished, rc =           0
+ Atmos Init returning
+ Atmosphere Initialize finished, rc =           0
+ User Coupler Init starting, localPet =           5
+ land Init returning
+ Land Initialize finished, rc =           0
  User Coupler Init starting, localPet =           3
  Atmosphere Initialize finished, rc =           0
+ User Coupler Init starting, localPet =           0
+ land Init returning
+ Land Initialize finished, rc =           0
+ Atmosphere Initialize finished, rc =           0
  User Coupler Init starting, localPet =           1
+ Atmos Init returning
+ Atmosphere Initialize finished, rc =           0
+ User Coupler Init starting, localPet =           2
 
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-
-Program received signal SIGABRT: Process abort signal.
-
-Backtrace for this error:
-#0  0x105b0c48d
-#1  0x105b0b8c3
-#2  0x7fff71a71b5c
-#0  0x10deaf48d
-#1  0x10deae8c3
+#0  0x1138c248d
+#1  0x1138c18c3
 #2  0x7fff71a71b5c
 
 Program received signal SIGABRT: Process abort signal.
@@ -212,15 +205,11 @@ Backtrace for this error:
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-#0  0x10e73e48d
-#1  0x10e73d8c3
+#0  0x10dea448d
+#1  0x10dea38c3
 #2  0x7fff71a71b5c
-
-Program received signal SIGABRT: Process abort signal.
-
-Backtrace for this error:
-#0  0x11254448d
-#1  0x1125438c3
+#0  0x104c8948d
+#1  0x104c888c3
 #2  0x7fff71a71b5c
 
 Program received signal SIGABRT: Process abort signal.
@@ -234,22 +223,30 @@ Backtrace for this error:
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-#0  0x112e4d48d
-#1  0x112e4c8c3
+#0  0x10a81c48d
+#1  0x10a81b8c3
 #2  0x7fff71a71b5c
-#0  0x10946d48d
-#1  0x10946c8c3
+#0  0x106bfb48d
+#1  0x106bfa8c3
 #2  0x7fff71a71b5c
-#0  0x10900648d
-#1  0x1090058c3
+#0  0x10552a48d
+#1  0x1055298c3
 #2  0x7fff71a71b5c
-#0  0x10eb4a48d
-#1  0x10eb498c3
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x10800948d
+#1  0x1080088c3
 #2  0x7fff71a71b5c
 
 ===================================================================================
 =   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
-=   PID 53739 RUNNING AT cgdm-catania
+=   PID 11936 RUNNING AT cgdm-catania
 =   EXIT CODE: 6
 =   CLEANING UP REMAINING PROCESSES
 =   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
@@ -257,4 +254,4 @@ Backtrace for this error:
 YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Abort trap: 6 (signal 6)
 This typically refers to a problem with your application.
 Please see the FAQ page for debugging suggestions
-Mon Jan 11 14:58:16 MST 2021
+Tue Jan 12 16:42:41 MST 2021
