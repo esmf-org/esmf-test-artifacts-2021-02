@@ -32,6 +32,7 @@ gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esm
 gmake TNAME=LAPACK NP=2 ftest
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
 mpirun -np 2 ./ESMF_LAPACKUTest 1> ./ESMF_LAPACKUTest.stdout 2>&1
+cat: ./PET*LAPACKUTest.Log: No such file or directory
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
 gmake TNAME=Feature NP=2 ftest
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
@@ -44,6 +45,7 @@ gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esm
 gmake TNAME=Feature NP=2 citest
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
 mpirun -np 2 ./ESMCI_FeatureUTest 1> ./ESMCI_FeatureUTest.stdout 2>&1
+cat: ./PET*FeatureUTest.Log: No such file or directory
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
 gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
 tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/yaml-cpp
@@ -1998,12 +2000,16 @@ PASS: openmpi/O: src/epilogue/tests/ESMCI_TestUTest.C
 PASS: openmpi/O: src/epilogue/tests/ESMC_TestUTest.C
 PASS: openmpi/O: src/epilogue/tests/ESMF_TestUTest.F90
 PASS: openmpi/O: src/prologue/tests/ESMCI_ExceptionsUTest.C
-PASS: openmpi/O: src/prologue/tests/ESMCI_FeatureUTest.C
 PASS: openmpi/O: src/prologue/tests/ESMF_F90ArrayPtrUTest.F90
 PASS: openmpi/O: src/prologue/tests/ESMF_FeatureUTest.F90
-PASS: openmpi/O: src/prologue/tests/ESMF_LAPACKUTest.F90
 PASS: openmpi/O: src/prologue/tests/ESMF_StringUTest.F90
 PASS: openmpi/O: src/prologue/tests/ESMF_WordsizeUTest.F90
+
+
+The following unit test files failed to build, failed to execute or crashed during execution:
+
+CRASHED: openmpi/O: src/prologue/tests/ESMCI_FeatureUTest.C
+CRASHED: openmpi/O: src/prologue/tests/ESMF_LAPACKUTest.F90
 
 
 The following test harness unit tests pass:
@@ -2015,7 +2021,7 @@ The log and stdout files for the unit tests can be found at:
 /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testO/Linux.gfortran.64.openmpi.default
 
 
-Found 8837 exhaustive multi-processor unit tests, 8837 passed and 0 failed.
+Found 8837 exhaustive multi-processor unit tests, 8823 passed and 14 failed.
 
 gmake[1]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf'
-Thu Jan 14 14:51:59 MST 2021
+Fri Jan 15 18:03:01 MST 2021
