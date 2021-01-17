@@ -4,11 +4,13 @@
  State Reconcile Example 1: Component Creation
  GridComp Create returned, name = Atmosphere
  GridComp Create returned, name = Atmosphere
- GridComp Create returned, name = Ocean
- GridComp Create returned, name = Atmosphere
  GridComp Create returned, name = Atmosphere
  GridComp Create returned, name = Ocean
  GridComp Create returned, name = Ocean
+ GridComp Create returned, name = Atmosphere
+ GridComp Create returned, name = Ocean
+ State Create returned, name = Ocn2Atm
+ State Example 1 finished
  State Create returned, name = Ocn2Atm
  State Example 1 finished
  GridComp Create returned, name = Ocean
@@ -16,89 +18,78 @@
  State Example 1 finished
  State Create returned, name = Ocn2Atm
  State Example 1 finished
- State Create returned, name = Ocn2Atm
- State Example 1 finished
  ready to set entry point 1
  ready to set entry point 2
  ready to call init for comp 1
  ready to set entry point 1
  ready to set entry point 2
  ready to call init for comp 1
+ i am comp1_init
  ready to set entry point 1
  ready to set entry point 2
  ready to call init for comp 1
+ i am comp1_init
+ ready to call init for comp 2
+ i am comp2_init
  ready to set entry point 1
  ready to set entry point 2
  ready to call init for comp 1
  ready to call init for comp 2
  i am comp2_init
  ready to call init for comp 2
- i am comp2_init
- i am comp1_init
- i am comp1_init
  State Example 2 finished
  State before calling StateReconcile()
- State Example 2 finished
- State before calling StateReconcile()
+ ESMF_StatePrint: (pet 0):
+  State name: Ocn2Atm
  ready to call init for comp 2
+ State Example 2 finished
+ State before calling StateReconcile()
+ ESMF_StatePrint: (pet 1):
+     status: Unspecified intent direction, object count: 0
+     reconcile needed: F
+  State name: Ocn2Atm
+     status: Unspecified intent direction, object count: 0
  State Example 2 finished
  State before calling StateReconcile()
  ESMF_StatePrint: (pet 2):
   State name: Ocn2Atm
+ Base name    = Ocn2Atm
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+     reconcile needed: F
+     status: Unspecified intent direction, object count: 0
+     reconcile needed: F
+ Base name    =  State Example 2 finished
+ State before calling StateReconcile()
+ Base name    = Ocn2Atm
+ Status: Base = Ready,  object = Ready
+ Proxy        = Ocn2Atm
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
  ESMF_StatePrint: (pet 3):
   State name: Ocn2Atm
- ready to call init for comp 2
- State Example 2 finished
- State before calling StateReconcile()
- ESMF_StatePrint: (pet 1):
-  State name: Ocn2Atm
      status: Unspecified intent direction, object count: 0
      reconcile needed: F
-     status: Unspecified intent direction, object count: 0
-     reconcile needed: F
+{}no
+ Root Info (Attributes):
+{}{} Base name    = Ocn2Atm
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{} State after calling StateReconcile()
  ESMF_StatePrint: (pet 0):
   State name: Ocn2Atm
      status: Unspecified intent direction, object count: 0
      reconcile needed: F
- Base name    = Ocn2Atm
- Status: Base = Ready,  object = Ready
- Base name    = Ocn2Atm
- Status: Base = Ready,  object = Ready
- Proxy        = no     status: Unspecified intent direction, object count: 0
-     reconcile needed: F
- Base name    = Ocn2Atm
- Status: Base = Ready,  object =  Proxy        = no
- Root Info (Attributes):
-
- Root Info (Attributes):
- Base name    = Ocn2Atm
- Status: Base = Ready,  object = Ready
- Proxy        = noReady
- Proxy        = no
- Root Info (Attributes):
-
- Root Info (Attributes):
-{}{}{}{} State after calling StateReconcile()
- ESMF_StatePrint: (pet 0):
-  State name: Ocn2Atm
-     status: Unspecified intent direction, object count: 0
-     reconcile needed: F
- Base name    = Ocn2Atm
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{} State Example 3 finished
  State after calling StateReconcile()
  ESMF_StatePrint: (pet 1):
   State name: Ocn2Atm
      status: Unspecified intent direction, object count: 0
      reconcile needed: F
  Base name    = Ocn2Atm
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{} State Example 3 finished
- State after calling StateReconcile()
+ Status: Base = Ready,  object =  State after calling StateReconcile()
  ESMF_StatePrint: (pet 2):
   State name: Ocn2Atm
      status: Unspecified intent direction, object count: 0
@@ -107,7 +98,6 @@
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-{} State Example 3 finished
  State after calling StateReconcile()
  ESMF_StatePrint: (pet 3):
   State name: Ocn2Atm
@@ -117,6 +107,16 @@
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+ Base name    = Ocn2Atm
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{} State Example 3 finished
+Ready
+ Proxy        = no
+ Root Info (Attributes):
+{} State Example 3 finished
+{} State Example 3 finished
 {} State Example 3 finished
   PASS  Example ESMF_StateReconcileEx, ESMF_StateReconcileEx.F90, line 297
   PASS  Example ESMF_StateReconcileEx, ESMF_StateReconcileEx.F90, line 297
@@ -126,4 +126,4 @@
  PASS: ESMF_StateReconcileEx.F90
  PASS: ESMF_StateReconcileEx.F90
  PASS: ESMF_StateReconcileEx.F90
-Fri Jan 15 18:28:01 MST 2021
+Sat Jan 16 15:56:34 MST 2021
