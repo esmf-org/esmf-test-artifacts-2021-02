@@ -5,27 +5,29 @@
  GridComp Create returned, name = Atmosphere
  GridComp Create returned, name = Atmosphere
  GridComp Create returned, name = Atmosphere
+ GridComp Create returned, name = Ocean
  GridComp Create returned, name = Atmosphere
  GridComp Create returned, name = Ocean
- State Create returned, name = Ocn2Atm
- GridComp Create returned, name = Ocean
- State Create returned, name = Ocn2Atm
  GridComp Create returned, name = Ocean
  State Create returned, name = Ocn2Atm
  State Example 1 finished
  GridComp Create returned, name = Ocean
  State Create returned, name = Ocn2Atm
  State Example 1 finished
+ State Create returned, name = Ocn2Atm
  State Example 1 finished
+ State Create returned, name = Ocn2Atm
  State Example 1 finished
  ready to set entry point 1
  ready to set entry point 2
  ready to call init for comp 1
+ i am comp1_init
  ready to set entry point 1
  ready to set entry point 2
  ready to call init for comp 1
  i am comp1_init
- i am comp1_init
+ ready to call init for comp 2
+ State Example 2 finished
  ready to set entry point 1
  ready to set entry point 2
  ready to call init for comp 1
@@ -39,46 +41,44 @@
  ready to call init for comp 2
  State Example 2 finished
  State before calling StateReconcile()
- State Example 2 finished
- State before calling StateReconcile()
- ready to call init for comp 2
- State Example 2 finished
+ ESMF_StatePrint: (pet 0):
+  State name: Ocn2Atm
  State before calling StateReconcile()
  ESMF_StatePrint: (pet 1):
   State name: Ocn2Atm
+ State Example 2 finished
+ State before calling StateReconcile()
      status: Unspecified intent direction, object count: 0
- ESMF_StatePrint: (pet 2):
+     reconcile needed: F
+     status: Unspecified intent direction, object count: 0
+     reconcile needed: F
+ Base name    = Ocn2Atm ESMF_StatePrint: (pet 2):
   State name: Ocn2Atm
      status: Unspecified intent direction, object count: 0
      reconcile needed: F
- ESMF_StatePrint: (pet 0):
-  State name: Ocn2Atm
-     reconcile needed: F
- Base name    = Ocn2Atm Base name    = Ocn2Atm
  State Example 2 finished
  State before calling StateReconcile()
  ESMF_StatePrint: (pet 3):
   State name: Ocn2Atm
-     status: Unspecified intent direction, object count: 0
+ Base name    = Ocn2Atm
+ Status: Base = Ready
+ Status: Base = Ready,  object =  Base name    = Ocn2Atm
      status: Unspecified intent direction, object count: 0
      reconcile needed: F
+,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+Ready
+ Proxy        = no
+ Root Info (Attributes):
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
  Base name    = Ocn2Atm
- Status: Base = Ready,  object = Ready
+{}{}{} Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-     reconcile needed: F
- Base name    = Ocn2Atm
-
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
- Root Info (Attributes):
-{}{}{}{}
+{}
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
@@ -94,22 +94,22 @@ Backtrace for this error:
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-#0  0x107a8db6d
-#1  0x107a8cf9d
+#0  0x102ad9b6d
+#1  0x102ad8f9d
 #2  0x7fff5dcf7b5c
-#0  0x10de66b6d
-#1  0x10de65f9d
+#0  0x1023f5b6d
+#1  0x1023f4f9d
 #2  0x7fff5dcf7b5c
-#0  0x104e32b6d
-#1  0x104e31f9d
+#0  0x111611b6d
+#1  0x111610f9d
 #2  0x7fff5dcf7b5c
-#0  0x10af93b6d
-#1  0x10af92f9d
+#0  0x11001db6d
+#1  0x11001cf9d
 #2  0x7fff5dcf7b5c
 
 ===================================================================================
 =   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
-=   PID 61057 RUNNING AT cgdm-catania
+=   PID 6979 RUNNING AT cgdm-catania
 =   EXIT CODE: 6
 =   CLEANING UP REMAINING PROCESSES
 =   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
@@ -117,4 +117,4 @@ Backtrace for this error:
 YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Abort trap: 6 (signal 6)
 This typically refers to a problem with your application.
 Please see the FAQ page for debugging suggestions
-Fri Jan 15 19:24:57 MST 2021
+Sat Jan 16 16:56:08 MST 2021
