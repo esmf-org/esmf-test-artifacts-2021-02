@@ -17,7 +17,6 @@
  Start of System Test FieldRegrid:
  -------------------------------- 
  Created component user model 1rc =           0
- Created component user model 2rc =           0
  Created component user model 1rc =           0
  Created component user model 2rc =           0
  Created component user model 1rc =           0
@@ -27,6 +26,7 @@
  Created component user model 1rc =           0
  Created component user model 2rc =           0
  Created component user model 1rc =           0
+ Created component user model 2rc =           0
  Created component user model 2rc =           0
  Created component user one-way coupler, rc =           0
  Comp Creates finished
@@ -45,17 +45,10 @@
  Comp SetServices finished, rc=            0           0
  In user register routine
  Registered Initialize, Run, and Finalize routines
+ in user register routine
+ Registered Initialize, Run, and Finalize routines
  In user register routine
  Registered Initialize, Run, and Finalize routines
- in user register routine
- Registered Initialize, Run, and Finalize routines
- Comp SetServices finished, rc=            0           0
- in user register routine
- Registered Initialize, Run, and Finalize routines
- Comp SetServices finished, rc=            0           0
- in user register routine
- Registered Initialize, Run, and Finalize routines
- Comp SetServices finished, rc=            0           0
  Comp SetServices finished, rc=            0           0
  Comp SetServices finished, rc=            0           0
  In user register routine
@@ -63,7 +56,16 @@
  Comp SetServices finished, rc=            0           0
  Comp SetServices finished, rc=            0           0
  Comp SetServices finished, rc=            0           0
+ in user register routine
+ Registered Initialize, Run, and Finalize routines
  Comp SetServices finished, rc=            0           0
+ in user register routine
+ Registered Initialize, Run, and Finalize routines
+ Comp SetServices finished, rc=            0           0
+ Comp SetServices finished, rc=            0           0
+ Comp SetServices finished, rc=            0           0
+ in user setservices routine
+ Registered Initialize, Run, and Finalize routines
  in user setservices routine
  Registered Initialize, Run, and Finalize routines
  Comp SetServices finished, rc=            0           0
@@ -73,8 +75,6 @@
  in user setservices routine
  Registered Initialize, Run, and Finalize routines
  Comp SetServices finished, rc=            0           0
- in user setservices routine
- Registered Initialize, Run, and Finalize routines
  Comp SetServices finished, rc=            0           0
  in user setservices routine
  Registered Initialize, Run, and Finalize routines
@@ -82,24 +82,23 @@
  in user setservices routine
  Registered Initialize, Run, and Finalize routines
  Comp SetServices finished, rc=            0           0
-           0 User Comp 1 Init starting
  Comp 1 Initialize finished, rc =           0
            0 User Comp 2 Init starting
  Comp 1 Initialize finished, rc =           0
+           1 User Comp 2 Init starting
+ Comp 1 Initialize finished, rc =           0
            2 User Comp 2 Init starting
+           0 User Comp 1 Init starting
            1 User Comp 1 Init starting
            2 User Comp 1 Init starting
- Comp 1 Initialize finished, rc =           0
-           1 User Comp 2 Init starting
            0 User Comp 1 Init returning
  Comp 1 Initialize finished, rc =           0
  Comp 2 Initialize finished, rc =           0
  User Coupler Init starting
-           0 User Comp 2 Init returning
+           1 User Comp 2 Init returning
  Comp 2 Initialize finished, rc =           0
  User Coupler Init starting
-           2 User Comp 1 Init returning
- Comp 1 Initialize finished, rc =           0
+           0 User Comp 2 Init returning
  Comp 2 Initialize finished, rc =           0
  User Coupler Init starting
            2 User Comp 2 Init returning
@@ -108,10 +107,11 @@
            1 User Comp 1 Init returning
  Comp 1 Initialize finished, rc =           0
  Comp 2 Initialize finished, rc =           0
- User Coupler Init starting
-           1 User Comp 2 Init returning
+           2 User Comp 1 Init returning
+ Comp 1 Initialize finished, rc =           0
  Comp 2 Initialize finished, rc =           0
  User Coupler Init starting
+ User Coupler Init starting
 
 Program received signal SIGABRT: Process abort signal.
 
@@ -128,29 +128,30 @@ Backtrace for this error:
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
+#0  0x1120f0b6d
+#1  0x1120eff9d
+#2  0x7fff5dcf7b5c
+#0  0x1110eeb6d
+#1  0x1110edf9d
+#2  0x7fff5dcf7b5c
+#0  0x1115c7b6d
+#1  0x1115c6f9d
+#2  0x7fff5dcf7b5c
+#0  0x1080d4b6d
+#1  0x1080d3f9d
+#2  0x7fff5dcf7b5c
 
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-#0  0x10dfcfb6d
-#1  0x10dfcef9d
-#2  0x7fff5dcf7b5c
-#0  0x104b09b6d
-#1  0x104b08f9d
-#2  0x7fff5dcf7b5c
-#0  0x11191db6d
-#1  0x11191cf9d
-#2  0x7fff5dcf7b5c
-#0  0x11086eb6d
-#1  0x11086df9d
-#2  0x7fff5dcf7b5c
-#0  0x10ca94b6d
-#1  0x10ca93f9d
-#2  0x7fff5dcf7b5c
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
 
 ===================================================================================
 =   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
-=   PID 76358 RUNNING AT cgdm-catania
+=   PID 18615 RUNNING AT cgdm-catania
 =   EXIT CODE: 6
 =   CLEANING UP REMAINING PROCESSES
 =   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
@@ -158,4 +159,4 @@ Backtrace for this error:
 YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Abort trap: 6 (signal 6)
 This typically refers to a problem with your application.
 Please see the FAQ page for debugging suggestions
-Sun Jan 17 18:10:28 MST 2021
+Mon Jan 18 07:47:10 MST 2021
