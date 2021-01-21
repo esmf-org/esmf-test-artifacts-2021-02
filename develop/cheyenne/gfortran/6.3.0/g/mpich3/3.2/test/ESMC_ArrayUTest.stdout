@@ -2,8 +2,8 @@ Beginning Test, file ESMC_ArrayUTest.C, line 46
 NUMBER_OF_PROCESSORS 4
 PASS ArraySpecSet, ESMC_ArrayUTest.C, line 55
 PASS Set up minIndex, ESMC_ArrayUTest.C, line 65
-PASS Set up maxIndex, ESMC_ArrayUTest.C, line 76
 Beginning Test, file ESMC_ArrayUTest.C, line 46
+PASS Set up maxIndex, ESMC_ArrayUTest.C, line 76
 NUMBER_OF_PROCESSORS 4
 PASS ArraySpecSet, ESMC_ArrayUTest.C, line 55
 PASS Set up minIndex, ESMC_ArrayUTest.C, line 65
@@ -20,9 +20,15 @@ Beginning Test, file ESMC_ArrayUTest.C, line 46
 NUMBER_OF_PROCESSORS 4
 PASS ArraySpecSet, ESMC_ArrayUTest.C, line 55
 PASS Set up minIndex, ESMC_ArrayUTest.C, line 65
-PASS Set up maxIndex, ESMC_ArrayUTest.C, line 76
 PASS Create ESMC_Array object, ESMC_ArrayUTest.C, line 96
 --- ESMCI::Array::print start ---
+PASS Set up maxIndex, ESMC_ArrayUTest.C, line 76
+ Base name    = array1PASS Create ESMC_Array object, ESMC_ArrayUTest.C, line 96
+--- ESMCI::Array::print start ---
+
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
  Base name    = array1
  Status: Base = Ready,  object = Ready
  Proxy        = no
@@ -33,24 +39,33 @@ PASS Create ESMC_Array object, ESMC_ArrayUTest.C, line 96
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-PASS Create ESMC_Array object, ESMC_ArrayUTest.C, line 96
-{}--- ESMCI::Array::print start ---
-Array typekind/rank: Integer*4 / 2 
+{}{}Array typekind/rank: Integer*4 / 2 
+~ lower class' values ~Array typekind/rank: Integer*4 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
-~ local data in LocalArray for DE 2 ~
- Base name    = array1LocalArrayPrint: Array at address 0xebe9b0:
-            rank = 2, typekind = 3, base_addr = 0xebbc40
-            dim[0] = 1  dim[1] = 10  
- Status: Base = Ready,  object = Ready
 
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0xfcd9b0:
+            rank = 2, typekind = 3, ~ local data in LocalArray for DE 1 ~
+LocalArrayPrint: Array at address 0x1efd9b0:
+            rank = 2, typekind = 3, base_addr = 0x1efac40
+            dim[0] = 1  base_addr = 0xfcac40
+            dim[0] = 1  dim[1] = 10  
+dim[1] = 10  
   Integer, *4, Dim 2, Data values:
-( 1, 1) =  15449056
+( 1, 1) =  32484320
 ( 1, 2) =  0
- Proxy        = no
- Root Info (Attributes):
+  Integer, *4, Dim 2, Data values:
+( 1, 1) =  16559072
+( 1, 2) =  0
+( 1, 3) =  0
+( 1, 4) =  0
+( 1, 5) =  0
 ( 1, 3) =  0
 ( 1, 4) =  0
 ( 1, 5) =  0
@@ -58,20 +73,68 @@ localDeCount = 1
 ( 1, 7) =  0
 ( 1, 8) =  0
 ( 1, 9) =  0
+( 1, 6) =  0
+( 1, 7) =  0
+( 1, 8) =  0
+( 1, 9) =  0
+( 1,10) =  0
 ( 1,10) =  0
 dim 1: [0]: [1 [1 [1, 1] 1] 1]
 dim 2: [1]: [1 [1 [1, 10] 10] 10]
 --- ESMCI::Array::print end ---
-{}PASS Create 5 x 10 ESMC_DistGrid object, ESMC_ArrayUTest.C, line 84
-Array typekind/rank: Integer*4 / 2 
+dim 1: [0]: [1 [1 [1, 1] 1] 1]
+dim 2: [1]: [1 [1 [1, 10] 10] 10]
+--- ESMCI::Array::print end ---
+PASS Create 5 x 10 ESMC_DistGrid object, ESMC_ArrayUTest.C, line 84
+PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
+PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
+PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
+PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
+{}Array typekind/rank: Integer*4 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 3 ~
+LocalArrayPrint: Array at address 0x1d3e9b0:
+            rank = 2, typekind = 3, base_addr = 0x1d3bc40
+            dim[0] = 1  dim[1] = 10  
+PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
+  Integer, *4, Dim 2, Data values:
+( 1, 1) =  30653408
+( 1, 2) =  0
+( 1, 3) =  0
+( 1, 4) =  0
+PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
+( 1, 5) =  0
+( 1, 6) =  0
+( 1, 7) =  0
+( 1, 8) =  0
+( 1, 9) =  0
+( 1,10) =  0
+Ending Test, file ESMC_ArrayUTest.C, line 124
+dim 1: [0]: [1 [1 [1, 1] 1] 1]
+dim 2: [1]: [1 [1 [1, 10] 10] 10]
+--- ESMCI::Array::print end ---
+Ending Test, file ESMC_ArrayUTest.C, line 124
+PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
+PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
+PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
+Ending Test, file ESMC_ArrayUTest.C, line 124
+PASS Create ESMC_Array object, ESMC_ArrayUTest.C, line 96
+--- ESMCI::Array::print start ---
+ Base name    = array1
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Integer*4 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x24f49c0:
-PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
-            rank = 2, typekind = 3, base_addr = 0x24f4cf0
+LocalArrayPrint: Array at address 0xfa59c0:
+            rank = 2, typekind = 3, base_addr = 0xfa5cf0
             dim[0] = 2  dim[1] = 10  
   Integer, *4, Dim 2, Data values:
 ( 1, 1) =  0
@@ -86,7 +149,6 @@ PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
 ( 2, 5) =  0
 ( 1, 6) =  0
 ( 2, 6) =  0
-PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
 ( 1, 7) =  0
 ( 2, 7) =  0
 ( 1, 8) =  0
@@ -98,74 +160,12 @@ PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
 dim 1: [0]: [1 [1 [1, 2] 2] 2]
 dim 2: [1]: [1 [1 [1, 10] 10] 10]
 --- ESMCI::Array::print end ---
-PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
-PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
-Ending Test, file ESMC_ArrayUTest.C, line 124
-{}Array typekind/rank: Integer*4 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
-localDeCount = 1
-~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0xbf69b0:
-            rank = 2, typekind = 3, base_addr = 0xbf3c40
-            dim[0] = 1  dim[1] = 10  
-  Integer, *4, Dim 2, Data values:
-( 1, 1) =  12532704
-( 1, 2) =  0
-( 1, 3) =  0
-( 1, 4) =  0
-( 1, 5) =  0
-( 1, 6) =  0
-( 1, 7) =  0
-( 1, 8) =  0
-( 1, 9) =  0
-( 1,10) =  0
-dim 1: [0]: [1 [1 [1, 1] 1] 1]
-PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
-dim 2: [1]: [1 [1 [1, 10] 10] 10]
---- ESMCI::Array::print end ---
-Ending Test, file ESMC_ArrayUTest.C, line 124
 PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
 PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
 PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
 Ending Test, file ESMC_ArrayUTest.C, line 124
-PASS Create ESMC_Array object, ESMC_ArrayUTest.C, line 96
---- ESMCI::Array::print start ---
- Base name    = array1
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Integer*4 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0x81a9b0:
-            rank = 2, typekind = 3, base_addr = 0x817c40
-            dim[0] = 1  dim[1] = 10  
-  Integer, *4, Dim 2, Data values:
-( 1, 1) =  8485856
-( 1, 2) =  0
-( 1, 3) =  0
-( 1, 4) =  0
-( 1, 5) =  0
-( 1, 6) =  0
-( 1, 7) =  0
-( 1, 8) =  0
-( 1, 9) =  0
-( 1,10) =  0
-dim 1: [0]: [1 [1 [1, 1] 1] 1]
-dim 2: [1]: [1 [1 [1, 10] 10] 10]
---- ESMCI::Array::print end ---
-PASS Print ESMC_Array object, ESMC_ArrayUTest.C, line 104
-PASS Destroy ESMC_DistGrid object, ESMC_ArrayUTest.C, line 112
-PASS Destroy ESMC_Array object, ESMC_ArrayUTest.C, line 120
-Ending Test, file ESMC_ArrayUTest.C, line 124
- PET 1 Test Elapsed Time  1.502000 msec.
- PET 0 Test Elapsed Time  2.018000 msec.
- PET 2 Test Elapsed Time  2.144000 msec.
- PET 3 Test Elapsed Time  1.976000 msec.
-Wed Jan 20 12:09:51 MST 2021
+ PET 1 Test Elapsed Time  1.887000 msec.
+ PET 2 Test Elapsed Time  2.021000 msec.
+ PET 0 Test Elapsed Time  1.415000 msec.
+ PET 3 Test Elapsed Time  1.912000 msec.
+Thu Jan 21 07:24:07 MST 2021
