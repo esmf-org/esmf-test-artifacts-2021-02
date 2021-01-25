@@ -1,4 +1,4 @@
-TACC:  Starting up job 7166475 
+TACC:  Starting up job 7171911 
 TACC:  Starting parallel tasks... 
  --------------------------------------- 
  Start of  System Test ESMF_XGridSerialSTest
@@ -25,20 +25,17 @@ TACC:  Starting parallel tasks...
  Created component landrc =           0
  Created component landrc =           0
  Created component user one-way coupler, rc =           0
- Comp Creates finished
  Created component user one-way coupler, rc =           0
  Comp Creates finished
  Created component user one-way coupler, rc =           0
  Comp Creates finished
  Created component user one-way coupler, rc =           0
  Comp Creates finished
+ Comp Creates finished
  atmos SetVM finished, rc=            0           0
  atmos SetVM finished, rc=            0           0
  atmos SetVM finished, rc=            0           0
  atmos SetVM finished, rc=            0           0
- Atmosphere Register starting
- Registered Initialize, Run, and Finalize routines
- Atmosphere Register returning
  Atmosphere Register starting
  Registered Initialize, Run, and Finalize routines
  Atmosphere Register returning
@@ -50,6 +47,9 @@ TACC:  Starting parallel tasks...
  Registered Initialize, Run, and Finalize routines
  Atmosphere Register returning
  atmos SetServices finished, rc=            0
+ Atmosphere Register starting
+ Registered Initialize, Run, and Finalize routines
+ Atmosphere Register returning
  atmos SetServices finished, rc=            0
  atmos SetServices finished, rc=            0
  land SetVM finished, rc=            0
@@ -58,6 +58,7 @@ TACC:  Starting parallel tasks...
  land SetVM finished, rc=            0
  Land Register starting
  Registered Initialize, Run, and Finalize routines
+ Land Register returning
  Land Register starting
  Registered Initialize, Run, and Finalize routines
  Land Register returning
@@ -66,40 +67,42 @@ TACC:  Starting parallel tasks...
  Registered Initialize, Run, and Finalize routines
  Land Register returning
  land SetServices finished, rc=            0
- Land Register returning
  land SetServices finished, rc=            0
- ocean SetVM finished, rc=            0
- ocean SetVM finished, rc=            0
- ocean SetVM finished, rc=            0
  Land Register starting
  Registered Initialize, Run, and Finalize routines
  Land Register returning
+ ocean SetVM finished, rc=            0
+ ocean SetVM finished, rc=            0
  land SetServices finished, rc=            0
+ ocean SetVM finished, rc=            0
  ocean SetVM finished, rc=            0
  Ocean Register starting
  Registered Initialize, Run, and Finalize routines
  Ocean Register returning
+ ocean SetServices finished, rc=            0
  Ocean Register starting
  Registered Initialize, Run, and Finalize routines
  Ocean Register returning
  Ocean Register starting
- ocean SetServices finished, rc=            0
+ Cpl SetVM finished, rc=            0
  ocean SetServices finished, rc=            0
  Registered Initialize, Run, and Finalize routines
  Ocean Register returning
  Ocean Register starting
- Cpl SetVM finished, rc=            0
- ocean SetServices finished, rc=            0
- Cpl SetVM finished, rc=            0
  Registered Initialize, Run, and Finalize routines
  Ocean Register returning
  Cpl SetVM finished, rc=            0
  ocean SetServices finished, rc=            0
+ ocean SetServices finished, rc=            0
  Cpl SetVM finished, rc=            0
+ Cpl SetVM finished, rc=            0
+ User Coupler Register starting
+ Registered Initialize, Run, and Finalize routines
  User Coupler Register starting
  Registered Initialize, Run, and Finalize routines
  User Coupler Register returning
- User Coupler Register starting
+ User Coupler Register returning
+ Cpl SetServices finished, rc=            0
  User Coupler Register starting
  User Coupler Register starting
  Cpl SetServices finished, rc=            0
@@ -107,28 +110,25 @@ TACC:  Starting parallel tasks...
  User Coupler Register returning
  Registered Initialize, Run, and Finalize routines
  User Coupler Register returning
- Registered Initialize, Run, and Finalize routines
- User Coupler Register returning
- Cpl SetServices finished, rc=            0
+ Land Init starting, localPet =           0
  Cpl SetServices finished, rc=            0
  Cpl SetServices finished, rc=            0
  Land Init starting, localPet =           3
- Land Init starting, localPet =           0
  Land Init starting, localPet =           1
  Land Init starting, localPet =           2
  ESMF_StatePrint: (pet 0):
+  State name: land_export
  ESMF_StatePrint: (pet 1):
   State name: land_export
  ESMF_StatePrint: (pet 2):
   State name: land_export
  ESMF_StatePrint: (pet 3):
   State name: land_export
-  State name: land_export
+     status: Export State, object count: 1
+     status: Export State, object count: 1
      status: Export State, object count: 1
      status: Export State, object count: 1
      reconcile needed: T
-     status: Export State, object count: 1
-     status: Export State, object count: 1
      reconcile needed: T
      reconcile needed: T
      reconcile needed: T
@@ -137,8 +137,7 @@ TACC:  Starting parallel tasks...
  Base name    = land_export
  Status: Base = Ready
  Status: Base = Ready,  object = Ready
- Proxy        = no
- Status: Base = Ready,  object = Ready
+ Proxy        = no Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
  Status: Base = Ready,  object = Ready
@@ -147,18 +146,19 @@ TACC:  Starting parallel tasks...
 ,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+
  Root Info (Attributes):
 {}{}{}{}     object: 1,name: F_lnd
      object: 1,name: F_lnd
-     object: 1,name: F_lnd
             type: Field
      object: 1,name: F_lnd
             type: Field
-            type: Field
  land Init returning
             type: Field
  land Init returning
  land Init returning
+     object: 1,name: F_lnd
+            type: Field
  land Init returning
  Land Initialize finished, rc =           0
  Land Initialize finished, rc =           0
@@ -193,26 +193,29 @@ TACC:  Starting parallel tasks...
  User Coupler Init starting, localPet =           2
  User Coupler Init starting, localPet =           3
  User Coupler Init returning
- User Coupler Init returning
- Coupler Initialize finished, rc =           0
- Coupler Initialize finished, rc =           0
- User Coupler Init returning
  Coupler Initialize finished, rc =           0
  User Coupler Init returning
  Land Run starting
+ User Coupler Init returning
+ User Coupler Init returning
+ Coupler Initialize finished, rc =           0
+ Coupler Initialize finished, rc =           0
  Coupler Initialize finished, rc =           0
  Land Run starting
  Land Run starting
+ Land Run returning
+ Land Run returned, rc =           0
+ Ocean Run starting
  Land Run starting
  Land Run returning
  Land Run returning
  Land Run returned, rc =           0
+ Ocean Run starting
+ Ocean Run returning
+ Ocean Run returned, rc =           0
+ User Coupler Run starting
  Land Run returning
  Land Run returned, rc =           0
- Land Run returned, rc =           0
- Land Run returning
- Ocean Run starting
- Ocean Run starting
  Ocean Run starting
  Land Run returned, rc =           0
  Ocean Run starting
@@ -224,25 +227,22 @@ TACC:  Starting parallel tasks...
  Ocean Run returned, rc =           0
  User Coupler Run starting
  User Coupler Run starting
- Ocean Run returning
- User Coupler Run starting
- Ocean Run returned, rc =           0
  User Coupler Run starting
  User Coupler Run returning
- User Coupler Run returning
  Coupler Run returned, rc =           0
  User Coupler Run returning
  Coupler Run returned, rc =           0
  User Coupler Run returning
+ User Coupler Run returning
  Coupler Run returned, rc =           0
  Coupler Run returned, rc =           0
  Atmosphere Run starting
  Atmosphere Run starting
+ Atmosphere Run starting
+ Atmosphere Run returning
  Atmosphere Run returning
  Atmosphere Run returning
  Atmosphere Run starting
- Atmosphere Run returning
- Atmosphere Run starting
  Atmosphere Run returned, rc =           0
  Atmosphere Run returned, rc =           0
  Atmosphere Run returned, rc =           0
@@ -258,17 +258,17 @@ TACC:  Starting parallel tasks...
  User Coupler Final returning
  Coupler Finalize finished, rc =           0
  Coupler Finalize finished, rc =           0
+ Land Final starting
  Coupler Finalize finished, rc =           0
+ Land Final starting
  Coupler Finalize finished, rc =           0
  Land Final starting
  Land Final starting
- Land Final starting
- Land Final starting
+ Land Final returning
  Land Final returning
  Land Final returning
  Land Final returning
  Land Finalize finished, rc =           0
- Land Final returning
  Land Finalize finished, rc =           0
  Land Finalize finished, rc =           0
  Land Finalize finished, rc =           0
@@ -301,34 +301,29 @@ TACC:  Starting parallel tasks...
                                                                                 
                                                                                 
                      complete.
+ ------------------------------------------------------------
+ ------------------------------------------------------------
  
   System Test ESMF_XGridSerialSTest
   SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
  
+ Test finished, localPet =            0
  ------------------------------------------------------------
  ------------------------------------------------------------
- Test finished, localPet =            3
- ------------------------------------------------------------
- ------------------------------------------------------------
- All Destroy routines done
-  System Test ESMF_XGridSerialSTest                                             
-                                                                                
-                                                                                
-                     complete.
- All Destroy routines done
-  System Test ESMF_XGridSerialSTest                                             
-                                                                                
-                                                                                
   PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
+ All Destroy routines done
+  System Test ESMF_XGridSerialSTest                                             
+                                                                                
+                                                                                
+                     complete.
+ All Destroy routines done
+  System Test ESMF_XGridSerialSTest                                             
+                                                                                
+                                                                                
  
   System Test ESMF_XGridSerialSTest
   SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
  
- ------------------------------------------------------------
- ------------------------------------------------------------
- Test finished, localPet =            1
- ------------------------------------------------------------
- ------------------------------------------------------------
                      complete.
  ------------------------------------------------------------
  ------------------------------------------------------------
@@ -339,6 +334,11 @@ TACC:  Starting parallel tasks...
   System Test ESMF_XGridSerialSTest
   SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
  
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ Test finished, localPet =            1
+ ------------------------------------------------------------
+ ------------------------------------------------------------
   PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
   PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
  All Destroy routines done
@@ -349,12 +349,12 @@ TACC:  Starting parallel tasks...
  
   System Test ESMF_XGridSerialSTest
   SUCCESS:  System Test ESMF_XGridSerialSTest finished correctly.
+ ------------------------------------------------------------
+ ------------------------------------------------------------
  
- ------------------------------------------------------------
- ------------------------------------------------------------
- Test finished, localPet =            0
+ Test finished, localPet =            3
  ------------------------------------------------------------
  ------------------------------------------------------------
   PASS  System Test ESMF_XGridSerialSTest, ESMF_XGridSerialSTest.F90, line 448
 TACC:  Shutdown complete. Exiting. 
-Sat Jan 23 09:04:02 CST 2021
+Sun Jan 24 17:35:01 CST 2021
