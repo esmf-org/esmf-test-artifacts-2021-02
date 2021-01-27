@@ -9,11 +9,11 @@
   INFO  ESMF was built WITHOUT NetCDF support
   NUMBER_OF_PROCESSORS           4
   INFO  ESMF was built WITHOUT NetCDF support
+  INFO  Create Cubed Sphere Grid
   INFO  ESMF was built WITHOUT NetCDF support
   INFO  Create Cubed Sphere Grid
   INFO  Create Cubed Sphere Grid
   INFO  Create Cubed Sphere Grid
-  INFO  Create Cubed Sphere Grid
   PASS  Create ESMFIO Component Test, ESMF_IOCompUTest.F90, line 110
   PASS  Create ESMFIO Component Test, ESMF_IOCompUTest.F90, line 110
   PASS  Create ESMFIO Component Test, ESMF_IOCompUTest.F90, line 110
@@ -52,6 +52,8 @@
  _IOCompUTest.F90, line 179
   PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field edge2 values, ESMF
  _IOCompUTest.F90, line 179
+  PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field corner values, ESM
+ F_IOCompUTest.F90, line 189
   PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field edge2 values, ESMF
  _IOCompUTest.F90, line 179
   PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field corner values, ESM
@@ -60,8 +62,6 @@
  F_IOCompUTest.F90, line 189
   PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field corner values, ESM
  F_IOCompUTest.F90, line 189
-  PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field corner values, ESM
- F_IOCompUTest.F90, line 189
   PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_R4 Field values, ESMF_IOCom
  pUTest.F90, line 199
   PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_R4 Field values, ESMF_IOCom
@@ -91,6 +91,20 @@
   PASS  Write through ESMFIO Component Test, ESMF_IOCompUTest.F90, line 259
   PASS  Write through ESMFIO Component Test, ESMF_IOCompUTest.F90, line 259
   PASS  Read through ESMFIO Component Test, ESMF_IOCompUTest.F90, line 271
+  PASS  Destroy ESMFIO Component Test, ESMF_IOCompUTest.F90, line 279
+  PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field center values, ESM
+ F_IOCompUTest.F90, line 297
+  PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field edge1 values, ESMF
+ _IOCompUTest.F90, line 307
+  PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field edge2 values, ESMF
+ _IOCompUTest.F90, line 317
+  PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field corner values, ESM
+ F_IOCompUTest.F90, line 327
+  PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_R4 Field values, ESMF_IOCom
+ pUTest.F90, line 337
+  PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_R8 Field values, ESMF_IOCom
+ pUTest.F90, line 347
+  PASS  Read through ESMFIO Component Test, ESMF_IOCompUTest.F90, line 271
   PASS  Read through ESMFIO Component Test, ESMF_IOCompUTest.F90, line 271
   PASS  Destroy ESMFIO Component Test, ESMF_IOCompUTest.F90, line 279
   PASS  Destroy ESMFIO Component Test, ESMF_IOCompUTest.F90, line 279
@@ -106,6 +120,7 @@
  _IOCompUTest.F90, line 317
   PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field edge2 values, ESMF
  _IOCompUTest.F90, line 317
+  Ending Test, file ESMF_IOCompUTest.F90, line 368
   PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field corner values, ESM
  F_IOCompUTest.F90, line 327
   PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field corner values, ESM
@@ -118,23 +133,9 @@
  pUTest.F90, line 347
   PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_R8 Field values, ESMF_IOCom
  pUTest.F90, line 347
-  PASS  Read through ESMFIO Component Test, ESMF_IOCompUTest.F90, line 271
   Ending Test, file ESMF_IOCompUTest.F90, line 368
   Ending Test, file ESMF_IOCompUTest.F90, line 368
-  PASS  Destroy ESMFIO Component Test, ESMF_IOCompUTest.F90, line 279
-  PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field center values, ESM
- F_IOCompUTest.F90, line 297
-  PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field edge1 values, ESMF
- _IOCompUTest.F90, line 307
-  PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field edge2 values, ESMF
- _IOCompUTest.F90, line 317
-  PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field corner values, ESM
- F_IOCompUTest.F90, line 327
   PASS  Read through ESMFIO Component Test, ESMF_IOCompUTest.F90, line 271
-  PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_R4 Field values, ESMF_IOCom
- pUTest.F90, line 337
-  PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_R8 Field values, ESMF_IOCom
- pUTest.F90, line 347
   PASS  Destroy ESMFIO Component Test, ESMF_IOCompUTest.F90, line 279
   PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_I4 Field center values, ESM
  F_IOCompUTest.F90, line 297
@@ -149,9 +150,8 @@
   PASS SKIP:  Compare read vs. written ESMF_TYPEKIND_R8 Field values, ESMF_IOCom
  pUTest.F90, line 347
   Ending Test, file ESMF_IOCompUTest.F90, line 368
-  Ending Test, file ESMF_IOCompUTest.F90, line 368
-  PET           2  Test Elapsed Time    82.5460000000000       msec.
-  PET           0  Test Elapsed Time    82.7080000000000       msec.
-  PET           3  Test Elapsed Time    83.2950000000000       msec.
-  PET           1  Test Elapsed Time    83.4510000000000       msec.
-Mon Jan 25 23:14:19 MST 2021
+  PET           0  Test Elapsed Time    82.4000000000000       msec.
+  PET           3  Test Elapsed Time    83.0790000000000       msec.
+  PET           2  Test Elapsed Time    81.9570000000000       msec.
+  PET           1  Test Elapsed Time    82.9050000000000       msec.
+Tue Jan 26 18:43:35 MST 2021

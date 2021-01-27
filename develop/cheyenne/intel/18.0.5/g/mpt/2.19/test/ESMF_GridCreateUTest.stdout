@@ -49,14 +49,11 @@
  Base name    = Grid002
  Base name    = Grid002
  Base name    = Grid002
- Status: Base = Ready,  object = Ready
- Proxy        = no
  Base name    = Grid002
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Status: Base = Ready,  object = Ready
  Proxy        = no
- Base ID = 2, vmID:
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Base ID = 2, vmID:
@@ -65,8 +62,6 @@
 --- ESMCI::VMId::print() start ---
   vmKeyWidth = 1
   vmKey=0xF0000000
-  localID = 0
---- ESMCI::VMId::print() end ---
  Base ID = 2, vmID:
 --- ESMCI::VMId::print() start ---
   vmKeyWidth = 1
@@ -74,6 +69,9 @@
   localID = 0
 --- ESMCI::VMId::print() end ---
  Root Info (Attributes):
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Base ID = 2, vmID:
 --- ESMCI::VMId::print() start ---
   vmKeyWidth = 1
   vmKey=0xF0000000
@@ -85,6 +83,8 @@
   localID = 0
 --- ESMCI::VMId::print() end ---
  Root Info (Attributes):
+  localID = 0
+--- ESMCI::VMId::print() end ---
  Root Info (Attributes):
 {}  PASS  Print Grid info, ESMF_GridCreateUTest.F90, line 159
 {}  PASS  Print Grid info, ESMF_GridCreateUTest.F90, line 159
@@ -150,18 +150,54 @@
  t, ESMF_GridCreateUTest.F90, line 282
   PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp Test
  , ESMF_GridCreateUTest.F90, line 303
+  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with default regDecomp Tes
+ t, ESMF_GridCreateUTest.F90, line 282
+  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp < pe
+ tCount Test, ESMF_GridCreateUTest.F90, line 324
+  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with default regDecomp Tes
+ t, ESMF_GridCreateUTest.F90, line 282
+  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp Test
+ , ESMF_GridCreateUTest.F90, line 303
+  PASS  Grid creation from a regular structured grid in GRIDSPEC format with def
+ ault ESMF_TYPEKIND_R8, ESMF_GridCreateUTest.F90, line 341
+  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp Test
+ , ESMF_GridCreateUTest.F90, line 303
+  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp < pe
+ tCount Test, ESMF_GridCreateUTest.F90, line 324
+  PASS  Grid creation from a regular structured grid in GRIDSPEC format with coo
+ rdTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 356
   PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp < pe
  tCount Test, ESMF_GridCreateUTest.F90, line 324
   PASS  Grid creation from a regular structured grid in GRIDSPEC format with def
  ault ESMF_TYPEKIND_R8, ESMF_GridCreateUTest.F90, line 341
-  PASS  Grid creation from a regular structured grid in GRIDSPEC format with coo
- rdTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 356
   PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with default ESMF_TYPEK
  IND_R8, ESMF_GridCreateUTest.F90, line 371
+  PASS  Grid creation from a regular structured grid in GRIDSPEC format with def
+ ault ESMF_TYPEKIND_R8, ESMF_GridCreateUTest.F90, line 341
+  PASS  Grid creation from a regular structured grid in GRIDSPEC format with coo
+ rdTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 356
+  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with coordTypeKind=ESMF
+ _TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 386
+  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with default ESMF_TYPEK
+ IND_R8, ESMF_GridCreateUTest.F90, line 371
+  PASS  Grid creation from a regular structured grid in GRIDSPEC format with coo
+ rdTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 356
+  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDec
+ omp Test, ESMF_GridCreateUTest.F90, line 406
+  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with coordTypeKind=ESMF
+ _TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 386
+  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with default ESMF_TYPEK
+ IND_R8, ESMF_GridCreateUTest.F90, line 371
+  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDec
+ omp < petCount Test, ESMF_GridCreateUTest.F90, line 427
+  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDec
+ omp Test, ESMF_GridCreateUTest.F90, line 406
   PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with coordTypeKind=ESMF
  _TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 386
   PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDec
  omp Test, ESMF_GridCreateUTest.F90, line 406
+  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDec
+ omp < petCount Test, ESMF_GridCreateUTest.F90, line 427
   PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDec
  omp < petCount Test, ESMF_GridCreateUTest.F90, line 427
   PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with default regDecomp Tes
@@ -170,58 +206,22 @@
  , ESMF_GridCreateUTest.F90, line 303
   PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp < pe
  tCount Test, ESMF_GridCreateUTest.F90, line 324
-  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with default regDecomp Tes
- t, ESMF_GridCreateUTest.F90, line 282
   PASS  Grid creation from a regular structured grid in GRIDSPEC format with def
  ault ESMF_TYPEKIND_R8, ESMF_GridCreateUTest.F90, line 341
-  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with default regDecomp Tes
- t, ESMF_GridCreateUTest.F90, line 282
-  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp Test
- , ESMF_GridCreateUTest.F90, line 303
   PASS  Grid creation from a regular structured grid in GRIDSPEC format with coo
  rdTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 356
-  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp < pe
- tCount Test, ESMF_GridCreateUTest.F90, line 324
-  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with default ESMF_TYPEK
- IND_R8, ESMF_GridCreateUTest.F90, line 371
-  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp Test
- , ESMF_GridCreateUTest.F90, line 303
-  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with coordTypeKind=ESMF
- _TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 386
-  PASS  Testing Grid Match, ESMF_GridCreateUTest.F90, line 481
-  PASS  Grid creation from a regular structured grid in GRIDSPEC format with def
- ault ESMF_TYPEKIND_R8, ESMF_GridCreateUTest.F90, line 341
-  PASS  Grid creation from file ESMF_FILEFORMAT_SCRIP with custom regDecomp < pe
- tCount Test, ESMF_GridCreateUTest.F90, line 324
-  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDec
- omp Test, ESMF_GridCreateUTest.F90, line 406
-  PASS  Grid creation from a regular structured grid in GRIDSPEC format with coo
- rdTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 356
-  PASS  Grid creation from a regular structured grid in GRIDSPEC format with def
- ault ESMF_TYPEKIND_R8, ESMF_GridCreateUTest.F90, line 341
-  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDec
- omp < petCount Test, ESMF_GridCreateUTest.F90, line 427
-  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with default ESMF_TYPEK
- IND_R8, ESMF_GridCreateUTest.F90, line 371
-  PASS  Grid creation from a regular structured grid in GRIDSPEC format with coo
- rdTypeKind=ESMF_TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 356
-  PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with coordTypeKind=ESMF
- _TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 386
   PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with default ESMF_TYPEK
  IND_R8, ESMF_GridCreateUTest.F90, line 371
   PASS  Grid creation from file ESMF_FILEFORMAT_GRIDSPEC with coordTypeKind=ESMF
  _TYPEKIND_R4, ESMF_GridCreateUTest.F90, line 386
+  PASS  Testing Grid Match, ESMF_GridCreateUTest.F90, line 481
   PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDec
  omp Test, ESMF_GridCreateUTest.F90, line 406
-  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDec
- omp Test, ESMF_GridCreateUTest.F90, line 406
-  PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDec
- omp < petCount Test, ESMF_GridCreateUTest.F90, line 427
+  PASS  Testing Grid Match, ESMF_GridCreateUTest.F90, line 481
   PASS  Supergrid creation from file ESMF_FILEFORMAT_GRIDSPEC with custom regDec
  omp < petCount Test, ESMF_GridCreateUTest.F90, line 427
   PASS  Testing Grid Match, ESMF_GridCreateUTest.F90, line 481
   PASS  Testing Grid Match, ESMF_GridCreateUTest.F90, line 481
-  PASS  Testing Grid Match, ESMF_GridCreateUTest.F90, line 481
   PASS  Testing Grid copy from grid and distgrid, ESMF_GridCreateUTest.F90, line
   638
   PASS  Testing Grid copy from grid and distgrid, ESMF_GridCreateUTest.F90, line
@@ -474,68 +474,68 @@
  SMF_GridCreateUTest.F90, line 1543
   PASS  Creating a 2D  Grid with default edge connections with GridCreateReg(), 
  ESMF_GridCreateUTest.F90, line 1512
-  PASS  Creating a 2D  Grid with sphere edge connections with GridCreateReg(), E
- SMF_GridCreateUTest.F90, line 1543
-  PASS  Creating a 2D  Grid with all defaults with CreateShapeTileReg, ESMF_Grid
- CreateUTest.F90, line 1571
   PASS  Creating a 2D  Grid with all defaults with CreateShapeTileReg, ESMF_Grid
  CreateUTest.F90, line 1571
   PASS  Creating a 2D  Grid with sphere edge connections with GridCreateReg(), E
  SMF_GridCreateUTest.F90, line 1543
-  PASS  Creating a 2D  Grid with non-default regDecomp with CreateShapeTileReg, 
- ESMF_GridCreateUTest.F90, line 1600
   PASS  Creating a 2D  Grid with all defaults with CreateShapeTileReg, ESMF_Grid
  CreateUTest.F90, line 1571
   PASS  Creating a 2D  Grid with non-default regDecomp with CreateShapeTileReg, 
  ESMF_GridCreateUTest.F90, line 1600
+  PASS  Creating a 2D  Grid with sphere edge connections with GridCreateReg(), E
+ SMF_GridCreateUTest.F90, line 1543
+  PASS  Creating a 2D  Grid with all defaults with CreateShapeTileReg, ESMF_Grid
+ CreateUTest.F90, line 1571
+  PASS  Creating a 2D  Grid with non-default regDecomp with CreateShapeTileReg, 
+ ESMF_GridCreateUTest.F90, line 1600
+  PASS  Creating a 2D  Grid with non-default 2D regDecomp with CreateShapeTileRe
+ g, ESMF_GridCreateUTest.F90, line 1627
   PASS  Creating a 2D  Grid with non-default regDecomp with CreateShapeTileReg, 
  ESMF_GridCreateUTest.F90, line 1600
   PASS  Creating a 2D  Grid with all defaults with CreateShapeTileReg, ESMF_Grid
  CreateUTest.F90, line 1571
   PASS  Creating a 2D  Grid with non-default 2D regDecomp with CreateShapeTileRe
  g, ESMF_GridCreateUTest.F90, line 1627
-  PASS  Creating a 2D  Grid with non-default 2D regDecomp with CreateShapeTileRe
- g, ESMF_GridCreateUTest.F90, line 1627
   PASS  Creating a 2D  1 DE Grid with CreateShapeTileReg, ESMF_GridCreateUTest.F
  90, line 1654
   PASS  Creating a 2D  Grid with non-default 2D regDecomp with CreateShapeTileRe
  g, ESMF_GridCreateUTest.F90, line 1627
+  PASS  Creating a 2D  1 DE Grid with CreateShapeTileReg, ESMF_GridCreateUTest.F
+ 90, line 1654
   PASS  Creating a 2D  Grid with non-default regDecomp with CreateShapeTileReg, 
  ESMF_GridCreateUTest.F90, line 1600
   PASS  Creating a 2D  1 DE Grid with CreateShapeTileReg, ESMF_GridCreateUTest.F
  90, line 1654
-  PASS  Creating a 2D  1 DE Grid with CreateShapeTileReg, ESMF_GridCreateUTest.F
- 90, line 1654
+  PASS  Creating a Grid with CreateShapeTileReg and non-default gridEdgeWidths, 
+ ESMF_GridCreateUTest.F90, line 1692
   PASS  Creating a Grid with CreateShapeTileReg and non-default gridEdgeWidths, 
  ESMF_GridCreateUTest.F90, line 1692
   PASS  Creating a 2D  Grid with non-default 2D regDecomp with CreateShapeTileRe
  g, ESMF_GridCreateUTest.F90, line 1627
   PASS  Creating a Grid with CreateShapeTileReg and non-default gridEdgeWidths, 
  ESMF_GridCreateUTest.F90, line 1692
-  PASS  Creating a Grid with CreateShapeTileReg and non-default gridEdgeWidths, 
- ESMF_GridCreateUTest.F90, line 1692
+  PASS  Creating a 3D  Grid with non-default minIndex and non-default regDecomp 
+ with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1720
   PASS  Creating a 3D  Grid with non-default minIndex and non-default regDecomp 
  with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1720
   PASS  Creating a 2D  1 DE Grid with CreateShapeTileReg, ESMF_GridCreateUTest.F
  90, line 1654
+  PASS  Creating a Grid using EmptyCreate/Set/Commit with only a distgrid and th
+ e rest defaults, ESMF_GridCreateUTest.F90, line 1762
+  PASS  Creating a Grid using EmptyCreate/Set/Commit with only a distgrid and th
+ e rest defaults, ESMF_GridCreateUTest.F90, line 1762
   PASS  Creating a 3D  Grid with non-default minIndex and non-default regDecomp 
  with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1720
   PASS  Creating a Grid using EmptyCreate/Set/Commit with only a distgrid and th
  e rest defaults, ESMF_GridCreateUTest.F90, line 1762
-  PASS  Creating a 3D  Grid with non-default minIndex and non-default regDecomp 
- with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1720
-  PASS  Creating a Grid using EmptyCreate/Set/Commit with only a distgrid and th
- e rest defaults, ESMF_GridCreateUTest.F90, line 1762
-  PASS  Creating a Grid using EmptyCreate/Set/Commit with only a distgrid and th
- e rest defaults, ESMF_GridCreateUTest.F90, line 1762
+  PASS  Creating a 2D  Grid with all defaults with GridEmptyCompleteReg, ESMF_Gr
+ idCreateUTest.F90, line 1796
   PASS  Creating a Grid with CreateShapeTileReg and non-default gridEdgeWidths, 
  ESMF_GridCreateUTest.F90, line 1692
   PASS  Creating a 2D  Grid with all defaults with GridEmptyCompleteReg, ESMF_Gr
  idCreateUTest.F90, line 1796
   PASS  Creating a 2D  Grid with all defaults with GridEmptyCompleteReg, ESMF_Gr
  idCreateUTest.F90, line 1796
-  PASS  Creating a 2D  Grid with all defaults with GridEmptyCompleteReg, ESMF_Gr
- idCreateUTest.F90, line 1796
   PASS  Creating a 3D  Grid with non-default minIndex and non-default regDecomp 
  with CreateShapeTileReg, ESMF_GridCreateUTest.F90, line 1720
   PASS  Test getting minIndex and maxIndex for 2D Grid, ESMF_GridCreateUTest.F90
@@ -620,10 +620,10 @@
  ESMF_GridCreateUTest: serialization buffer size =        5336
   PASS  Test GridGetArrayInfo with replicated dims and non-default distgridToGri
  dMap, ESMF_GridCreateUTest.F90, line 2378
+  PASS  Test Serialize and Deserialize, ESMF_GridCreateUTest.F90, line 2455
+  PASS  Test Serialize and Deserialize, ESMF_GridCreateUTest.F90, line 2455
   PASS  Test GridGetArrayInfo with replicated dims, ESMF_GridCreateUTest.F90, li
  ne 2321
-  PASS  Test Serialize and Deserialize, ESMF_GridCreateUTest.F90, line 2455
-  PASS  Test Serialize and Deserialize, ESMF_GridCreateUTest.F90, line 2455
  ESMF_GridCreateUTest: serialization buffer size =        5336
   PASS  Test Serialize and Deserialize, ESMF_GridCreateUTest.F90, line 2455
   PASS  Checking isLBound and isUBound functionality, ESMF_GridCreateUTest.F90, 
@@ -664,7 +664,7 @@ Image              PC                Routine            Line        Source
 ESMF_GridCreateUT  000000000044AEA0  Unknown               Unknown  Unknown
 ESMF_GridCreateUT  0000000000432703  MAIN__                   2680  ESMF_GridCreateUTest.F90
 ESMF_GridCreateUT  000000000040771E  Unknown               Unknown  Unknown
-libc.so.6          00002B95708936E5  __libc_start_main     Unknown  Unknown
+libc.so.6          00002AF653A076E5  __libc_start_main     Unknown  Unknown
 ESMF_GridCreateUT  0000000000407629  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_GRIDMOD^ESMF_GRIDCREATE1PERIDIMUFRMR, an array temporary was created for argument #8
 
@@ -672,7 +672,7 @@ Image              PC                Routine            Line        Source
 ESMF_GridCreateUT  000000000044AEA0  Unknown               Unknown  Unknown
 ESMF_GridCreateUT  0000000000432703  MAIN__                   2680  ESMF_GridCreateUTest.F90
 ESMF_GridCreateUT  000000000040771E  Unknown               Unknown  Unknown
-libc.so.6          00002B95708936E5  __libc_start_main     Unknown  Unknown
+libc.so.6          00002AF653A076E5  __libc_start_main     Unknown  Unknown
 ESMF_GridCreateUT  0000000000407629  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_GRIDMOD^ESMF_GRIDCREATE1PERIDIMUFRMR, an array temporary was created for argument #8
 
@@ -680,7 +680,7 @@ Image              PC                Routine            Line        Source
 ESMF_GridCreateUT  000000000044AEA0  Unknown               Unknown  Unknown
 ESMF_GridCreateUT  0000000000432703  MAIN__                   2680  ESMF_GridCreateUTest.F90
 ESMF_GridCreateUT  000000000040771E  Unknown               Unknown  Unknown
-libc.so.6          00002B95708936E5  __libc_start_main     Unknown  Unknown
+libc.so.6          00002AF653A076E5  __libc_start_main     Unknown  Unknown
 ESMF_GridCreateUT  0000000000407629  Unknown               Unknown  Unknown
 forrtl: warning (406): fort: (1): In call to ESMF_GRIDMOD^ESMF_GRIDCREATE1PERIDIMUFRMR, an array temporary was created for argument #8
 
@@ -688,7 +688,7 @@ Image              PC                Routine            Line        Source
 ESMF_GridCreateUT  000000000044AEA0  Unknown               Unknown  Unknown
 ESMF_GridCreateUT  0000000000432703  MAIN__                   2680  ESMF_GridCreateUTest.F90
 ESMF_GridCreateUT  000000000040771E  Unknown               Unknown  Unknown
-libc.so.6          00002B95708936E5  __libc_start_main     Unknown  Unknown
+libc.so.6          00002AF653A076E5  __libc_start_main     Unknown  Unknown
 ESMF_GridCreateUT  0000000000407629  Unknown               Unknown  Unknown
   PASS  Test ESMF_GridCreate1PeriDimUfrm with two bipole flags, ESMF_GridCreateU
  Test.F90, line 2707
@@ -738,16 +738,16 @@ ESMF_GridCreateUT  0000000000407629  Unknown               Unknown  Unknown
  idCreateUTest.F90, line 2956
   PASS  Testing GridCreateMosaic with different CoordTypeKind, ESMF_GridCreateUT
  est.F90, line 2977
-  PASS  Test ESMF_GridCreate with different coordTypeKind with GRIDSPEC supergri
- d tile file, ESMF_GridCreateUTest.F90, line 3117
   PASS  Testing GridCreateMosaic with different CoordTypeKind, ESMF_GridCreateUT
  est.F90, line 2977
+  PASS  Test ESMF_GridCreate with different coordTypeKind with GRIDSPEC supergri
+ d tile file, ESMF_GridCreateUTest.F90, line 3117
   Ending Test, file ESMF_GridCreateUTest.F90, line 3120
   PASS  Test ESMF_GridCreate with different coordTypeKind with GRIDSPEC supergri
  d tile file, ESMF_GridCreateUTest.F90, line 3117
   Ending Test, file ESMF_GridCreateUTest.F90, line 3120
-  PET           3  Test Elapsed Time    97.5980000000000       msec.
-  PET           1  Test Elapsed Time    96.6730000000000       msec.
-  PET           2  Test Elapsed Time    96.4580000000000       msec.
-  PET           0  Test Elapsed Time    96.6530000000000       msec.
-Mon Jan 25 23:14:26 MST 2021
+  PET           2  Test Elapsed Time    97.2490000000000       msec.
+  PET           0  Test Elapsed Time    97.3780000000000       msec.
+  PET           3  Test Elapsed Time    96.9580000000000       msec.
+  PET           1  Test Elapsed Time    96.6860000000000       msec.
+Tue Jan 26 18:43:38 MST 2021
