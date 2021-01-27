@@ -116,19 +116,6 @@ user_model1.F90:96:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:34:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm1_setvm(comp, rc)
  ^
-user_model2.F90:196:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:196:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:148:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:92:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine userm2_setvm(comp, rc)
- ^
 user_coupler.F90:176:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -145,6 +132,19 @@ user_coupler.F90:91:0: warning: unused parameter ‘clock’ [-Wunused-parameter
  ^
 user_coupler.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine usercpl_setvm(comp, rc)
+ ^
+user_model2.F90:196:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:196:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:148:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:92:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
  ^
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_ArrayScatterGatherSTest.F90 -o ESMF_ArrayScatterGatherSTest.o
 gmake chkdir_tests
@@ -243,12 +243,22 @@ user_coupler.F90:141:0: warning: unused parameter ‘comp’ [-Wunused-parameter
 user_coupler.F90:141:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
 user_coupler.F90:141:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
 user_coupler.F90:141:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:202:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:202:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:202:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_coupler.F90:118:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_run(comp, importState, exportState, clock, rc)
  ^
 user_coupler.F90:118:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
 user_coupler.F90:118:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
 user_coupler.F90:118:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:176:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:176:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:176:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_coupler.F90:95:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
@@ -258,16 +268,6 @@ user_coupler.F90:95:0: warning: unused parameter ‘clock’ [-Wunused-parameter
 user_coupler.F90:34:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine usercpl_setvm(comp, rc)
  ^
-user_model2.F90:202:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:202:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:202:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:176:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:176:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:176:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:108:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
@@ -286,23 +286,6 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
-user_model2.F90:187:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:187:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:187:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:139:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:139:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:139:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:92:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:92:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine userm2_setvm(comp, rc)
- ^
 user_model1.F90:185:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -319,6 +302,23 @@ user_model1.F90:93:0: warning: unused parameter ‘importstate’ [-Wunused-para
 user_model1.F90:93:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:187:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:187:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:187:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:139:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:139:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:139:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:92:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:92:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
  ^
 user_coupler.F90:218:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
@@ -427,6 +427,22 @@ user_model1.F90:93:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm1_setvm(comp, rc)
  ^
+user_coupler.F90:180:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:180:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_coupler.F90:180:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_coupler.F90:180:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:144:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:144:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:94:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:34:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
 user_model2.F90:187:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -444,26 +460,10 @@ user_model2.F90:92:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm2_setvm(comp, rc)
  ^
-user_coupler.F90:180:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:180:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_coupler.F90:180:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_coupler.F90:180:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:144:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:144:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:94:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:34:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine usercpl_setvm(comp, rc)
- ^
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_ArrayRedistSTestA.F90 -o ESMF_ArrayRedistSTestA.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_ArrayRedistSTestB.F90 -o ESMF_ArrayRedistSTestB.o
-mpif90     -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -fopenmp -L/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libg/Linux.gfortran.64.mpich3.default  -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/ -Wl,-rpath,/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libg/Linux.gfortran.64.mpich3.default  -Wl,-rpath,/usr/lib/gcc/x86_64-redhat-linux/4.8.5/ -o /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testg/Linux.gfortran.64.mpich3.default/ESMF_ArrayRedistSTestB user_model2.o user_coupler.o ESMF_ArrayRedistSTestB.o -lesmf  -lrt -lstdc++ -ldl
 mpif90     -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -fopenmp -L/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libg/Linux.gfortran.64.mpich3.default  -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/ -Wl,-rpath,/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libg/Linux.gfortran.64.mpich3.default  -Wl,-rpath,/usr/lib/gcc/x86_64-redhat-linux/4.8.5/ -o /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testg/Linux.gfortran.64.mpich3.default/ESMF_ArrayRedistSTestA user_model1.o user_coupler.o ESMF_ArrayRedistSTestA.o -lesmf  -lrt -lstdc++ -ldl
+mpif90     -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -fopenmp -L/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libg/Linux.gfortran.64.mpich3.default  -L/usr/lib/gcc/x86_64-redhat-linux/4.8.5/ -Wl,-rpath,/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/lib/libg/Linux.gfortran.64.mpich3.default  -Wl,-rpath,/usr/lib/gcc/x86_64-redhat-linux/4.8.5/ -o /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testg/Linux.gfortran.64.mpich3.default/ESMF_ArrayRedistSTestB user_model2.o user_coupler.o ESMF_ArrayRedistSTestB.o -lesmf  -lrt -lstdc++ -ldl
 gmake[2]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_ArrayRedistMPMD'
 tree_build_system_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_ArrayRedistSharedObj
 gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_ArrayRedistSharedObj'
@@ -473,11 +473,28 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
+user_model1.F90:188:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:188:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:188:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:140:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:140:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:140:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:195:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
 user_model2.F90:195:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
 user_model2.F90:195:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:93:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:93:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
 user_model2.F90:139:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_run(comp, importState, exportState, clock, rc)
  ^
@@ -506,23 +523,6 @@ user_coupler.F90:91:0: warning: unused parameter ‘clock’ [-Wunused-parameter
 user_coupler.F90:34:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine usercpl_setvm(comp, rc)
  ^
-user_model1.F90:188:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:188:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:188:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:140:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:140:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:140:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:93:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:93:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine userm1_setvm(comp, rc)
- ^
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_ArrayRedist3DSTest.F90 -o ESMF_ArrayRedist3DSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_ArrayRedist3D'
@@ -540,21 +540,11 @@ user_model1.F90:207:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
  ^
 user_model1.F90:207:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
 user_model1.F90:207:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:223:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:223:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:223:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:149:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_run(comp, importState, exportState, clock, rc)
  ^
 user_model1.F90:149:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
 user_model1.F90:149:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:149:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:149:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:149:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:93:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
@@ -562,6 +552,16 @@ user_model1.F90:93:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm1_setvm(comp, rc)
  ^
+user_model2.F90:223:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:223:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:223:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:149:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:149:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:149:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:92:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
@@ -597,23 +597,6 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
-user_model1.F90:207:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:207:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:207:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:149:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:149:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:149:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:93:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:93:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine userm1_setvm(comp, rc)
- ^
 user_model2.F90:226:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -647,6 +630,23 @@ user_coupler.F90:94:0: warning: unused parameter ‘clock’ [-Wunused-parameter
 user_coupler.F90:34:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine usercpl_setvm(comp, rc)
  ^
+user_model1.F90:207:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:207:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:207:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:149:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:149:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:149:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:93:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:93:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_ArrayBundleRedistSTest.F90 -o ESMF_ArrayBundleRedistSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_ArrayBundleRedist'
@@ -659,6 +659,23 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
+user_model2.F90:197:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:197:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:197:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:136:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:136:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:136:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:89:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:89:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
 user_model1.F90:193:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -686,23 +703,6 @@ user_coupler.F90:188:0: warning: unused parameter ‘comp’ [-Wunused-parameter
    subroutine user_run(comp, importState, exportState, clock, rc)
  ^
 user_coupler.F90:188:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:197:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:197:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:197:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:136:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:136:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:136:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:89:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:89:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine userm2_setvm(comp, rc)
- ^
 user_coupler.F90:91:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
@@ -738,22 +738,6 @@ user_model1.F90:103:0: warning: unused parameter ‘clock’ [-Wunused-parameter
 user_model1.F90:36:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm1_setvm(comp, rc)
  ^
-user_coupler.F90:224:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-     subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:224:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_coupler.F90:224:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_coupler.F90:224:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:184:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-     subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:184:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:103:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-     subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:39:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine usercpl_setvm(comp, rc)
- ^
 user_model2.F90:196:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -771,6 +755,22 @@ user_model2.F90:101:0: warning: unused parameter ‘clock’ [-Wunused-parameter
 user_model2.F90:36:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm2_setvm(comp, rc)
  ^
+user_coupler.F90:224:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:224:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_coupler.F90:224:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_coupler.F90:224:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:184:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:184:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:103:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:39:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_ConcurrentCompSTest.F90 -o ESMF_ConcurrentCompSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_ConcurrentComponent'
@@ -783,22 +783,22 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
-user_model2.F90:203:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+user_model1.F90:216:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
-user_model2.F90:203:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:203:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:160:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+user_model1.F90:216:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:216:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:168:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_run(comp, importState, exportState, clock, rc)
  ^
-user_model2.F90:160:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:160:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:101:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model1.F90:168:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:168:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:102:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
-user_model2.F90:101:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:36:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine userm2_setvm(comp, rc)
+user_model1.F90:102:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:36:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
  ^
 user_coupler.F90:236:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
@@ -816,22 +816,22 @@ user_coupler.F90:105:0: warning: unused parameter ‘clock’ [-Wunused-paramete
 user_coupler.F90:39:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine usercpl_setvm(comp, rc)
  ^
-user_model1.F90:216:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+user_model2.F90:203:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
-user_model1.F90:216:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:216:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:168:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+user_model2.F90:203:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:203:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:160:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_run(comp, importState, exportState, clock, rc)
  ^
-user_model1.F90:168:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:168:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:102:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model2.F90:160:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:160:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:101:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
-user_model1.F90:102:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:36:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine userm1_setvm(comp, rc)
+user_model2.F90:101:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:36:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
  ^
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_FieldConCompSTest.F90 -o ESMF_FieldConCompSTest.o
 gmake chkdir_tests
@@ -907,23 +907,6 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
-user_model2.F90:217:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:217:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:217:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:153:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:153:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:153:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:89:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:89:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine userm2_setvm(comp, rc)
- ^
 user_model1.F90:216:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -940,6 +923,23 @@ user_model1.F90:90:0: warning: unused parameter ‘importstate’ [-Wunused-para
 user_model1.F90:90:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:217:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:217:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:217:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:153:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:153:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:153:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:89:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:89:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
  ^
 user_coupler.F90:220:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
@@ -969,23 +969,6 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
-user_model2.F90:217:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:217:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:217:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:153:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:153:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:153:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:89:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:89:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine userm2_setvm(comp, rc)
- ^
 user_model1.F90:216:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1013,11 +996,28 @@ user_coupler.F90:148:0: warning: unused parameter ‘comp’ [-Wunused-parameter
    subroutine user_run(comp, importState, exportState, clock, rc)
  ^
 user_coupler.F90:148:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:217:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:217:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:217:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_coupler.F90:91:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
 user_coupler.F90:34:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine usercpl_setvm(comp, rc)
+ ^
+user_model2.F90:153:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:153:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:153:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:89:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:89:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
  ^
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_FieldBundleRedistPackedSTest.F90 -o ESMF_FieldBundleRedistPackedSTest.o
 gmake chkdir_tests
@@ -1036,34 +1036,17 @@ user_model1.F90:222:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
  ^
 user_model1.F90:222:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
 user_model1.F90:222:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:231:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:231:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:231:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:159:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_run(comp, importState, exportState, clock, rc)
  ^
 user_model1.F90:159:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
 user_model1.F90:159:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:166:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:166:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:166:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:90:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
 user_model1.F90:90:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm1_setvm(comp, rc)
- ^
-user_model2.F90:89:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:89:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine userm2_setvm(comp, rc)
  ^
 user_coupler.F90:184:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
@@ -1080,6 +1063,23 @@ user_coupler.F90:91:0: warning: unused parameter ‘clock’ [-Wunused-parameter
  ^
 user_coupler.F90:34:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine usercpl_setvm(comp, rc)
+ ^
+user_model2.F90:231:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:231:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:231:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:166:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:166:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:166:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:89:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:89:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
  ^
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_FieldBundleRegridPackedSTest.F90 -o ESMF_FieldBundleRegridPackedSTest.o
 gmake chkdir_tests
@@ -1149,10 +1149,31 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
+user_model1.F90:202:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:202:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:173:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:173:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model1.F90:173:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:257:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
 user_model2.F90:257:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:62:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:62:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:154:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:154:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:61:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:61:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_coupler.F90:143:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1166,27 +1187,6 @@ user_coupler.F90:107:0: warning: unused parameter ‘clock’ [-Wunused-paramete
 user_coupler.F90:58:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
-user_model2.F90:154:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:154:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:61:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:61:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:202:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:202:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:173:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:173:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model1.F90:173:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:62:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:62:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_FieldBundleLSRedistArb2ArbSTest.F90 -o ESMF_FieldBundleLSRedistArb2ArbSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_FieldBundleLSRedistArb2Arb'
@@ -1202,16 +1202,16 @@ mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -
 user_model1.F90:233:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
-user_model2.F90:342:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
 user_model1.F90:233:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:342:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:204:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
    subroutine user_run(comp, importState, exportState, clock, rc)
  ^
 user_model1.F90:204:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
 user_model1.F90:204:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:72:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:72:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_coupler.F90:143:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1222,13 +1222,13 @@ user_coupler.F90:107:0: warning: unused parameter ‘comp’ [-Wunused-parameter
    subroutine user_run(comp, importState, exportState, clock, rc)
  ^
 user_coupler.F90:107:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:342:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:342:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_coupler.F90:58:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
-user_model1.F90:72:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:72:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:171:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
    subroutine user_run(comp, importState, exportState, clock, rc)
  ^
@@ -1291,11 +1291,24 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
+user_coupler.F90:151:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:151:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_coupler.F90:151:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_coupler.F90:151:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:216:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
 user_model1.F90:216:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
 user_model1.F90:216:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:109:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:109:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
 user_model1.F90:144:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_run(comp, importState, exportState, clock, rc)
  ^
@@ -1318,19 +1331,6 @@ user_model2.F90:56:0: warning: unused parameter ‘exportstate’ [-Wunused-para
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
 user_model2.F90:56:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:151:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-     subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:151:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_coupler.F90:151:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_coupler.F90:151:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:109:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-     subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:109:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-     subroutine user_init(comp, importState, exportState, clock, rc)
- ^
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_FieldRegridSTest.F90 -o ESMF_FieldRegridSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_FieldRegrid'
@@ -1357,6 +1357,19 @@ user_model1.F90:57:0: warning: unused parameter ‘importstate’ [-Wunused-para
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
 user_model1.F90:57:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:159:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:159:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_coupler.F90:159:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_coupler.F90:159:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:117:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:117:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
 user_model2.F90:171:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1366,23 +1379,10 @@ user_model2.F90:145:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
  ^
 user_model2.F90:145:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
 user_model2.F90:145:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:159:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-     subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:159:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_coupler.F90:159:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_coupler.F90:159:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:56:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
 user_model2.F90:56:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:117:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-     subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:117:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-     subroutine user_init(comp, importState, exportState, clock, rc)
- ^
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_FieldRegridDisjointSTest.F90 -o ESMF_FieldRegridDisjointSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_FieldRegridDisjoint'
@@ -1447,11 +1447,6 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
-user_model2.F90:272:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-     subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:272:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:272:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:240:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1463,25 +1458,21 @@ user_model1.F90:215:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
 user_model1.F90:215:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
 user_model1.F90:215:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
 user_model1.F90:215:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:185:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-     subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:185:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:185:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:57:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
-user_model2.F90:56:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-     subroutine user_init(comp, importState, exportState, clock, rc)
- ^
 user_model1.F90:57:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:56:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_coupler.F90:154:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
 user_coupler.F90:154:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
 user_coupler.F90:154:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
 user_coupler.F90:154:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:272:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:272:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:272:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_coupler.F90:117:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_run(comp, importState, exportState, clock, rc)
  ^
@@ -1489,6 +1480,15 @@ user_coupler.F90:117:0: warning: unused parameter ‘clock’ [-Wunused-paramete
 user_coupler.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
+user_model2.F90:185:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:185:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:185:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:56:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:56:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_FieldRegridMeshSTest.F90 -o ESMF_FieldRegridMeshSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_FieldRegridMesh'
@@ -1501,6 +1501,19 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
+user_model2.F90:399:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:399:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:399:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:310:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:310:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:56:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:56:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_coupler.F90:154:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1514,11 +1527,6 @@ user_coupler.F90:117:0: warning: unused parameter ‘clock’ [-Wunused-paramete
 user_coupler.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
-user_model2.F90:399:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-     subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:399:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:399:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:251:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1530,18 +1538,10 @@ user_model1.F90:226:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
 user_model1.F90:226:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
 user_model1.F90:226:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
 user_model1.F90:226:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:310:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-     subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:310:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:57:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
 user_model1.F90:57:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:56:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-     subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:56:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_FieldRegridMeshToMeshSTest.F90 -o ESMF_FieldRegridMeshToMeshSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_FieldRegridMeshToMesh'
@@ -1554,6 +1554,21 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
+user_model1.F90:183:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:183:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:183:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:163:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:163:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:163:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model1.F90:163:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:59:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:208:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1579,21 +1594,6 @@ user_coupler.F90:121:0: warning: unused parameter ‘clock’ [-Wunused-paramete
 user_coupler.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
-user_model1.F90:183:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-     subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:183:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:183:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:163:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-     subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:163:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:163:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model1.F90:163:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:59:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-     subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_FieldLSRedistArb2ArbSTest.F90 -o ESMF_FieldLSRedistArb2ArbSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_FieldLSRedistArb2Arb'
@@ -1606,10 +1606,6 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
-user_model2.F90:235:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-     subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:235:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:186:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1621,14 +1617,10 @@ user_model1.F90:166:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
 user_model1.F90:166:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
 user_model1.F90:166:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
 user_model1.F90:166:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:135:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-     subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:135:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:61:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model1.F90:62:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
-user_model2.F90:61:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:62:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_coupler.F90:162:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1642,10 +1634,18 @@ user_coupler.F90:121:0: warning: unused parameter ‘clock’ [-Wunused-paramete
 user_coupler.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
-user_model1.F90:62:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model2.F90:235:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:235:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:135:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:135:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:61:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
-user_model1.F90:62:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:61:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_FieldLSRedistArb2ArbUngrdDimSTest.F90 -o ESMF_FieldLSRedistArb2ArbUngrdDimSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_FieldLSRedistArb2ArbUngrdDim'
@@ -1658,19 +1658,19 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
-user_model2.F90:157:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_coupler.F90:175:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
-user_model2.F90:157:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:118:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+user_coupler.F90:175:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_coupler.F90:175:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_coupler.F90:175:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:134:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_run(comp, importState, exportState, clock, rc)
  ^
-user_model2.F90:118:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:118:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:58:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_coupler.F90:134:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
-user_model2.F90:58:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:146:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1686,19 +1686,19 @@ user_model1.F90:59:0: warning: unused parameter ‘importstate’ [-Wunused-para
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
 user_model1.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:175:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+user_model2.F90:157:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
-user_coupler.F90:175:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_coupler.F90:175:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_coupler.F90:175:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:134:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+user_model2.F90:157:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:118:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_run(comp, importState, exportState, clock, rc)
  ^
-user_coupler.F90:134:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:118:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:118:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:58:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
+user_model2.F90:58:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_FieldLSSMMSTest.F90 -o ESMF_FieldLSSMMSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_FieldLSSMM'
@@ -1715,28 +1715,15 @@ user_model2.F90:154:0: warning: unused parameter ‘exportstate’ [-Wunused-par
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
 user_model2.F90:154:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:220:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-     subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:220:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_coupler.F90:220:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_coupler.F90:220:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:115:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_run(comp, importState, exportState, clock, rc)
  ^
-user_coupler.F90:179:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-     subroutine user_run(comp, importState, exportState, clock, rc)
- ^
 user_model2.F90:115:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_coupler.F90:179:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:115:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:58:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
 user_model2.F90:58:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-     subroutine user_init(comp, importState, exportState, clock, rc)
- ^
 user_model1.F90:281:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1752,6 +1739,19 @@ user_model1.F90:59:0: warning: unused parameter ‘importstate’ [-Wunused-para
      subroutine user_init(comp, importState, exportState, clock, rc)
  ^
 user_model1.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:220:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:220:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_coupler.F90:220:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_coupler.F90:220:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:179:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:179:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:59:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_FieldMeshSMMSTest.F90 -o ESMF_FieldMeshSMMSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_FieldMeshSMM'
@@ -1764,33 +1764,6 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
-user_model1.F90:315:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:315:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:315:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:252:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:252:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:252:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:210:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_initP3(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:210:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:210:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:155:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_initP2(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:155:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:155:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:102:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_initP1(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:102:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:28:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine userm1_setvm(comp, rc)
- ^
 user_model2.F90:268:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1819,6 +1792,33 @@ user_model2.F90:102:0: warning: unused parameter ‘exportstate’ [-Wunused-par
 user_model2.F90:102:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:28:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm2_setvm(comp, rc)
+ ^
+user_model1.F90:315:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:315:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:315:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:252:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:252:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:252:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:210:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_initP3(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:210:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:210:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:155:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_initP2(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:155:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:155:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:102:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_initP1(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:102:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:28:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
  ^
 user_coupler.F90:378:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
@@ -1857,6 +1857,33 @@ gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_coupler.F90 -o user_coupler.o
+user_model1.F90:413:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:413:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:413:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:365:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:365:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:365:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:327:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_initP3(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:327:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:327:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:295:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_initP2(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:295:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:295:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:98:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_initP1(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:98:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:28:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
 user_model2.F90:254:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1885,33 +1912,6 @@ user_model2.F90:98:0: warning: unused parameter ‘exportstate’ [-Wunused-para
 user_model2.F90:98:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:28:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm2_setvm(comp, rc)
- ^
-user_model1.F90:413:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:413:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:413:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:365:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:365:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:365:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:327:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_initP3(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:327:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:327:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:295:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_initP2(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:295:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:295:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:98:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_initP1(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:98:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:28:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine userm1_setvm(comp, rc)
  ^
 user_coupler.F90:428:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
@@ -1956,18 +1956,6 @@ user_modelC.F90:194.16:
             if (ftrptr1(i,j) /= solution) count = count+1
                 1
 Warning: Inequality comparison for REAL(8) at (1)
-user_modelB.F90:203:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_modelB.F90:203:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_modelB.F90:149:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_modelB.F90:149:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_modelB.F90:69:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_modelB.F90:69:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_modelA.F90:199:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -1980,6 +1968,18 @@ user_modelA.F90:69:0: warning: unused parameter ‘importstate’ [-Wunused-para
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
 user_modelA.F90:69:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_modelB.F90:203:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_modelB.F90:203:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_modelB.F90:149:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_modelB.F90:149:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_modelB.F90:69:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_modelB.F90:69:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_modelC.F90:212:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -2023,18 +2023,6 @@ user_modelC.F90:194.16:
             if (ftrptr1(i,j) /= solution) count = count+1
                 1
 Warning: Inequality comparison for REAL(8) at (1)
-user_modelB.F90:203:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_modelB.F90:203:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_modelB.F90:149:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_modelB.F90:149:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_modelB.F90:69:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_modelB.F90:69:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_modelA.F90:199:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -2047,6 +2035,30 @@ user_modelA.F90:69:0: warning: unused parameter ‘importstate’ [-Wunused-para
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
 user_modelA.F90:69:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_modelB.F90:203:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_modelB.F90:203:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_modelB.F90:149:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_modelB.F90:149:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_modelB.F90:69:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_modelB.F90:69:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:185:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:185:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_coupler.F90:185:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:133:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:133:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:58:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
 user_modelC.F90:212:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -2060,18 +2072,6 @@ user_modelC.F90:61:0: warning: unused parameter ‘importstate’ [-Wunused-para
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
 user_modelC.F90:61:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:185:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:185:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_coupler.F90:185:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:133:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:133:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:58:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_ConcurrentEnsembleSTest.F90 -o ESMF_ConcurrentEnsembleSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_ConcurrentEnsemble'
@@ -2089,11 +2089,21 @@ user_model2.F90:187:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
  ^
 user_model2.F90:187:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
 user_model2.F90:187:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:192:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:192:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:192:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:139:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_run(comp, importState, exportState, clock, rc)
  ^
 user_model2.F90:139:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
 user_model2.F90:139:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model1.F90:136:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:136:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_model1.F90:136:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:92:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
@@ -2101,16 +2111,6 @@ user_model2.F90:92:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm2_setvm(comp, rc)
  ^
-user_model1.F90:192:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:192:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:192:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model1.F90:136:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model1.F90:136:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_model1.F90:136:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:86:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
@@ -2157,22 +2157,6 @@ user_model1.F90:88:0: warning: unused parameter ‘importstate’ [-Wunused-para
    subroutine user_init(comp, importState, exportState, clock, rc)
  ^
 user_model1.F90:88:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:180:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:180:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-user_coupler.F90:180:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_coupler.F90:180:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:144:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:144:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_coupler.F90:94:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_coupler.F90:34:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine usercpl_setvm(comp, rc)
- ^
 user_model2.F90:187:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -2190,6 +2174,22 @@ user_model2.F90:92:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm2_setvm(comp, rc)
  ^
+user_coupler.F90:180:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:180:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+user_coupler.F90:180:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_coupler.F90:180:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:144:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:144:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_coupler.F90:94:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:34:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_ArrayRedistOpenACCSTest.F90 -o ESMF_ArrayRedistOpenACCSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_ArrayRedistOpenACC'
@@ -2201,6 +2201,10 @@ tree_build_system_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf
 gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_ArraySharedDeSSI'
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model1.F90 -o user_model1.o
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf user_model2.F90 -o user_model2.o
+user_model2.F90:91:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+   subroutine user2_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:91:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:143:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
    subroutine user1_run(comp, importState, exportState, clock, rc)
  ^
@@ -2212,10 +2216,6 @@ user_model1.F90:89:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 user_model1.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm1_setvm(comp, rc)
  ^
-user_model2.F90:91:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-   subroutine user2_run(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:91:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_ArraySharedDeSSISTest.F90 -o ESMF_ArraySharedDeSSISTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_ArraySharedDeSSI'
@@ -2482,6 +2482,22 @@ user_model1.F90:110:0: warning: unused parameter ‘clock’ [-Wunused-parameter
 user_model1.F90:33:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine userm1_setvm(comp, rc)
  ^
+user_model2.F90:202:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+  subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:202:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:202:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:176:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:176:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+user_model2.F90:176:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+user_model2.F90:108:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
 user_coupler.F90:141:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine user_final(comp, importState, exportState, clock, rc)
  ^
@@ -2503,22 +2519,6 @@ user_coupler.F90:95:0: warning: unused parameter ‘clock’ [-Wunused-parameter
 user_coupler.F90:34:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
    subroutine usercpl_setvm(comp, rc)
  ^
-user_model2.F90:202:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-  subroutine user_final(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:202:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:202:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:176:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_run(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:176:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-user_model2.F90:176:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-user_model2.F90:108:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-   subroutine user_init(comp, importState, exportState, clock, rc)
- ^
-user_model2.F90:31:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-   subroutine userm2_setvm(comp, rc)
- ^
 mpif90 -c -g -Wall -Wextra -Wconversion -Wno-unused -Wno-unused-dummy-argument -fbacktrace -fimplicit-none -fcheck=array-temps,bounds,do,mem,recursion -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp  -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/build_config/Linux.gfortran.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Superstructure -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/mod/modg/Linux.gfortran.64.mpich3.default -I/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-7-g9d66bb580c"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpich3 -DESMF_DIR=/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf ESMF_TraceSTest.F90 -o ESMF_TraceSTest.o
 gmake chkdir_tests
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests/ESMF_Trace'
@@ -2529,4 +2529,4 @@ gmake[2]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esm
 gmake[1]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/system_tests'
 echo "ESMF system tests built successfully."
 ESMF system tests built successfully.
-Mon Jan 25 13:36:47 MST 2021
+Tue Jan 26 23:38:48 MST 2021
