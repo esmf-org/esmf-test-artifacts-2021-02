@@ -1,15 +1,32 @@
- Time1 = 
-Time -----------------------------------
-2000-02-28T02:24:45
-end Time -------------------------------
+[bighorn.cgd.ucar.edu:26534] OPAL ERROR: Error in file pmix2x.c at line 326
+[bighorn.cgd.ucar.edu:26534] OPAL ERROR: Error in file pmix2x.c at line 326
+[bighorn.cgd.ucar.edu:26534] OPAL ERROR: Error in file pmix2x.c at line 326
 
- Timeinterval1 = 
-TimeInterval ---------------------------
-P0Y0M2DT8H36M15S
-end TimeInterval -----------------------
+Program received signal SIGSEGV: Segmentation fault - invalid memory reference.
 
- time2 = time1 + timeinterval1 =         2000 /           3 /           1            11 :           1 :           0
- time2 is larger than time1
-  PASS  Example ESMF_TimeEx, ESMF_TimeEx.F90, line 141
- PASS: ESMF_TimeEx.F90
-Tue Jan 26 23:38:12 MST 2021
+Backtrace for this error:
+#0  0x7f65bfef63ff in ???
+#1  0x7f65bdc20ae0 in ???
+#2  0x7f65bdc2183c in ???
+#3  0x7f65bdc3bf37 in ???
+#4  0x7f65bdc409e9 in ???
+#5  0x7f65bdc4267d in ???
+#6  0x7f65bdcab45c in ???
+#7  0x7f65bf987508 in event_process_active_single_queue
+	at /project/esmf/SOURCE/openmpi-3.1.1/opal/mca/event/libevent2022/libevent/event.c:1370
+#8  0x7f65bf987508 in event_process_active
+	at /project/esmf/SOURCE/openmpi-3.1.1/opal/mca/event/libevent2022/libevent/event.c:1440
+#9  0x7f65bf987508 in opal_libevent2022_event_base_loop
+	at /project/esmf/SOURCE/openmpi-3.1.1/opal/mca/event/libevent2022/libevent/event.c:1644
+#10  0x7f65bdc84f5d in ???
+#11  0x7f65c0295ea4 in ???
+#12  0x7f65bffbe96c in ???
+#13  0xffffffffffffffff in ???
+-------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+-------------------------------------------------------
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 0 on node bighorn exited on signal 11 (Segmentation fault).
+--------------------------------------------------------------------------
+Wed Jan 27 14:31:22 MST 2021

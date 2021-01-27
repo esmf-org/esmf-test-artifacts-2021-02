@@ -206,6 +206,7 @@ gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/es
 gmake EXNAME=Time NP=1 exfrun
 gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
 mpirun -np 1 ./ESMF_TimeEx > ./ESMF_TimeEx.stdout 2>&1
+cat: ./PET*TimeEx*.Log: No such file or directory
 gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
 gmake EXNAME=TimeInterval NP=1 exfrun
 gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
@@ -1262,7 +1263,6 @@ PASS: openmpi/O: src/Infrastructure/Route/examples/ESMF_RHandleReusabilityEx.F90
 PASS: openmpi/O: src/Infrastructure/TimeMgr/examples/ESMF_AlarmEx.F90
 PASS: openmpi/O: src/Infrastructure/TimeMgr/examples/ESMF_CalendarEx.F90
 PASS: openmpi/O: src/Infrastructure/TimeMgr/examples/ESMF_ClockEx.F90
-PASS: openmpi/O: src/Infrastructure/TimeMgr/examples/ESMF_TimeEx.F90
 PASS: openmpi/O: src/Infrastructure/TimeMgr/examples/ESMF_TimeIntervalEx.F90
 PASS: openmpi/O: src/Infrastructure/Trace/examples/ESMF_TraceEx.F90
 PASS: openmpi/O: src/Infrastructure/Trace/examples/ESMF_TraceUserEx.F90
@@ -1295,13 +1295,19 @@ PASS: openmpi/O: src/addon/NUOPC/examples/ESMF_NUOPCAtmModelEx.F90
 PASS: openmpi/O: src/addon/NUOPC/examples/ESMF_NUOPCBasicModelEx.F90
 
 
+The following example failed, did not build, or did not execute:
+
+
+FAIL: openmpi/O: src/Infrastructure/TimeMgr/examples/ESMF_TimeEx.F90
+
+
 
 
 The stdout files for the examples can be found at:
 /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/examples/examplesO/Linux.gfortran.64.openmpi.default
 
 
-Found 79 multi-processor examples, 79 passed and 0 failed.
+Found 79 multi-processor examples, 78 passed and 1 failed.
 
 gmake[1]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf'
-Tue Jan 26 23:38:51 MST 2021
+Wed Jan 27 14:32:00 MST 2021
