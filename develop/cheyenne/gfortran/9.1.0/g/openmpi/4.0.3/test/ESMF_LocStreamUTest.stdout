@@ -20,13 +20,14 @@
   PASS  Create test LocStream for IsCreated, ESMF_LocStreamUTest.F90, line 115
   PASS  Testing LocStream IsCreated for created object, ESMF_LocStreamUTest.F90, line 123
   PASS  Testing LocStream IsCreated for created object, ESMF_LocStreamUTest.F90, line 123
-  PASS  Testing LocStream IsCreated for created object, ESMF_LocStreamUTest.F90, line 123
   PASS  Testing LocStream IsCreated for created object, ESMF_LocStreamUTest.F90, line 131
   PASS  Testing LocStream IsCreated for created object, ESMF_LocStreamUTest.F90, line 123
   PASS  Testing LocStream IsCreated for created object, ESMF_LocStreamUTest.F90, line 131
+  PASS  Testing LocStream IsCreated for created object, ESMF_LocStreamUTest.F90, line 123
   PASS  Testing LocStream IsCreated for created object, ESMF_LocStreamUTest.F90, line 131
   PASS  Testing LocStream IsCreated for created object, ESMF_LocStreamUTest.F90, line 131
   PASS  Destroy test LocStream for IsCreated, ESMF_LocStreamUTest.F90, line 139
+  PASS  Testing LocStream IsCreated for destroyed object, ESMF_LocStreamUTest.F90, line 147
   PASS  Destroy test LocStream for IsCreated, ESMF_LocStreamUTest.F90, line 139
   PASS  Destroy test LocStream for IsCreated, ESMF_LocStreamUTest.F90, line 139
   PASS  Destroy test LocStream for IsCreated, ESMF_LocStreamUTest.F90, line 139
@@ -34,7 +35,6 @@
   PASS  Testing LocStream IsCreated for destroyed object, ESMF_LocStreamUTest.F90, line 147
   PASS  Testing LocStream IsCreated for destroyed object, ESMF_LocStreamUTest.F90, line 147
   PASS  Testing LocStream IsCreated for destroyed object, ESMF_LocStreamUTest.F90, line 155
-  PASS  Testing LocStream IsCreated for destroyed object, ESMF_LocStreamUTest.F90, line 147
   PASS  Testing LocStream IsCreated for destroyed object, ESMF_LocStreamUTest.F90, line 155
   PASS  Testing LocStream IsCreated for destroyed object, ESMF_LocStreamUTest.F90, line 155
   PASS  Testing LocStream IsCreated for destroyed object, ESMF_LocStreamUTest.F90, line 155
@@ -49,6 +49,18 @@
   PASS  LocStream equality before assignment Test, ESMF_LocStreamUTest.F90, line 343
   PASS  LocStream equality before assignment Test, ESMF_LocStreamUTest.F90, line 343
   PASS  LocStream equality before assignment Test, ESMF_LocStreamUTest.F90, line 343
+  PASS  LocStream assignment and equality Test, ESMF_LocStreamUTest.F90, line 352
+  PASS  LocStreamDestroy Test, ESMF_LocStreamUTest.F90, line 359
+  PASS  LocStream equality after destroy Test, ESMF_LocStreamUTest.F90, line 367
+  PASS  LocStream non-equality after destroy Test, ESMF_LocStreamUTest.F90, line 375
+  PASS  Double LocStreamDestroy through alias Test, ESMF_LocStreamUTest.F90, line 382
+  PASS  Test ESMF_LocStreamCreate from Irregular distribution, ESMF_LocStreamUTest.F90, line 534
+  PASS  LocStream assignment and equality Test, ESMF_LocStreamUTest.F90, line 352
+  PASS  LocStreamDestroy Test, ESMF_LocStreamUTest.F90, line 359
+  PASS  LocStream equality after destroy Test, ESMF_LocStreamUTest.F90, line 367
+  PASS  LocStream non-equality after destroy Test, ESMF_LocStreamUTest.F90, line 375
+  PASS  Double LocStreamDestroy through alias Test, ESMF_LocStreamUTest.F90, line 382
+  PASS  Test ESMF_LocStreamCreate from Irregular distribution, ESMF_LocStreamUTest.F90, line 534
   PASS  LocStream equality before assignment Test, ESMF_LocStreamUTest.F90, line 343
   PASS  LocStream assignment and equality Test, ESMF_LocStreamUTest.F90, line 352
   PASS  LocStreamDestroy Test, ESMF_LocStreamUTest.F90, line 359
@@ -62,18 +74,6 @@
   PASS  LocStream non-equality after destroy Test, ESMF_LocStreamUTest.F90, line 375
   PASS  Double LocStreamDestroy through alias Test, ESMF_LocStreamUTest.F90, line 382
   PASS  Test ESMF_LocStreamCreate from Irregular distribution, ESMF_LocStreamUTest.F90, line 534
-  PASS  LocStream assignment and equality Test, ESMF_LocStreamUTest.F90, line 352
-  PASS  LocStreamDestroy Test, ESMF_LocStreamUTest.F90, line 359
-  PASS  LocStream equality after destroy Test, ESMF_LocStreamUTest.F90, line 367
-  PASS  LocStream non-equality after destroy Test, ESMF_LocStreamUTest.F90, line 375
-  PASS  Double LocStreamDestroy through alias Test, ESMF_LocStreamUTest.F90, line 382
-  PASS  Test ESMF_LocStreamCreate from Irregular distribution, ESMF_LocStreamUTest.F90, line 534
-  PASS  LocStream assignment and equality Test, ESMF_LocStreamUTest.F90, line 352
-  PASS  LocStreamDestroy Test, ESMF_LocStreamUTest.F90, line 359
-  PASS  LocStream equality after destroy Test, ESMF_LocStreamUTest.F90, line 367
-  PASS  LocStream non-equality after destroy Test, ESMF_LocStreamUTest.F90, line 375
-  PASS  Double LocStreamDestroy through alias Test, ESMF_LocStreamUTest.F90, line 382
-  PASS  Test ESMF_LocStreamCreate from Irregular distribution, ESMF_LocStreamUTest.F90, line 534
   PASS  Testing LocStream Create from localCount and indexflag=ESMF_INDEX_DELOCAL, ESMF_LocStreamUTest.F90, line 571
   PASS  Testing LocStream Create from localCount and indexflag=ESMF_INDEX_DELOCAL, ESMF_LocStreamUTest.F90, line 571
   PASS  Testing LocStream Create from localCount and indexflag=ESMF_INDEX_DELOCAL, ESMF_LocStreamUTest.F90, line 571
@@ -129,61 +129,61 @@
  LocStream Print Starts ====>
  Name =     'LocStream048'
  KeyCount =           2
-    A1 - LN1    U1
-    A1 - LN1    U1
-    A1 - LN1    U1
  Keys:
     A1 - LN1    U1
-     arr(           1 )=    1.1506219728018623E-316
-     arr(           2 )=    0.0000000000000000     
-     arr(           3 )=    0.0000000000000000     
-     arr(           1 )=    1.6134871754819758E-316
+    A1 - LN1    U1
+    A1 - LN1    U1
+    A1 - LN1    U1
+     arr(           1 )=    1.0764504665330743E-316
      arr(           2 )=    0.0000000000000000     
      arr(           3 )=    0.0000000000000000     
      arr(           4 )=    0.0000000000000000     
-     arr(           1 )=    1.5588316574764337E-316
+     arr(           1 )=    1.0217562137808983E-316
+     arr(           2 )=    0.0000000000000000     
+     arr(           3 )=    0.0000000000000000     
+     arr(           1 )=    7.3691748764050285E-317
      arr(           2 )=    0.0000000000000000     
      arr(           3 )=    0.0000000000000000     
      arr(           4 )=    0.0000000000000000     
-     arr(           1 )=    1.8450790635862517E-316
-     arr(           2 )=    0.0000000000000000     
-     arr(           3 )=    0.0000000000000000     
-     arr(           4 )=    0.0000000000000000     
+     arr(           5 )=    0.0000000000000000     
      arr(           5 )=    0.0000000000000000     
     A2 - LN2    U2
      arr(           4 )=    0.0000000000000000     
      arr(           5 )=    0.0000000000000000     
     A2 - LN2    U2
-     arr(           5 )=    0.0000000000000000     
     A2 - LN2    U2
+     arr(           1 )=    1.0780749543766003E-316
+     arr(           2 )=    0.0000000000000000     
+     arr(           3 )=    0.0000000000000000     
+     arr(           4 )=    0.0000000000000000     
      arr(           5 )=    0.0000000000000000     
     A2 - LN2    U2
      arr(           1 )=    0.0000000000000000     
-     arr(           2 )=    2.3663119877959422E-310
+     arr(           2 )=    2.3478142550107471E-310
+     arr(           3 )=    7.7593839709652783E-317
+     arr(           4 )=    2.3478142550091661E-310
+     arr(           5 )=    2.3715151000379834E-322
+ LocStream Print Ends   ====>
      arr(           1 )=    0.0000000000000000     
-     arr(           2 )=    2.3317867949549809E-310
-     arr(           3 )=    2.3317867949533998E-310
-     arr(           1 )=    2.3589864538929733E-310
-     arr(           2 )=    2.3589864538929733E-310
-     arr(           3 )=    1.5641059070589182E-316
-     arr(           4 )=    1.6121591270259545E-316
-     arr(           3 )=    1.1480480884132877E-316
-     arr(           4 )=    1.1482283235608906E-316
+     arr(           2 )=    2.3203443341123952E-310
+     arr(           3 )=    6.3659873739333548E-313
+     arr(           4 )=    8.4879831653926928E-313
      arr(           5 )=    2.3715151000379834E-322
+     arr(           1 )=    2.3388672916254605E-310
+     arr(           2 )=    2.3388672916254605E-310
+     arr(           3 )=    8.9327068768097375E-321
+     arr(           4 )=    2.3715151000379834E-322
+     arr(           5 )=    1.0764188463317405E-316
  LocStream Print Ends   ====>
-     arr(           1 )=    1.8451367704536860E-316
-     arr(           2 )=    2.3371954363630282E-310
-     arr(           3 )=    1.8828810142808572E-316
-     arr(           4 )=    2.3371954363614471E-310
-     arr(           5 )=    2.3715151000379834E-322
- LocStream Print Ends   ====>
-     arr(           5 )=    2.3715151000379834E-322
- LocStream Print Ends   ====>
-     arr(           4 )=    1.5566664641900990E-316
-     arr(           5 )=    2.3715151000379834E-322
+     arr(           1 )=    0.0000000000000000     
+     arr(           2 )=    2.3251863206685034E-310
  LocStream Print Ends   ====>
   PASS  Test Print, ESMF_LocStreamUTest.F90, line 1050
   PASS  Test Print, ESMF_LocStreamUTest.F90, line 1050
+     arr(           3 )=    1.0754196479695911E-316
+     arr(           4 )=    2.3251863206669224E-310
+     arr(           5 )=    2.3715151000379834E-322
+ LocStream Print Ends   ====>
   PASS  Test Print, ESMF_LocStreamUTest.F90, line 1050
   PASS  Test Print, ESMF_LocStreamUTest.F90, line 1050
   PASS  Test ESMF_LocStreamCreate from Regular distribution, ESMF_LocStreamUTest.F90, line 1202
@@ -214,8 +214,8 @@
   Ending Test, file ESMF_LocStreamUTest.F90, line 1724
   Ending Test, file ESMF_LocStreamUTest.F90, line 1724
   Ending Test, file ESMF_LocStreamUTest.F90, line 1724
-  PET           0  Test Elapsed Time    31.972000000000001       msec.
-  PET           2  Test Elapsed Time    31.976999999999993       msec.
-  PET           3  Test Elapsed Time    32.094999999999999       msec.
-  PET           1  Test Elapsed Time    31.326000000000008       msec.
-Tue Jan 26 14:32:15 MST 2021
+  PET           0  Test Elapsed Time    31.437999999999995       msec.
+  PET           2  Test Elapsed Time    30.961000000000002       msec.
+  PET           3  Test Elapsed Time    31.178999999999998       msec.
+  PET           1  Test Elapsed Time    31.696000000000002       msec.
+Wed Jan 27 15:00:18 MST 2021
