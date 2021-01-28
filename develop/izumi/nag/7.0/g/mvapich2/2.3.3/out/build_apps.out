@@ -2,7 +2,7 @@ gmake[1]: Entering directory '/project/esmf/himanshu/nag/esmf'
  
 --------------------------------------------------------------
 ESMF_VERSION_STRING:    8.1.0 beta snapshot
-ESMF_8_1_0_beta_snapshot_42-9-g224c65aeb2
+ESMF_8_1_0_beta_snapshot_42-11-g7c262dc1c7
 --------------------------------------------------------------
 On branch develop
 Your branch is up to date with 'origin/develop'.
@@ -78,7 +78,7 @@ ESMF_MPIRUN=mpirun
 ESMF_NO_INTEGER_1_BYTE=TRUE
 ESMF_NO_INTEGER_2_BYTE=TRUE
 ESMF_OPENACC=OFF
-ESMF_OPENMP=OFF
+ESMF_OPENMP=ON
 ESMF_OPTLEVEL=0
 ESMF_OS=Linux
 ESMF_PIO=internal
@@ -96,7 +96,7 @@ ESMF_TESTMPMD=OFF
 ESMF_TESTSHAREDOBJ=OFF
 ESMF_TESTWITHTHREADS=OFF
 ESMF_TRACE_LIB_BUILD=ON
-ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_42-9-g224c65aeb2
+ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_42-11-g7c262dc1c7
 ESMF_YAMLCPP=internal
 MAKEFLAGS= -j --jobserver-fds=3,4 -- ESMF_BOPT=g
  
@@ -112,7 +112,7 @@ ESMF_OPTLEVEL:          0
 ESMF_COMM:              mvapich2
 ESMF_SITE:              default
 ESMF_PTHREADS:          ON
-ESMF_OPENMP:            OFF
+ESMF_OPENMP:            ON
 ESMF_OPENACC:           OFF
 ESMF_CXXSTD:            11
 ESMF_ARRAY_LITE:        FALSE
@@ -173,16 +173,16 @@ Location of the C++ linker:        /cluster/mvapich2-2.3.3-gcc-9.3.0-nag-7.0/bin
 
 Fortran compiler flags:
 ESMF_F90COMPILER: mpif90
-ESMF_F90COMPILEOPTS: -g -pic -DESMF_NAG_UNIX_MODULE -dusty -thread_safe
+ESMF_F90COMPILEOPTS: -g -pic -DESMF_NAG_UNIX_MODULE -dusty -thread_safe  -openmp
 ESMF_F90COMPILEPATHS: -I/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default -I/project/esmf/himanshu/nag/esmf/src/include 
-ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_42-9-g224c65aeb2' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DS64=1 -DESMF_OS_Linux=1 -DESMF_COMM=mvapich2 -DESMF_DIR=/project/esmf/himanshu/nag/esmf
+ESMF_F90COMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_42-11-g7c262dc1c7' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DS64=1 -DESMF_OS_Linux=1 -DESMF_COMM=mvapich2 -DESMF_DIR=/project/esmf/himanshu/nag/esmf -DESMF_NO_F2018ASSUMEDTYPE
 ESMF_F90COMPILEFREECPP: 
 ESMF_F90COMPILEFREENOCPP: -free
 ESMF_F90COMPILEFIXCPP: -fixed -fpp
 ESMF_F90COMPILEFIXNOCPP: 
 
 Fortran linker flags:
-ESMF_F90LINKOPTS:   -thread_safe -Wl,-Wl,,--no-as-needed
+ESMF_F90LINKOPTS:   -thread_safe -Wl,-Wl,,--no-as-needed  -openmp
 ESMF_F90LINKPATHS: -L/project/esmf/himanshu/nag/esmf/lib/libg/Linux.nag.64.mvapich2.default  -L/usr/local/gcc-g++-gfortran-9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/
 ESMF_F90LINKRPATHS: -Wl,-Wl,,-rpath,,/project/esmf/himanshu/nag/esmf/lib/libg/Linux.nag.64.mvapich2.default  -Wl,-Wl,,-rpath,,/usr/local/gcc-g++-gfortran-9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/
 ESMF_F90LINKLIBS:  -lrt -lstdc++ -ldl
@@ -190,12 +190,12 @@ ESMF_F90ESMFLINKLIBS: -lesmf  -lrt -lstdc++ -ldl
 
 C++ compiler flags:
 ESMF_CXXCOMPILER: mpicxx
-ESMF_CXXCOMPILEOPTS: -std=c++11 -g -fPIC -pthread
+ESMF_CXXCOMPILEOPTS: -std=c++11 -g -fPIC -pthread  -fopenmp
 ESMF_CXXCOMPILEPATHS:  -I/project/esmf/himanshu/nag/esmf/src/include   -I/project/esmf/himanshu/nag/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_42-9-g224c65aeb2' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DS64=1 -DESMF_OS_Linux=1 -DESMF_COMM=mvapich2 -DESMF_DIR=/project/esmf/himanshu/nag/esmf -D__SDIR__='' -DESMF_CXXSTD=11
+ESMF_CXXCOMPILECPPFLAGS: -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_42-11-g7c262dc1c7' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DS64=1 -DESMF_OS_Linux=1 -DESMF_COMM=mvapich2 -DESMF_DIR=/project/esmf/himanshu/nag/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_NO_F2018ASSUMEDTYPE
 
 C++ linker flags:
-ESMF_CXXLINKOPTS:   -pthread -Wl,--no-as-needed
+ESMF_CXXLINKOPTS:   -pthread -Wl,--no-as-needed  -fopenmp
 ESMF_CXXLINKPATHS: -L/project/esmf/himanshu/nag/esmf/lib/libg/Linux.nag.64.mvapich2.default 
 ESMF_CXXLINKRPATHS: -Wl,-rpath,/project/esmf/himanshu/nag/esmf/lib/libg/Linux.nag.64.mvapich2.default 
 ESMF_CXXLINKLIBS:  -lmpifort -lrt -ldl -g -m64 /usr/local/nag-7.0/lib/NAG_Fortran/quickfit.o -L/cluster/mvapich2-2.3.3-gcc-9.3.0-nag-7.0/lib -lmpifort -lmpi -Wl,-rpath,/usr/local/nag-7.0/lib/NAG_Fortran /usr/local/nag-7.0/lib/NAG_Fortran/libf70rts.so /usr/local/nag-7.0/lib/NAG_Fortran/libf70rts.a -lm -lpthread -Wl,-rpath -Wl,/cluster/mvapich2-2.3.3-gcc-9.3.0-nag-7.0/lib
@@ -205,7 +205,7 @@ Shared library build:
 ESMF_SL_LIBS_TO_MAKE: libesmf
 ESMF_SL_SUFFIX:       so
 ESMF_SL_LIBLINKER:    mpicxx
-ESMF_SL_LIBOPTS:       -shared
+ESMF_SL_LIBOPTS:       -shared  -fopenmp
 ESMF_SL_LIBLIBS:      
 
 ESMF Tracing linker options:
@@ -215,8 +215,8 @@ ESMF_TRACE_STATICLINKLIBS=-lesmftrace_static
 
 
 --------------------------------------------------------------
-Compiling on Wed Jan 27 10:08:09 MST 2021 on i037.unified.ucar.edu
-Machine characteristics: Linux i037.unified.ucar.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
+Compiling on Wed Jan 27 18:07:00 MST 2021 on i040.unified.ucar.edu
+Machine characteristics: Linux i040.unified.ucar.edu 3.10.0-1062.12.1.el7.x86_64 #1 SMP Tue Feb 4 23:02:59 UTC 2020 x86_64 x86_64 x86_64 GNU/Linux
 ==============================================================
  
 gmake[2]: Entering directory '/project/esmf/himanshu/nag/esmf'
@@ -1179,160 +1179,292 @@ gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag
 gmake[9]: Nothing to be done for 'libc'.
 gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
 gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
-mpif90 -c -g -pic -DESMF_NAG_UNIX_MODULE -dusty -thread_safe  -I/project/esmf/himanshu/nag/esmf/build_config/Linux.nag.default -I/project/esmf/himanshu/nag/esmf/src/Infrastructure -I/project/esmf/himanshu/nag/esmf/src/Superstructure -I/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default -I/project/esmf/himanshu/nag/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-9-g224c65aeb2"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DS64=1 -DESMF_OS_Linux=1 -DESMF_COMM=mvapich2 -DESMF_DIR=/project/esmf/himanshu/nag/esmf /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90 -o /project/esmf/himanshu/nag/esmf/obj/objg/Linux.nag.64.mvapich2.default/ESMF_FortranWordsize.o
-mpif90 -c -g -pic -DESMF_NAG_UNIX_MODULE -dusty -thread_safe  -I/project/esmf/himanshu/nag/esmf/build_config/Linux.nag.default -I/project/esmf/himanshu/nag/esmf/src/Infrastructure -I/project/esmf/himanshu/nag/esmf/src/Superstructure -I/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default -I/project/esmf/himanshu/nag/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-9-g224c65aeb2"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DS64=1 -DESMF_OS_Linux=1 -DESMF_COMM=mvapich2 -DESMF_DIR=/project/esmf/himanshu/nag/esmf /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90 -o /project/esmf/himanshu/nag/esmf/obj/objg/Linux.nag.64.mvapich2.default/ESMF_UtilCubedSphere.o
-mpif90 -c -g -pic -DESMF_NAG_UNIX_MODULE -dusty -thread_safe  -I/project/esmf/himanshu/nag/esmf/build_config/Linux.nag.default -I/project/esmf/himanshu/nag/esmf/src/Infrastructure -I/project/esmf/himanshu/nag/esmf/src/Superstructure -I/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default -I/project/esmf/himanshu/nag/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-9-g224c65aeb2"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENMP -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DS64=1 -DESMF_OS_Linux=1 -DESMF_COMM=mvapich2 -DESMF_DIR=/project/esmf/himanshu/nag/esmf /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_AttPackType.F90 -o /project/esmf/himanshu/nag/esmf/obj/objg/Linux.nag.64.mvapich2.default/ESMF_AttPackType.o
+gmake[9]: Nothing to be done for 'libf'.
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/interface
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/interface'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Nothing to be done for 'libc'.
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Nothing to be done for 'libf'.
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/interface'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/tests
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/tests'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/tests'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/examples
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/examples'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/examples'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/doc
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/doc'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/doc'
+gmake[6]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Util'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr
+gmake[6]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/src
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/src'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Nothing to be done for 'libc'.
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/src'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/interface
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/interface'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Nothing to be done for 'libc'.
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Nothing to be done for 'libf'.
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/interface'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/examples
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/examples'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/examples'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/doc
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/doc'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/doc'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/tests
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/tests'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr/tests'
+gmake[6]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/LogErr'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/VM
+gmake[6]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/VM'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/src
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/src'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Nothing to be done for 'libc'.
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/src/acc
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/src/acc'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/src/acc'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/src'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/interface
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/interface'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Nothing to be done for 'libc'.
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Nothing to be done for 'libf'.
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/interface'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/doc
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/doc'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/doc'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/examples
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/examples'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/examples'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/tests
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/tests'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/VM/tests'
+gmake[6]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/VM'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace
+gmake[6]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/src
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/src'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Nothing to be done for 'libc'.
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/src'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/interface
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/interface'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Nothing to be done for 'libc'.
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Nothing to be done for 'libf'.
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/interface'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/tests
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/tests'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/tests'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/doc
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/doc'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/doc'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/examples
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/examples'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace/examples'
+gmake[6]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Trace'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base
+gmake[6]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Base'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/src
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/src'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Nothing to be done for 'libc'.
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/src'
+tree_lib in: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface
+gmake[7]: Entering directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface'
+dir=`pwd`; cd /project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default; gmake -f ${dir}/makefile MAKEFILE=${dir}/makefile esmflib
+gmake[8]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Nothing to be done for 'libc'.
+gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+gmake[9]: Entering directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
+mpif90 -c -g -pic -DESMF_NAG_UNIX_MODULE -dusty -thread_safe  -openmp  -I/project/esmf/himanshu/nag/esmf/build_config/Linux.nag.default -I/project/esmf/himanshu/nag/esmf/src/Infrastructure -I/project/esmf/himanshu/nag/esmf/src/Superstructure -I/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default -I/project/esmf/himanshu/nag/esmf/src/include   -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='"ESMF_8_1_0_beta_snapshot_42-11-g7c262dc1c7"' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DS64=1 -DESMF_OS_Linux=1 -DESMF_COMM=mvapich2 -DESMF_DIR=/project/esmf/himanshu/nag/esmf -DESMF_NO_F2018ASSUMEDTYPE /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90 -o /project/esmf/himanshu/nag/esmf/obj/objg/Linux.nag.64.mvapich2.default/ESMF_Info.o
 NAG Fortran Compiler Release 7.0(Yurakucho) Build 7005
-NAG Fortran Compiler Release 7.0(Yurakucho) Build 7005
-NAG Fortran Compiler Release 7.0(Yurakucho) Build 7005
-Extension: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90, line 72: Byte count on numeric data type
-           detected at *@8
-Error: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90, line 73: Syntax error
-       detected at *@)
-Error: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90, line 74: Syntax error
-       detected at *@)
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 279: Unused local variable IG
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 279: Unused local variable RC
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 279: Unused local variable STATUS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 279: Unused [lNoAcGa lF ovratrriaanb lCeo mTILE1p
-iWlaerrn ipnags:s  /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 279: 1U neursreodr  ltoecramli nvaatriioanb,l e2  TILE_LOCALe
-rrors, 1 warning]
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 366: Unused local variable IG
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 366: Unused local variable JG
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 366: Unused local variable N
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 366: Local variable NTILES is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 366: Unused local variable RC
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 366: Unused local variable STATUS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 366: Unused local variable TILE1
-/project/esmf/himanshu/nag/esmf/build/common.mk:3873: recipe for target '/project/esmf/himanshu/nag/esmf/obj/objg/Linux.nag.64.mvapich2.default/ESMF_FortranWordsize.o' failed
-gmake[9]: *** [/project/esmf/himanshu/nag/esmf/obj/objg/Linux.nag.64.mvapich2.default/ESMF_FortranWordsize.o] Error 2
-gmake[9]: *** Waiting for unfinished jobs....
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 484: Unused local variable DELX
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 484: Unused local variable K
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 484: Unused local variable P1
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 484: Unused local variable P2
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 513: Unused local variable DS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 513: Unused local variable DY
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 513: Unused local variable DZ
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 513: Unused local variable X
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 513: Unused local variable XF
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 513: Unused local variable Y
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 513: Unused local variable Y0
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 513: Unused local variable Z
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 513: Unused local variable Z0
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 542: Unused local variable DS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 542: Unused local variable X
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 542: Unused local variable Y
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 542: Unused local variable Z
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 675: Unused local variable N
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 675: Unused local variable N1
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 675: Unused local variable N2
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 818: Unused local variable N
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 818: Unused local variable N1
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 818: Unused local variable N2
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 818: Unused dummy variable NDIMS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 818: Unused local variable NREG
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable ACAPN
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable ACAPS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable ACOSP
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable AGRID
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable AREA
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable AREA_C
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable CHANNEL is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable COSE
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable COSP
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable CSFAC is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable CUBED_SPHERE is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable DEBUG_MESSAGE_SIZE is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable DEGLAT_START is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable DEGLAT_STOP is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable DEGLON_START is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable DEGLON_STOP is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable DOUBLE_PERIODIC is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable DX
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable DXA
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable DXC
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable DXDY_AREA is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable DX_CONST is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable DY
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable DYA
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable DYC
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable DY_CONST is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable E1
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable E2
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable GLOBALAREA
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable GRID
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable GRID_G
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable GRID_TYPE is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable HAVE_NORTH_POLE is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable HAVE_SOUTH_POLE is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable IINTA
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable IINTB
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable INTERPORDER is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable IS_GRID_CREATED is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable JINTA
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable JINTB
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable LATLON is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable LATLON_PATCH is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable LATLON_STRIP is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable NPX_G
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable NPY_G
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable NPZ_G
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable NTILES_G
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable RAREA
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable RAREA_C
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable RDX
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable RDXA
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable RDXC
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable RDY
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable RDYA
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable RDYC
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Unused local variable STRETCH
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable STRETCHED_GRID is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable UNIFORM_PPM is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable WRITE_GRID_CHAR_FILE is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 1193: Local variable ZETA is initialised but never used
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 138: DEALLOCATE of GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 142: ALLOCATE of GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 143: GRID_GLOBAL cannot be INTENT(OUT) actual arg in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 143: GRID_GLOBAL cannot be INTENT(OUT) actual arg in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 145: GRID_GLOBAL cannot be INTENT(INOUT) actual arg in thread-safe procedure ESMF_UTILCREATECSCOORDS
-[NAG FortrWaanr nCionmgp:i l/project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 153: eArs sniogrnmmaeln tt etrom iGRID_GLOBALn aitni otnh]r
-ead-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 155: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 156: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 157: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 164: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 165: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 166: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 167: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 168: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 169: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 170: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 171: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 172: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 174: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 175: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 176: Assignment to GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 227: GRID_GLOBAL cannot be INTENT(INOUT) actual arg in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 227: GRID_GLOBAL cannot be INTENT(INOUT) actual arg in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 275: DEALLOCATE of GRID_GLOBAL in thread-safe procedure ESMF_UTILCREATECSCOORDS
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 313: ALLOCATE of GLOBAL_TILE1 in thread-safe procedure ESMF_UTILCREATECSCOORDSPAR
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 314: GLOBAL_TILE1 cannot be INTENT(OUT) actual arg in thread-safe procedure ESMF_UTILCREATECSCOORDSPAR
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 314: GLOBAL_TILE1 cannot be INTENT(OUT) actual arg in thread-safe procedure ESMF_UTILCREATECSCOORDSPAR
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 318: GLOBAL_TILE1 cannot be INTENT(INOUT) actual arg in thread-safe procedure ESMF_UTILCREATECSCOORDSPAR
-Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src/ESMF_UtilCubedSphere.F90, line 362: DEALLOCATE of GLOBAL_TILE1 in thread-safe procedure ESMF_UTILCREATECSCOORDSPAR
-[NAG Fortran Compiler normal termination, 126 warnings]
+Error: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 54: Cannot open INCLUDE file "ESMF_InfoCDef.F90": No such file or directory
+Error: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 55: Cannot open INCLUDE file "ESMF_InfoCDefGeneric.F90": No such file or directory
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 335: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 377: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 418: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 460: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 570: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 620: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 670: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 720: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 770: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 821: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 884: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 983: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1024: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1065: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1106: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1151: Unused local variable IDX
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1151: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1200: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1255: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1301: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1462: Unused dummy variable KEYWORDENFORCER
+Questionable: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1462: Variable STRLEN_ONLY set but never referenced
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1519: Unused dummy variable KEYWORDENFORCER
+Questionable: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1519: Variable STRLEN_ONLY set but never referenced
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1576: Unused dummy variable KEYWORDENFORCER
+Questionable: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1576: Variable STRLEN_ONLY set but never referenced
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1633: Unused dummy variable KEYWORDENFORCER
+Questionable: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1633: Variable STRLEN_ONLY set but never referenced
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1685: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1742: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1802: Unused dummy variable KEYWORDENFORCER
+Questionable: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1802: Variable STRLEN_ONLY set but never referenced
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 1965: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2021: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2068: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2124: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2171: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2227: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2274: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2330: Unused dummy variable KEYWORDENFORCER
+Questionable: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2392: Variable EXPECTED_SIZE set but never referenced
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2392: Unused dummy variable KEYWORDENFORCER
+Questionable: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2392: Variable RECURSIVE set but never referenced
+Questionable: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2451: Variable EXPECTED_SIZE set but never referenced
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2451: Unused dummy variable KEYWORDENFORCER
+Questionable: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2451: Variable RECURSIVE set but never referenced
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2509: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2576: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2824: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2902: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 2936: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3002: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3058: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3140: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3199: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3265: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3315: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3380: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3450: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3494: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3535: Unused dummy variable KEYWORDENFORCER
+Warning: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3583: Unused dummy variable KEYWORDENFORCER
+Error: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3640: Implicit type for C_INFO_BASE_GET in ESMF_INFOGETFROMPOINTER
+Error: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3640: Implicit type for C_INFO_BASE_GET in ESMF_INFOGETFROMBASE
+Error: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3640: Implicit type for C_INFO_BASE_SYNC
+Error: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3640: Implicit type for C_INFO_COPY in ESMF_INFOCREATEFROMINFO
+Error: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3640: Implicit type for C_INFO_COPYFORATTRIBUTE
+Error: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3640: Implicit type for C_INFO_COPYFORATTRIBUTE_REFERENCE
+Error: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3640: Implicit type for C_INFO_CREATE in ESMF_INFOCREATEEMPTY
+Error: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3640: Implicit type for C_INFO_CREATE_BY_KEY in ESMF_INFOCREATEBYKEY
+Error: /project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface/ESMF_Info.F90, line 3640: Implicit type for C_INFO_CREATE_BY_PARSE in ESMF_INFOCREATEBYPARSE
+[NAG Fortran Compiler pass 1 error termination, 11 errors, 62 warnings]
+/project/esmf/himanshu/nag/esmf/build/common.mk:3873: recipe for target '/project/esmf/himanshu/nag/esmf/obj/objg/Linux.nag.64.mvapich2.default/ESMF_Info.o' failed
+gmake[9]: *** [/project/esmf/himanshu/nag/esmf/obj/objg/Linux.nag.64.mvapich2.default/ESMF_Info.o] Error 2
 gmake[9]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
 /project/esmf/himanshu/nag/esmf/build/common.mk:2171: recipe for target 'esmflib' failed
 gmake[8]: *** [esmflib] Error 2
 gmake[8]: Leaving directory '/project/esmf/himanshu/nag/esmf/mod/modg/Linux.nag.64.mvapich2.default'
 /project/esmf/himanshu/nag/esmf/build/common.mk:2167: recipe for target 'tree_lib' failed
 gmake[7]: *** [tree_lib] Error 2
-gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Util/src'
+gmake[7]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Base/interface'
 /project/esmf/himanshu/nag/esmf/build/common.mk:3816: recipe for target 'tree' failed
 gmake[6]: *** [tree] Error 1
-gmake[6]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Util'
+gmake[6]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure/Base'
 /project/esmf/himanshu/nag/esmf/build/common.mk:3816: recipe for target 'tree' failed
 gmake[5]: *** [tree] Error 1
 gmake[5]: Leaving directory '/project/esmf/himanshu/nag/esmf/src/Infrastructure'
@@ -1350,4 +1482,4 @@ gmake[1]: *** [lib] Error 2
 gmake[1]: Leaving directory '/project/esmf/himanshu/nag/esmf'
 /project/esmf/himanshu/nag/esmf/build/common.mk:2077: recipe for target 'reqfile_libesmf' failed
 gmake: *** [reqfile_libesmf] Error 2
-Wed Jan 27 10:36:10 MST 2021
+Wed Jan 27 18:38:50 MST 2021
