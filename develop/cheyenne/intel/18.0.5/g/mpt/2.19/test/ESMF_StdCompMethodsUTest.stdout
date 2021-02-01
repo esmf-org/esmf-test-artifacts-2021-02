@@ -23,26 +23,21 @@
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x281b6e0
-npets = 4, mypet=0
-  vmKeyWidth = 1
-  vmKey=0xF0000000
-  localID = 0
---- ESMCI::VMId::print() end ---
---- VMK::print() start ---
-vm located at: 0x281b780
+vm located at: 0x19a2780
 npets = 4, mypet=1
-  pth_mutex =		 0x389fae0
+  pth_mutex =		 0x2a26ae0
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
+MPI_Comm_rank in local MPI communicator: 1
+MPI_Comm_rank in MPI_COMM_WORLD: 1
   vmKeyWidth = 1
   vmKey=0xF0000000
   localID = 0
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x281b830
+vm located at: 0x19a2830
 npets = 4, mypet=2
-  pth_mutex =		 0x38a1bd0
+  pth_mutex =		 0x2a28bd0
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 2
@@ -51,10 +46,14 @@ MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
 nothreadsflag: 1
+  vmKeyWidth = 1
+  vmKey=0xF0000000
+  localID = 0
+--- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x281b8c0
+vm located at: 0x19a28c0
 npets = 4, mypet=3
-  pth_mutex =		 0x389fc20
+  pth_mutex =		 0x2a26c20
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 3
@@ -65,7 +64,10 @@ mpionly: 1
 nothreadsflag: 1
   lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
   lpid[1]=1, tid[1]=0, vas[1]=1, ncpet[1]=1, nadevs[1]=0, cid[1][0]=1
-  pth_mutex =		 0x38a1a50
+--- VMK::print() start ---
+vm located at: 0x19a26e0
+npets = 4, mypet=0
+  pth_mutex =		 0x2a28a50
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 0
@@ -81,8 +83,10 @@ nothreadsflag: 1
 ncores = 4
   cpuid[0]=0, ssiid[0]=0
   cpuid[1]=1, ssiid[1]=0
-MPI_Comm_rank in local MPI communicator: 1
-MPI_Comm_rank in MPI_COMM_WORLD: 1
+  cpuid[2]=2, ssiid[2]=0
+  cpuid[3]=3, ssiid[3]=0
+--- VMK::print() end ---
+--- ESMCI::VM::print() end ---
 MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
@@ -118,10 +122,6 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
-  cpuid[2]=2, ssiid[2]=0
-  cpuid[3]=3, ssiid[3]=0
---- VMK::print() end ---
---- ESMCI::VM::print() end ---
   PASS  Gridded Component Create() Test, ESMF_StdCompMethodsUTest.F90, line 368
   PASS  Gridded Component Create() Test, ESMF_StdCompMethodsUTest.F90, line 368
   PASS  Gridded Component Create() Test, ESMF_StdCompMethodsUTest.F90, line 368
@@ -208,15 +208,15 @@ ncores = 4
   445
   PASS  Gridded Component ReadRestart() Test - with timeout, ESMF_StdCompMethods
  UTest.F90, line 452
-  PASS  Gridded Component Destroy() Test, ESMF_StdCompMethodsUTest.F90, line 459
-  PASS  Gridded Component ReadRestart() Test - with timeout, ESMF_StdCompMethods
- UTest.F90, line 452
-  PASS  Gridded Component Destroy() Test, ESMF_StdCompMethodsUTest.F90, line 459
   PASS  Gridded Component ReadRestart() Test - with timeout, ESMF_StdCompMethods
  UTest.F90, line 452
   PASS  Gridded Component ReadRestart() Test - with timeout, ESMF_StdCompMethods
  UTest.F90, line 452
   PASS  Gridded Component Destroy() Test, ESMF_StdCompMethodsUTest.F90, line 459
+  PASS  Gridded Component Destroy() Test, ESMF_StdCompMethodsUTest.F90, line 459
+  PASS  Gridded Component Destroy() Test, ESMF_StdCompMethodsUTest.F90, line 459
+  PASS  Gridded Component ReadRestart() Test - with timeout, ESMF_StdCompMethods
+ UTest.F90, line 452
   PASS  Gridded Component Destroy() Test, ESMF_StdCompMethodsUTest.F90, line 459
   PASS  Coupler Component Create() Test, ESMF_StdCompMethodsUTest.F90, line 469
   PASS  Coupler Component Create() Test, ESMF_StdCompMethodsUTest.F90, line 469
@@ -374,8 +374,8 @@ ncores = 4
   Ending Test, file ESMF_StdCompMethodsUTest.F90, line 629
   Ending Test, file ESMF_StdCompMethodsUTest.F90, line 629
   Ending Test, file ESMF_StdCompMethodsUTest.F90, line 629
-  PET           0  Test Elapsed Time    3.10100000000000       msec.
-  PET           3  Test Elapsed Time    3.36900000000000       msec.
-  PET           2  Test Elapsed Time    3.87900000000000       msec.
-  PET           1  Test Elapsed Time    2.95600000000000       msec.
-Sun Jan 31 19:16:20 MST 2021
+  PET           2  Test Elapsed Time    3.68500000000000       msec.
+  PET           3  Test Elapsed Time    3.56200000000000       msec.
+  PET           0  Test Elapsed Time    3.61900000000000       msec.
+  PET           1  Test Elapsed Time    3.04400000000000       msec.
+Mon Feb  1 13:46:45 MST 2021
