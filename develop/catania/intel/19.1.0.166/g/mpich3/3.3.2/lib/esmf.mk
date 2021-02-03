@@ -13,7 +13,7 @@
 
 #----------------------------------------------
 ESMF_VERSION_STRING=8.1.0 beta snapshot
-ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_43-3-g4b8b9e7b91
+ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_43-11-ge4dccfab8a
 #----------------------------------------------
 
 ESMF_VERSION_MAJOR=8
@@ -33,7 +33,7 @@ ESMF_F90LINKER=/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpif90
 
 ESMF_F90COMPILEOPTS=-g -traceback -check bounds  -assume realloc_lhs -m64 -pthread -threads  -qopenmp
 ESMF_F90COMPILEPATHS=-I/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/mod/modg/Darwin.intel.64.mpich3.default -I/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/include -I/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/include -I/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/include
-ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_43-3-g4b8b9e7b91' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich3 -DESMF_DIR=/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf
+ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_43-11-ge4dccfab8a' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich3 -DESMF_DIR=/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf
 ESMF_F90COMPILEFREECPP=
 ESMF_F90COMPILEFREENOCPP=
 ESMF_F90COMPILEFIXCPP=
@@ -52,7 +52,7 @@ ESMF_CXXLINKER=/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpicxx
 
 ESMF_CXXCOMPILEOPTS=-std=c++11 -g -Wcheck  -m64 -pthread  -qopenmp
 ESMF_CXXCOMPILEPATHS= -I/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/include  -I/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/include -I/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_43-3-g4b8b9e7b91' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich3 -DESMF_DIR=/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf -D__SDIR__='' -DESMF_CXXSTD=11
+ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_43-11-ge4dccfab8a' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich3 -DESMF_DIR=/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf -D__SDIR__='' -DESMF_CXXSTD=11
 
 ESMF_CXXLINKOPTS=  -m64 -pthread  -qopenmp
 ESMF_CXXLINKPATHS=-L/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/lib/libg/Darwin.intel.64.mpich3.default -L/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/lib -L/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/lib -L/opt/intel/compilers_and_libraries_2020.0.166/mac/compiler/lib/
