@@ -19,22 +19,22 @@
  Comp Create (Fortran) finished, name = Fortran Component
  Comp Create (Fortran) finished, name = Fortran Component
  Comp Create (Fortran) finished, name = Fortran Component
- Comp Create (C) finished, name = C Component
  Comp Create (Fortran) finished, name = Fortran Component
- Comp Create (C) finished, name = C Component
  Comp Create (Fortran) finished, name = Fortran Component
- Comp Create (C) finished, name = C Component
  Comp Create (Fortran) finished, name = Fortran Component
  Comp Create (C) finished, name = C Component
  Comp Create (C) finished, name = C Component
  Comp Create (C) finished, name = C Component
+ Comp Create (C) finished, name = C Component
+ Comp Create (C) finished, name = C Component
+ Comp Create (C) finished, name = C Component
+ In mySetVMInFortran routine
  In mySetVMInFortran routine
  In mySetVMInFortran routine
  In mySetVMInFortran routine
  In mySetVMInFortran routine
  In mySetVMInFortran routine
  CompInFortran SetVM finished, rc=            0           0
- In mySetVMInFortran routine
  CompInFortran SetVM finished, rc=            0           0
  CompInFortran SetVM finished, rc=            0           0
  CompInFortran SetVM finished, rc=            0           0
@@ -52,6 +52,8 @@
  CompInFortran SetServices finished, rc=            0           0
  CompInFortran SetServices finished, rc=            0           0
  CompInFortran SetServices finished, rc=            0           0
+In mySetServicesInC()
+ Gridded Component:
 In mySetServicesInC()
  Gridded Component:
   Component name = C Component
@@ -70,8 +72,6 @@ In mySetServicesInC()
  Gridded Component:
   Component name = C Component
  CompInC SetServices finished, rc=            0           0
-In mySetServicesInC()
- Gridded Component:
   Component name = C Component
  CompInC SetServices finished, rc=            0           0
  CompInC SetServices finished, rc=            0           0
@@ -100,6 +100,7 @@ In mySetServicesInC()
  Clock created
  Clock created
  Clock created
+ In myInitInFortran routine
  In myInitInFortran routine
  Gridded Component:
   Component name = Fortran Component
@@ -115,7 +116,6 @@ In mySetServicesInC()
  In myInitInFortran routine
  Gridded Component:
   Component name = Fortran Component
- In myInitInFortran routine
  Gridded Component:
   Component name = Fortran Component
  ESMF_StatePrint: (pet 0):
@@ -139,12 +139,9 @@ In mySetServicesInC()
      reconcile needed: F
      status: Export State, object count: 0
      reconcile needed: F
+     reconcile needed: F
      status: Export State, object count: 0
      reconcile needed: F
-     reconcile needed: F
- Base name    = igrid export state
- Status: Base = Ready,  object = Ready
- Proxy        = no
  Base name    = igrid export state
  Status: Base = Ready,  object = Ready
  Proxy        = no
@@ -165,26 +162,38 @@ In mySetServicesInC()
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+ Base name    = igrid export state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
  Root Info (Attributes):
-{} ESMF_StatePrint: (pet 1):
-  State name: igrid export state
-{} ESMF_StatePrint: (pet 3):
-  State name: igrid export state
-{} ESMF_StatePrint: (pet 5):
-  State name: igrid export state
 {} ESMF_StatePrint: (pet 0):
+  State name: igrid export state
+{} ESMF_StatePrint: (pet 1):
   State name: igrid export state
 {} ESMF_StatePrint: (pet 2):
   State name: igrid export state
+{} ESMF_StatePrint: (pet 3):
+  State name: igrid export state
 {} ESMF_StatePrint: (pet 4):
+  State name: igrid export state
+{} ESMF_StatePrint: (pet 5):
   State name: igrid export state
      status: Export State, object count: 1
      reconcile needed: T
      status: Export State, object count: 1
      reconcile needed: T
+     status: Export State, object count: 1
+     reconcile needed: T
  Base name    = igrid export state
  Status: Base = Ready,  object = Ready
  Proxy        = no
+ Root Info (Attributes):
+     status: Export State, object count: 1
+     reconcile needed: T
+ Base name    = igrid export state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
      status: Export State, object count: 1
      reconcile needed: T
  Base name    = igrid export state
@@ -202,19 +211,7 @@ In mySetServicesInC()
  Proxy        = no
  Root Info (Attributes):
 {}     object: 1,name: array1
-     status: Export State, object count: 1
-     reconcile needed: T
- Base name    = igrid export state
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}     object: 1,name: array1
             type: Array
- Root Info (Attributes):
-{}     object: 1,name: array1
-            type: Array
-     status: Export State, object count: 1
-     reconcile needed: T
  Base name    = igrid export state
  Status: Base = Ready,  object = Ready
  Proxy        = no
@@ -227,48 +224,43 @@ In mySetServicesInC()
 {}     object: 1,name: array1
             type: Array
  CompInFortran Initialize returned, rc=           0           0
+{}     object: 1,name: array1
+            type: Array
+ CompInFortran Initialize returned, rc=           0           0
+{}     object: 1,name: array1
             type: Array
  CompInFortran Initialize returned, rc=           0           0
  CompInFortran Initialize returned, rc=           0           0
  CompInFortran Initialize returned, rc=           0           0
- CompInFortran Initialize returned, rc=           0           0
+In myInitInC()
+local ptr[0] = 1
+local ptr[1] = 2
+local ptr[0] = 0
+ CompInC Initialize returned, rc=           0           0
 In myInitInC()
 local ptr[0] = 1
 local ptr[1] = 2
 local ptr[0] = 0
  CompInC Initialize returned, rc=           0           0
  In myRunInFortran routine
- In Fortran Component Run, farray=    0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000     
 In myInitInC()
 local ptr[0] = 1
 local ptr[1] = 2
 local ptr[0] = 0
  CompInC Initialize returned, rc=           0           0
  In myRunInFortran routine
- In Fortran Component Run, farray=    0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000     
 In myInitInC()
 local ptr[0] = 1
 local ptr[1] = 2
 local ptr[0] = 0
  CompInC Initialize returned, rc=           0           0
  In myRunInFortran routine
- In Fortran Component Run, farray=    0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000     
 In myInitInC()
 local ptr[0] = 1
 local ptr[1] = 2
 local ptr[0] = 0
  CompInC Initialize returned, rc=           0           0
  In myRunInFortran routine
- In Fortran Component Run, farray=    0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000     
- Field Print Starts ====>
-In myInitInC()
-local ptr[0] = 1
-local ptr[1] = 2
-local ptr[0] = 0
- CompInC Initialize returned, rc=           0           0
- In myRunInFortran routine
- In Fortran Component Run, farray=    0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000     
- Field Print Starts ====>
 In myInitInC()
 local ptr[0] = 1
 local ptr[1] = 2
@@ -277,8 +269,16 @@ local ptr[0] = 0
  In myRunInFortran routine
  In Fortran Component Run, farray=    0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000     
  Field Print Starts ====>
+ In myRunInFortran routine
+ In Fortran Component Run, farray=    0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000     
+ Field Print Starts ====>
+ In Fortran Component Run, farray=    0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000     
+ Field Print Starts ====>
+ In Fortran Component Run, farray=    0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000     
+ Field Print Starts ====>
  Field base status = Ready
    Name = 'Field from C'
+ In Fortran Component Run, farray=    0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000     
  Field Print Starts ====>
  Field base status = Ready
    Name = 'Field from C'
@@ -286,6 +286,7 @@ local ptr[0] = 0
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+ In Fortran Component Run, farray=    0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        0.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000        1.0000000000000000     
  Field Print Starts ====>
  Field base status = Ready
    Name = 'Field from C'
@@ -293,40 +294,8 @@ local ptr[0] = 0
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
- Field Print Starts ====>
  Field base status = Ready
    Name = 'Field from C'
- Base name    = Field from C
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{} Field status =            4
- gridrank =            1
- Field base status = Ready
-   Name = 'Field from C'
- Base name    = Field from C
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{} Field status =            4
- gridrank =            1
- Field base status = Ready
-   Name = 'Field from C'
- Base name    = Field from C
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{} Field status =            4
- gridrank =            1
- Base name    = Field from C
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{} Field status =            4
- gridrank =            1
-{} Field status =            4
- gridrank =            1
---- ESMCI::Array::print start ---
  Base name    = Field from C
  Status: Base = Ready,  object = Ready
  Proxy        = no
@@ -338,87 +307,45 @@ local ptr[0] = 0
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+ Field base status = Ready
+   Name = 'Field from C'
+ Base name    = Field from C
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{} Field status =            4
+ gridrank =            1
 --- ESMCI::Array::print start ---
  Base name    = Field from C
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-{}Array typekind/rank: Integer*4 / 3 
-~ lower class' values ~
-DistGrid dimCount = 1
-deCount = 6
-localDeCount = 1
-~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0xe1a370:
-            rank = 3, typekind = 3, base_addr = 0xd9c040
-            dim[0] = 275  dim[1] = 2  dim[2] = 3  
-  Integer, *4, Dim 3, Data values:
-( 1, 1, 1) =  450145992
-( 2, 1, 1) =  32709
-( 3, 1, 1) =  450145992
-( 4, 1, 1) =  32709
-( 5, 1, 1) =  14270512
-( 6, 1, 1) =  0
-( 7, 1, 1) =  14270512
-( 8, 1, 1) =  0
-( 9, 1, 1) =  360
-(10, 1, 1) =  1626
-  skipping to end ...
-(266, 2, 3) =  1512
-(267, 2, 3) =  1513
-(268, 2, 3) =  1514
-(269, 2, 3) =  1515
-(270, 2, 3) =  1516
-(271, 2, 3) =  1517
-(272, 2, 3) =  1518
-(273, 2, 3) =  1519
-(274, 2, 3) =  1520
-(275, 2, 3) =  1521
-dim 1: [0]: [1 [1 [1, 275] 275] 275]
-dim 2: undistLBound[0]=1            undistUBound[0]=2
-dim 3: undistLBound[1]=1            undistUBound[1]=3
---- ESMCI::Array::print end ---
+ Field base status = Ready
+   Name = 'Field from C'
+ Base name    = Field from C
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{} Field status =            4
+ gridrank =            1
 --- ESMCI::Array::print start ---
  Base name    = Field from C
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-{}Array typekind/rank: Integer*4 / 3 
-~ lower class' values ~
-DistGrid dimCount = 1
-deCount = 6
-localDeCount = 1
-~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0xd2cc80:
-            rank = 3, typekind = 3, base_addr = 0xd392d0
-            dim[0] = 307  dim[1] = 2  dim[2] = 3  
-  Integer, *4, Dim 3, Data values:
-( 1, 1, 1) =  -1603834280
-( 2, 1, 1) =  32593
-( 3, 1, 1) =  -1603834280
-( 4, 1, 1) =  32593
-( 5, 1, 1) =  13865664
-( 6, 1, 1) =  0
-( 7, 1, 1) =  13865664
-( 8, 1, 1) =  0
-( 9, 1, 1) =  4
-(10, 1, 1) =  81
-  skipping to end ...
-(298, 2, 3) =  1482141674
-(299, 2, 3) =  1070808944
-(300, 2, 3) =  0
-(301, 2, 3) =  0
-(302, 2, 3) =  1049483849
-(303, 2, 3) =  -1076427802
-(304, 2, 3) =  1189946459
-(305, 2, 3) =  1070723871
-(306, 2, 3) =  0
-(307, 2, 3) =  0
-dim 1: [0]: [1 [1 [1, 307] 307] 307]
-dim 2: undistLBound[0]=1            undistUBound[0]=2
-dim 3: undistLBound[1]=1            undistUBound[1]=3
---- ESMCI::Array::print end ---
- arrayrank =            3
+ Base name    = Field from C
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{} Field status =            4
+ gridrank =            1
+--- ESMCI::Array::print start ---
+ Base name    = Field from C
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{} Field status =            4
+ gridrank =            1
 --- ESMCI::Array::print start ---
  Base name    = Field from C
  Status: Base = Ready,  object = Ready
@@ -430,46 +357,37 @@ DistGrid dimCount = 1
 deCount = 6
 localDeCount = 1
 ~ local data in LocalArray for DE 4 ~
-LocalArrayPrint: Array at address 0x14c3aa0:
-            rank = 3, typekind = 3, base_addr = 0x140d010
+LocalArrayPrint: Array at address 0x11e8de0:
+            rank = 3, typekind = 3, base_addr = 0x122def0
             dim[0] = 602  dim[1] = 2  dim[2] = 3  
   Integer, *4, Dim 3, Data values:
-( 1, 1, 1) =  -1662865720
-( 2, 1, 1) =  32690
-( 3, 1, 1) =  -1662865720
-( 4, 1, 1) =  32690
-( 5, 1, 1) =  21024768
+( 1, 1, 1) =  1412628168
+( 2, 1, 1) =  32563
+( 3, 1, 1) =  1412628168
+( 4, 1, 1) =  32563
+( 5, 1, 1) =  19062496
 ( 6, 1, 1) =  0
-( 7, 1, 1) =  21024768
+( 7, 1, 1) =  19062496
 ( 8, 1, 1) =  0
-( 9, 1, 1) =  0
-(10, 1, 1) =  -1075838976
+( 9, 1, 1) =  95
+(10, 1, 1) =  96
   skipping to end ...
-(593, 2, 3) =  -1219358395
-(594, 2, 3) =  -1077104717
-(595, 2, 3) =  0
-(596, 2, 3) =  0
-(597, 2, 3) =  1650916709
-(598, 2, 3) =  -1076686662
-(599, 2, 3) =  1183349389
-(600, 2, 3) =  -1077079945
-(601, 2, 3) =  0
-(602, 2, 3) =  0
+(593, 2, 3) =  0
+(594, 2, 3) =  0
+(595, 2, 3) =  -946129756
+(596, 2, 3) =  -1076350879
+(597, 2, 3) =  1809521261
+(598, 2, 3) =  -1076826303
+(599, 2, 3) =  0
+(600, 2, 3) =  0
+(601, 2, 3) =  -372184686
+(602, 2, 3) =  -1076349063
 dim 1: [0]: [1 [1 [1, 602] 602] 602]
 dim 2: undistLBound[0]=1            undistUBound[0]=2
 dim 3: undistLBound[1]=1            undistUBound[1]=3
 --- ESMCI::Array::print end ---
- arrayrank =            3
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-           1           1           2                0           0
-          -1           1           3               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
- Field Print Ends   ====>
- CompInFortran Run returned, rc=           0           0
+{} Field status =            4
+ gridrank =            1
 --- ESMCI::Array::print start ---
  Base name    = Field from C
  Status: Base = Ready,  object = Ready
@@ -481,17 +399,17 @@ DistGrid dimCount = 1
 deCount = 6
 localDeCount = 1
 ~ local data in LocalArray for DE 5 ~
-LocalArrayPrint: Array at address 0xb9c430:
-            rank = 3, typekind = 3, base_addr = 0xbe6760
+LocalArrayPrint: Array at address 0x2583ac0:
+            rank = 3, typekind = 3, base_addr = 0x251c4d0
             dim[0] = 570  dim[1] = 2  dim[2] = 3  
   Integer, *4, Dim 3, Data values:
-( 1, 1, 1) =  -1146462520
-( 2, 1, 1) =  32636
-( 3, 1, 1) =  -1146462520
-( 4, 1, 1) =  32636
-( 5, 1, 1) =  12478288
+( 1, 1, 1) =  -1066684728
+( 2, 1, 1) =  32551
+( 3, 1, 1) =  -1066684728
+( 4, 1, 1) =  32551
+( 5, 1, 1) =  38913216
 ( 6, 1, 1) =  0
-( 7, 1, 1) =  12478288
+( 7, 1, 1) =  38913216
 ( 8, 1, 1) =  0
 ( 9, 1, 1) =  122
 (10, 1, 1) =  123
@@ -514,32 +432,23 @@ dim 3: undistLBound[1]=1            undistUBound[1]=3
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
            1           1           2                0           0
           -1           1           3               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
- Field Print Ends   ====>
- CompInFortran Run returned, rc=           0           0
-In myRunInC()
- CompInC Run returned, rc=           0           0
 {}Array typekind/rank: Integer*4 / 3 
 ~ lower class' values ~
 DistGrid dimCount = 1
 deCount = 6
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x817cb0:
-            rank = 3, typekind = 3, base_addr = 0x803ef0
+LocalArrayPrint: Array at address 0x1388cb0:
+            rank = 3, typekind = 3, base_addr = 0x1374ef0
             dim[0] = 372  dim[1] = 2  dim[2] = 3  
   Integer, *4, Dim 3, Data values:
-( 1, 1, 1) =  1637580472
-( 2, 1, 1) =  32679
-( 3, 1, 1) =  1637580472
-( 4, 1, 1) =  32679
-( 5, 1, 1) =  8404704
+( 1, 1, 1) =  1858731704
+( 2, 1, 1) =  32584
+( 3, 1, 1) =  1858731704
+( 4, 1, 1) =  32584
+( 5, 1, 1) =  20401888
 ( 6, 1, 1) =  0
-( 7, 1, 1) =  8404704
+( 7, 1, 1) =  20401888
 ( 8, 1, 1) =  0
 ( 9, 1, 1) =  1514302389
 (10, 1, 1) =  -1077030813
@@ -571,24 +480,23 @@ dim 3: undistLBound[1]=1            undistUBound[1]=3
  CompInFortran Run returned, rc=           0           0
 In myRunInC()
  CompInC Run returned, rc=           0           0
- In myFinalInFortran routine
 {}Array typekind/rank: Integer*4 / 3 
 ~ lower class' values ~
 DistGrid dimCount = 1
 deCount = 6
 localDeCount = 1
 ~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0x1def670:
-            rank = 3, typekind = 3, base_addr = 0x1dfcaf0
+LocalArrayPrint: Array at address 0x12de700:
+            rank = 3, typekind = 3, base_addr = 0x12eab80
             dim[0] = 349  dim[1] = 2  dim[2] = 3  
   Integer, *4, Dim 3, Data values:
-( 1, 1, 1) =  -289673640
-( 2, 1, 1) =  32544
-( 3, 1, 1) =  -289673640
-( 4, 1, 1) =  32544
-( 5, 1, 1) =  31443680
+( 1, 1, 1) =  1049144920
+( 2, 1, 1) =  32556
+( 3, 1, 1) =  1049144920
+( 4, 1, 1) =  32556
+( 5, 1, 1) =  19835760
 ( 6, 1, 1) =  0
-( 7, 1, 1) =  31443680
+( 7, 1, 1) =  19835760
 ( 8, 1, 1) =  0
 ( 9, 1, 1) =  4
 (10, 1, 1) =  5
@@ -621,8 +529,41 @@ dim 3: undistLBound[1]=1            undistUBound[1]=3
 In myRunInC()
  CompInC Run returned, rc=           0           0
  In myFinalInFortran routine
- CompInFortran Finalize returned, rc=           0           0
-In myFinalInC()
+{}Array typekind/rank: Integer*4 / 3 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 6
+localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0x1d9f2b0:
+            rank = 3, typekind = 3, base_addr = 0x1d8c820
+            dim[0] = 275  dim[1] = 2  dim[2] = 3  
+  Integer, *4, Dim 3, Data values:
+( 1, 1, 1) =  1925824200
+( 2, 1, 1) =  32631
+( 3, 1, 1) =  1925824200
+( 4, 1, 1) =  32631
+( 5, 1, 1) =  30984208
+( 6, 1, 1) =  0
+( 7, 1, 1) =  30984208
+( 8, 1, 1) =  0
+( 9, 1, 1) =  354
+(10, 1, 1) =  1620
+  skipping to end ...
+(266, 2, 3) =  1500
+(267, 2, 3) =  1501
+(268, 2, 3) =  1502
+(269, 2, 3) =  1503
+(270, 2, 3) =  1504
+(271, 2, 3) =  1505
+(272, 2, 3) =  1506
+(273, 2, 3) =  1507
+(274, 2, 3) =  1508
+(275, 2, 3) =  1509
+dim 1: [0]: [1 [1 [1, 275] 275] 275]
+dim 2: undistLBound[0]=1            undistUBound[0]=2
+dim 3: undistLBound[1]=1            undistUBound[1]=3
+--- ESMCI::Array::print end ---
  arrayrank =            3
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
            1           1           2                0           0
@@ -637,18 +578,42 @@ In myFinalInC()
 In myRunInC()
  CompInC Run returned, rc=           0           0
  In myFinalInFortran routine
- CompInFortran Finalize returned, rc=           0           0
-In myFinalInC()
- ESMF_StatePrint: (pet 2):
-  State name: igrid export state
-     status: Export State, object count: 1
-     reconcile needed: T
- Base name    = igrid export state
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}     object: 1,name: array1
-            type: Array
+{}Array typekind/rank: Integer*4 / 3 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 6
+localDeCount = 1
+~ local data in LocalArray for DE 3 ~
+LocalArrayPrint: Array at address 0xe63350:
+            rank = 3, typekind = 3, base_addr = 0xe65660
+            dim[0] = 307  dim[1] = 2  dim[2] = 3  
+  Integer, *4, Dim 3, Data values:
+( 1, 1, 1) =  -1414312264
+( 2, 1, 1) =  32526
+( 3, 1, 1) =  -1414312264
+( 4, 1, 1) =  32526
+( 5, 1, 1) =  15095376
+( 6, 1, 1) =  0
+( 7, 1, 1) =  15095376
+( 8, 1, 1) =  0
+( 9, 1, 1) =  0
+(10, 1, 1) =  0
+  skipping to end ...
+(298, 2, 3) =  3
+(299, 2, 3) =  3
+(300, 2, 3) =  3
+(301, 2, 3) =  3
+(302, 2, 3) =  3
+(303, 2, 3) =  3
+(304, 2, 3) =  3
+(305, 2, 3) =  3
+(306, 2, 3) =  3
+(307, 2, 3) =  3
+dim 1: [0]: [1 [1 [1, 307] 307] 307]
+dim 2: undistLBound[0]=1            undistUBound[0]=2
+dim 3: undistLBound[1]=1            undistUBound[1]=3
+--- ESMCI::Array::print end ---
+ arrayrank =            3
  gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
            1           1           2                0           0
           -1           1           3               -1          -1
@@ -670,10 +635,17 @@ In myFinalInC()
      reconcile needed: T
  Base name    = igrid export state
  Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}     object: 1,name: array1
-            type: Array
+ arrayrank =            3
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+           1           1           2                0           0
+          -1           1           3               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
+ CompInFortran Run returned, rc=           0           0
 In myRunInC()
  CompInC Run returned, rc=           0           0
  In myFinalInFortran routine
@@ -689,6 +661,15 @@ In myFinalInC()
  Root Info (Attributes):
 {}     object: 1,name: array1
             type: Array
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
+ CompInFortran Run returned, rc=           0           0
+In myRunInC()
+ CompInC Run returned, rc=           0           0
  In myFinalInFortran routine
  CompInFortran Finalize returned, rc=           0           0
 In myFinalInC()
@@ -702,6 +683,7 @@ In myFinalInC()
  Root Info (Attributes):
 {}     object: 1,name: array1
             type: Array
+ In myFinalInFortran routine
  CompInFortran Finalize returned, rc=           0           0
 In myFinalInC()
  ESMF_StatePrint: (pet 0):
@@ -761,8 +743,68 @@ end Clock ------------------------------
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-{} Field status =            4
+ CompInFortran Finalize returned, rc=           0           0
+In myFinalInC()
  ESMF_StatePrint: (pet 1):
+  State name: igrid export state
+     status: Export State, object count: 1
+     reconcile needed: T
+ Base name    = igrid export state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}     object: 1,name: array1
+            type: Array
+Clock ----------------------------------
+name = Application Clock
+timeStep = 
+TimeInterval ---------------------------
+P0Y0M0DT0H0M2S
+end TimeInterval -----------------------
+
+startTime = 
+Time -----------------------------------
+2004-09-25T00:00:00
+end Time -------------------------------
+
+stopTime = 
+Time -----------------------------------
+2004-09-26T00:00:00
+end Time -------------------------------
+
+stopTimeEnabled = true
+refTime = 
+Time -----------------------------------
+2004-09-25T00:00:00
+end Time -------------------------------
+
+currTime = 
+Time -----------------------------------
+2004-09-25T00:00:00
+end Time -------------------------------
+
+prevTime = 
+Time -----------------------------------
+2004-09-25T00:00:00
+end Time -------------------------------
+
+advanceCount = 0
+direction = 1
+userChangedDirection = false
+alarmCount = 0
+alarmList = 
+end Clock ------------------------------
+
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'Field from C'
+ Base name    = Field from C
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+ CompInFortran Finalize returned, rc=           0           0
+In myFinalInC()
+ ESMF_StatePrint: (pet 2):
   State name: igrid export state
      status: Export State, object count: 1
      reconcile needed: T
@@ -826,95 +868,45 @@ end Clock ------------------------------
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-Clock ----------------------------------
-name = Application Clock
-timeStep = 
-TimeInterval ---------------------------
-P0Y0M0DT0H0M2S
-end TimeInterval -----------------------
-
-startTime = 
-Time -----------------------------------
-2004-09-25T00:00:00
-end Time -------------------------------
-
-stopTime = 
-Time -----------------------------------
-2004-09-26T00:00:00
-end Time -------------------------------
-
-stopTimeEnabled = true
-refTime = 
-Time -----------------------------------
-2004-09-25T00:00:00
-end Time -------------------------------
-
-currTime = 
-Time -----------------------------------
-2004-09-25T00:00:00
-end Time -------------------------------
-
-prevTime = 
-Time -----------------------------------
-2004-09-25T00:00:00
-end Time -------------------------------
-
-advanceCount = 0
-direction = 1
-userChangedDirection = false
-alarmCount = 0
-alarmList = 
-end Clock ------------------------------
-
- Field Print Starts ====>
- Field base status = Ready
-   Name = 'Field from C'
- Base name    = Field from C
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{} Field status =            4
- gridrank =            1
---- ESMCI::Array::print start ---
- Base name    = Field from C
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
 {}Array typekind/rank: Integer*4 / 3 
 ~ lower class' values ~
 DistGrid dimCount = 1
 deCount = 6
 localDeCount = 1
 ~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0xe1a370:
-            rank = 3, typekind = 3, base_addr = 0xd9c040
+LocalArrayPrint: Array at address 0x1d9f2b0:
+            rank = 3, typekind = 3, base_addr = 0x1d8c820
             dim[0] = 275  dim[1] = 2  dim[2] = 3  
   Integer, *4, Dim 3, Data values:
-( 1, 1, 1) =  450145992
-( 2, 1, 1) =  32709
-( 3, 1, 1) =  450145992
-( 4, 1, 1) =  32709
-( 5, 1, 1) =  14270512
+( 1, 1, 1) =  1925824200
+( 2, 1, 1) =  32631
+( 3, 1, 1) =  1925824200
+( 4, 1, 1) =  32631
+( 5, 1, 1) =  30984208
 ( 6, 1, 1) =  0
-( 7, 1, 1) =  14270512
+( 7, 1, 1) =  30984208
 ( 8, 1, 1) =  0
-( 9, 1, 1) =  360
-(10, 1, 1) =  1626
+( 9, 1, 1) =  354
+(10, 1, 1) =  1620
   skipping to end ...
-(266, 2, 3) =  1512
-(267, 2, 3) =  1513
-(268, 2, 3) =  1514
-(269, 2, 3) =  1515
-(270, 2, 3) =  1516
-(271, 2, 3) =  1517
-(272, 2, 3) =  1518
-(273, 2, 3) =  1519
-(274, 2, 3) =  1520
-(275, 2, 3) =  1521
+(266, 2, 3) =  1500
+(267, 2, 3) =  1501
+(268, 2, 3) =  1502
+(269, 2, 3) =  1503
+(270, 2, 3) =  1504
+(271, 2, 3) =  1505
+(272, 2, 3) =  1506
+(273, 2, 3) =  1507
+(274, 2, 3) =  1508
+(275, 2, 3) =  1509
 dim 1: [0]: [1 [1 [1, 275] 275] 275]
 dim 2: undistLBound[0]=1            undistUBound[0]=2
 dim 3: undistLBound[1]=1            undistUBound[1]=3
 --- ESMCI::Array::print end ---
+ Proxy        = no
+ Root Info (Attributes):
+{}     object: 1,name: array1
+            type: Array
 Clock ----------------------------------
 name = Application Clock
 timeStep = 
@@ -975,31 +967,31 @@ DistGrid dimCount = 1
 deCount = 6
 localDeCount = 1
 ~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0xd2cc80:
-            rank = 3, typekind = 3, base_addr = 0xd392d0
+LocalArrayPrint: Array at address 0xe63350:
+            rank = 3, typekind = 3, base_addr = 0xe65660
             dim[0] = 307  dim[1] = 2  dim[2] = 3  
   Integer, *4, Dim 3, Data values:
-( 1, 1, 1) =  -1603834280
-( 2, 1, 1) =  32593
-( 3, 1, 1) =  -1603834280
-( 4, 1, 1) =  32593
-( 5, 1, 1) =  13865664
+( 1, 1, 1) =  -1414312264
+( 2, 1, 1) =  32526
+( 3, 1, 1) =  -1414312264
+( 4, 1, 1) =  32526
+( 5, 1, 1) =  15095376
 ( 6, 1, 1) =  0
-( 7, 1, 1) =  13865664
+( 7, 1, 1) =  15095376
 ( 8, 1, 1) =  0
-( 9, 1, 1) =  4
-(10, 1, 1) =  81
+( 9, 1, 1) =  0
+(10, 1, 1) =  0
   skipping to end ...
-(298, 2, 3) =  1482141674
-(299, 2, 3) =  1070808944
-(300, 2, 3) =  0
-(301, 2, 3) =  0
-(302, 2, 3) =  1049483849
-(303, 2, 3) =  -1076427802
-(304, 2, 3) =  1189946459
-(305, 2, 3) =  1070723871
-(306, 2, 3) =  0
-(307, 2, 3) =  0
+(298, 2, 3) =  3
+(299, 2, 3) =  3
+(300, 2, 3) =  3
+(301, 2, 3) =  3
+(302, 2, 3) =  3
+(303, 2, 3) =  3
+(304, 2, 3) =  3
+(305, 2, 3) =  3
+(306, 2, 3) =  3
+(307, 2, 3) =  3
 dim 1: [0]: [1 [1 [1, 307] 307] 307]
 dim 2: undistLBound[0]=1            undistUBound[0]=2
 dim 3: undistLBound[1]=1            undistUBound[1]=3
@@ -1074,31 +1066,31 @@ DistGrid dimCount = 1
 deCount = 6
 localDeCount = 1
 ~ local data in LocalArray for DE 4 ~
-LocalArrayPrint: Array at address 0x14c3aa0:
-            rank = 3, typekind = 3, base_addr = 0x140d010
+LocalArrayPrint: Array at address 0x11e8de0:
+            rank = 3, typekind = 3, base_addr = 0x122def0
             dim[0] = 602  dim[1] = 2  dim[2] = 3  
   Integer, *4, Dim 3, Data values:
-( 1, 1, 1) =  -1662865720
-( 2, 1, 1) =  32690
-( 3, 1, 1) =  -1662865720
-( 4, 1, 1) =  32690
-( 5, 1, 1) =  21024768
+( 1, 1, 1) =  1412628168
+( 2, 1, 1) =  32563
+( 3, 1, 1) =  1412628168
+( 4, 1, 1) =  32563
+( 5, 1, 1) =  19062496
 ( 6, 1, 1) =  0
-( 7, 1, 1) =  21024768
+( 7, 1, 1) =  19062496
 ( 8, 1, 1) =  0
-( 9, 1, 1) =  0
-(10, 1, 1) =  -1075838976
+( 9, 1, 1) =  95
+(10, 1, 1) =  96
   skipping to end ...
-(593, 2, 3) =  -1219358395
-(594, 2, 3) =  -1077104717
-(595, 2, 3) =  0
-(596, 2, 3) =  0
-(597, 2, 3) =  1650916709
-(598, 2, 3) =  -1076686662
-(599, 2, 3) =  1183349389
-(600, 2, 3) =  -1077079945
-(601, 2, 3) =  0
-(602, 2, 3) =  0
+(593, 2, 3) =  0
+(594, 2, 3) =  0
+(595, 2, 3) =  -946129756
+(596, 2, 3) =  -1076350879
+(597, 2, 3) =  1809521261
+(598, 2, 3) =  -1076826303
+(599, 2, 3) =  0
+(600, 2, 3) =  0
+(601, 2, 3) =  -372184686
+(602, 2, 3) =  -1076349063
 dim 1: [0]: [1 [1 [1, 602] 602] 602]
 dim 2: undistLBound[0]=1            undistUBound[0]=2
 dim 3: undistLBound[1]=1            undistUBound[1]=3
@@ -1173,17 +1165,17 @@ DistGrid dimCount = 1
 deCount = 6
 localDeCount = 1
 ~ local data in LocalArray for DE 5 ~
-LocalArrayPrint: Array at address 0xb9c430:
-            rank = 3, typekind = 3, base_addr = 0xbe6760
+LocalArrayPrint: Array at address 0x2583ac0:
+            rank = 3, typekind = 3, base_addr = 0x251c4d0
             dim[0] = 570  dim[1] = 2  dim[2] = 3  
   Integer, *4, Dim 3, Data values:
-( 1, 1, 1) =  -1146462520
-( 2, 1, 1) =  32636
-( 3, 1, 1) =  -1146462520
-( 4, 1, 1) =  32636
-( 5, 1, 1) =  12478288
+( 1, 1, 1) =  -1066684728
+( 2, 1, 1) =  32551
+( 3, 1, 1) =  -1066684728
+( 4, 1, 1) =  32551
+( 5, 1, 1) =  38913216
 ( 6, 1, 1) =  0
-( 7, 1, 1) =  12478288
+( 7, 1, 1) =  38913216
 ( 8, 1, 1) =  0
 ( 9, 1, 1) =  122
 (10, 1, 1) =  123
@@ -1212,6 +1204,7 @@ dim 3: undistLBound[1]=1            undistUBound[1]=3
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
  Field Print Ends   ====>
+{} Field status =            4
  gridrank =            1
 --- ESMCI::Array::print start ---
  Base name    = Field from C
@@ -1224,17 +1217,17 @@ DistGrid dimCount = 1
 deCount = 6
 localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x817cb0:
-            rank = 3, typekind = 3, base_addr = 0x803ef0
+LocalArrayPrint: Array at address 0x1388cb0:
+            rank = 3, typekind = 3, base_addr = 0x1374ef0
             dim[0] = 372  dim[1] = 2  dim[2] = 3  
   Integer, *4, Dim 3, Data values:
-( 1, 1, 1) =  1637580472
-( 2, 1, 1) =  32679
-( 3, 1, 1) =  1637580472
-( 4, 1, 1) =  32679
-( 5, 1, 1) =  8404704
+( 1, 1, 1) =  1858731704
+( 2, 1, 1) =  32584
+( 3, 1, 1) =  1858731704
+( 4, 1, 1) =  32584
+( 5, 1, 1) =  20401888
 ( 6, 1, 1) =  0
-( 7, 1, 1) =  8404704
+( 7, 1, 1) =  20401888
 ( 8, 1, 1) =  0
 ( 9, 1, 1) =  1514302389
 (10, 1, 1) =  -1077030813
@@ -1263,23 +1256,30 @@ dim 3: undistLBound[1]=1            undistUBound[1]=3
           -1          -1          -1               -1          -1
           -1          -1          -1               -1          -1
  Field Print Ends   ====>
+{} Field status =            4
+ gridrank =            1
+--- ESMCI::Array::print start ---
+ Base name    = Field from C
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
 {}Array typekind/rank: Integer*4 / 3 
 ~ lower class' values ~
 DistGrid dimCount = 1
 deCount = 6
 localDeCount = 1
 ~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0x1def670:
-            rank = 3, typekind = 3, base_addr = 0x1dfcaf0
+LocalArrayPrint: Array at address 0x12de700:
+            rank = 3, typekind = 3, base_addr = 0x12eab80
             dim[0] = 349  dim[1] = 2  dim[2] = 3  
   Integer, *4, Dim 3, Data values:
-( 1, 1, 1) =  -289673640
-( 2, 1, 1) =  32544
-( 3, 1, 1) =  -289673640
-( 4, 1, 1) =  32544
-( 5, 1, 1) =  31443680
+( 1, 1, 1) =  1049144920
+( 2, 1, 1) =  32556
+( 3, 1, 1) =  1049144920
+( 4, 1, 1) =  32556
+( 5, 1, 1) =  19835760
 ( 6, 1, 1) =  0
-( 7, 1, 1) =  31443680
+( 7, 1, 1) =  19835760
 ( 8, 1, 1) =  0
 ( 9, 1, 1) =  4
 (10, 1, 1) =  5
@@ -1324,6 +1324,16 @@ dim 3: undistLBound[1]=1            undistUBound[1]=3
  CompInC Finalize returned, rc=           0           0
  CompInC Finalize returned, rc=           0           0
  CompInC Finalize returned, rc=           0           0
+ All Destroy routines done
+  System Test ESMF_CompFortranAndC                                                                                                                                                                                                                                complete.
+ All Destroy routines done
+  System Test ESMF_CompFortranAndC                                                                                                                                                                                                                                complete.
+ All Destroy routines done
+  System Test ESMF_CompFortranAndC                                                                                                                                                                                                                                complete.
+ ------------------------------------------------------------
+ ------------------------------------------------------------
+ Test finished, localPet =            4
+ ------------------------------------------------------------
  All Destroy routines done
   System Test ESMF_CompFortranAndC                                                                                                                                                                                                                                complete.
  ------------------------------------------------------------
@@ -1331,13 +1341,10 @@ dim 3: undistLBound[1]=1            undistUBound[1]=3
  Test finished, localPet =            0
  ------------------------------------------------------------
  ------------------------------------------------------------
-  PASS  System Test ESMF_CompFortranAndC, ESMF_CompFortranAndCSTest.F90, line 359
  
   System Test ESMF_CompFortranAndC
   SUCCESS:  System Test ESMF_CompFortranAndC finished correctly.
  
- All Destroy routines done
-  System Test ESMF_CompFortranAndC                                                                                                                                                                                                                                complete.
  ------------------------------------------------------------
  ------------------------------------------------------------
  Test finished, localPet =            1
@@ -1348,8 +1355,6 @@ dim 3: undistLBound[1]=1            undistUBound[1]=3
   System Test ESMF_CompFortranAndC
   SUCCESS:  System Test ESMF_CompFortranAndC finished correctly.
  
- All Destroy routines done
-  System Test ESMF_CompFortranAndC                                                                                                                                                                                                                                complete.
  ------------------------------------------------------------
  ------------------------------------------------------------
  Test finished, localPet =            2
@@ -1372,12 +1377,6 @@ dim 3: undistLBound[1]=1            undistUBound[1]=3
   System Test ESMF_CompFortranAndC
   SUCCESS:  System Test ESMF_CompFortranAndC finished correctly.
  
- All Destroy routines done
-  System Test ESMF_CompFortranAndC                                                                                                                                                                                                                                complete.
- ------------------------------------------------------------
- ------------------------------------------------------------
- Test finished, localPet =            4
- ------------------------------------------------------------
  ------------------------------------------------------------
   PASS  System Test ESMF_CompFortranAndC, ESMF_CompFortranAndCSTest.F90, line 359
  
@@ -1396,4 +1395,5 @@ dim 3: undistLBound[1]=1            undistUBound[1]=3
   System Test ESMF_CompFortranAndC
   SUCCESS:  System Test ESMF_CompFortranAndC finished correctly.
  
-Tue Feb  2 23:11:37 CST 2021
+  PASS  System Test ESMF_CompFortranAndC, ESMF_CompFortranAndCSTest.F90, line 359
+Wed Feb  3 16:16:40 CST 2021
