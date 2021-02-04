@@ -1,154 +1,452 @@
-TACC:  Starting up job 7229661 
+TACC:  Starting up job 7234833 
 TACC:  Starting parallel tasks... 
-[mpiexec@c475-052.stampede2.tacc.utexas.edu] set_default_values (../../ui/mpich/utils.c:4669): no executable provided
-[mpiexec@c475-052.stampede2.tacc.utexas.edu] HYD_uii_mpx_get_parameters (../../ui/mpich/utils.c:5172): setting default values failed
-
-Usage: ./mpiexec [global opts] [exec1 local opts] : [exec2 local opts] : ...
-
-Global options (passed to all executables):
-
-  Global environment options:
-    -genv {name} {value}             environment variable name and value
-    -genvlist {env1,env2,...}        environment variable list to pass
-    -genvnone                        do not pass any environment variables
-    -genvall                         pass all environment variables not managed
-                                          by the launcher (default)
-
-  Other global options:
-    -f {name} | -hostfile {name}     file containing the host names
-    -hosts {host list}               comma separated host list
-    -configfile {name}               config file containing MPMD launch options
-    -machine {name} | -machinefile {name}
-                                     file mapping procs to machines
-    -pmi-connect {nocache|lazy-cache|cache}
-                                     set the PMI connections mode to use
-    -pmi-aggregate                   aggregate PMI messages
-    -pmi-noaggregate                 do not  aggregate PMI messages
-    -trace {<libraryname>}           trace the application using <libraryname>
-                                     profiling library; default is libVT.so
-    -trace-imbalance {<libraryname>} trace the application using <libraryname>
-                                     imbalance profiling library; default is libVTim.so
-    -check-mpi {<libraryname>}       check the application using <libraryname>
-                                     checking library; default is libVTmc.so
-    -ilp64                           Preload ilp64 wrapper library for support default size of
-                                     integer 8 bytes
-    -mps                             start statistics gathering for MPI Performance Snapshot (MPS)
-    -aps                             start statistics gathering for Application Performance Snapshot (APS)
-    -trace-pt2pt                     collect information about
-                                     Point to Point operations
-    -trace-collectives               collect information about
-                                     Collective operations
-    -tune [<confname>]               apply the tuned data produced by
-                                     the MPI Tuner utility
-    -use-app-topology <statfile>     perform optimized rank placement based statistics
-                                     and cluster topology
-    -noconf                          do not use any mpiexec's configuration files
-    -branch-count {leaves_num}       set the number of children in tree
-    -gwdir {dirname}                 working directory to use
-    -gpath {dirname}                 path to executable to use
-    -gumask {umask}                  mask to perform umask
-    -tmpdir {tmpdir}                 temporary directory for cleanup input file
-    -cleanup                         create input file for clean up
-    -gtool {options}                 apply a tool over the mpi application
-    -gtoolfile {file}                apply a tool over the mpi application. Parameters specified in the file
-
-
-Local options (passed to individual executables):
-
-  Local environment options:
-    -env {name} {value}              environment variable name and value
-    -envlist {env1,env2,...}         environment variable list to pass
-    -envnone                         do not pass any environment variables
-    -envall                          pass all environment variables (default)
-
-  Other local options:
-    -host {hostname}                 host on which processes are to be run
-    -hostos {OS name}                operating system on particular host
-    -wdir {dirname}                  working directory to use
-    -path {dirname}                  path to executable to use
-    -umask {umask}                   mask to perform umask
-    -n/-np {value}                   number of processes
-    {exec_name} {args}               executable name and arguments
-
-
-Hydra specific options (treated as global):
-
-  Bootstrap options:
-    -bootstrap                       bootstrap server to use
-     (ssh rsh pdsh fork slurm srun ll llspawn.stdio lsf blaunch sge qrsh persist service pbsdsh)
-    -bootstrap-exec                  executable to use to bootstrap processes
-    -bootstrap-exec-args             additional options to pass to bootstrap server
-    -prefork                         use pre-fork processes startup method
-    -enable-x/-disable-x             enable or disable X forwarding
-
-  Resource management kernel options:
-    -rmk                             resource management kernel to use (user slurm srun ll llspawn.stdio lsf blaunch sge qrsh pbs cobalt)
-
-  Processor topology options:
-    -binding                         process-to-core binding mode
-  Extended fabric control options:
-    -rdma                            select RDMA-capable network fabric (dapl). Fallback list is ofa,tcp,tmi,ofi
-    -RDMA                            select RDMA-capable network fabric (dapl). Fallback is ofa
-    -dapl                            select DAPL-capable network fabric. Fallback list is tcp,tmi,ofa,ofi
-    -DAPL                            select DAPL-capable network fabric. No fallback fabric is used
-    -ib                              select OFA-capable network fabric. Fallback list is dapl,tcp,tmi,ofi
-    -IB                              select OFA-capable network fabric. No fallback fabric is used
-    -tmi                             select TMI-capable network fabric. Fallback list is dapl,tcp,ofa,ofi
-    -TMI                             select TMI-capable network fabric. No fallback fabric is used
-    -mx                              select Myrinet MX* network fabric. Fallback list is dapl,tcp,ofa,ofi
-    -MX                              select Myrinet MX* network fabric. No fallback fabric is used
-    -psm                             select PSM-capable network fabric. Fallback list is dapl,tcp,ofa,ofi
-    -PSM                             select PSM-capable network fabric. No fallback fabric is used
-    -psm2                            select Intel* Omni-Path Fabric. Fallback list is dapl,tcp,ofa,ofi
-    -PSM2                            select Intel* Omni-Path Fabric. No fallback fabric is used
-    -ofi                             select OFI-capable network fabric. Fallback list is tmi,dapl,tcp,ofa
-    -OFI                             select OFI-capable network fabric. No fallback fabric is used
-
-  Checkpoint/Restart options:
-    -ckpoint {on|off}                enable/disable checkpoints for this run
-    -ckpoint-interval                checkpoint interval
-    -ckpoint-prefix                  destination for checkpoint files (stable storage, typically a cluster-wide file system)
-    -ckpoint-tmp-prefix              temporary/fast/local storage to speed up checkpoints
-    -ckpoint-preserve                number of checkpoints to keep (default: 1, i.e. keep only last checkpoint)
-    -ckpointlib                      checkpointing library (blcr)
-    -ckpoint-logfile                 checkpoint activity/status log file (appended)
-    -restart                         restart previously checkpointed application
-    -ckpoint-num                     checkpoint number to restart
-
-  Demux engine options:
-    -demux                           demux engine (poll select)
-
-  Debugger support options:
-    -tv                              run processes under TotalView
-    -tva {pid}                       attach existing mpiexec process to TotalView
-    -gdb                             run processes under GDB
-    -gdba {pid}                      attach existing mpiexec process to GDB
-    -gdb-ia                          run processes under Intel IA specific GDB
-
-  Other Hydra options:
-    -v | -verbose                    verbose mode
-    -V | -version                    show the version
-    -info                            build information
-    -print-rank-map                  print rank mapping
-    -print-all-exitcodes             print exit codes of all processes
-    -iface                           network interface to use
-    -help                            show this message
-    -perhost <n>                     place consecutive <n> processes on each host
-    -ppn <n>                         stand for "process per node"; an alias to -perhost <n>
-    -grr <n>                         stand for "group round robin"; an alias to -perhost <n>
-    -rr                              involve "round robin" startup scheme
-    -s <spec>                        redirect stdin to all or 1,2 or 2-4,6 MPI processes (0 by default)
-    -ordered-output                  avoid data output intermingling
-    -profile                         turn on internal profiling
-    -l | -prepend-rank               prepend rank to output
-    -prepend-pattern                 prepend pattern to output
-    -outfile-pattern                 direct stdout to file
-    -errfile-pattern                 direct stderr to file
-    -localhost                       local hostname for the launching node
-    -nolocal                         avoid running the application processes on the node where mpiexec.hydra started
-
-Intel(R) MPI Library for Linux* OS, Version 2018 Update 2 Build 20180125 (id: 18157)
-Copyright 2003-2018 Intel Corporation.
-TACC:  MPI job exited with code: 255 
+  Beginning Test, file ESMF_TimeUTest.F90, line 96
+  Beginning Test, file ESMF_TimeUTest.F90, line 96
+  Beginning Test, file ESMF_TimeUTest.F90, line 96
+  Beginning Test, file ESMF_TimeUTest.F90, line 96
+  NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
+  PASS  Set Time Initialization Test, ESMF_TimeUTest.F90, line 126
+  PASS  Set Time Initialization Test, ESMF_TimeUTest.F90, line 126
+  PASS  Set Time Initialization Test, ESMF_TimeUTest.F90, line 126
+  PASS  Set Time Initialization Test, ESMF_TimeUTest.F90, line 126
+  PASS  Get Time Test 1, ESMF_TimeUTest.F90, line 138
+  PASS  Get Time Test 1, ESMF_TimeUTest.F90, line 138
+  PASS  Get Time Test 1, ESMF_TimeUTest.F90, line 138
+  PASS  Get Time Test 1, ESMF_TimeUTest.F90, line 138
+  PASS  Compare initialized and uninitialized Times Test 1, ESMF_TimeUTest.F90, 
+ line 169
+  PASS  Compare initialized and uninitialized Times Test 1, ESMF_TimeUTest.F90, 
+ line 169
+  PASS  Compare initialized and uninitialized Times Test 1, ESMF_TimeUTest.F90, 
+ line 169
+  PASS  Compare initialized and uninitialized Times Test 1, ESMF_TimeUTest.F90, 
+ line 169
+  PASS  Compare initialized and uninitialized Times Test 2, ESMF_TimeUTest.F90, 
+ line 179
+  PASS  Compare initialized and uninitialized Times Test 2, ESMF_TimeUTest.F90, 
+ line 179
+  PASS  Compare initialized and uninitialized Times Test 2, ESMF_TimeUTest.F90, 
+ line 179
+  PASS  Compare initialized and uninitialized Times Test 2, ESMF_TimeUTest.F90, 
+ line 179
+  PASS  Compare initialized and uninitialized Times Test 3, ESMF_TimeUTest.F90, 
+ line 189
+  PASS  Compare initialized and uninitialized Times Test 3, ESMF_TimeUTest.F90, 
+ line 189
+  PASS  Compare initialized and uninitialized Times Test 3, ESMF_TimeUTest.F90, 
+ line 189
+  PASS  Compare initialized and uninitialized Times Test 3, ESMF_TimeUTest.F90, 
+ line 189
+  PASS  Compare initialized and uninitialized Times Test 4, ESMF_TimeUTest.F90, 
+ line 199
+  PASS  Compare initialized and uninitialized Times Test 4, ESMF_TimeUTest.F90, 
+ line 199
+  PASS  Compare initialized and uninitialized Times Test 4, ESMF_TimeUTest.F90, 
+ line 199
+  PASS  Compare initialized and uninitialized Times Test 4, ESMF_TimeUTest.F90, 
+ line 199
+  PASS  Compare initialized and uninitialized Times Test 5, ESMF_TimeUTest.F90, 
+ line 209
+  PASS  Compare initialized and uninitialized Times Test 5, ESMF_TimeUTest.F90, 
+ line 209
+  PASS  Compare initialized and uninitialized Times Test 5, ESMF_TimeUTest.F90, 
+ line 209
+  PASS  Compare initialized and uninitialized Times Test 5, ESMF_TimeUTest.F90, 
+ line 209
+  PASS  Compare initialized and uninitialized Times Test 6, ESMF_TimeUTest.F90, 
+ line 219
+  PASS  Compare initialized and uninitialized Times Test 6, ESMF_TimeUTest.F90, 
+ line 219
+  PASS  Get String Time Test 2, ESMF_TimeUTest.F90, line 233
+  PASS  Get String Time Test 2, ESMF_TimeUTest.F90, line 233
+  PASS  Compare initialized and uninitialized Times Test 6, ESMF_TimeUTest.F90, 
+ line 219
+  PASS  Compare initialized and uninitialized Times Test 6, ESMF_TimeUTest.F90, 
+ line 219
+  PASS  Get String Time Test 3, ESMF_TimeUTest.F90, line 249
+  PASS  Get String Time Test 3, ESMF_TimeUTest.F90, line 249
+  PASS  Get String Time Test 2, ESMF_TimeUTest.F90, line 233
+  PASS  Get String Time Test 2, ESMF_TimeUTest.F90, line 233
+  PASS  Set End Time Initialization Test, ESMF_TimeUTest.F90, line 261
+  PASS  Set End Time Initialization Test, ESMF_TimeUTest.F90, line 261
+  PASS  Get String Time Test 3, ESMF_TimeUTest.F90, line 249
+  PASS  Get String Time Test 3, ESMF_TimeUTest.F90, line 249
+  PASS  Time Is Same CalendarTest, ESMF_TimeUTest.F90, line 271
+  PASS  Time Is Same CalendarTest, ESMF_TimeUTest.F90, line 271
+  PASS  Set End Time Initialization Test, ESMF_TimeUTest.F90, line 261
+  PASS  Set End Time Initialization Test, ESMF_TimeUTest.F90, line 261
+  PASS  Time Is Same CalendarTest, ESMF_TimeUTest.F90, line 271
+  PASS  Time Is Same CalendarTest, ESMF_TimeUTest.F90, line 271
+  PASS  Time Get day of the year test, ESMF_TimeUTest.F90, line 281
+  PASS  Time Get day of the year test, ESMF_TimeUTest.F90, line 281
+  PASS  Time Get floating point day of the year test, ESMF_TimeUTest.F90, line 2
+ 91
+  PASS  Time Get floating point day of the year test, ESMF_TimeUTest.F90, line 2
+ 91
+  PASS  Time Get day of the year test, ESMF_TimeUTest.F90, line 281
+  PASS  Time Get day of the year test, ESMF_TimeUTest.F90, line 281
+  PASS  Time Get day of the week test, ESMF_TimeUTest.F90, line 302
+  PASS  Time Get day of the week test, ESMF_TimeUTest.F90, line 302
+  PASS  Time Get floating point day of the year test, ESMF_TimeUTest.F90, line 2
+ 91
+  PASS  Time Get floating point day of the year test, ESMF_TimeUTest.F90, line 2
+ 91
+  PASS  Time Get middle of the month test, ESMF_TimeUTest.F90, line 314
+  PASS  Time Get middle of the month test, ESMF_TimeUTest.F90, line 314
+  PASS  Time Get day of the week test, ESMF_TimeUTest.F90, line 302
+  PASS  Time Get day of the week test, ESMF_TimeUTest.F90, line 302
+  PASS  Set Julian Time Initialization Test, ESMF_TimeUTest.F90, line 325
+  PASS  Set Julian Time Initialization Test, ESMF_TimeUTest.F90, line 325
+  PASS  Time Is Same Julian CalendarTest, ESMF_TimeUTest.F90, line 335
+  PASS  Time Is Same Julian CalendarTest, ESMF_TimeUTest.F90, line 335
+  PASS  Time Get middle of the month test, ESMF_TimeUTest.F90, line 314
+  PASS  Time Get middle of the month test, ESMF_TimeUTest.F90, line 314
+  PASS  Julian Time Get day of the year test, ESMF_TimeUTest.F90, line 345
+  PASS  Julian Time Get day of the year test, ESMF_TimeUTest.F90, line 345
+  PASS  Set Julian Time Initialization Test, ESMF_TimeUTest.F90, line 325
+  PASS  Set Julian Time Initialization Test, ESMF_TimeUTest.F90, line 325
+  PASS  Time Get day of the week test, ESMF_TimeUTest.F90, line 355
+  PASS  Time Get day of the week test, ESMF_TimeUTest.F90, line 355
+  PASS  Time Is Same Julian CalendarTest, ESMF_TimeUTest.F90, line 335
+  PASS  Time Is Same Julian CalendarTest, ESMF_TimeUTest.F90, line 335
+  PASS  Julian Time Get middle of the month test, ESMF_TimeUTest.F90, line 367
+  PASS  Julian Time Get middle of the month test, ESMF_TimeUTest.F90, line 367
+  PASS  Set Time Initialization Test, ESMF_TimeUTest.F90, line 378
+  PASS  Set Time Initialization Test, ESMF_TimeUTest.F90, line 378
+  PASS  Julian Time Get day of the year test, ESMF_TimeUTest.F90, line 345
+  PASS  Julian Time Get day of the year test, ESMF_TimeUTest.F90, line 345
+  PASS  Assign one time to another test, ESMF_TimeUTest.F90, line 391
+  PASS  Assign one time to another test, ESMF_TimeUTest.F90, line 391
+  PASS  Time Get day of the week test, ESMF_TimeUTest.F90, line 355
+  PASS  Time Get day of the week test, ESMF_TimeUTest.F90, line 355
+  PASS  Time == operator Test, ESMF_TimeUTest.F90, line 402
+  PASS  Time == operator Test, ESMF_TimeUTest.F90, line 402
+  PASS  Julian Time Get middle of the month test, ESMF_TimeUTest.F90, line 367
+  PASS  Julian Time Get middle of the month test, ESMF_TimeUTest.F90, line 367
+  PASS  Time == operator Test, ESMF_TimeUTest.F90, line 412
+  PASS  Time == operator Test, ESMF_TimeUTest.F90, line 412
+  PASS  Time /= operator Test, ESMF_TimeUTest.F90, line 422
+  PASS  Time /= operator Test, ESMF_TimeUTest.F90, line 422
+  PASS  Set Time Initialization Test, ESMF_TimeUTest.F90, line 378
+  PASS  Set Time Initialization Test, ESMF_TimeUTest.F90, line 378
+  PASS  Time /= operator Test, ESMF_TimeUTest.F90, line 432
+  PASS  Time /= operator Test, ESMF_TimeUTest.F90, line 432
+  PASS  Assign one time to another test, ESMF_TimeUTest.F90, line 391
+  PASS  Assign one time to another test, ESMF_TimeUTest.F90, line 391
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 442
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 442
+  PASS  Time == operator Test, ESMF_TimeUTest.F90, line 402
+  PASS  Time == operator Test, ESMF_TimeUTest.F90, line 402
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 452
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 452
+  PASS  Time == operator Test, ESMF_TimeUTest.F90, line 412
+  PASS  Time == operator Test, ESMF_TimeUTest.F90, line 412
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 462
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 462
+  PASS  Time /= operator Test, ESMF_TimeUTest.F90, line 422
+  PASS  Time /= operator Test, ESMF_TimeUTest.F90, line 422
+  PASS  Time <= operator Test, ESMF_TimeUTest.F90, line 472
+  PASS  Time <= operator Test, ESMF_TimeUTest.F90, line 472
+  PASS  Time /= operator Test, ESMF_TimeUTest.F90, line 432
+  PASS  Time /= operator Test, ESMF_TimeUTest.F90, line 432
+  PASS  Time <= operator Test, ESMF_TimeUTest.F90, line 482
+  PASS  Time <= operator Test, ESMF_TimeUTest.F90, line 482
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 442
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 442
+  PASS  Time <= operator Test, ESMF_TimeUTest.F90, line 492
+  PASS  Time <= operator Test, ESMF_TimeUTest.F90, line 492
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 452
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 452
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 502
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 502
+  PASS  Time < operator Test, ESMF_TimeUTest.F90, line 512
+  PASS  Time < operator Test, ESMF_TimeUTest.F90, line 512
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 462
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 462
+  PASS  Time < operator Test, ESMF_TimeUTest.F90, line 522
+  PASS  Time < operator Test, ESMF_TimeUTest.F90, line 522
+  PASS  Time <= operator Test, ESMF_TimeUTest.F90, line 472
+  PASS  Time <= operator Test, ESMF_TimeUTest.F90, line 472
+  PASS  Time >= operator Test, ESMF_TimeUTest.F90, line 532
+  PASS  Time >= operator Test, ESMF_TimeUTest.F90, line 532
+  PASS  Time <= operator Test, ESMF_TimeUTest.F90, line 482
+  PASS  Time <= operator Test, ESMF_TimeUTest.F90, line 482
+  PASS  Time <= operator Test, ESMF_TimeUTest.F90, line 492
+  PASS  Time <= operator Test, ESMF_TimeUTest.F90, line 492
+  PASS  Time >= operator Test, ESMF_TimeUTest.F90, line 542
+  PASS  Time >= operator Test, ESMF_TimeUTest.F90, line 542
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 502
+  PASS  Time > operator Test, ESMF_TimeUTest.F90, line 502
+  PASS  Time >= operator Test, ESMF_TimeUTest.F90, line 552
+  PASS  Time >= operator Test, ESMF_TimeUTest.F90, line 552
+  PASS  Time < operator Test, ESMF_TimeUTest.F90, line 512
+  PASS  Time < operator Test, ESMF_TimeUTest.F90, line 512
+  PASS  Set End Time Initialization Test, ESMF_TimeUTest.F90, line 563
+  PASS  Set End Time Initialization Test, ESMF_TimeUTest.F90, line 563
+  PASS  Time < operator Test, ESMF_TimeUTest.F90, line 522
+  PASS  Time < operator Test, ESMF_TimeUTest.F90, line 522
+  PASS  Set Time Initialization Test w/Defaults 1, ESMF_TimeUTest.F90, line 578
+  PASS  Set Time Initialization Test w/Defaults 1, ESMF_TimeUTest.F90, line 578
+  PASS  Time >= operator Test, ESMF_TimeUTest.F90, line 532
+  PASS  Time >= operator Test, ESMF_TimeUTest.F90, line 532
+  PASS  Time >= operator Test, ESMF_TimeUTest.F90, line 542
+  PASS  Time >= operator Test, ESMF_TimeUTest.F90, line 542
+  PASS  Set Time Initialization Test w/Defaults 2, ESMF_TimeUTest.F90, line 591
+  PASS  Set Time Initialization Test w/Defaults 2, ESMF_TimeUTest.F90, line 591
+  PASS  Time >= operator Test, ESMF_TimeUTest.F90, line 552
+  PASS  Time >= operator Test, ESMF_TimeUTest.F90, line 552
+  PASS  Set Time Initialization Test w/Defaults 3, ESMF_TimeUTest.F90, line 604
+  PASS  Set Time Initialization Test w/Defaults 3, ESMF_TimeUTest.F90, line 604
+  PASS  Set End Time Initialization Test, ESMF_TimeUTest.F90, line 563
+  PASS  Set End Time Initialization Test, ESMF_TimeUTest.F90, line 563
+  PASS  Set Time Initialization Test w/Defaults 4, ESMF_TimeUTest.F90, line 617
+  PASS  Set Time Initialization Test w/Defaults 4, ESMF_TimeUTest.F90, line 617
+  PASS  Set Time Initialization Test w/Defaults 1, ESMF_TimeUTest.F90, line 578
+  PASS  Set Time Initialization Test w/Defaults 1, ESMF_TimeUTest.F90, line 578
+  PASS  Set Time Initialization Test w/Defaults 5, ESMF_TimeUTest.F90, line 630
+  PASS  Set Time Initialization Test w/Defaults 5, ESMF_TimeUTest.F90, line 630
+  PASS  Set Time Initialization Test w/Defaults 2, ESMF_TimeUTest.F90, line 591
+  PASS  Set Time Initialization Test w/Defaults 2, ESMF_TimeUTest.F90, line 591
+  PASS  Set Time Initialization Test w/Defaults 6, ESMF_TimeUTest.F90, line 646
+  PASS  Set Time Initialization Test w/Defaults 6, ESMF_TimeUTest.F90, line 646
+  PASS  Set Time Initialization Test w/Defaults 3, ESMF_TimeUTest.F90, line 604
+  PASS  Set Time Initialization Test w/Defaults 3, ESMF_TimeUTest.F90, line 604
+  PASS  Set Time Initialization Test w/ESMF_CALKIND_NOCALENDAR, ESMF_TimeUTest.F
+ 90, line 661
+  PASS  Set Time Initialization Test w/ESMF_CALKIND_NOCALENDAR, ESMF_TimeUTest.F
+ 90, line 661
+  PASS  Set Time Initialization Test w/Defaults 4, ESMF_TimeUTest.F90, line 617
+  PASS  Set Time Initialization Test w/Defaults 4, ESMF_TimeUTest.F90, line 617
+  PASS  Time Is Same CalendarTest, ESMF_TimeUTest.F90, line 670
+  PASS  Time Is Same CalendarTest, ESMF_TimeUTest.F90, line 670
+  PASS  Set Time Initialization Test w/Defaults 5, ESMF_TimeUTest.F90, line 630
+  PASS  Set Time Initialization Test w/Defaults 5, ESMF_TimeUTest.F90, line 630
+  PASS  Set Time Initialization Test w/Defaults 6, ESMF_TimeUTest.F90, line 646
+  PASS  Set Time Initialization Test w/Defaults 6, ESMF_TimeUTest.F90, line 646
+  PASS  Set Time Initialization Test w/ESMF_CALKIND_NOCALENDAR, ESMF_TimeUTest.F
+ 90, line 661
+  PASS  Set Time Initialization Test w/ESMF_CALKIND_NOCALENDAR, ESMF_TimeUTest.F
+ 90, line 661
+  PASS  Set End Time with mm=0 Initialization Test, ESMF_TimeUTest.F90, line 680
+  PASS  Set End Time with mm=0 Initialization Test, ESMF_TimeUTest.F90, line 680
+  PASS  Time Is Same CalendarTest, ESMF_TimeUTest.F90, line 670
+  PASS  Time Is Same CalendarTest, ESMF_TimeUTest.F90, line 670
+  PASS  Set End Time with dd=0 Initialization Test, ESMF_TimeUTest.F90, line 690
+  PASS  Set End Time with dd=0 Initialization Test, ESMF_TimeUTest.F90, line 690
+  PASS  Test driving No-Leap calendar with seconds only, ESMF_TimeUTest.F90, lin
+ e 702
+  PASS  Test driving No-Leap calendar with seconds only, ESMF_TimeUTest.F90, lin
+ e 702
+  PASS  Set End Time with mm=0 Initialization Test, ESMF_TimeUTest.F90, line 680
+  PASS  Set End Time with mm=0 Initialization Test, ESMF_TimeUTest.F90, line 680
+  PASS  Test driving 360-Day calendar with seconds only, ESMF_TimeUTest.F90, lin
+ e 714
+  PASS  Test driving 360-Day calendar with seconds only, ESMF_TimeUTest.F90, lin
+ e 714
+  PASS  Set Millisecond Time Initialization Test, ESMF_TimeUTest.F90, line 727
+  PASS  Set Millisecond Time Initialization Test, ESMF_TimeUTest.F90, line 727
+  PASS  Set Microsecond Time Initialization Test, ESMF_TimeUTest.F90, line 738
+  PASS  Set Microsecond Time Initialization Test, ESMF_TimeUTest.F90, line 738
+  PASS  Set End Time with dd=0 Initialization Test, ESMF_TimeUTest.F90, line 690
+  PASS  Set End Time with dd=0 Initialization Test, ESMF_TimeUTest.F90, line 690
+  PASS  Set Rational Fraction Time Initialization Test 1, ESMF_TimeUTest.F90, li
+ ne 749
+  PASS  Set Rational Fraction Time Initialization Test 1, ESMF_TimeUTest.F90, li
+ ne 749
+  PASS  Test driving No-Leap calendar with seconds only, ESMF_TimeUTest.F90, lin
+ e 702
+  PASS  Test driving No-Leap calendar with seconds only, ESMF_TimeUTest.F90, lin
+ e 702
+  PASS  Set Rational Fraction Time Initialization Test 2, ESMF_TimeUTest.F90, li
+ ne 760
+  PASS  Set Rational Fraction Time Initialization Test 2, ESMF_TimeUTest.F90, li
+ ne 760
+  PASS  Test driving 360-Day calendar with seconds only, ESMF_TimeUTest.F90, lin
+ e 714
+  PASS  Test driving 360-Day calendar with seconds only, ESMF_TimeUTest.F90, lin
+ e 714
+  PASS  Set Millisecond Time Initialization Test, ESMF_TimeUTest.F90, line 727
+  PASS  Set Millisecond Time Initialization Test, ESMF_TimeUTest.F90, line 727
+  PASS  Set Millisecond Time Interval Initialization Test, ESMF_TimeUTest.F90, l
+ ine 770
+  PASS  Set Millisecond Time Interval Initialization Test, ESMF_TimeUTest.F90, l
+ ine 770
+  PASS  Set Microsecond Time Initialization Test, ESMF_TimeUTest.F90, line 738
+  PASS  Set Microsecond Time Initialization Test, ESMF_TimeUTest.F90, line 738
+  PASS  Set Rational Fraction Time Interval Initialization Test, ESMF_TimeUTest.
+ F90, line 780
+  PASS  Set Rational Fraction Time Interval Initialization Test, ESMF_TimeUTest.
+ F90, line 780
+  PASS  Set Rational Fraction Time Initialization Test 1, ESMF_TimeUTest.F90, li
+ ne 749
+  PASS  Set Rational Fraction Time Initialization Test 1, ESMF_TimeUTest.F90, li
+ ne 749
+  PASS  Difference between two fractional Times Test 2, ESMF_TimeUTest.F90, line
+  793
+  PASS  Difference between two fractional Times Test 2, ESMF_TimeUTest.F90, line
+  793
+  PASS  Set Rational Fraction Time Initialization Test 2, ESMF_TimeUTest.F90, li
+ ne 760
+  PASS  Set Rational Fraction Time Initialization Test 2, ESMF_TimeUTest.F90, li
+ ne 760
+  PASS  Difference between two fractional Times Test 2, ESMF_TimeUTest.F90, line
+  808
+  PASS  Difference between two fractional Times Test 2, ESMF_TimeUTest.F90, line
+  808
+  PASS  Set Millisecond Time Interval Initialization Test, ESMF_TimeUTest.F90, l
+ ine 770
+  PASS  Set Millisecond Time Interval Initialization Test, ESMF_TimeUTest.F90, l
+ ine 770
+  PASS  Adding fractional Time and Timeinterval Test, ESMF_TimeUTest.F90, line 8
+ 23
+  PASS  Adding fractional Time and Timeinterval Test, ESMF_TimeUTest.F90, line 8
+ 23
+  PASS  Set Rational Fraction Time Interval Initialization Test, ESMF_TimeUTest.
+ F90, line 780
+  PASS  Set Rational Fraction Time Interval Initialization Test, ESMF_TimeUTest.
+ F90, line 780
+  PASS  Subtracting fractional Time and Timeinterval Test, ESMF_TimeUTest.F90, l
+ ine 839
+  PASS  Subtracting fractional Time and Timeinterval Test, ESMF_TimeUTest.F90, l
+ ine 839
+  PASS  Difference between two fractional Times Test 2, ESMF_TimeUTest.F90, line
+  793
+  PASS  Difference between two fractional Times Test 2, ESMF_TimeUTest.F90, line
+  793
+  PASS  Fractional time1 > time2 Test, ESMF_TimeUTest.F90, line 849
+  PASS  Fractional time1 > time2 Test, ESMF_TimeUTest.F90, line 849
+  PASS  Difference between two fractional Times Test 2, ESMF_TimeUTest.F90, line
+  808
+  PASS  Difference between two fractional Times Test 2, ESMF_TimeUTest.F90, line
+  808
+  PASS  Fractional time4 > time5 Test, ESMF_TimeUTest.F90, line 859
+  PASS  Fractional time4 > time5 Test, ESMF_TimeUTest.F90, line 859
+  PASS  Fractional time2 < time3 Test, ESMF_TimeUTest.F90, line 869
+  PASS  Fractional time2 < time3 Test, ESMF_TimeUTest.F90, line 869
+  PASS  Adding fractional Time and Timeinterval Test, ESMF_TimeUTest.F90, line 8
+ 23
+  PASS  Adding fractional Time and Timeinterval Test, ESMF_TimeUTest.F90, line 8
+ 23
+  PASS  Fractional time2 < time5 Test, ESMF_TimeUTest.F90, line 879
+  PASS  Fractional time2 < time5 Test, ESMF_TimeUTest.F90, line 879
+  PASS  Subtracting fractional Time and Timeinterval Test, ESMF_TimeUTest.F90, l
+ ine 839
+  PASS  Subtracting fractional Time and Timeinterval Test, ESMF_TimeUTest.F90, l
+ ine 839
+  PASS  Fractional time3 == time3 Test, ESMF_TimeUTest.F90, line 889
+  PASS  Fractional time3 == time3 Test, ESMF_TimeUTest.F90, line 889
+  PASS  Fractional time1 > time2 Test, ESMF_TimeUTest.F90, line 849
+  PASS  Fractional time1 > time2 Test, ESMF_TimeUTest.F90, line 849
+  PASS  Fractional time1 /= time2 Test, ESMF_TimeUTest.F90, line 899
+  PASS  Fractional time1 /= time2 Test, ESMF_TimeUTest.F90, line 899
+  PASS  Fractional time4 > time5 Test, ESMF_TimeUTest.F90, line 859
+  PASS  Fractional time4 > time5 Test, ESMF_TimeUTest.F90, line 859
+  PASS  Fractional time1 >= time2 Test, ESMF_TimeUTest.F90, line 909
+  PASS  Fractional time1 >= time2 Test, ESMF_TimeUTest.F90, line 909
+  PASS  Fractional time2 < time3 Test, ESMF_TimeUTest.F90, line 869
+  PASS  Fractional time2 < time3 Test, ESMF_TimeUTest.F90, line 869
+  PASS  Fractional time1 <= time3 Test, ESMF_TimeUTest.F90, line 919
+  PASS  Fractional time1 <= time3 Test, ESMF_TimeUTest.F90, line 919
+  PASS  Fractional time2 < time5 Test, ESMF_TimeUTest.F90, line 879
+  PASS  Fractional time2 < time5 Test, ESMF_TimeUTest.F90, line 879
+  PASS  Fractional time3 == time3 Test, ESMF_TimeUTest.F90, line 889
+  PASS  Fractional time3 == time3 Test, ESMF_TimeUTest.F90, line 889
+  PASS  Set/Get Real (s_r8) Time on Julian Day calendar Test, ESMF_TimeUTest.F90
+ , line 938
+  PASS  Set/Get Real (s_r8) Time on Julian Day calendar Test, ESMF_TimeUTest.F90
+ , line 938
+  PASS  Fractional time1 /= time2 Test, ESMF_TimeUTest.F90, line 899
+  PASS  Fractional time1 /= time2 Test, ESMF_TimeUTest.F90, line 899
+  PASS  Fractional time1 >= time2 Test, ESMF_TimeUTest.F90, line 909
+  PASS  Fractional time1 >= time2 Test, ESMF_TimeUTest.F90, line 909
+  PASS  Set/Get Real (m_r8) Time on Julian Day calendar Test, ESMF_TimeUTest.F90
+ , line 956
+  PASS  Set/Get Real (m_r8) Time on Julian Day calendar Test, ESMF_TimeUTest.F90
+ , line 956
+  PASS  Fractional time1 <= time3 Test, ESMF_TimeUTest.F90, line 919
+  PASS  Fractional time1 <= time3 Test, ESMF_TimeUTest.F90, line 919
+  PASS  Set/Get Real (R8) Time on Julian Day calendar Test, ESMF_TimeUTest.F90, 
+ line 985
+  PASS  Set/Get Real (R8) Time on Julian Day calendar Test, ESMF_TimeUTest.F90, 
+ line 985
+  PASS  Set/Get Real (s_r8) Time on Julian Day calendar Test, ESMF_TimeUTest.F90
+ , line 938
+  PASS  Set/Get Real (s_r8) Time on Julian Day calendar Test, ESMF_TimeUTest.F90
+ , line 938
+  PASS  Set/Get Real (R8) Time on Modified Julian Day calendar Test, ESMF_TimeUT
+ est.F90, line 1016
+  PASS  Set/Get Real (R8) Time on Modified Julian Day calendar Test, ESMF_TimeUT
+ est.F90, line 1016
+  PASS  Set/Get Real (m_r8) Time on Julian Day calendar Test, ESMF_TimeUTest.F90
+ , line 956
+  PASS  Set/Get Real (m_r8) Time on Julian Day calendar Test, ESMF_TimeUTest.F90
+ , line 956
+  PASS  Adding Time and real fractional days Timeinterval Test, ESMF_TimeUTest.F
+ 90, line 1035
+  PASS  Adding Time and real fractional days Timeinterval Test, ESMF_TimeUTest.F
+ 90, line 1035
+  PASS  Set/Get Real (R8) Time on Julian Day calendar Test, ESMF_TimeUTest.F90, 
+ line 985
+  PASS  Set/Get Real (R8) Time on Julian Day calendar Test, ESMF_TimeUTest.F90, 
+ line 985
+  PASS  Test subtracting two times, resulting in a real fractional days Timeinte
+ rval, ESMF_TimeUTest.F90, line 1049
+  PASS  Test subtracting two times, resulting in a real fractional days Timeinte
+ rval, ESMF_TimeUTest.F90, line 1049
+  PASS  Set/Get Real (R8) Time on Modified Julian Day calendar Test, ESMF_TimeUT
+ est.F90, line 1016
+  PASS  Set/Get Real (R8) Time on Modified Julian Day calendar Test, ESMF_TimeUT
+ est.F90, line 1016
+  PASS  Subtracting real fractional Time and real fractional days Timeinterval T
+  PASS  Subtracting real fractional Time and real fractional days Timeinterval T
+ est, ESMF_TimeUTest.F90, line 1070
+ est, ESMF_TimeUTest.F90, line 1070
+  PASS  Adding Time and real fractional days Timeinterval Test, ESMF_TimeUTest.F
+ 90, line 1035
+  PASS  Adding Time and real fractional days Timeinterval Test, ESMF_TimeUTest.F
+ 90, line 1035
+  PASS  Test subtracting two times, producing equal Timeinterval used in previou
+ s test, ESMF_TimeUTest.F90, line 1087
+  PASS  Test subtracting two times, producing equal Timeinterval used in previou
+ s test, ESMF_TimeUTest.F90, line 1087
+  PASS  Test subtracting two times, resulting in a real fractional days Timeinte
+ rval, ESMF_TimeUTest.F90, line 1049
+  PASS  Test subtracting two times, resulting in a real fractional days Timeinte
+ rval, ESMF_TimeUTest.F90, line 1049
+  PASS  Time Is Leap Year Test 1, ESMF_TimeUTest.F90, line 1100
+  PASS  Time Is Leap Year Test 1, ESMF_TimeUTest.F90, line 1100
+  PASS  Subtracting real fractional Time and real fractional days Timeinterval T
+ est, ESMF_TimeUTest.F90, line 1070
+  PASS  Subtracting real fractional Time and real fractional days Timeinterval T
+ est, ESMF_TimeUTest.F90, line 1070
+  PASS  Time Is Leap Year Test 2, ESMF_TimeUTest.F90, line 1112
+  PASS  Time Is Leap Year Test 2, ESMF_TimeUTest.F90, line 1112
+  PASS  Test subtracting two times, producing equal Timeinterval used in previou
+ s test, ESMF_TimeUTest.F90, line 1087
+  PASS  Test subtracting two times, producing equal Timeinterval used in previou
+ s test, ESMF_TimeUTest.F90, line 1087
+  PASS  Time Is Leap Year Test 3, ESMF_TimeUTest.F90, line 1123
+  PASS  Time Is Leap Year Test 3, ESMF_TimeUTest.F90, line 1123
+  PASS  Time Is Leap Year Test 4, ESMF_TimeUTest.F90, line 1135
+  PASS  Time Is Leap Year Test 4, ESMF_TimeUTest.F90, line 1135
+  PASS  Time Is Leap Year Test 1, ESMF_TimeUTest.F90, line 1100
+  PASS  Time Is Leap Year Test 1, ESMF_TimeUTest.F90, line 1100
+  Ending Test, file ESMF_TimeUTest.F90, line 1154
+  Ending Test, file ESMF_TimeUTest.F90, line 1154
+  PASS  Time Is Leap Year Test 2, ESMF_TimeUTest.F90, line 1112
+  PASS  Time Is Leap Year Test 2, ESMF_TimeUTest.F90, line 1112
+  PASS  Time Is Leap Year Test 3, ESMF_TimeUTest.F90, line 1123
+  PASS  Time Is Leap Year Test 3, ESMF_TimeUTest.F90, line 1123
+  PASS  Time Is Leap Year Test 4, ESMF_TimeUTest.F90, line 1135
+  PASS  Time Is Leap Year Test 4, ESMF_TimeUTest.F90, line 1135
+  Ending Test, file ESMF_TimeUTest.F90, line 1154
+  Ending Test, file ESMF_TimeUTest.F90, line 1154
+  PET           2  Test Elapsed Time    36.4270000000000       msec.
+  PET           0  Test Elapsed Time    37.5430000000000       msec.
+  PET           1  Test Elapsed Time    38.1530000000000       msec.
+  PET           3  Test Elapsed Time    38.9480000000000       msec.
 TACC:  Shutdown complete. Exiting. 
-Wed Feb  3 11:07:18 CST 2021
+Thu Feb  4 08:18:54 CST 2021

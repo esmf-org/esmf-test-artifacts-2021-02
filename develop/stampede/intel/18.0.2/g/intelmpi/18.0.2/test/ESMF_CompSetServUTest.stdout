@@ -1,154 +1,292 @@
-TACC:  Starting up job 7229661 
+TACC:  Starting up job 7234833 
 TACC:  Starting parallel tasks... 
-[mpiexec@c475-052.stampede2.tacc.utexas.edu] set_default_values (../../ui/mpich/utils.c:4669): no executable provided
-[mpiexec@c475-052.stampede2.tacc.utexas.edu] HYD_uii_mpx_get_parameters (../../ui/mpich/utils.c:5172): setting default values failed
-
-Usage: ./mpiexec [global opts] [exec1 local opts] : [exec2 local opts] : ...
-
-Global options (passed to all executables):
-
-  Global environment options:
-    -genv {name} {value}             environment variable name and value
-    -genvlist {env1,env2,...}        environment variable list to pass
-    -genvnone                        do not pass any environment variables
-    -genvall                         pass all environment variables not managed
-                                          by the launcher (default)
-
-  Other global options:
-    -f {name} | -hostfile {name}     file containing the host names
-    -hosts {host list}               comma separated host list
-    -configfile {name}               config file containing MPMD launch options
-    -machine {name} | -machinefile {name}
-                                     file mapping procs to machines
-    -pmi-connect {nocache|lazy-cache|cache}
-                                     set the PMI connections mode to use
-    -pmi-aggregate                   aggregate PMI messages
-    -pmi-noaggregate                 do not  aggregate PMI messages
-    -trace {<libraryname>}           trace the application using <libraryname>
-                                     profiling library; default is libVT.so
-    -trace-imbalance {<libraryname>} trace the application using <libraryname>
-                                     imbalance profiling library; default is libVTim.so
-    -check-mpi {<libraryname>}       check the application using <libraryname>
-                                     checking library; default is libVTmc.so
-    -ilp64                           Preload ilp64 wrapper library for support default size of
-                                     integer 8 bytes
-    -mps                             start statistics gathering for MPI Performance Snapshot (MPS)
-    -aps                             start statistics gathering for Application Performance Snapshot (APS)
-    -trace-pt2pt                     collect information about
-                                     Point to Point operations
-    -trace-collectives               collect information about
-                                     Collective operations
-    -tune [<confname>]               apply the tuned data produced by
-                                     the MPI Tuner utility
-    -use-app-topology <statfile>     perform optimized rank placement based statistics
-                                     and cluster topology
-    -noconf                          do not use any mpiexec's configuration files
-    -branch-count {leaves_num}       set the number of children in tree
-    -gwdir {dirname}                 working directory to use
-    -gpath {dirname}                 path to executable to use
-    -gumask {umask}                  mask to perform umask
-    -tmpdir {tmpdir}                 temporary directory for cleanup input file
-    -cleanup                         create input file for clean up
-    -gtool {options}                 apply a tool over the mpi application
-    -gtoolfile {file}                apply a tool over the mpi application. Parameters specified in the file
-
-
-Local options (passed to individual executables):
-
-  Local environment options:
-    -env {name} {value}              environment variable name and value
-    -envlist {env1,env2,...}         environment variable list to pass
-    -envnone                         do not pass any environment variables
-    -envall                          pass all environment variables (default)
-
-  Other local options:
-    -host {hostname}                 host on which processes are to be run
-    -hostos {OS name}                operating system on particular host
-    -wdir {dirname}                  working directory to use
-    -path {dirname}                  path to executable to use
-    -umask {umask}                   mask to perform umask
-    -n/-np {value}                   number of processes
-    {exec_name} {args}               executable name and arguments
-
-
-Hydra specific options (treated as global):
-
-  Bootstrap options:
-    -bootstrap                       bootstrap server to use
-     (ssh rsh pdsh fork slurm srun ll llspawn.stdio lsf blaunch sge qrsh persist service pbsdsh)
-    -bootstrap-exec                  executable to use to bootstrap processes
-    -bootstrap-exec-args             additional options to pass to bootstrap server
-    -prefork                         use pre-fork processes startup method
-    -enable-x/-disable-x             enable or disable X forwarding
-
-  Resource management kernel options:
-    -rmk                             resource management kernel to use (user slurm srun ll llspawn.stdio lsf blaunch sge qrsh pbs cobalt)
-
-  Processor topology options:
-    -binding                         process-to-core binding mode
-  Extended fabric control options:
-    -rdma                            select RDMA-capable network fabric (dapl). Fallback list is ofa,tcp,tmi,ofi
-    -RDMA                            select RDMA-capable network fabric (dapl). Fallback is ofa
-    -dapl                            select DAPL-capable network fabric. Fallback list is tcp,tmi,ofa,ofi
-    -DAPL                            select DAPL-capable network fabric. No fallback fabric is used
-    -ib                              select OFA-capable network fabric. Fallback list is dapl,tcp,tmi,ofi
-    -IB                              select OFA-capable network fabric. No fallback fabric is used
-    -tmi                             select TMI-capable network fabric. Fallback list is dapl,tcp,ofa,ofi
-    -TMI                             select TMI-capable network fabric. No fallback fabric is used
-    -mx                              select Myrinet MX* network fabric. Fallback list is dapl,tcp,ofa,ofi
-    -MX                              select Myrinet MX* network fabric. No fallback fabric is used
-    -psm                             select PSM-capable network fabric. Fallback list is dapl,tcp,ofa,ofi
-    -PSM                             select PSM-capable network fabric. No fallback fabric is used
-    -psm2                            select Intel* Omni-Path Fabric. Fallback list is dapl,tcp,ofa,ofi
-    -PSM2                            select Intel* Omni-Path Fabric. No fallback fabric is used
-    -ofi                             select OFI-capable network fabric. Fallback list is tmi,dapl,tcp,ofa
-    -OFI                             select OFI-capable network fabric. No fallback fabric is used
-
-  Checkpoint/Restart options:
-    -ckpoint {on|off}                enable/disable checkpoints for this run
-    -ckpoint-interval                checkpoint interval
-    -ckpoint-prefix                  destination for checkpoint files (stable storage, typically a cluster-wide file system)
-    -ckpoint-tmp-prefix              temporary/fast/local storage to speed up checkpoints
-    -ckpoint-preserve                number of checkpoints to keep (default: 1, i.e. keep only last checkpoint)
-    -ckpointlib                      checkpointing library (blcr)
-    -ckpoint-logfile                 checkpoint activity/status log file (appended)
-    -restart                         restart previously checkpointed application
-    -ckpoint-num                     checkpoint number to restart
-
-  Demux engine options:
-    -demux                           demux engine (poll select)
-
-  Debugger support options:
-    -tv                              run processes under TotalView
-    -tva {pid}                       attach existing mpiexec process to TotalView
-    -gdb                             run processes under GDB
-    -gdba {pid}                      attach existing mpiexec process to GDB
-    -gdb-ia                          run processes under Intel IA specific GDB
-
-  Other Hydra options:
-    -v | -verbose                    verbose mode
-    -V | -version                    show the version
-    -info                            build information
-    -print-rank-map                  print rank mapping
-    -print-all-exitcodes             print exit codes of all processes
-    -iface                           network interface to use
-    -help                            show this message
-    -perhost <n>                     place consecutive <n> processes on each host
-    -ppn <n>                         stand for "process per node"; an alias to -perhost <n>
-    -grr <n>                         stand for "group round robin"; an alias to -perhost <n>
-    -rr                              involve "round robin" startup scheme
-    -s <spec>                        redirect stdin to all or 1,2 or 2-4,6 MPI processes (0 by default)
-    -ordered-output                  avoid data output intermingling
-    -profile                         turn on internal profiling
-    -l | -prepend-rank               prepend rank to output
-    -prepend-pattern                 prepend pattern to output
-    -outfile-pattern                 direct stdout to file
-    -errfile-pattern                 direct stderr to file
-    -localhost                       local hostname for the launching node
-    -nolocal                         avoid running the application processes on the node where mpiexec.hydra started
-
-Intel(R) MPI Library for Linux* OS, Version 2018 Update 2 Build 20180125 (id: 18157)
-Copyright 2003-2018 Intel Corporation.
-TACC:  MPI job exited with code: 255 
+  Beginning Test, file ESMF_CompSetServUTest.F90, line 74
+  Beginning Test, file ESMF_CompSetServUTest.F90, line 74
+  Beginning Test, file ESMF_CompSetServUTest.F90, line 74
+  Beginning Test, file ESMF_CompSetServUTest.F90, line 74
+  NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 99
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 99
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 99
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 99
+  PASS  Calling Component Initialize before SetServices, ESMF_CompSetServUTest.F
+ 90, line 113
+  PASS  Calling Component Initialize before SetServices, ESMF_CompSetServUTest.F
+ 90, line 113
+  PASS  Calling Component Run before SetServices, ESMF_CompSetServUTest.F90, lin
+ e 128
+  PASS  Calling Component Run before SetServices, ESMF_CompSetServUTest.F90, lin
+ e 128
+  PASS  Calling Component Finalize before SetServices, ESMF_CompSetServUTest.F90
+ , line 143
+  PASS  Calling Component Finalize before SetServices, ESMF_CompSetServUTest.F90
+ , line 143
+  PASS  Calling Component Initialize before SetServices, ESMF_CompSetServUTest.F
+ 90, line 111
+  PASS  Calling Component Initialize before SetServices, ESMF_CompSetServUTest.F
+ 90, line 111
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 155
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 155
+  PASS  Calling Component Run before SetServices, ESMF_CompSetServUTest.F90, lin
+ e 126
+  PASS  Calling Component Run before SetServices, ESMF_CompSetServUTest.F90, lin
+ e 126
+  PASS  Calling Component Finalize before SetServices, ESMF_CompSetServUTest.F90
+ , line 141
+  PASS  Calling Component Finalize before SetServices, ESMF_CompSetServUTest.F90
+ , line 141
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 168
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 155
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 155
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 1
+ 80
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 168
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 1
+ 84
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 1
+ 80
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 195
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 1
+ 84
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 168
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 195
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 1
+ 80
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 168
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 1
+ 84
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 208
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 1
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 195
+ 80
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 1
+ 84
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 219
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 208
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 229
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 195
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 2
+ 50
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 2
+ 54
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 219
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 229
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 265
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 2
+ 50
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 2
+ 54
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 208
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 265
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 208
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 219
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 229
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 2
+ 50
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 2
+ 54
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 219
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 229
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 265
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 2
+ 50
+  PASS  Setting Component Services - SetServ0, ESMF_CompSetServUTest.F90, line 2
+ 54
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 265
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 278
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 278
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 278
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 278
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 289
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 289
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 289
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 289
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 293
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 293
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 293
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 293
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 3
+ 05
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 3
+ 05
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 3
+ 09
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 3
+ 09
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 320
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 320
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 325
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 325
+  PASS  Setting Component Services - SetServ2, ESMF_CompSetServUTest.F90, line 3
+ 38
+  PASS  Setting Component Services - SetServ2, ESMF_CompSetServUTest.F90, line 3
+ 38
+  PASS  Setting Component Services - SetServ2, ESMF_CompSetServUTest.F90, line 3
+ 42
+  PASS  Setting Component Services - SetServ2, ESMF_CompSetServUTest.F90, line 3
+ 42
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 353
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 353
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 3
+ 05
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 3
+ 05
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 360
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 360
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 3
+ 09
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 3
+ 09
+  PASS  Set Internal State Test, ESMF_CompSetServUTest.F90, line 373
+  PASS  Set Internal State Test, ESMF_CompSetServUTest.F90, line 373
+  PASS  Get Internal State Test, ESMF_CompSetServUTest.F90, line 384
+  PASS  Get Internal State Test, ESMF_CompSetServUTest.F90, line 384
+ User initialize 1 routine called
+  PASS  Verify Internal State Test, ESMF_CompSetServUTest.F90, line 395
+ User initialize 1 routine called
+  PASS  Verify Internal State Test, ESMF_CompSetServUTest.F90, line 395
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 320
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 320
+ data2%testnumber =         4567
+ data2%testnumber =         4567
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 325
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 325
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 407
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 407
+  PASS  Setting Component Services - SetServ2, ESMF_CompSetServUTest.F90, line 3
+ 38
+  PASS  Setting Component Services - SetServ2, ESMF_CompSetServUTest.F90, line 3
+ 38
+  PASS  Setting Component Services - SetServ2, ESMF_CompSetServUTest.F90, line 3
+ 42
+  PASS  Setting Component Services - SetServ2, ESMF_CompSetServUTest.F90, line 3
+ 42
+ User initialize 2 routine called
+ User initialize 2 routine called
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 353
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 353
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 358
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 358
+  PASS  Set Internal State Test, ESMF_CompSetServUTest.F90, line 373
+  PASS  Set Internal State Test, ESMF_CompSetServUTest.F90, line 373
+  PASS  Get Internal State Test, ESMF_CompSetServUTest.F90, line 384
+  PASS  Get Internal State Test, ESMF_CompSetServUTest.F90, line 384
+  PASS  Verify Internal State Test, ESMF_CompSetServUTest.F90, line 395
+  PASS  Verify Internal State Test, ESMF_CompSetServUTest.F90, line 395
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 420
+ data2%testnumber =         4567
+ data2%testnumber =         4567
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 4
+ 32
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 4
+ 36
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 420
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 407
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 407
+ User initialize 1 routine called
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 447
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 4
+ 32
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 451
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 4
+ 36
+ User initialize 1 routine called
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 462
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 447
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 451
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 462
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 420
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 4
+ 32
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 4
+ 36
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 420
+ User initialize 1 routine called
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 447
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 4
+ 32
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 451
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 4
+ 36
+ User initialize 1 routine called
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 462
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 447
+  PASS  Calling Component Init, ESMF_CompSetServUTest.F90, line 451
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 462
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 474
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 474
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 474
+  PASS  Creating a Component Test, ESMF_CompSetServUTest.F90, line 474
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 485
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 485
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 485
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 485
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 489
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 489
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 489
+  PASS  Setting Component VM, ESMF_CompSetServUTest.F90, line 489
+  PASS  Setting Component VM - 2nd time (but before SetServices), ESMF_CompSetSe
+ rvUTest.F90, line 500
+  PASS  Setting Component VM - 2nd time (but before SetServices), ESMF_CompSetSe
+ rvUTest.F90, line 500
+  PASS  Setting Component VM - 2nd time (but before SetServices), ESMF_CompSetSe
+ rvUTest.F90, line 500
+  PASS  Setting Component VM - 2nd time (but before SetServices), ESMF_CompSetSe
+ rvUTest.F90, line 500
+  PASS  Setting Component VM - 2nd time (but before SetServices), ESMF_CompSetSe
+ rvUTest.F90, line 504
+  PASS  Setting Component VM - 2nd time (but before SetServices), ESMF_CompSetSe
+ rvUTest.F90, line 504
+  PASS  Setting Component VM - 2nd time (but before SetServices), ESMF_CompSetSe
+ rvUTest.F90, line 504
+  PASS  Setting Component VM - 2nd time (but before SetServices), ESMF_CompSetSe
+ rvUTest.F90, line 504
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 5
+ 16
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 5
+ 16
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 5
+ 20
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 5
+ 20
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 5
+ 16
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 5
+ 16
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 5
+ 20
+  PASS  Setting Component Services - SetServ1, ESMF_CompSetServUTest.F90, line 5
+ 20
+  PASS  Setting Component VM - 3rd time (but after SetServices), ESMF_CompSetSer
+ vUTest.F90, line 532
+  PASS  Setting Component VM - 3rd time (but after SetServices), ESMF_CompSetSer
+ vUTest.F90, line 532
+  PASS  Directly setting Component VM properties after SetServices, ESMF_CompSet
+ ServUTest.F90, line 543
+  PASS  Directly setting Component VM properties after SetServices, ESMF_CompSet
+ ServUTest.F90, line 543
+  PASS  Setting Component VM - 3rd time (but after SetServices), ESMF_CompSetSer
+ vUTest.F90, line 532
+  PASS  Setting Component VM - 3rd time (but after SetServices), ESMF_CompSetSer
+ vUTest.F90, line 532
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 556
+  PASS  Directly setting Component VM properties after SetServices, ESMF_CompSet
+ ServUTest.F90, line 543
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 556
+  PASS  Directly setting Component VM properties after SetServices, ESMF_CompSet
+ ServUTest.F90, line 543
+  Ending Test, file ESMF_CompSetServUTest.F90, line 564
+  Ending Test, file ESMF_CompSetServUTest.F90, line 564
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 556
+  PASS  Destroying a Component Test, ESMF_CompSetServUTest.F90, line 556
+  Ending Test, file ESMF_CompSetServUTest.F90, line 564
+  Ending Test, file ESMF_CompSetServUTest.F90, line 564
+  PET           1  Test Elapsed Time    65.2980000000000       msec.
+  PET           0  Test Elapsed Time    65.2540000000000       msec.
+  PET           3  Test Elapsed Time    65.3470000000000       msec.
+  PET           2  Test Elapsed Time    66.8640000000000       msec.
 TACC:  Shutdown complete. Exiting. 
-Wed Feb  3 11:07:17 CST 2021
+Thu Feb  4 08:18:51 CST 2021
