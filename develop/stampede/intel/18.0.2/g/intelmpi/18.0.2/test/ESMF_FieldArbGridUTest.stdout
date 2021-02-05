@@ -1,154 +1,641 @@
-TACC:  Starting up job 7229661 
+TACC:  Starting up job 7234833 
 TACC:  Starting parallel tasks... 
-[mpiexec@c475-052.stampede2.tacc.utexas.edu] set_default_values (../../ui/mpich/utils.c:4669): no executable provided
-[mpiexec@c475-052.stampede2.tacc.utexas.edu] HYD_uii_mpx_get_parameters (../../ui/mpich/utils.c:5172): setting default values failed
-
-Usage: ./mpiexec [global opts] [exec1 local opts] : [exec2 local opts] : ...
-
-Global options (passed to all executables):
-
-  Global environment options:
-    -genv {name} {value}             environment variable name and value
-    -genvlist {env1,env2,...}        environment variable list to pass
-    -genvnone                        do not pass any environment variables
-    -genvall                         pass all environment variables not managed
-                                          by the launcher (default)
-
-  Other global options:
-    -f {name} | -hostfile {name}     file containing the host names
-    -hosts {host list}               comma separated host list
-    -configfile {name}               config file containing MPMD launch options
-    -machine {name} | -machinefile {name}
-                                     file mapping procs to machines
-    -pmi-connect {nocache|lazy-cache|cache}
-                                     set the PMI connections mode to use
-    -pmi-aggregate                   aggregate PMI messages
-    -pmi-noaggregate                 do not  aggregate PMI messages
-    -trace {<libraryname>}           trace the application using <libraryname>
-                                     profiling library; default is libVT.so
-    -trace-imbalance {<libraryname>} trace the application using <libraryname>
-                                     imbalance profiling library; default is libVTim.so
-    -check-mpi {<libraryname>}       check the application using <libraryname>
-                                     checking library; default is libVTmc.so
-    -ilp64                           Preload ilp64 wrapper library for support default size of
-                                     integer 8 bytes
-    -mps                             start statistics gathering for MPI Performance Snapshot (MPS)
-    -aps                             start statistics gathering for Application Performance Snapshot (APS)
-    -trace-pt2pt                     collect information about
-                                     Point to Point operations
-    -trace-collectives               collect information about
-                                     Collective operations
-    -tune [<confname>]               apply the tuned data produced by
-                                     the MPI Tuner utility
-    -use-app-topology <statfile>     perform optimized rank placement based statistics
-                                     and cluster topology
-    -noconf                          do not use any mpiexec's configuration files
-    -branch-count {leaves_num}       set the number of children in tree
-    -gwdir {dirname}                 working directory to use
-    -gpath {dirname}                 path to executable to use
-    -gumask {umask}                  mask to perform umask
-    -tmpdir {tmpdir}                 temporary directory for cleanup input file
-    -cleanup                         create input file for clean up
-    -gtool {options}                 apply a tool over the mpi application
-    -gtoolfile {file}                apply a tool over the mpi application. Parameters specified in the file
-
-
-Local options (passed to individual executables):
-
-  Local environment options:
-    -env {name} {value}              environment variable name and value
-    -envlist {env1,env2,...}         environment variable list to pass
-    -envnone                         do not pass any environment variables
-    -envall                          pass all environment variables (default)
-
-  Other local options:
-    -host {hostname}                 host on which processes are to be run
-    -hostos {OS name}                operating system on particular host
-    -wdir {dirname}                  working directory to use
-    -path {dirname}                  path to executable to use
-    -umask {umask}                   mask to perform umask
-    -n/-np {value}                   number of processes
-    {exec_name} {args}               executable name and arguments
-
-
-Hydra specific options (treated as global):
-
-  Bootstrap options:
-    -bootstrap                       bootstrap server to use
-     (ssh rsh pdsh fork slurm srun ll llspawn.stdio lsf blaunch sge qrsh persist service pbsdsh)
-    -bootstrap-exec                  executable to use to bootstrap processes
-    -bootstrap-exec-args             additional options to pass to bootstrap server
-    -prefork                         use pre-fork processes startup method
-    -enable-x/-disable-x             enable or disable X forwarding
-
-  Resource management kernel options:
-    -rmk                             resource management kernel to use (user slurm srun ll llspawn.stdio lsf blaunch sge qrsh pbs cobalt)
-
-  Processor topology options:
-    -binding                         process-to-core binding mode
-  Extended fabric control options:
-    -rdma                            select RDMA-capable network fabric (dapl). Fallback list is ofa,tcp,tmi,ofi
-    -RDMA                            select RDMA-capable network fabric (dapl). Fallback is ofa
-    -dapl                            select DAPL-capable network fabric. Fallback list is tcp,tmi,ofa,ofi
-    -DAPL                            select DAPL-capable network fabric. No fallback fabric is used
-    -ib                              select OFA-capable network fabric. Fallback list is dapl,tcp,tmi,ofi
-    -IB                              select OFA-capable network fabric. No fallback fabric is used
-    -tmi                             select TMI-capable network fabric. Fallback list is dapl,tcp,ofa,ofi
-    -TMI                             select TMI-capable network fabric. No fallback fabric is used
-    -mx                              select Myrinet MX* network fabric. Fallback list is dapl,tcp,ofa,ofi
-    -MX                              select Myrinet MX* network fabric. No fallback fabric is used
-    -psm                             select PSM-capable network fabric. Fallback list is dapl,tcp,ofa,ofi
-    -PSM                             select PSM-capable network fabric. No fallback fabric is used
-    -psm2                            select Intel* Omni-Path Fabric. Fallback list is dapl,tcp,ofa,ofi
-    -PSM2                            select Intel* Omni-Path Fabric. No fallback fabric is used
-    -ofi                             select OFI-capable network fabric. Fallback list is tmi,dapl,tcp,ofa
-    -OFI                             select OFI-capable network fabric. No fallback fabric is used
-
-  Checkpoint/Restart options:
-    -ckpoint {on|off}                enable/disable checkpoints for this run
-    -ckpoint-interval                checkpoint interval
-    -ckpoint-prefix                  destination for checkpoint files (stable storage, typically a cluster-wide file system)
-    -ckpoint-tmp-prefix              temporary/fast/local storage to speed up checkpoints
-    -ckpoint-preserve                number of checkpoints to keep (default: 1, i.e. keep only last checkpoint)
-    -ckpointlib                      checkpointing library (blcr)
-    -ckpoint-logfile                 checkpoint activity/status log file (appended)
-    -restart                         restart previously checkpointed application
-    -ckpoint-num                     checkpoint number to restart
-
-  Demux engine options:
-    -demux                           demux engine (poll select)
-
-  Debugger support options:
-    -tv                              run processes under TotalView
-    -tva {pid}                       attach existing mpiexec process to TotalView
-    -gdb                             run processes under GDB
-    -gdba {pid}                      attach existing mpiexec process to GDB
-    -gdb-ia                          run processes under Intel IA specific GDB
-
-  Other Hydra options:
-    -v | -verbose                    verbose mode
-    -V | -version                    show the version
-    -info                            build information
-    -print-rank-map                  print rank mapping
-    -print-all-exitcodes             print exit codes of all processes
-    -iface                           network interface to use
-    -help                            show this message
-    -perhost <n>                     place consecutive <n> processes on each host
-    -ppn <n>                         stand for "process per node"; an alias to -perhost <n>
-    -grr <n>                         stand for "group round robin"; an alias to -perhost <n>
-    -rr                              involve "round robin" startup scheme
-    -s <spec>                        redirect stdin to all or 1,2 or 2-4,6 MPI processes (0 by default)
-    -ordered-output                  avoid data output intermingling
-    -profile                         turn on internal profiling
-    -l | -prepend-rank               prepend rank to output
-    -prepend-pattern                 prepend pattern to output
-    -outfile-pattern                 direct stdout to file
-    -errfile-pattern                 direct stderr to file
-    -localhost                       local hostname for the launching node
-    -nolocal                         avoid running the application processes on the node where mpiexec.hydra started
-
-Intel(R) MPI Library for Linux* OS, Version 2018 Update 2 Build 20180125 (id: 18157)
-Copyright 2003-2018 Intel Corporation.
-TACC:  MPI job exited with code: 255 
+  Beginning Test, file ESMF_FieldArbGridUTest.F90, line 71
+  Beginning Test, file ESMF_FieldArbGridUTest.F90, line 71
+  Beginning Test, file ESMF_FieldArbGridUTest.F90, line 71
+  Beginning Test, file ESMF_FieldArbGridUTest.F90, line 71
+  NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
+  NUMBER_OF_PROCESSORS           4
+  PASS  Create a Field using a 2D arb. grid and 1D arrayspec, ESMF_FieldArbGridU
+ Test.F90, line 168
+  PASS  Create a Field using a 2D arb. grid and 1D arrayspec, ESMF_FieldArbGridU
+ Test.F90, line 168
+ Field rank, dimCount           1           2
+  PASS  Create a Field using a 2D arb. grid and 1D arrayspec, ESMF_FieldArbGridU
+ Test.F90, line 168
+  PASS  Create a Field using a 2D arb. grid and 1D arrayspec, ESMF_FieldArbGridU
+ Test.F90, line 168
+  PASS  Create a Field using a 2D arb. grid and 1D Array, ESMF_FieldArbGridUTest
+ .F90, line 187
+  PASS  Create a Field using a 2D arb. grid and 1D Array, ESMF_FieldArbGridUTest
+ .F90, line 187
+ Field rank, dimCount           1           2
+  PASS  Create a Field using a 2D arb. grid and 1D Array, ESMF_FieldArbGridUTest
+ .F90, line 187
+  PASS  Create a Field using a 2D arb. grid and 1D Array, ESMF_FieldArbGridUTest
+ .F90, line 187
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array - empty/complet
+ e, ESMF_FieldArbGridUTest.F90, line 208
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array - empty/complet
+ e, ESMF_FieldArbGridUTest.F90, line 208
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array - empty/complet
+ e, ESMF_FieldArbGridUTest.F90, line 208
+ Field rank, dimCount           1           2
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array - empty/complet
+ e, ESMF_FieldArbGridUTest.F90, line 208
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array, ESMF_FieldArbG
+ ridUTest.F90, line 228
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array, ESMF_FieldArbG
+ ridUTest.F90, line 228
+ Field rank, dimCount           1           2
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array, ESMF_FieldArbG
+ ridUTest.F90, line 228
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array, ESMF_FieldArbG
+ ridUTest.F90, line 228
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array pointer - empty
+ /complete, ESMF_FieldArbGridUTest.F90, line 250
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array pointer - empty
+ /complete, ESMF_FieldArbGridUTest.F90, line 250
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array pointer - empty
+ /complete, ESMF_FieldArbGridUTest.F90, line 250
+ Field rank, dimCount           1           2
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array pointer - empty
+ /complete, ESMF_FieldArbGridUTest.F90, line 250
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array pointer, ESMF_F
+ ieldArbGridUTest.F90, line 270
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array pointer, ESMF_F
+ ieldArbGridUTest.F90, line 270
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D arrayspec), ESMF_Fi
+ eldArbGridUTest.F90, line 278
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D arrayspec), ESMF_Fi
+ eldArbGridUTest.F90, line 278
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D array), ESMF_FieldA
+ rbGridUTest.F90, line 286
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D array), ESMF_FieldA
+ rbGridUTest.F90, line 286
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array) - em
+ pty/complete, ESMF_FieldArbGridUTest.F90, line 294
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array) - em
+ pty/complete, ESMF_FieldArbGridUTest.F90, line 294
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array), ESM
+ F_FieldArbGridUTest.F90, line 302
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array), ESM
+ F_FieldArbGridUTest.F90, line 302
+ Field rank, dimCount           1           2
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array pointer, ESMF_F
+ ieldArbGridUTest.F90, line 270
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array point
+ er) - empty/complete, ESMF_FieldArbGridUTest.F90, line 310
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array point
+ er) - empty/complete, ESMF_FieldArbGridUTest.F90, line 310
+  PASS  Create a Field using a 2D arb. grid and 1D Fortran array pointer, ESMF_F
+ ieldArbGridUTest.F90, line 270
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array point
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array point
+ er), ESMF_FieldArbGridUTest.F90, line 318
+ er), ESMF_FieldArbGridUTest.F90, line 318
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D arrayspec), ESMF_Fi
+ eldArbGridUTest.F90, line 278
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D arrayspec), ESMF_Fi
+ eldArbGridUTest.F90, line 278
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D array), ESMF_FieldA
+ rbGridUTest.F90, line 286
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D array), ESMF_FieldA
+ rbGridUTest.F90, line 286
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array) - em
+ pty/complete, ESMF_FieldArbGridUTest.F90, line 294
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array) - em
+ pty/complete, ESMF_FieldArbGridUTest.F90, line 294
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array), ESM
+ F_FieldArbGridUTest.F90, line 302
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array), ESM
+ F_FieldArbGridUTest.F90, line 302
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array point
+ er) - empty/complete, ESMF_FieldArbGridUTest.F90, line 310
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array point
+ er) - empty/complete, ESMF_FieldArbGridUTest.F90, line 310
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array point
+ er), ESMF_FieldArbGridUTest.F90, line 318
+  PASS  Destroy a Field (created using a 2D arb. grid and 1D Fortran array point
+ er), ESMF_FieldArbGridUTest.F90, line 318
+  PASS  Create a 2D Field on a 3D arb grid with one replicated dim, ESMF_FieldAr
+ bGridUTest.F90, line 352
+  PASS  Create a 2D Field on a 3D arb grid with one replicated dim, ESMF_FieldAr
+ bGridUTest.F90, line 352
+ Field rank, dimCount           1           2
+  PASS  Create a 2D Field on a 3D arb grid with one replicated dim, ESMF_FieldAr
+ bGridUTest.F90, line 352
+  PASS  Create a 2D Field on a 3D arb grid with one replicated dim, ESMF_FieldAr
+ bGridUTest.F90, line 352
+  PASS  Create a 2D Field on a 3D arb grid with one replicated dim and 1d Array,
+  ESMF_FieldArbGridUTest.F90, line 373
+  PASS  Create a 2D Field on a 3D arb grid with one replicated dim and 1d Array,
+  ESMF_FieldArbGridUTest.F90, line 373
+ Field rank, dimCount           1           2
+  PASS  Create a 2D Field on a 3D arb grid with one replicated dim and 1d Array,
+  ESMF_FieldArbGridUTest.F90, line 373
+  PASS  Create a 2D Field on a 3D arb grid with one replicated dim and 1d Array,
+  ESMF_FieldArbGridUTest.F90, line 373
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 395
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 395
+ Field rank, dimCount           1           2
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 395
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 395
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 415
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 415
+ Field rank, dimCount           1           2
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 415
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 415
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer - empt
+ y/complete, ESMF_FieldArbGridUTest.F90, line 437
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer - empt
+ y/complete, ESMF_FieldArbGridUTest.F90, line 437
+ Field rank, dimCount           1           2
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer - empt
+ y/complete, ESMF_FieldArbGridUTest.F90, line 437
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer - empt
+ y/complete, ESMF_FieldArbGridUTest.F90, line 437
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF_
+ FieldArbGridUTest.F90, line 457
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF_
+ FieldArbGridUTest.F90, line 457
+  PASS  Destroy a 2D Field on a 3D arb grid with one replicated dim, ESMF_FieldA
+ rbGridUTest.F90, line 465
+  PASS  Destroy a 2D Field on a 3D arb grid with one replicated dim, ESMF_FieldA
+ rbGridUTest.F90, line 465
+  PASS  Destroy a 2D Field on a 3D arb grid with one replicated dim and 1d Array
+ , ESMF_FieldArbGridUTest.F90, line 473
+  PASS  Destroy a 2D Field on a 3D arb grid with one replicated dim and 1d Array
+ , ESMF_FieldArbGridUTest.F90, line 473
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 481
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 481
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 489
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 489
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer - emp
+ ty/complete, ESMF_FieldArbGridUTest.F90, line 497
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer - emp
+ ty/complete, ESMF_FieldArbGridUTest.F90, line 497
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF
+ _FieldArbGridUTest.F90, line 505
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF
+ _FieldArbGridUTest.F90, line 505
+ Field rank, dimCount           1           2
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF_
+ FieldArbGridUTest.F90, line 457
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF_
+ FieldArbGridUTest.F90, line 457
+  PASS  Destroy a 2D Field on a 3D arb grid with one replicated dim, ESMF_FieldA
+ rbGridUTest.F90, line 465
+  PASS  Destroy a 2D Field on a 3D arb grid with one replicated dim, ESMF_FieldA
+ rbGridUTest.F90, line 465
+  PASS  Destroy a 2D Field on a 3D arb grid with one replicated dim and 1d Array
+ , ESMF_FieldArbGridUTest.F90, line 473
+  PASS  Destroy a 2D Field on a 3D arb grid with one replicated dim and 1d Array
+ , ESMF_FieldArbGridUTest.F90, line 473
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 481
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 481
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 489
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 489
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer - emp
+ ty/complete, ESMF_FieldArbGridUTest.F90, line 497
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer - emp
+ ty/complete, ESMF_FieldArbGridUTest.F90, line 497
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF
+ _FieldArbGridUTest.F90, line 505
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF
+ _FieldArbGridUTest.F90, line 505
+  PASS  Create a 3D Field on a 3D arb. grid, ESMF_FieldArbGridUTest.F90, line 53
+ 4
+  PASS  Create a 3D Field on a 3D arb. grid, ESMF_FieldArbGridUTest.F90, line 53
+ 4
+ Field rank, dimCount           2           3
+  PASS  Create a 3D Field on a 3D arb. grid, ESMF_FieldArbGridUTest.F90, line 53
+ 4
+  PASS  Create a 3D Field on a 3D arb. grid, ESMF_FieldArbGridUTest.F90, line 53
+ 4
+  PASS  Create a 3D Field on a 3D arb. grid with 2d Array, ESMF_FieldArbGridUTes
+ t.F90, line 554
+  PASS  Create a 3D Field on a 3D arb. grid with 2d Array, ESMF_FieldArbGridUTes
+ t.F90, line 554
+ Field rank, dimCount           2           3
+  PASS  Create a 3D Field on a 3D arb. grid with 2d Array, ESMF_FieldArbGridUTes
+ t.F90, line 554
+  PASS  Create a 3D Field on a 3D arb. grid with 2d Array, ESMF_FieldArbGridUTes
+ t.F90, line 554
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 576
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 576
+ Field rank, dimCount           2           3
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 576
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 576
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 596
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 596
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array pointer - empt
+ y/complete, ESMF_FieldArbGridUTest.F90, line 618
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array pointer - empt
+ y/complete, ESMF_FieldArbGridUTest.F90, line 618
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 596
+ Field rank, dimCount           2           3
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 596
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array pointer, ESMF_
+ FieldArbGridUTest.F90, line 638
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array pointer, ESMF_
+ FieldArbGridUTest.F90, line 638
+ Field rank, dimCount           2           3
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array pointer - empt
+ y/complete, ESMF_FieldArbGridUTest.F90, line 618
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array pointer - empt
+ y/complete, ESMF_FieldArbGridUTest.F90, line 618
+  PASS  Destroy a 3D Field on a 3D arb. grid, ESMF_FieldArbGridUTest.F90, line 6
+ 46
+  PASS  Destroy a 3D Field on a 3D arb. grid, ESMF_FieldArbGridUTest.F90, line 6
+ 46
+  PASS  Destroy a 3D Field on a 3D arb. grid with 2d Array, ESMF_FieldArbGridUTe
+ st.F90, line 654
+  PASS  Destroy a 3D Field on a 3D arb. grid with 2d Array, ESMF_FieldArbGridUTe
+ st.F90, line 654
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 662
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 662
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 670
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 670
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array pointer - emp
+ ty/complete, ESMF_FieldArbGridUTest.F90, line 678
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array pointer - emp
+ ty/complete, ESMF_FieldArbGridUTest.F90, line 678
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array pointer, ESMF
+ _FieldArbGridUTest.F90, line 686
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array pointer, ESMF
+ _FieldArbGridUTest.F90, line 686
+  PASS  Create a 4D Field on a 3D arb grid with one ungridded dimension, ESMF_Fi
+ eldArbGridUTest.F90, line 716
+  PASS  Create a 4D Field on a 3D arb grid with one ungridded dimension, ESMF_Fi
+ eldArbGridUTest.F90, line 716
+ Field rank, dimCount           2           3
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array pointer, ESMF_
+ FieldArbGridUTest.F90, line 638
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array pointer, ESMF_
+ FieldArbGridUTest.F90, line 638
+  PASS  Destroy a 3D Field on a 3D arb. grid, ESMF_FieldArbGridUTest.F90, line 6
+ 46
+  PASS  Destroy a 3D Field on a 3D arb. grid, ESMF_FieldArbGridUTest.F90, line 6
+ 46
+  PASS  Destroy a 3D Field on a 3D arb. grid with 2d Array, ESMF_FieldArbGridUTe
+ st.F90, line 654
+  PASS  Destroy a 3D Field on a 3D arb. grid with 2d Array, ESMF_FieldArbGridUTe
+ st.F90, line 654
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 662
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 662
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 670
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 670
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array pointer - emp
+ ty/complete, ESMF_FieldArbGridUTest.F90, line 678
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array pointer - emp
+ ty/complete, ESMF_FieldArbGridUTest.F90, line 678
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array pointer, ESMF
+ _FieldArbGridUTest.F90, line 686
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array pointer, ESMF
+ _FieldArbGridUTest.F90, line 686
+  PASS  Create a 4D Field on a 3D arb grid with one ungridded dimension, ESMF_Fi
+ eldArbGridUTest.F90, line 716
+ Field rank, dimCount           3           4
+  PASS  Create a 4D Field on a 3D arb grid with one ungridded dimension, ESMF_Fi
+ eldArbGridUTest.F90, line 716
+  PASS  Create a 4D Field on a 3D arb grid with one ungridded dimension and 3d A
+ rray, ESMF_FieldArbGridUTest.F90, line 737
+  PASS  Create a 4D Field on a 3D arb grid with one ungridded dimension and 3d A
+ rray, ESMF_FieldArbGridUTest.F90, line 737
+  PASS  Create a Field using an 3D arb. grid and 3D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 760
+  PASS  Create a Field using an 3D arb. grid and 3D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 760
+  PASS  Create a 4D Field on a 3D arb grid with one ungridded dimension and 3d A
+ rray, ESMF_FieldArbGridUTest.F90, line 737
+ Field rank, dimCount           3           4
+  PASS  Create a 4D Field on a 3D arb grid with one ungridded dimension and 3d A
+ rray, ESMF_FieldArbGridUTest.F90, line 737
+  PASS  Create a Field using an 3D arb. grid and 3D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 781
+  PASS  Create a Field using an 3D arb. grid and 3D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 781
+  PASS  Destroy a 4D Field on a 3D arb grid with one ungridded dimension, ESMF_F
+ ieldArbGridUTest.F90, line 789
+  PASS  Destroy a 4D Field on a 3D arb grid with one ungridded dimension, ESMF_F
+ ieldArbGridUTest.F90, line 789
+  PASS  Destroy a 4D Field on a 3D arb grid with one ungridded dimension and 3d 
+ Array, ESMF_FieldArbGridUTest.F90, line 797
+  PASS  Destroy a 4D Field on a 3D arb grid with one ungridded dimension and 3d 
+ Array, ESMF_FieldArbGridUTest.F90, line 797
+  PASS  Destroy a Field using an 3D arb. grid and 3D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 805
+  PASS  Destroy a Field using an 3D arb. grid and 3D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 805
+  PASS  Destroy a Field using an 3D arb. grid and 3D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 813
+  PASS  Destroy a Field using an 3D arb. grid and 3D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 813
+  PASS  Create a 3D Field on a 3D arb grid with one ungridded dim. and one rep. 
+ dim, ESMF_FieldArbGridUTest.F90, line 840
+  PASS  Create a 3D Field on a 3D arb grid with one ungridded dim. and one rep. 
+ dim, ESMF_FieldArbGridUTest.F90, line 840
+  PASS  Create a 3D Field on a 3D arb grid with one ungridded dim. and one rep. 
+ dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 861
+  PASS  Create a 3D Field on a 3D arb grid with one ungridded dim. and one rep. 
+ dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 861
+  PASS  Create a Field using an 3D arb. grid and 3D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 760
+ Field rank, dimCount           3           4
+  PASS  Create a Field using an 3D arb. grid and 3D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 760
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 885
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 885
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 907
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 907
+  PASS  Destroy a 3D Field on a 3D arb grid with one ungridded dim. and one rep.
+  dim, ESMF_FieldArbGridUTest.F90, line 915
+  PASS  Destroy a 3D Field on a 3D arb grid with one ungridded dim. and one rep.
+  dim, ESMF_FieldArbGridUTest.F90, line 915
+  PASS  Destroy a 3D Field on a 3D arb grid with one ungridded dim. and one rep.
+  dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 923
+  PASS  Destroy a 3D Field on a 3D arb grid with one ungridded dim. and one rep.
+  dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 923
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 931
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 931
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 939
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 939
+  PASS  Create a 1D Field on a 3D arb grid with the arb. dims as the replicated 
+ dim, ESMF_FieldArbGridUTest.F90, line 965
+  PASS  Create a 1D Field on a 3D arb grid with the arb. dims as the replicated 
+ dim, ESMF_FieldArbGridUTest.F90, line 965
+  PASS  Create a 1D Field on a 3D arb grid with the arb. dims as the replicated 
+ dim and 1d Array, ESMF_FieldArbGridUTest.F90, line 985
+  PASS  Create a 1D Field on a 3D arb grid with the arb. dims as the replicated 
+ dim and 1d Array, ESMF_FieldArbGridUTest.F90, line 985
+  PASS  Create a Field using an 3D arb. grid and 3D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 781
+ Field rank, dimCount           3           4
+  PASS  Create a Field using an 3D arb. grid and 3D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 781
+  PASS  Destroy a 4D Field on a 3D arb grid with one ungridded dimension, ESMF_F
+ ieldArbGridUTest.F90, line 789
+  PASS  Destroy a 4D Field on a 3D arb grid with one ungridded dimension, ESMF_F
+ ieldArbGridUTest.F90, line 789
+  PASS  Destroy a 4D Field on a 3D arb grid with one ungridded dimension and 3d 
+ Array, ESMF_FieldArbGridUTest.F90, line 797
+  PASS  Destroy a 4D Field on a 3D arb grid with one ungridded dimension and 3d 
+ Array, ESMF_FieldArbGridUTest.F90, line 797
+  PASS  Destroy a Field using an 3D arb. grid and 3D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 805
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 1008
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 1008
+  PASS  Destroy a Field using an 3D arb. grid and 3D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 805
+  PASS  Destroy a Field using an 3D arb. grid and 3D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 813
+  PASS  Destroy a Field using an 3D arb. grid and 3D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 813
+  PASS  Create a 3D Field on a 3D arb grid with one ungridded dim. and one rep. 
+ dim, ESMF_FieldArbGridUTest.F90, line 840
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 1029
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 1029
+ Field rank, dimCount           2           3
+  PASS  Create a 3D Field on a 3D arb grid with one ungridded dim. and one rep. 
+ dim, ESMF_FieldArbGridUTest.F90, line 840
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer - empt
+ y/complete, ESMF_FieldArbGridUTest.F90, line 1052
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer - empt
+ y/complete, ESMF_FieldArbGridUTest.F90, line 1052
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF_
+ FieldArbGridUTest.F90, line 1073
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF_
+ FieldArbGridUTest.F90, line 1073
+  PASS  Create a 3D Field on a 3D arb grid with one ungridded dim. and one rep. 
+ dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 861
+ Field rank, dimCount           2           3
+  PASS  Create a 3D Field on a 3D arb grid with one ungridded dim. and one rep. 
+ dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 861
+  PASS  Destroy a 1D Field on a 3D arb grid with the arb. dims as the replicated
+  dim, ESMF_FieldArbGridUTest.F90, line 1081
+  PASS  Destroy a 1D Field on a 3D arb grid with the arb. dims as the replicated
+  dim, ESMF_FieldArbGridUTest.F90, line 1081
+  PASS  Destroy a 1D Field on a 3D arb grid with the arb. dims as the replicated
+  dim and 1d Array, ESMF_FieldArbGridUTest.F90, line 1089
+  PASS  Destroy a 1D Field on a 3D arb grid with the arb. dims as the replicated
+  dim and 1d Array, ESMF_FieldArbGridUTest.F90, line 1089
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 1097
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 1097
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 1105
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 1105
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer - emp
+ ty/complete, ESMF_FieldArbGridUTest.F90, line 1113
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer - emp
+ ty/complete, ESMF_FieldArbGridUTest.F90, line 1113
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF
+ _FieldArbGridUTest.F90, line 1121
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF
+ _FieldArbGridUTest.F90, line 1121
+  PASS  Create a 2D Field on a 3D arb grid with the arb.dims as the replicated d
+ im and one ungridded dim, ESMF_FieldArbGridUTest.F90, line 1148
+  PASS  Create a 2D Field on a 3D arb grid with the arb.dims as the replicated d
+ im and one ungridded dim, ESMF_FieldArbGridUTest.F90, line 1148
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 885
+ Field rank, dimCount           2           3
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 885
+  PASS  Create a 2D Field on a 3D arb grid with the arb.dims as the replicated d
+ im and one ungridded dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 1169
+  PASS  Create a 2D Field on a 3D arb grid with the arb.dims as the replicated d
+ im and one ungridded dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 1169
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 1193
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 1193
+ Field rank, dimCount           2           3
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 907
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 907
+  PASS  Destroy a 3D Field on a 3D arb grid with one ungridded dim. and one rep.
+  dim, ESMF_FieldArbGridUTest.F90, line 915
+  PASS  Destroy a 3D Field on a 3D arb grid with one ungridded dim. and one rep.
+  dim, ESMF_FieldArbGridUTest.F90, line 915
+  PASS  Destroy a 3D Field on a 3D arb grid with one ungridded dim. and one rep.
+  dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 923
+  PASS  Destroy a 3D Field on a 3D arb grid with one ungridded dim. and one rep.
+  dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 923
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 931
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 931
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 1215
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 1215
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 939
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 939
+  PASS  Destroy a 2D Field on a 3D arb grid with the arb.dims as the replicated 
+ dim and one ungridded dim, ESMF_FieldArbGridUTest.F90, line 1223
+  PASS  Destroy a 2D Field on a 3D arb grid with the arb.dims as the replicated 
+ dim and one ungridded dim, ESMF_FieldArbGridUTest.F90, line 1223
+  PASS  Destroy a 2D Field on a 3D arb grid with the arb.dims as the replicated 
+ dim and one ungridded dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 1231
+  PASS  Destroy a 2D Field on a 3D arb grid with the arb.dims as the replicated 
+ dim and one ungridded dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 1231
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 1239
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 1239
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 1250
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 1250
+ Field rank, dimCount           1           1
+  PASS  Create a 1D Field on a 3D arb grid with the arb. dims as the replicated 
+ dim, ESMF_FieldArbGridUTest.F90, line 965
+  PASS  Create a 1D Field on a 3D arb grid with the arb. dims as the replicated 
+ dim, ESMF_FieldArbGridUTest.F90, line 965
+ Field rank, dimCount           1           1
+  PASS  Create a 1D Field on a 3D arb grid with the arb. dims as the replicated 
+ dim and 1d Array, ESMF_FieldArbGridUTest.F90, line 985
+  PASS  Create a 1D Field on a 3D arb grid with the arb. dims as the replicated 
+ dim and 1d Array, ESMF_FieldArbGridUTest.F90, line 985
+ Field rank, dimCount           1           1
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 1008
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 1008
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 1029
+ Field rank, dimCount           1           1
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 1029
+ Field rank, dimCount           1           1
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer - empt
+ y/complete, ESMF_FieldArbGridUTest.F90, line 1052
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer - empt
+ y/complete, ESMF_FieldArbGridUTest.F90, line 1052
+ Field rank, dimCount           1           1
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF_
+ FieldArbGridUTest.F90, line 1073
+  PASS  Create a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF_
+ FieldArbGridUTest.F90, line 1073
+  PASS  Destroy a 1D Field on a 3D arb grid with the arb. dims as the replicated
+  dim, ESMF_FieldArbGridUTest.F90, line 1081
+  PASS  Destroy a 1D Field on a 3D arb grid with the arb. dims as the replicated
+  dim, ESMF_FieldArbGridUTest.F90, line 1081
+  PASS  Destroy a 1D Field on a 3D arb grid with the arb. dims as the replicated
+  dim and 1d Array, ESMF_FieldArbGridUTest.F90, line 1089
+  PASS  Destroy a 1D Field on a 3D arb grid with the arb. dims as the replicated
+  dim and 1d Array, ESMF_FieldArbGridUTest.F90, line 1089
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 1097
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 1097
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 1105
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 1105
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer - emp
+ ty/complete, ESMF_FieldArbGridUTest.F90, line 1113
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer - emp
+ ty/complete, ESMF_FieldArbGridUTest.F90, line 1113
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF
+ _FieldArbGridUTest.F90, line 1121
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array pointer, ESMF
+ _FieldArbGridUTest.F90, line 1121
+ Field rank, dimCount           2           2
+  PASS  Create a 2D Field on a 3D arb grid with the arb.dims as the replicated d
+ im and one ungridded dim, ESMF_FieldArbGridUTest.F90, line 1148
+  PASS  Create a 2D Field on a 3D arb grid with the arb.dims as the replicated d
+ im and one ungridded dim, ESMF_FieldArbGridUTest.F90, line 1148
+ Field rank, dimCount           2           2
+  PASS  Create a 2D Field on a 3D arb grid with the arb.dims as the replicated d
+ im and one ungridded dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 1169
+  PASS  Create a 2D Field on a 3D arb grid with the arb.dims as the replicated d
+ im and one ungridded dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 1169
+ Field rank, dimCount           2           2
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 1193
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array - empty/comple
+ te, ESMF_FieldArbGridUTest.F90, line 1193
+ Field rank, dimCount           2           2
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 1215
+  PASS  Create a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldArb
+ GridUTest.F90, line 1215
+  PASS  Destroy a 2D Field on a 3D arb grid with the arb.dims as the replicated 
+ dim and one ungridded dim, ESMF_FieldArbGridUTest.F90, line 1223
+  PASS  Destroy a 2D Field on a 3D arb grid with the arb.dims as the replicated 
+ dim and one ungridded dim, ESMF_FieldArbGridUTest.F90, line 1223
+  PASS  Destroy a 2D Field on a 3D arb grid with the arb.dims as the replicated 
+ dim and one ungridded dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 1231
+  PASS  Destroy a 2D Field on a 3D arb grid with the arb.dims as the replicated 
+ dim and one ungridded dim and 2d Array, ESMF_FieldArbGridUTest.F90, line 1231
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 1239
+  PASS  Destroy a Field using an 3D arb. grid and 1D Fortran array - empty/compl
+ ete, ESMF_FieldArbGridUTest.F90, line 1239
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 1250
+  PASS  Destroy a Field using an 3D arb. grid and 2D Fortran array, ESMF_FieldAr
+ bGridUTest.F90, line 1250
+  PASS  Create a Field using a 2D arb. grid with one PET without any grid points
+ , ESMF_FieldArbGridUTest.F90, line 1299
+  Ending Test, file ESMF_FieldArbGridUTest.F90, line 1314
+  PASS  Create a Field using a 2D arb. grid with one PET without any grid points
+ , ESMF_FieldArbGridUTest.F90, line 1299
+  Ending Test, file ESMF_FieldArbGridUTest.F90, line 1314
+ Field rank, dimCount           1           2
+  PASS  Create a Field using a 2D arb. grid with one PET without any grid points
+ , ESMF_FieldArbGridUTest.F90, line 1299
+  PASS  Create a Field using a 2D arb. grid with one PET without any grid points
+ , ESMF_FieldArbGridUTest.F90, line 1299
+  Ending Test, file ESMF_FieldArbGridUTest.F90, line 1314
+  Ending Test, file ESMF_FieldArbGridUTest.F90, line 1314
+  PET           2  Test Elapsed Time    311.331000000000       msec.
+  PET           3  Test Elapsed Time    311.890000000000       msec.
+  PET           1  Test Elapsed Time    312.491000000000       msec.
+  PET           0  Test Elapsed Time    312.969000000000       msec.
 TACC:  Shutdown complete. Exiting. 
-Wed Feb  3 11:07:17 CST 2021
+Thu Feb  4 08:18:51 CST 2021
