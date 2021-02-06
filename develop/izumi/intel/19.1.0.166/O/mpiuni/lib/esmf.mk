@@ -13,7 +13,7 @@
 
 #----------------------------------------------
 ESMF_VERSION_STRING=8.1.0 beta snapshot
-ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_43-39-g8850bc577a
+ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_43-54-ga47a4b0b2b
 #----------------------------------------------
 
 ESMF_VERSION_MAJOR=8
@@ -33,7 +33,7 @@ ESMF_F90LINKER=ifort
 
 ESMF_F90COMPILEOPTS=-O -fPIC -assume realloc_lhs -m64 -mcmodel=small -pthread -threads  -qopenmp
 ESMF_F90COMPILEPATHS=-I/project/esmf/himanshu/intel/esmf/mod/modO/Linux.intel.64.mpiuni.default -I/project/esmf/himanshu/intel/esmf/src/include 
-ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_43-39-g8850bc577a' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/intel/esmf -DESMF_MPIUNI
+ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_43-54-ga47a4b0b2b' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/intel/esmf -DESMF_MPIUNI
 ESMF_F90COMPILEFREECPP=
 ESMF_F90COMPILEFREENOCPP=
 ESMF_F90COMPILEFIXCPP=
@@ -52,7 +52,7 @@ ESMF_CXXLINKER=icpc
 
 ESMF_CXXCOMPILEOPTS=-std=c++11 -O -DNDEBUG -fPIC -m64 -mcmodel=small -pthread  -qopenmp
 ESMF_CXXCOMPILEPATHS= -I/project/esmf/himanshu/intel/esmf/src/include   -I/project/esmf/himanshu/intel/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/intel/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_43-39-g8850bc577a' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/intel/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI
+ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_43-54-ga47a4b0b2b' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/intel/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI
 
 ESMF_CXXLINKOPTS=  -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -qopenmp
 ESMF_CXXLINKPATHS=-L/project/esmf/himanshu/intel/esmf/lib/libO/Linux.intel.64.mpiuni.default  -L/usr/local/intel-cluster-20.0.1/compilers_and_libraries_2020.0.166/linux/compiler/lib/intel64_lin/
