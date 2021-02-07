@@ -66,7 +66,7 @@ alarmCount = 0
 alarmList = 
 end Clock ------------------------------
 
-setting GridComp internal state to data: 0x7ffbbb4062d0
+setting GridComp internal state to data: 0x7fdf414062d0
 I am in myRunInC()
  ESMF_StatePrint: (pet 0):
   State name: my import state
@@ -116,18 +116,18 @@ alarmCount = 0
 alarmList = 
 end Clock ------------------------------
 
-getting GridComp internal state to data: 0x7ffbbb4062d0
+getting GridComp internal state to data: 0x7fdf414062d0
 I am in myFinalizeInC()
  ESMF_StatePrint: (pet 0):
   State name: my import state
-PASS ESMC_GridCompRun() w/ myRegistrationInC() methods, ESMC_ComponentUTest.C, line 309
      status: Unspecified intent direction, object count: 0
      reconcile needed: F
  Base name    = my import state
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-{}PASS ESMC_GridCompFinalize() w/ myRegistrationInC() methods, ESMC_ComponentUTest.C, line 317
+{}PASS ESMC_GridCompRun() w/ myRegistrationInC() methods, ESMC_ComponentUTest.C, line 309
+PASS ESMC_GridCompFinalize() w/ myRegistrationInC() methods, ESMC_ComponentUTest.C, line 317
 PASS Destroy ESMC_GridComp object, ESMC_ComponentUTest.C, line 325
 PASS Create ESMC_GridComp object, ESMC_ComponentUTest.C, line 334
 Clock ----------------------------------
@@ -170,15 +170,15 @@ alarmCount = 0
 alarmList = 
 end Clock ------------------------------
 
-getting GridComp internal state to data: 0x7ffbbb4062d0
+getting GridComp internal state to data: 0x7fdf414062d0
  I am in myRegistrationInFortran()
  Gridded Component:
   Component name = gridded Component in C with Fortran registration
-PASS ESMC_GridCompSetServices() using my_RegistrationInFortran(), ESMC_ComponentUTest.C, line 342
  I am in myInitInFortran()
  ESMF_StatePrint: (pet 0):
   State name: my import state
      status: Unspecified intent direction, object count: 0
+PASS ESMC_GridCompSetServices() using my_RegistrationInFortran(), ESMC_ComponentUTest.C, line 342
      reconcile needed: F
  Base name    = my import state
  Status: Base = Ready,  object = Ready
@@ -323,12 +323,12 @@ alarmCount = 0
 alarmList = 
 end Clock ------------------------------
 
-PASS ESMC_GridCompInitialize() w/ my_RegistrationInFortran() meths, ESMC_ComponentUTest.C, line 350
  I am in myRunInFortran()
  ESMF_StatePrint: (pet 0):
   State name: my import state
      status: Unspecified intent direction, object count: 0
      reconcile needed: F
+PASS ESMC_GridCompInitialize() w/ my_RegistrationInFortran() meths, ESMC_ComponentUTest.C, line 350
  Base name    = my import state
  Status: Base = Ready,  object = Ready
  Proxy        = no
@@ -472,7 +472,6 @@ alarmCount = 0
 alarmList = 
 end Clock ------------------------------
 
-PASS ESMC_GridCompRun() w/ my_RegistrationInFortran() meths, ESMC_ComponentUTest.C, line 358
  I am in myFinalInFortran()
  ESMF_StatePrint: (pet 0):
   State name: my import state
@@ -481,6 +480,7 @@ PASS ESMC_GridCompRun() w/ my_RegistrationInFortran() meths, ESMC_ComponentUTest
  Base name    = my import state
  Status: Base = Ready,  object = Ready
  Proxy        = no
+PASS ESMC_GridCompRun() w/ my_RegistrationInFortran() meths, ESMC_ComponentUTest.C, line 358
  Root Info (Attributes):
 {}Clock ----------------------------------
 name = TEST_CLOCK
@@ -623,66 +623,15 @@ end Clock ------------------------------
 
 PASS ESMC_GridCompFinalize() w/ my_RegistrationInFortran() meths, ESMC_ComponentUTest.C, line 366
 PASS Destroy ESMC_GridComp object, ESMC_ComponentUTest.C, line 374
-PASS Create ESMC_CplComp object, ESMC_ComponentUTest.C, line 385
  Coupler Component:
   Component name = coupler component in C
-PASS Print ESMC_CplComp object, ESMC_ComponentUTest.C, line 393
 I am in myCplRegistrationInC()
  Coupler Component:
   Component name = coupler component in C
+PASS Create ESMC_CplComp object, ESMC_ComponentUTest.C, line 385
+PASS Print ESMC_CplComp object, ESMC_ComponentUTest.C, line 393
 PASS ESMC_CplCompSetServices() using myCplRegistrationInC(), ESMC_ComponentUTest.C, line 401
 I am in myInitInC()
- ESMF_StatePrint: (pet 0):
-  State name: my import state
-     status: Unspecified intent direction, object count: 0
-     reconcile needed: F
- Base name    = my import state
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}PASS ESMC_CplCompInitialize() w/ myCplRegistrationInC() methods, ESMC_ComponentUTest.C, line 410
-Clock ----------------------------------
-name = TEST_CLOCK
-timeStep = 
-TimeInterval ---------------------------
-P0Y0M0DT1H0M0S
-end TimeInterval -----------------------
-
-startTime = 
-Time -----------------------------------
-2006-01-01T00:00:00
-end Time -------------------------------
-
-stopTime = 
-Time -----------------------------------
-2006-01-01T01:00:00
-end Time -------------------------------
-
-stopTimeEnabled = true
-refTime = 
-Time -----------------------------------
-2006-01-01T00:00:00
-end Time -------------------------------
-
-currTime = 
-Time -----------------------------------
-2006-01-01T00:00:00
-end Time -------------------------------
-
-prevTime = 
-Time -----------------------------------
-2006-01-01T00:00:00
-end Time -------------------------------
-
-advanceCount = 0
-direction = 1
-userChangedDirection = false
-alarmCount = 0
-alarmList = 
-end Clock ------------------------------
-
-setting CplComp internal state to data: 0x7ffbbb405e40
-I am in myRunInC()
  ESMF_StatePrint: (pet 0):
   State name: my import state
      status: Unspecified intent direction, object count: 0
@@ -731,14 +680,65 @@ alarmCount = 0
 alarmList = 
 end Clock ------------------------------
 
-getting CplComp internal state to data: 0x7ffbbb405e40
+setting CplComp internal state to data: 0x7fdf31400130
+I am in myRunInC()
+ ESMF_StatePrint: (pet 0):
+  State name: my import state
+     status: Unspecified intent direction, object count: 0
+     reconcile needed: F
+ Base name    = my import state
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}PASS ESMC_CplCompInitialize() w/ myCplRegistrationInC() methods, ESMC_ComponentUTest.C, line 410
+PASS ESMC_CplCompRun() w/ myCplRegistrationInC() methods, ESMC_ComponentUTest.C, line 418
+Clock ----------------------------------
+name = TEST_CLOCK
+timeStep = 
+TimeInterval ---------------------------
+P0Y0M0DT1H0M0S
+end TimeInterval -----------------------
+
+startTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
+
+stopTime = 
+Time -----------------------------------
+2006-01-01T01:00:00
+end Time -------------------------------
+
+stopTimeEnabled = true
+refTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
+
+currTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
+
+prevTime = 
+Time -----------------------------------
+2006-01-01T00:00:00
+end Time -------------------------------
+
+advanceCount = 0
+direction = 1
+userChangedDirection = false
+alarmCount = 0
+alarmList = 
+end Clock ------------------------------
+
+getting CplComp internal state to data: 0x7fdf31400130
 I am in myFinalizeInC()
  ESMF_StatePrint: (pet 0):
   State name: my import state
      status: Unspecified intent direction, object count: 0
      reconcile needed: F
  Base name    = my import state
-PASS ESMC_CplCompRun() w/ myCplRegistrationInC() methods, ESMC_ComponentUTest.C, line 418
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
@@ -785,7 +785,7 @@ alarmCount = 0
 alarmList = 
 end Clock ------------------------------
 
-getting CplComp internal state to data: 0x7ffbbb405e40
+getting CplComp internal state to data: 0x7fdf31400130
  I am in myRegistrationInFortran()
  Coupler Component:
   Component name = coupler component in C with Fortran registration
@@ -1248,5 +1248,5 @@ PASS Destroy ESMC_Calendar object, ESMC_ComponentUTest.C, line 531
 PASS Destroy ESMC_State object, ESMC_ComponentUTest.C, line 539
 PASS Destroy ESMC_State object, ESMC_ComponentUTest.C, line 547
 Ending Test, file ESMC_ComponentUTest.C, line 551
- PET 0 Test Elapsed Time  3.087000 msec.
-Fri Feb  5 16:30:04 MST 2021
+ PET 0 Test Elapsed Time  2.941000 msec.
+Sat Feb  6 15:37:13 MST 2021

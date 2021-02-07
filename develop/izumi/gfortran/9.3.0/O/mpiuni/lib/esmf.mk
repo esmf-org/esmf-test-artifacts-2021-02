@@ -13,7 +13,7 @@
 
 #----------------------------------------------
 ESMF_VERSION_STRING=8.1.0 beta snapshot
-ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_43-54-ga47a4b0b2b
+ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_43-58-g2869d4f82f
 #----------------------------------------------
 
 ESMF_VERSION_MAJOR=8
@@ -33,7 +33,7 @@ ESMF_F90LINKER=gfortran
 
 ESMF_F90COMPILEOPTS=-O -fPIC  -m64 -mcmodel=small -pthread -ffree-line-length-none  -fopenmp
 ESMF_F90COMPILEPATHS=-I/project/esmf/himanshu/gfortran/esmf/mod/modO/Linux.gfortran.64.mpiuni.default -I/project/esmf/himanshu/gfortran/esmf/src/include 
-ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_43-54-ga47a4b0b2b' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/gfortran/esmf -DESMF_MPIUNI
+ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_43-58-g2869d4f82f' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/gfortran/esmf -DESMF_MPIUNI
 ESMF_F90COMPILEFREECPP=
 ESMF_F90COMPILEFREENOCPP=-ffree-form
 ESMF_F90COMPILEFIXCPP=-cpp -ffixed-form
@@ -52,7 +52,7 @@ ESMF_CXXLINKER=g++
 
 ESMF_CXXCOMPILEOPTS=-std=c++11 -O -DNDEBUG -fPIC -DESMF_LOWERCASE_SINGLEUNDERSCORE -m64 -mcmodel=small -pthread  -fopenmp
 ESMF_CXXCOMPILEPATHS= -I/project/esmf/himanshu/gfortran/esmf/src/include   -I/project/esmf/himanshu/gfortran/esmf/src/Infrastructure/stubs/mpiuni -I/project/esmf/himanshu/gfortran/esmf/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_43-54-ga47a4b0b2b' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/gfortran/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI
+ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_43-58-g2869d4f82f' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=mpiuni -DESMF_DIR=/project/esmf/himanshu/gfortran/esmf -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI
 
 ESMF_CXXLINKOPTS=  -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -fopenmp
 ESMF_CXXLINKPATHS=-L/project/esmf/himanshu/gfortran/esmf/lib/libO/Linux.gfortran.64.mpiuni.default  -L/usr/local/gcc-g++-gfortran-9.3.0/lib/gcc/x86_64-pc-linux-gnu/9.3.0/../../../../lib64/
