@@ -1,11 +1,13 @@
 --- ESMCI::VM::print() start ---
 --- ESMCI::VM::print() start ---
 --- ESMCI::VMId::print() start ---
+  vmKeyWidth = 1
 --- ESMCI::VM::print() start ---
 --- ESMCI::VMId::print() start ---
   vmKeyWidth = 1
   vmKey=0xF0000000
   localID = 0
+--- ESMCI::VMId::print() end ---
 --- ESMCI::VM::print() start ---
 --- ESMCI::VMId::print() start ---
   vmKeyWidth = 1
@@ -16,28 +18,38 @@
   vmKeyWidth = 1
   vmKey=0xF0000000
   localID = 0
---- ESMCI::VMId::print() end ---
-  vmKeyWidth = 1
-  vmKey=0xF0000000
-  localID = 0
---- ESMCI::VMId::print() end ---
 --- ESMCI::VMId::print() end ---
 --- VMK::print() start ---
-vm located at: 0x19844d0
-npets = 4, mypet=2
-  pth_mutex =		 0x1d875c0
+vm located at: 0xfc74d0
+  vmKey=0xF0000000
+  localID = 0
+--- ESMCI::VMId::print() end ---
+--- VMK::print() start ---
+vm located at: 0x1a074d0
+npets = 4, mypet=1
+  pth_mutex =		 0x1d47ef0
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
+MPI_Comm_rank in local MPI communicator: 1
 --- VMK::print() start ---
-vm located at: 0xa934d0
+vm located at: 0x27064d0
+npets = 4, mypet=2
+  pth_mutex =		 0x2b09610
+  pth_finish_count =	 (nil)
+MPI_Comm_size: 4
+MPI_Comm_rank in local MPI communicator: 2
+MPI_Comm_rank in MPI_COMM_WORLD: 2
+MPI thread level support: 3
+mpi_mutex_flag: 0
+--- VMK::print() start ---
+vm located at: 0x19634d0
 npets = 4, mypet=3
-  pth_mutex =		 0xe97480
+  pth_mutex =		 0x1d66610
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 3
 MPI_Comm_rank in MPI_COMM_WORLD: 3
 MPI thread level support: 3
-mpi_mutex_flag: 0
 mpionly: 1
 nothreadsflag: 1
   lpid[0]=0, tid[0]=0, vas[0]=0, ncpet[0]=1, nadevs[0]=0, cid[0][0]=0
@@ -51,16 +63,14 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
- This PET is localPet:            3
+ This PET is localPet:            2
  of a total of            4  PETs in this VM.
  There are            4  PEs referenced by this VM
- This PET is executing in virtual address space (VAS)            3
+ This PET is executing in virtual address space (VAS)            2
  located on single system image (SSI)            0
  and is associated with            1  PEs.
---- VMK::print() start ---
-vm located at: 0x9704d0
 npets = 4, mypet=0
-  pth_mutex =		 0xd74380
+  pth_mutex =		 0x13cb380
   pth_finish_count =	 (nil)
 MPI_Comm_size: 4
 MPI_Comm_rank in local MPI communicator: 0
@@ -86,13 +96,6 @@ ncores = 4
  This PET is executing in virtual address space (VAS)            0
  located on single system image (SSI)            0
  and is associated with            1  PEs.
---- VMK::print() start ---
-vm located at: 0x21e14d0
-npets = 4, mypet=1
-  pth_mutex =		 0x25adf80
-  pth_finish_count =	 (nil)
-MPI_Comm_size: 4
-MPI_Comm_rank in local MPI communicator: 1
 MPI_Comm_rank in MPI_COMM_WORLD: 1
 MPI thread level support: 3
 mpi_mutex_flag: 0
@@ -115,9 +118,6 @@ ncores = 4
  This PET is executing in virtual address space (VAS)            1
  located on single system image (SSI)            0
  and is associated with            1  PEs.
-MPI_Comm_rank in local MPI communicator: 2
-MPI_Comm_rank in MPI_COMM_WORLD: 2
-MPI thread level support: 3
 mpi_mutex_flag: 0
 mpionly: 1
 nothreadsflag: 1
@@ -132,10 +132,10 @@ ncores = 4
   cpuid[3]=3, ssiid[3]=0
 --- VMK::print() end ---
 --- ESMCI::VM::print() end ---
- This PET is localPet:            2
+ This PET is localPet:            3
  of a total of            4  PETs in this VM.
  There are            4  PEs referenced by this VM
- This PET is executing in virtual address space (VAS)            2
+ This PET is executing in virtual address space (VAS)            3
  located on single system image (SSI)            0
  and is associated with            1  PEs.
   PASS  Example ESMF_VMDefaultBasicsEx, ESMF_VMDefaultBasicsEx.F90, line 107
@@ -146,4 +146,4 @@ ncores = 4
  PASS: ESMF_VMDefaultBasicsEx.F90
  PASS: ESMF_VMDefaultBasicsEx.F90
  PASS: ESMF_VMDefaultBasicsEx.F90
-Fri Feb  5 23:47:39 MST 2021
+Sat Feb  6 18:49:29 MST 2021
