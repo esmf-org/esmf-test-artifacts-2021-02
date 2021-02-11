@@ -134,13 +134,13 @@ tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=ConcurrentEnsemble NP=8 stest
 /project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 8 ./ESMF_ConcurrentEnsembleSTest 1> ./ESMF_ConcurrentEnsembleSTest.stdout 2>&1
 tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/system_tests/ESMF_ArrayRedistOpenMP
-/Library/Developer/CommandLineTools/usr/bin/make TNAME=ArrayRedistOpenMP NP=8 stest
+env OMP_WAIT_POLICY=passive /Library/Developer/CommandLineTools/usr/bin/make TNAME=ArrayRedistOpenMP NP=8 stest
 /project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 8 ./ESMF_ArrayRedistOpenMPSTest 1> ./ESMF_ArrayRedistOpenMPSTest.stdout 2>&1
 tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/system_tests/ESMF_ArrayRedistOpenACC
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=ArrayRedistOpenACC NP=8 stest
 /project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 8 ./ESMF_ArrayRedistOpenACCSTest 1> ./ESMF_ArrayRedistOpenACCSTest.stdout 2>&1
 tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/system_tests/ESMF_ArraySharedDeSSI
-/Library/Developer/CommandLineTools/usr/bin/make TNAME=ArraySharedDeSSI NP=6 stest
+env OMP_WAIT_POLICY=passive /Library/Developer/CommandLineTools/usr/bin/make TNAME=ArraySharedDeSSI NP=6 stest
 /project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpirun -np 6 ./ESMF_ArraySharedDeSSISTest 1> ./ESMF_ArraySharedDeSSISTest.stdout 2>&1
 tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/system_tests/ESMF_DirectCoupling
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=DirectCoupling NP=6 stest
@@ -218,4 +218,4 @@ The stdout files for the system_tests can be found at:
 
 Found 47 multi-processor system tests, 47 passed and 0 failed.
 
-Tue Feb  9 07:43:58 MST 2021
+Wed Feb 10 08:09:02 MST 2021
