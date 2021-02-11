@@ -15,9 +15,9 @@ Configured with: ../configure --prefix=/usr --mandir=/usr/share/man --infodir=/u
 Thread model: posix
 gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) 
 /work/noaa/da/mpotts/pgi_2019_mpich_g/scripts/version.pgf90: line 14: /pgf90: No such file or directory
-which: no mpiCC in (/apps/mpich-3.3.2/netcdf-4.7.4/bin:/apps/mpich-3.3.2/pnetcdf-1.12.1/bin:/apps/mpich-3.3.2/hdf5-1.10.6/bin:/apps/mpich-3.3.2/mpich-3.3.2/bin:/apps/pgi-2019/pgi-2019-19.9/linux86-64-llvm/2019/bin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/lib64/qt-3.3/bin:/apps/sbin:/apps/bin:/opt/slurm/bin:/opt/ibutils/bin)
-which: no mpiCC in (/apps/mpich-3.3.2/netcdf-4.7.4/bin:/apps/mpich-3.3.2/pnetcdf-1.12.1/bin:/apps/mpich-3.3.2/hdf5-1.10.6/bin:/apps/mpich-3.3.2/mpich-3.3.2/bin:/apps/pgi-2019/pgi-2019-19.9/linux86-64-llvm/2019/bin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/lib64/qt-3.3/bin:/apps/sbin:/apps/bin:/opt/slurm/bin:/opt/ibutils/bin)
-which: no mpiCC in (/apps/mpich-3.3.2/netcdf-4.7.4/bin:/apps/mpich-3.3.2/pnetcdf-1.12.1/bin:/apps/mpich-3.3.2/hdf5-1.10.6/bin:/apps/mpich-3.3.2/mpich-3.3.2/bin:/apps/pgi-2019/pgi-2019-19.9/linux86-64-llvm/2019/bin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/lib64/qt-3.3/bin:/apps/sbin:/apps/bin:/opt/slurm/bin:/opt/ibutils/bin)
+which: no mpiCC in (/apps/mpich-3.3.2/netcdf-4.7.4/bin:/apps/mpich-3.3.2/pnetcdf-1.12.1/bin:/apps/mpich-3.3.2/hdf5-1.10.6/bin:/apps/mpich-3.3.2/mpich-3.3.2/bin:/apps/pgi-2019/pgi-2019-19.9/linux86-64-llvm/2019/bin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/lib64/qt-3.3/bin:/apps/sbin:/apps/bin:/opt/slurm/bin)
+which: no mpiCC in (/apps/mpich-3.3.2/netcdf-4.7.4/bin:/apps/mpich-3.3.2/pnetcdf-1.12.1/bin:/apps/mpich-3.3.2/hdf5-1.10.6/bin:/apps/mpich-3.3.2/mpich-3.3.2/bin:/apps/pgi-2019/pgi-2019-19.9/linux86-64-llvm/2019/bin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/lib64/qt-3.3/bin:/apps/sbin:/apps/bin:/opt/slurm/bin)
+which: no mpiCC in (/apps/mpich-3.3.2/netcdf-4.7.4/bin:/apps/mpich-3.3.2/pnetcdf-1.12.1/bin:/apps/mpich-3.3.2/hdf5-1.10.6/bin:/apps/mpich-3.3.2/mpich-3.3.2/bin:/apps/pgi-2019/pgi-2019-19.9/linux86-64-llvm/2019/bin:/sbin:/usr/sbin:/bin:/usr/bin:/usr/lib64/qt-3.3/bin:/apps/sbin:/apps/bin:/opt/slurm/bin)
 /work/noaa/da/mpotts/pgi_2019_mpich_g/scripts/compiler.pgcxx: line 4: mpiCC: command not found
 /work/noaa/da/mpotts/pgi_2019_mpich_g/scripts/compiler.pgcxx: line 4: mpiCC: command not found
 /work/noaa/da/mpotts/pgi_2019_mpich_g/scripts/compiler.pgcxx: line 4: mpiCC: command not found
