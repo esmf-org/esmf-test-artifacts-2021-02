@@ -325,6 +325,8 @@ ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
+f951: Warning: Nonexistent include directory ‘/glade/scratch/mpotts/gfortran_9.1.0_openmpi_O/src/system_tests/ESMF_CompInFortranAndC’ [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory ‘/glade/scratch/mpotts/gfortran_9.1.0_openmpi_O/src/system_tests/ESMF_CompInFortranAndC’ [-Wmissing-include-dirs]
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
@@ -474,4 +476,3 @@ ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
-slurmstepd: error: _is_a_lwp: open() /proc/40922/status failed: No such file or directory
