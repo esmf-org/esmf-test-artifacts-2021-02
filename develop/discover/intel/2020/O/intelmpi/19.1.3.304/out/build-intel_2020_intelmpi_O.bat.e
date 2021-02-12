@@ -11,16 +11,16 @@ type ESMF_LogEntry
 type ESMF_Log
 -----^
 In file included from /usr/include/c++/4.8/backward/strstream(51),
+In file included from /usr/include/c++/4.8/backward/strstream(51),
+                 from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h(27),
                  from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h(27),
                  from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/Infrastructure/VM/src/ESMCI_VMKernel.C(13):
+                 from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/Infrastructure/VM/src/../include/ESMCI_VM.h(41),
+                 from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/Infrastructure/VM/src/ESMCI_VM.C(40):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
-In file included from /usr/include/c++/4.8/backward/strstream(51),
-                 from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h(27),
-                 from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/Infrastructure/VM/src/../include/ESMCI_VM.h(41),
-                 from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/Infrastructure/VM/src/ESMCI_VM.C(40):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -103,7 +103,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/include/ESMCI_VMKernel.h(27),
                  from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/include/ESMCI_VM.h(41),
                  from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/Infrastructure/Base/src/../include/ESMCI_Base.h(27),
-                 from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C(36):
+                 from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/Infrastructure/Base/src/ESMC_InfoCDef.C(26):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -112,7 +112,7 @@ In file included from /usr/include/c++/4.8/backward/strstream(51),
                  from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/include/ESMCI_VMKernel.h(27),
                  from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/include/ESMCI_VM.h(41),
                  from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/Infrastructure/Base/src/../include/ESMCI_Base.h(27),
-                 from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/Infrastructure/Base/src/ESMC_InfoCDef.C(26):
+                 from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C(36):
 /usr/include/c++/4.8/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -133,13 +133,22 @@ In file included from /gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_
       void ESMC_BaseDeleteInfo(void) {if (!infoalias) delete info;}
                                                              ^
 
-icpc: error #10186: getcwd() failed
-make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_Info.o] Error 1
-make[7]: *** [esmflib] Error 2
-make[6]: *** [tree_lib] Error 2
-make[5]: *** [tree] Error 1
-make[4]: *** [tree] Error 1
-make[3]: *** [tree] Error 1
-make[2]: *** [tree] Error 1
-make[1]: *** [build_libs] Error 2
-make: *** [lib] Error 2
+slurmstepd: error: *** JOB 42463521 ON borgq187 CANCELLED AT 2021-02-12T04:31:25 ***
+make[8]: *** Deleting file '/gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_Info.o'
+make[8]: *** [/gpfsm/dnb04/projects/p98/mpotts/esmf/intel_2020_intelmpi_O/obj/objO/Linux.intel.64.intelmpi.default/ESMCI_Info.o] Terminated
+make[7]: *** [esmflib] Terminated
+make[6]: *** [tree_lib] Terminated
+make[5]: *** [tree] Terminated
+make[4]: *** wait: No child processes.  Stop.
+make[4]: *** Waiting for unfinished jobs....
+make[4]: *** wait: No child processes.  Stop.
+make[3]: *** [tree] Terminated
+make[2]: *** wait: No child processes.  Stop.
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** wait: No child processes.  Stop.
+make[1]: *** wait: No child processes.  Stop.
+make[1]: *** Waiting for unfinished jobs....
+make[1]: *** wait: No child processes.  Stop.
+make: *** wait: No child processes.  Stop.
+make: *** Waiting for unfinished jobs....
+make: *** wait: No child processes.  Stop.
