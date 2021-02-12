@@ -434,6 +434,7 @@ Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
+slurmstepd: error: _is_a_lwp: open() /proc/239253/status failed: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
@@ -1196,160 +1197,160 @@ ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
-ESMF_FieldCreateGetUTest.F90:7335:23:
+ESMF_FieldCreateGetUTest.F90:7364:23:
 
- 7335 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
+ 7364 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
       |                       1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:6892:18:
+ESMF_FieldCreateGetUTest.F90:6921:18:
 
- 6892 |                if(farray1(ii,ij) .ne. n ) localrc = ESMF_FAILURE
+ 6921 |                if(farray1(ii,ij) .ne. n ) localrc = ESMF_FAILURE
       |                  1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:6673:19:
+ESMF_FieldCreateGetUTest.F90:6702:19:
 
- 6673 |                 if(farray1(ii,ij,ik) .ne. n ) localrc = ESMF_FAILURE
+ 6702 |                 if(farray1(ii,ij,ik) .ne. n ) localrc = ESMF_FAILURE
       |                   1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:6421:19:
+ESMF_FieldCreateGetUTest.F90:6450:19:
 
- 6421 |                 if(farray1(ii,ij,ik) .ne. n ) localrc = ESMF_FAILURE
+ 6450 |                 if(farray1(ii,ij,ik) .ne. n ) localrc = ESMF_FAILURE
       |                   1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:6182:23:
+ESMF_FieldCreateGetUTest.F90:6211:23:
 
- 6182 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
+ 6211 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
       |                       1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:5911:19:
+ESMF_FieldCreateGetUTest.F90:5940:19:
 
- 5911 |                 if(farray1(ii,ij,ik) .ne. n ) localrc = ESMF_FAILURE
+ 5940 |                 if(farray1(ii,ij,ik) .ne. n ) localrc = ESMF_FAILURE
       |                   1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:5681:23:
+ESMF_FieldCreateGetUTest.F90:5710:23:
 
- 5681 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
+ 5710 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
       |                       1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:5439:23:
+ESMF_FieldCreateGetUTest.F90:5468:23:
 
- 5439 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
+ 5468 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
       |                       1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:5156:23:
+ESMF_FieldCreateGetUTest.F90:5185:23:
 
- 5156 |                     if(farray1(ii,ij,ik,il,im,io,ip) /= n) then
+ 5185 |                     if(farray1(ii,ij,ik,il,im,io,ip) /= n) then
       |                       1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:5199:23:
+ESMF_FieldCreateGetUTest.F90:5228:23:
 
- 5199 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
+ 5228 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
       |                       1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:4965:23:
+ESMF_FieldCreateGetUTest.F90:4994:23:
 
- 4965 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
+ 4994 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
       |                       1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:4729:23:
+ESMF_FieldCreateGetUTest.F90:4758:23:
 
- 4729 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
+ 4758 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
       |                       1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:4505:23:
+ESMF_FieldCreateGetUTest.F90:4534:23:
 
- 4505 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
+ 4534 |                     if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
       |                       1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
-ESMF_FieldRegridCsrvUTest.F90:17741:9:
+ESMF_FieldRegridCsrvUTest.F90:17761:9:
 
-17741 |      if (srcFracPtr(i1) .ne. 0.0) correct=.false.
+17761 |      if (srcFracPtr(i1) .ne. 0.0) correct=.false.
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:17754:9:
+ESMF_FieldRegridCsrvUTest.F90:17774:9:
 
-17754 |      if (dstFracPtr(i1) .ne. 0.0) correct=.false.
+17774 |      if (dstFracPtr(i1) .ne. 0.0) correct=.false.
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:16791:9:
+ESMF_FieldRegridCsrvUTest.F90:16811:9:
 
-16791 |      if (dstFracPtr(i1) .ne. 0.0) then
+16811 |      if (dstFracPtr(i1) .ne. 0.0) then
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:16797:9:
+ESMF_FieldRegridCsrvUTest.F90:16817:9:
 
-16797 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
+16817 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:15119:12:
+ESMF_FieldRegridCsrvUTest.F90:15139:12:
 
-15119 |         if (xfptr(i1,i2) .ne. 0.0) then
+15139 |         if (xfptr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:13515:9:
+ESMF_FieldRegridCsrvUTest.F90:13535:9:
 
-13515 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
+13535 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:12409:9:
+ESMF_FieldRegridCsrvUTest.F90:12429:9:
 
-12409 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
+12429 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:11395:9:
+ESMF_FieldRegridCsrvUTest.F90:11415:9:
 
-11395 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
+11415 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:10401:9:
+ESMF_FieldRegridCsrvUTest.F90:10421:9:
 
-10401 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
+10421 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:9406:9:
+ESMF_FieldRegridCsrvUTest.F90:9426:9:
 
- 9406 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
+ 9426 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:8263:13:
+ESMF_FieldRegridCsrvUTest.F90:8283:13:
 
- 8263 |          if (xfarrayPtr(i1,i2) .ne. 0.0) then
+ 8283 |          if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:7505:9:
+ESMF_FieldRegridCsrvUTest.F90:7525:9:
 
- 7505 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
+ 7525 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:5690:12:
+ESMF_FieldRegridCsrvUTest.F90:5710:12:
 
- 5690 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+ 5710 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:4838:9:
+ESMF_FieldRegridCsrvUTest.F90:4858:9:
 
- 4838 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
+ 4858 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:3730:12:
+ESMF_FieldRegridCsrvUTest.F90:3750:12:
 
- 3730 |         if (xfptr(i1,i2,i3) .ne. 0.0) then
+ 3750 |         if (xfptr(i1,i2,i3) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:2870:12:
+ESMF_FieldRegridCsrvUTest.F90:2890:12:
 
- 2870 |         if (xfptr(i1,i2) .ne. 0.0) then
+ 2890 |         if (xfptr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:2096:12:
+ESMF_FieldRegridCsrvUTest.F90:2116:12:
 
- 2096 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+ 2116 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:1343:12:
+ESMF_FieldRegridCsrvUTest.F90:1363:12:
 
- 1343 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+ 1363 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
@@ -1429,194 +1430,194 @@ ESMF_FieldRegridCsrv2ndUTest.F90:2229:9:
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
-ESMF_FieldRegridUTest.F90:43147:12:
+ESMF_FieldRegridUTest.F90:43148:12:
 
-43147 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+43148 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:42627:12:
+ESMF_FieldRegridUTest.F90:42628:12:
 
-42627 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+42628 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:40492:12:
+ESMF_FieldRegridUTest.F90:40493:12:
 
-40492 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+40493 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:39996:9:
+ESMF_FieldRegridUTest.F90:39997:9:
 
-39996 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
+39997 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:39580:9:
+ESMF_FieldRegridUTest.F90:39581:9:
 
-39580 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
+39581 |      if (xdstFarrayPtr(i1) .ne. 0.0) then
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:38388:12:
+ESMF_FieldRegridUTest.F90:38389:12:
 
-38388 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+38389 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:37970:12:
+ESMF_FieldRegridUTest.F90:37971:12:
 
-37970 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+37971 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:37566:10:
+ESMF_FieldRegridUTest.F90:37567:10:
 
-37566 |       if (xfarrayPtr1D(i1) .ne. 0.0) then
+37567 |       if (xfarrayPtr1D(i1) .ne. 0.0) then
       |          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:35397:12:
+ESMF_FieldRegridUTest.F90:35398:12:
 
-35397 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+35398 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:34925:12:
+ESMF_FieldRegridUTest.F90:34926:12:
 
-34925 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+34926 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:33720:32:
+ESMF_FieldRegridUTest.F90:33721:32:
 
-33720 |         farrayPtrXC_R4(i1,i2) = REAL(i1-1)*src_dx
+33721 |         farrayPtrXC_R4(i1,i2) = REAL(i1-1)*src_dx
       |                                1
 Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1) [-Wconversion]
-ESMF_FieldRegridUTest.F90:33722:32:
+ESMF_FieldRegridUTest.F90:33723:32:
 
-33722 |         farrayPtrYC_R4(i1,i2) = -90. + (REAL(i2-1)*src_dy + 0.5*src_dy)
+33723 |         farrayPtrYC_R4(i1,i2) = -90. + (REAL(i2-1)*src_dy + 0.5*src_dy)
       |                                1
 Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1) [-Wconversion]
-ESMF_FieldRegridUTest.F90:33870:12:
+ESMF_FieldRegridUTest.F90:33871:12:
 
-33870 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+33871 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:32641:12:
+ESMF_FieldRegridUTest.F90:32642:12:
 
-32641 |         if (xdstPtr(i1,i2) .ne. 0.0) then
+32642 |         if (xdstPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:29078:12:
+ESMF_FieldRegridUTest.F90:29079:12:
 
-29078 |         if (xdstPtr(i1,i2) .ne. 0.0) then
+29079 |         if (xdstPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:26958:12:
+ESMF_FieldRegridUTest.F90:26959:12:
 
-26958 |         if (xfarrayPtr(i1,i2,i3) .ne. 0.0) then
+26959 |         if (xfarrayPtr(i1,i2,i3) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:26450:12:
+ESMF_FieldRegridUTest.F90:26451:12:
 
-26450 |         if (xfarrayPtr(i1,i2,i3) .ne. 0.0) then
+26451 |         if (xfarrayPtr(i1,i2,i3) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:25943:12:
+ESMF_FieldRegridUTest.F90:25944:12:
 
-25943 |         if (xfarrayPtr(i1,i2,i3) .ne. 0.0) then
+25944 |         if (xfarrayPtr(i1,i2,i3) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:25443:12:
+ESMF_FieldRegridUTest.F90:25444:12:
 
-25443 |         if (xfarrayPtr(i1,i2,i3) .ne. 0.0) then
+25444 |         if (xfarrayPtr(i1,i2,i3) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:24727:12:
+ESMF_FieldRegridUTest.F90:24728:12:
 
-24727 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+24728 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:24004:9:
+ESMF_FieldRegridUTest.F90:24005:9:
 
-24004 |      if (xfarrayPtr1D(i1) .ne. 0.0) then
+24005 |      if (xfarrayPtr1D(i1) .ne. 0.0) then
       |         1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:22071:12:
+ESMF_FieldRegridUTest.F90:22072:12:
 
-22071 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+22072 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:20291:13:
-
-20291 |   dst_minx = 0.5
-      |             1
-Warning: Change of value in conversion from ‘REAL(4)’ to ‘INTEGER(4)’ at (1) [-Wconversion]
 ESMF_FieldRegridUTest.F90:20292:13:
 
-20292 |   dst_miny = 0.5
+20292 |   dst_minx = 0.5
       |             1
 Warning: Change of value in conversion from ‘REAL(4)’ to ‘INTEGER(4)’ at (1) [-Wconversion]
-ESMF_FieldRegridUTest.F90:20294:13:
+ESMF_FieldRegridUTest.F90:20293:13:
 
-20294 |   dst_maxx = 20.5
+20293 |   dst_miny = 0.5
       |             1
 Warning: Change of value in conversion from ‘REAL(4)’ to ‘INTEGER(4)’ at (1) [-Wconversion]
 ESMF_FieldRegridUTest.F90:20295:13:
 
-20295 |   dst_maxy = 9.5
+20295 |   dst_maxx = 20.5
       |             1
 Warning: Change of value in conversion from ‘REAL(4)’ to ‘INTEGER(4)’ at (1) [-Wconversion]
-ESMF_FieldRegridUTest.F90:18194:12:
+ESMF_FieldRegridUTest.F90:20296:13:
 
-18194 |         if (xdstPtr(i1,i2) .ne. 0.0) then
+20296 |   dst_maxy = 9.5
+      |             1
+Warning: Change of value in conversion from ‘REAL(4)’ to ‘INTEGER(4)’ at (1) [-Wconversion]
+ESMF_FieldRegridUTest.F90:18195:12:
+
+18195 |         if (xdstPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:17800:12:
+ESMF_FieldRegridUTest.F90:17801:12:
 
-17800 |         if (xdstPtr(i1,i2) .ne. 0.0) then
+17801 |         if (xdstPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:17406:12:
+ESMF_FieldRegridUTest.F90:17407:12:
 
-17406 |         if (xdstPtr(i1,i2) .ne. 0.0) then
+17407 |         if (xdstPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:16508:12:
+ESMF_FieldRegridUTest.F90:16509:12:
 
-16508 |         if (xdstXtraPtr(i1,i2,i3) .ne. 0.0) then
+16509 |         if (xdstXtraPtr(i1,i2,i3) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:15006:12:
+ESMF_FieldRegridUTest.F90:15007:12:
 
-15006 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+15007 |         if (xfarrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:5464:14:
+ESMF_FieldRegridUTest.F90:5465:14:
 
- 5464 |           if (farrayPtr(i1,i2) /= -1000) then
+ 5465 |           if (farrayPtr(i1,i2) /= -1000) then
       |              1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:5051:14:
+ESMF_FieldRegridUTest.F90:5052:14:
 
- 5051 |           if (farrayPtr(i1,i2) /= -1000) then
+ 5052 |           if (farrayPtr(i1,i2) /= -1000) then
       |              1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:5059:14:
+ESMF_FieldRegridUTest.F90:5060:14:
 
- 5059 |           if (farrayPtrPatch(i1,i2) /= -1000) then
+ 5060 |           if (farrayPtrPatch(i1,i2) /= -1000) then
       |              1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:3269:12:
+ESMF_FieldRegridUTest.F90:3270:12:
 
- 3269 |         if (farrayPtr(i1,i2,i3) .ne. 0.0) then
+ 3270 |         if (farrayPtr(i1,i2,i3) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:2797:12:
+ESMF_FieldRegridUTest.F90:2798:12:
 
- 2797 |         if (farrayPtr(i1,i2,i3) .ne. 0.0) then
+ 2798 |         if (farrayPtr(i1,i2,i3) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:2323:12:
+ESMF_FieldRegridUTest.F90:2324:12:
 
- 2323 |         if (farrayPtr(i1,i2,i3) .ne. 0.0) then
+ 2324 |         if (farrayPtr(i1,i2,i3) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:1851:12:
+ESMF_FieldRegridUTest.F90:1852:12:
 
- 1851 |         if (farrayPtr(i1,i2) .ne. 0.0) then
+ 1852 |         if (farrayPtr(i1,i2) .ne. 0.0) then
       |            1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
@@ -2009,6 +2010,8 @@ ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
+f951: Warning: Nonexistent include directory ‘/glade/scratch/mpotts/gfortran_9.1.0_openmpi_g/src/system_tests/ESMF_CompInFortranAndC’ [-Wmissing-include-dirs]
+f951: Warning: Nonexistent include directory ‘/glade/scratch/mpotts/gfortran_9.1.0_openmpi_g/src/system_tests/ESMF_CompInFortranAndC’ [-Wmissing-include-dirs]
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
