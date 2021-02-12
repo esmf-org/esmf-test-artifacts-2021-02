@@ -634,6 +634,13 @@ Warning: Equality comparison for REAL(8) at (1)
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/esmftrc.c:963:17: warning: unused parameter ‘ep_baseid’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/esmftrc.c:963:17: warning: unused parameter ‘ep_method’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/esmftrc.c:963:17: warning: unused parameter ‘ep_phase’ [-Wunused-parameter]
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/ESMCI_TraceClock.C:31:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/esmftrc.c:1108:17: warning: unused parameter ‘ep_regionid’ [-Wunused-parameter]
  static uint32_t _get_event_size_default_regionid_enter(
                  ^
@@ -648,13 +655,6 @@ Warning: Equality comparison for REAL(8) at (1)
  static uint32_t _get_event_size_default_mem(
                  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/esmftrc.c:1401:17: warning: unused parameter ‘ep_physMem’ [-Wunused-parameter]
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/ESMCI_TraceClock.C:31:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/esmftrc.c:1493:17: warning: unused parameter ‘ep_year’ [-Wunused-parameter]
  static uint32_t _get_event_size_default_clk(
                  ^
@@ -667,6 +667,16 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
  static uint32_t _get_event_size_default_mpiwait(
                  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/esmftrc.c:1629:17: warning: unused parameter ‘ep_time’ [-Wunused-parameter]
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Comp.h:32,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/ESMCI_TraceWrap.C:13:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/esmftrc.c:1721:17: warning: unused parameter ‘ep_id’ [-Wunused-parameter]
  static uint32_t _get_event_size_default_region_profile(
                  ^
@@ -681,27 +691,17 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/ESMCI_Trace.C:40:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Comp.h:32,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/ESMCI_TraceWrap.C:13:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Comp.h:32,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/ESMCI_TraceMetadata.C:17:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Trace/src/ESMCI_Trace.C:40:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -884,26 +884,26 @@ Warning: Unused parameter 'vfactorlist' declared at (1)
        int Time::readRestart(
            ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Time.C:1043:11: warning: unused parameter ‘name’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1476:14: warning: unused parameter ‘nameLen’ [-Wunused-parameter]
-       Clock *ESMCI_ClockReadRestart(
-              ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1476:14: warning: unused parameter ‘name’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: At global scope:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1503:14: warning: unused parameter ‘nameLen’ [-Wunused-parameter]
        Alarm *ESMCI_alarmReadRestart(
               ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1503:14: warning: unused parameter ‘name’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1476:14: warning: unused parameter ‘nameLen’ [-Wunused-parameter]
+       Clock *ESMCI_ClockReadRestart(
+              ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1476:14: warning: unused parameter ‘name’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1578:11: warning: unused parameter ‘options’ [-Wunused-parameter]
        int Alarm::validate(
-           ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1549:11: warning: unused parameter ‘options’ [-Wunused-parameter]
-       int Clock::validate(
            ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::print(const char*) const’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1671:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
                                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1549:11: warning: unused parameter ‘options’ [-Wunused-parameter]
+       int Clock::validate(
+           ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::print(const char*) const’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1759:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
@@ -914,20 +914,20 @@ Warning: Unused parameter 'vfactorlist' declared at (1)
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:1989:20: warning: unused parameter ‘multiplier’ [-Wunused-parameter]
        TimeInterval TimeInterval::operator*(
                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:2774:11: warning: unused parameter ‘nameLen’ [-Wunused-parameter]
-       int TimeInterval::readRestart(
-           ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:2774:11: warning: unused parameter ‘name’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2700:17: warning: unused parameter ‘nameLen’ [-Wunused-parameter]
        Calendar *ESMCI_CalendarReadRestart(
                  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2700:17: warning: unused parameter ‘name’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2700:17: warning: unused parameter ‘rc’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:2837:11: warning: unused parameter ‘options’ [-Wunused-parameter]
-       int TimeInterval::validate(
-           ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C:2769:11: warning: unused parameter ‘options’ [-Wunused-parameter]
        int Calendar::validate(
+           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:2774:11: warning: unused parameter ‘nameLen’ [-Wunused-parameter]
+       int TimeInterval::readRestart(
+           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:2774:11: warning: unused parameter ‘name’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:2837:11: warning: unused parameter ‘options’ [-Wunused-parameter]
+       int TimeInterval::validate(
            ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMC_Util.h:23:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_F90Interface.h:40,
@@ -980,23 +980,8 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
  #define FTN_X(func) func##_
                      ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMC_Util.h:23:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_F90Interface.h:40,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_TimeInterval_F.C:22:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_TimeInterval_F.C:233:19: warning: unused parameter ‘tempTime_l’ [-Wunused-parameter]
-        void FTN_X(c_esmc_timeintervalgetdur)(TimeInterval *ptr,
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
- #define FTN_X(func) func##_
-                     ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_Calendar_F.C:373:19: warning: unused parameter ‘name_l’ [-Wunused-parameter]
         void FTN_X(c_esmc_calendarreadrestart)(Calendar **ptr, int *nameLen,
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
- #define FTN_X(func) func##_
-                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_TimeInterval_F.C:233:19: warning: unused parameter ‘tempTimeISOFrac_l’ [-Wunused-parameter]
-        void FTN_X(c_esmc_timeintervalgetdur)(TimeInterval *ptr,
                    ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
  #define FTN_X(func) func##_
@@ -1007,14 +992,29 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
  #define FTN_X(func) func##_
                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_TimeInterval_F.C:300:19: warning: unused parameter ‘tempTime_l’ [-Wunused-parameter]
-        void FTN_X(c_esmc_timeintervalgetdurstart)(TimeInterval *ptr,
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMC_Util.h:23:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_F90Interface.h:40,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_TimeInterval_F.C:22:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_TimeInterval_F.C:233:19: warning: unused parameter ‘tempTime_l’ [-Wunused-parameter]
+        void FTN_X(c_esmc_timeintervalgetdur)(TimeInterval *ptr,
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
+ #define FTN_X(func) func##_
+                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_TimeInterval_F.C:233:19: warning: unused parameter ‘tempTimeISOFrac_l’ [-Wunused-parameter]
+        void FTN_X(c_esmc_timeintervalgetdur)(TimeInterval *ptr,
                    ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
  #define FTN_X(func) func##_
                      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_Calendar_F.C:401:19: warning: unused parameter ‘options_l’ [-Wunused-parameter]
         void FTN_X(c_esmc_calendarprint)(Calendar **ptr, const char *options,
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
+ #define FTN_X(func) func##_
+                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_TimeInterval_F.C:300:19: warning: unused parameter ‘tempTime_l’ [-Wunused-parameter]
+        void FTN_X(c_esmc_timeintervalgetdurstart)(TimeInterval *ptr,
                    ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
  #define FTN_X(func) func##_
@@ -1082,29 +1082,17 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
  #define FTN_X(func) func##_
                      ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMC_Util.h:23:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_F90Interface.h:40,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_Alarm_F.C:22:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_Alarm_F.C:41:19: warning: unused parameter ‘name_l’ [-Wunused-parameter]
-        void FTN_X(c_esmc_alarmcreatenew)(Alarm **ptr, int *nameLen,
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
- #define FTN_X(func) func##_
-                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_Alarm_F.C:77:19: warning: unused parameter ‘name_l’ [-Wunused-parameter]
-        void FTN_X(c_esmc_alarmset)(Alarm **ptr, int *nameLen,
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
- #define FTN_X(func) func##_
-                     ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_TimeInterval_F.C:639:19: warning: unused parameter ‘name_l’ [-Wunused-parameter]
         void FTN_X(c_esmc_timeintervalreadrestart)(TimeInterval *ptr,
                    ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
  #define FTN_X(func) func##_
                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_Alarm_F.C:103:19: warning: unused parameter ‘tempName_l’ [-Wunused-parameter]
-        void FTN_X(c_esmc_alarmget)(Alarm **ptr, int *nameLen,
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMC_Util.h:23:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_F90Interface.h:40,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_Alarm_F.C:22:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_Alarm_F.C:41:19: warning: unused parameter ‘name_l’ [-Wunused-parameter]
+        void FTN_X(c_esmc_alarmcreatenew)(Alarm **ptr, int *nameLen,
                    ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
  #define FTN_X(func) func##_
@@ -1115,8 +1103,20 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
  #define FTN_X(func) func##_
                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_Alarm_F.C:77:19: warning: unused parameter ‘name_l’ [-Wunused-parameter]
+        void FTN_X(c_esmc_alarmset)(Alarm **ptr, int *nameLen,
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
+ #define FTN_X(func) func##_
+                     ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_TimeInterval_F.C:668:19: warning: unused parameter ‘options_l’ [-Wunused-parameter]
         void FTN_X(c_esmc_timeintervalprint)(TimeInterval *ptr,
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
+ #define FTN_X(func) func##_
+                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMCI_Alarm_F.C:103:19: warning: unused parameter ‘tempName_l’ [-Wunused-parameter]
+        void FTN_X(c_esmc_alarmget)(Alarm **ptr, int *nameLen,
                    ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
  #define FTN_X(func) func##_
@@ -1368,20 +1368,20 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMF_Alarm.F90:819:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
    function ESMF_AlarmIsCreated(alarm, keywordEnforcer, rc)
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMF_Alarm.F90:662:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-       subroutine ESMF_AlarmGet(alarm, keywordEnforcer, &
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMF_Clock.F90:1925:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
        subroutine ESMF_ClockWriteRestart(clock, keywordEnforcer, rc)
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMF_Alarm.F90:662:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+       subroutine ESMF_AlarmGet(alarm, keywordEnforcer, &
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMF_Alarm.F90:612:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
        subroutine ESMF_AlarmEnable(alarm, keywordEnforcer, rc)
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMF_Alarm.F90:562:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-       subroutine ESMF_AlarmDisable(alarm, keywordEnforcer, rc)
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMF_Clock.F90:1869:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
        subroutine ESMF_ClockValidate(clock, keywordEnforcer, rc)
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMF_Alarm.F90:562:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+       subroutine ESMF_AlarmDisable(alarm, keywordEnforcer, rc)
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMF_Alarm.F90:502:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
        subroutine ESMF_AlarmDestroy(alarm, keywordEnforcer, rc)
@@ -1392,11 +1392,11 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMF_Alarm.F90:441:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
        function ESMF_AlarmCreateCopy(alarm, keywordEnforcer, rc)
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMF_Alarm.F90:298:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-       function ESMF_AlarmCreateNew(clock, keywordEnforcer, &
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMF_Clock.F90:1760:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
        subroutine ESMF_ClockStopTimeEnable(clock, keywordEnforcer, stopTime, rc)
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMF_Alarm.F90:298:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+       function ESMF_AlarmCreateNew(clock, keywordEnforcer, &
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/TimeMgr/interface/ESMF_Clock.F90:1708:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
        subroutine ESMF_ClockStopTimeDisable(clock, keywordEnforcer, rc)
@@ -4816,15 +4816,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:4211:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayGather7Dr4(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:4112:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather7Di8(array, farray, rootPet, & 
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:4013:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather7Di4(array, farray, rootPet, & 
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3914:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather6Dr8(array, farray, rootPet, & 
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4406:0: warning: unused parameter ‘array’ [-Wunused-parameter]
    subroutine ESMF_ArrayScatterNB(array, larray, rootPET, de, vm, rc)
  ^
@@ -4832,9 +4823,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4406:0: warning: unused parameter ‘rootpet’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4406:0: warning: unused parameter ‘de’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4406:0: warning: unused parameter ‘vm’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3815:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather6Dr4(array, farray, rootPet, & 
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4344:0: warning: unused parameter ‘array’ [-Wunused-parameter]
    subroutine ESMF_ArrayScatterNBRoot(array, larray, rootPET, commhandle, &
  ^
@@ -4842,155 +4830,167 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4344:0: warning: unused parameter ‘rootpet’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4344:0: warning: unused parameter ‘commhandle’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4344:0: warning: unused parameter ‘vm’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:4112:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather7Di8(array, farray, rootPet, & 
+ ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4290:0: warning: unused parameter ‘array’ [-Wunused-parameter]
    subroutine ESMF_ArrayScatterB(array, larray, rootPET, vm, rc)
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4290:0: warning: unused parameter ‘larray’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4290:0: warning: unused parameter ‘rootpet’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4290:0: warning: unused parameter ‘vm’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3716:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather6Di8(array, farray, rootPet, & 
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4249:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
    subroutine ESMF_ArrayScatterNotRoot(array, rootPet, keywordEnforcer, tile, &
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3617:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather6Di4(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:4013:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather7Di4(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4148:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter7Dr8(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3517:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather5Dr8(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3914:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather6Dr8(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:4053:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter7Dr4(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3418:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather5Dr4(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3815:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather6Dr4(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:3958:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter7Di8(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3318:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather5Di8(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3716:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather6Di8(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:3863:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter7Di4(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3218:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather5Di4(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3617:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather6Di4(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:3768:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter6Dr8(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3118:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather4Dr8(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3517:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather5Dr8(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:3673:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter6Dr4(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3019:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather4Dr4(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3418:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather5Dr4(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:3578:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter6Di8(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2919:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather4Di8(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3318:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather5Di8(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:3483:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter6Di4(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2819:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather4Di4(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3218:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather5Di4(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:3387:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter5Dr8(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2720:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather3Dr8(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3118:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather4Dr8(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:3292:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter5Dr4(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2621:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather3Dr4(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:3019:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather4Dr4(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:3196:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter5Di8(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2521:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather3Di8(array, farray, rootPet, & 
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:3100:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter5Di4(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2421:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather3Di4(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2919:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather4Di8(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:3004:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter4Dr8(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2322:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather2Dr8(array, farray, rootPet, & 
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2223:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather2Dr4(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2819:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather4Di4(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:2909:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter4Dr4(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2123:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather2Di8(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2720:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather3Dr8(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:2813:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter4Di8(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2023:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather2Di4(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2621:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather3Dr4(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:2717:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter4Di4(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:1924:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather1Dr8(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2521:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather3Di8(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:2622:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter3Dr8(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:1825:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather1Dr4(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2421:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather3Di4(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:2527:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter3Dr4(array, farray, rootPet, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:1725:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather1Di8(array, farray, rootPet, & 
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:1625:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_ArrayGather1Di4(array, farray, rootPet, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2322:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather2Dr8(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:2431:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter3Di8(array, farray, rootPet, & 
  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2223:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather2Dr4(array, farray, rootPet, & 
+ ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:2335:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter3Di4(array, farray, rootPet, & 
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2123:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather2Di8(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:2240:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter2Dr8(array, farray, rootPet, & 
  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:2023:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather2Di4(array, farray, rootPet, & 
+ ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:2145:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter2Dr4(array, farray, rootPet, & 
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:1924:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather1Dr8(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:2049:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter2Di8(array, farray, rootPet, & 
  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:1825:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather1Dr4(array, farray, rootPet, & 
+ ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:1953:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter2Di4(array, farray, rootPet, & 
  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:1725:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather1Di8(array, farray, rootPet, & 
+ ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:1858:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter1Dr8(array, farray, rootPet, & 
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayGather.F90:1625:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_ArrayGather1Di4(array, farray, rootPet, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Array/interface/ESMF_ArrayScatter.F90:1763:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_ArrayScatter1Dr4(array, farray, rootPet, & 
@@ -5263,8 +5263,8 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/src/../include/ESMCI_IO_NetCDF.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C:24:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/src/../include/ESMCI_IO_XML.h:46,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C:41:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -5299,8 +5299,8 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/src/../include/ESMCI_IO_XML.h:46,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C:41:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/src/../include/ESMCI_IO_NetCDF.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C:24:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -5331,25 +5331,9 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMCI_IO_F.C:23:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/../include/ESMCI_IO_NetCDF.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMCI_IO_NetCDF_F.C:21:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/../include/ESMCI_IO_XML.h:46,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMCI_IO_XML_F.C:21:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -5368,6 +5352,22 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/../include/ESMCI_IO_Scrip.h:32,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMC_IO_Scrip.C:20:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMCI_IO_F.C:23:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/../include/ESMCI_IO_XML.h:46,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMCI_IO_XML_F.C:21:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -5497,52 +5497,26 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
     integer, parameter :: nf90_noerror = 0
                                       1
 Warning: Unused parameter 'nf90_noerror' declared at (1)
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1156.38:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:2226:0: warning: unused parameter ‘ncstatus’ [-Wunused-parameter]
  function CDFCheckError (ncStatus, module, fileName, lineNo, errmsg, rc)
  ^
-
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:2226:0: warning: unused parameter ‘module’ [-Wunused-parameter]
-    integer, parameter :: nf90_noerror = 0
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:2226:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
-                                      1
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:2226:0: warning: unused parameter ‘lineno’ [-Wunused-parameter]
-Warning: Unused parameter 'nf90_noerror' declared at (1)
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:2226:0: warning: unused parameter ‘errmsg’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1145:0: warning: unused parameter ‘ncstatus’ [-Wunused-parameter]
- function CDFCheckError (ncStatus, module, fileName, lineNo, errmsg, rc)
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:2071:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
  subroutine ESMF_UGridGetCoords (filename, meshid, coords,  &
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1145:0: warning: unused parameter ‘module’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:2071:0: warning: unused parameter ‘meshid’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1145:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:2071:0: warning: unused parameter ‘coords’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1145:0: warning: unused parameter ‘lineno’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:2071:0: warning: unused parameter ‘start’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1145:0: warning: unused parameter ‘errmsg’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:2071:0: warning: unused parameter ‘count’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:2071:0: warning: unused parameter ‘centerflag’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1016.38:
-
-    integer, parameter :: nf90_noerror = 0
-                                      1
-Warning: Unused parameter 'nf90_noerror' declared at (1)
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:1841.38:
 
     integer, parameter :: nf90_noerror = 0
                                       1
 Warning: Unused parameter 'nf90_noerror' declared at (1)
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1000:0: warning: unused parameter ‘grid_filename’ [-Wunused-parameter]
-   subroutine ESMF_GridspecGetVarByName(grid_filename, var_name, dimids,  &
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1000:0: warning: unused parameter ‘var_name’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1000:0: warning: unused parameter ‘dimids’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1000:0: warning: unused parameter ‘var_buffer’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1000:0: warning: unused parameter ‘missing_value’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1000:0: warning: unused parameter ‘start’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1000:0: warning: unused parameter ‘count’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:1808:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
  subroutine ESMF_GetNodeFromUGridFile (filename, meshname, nodeCoords,  &
  ^
@@ -5556,16 +5530,6 @@ Warning: Unused parameter 'nf90_noerror' declared at (1)
     integer, parameter :: nf90_noerror = 0
                                       1
 Warning: Unused parameter 'nf90_noerror' declared at (1)
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘grid_filename’ [-Wunused-parameter]
-   subroutine ESMF_GridspecGetVar2DR4(grid_filename, varids, loncoord, latcoord, &
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘varids’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘loncoord’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘latcoord’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘cornerlon’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘cornerlat’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘start’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘count’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:1599:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
  subroutine ESMF_GetElemFromUGridFile (filename, meshname, elmtConn, &
  ^
@@ -5578,32 +5542,14 @@ Warning: Unused parameter 'nf90_noerror' declared at (1)
     integer, parameter :: nf90_noerror = 0
                                       1
 Warning: Unused parameter 'nf90_noerror' declared at (1)
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘grid_filename’ [-Wunused-parameter]
-   subroutine ESMF_GridspecGetVar2D(grid_filename, varids, loncoord, latcoord, &
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘varids’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘loncoord’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘latcoord’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘cornerlon’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘cornerlat’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘start’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘count’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:1239:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
  subroutine ESMF_GetMesh3DFromUGrid (filename, ncid, meshid, nodeCoords, elmtConn, &
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:492:0: warning: unused parameter ‘grid_filename’ [-Wunused-parameter]
-   subroutine ESMF_GridspecGetVar1DR4(grid_filename, varids, loncoord, latcoord, &
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:1239:0: warning: unused parameter ‘ncid’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:492:0: warning: unused parameter ‘varids’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:1239:0: warning: unused parameter ‘meshid’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:492:0: warning: unused parameter ‘loncoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:1239:0: warning: unused parameter ‘nodecoords’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:492:0: warning: unused parameter ‘latcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:1239:0: warning: unused parameter ‘elmtconn’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:492:0: warning: unused parameter ‘cornerlon’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:1239:0: warning: unused parameter ‘elmtnums’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:492:0: warning: unused parameter ‘cornerlat’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:1239:0: warning: unused parameter ‘startelmt’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:1239:0: warning: unused parameter ‘facecoords’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:906.38:
@@ -5611,24 +5557,16 @@ Warning: Unused parameter 'nf90_noerror' declared at (1)
     integer, parameter :: nf90_noerror = 0
                                       1
 Warning: Unused parameter 'nf90_noerror' declared at (1)
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:360:0: warning: unused parameter ‘grid_filename’ [-Wunused-parameter]
-   subroutine ESMF_GridspecGetVar1D(grid_filename, varids, loncoord, latcoord, &
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:360:0: warning: unused parameter ‘varids’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:360:0: warning: unused parameter ‘loncoord’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:360:0: warning: unused parameter ‘latcoord’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:360:0: warning: unused parameter ‘cornerlon’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:360:0: warning: unused parameter ‘cornerlat’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:110.38:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1156.38:
 
+    integer, parameter :: nf90_noerror = 0
+                                      1
+Warning: Unused parameter 'nf90_noerror' declared at (1)
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:875:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
  subroutine ESMF_GetMesh2DFromUGrid (filename, ncid, meshid, nodeCoords, elmtConn, &
  ^
-    integer, parameter :: nf90_noerror = 0
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:875:0: warning: unused parameter ‘ncid’ [-Wunused-parameter]
-                                      1
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:875:0: warning: unused parameter ‘meshid’ [-Wunused-parameter]
-Warning: Unused parameter 'nf90_noerror' declared at (1)
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:875:0: warning: unused parameter ‘nodecoords’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:875:0: warning: unused parameter ‘elmtconn’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:875:0: warning: unused parameter ‘elmtnums’ [-Wunused-parameter]
@@ -5640,13 +5578,18 @@ Warning: Unused parameter 'nf90_noerror' declared at (1)
     integer, parameter :: nf90_noerror = 0
                                       1
 Warning: Unused parameter 'nf90_noerror' declared at (1)
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:83:0: warning: unused parameter ‘grid_filename’ [-Wunused-parameter]
-   subroutine ESMF_GridspecInq(grid_filename, ndims, grid_dims, coord_names, &
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1145:0: warning: unused parameter ‘ncstatus’ [-Wunused-parameter]
+ function CDFCheckError (ncStatus, module, fileName, lineNo, errmsg, rc)
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:83:0: warning: unused parameter ‘is3d’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:83:0: warning: unused parameter ‘dimids’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:83:0: warning: unused parameter ‘coordids’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:83:0: warning: unused parameter ‘hasbound’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1145:0: warning: unused parameter ‘module’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1145:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1145:0: warning: unused parameter ‘lineno’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1145:0: warning: unused parameter ‘errmsg’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1016.38:
+
+    integer, parameter :: nf90_noerror = 0
+                                      1
+Warning: Unused parameter 'nf90_noerror' declared at (1)
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:788:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
  subroutine ESMF_GetMeshFromUGridFile (filename, nodeCoords, elmtConn, &
  ^
@@ -5661,6 +5604,15 @@ Warning: Unused parameter 'nf90_noerror' declared at (1)
     integer, parameter :: nf90_noerror=0
                                       1
 Warning: Unused parameter 'nf90_noerror' declared at (1)
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1000:0: warning: unused parameter ‘grid_filename’ [-Wunused-parameter]
+   subroutine ESMF_GridspecGetVarByName(grid_filename, var_name, dimids,  &
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1000:0: warning: unused parameter ‘var_name’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1000:0: warning: unused parameter ‘dimids’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1000:0: warning: unused parameter ‘var_buffer’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1000:0: warning: unused parameter ‘missing_value’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1000:0: warning: unused parameter ‘start’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:1000:0: warning: unused parameter ‘count’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:649:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
  subroutine ESMF_UGridGetVarByName (filename, varname, varbuffer, &
  ^
@@ -5674,63 +5626,111 @@ Warning: Unused parameter 'nf90_noerror' declared at (1)
     integer, parameter :: nf90_noerror=0
                                       1
 Warning: Unused parameter 'nf90_noerror' declared at (1)
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:539:0: warning: unused parameter ‘ncid’ [-Wunused-parameter]
- subroutine ESMF_UGridInqVarLoc (ncid, VarId, varname,location, rc)
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘grid_filename’ [-Wunused-parameter]
+   subroutine ESMF_GridspecGetVar2DR4(grid_filename, varids, loncoord, latcoord, &
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:539:0: warning: unused parameter ‘varid’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:539:0: warning: unused parameter ‘varname’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:539:0: warning: unused parameter ‘location’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_YAML.F90:526:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
    subroutine ESMF_IO_YAMLContentGet(yaml, keywordEnforcer, &
  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘varids’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘loncoord’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘latcoord’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘cornerlon’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:539:0: warning: unused parameter ‘ncid’ [-Wunused-parameter]
+ subroutine ESMF_UGridInqVarLoc (ncid, VarId, varname,location, rc)
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘cornerlat’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:539:0: warning: unused parameter ‘varid’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘start’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:539:0: warning: unused parameter ‘varname’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:808:0: warning: unused parameter ‘count’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:539:0: warning: unused parameter ‘location’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:335.38:
 
     integer, parameter :: nf90_noerror = 0
                                       1
 Warning: Unused parameter 'nf90_noerror' declared at (1)
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:314:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
- subroutine ESMF_UGridGetVar (filename, meshId, &
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:314:0: warning: unused parameter ‘meshid’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_YAML.F90:471:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
    subroutine ESMF_IO_YAMLContentWrite(yaml, keywordEnforcer, &
  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘grid_filename’ [-Wunused-parameter]
+   subroutine ESMF_GridspecGetVar2D(grid_filename, varids, loncoord, latcoord, &
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:314:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
+ subroutine ESMF_UGridGetVar (filename, meshId, &
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘varids’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:314:0: warning: unused parameter ‘meshid’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘loncoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:314:0: warning: unused parameter ‘nodexcoords’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘latcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:314:0: warning: unused parameter ‘nodeycoords’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘cornerlon’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:314:0: warning: unused parameter ‘facexcoords’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘cornerlat’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:314:0: warning: unused parameter ‘faceycoords’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘start’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:314:0: warning: unused parameter ‘facenodeconnx’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:623:0: warning: unused parameter ‘count’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:314:0: warning: unused parameter ‘facenodeconny’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:99.38:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_YAML.F90:418:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+   subroutine ESMF_IO_YAMLContentInit(yaml, keywordEnforcer, cflag, &
+ ^
 
     integer, parameter :: nf90_noerror = 0
                                       1
 Warning: Unused parameter 'nf90_noerror' declared at (1)
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_YAML.F90:418:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-   subroutine ESMF_IO_YAMLContentInit(yaml, keywordEnforcer, cflag, &
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:73:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
  subroutine ESMF_UGridInq(filename, meshname, nodeCount, elementCount, &
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:73:0: warning: unused parameter ‘nodecount’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:73:0: warning: unused parameter ‘elementcount’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:73:0: warning: unused parameter ‘maxnodepelement’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:73:0: warning: unused parameter ‘fillvalue’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:73:0: warning: unused parameter ‘nodecoorddim’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:73:0: warning: unused parameter ‘facecoordflag’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:73:0: warning: unused parameter ‘meshid’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:492:0: warning: unused parameter ‘grid_filename’ [-Wunused-parameter]
+   subroutine ESMF_GridspecGetVar1DR4(grid_filename, varids, loncoord, latcoord, &
+ ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_YAML.F90:369:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
    subroutine ESMF_IO_YAMLParse(yaml, keywordEnforcer, parseflag, rc)
  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:73:0: warning: unused parameter ‘elementcount’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:492:0: warning: unused parameter ‘varids’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:73:0: warning: unused parameter ‘maxnodepelement’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:492:0: warning: unused parameter ‘loncoord’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:73:0: warning: unused parameter ‘fillvalue’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:492:0: warning: unused parameter ‘latcoord’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:73:0: warning: unused parameter ‘nodecoorddim’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:492:0: warning: unused parameter ‘cornerlon’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:73:0: warning: unused parameter ‘facecoordflag’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:492:0: warning: unused parameter ‘cornerlat’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOUGrid.F90:73:0: warning: unused parameter ‘meshid’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_YAML.F90:312:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
    subroutine ESMF_IO_YAMLWrite(yaml, keywordEnforcer, fileName, rc)
  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:360:0: warning: unused parameter ‘grid_filename’ [-Wunused-parameter]
+   subroutine ESMF_GridspecGetVar1D(grid_filename, varids, loncoord, latcoord, &
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:360:0: warning: unused parameter ‘varids’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:360:0: warning: unused parameter ‘loncoord’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:360:0: warning: unused parameter ‘latcoord’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:360:0: warning: unused parameter ‘cornerlon’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:360:0: warning: unused parameter ‘cornerlat’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:110.38:
+
+    integer, parameter :: nf90_noerror = 0
+                                      1
+Warning: Unused parameter 'nf90_noerror' declared at (1)
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_YAML.F90:263:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
    subroutine ESMF_IO_YAMLIngest(yaml, content, keywordEnforcer, rc)
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_YAML.F90:214:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
    subroutine ESMF_IO_YAMLRead(yaml, fileName, keywordEnforcer, rc)
  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:83:0: warning: unused parameter ‘grid_filename’ [-Wunused-parameter]
+   subroutine ESMF_GridspecInq(grid_filename, ndims, grid_dims, coord_names, &
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:83:0: warning: unused parameter ‘is3d’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:83:0: warning: unused parameter ‘dimids’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:83:0: warning: unused parameter ‘coordids’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridspec.F90:83:0: warning: unused parameter ‘hasbound’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_YAML.F90:168:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
    subroutine ESMF_IO_YAMLDestroy(yaml, keywordEnforcer, rc)
  ^
@@ -5753,19 +5753,19 @@ Warning: Unused parameter 'nf90_noerror' declared at (1)
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:4916:0: warning: unused parameter ‘module’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:4916:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:4916:0: warning: unused parameter ‘lineno’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:1571:0: warning: unused parameter ‘ncstatus’ [-Wunused-parameter]
- function CDFCheckError (ncStatus, module, fileName, lineNo, errmsg, rc)
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:4916:0: warning: unused parameter ‘errmsg’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:1571:0: warning: unused parameter ‘module’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:1571:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:3454.35:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:1571:0: warning: unused parameter ‘lineno’ [-Wunused-parameter]
 
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:1571:0: warning: unused parameter ‘errmsg’ [-Wunused-parameter]
  integer, parameter :: nf90_noerror = 0 
                                    1
 Warning: Unused parameter 'nf90_noerror' declared at (1)
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:1571:0: warning: unused parameter ‘ncstatus’ [-Wunused-parameter]
+ function CDFCheckError (ncStatus, module, fileName, lineNo, errmsg, rc)
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:1571:0: warning: unused parameter ‘module’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:1571:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:1571:0: warning: unused parameter ‘lineno’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:1571:0: warning: unused parameter ‘errmsg’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:1540:0: warning: unused parameter ‘mosaic’ [-Wunused-parameter]
  subroutine ESMF_MosaicDestroy(mosaic, rc)
  ^
@@ -5842,12 +5842,12 @@ Warning: Unused parameter 'nf90_noerror' declared at (1)
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:911:0: warning: unused parameter ‘lon’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:3096:0: warning: unused parameter ‘putflag’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:911:0: warning: unused parameter ‘lat’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:911:0: warning: unused parameter ‘staggerloc’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:3000.35:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:911:0: warning: unused parameter ‘start’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:911:0: warning: unused parameter ‘staggerloc’ [-Wunused-parameter]
 
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:911:0: warning: unused parameter ‘count’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:911:0: warning: unused parameter ‘start’ [-Wunused-parameter]
  integer, parameter :: nf90_noerror = 0 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:911:0: warning: unused parameter ‘count’ [-Wunused-parameter]
                                    1
 Warning: Unused parameter 'nf90_noerror' declared at (1)
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:714:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
@@ -5889,15 +5889,15 @@ Warning: Unused parameter 'nf90_noerror' declared at (1)
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:2870:0: warning: unused parameter ‘var_name’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:2870:0: warning: unused parameter ‘var_buffer’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:2870:0: warning: unused parameter ‘start’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:2870:0: warning: unused parameter ‘count’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:2870:0: warning: unused parameter ‘putflag’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:2773.35:
-
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:438:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
  subroutine ESMF_GridspecQueryTileFile(filename, isSupergrid, rc)
  ^
- integer, parameter :: nf90_noerror = 0 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:2870:0: warning: unused parameter ‘count’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:438:0: warning: unused parameter ‘issupergrid’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:2870:0: warning: unused parameter ‘putflag’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IO_NCPutGet.F90:2773.35:
+
+ integer, parameter :: nf90_noerror = 0 
                                    1
 Warning: Unused parameter 'nf90_noerror' declared at (1)
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/IO/interface/ESMF_IOGridmosaic.F90:114:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
@@ -6652,6 +6652,13 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:28:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:19:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
@@ -6662,13 +6669,6 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Array.h:38,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:29:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:28:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -6743,48 +6743,8 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:18:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h:23,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:31:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:15:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_ShapeFunc.C: In instantiation of ‘static void ESMCI::mb_tri_shape_func::shape_grads(unsigned int, const ScalarT*, ScalarT*) [with ScalarT = double]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_ShapeFunc.C:457:104:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_ShapeFunc.C:52:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
- void mb_tri_shape_func::shape_grads(unsigned int npts, const ScalarT pcoord[], ScalarT results[]) {
-      ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:18:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -6802,7 +6762,31 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:18:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_ShapeFunc.C: In instantiation of ‘static void ESMCI::mb_tri_shape_func::shape_grads(unsigned int, const ScalarT*, ScalarT*) [with ScalarT = double]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_ShapeFunc.C:457:104:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_ShapeFunc.C:52:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
+ void mb_tri_shape_func::shape_grads(unsigned int npts, const ScalarT pcoord[], ScalarT results[]) {
+      ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:33:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:34,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:23:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -6847,8 +6831,19 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:34,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:23:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:31:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:18:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -6862,21 +6857,19 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:15:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:24:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:27:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:31:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -6890,13 +6883,13 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:23:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
-   const int   *getMinIndex(int tileno) const { return minIndex; }
-                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
-   const int   *getMaxIndex(int tileno) const { return maxIndex; }
-                ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:27:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h:23:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:23:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
@@ -6920,29 +6913,64 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:13:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:15:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h:20,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:18:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:23:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
+   const int   *getMinIndex(int tileno) const { return minIndex; }
+                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
+   const int   *getMaxIndex(int tileno) const { return maxIndex; }
+                ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:13:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:18:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:15:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:16:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:20:0:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:20:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h:20,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:16:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
                    ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:20:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
@@ -6958,22 +6986,22 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_Nearest.C:191:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
    for (UInt p = 0; p < dst_size; ++p) {
                         ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_Nearest.C: In function ‘void ESMCI::ParSearchNearestSrcToDst(const ESMCI::PointList&, const ESMCI::PointList&, int, ESMCI::SearchNearestResultList&, bool, ESMCI::WMat&)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_Nearest.C:330:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
    for (UInt p = 0; p < num_nodes_to_search; ++p) {
                         ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_ConserveInterp.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:20:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_Nearest.C:380:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
    for (UInt p = 0; p < dst_size; ++p) {
                         ^
@@ -6983,15 +7011,35 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_Nearest.C:551:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int j=0; j<snd_inds[i].size(); j++) {
                                       ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:20:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_ConserveInterp.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:18:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:20:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:21:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
@@ -7000,53 +7048,37 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:20:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:16:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:13:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:20:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:19:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:17:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:16:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:31:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:21:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
@@ -7054,6 +7086,20 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:17:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:17:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_ConserveInterp.h:22,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:12:
@@ -7065,68 +7111,38 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:19:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:21:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:35:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:17:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:16:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:20:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Extrapolation.h:24,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:23:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:35:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:31:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:13:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h:20,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:12:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:22:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:19:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
@@ -7135,77 +7151,111 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MeshCXX.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:22:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:15:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:19:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:17:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C:17:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C: In function ‘void ESMCI::SearchNearestSrcToDstNPnts(const ESMCI::PointList&, const ESMCI::PointList&, int, int, ESMCI::SearchNearestResultList&, bool, ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:313:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (sdim != dst_pl.get_coord_dim()) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:324:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (UInt p = 0; p < num_nodes_to_search; ++p) {
+                        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:361:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (UInt p = 0; p < dst_size; ++p) {
+                        ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:12:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Extrapolation.h:24,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:23:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:22:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:35:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:20:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:19:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h: In instantiation of ‘void ESMCI::MBMapping<MPTRAITS>::normal(ESMCI::UInt, const mdata_type*, const pcoord_type*, typename ESMCI::mbmesh_richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with MPTRAITS = ESMCI::MBTraits<>; ESMCI::UInt = unsigned int; ESMCI::MBMapping<MPTRAITS>::mdata_type = double; ESMCI::MBMapping<MPTRAITS>::pcoord_type = double; typename ESMCI::mbmesh_richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = double]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:1107:1:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h:136:16: warning: unused parameter ‘npts’ [-Wunused-parameter]
-   virtual void normal(UInt npts, const mdata_type mdata[],
-                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h:136:16: warning: unused parameter ‘mdata’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h:136:16: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h:136:16: warning: unused parameter ‘result’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h:20,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:18:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C: In function ‘void ESMCI::ParSearchNearestSrcToDstNPnts(const ESMCI::PointList&, const ESMCI::PointList&, int, int, ESMCI::SearchNearestResultList&, bool, ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:493:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (UInt p = 0; p < num_nodes_to_search; ++p) {
+                        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:536:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (UInt p = 0; p < dst_size; ++p) {
+                        ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:16:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FindPnts.h:20,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:37,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:23:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:592:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int j=0; j<proc_lists[i].size(); j++) {
+                                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:660:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int j=0; j<snd_inds[i].size(); j++) {
+                                      ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:20:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C: In function ‘void calc_nearest_npts_mat(ESMCI::PointList*, ESMCI::PointList*, ESMC_R8, ESMCI::SearchNearestResultList&, ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:147:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<sr.nodes.size(); i++) {
+                                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h:25,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:23:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:170:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<sr.nodes.size(); i++) {
+                                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:203:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<sr.nodes.size(); i++) {
+                                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:233:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<cols.size(); i++) {
+                               ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:816:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int j=0; j<rcv_results_array[i].size(); j++) {
+                                               ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:23:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:18:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MeshCXX.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:22:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:16:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
@@ -7217,43 +7267,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FindPnts.h:20,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:37,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:23:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:16:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FindPnts.h:20,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:37,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:36:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:22:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_GridToMesh.h:26,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:24:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
@@ -7265,188 +7278,15 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:30:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:32:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FindPnts.h:20,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:37,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:36:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:76:13: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
- static void GetObjList(void *user, int numGlobalIds, int numLids, ZOLTAN_ID_PTR gids, ZOLTAN_ID_PTR lids,
-             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:76:13: warning: unused parameter ‘numLids’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:76:13: warning: unused parameter ‘wgt_dim’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:76:13: warning: unused parameter ‘obj_wghts’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:17:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:120:13: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
- static void GetObject(void *user, int numGlobalIds, int numLids, int numObjs,
-             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:120:13: warning: unused parameter ‘numLids’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:62:13: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
- static void GetObjList(void *user, int numGlobalIds, int numLids, ZOLTAN_ID_PTR gids, ZOLTAN_ID_PTR lids,
-             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:62:13: warning: unused parameter ‘numLids’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:62:13: warning: unused parameter ‘wgt_dim’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:62:13: warning: unused parameter ‘obj_wghts’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:106:13: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
- static void GetObject(void *user, int numGlobalIds, int numLids, int numObjs,
-             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:106:13: warning: unused parameter ‘numLids’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C: In function ‘void assign_points_to_procs(ESMCI::PointList*, int, ZOLTAN_ID_PTR, ZOLTAN_ID_PTR, int*, int, int, std::vector<ESMCI::PL_Comm_Pair>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:153:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (unsigned int i = 0; i < numExport; ++i) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:154:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (exportGids[i*2]==src_or_dst) {
-                          ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C: In function ‘void assign_points_to_procs(ESMCI::PointList*, int, ZOLTAN_ID_PTR, ZOLTAN_ID_PTR, int*, int, std::vector<ESMCI::PL_Comm_Pair>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:335:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (unsigned int i = 0; i < numExport; ++i) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:144:13: warning: unused parameter ‘pl’ [-Wunused-parameter]
- static void assign_points_to_procs(PointList *pl, int numExport, ZOLTAN_ID_PTR exportGids,
-             ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:17:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:20:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_GridToMesh.h:26,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:24:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:16:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjPack.h:101:3: warning: unused parameter ‘ghosting’ [-Wunused-parameter]
-   SparsePack(SparseMsg::buffer &b, const Attr &a, bool ghosting = false) {
-   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:326:13: warning: unused parameter ‘pl’ [-Wunused-parameter]
- static void assign_points_to_procs(PointList *pl, int numExport, ZOLTAN_ID_PTR exportGids,
-             ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:19:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:16:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:21:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:13:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h: In constructor ‘ESMCI::Mesh::Mesh()’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:140:6: warning: ‘ESMCI::Mesh::committed’ will be initialized after [-Wreorder]
- bool committed;
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:128:7: warning:   ‘bool ESMCI::Mesh::is_split’ [-Wreorder]
-  bool is_split;
-       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:61:1: warning:   when initialized here [-Wreorder]
- Mesh::Mesh() : MeshDB(), FieldReg(), CommReg(),
- ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:30:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:32:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:16:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:21:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:23:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:20:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:20:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh_Glue.h:37,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:21:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:36:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:22:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
@@ -7458,509 +7298,74 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:20:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Regrid_Glue.h:29:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:25:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
-   const int   *getMinIndex(int tileno) const { return minIndex; }
-                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
-   const int   *getMaxIndex(int tileno) const { return maxIndex; }
-                ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:17:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C: In function ‘void ESMCI::SearchNearestSrcToDstNPnts(const ESMCI::PointList&, const ESMCI::PointList&, int, int, ESMCI::SearchNearestResultList&, bool, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:313:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   if (sdim != dst_pl.get_coord_dim()) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:324:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (UInt p = 0; p < num_nodes_to_search; ++p) {
-                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:361:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (UInt p = 0; p < dst_size; ++p) {
-                        ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:28:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C: In function ‘void ESMCI::ParSearchNearestSrcToDstNPnts(const ESMCI::PointList&, const ESMCI::PointList&, int, int, ESMCI::SearchNearestResultList&, bool, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:493:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (UInt p = 0; p < num_nodes_to_search; ++p) {
-                        ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h:25,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:23:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:536:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (UInt p = 0; p < dst_size; ++p) {
-                        ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:18:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:25:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:27:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:592:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int j=0; j<proc_lists[i].size(); j++) {
-                                          ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:28:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:660:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int j=0; j<snd_inds[i].size(); j++) {
-                                      ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:31:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:23:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:816:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int j=0; j<rcv_results_array[i].size(); j++) {
-                                               ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_GridToMesh.h:26,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Regrid_Glue.h:30,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:25:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:32:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:34:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:38,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:23:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C: In function ‘void MBMesh_get_local_elem_gids(ESMCI::MBMesh*, std::vector<unsigned int>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:284:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (int i = 0; i<pos_and_gids.size(); ++i) {
-                                       ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:21:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C: In function ‘void ESMCI::get_elem_coords(const ESMCI::MeshObj*, const ESMCI::MEField<ESMCI::_field>*, int, int, int*, double*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:365:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       if (topo->num_nodes > max_num_nodes) {
-                             ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:32:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C: In function ‘void ESMCI::get_elem_coords_and_ids(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, int, int, int*, double*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:520:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       if (topo->num_nodes > max_num_nodes) {
-                             ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h:25,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:23:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_GridToMesh.h:26,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Regrid_Glue.h:30,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:25:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Comp.h:35:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_TraceRegion.h:14,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:34:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
-   const int   *getMinIndex(int tileno) const { return minIndex; }
-                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
-   const int   *getMaxIndex(int tileno) const { return maxIndex; }
-                ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:38,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:36:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh_Glue.h:37,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:36:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:2511:10: warning: unused parameter ‘un’ [-Wunused-parameter]
-   double calc_angle<GEOM_CART2D>(double *a, double *b, double *un) {
-          ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:38,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:36:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:23:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:25:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘void ESMCI::MeshDual(ESMCI::Mesh*, ESMCI::Mesh**)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:266:54: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if ((src_mesh->is_split) && (elem_id > src_mesh->max_non_split_id)) {
-                                                      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:70:13: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
  static void GetObjList(void *user, int numGlobalIds, int numLids, ZOLTAN_ID_PTR gids, ZOLTAN_ID_PTR lids,
              ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:70:13: warning: unused parameter ‘numLids’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:70:13: warning: unused parameter ‘wgt_dim’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:70:13: warning: unused parameter ‘obj_wghts’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_GridToMesh.h:26,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:28:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:113:13: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
  static void GetObject(void *user, int numGlobalIds, int numLids, int numObjs,
              ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:113:13: warning: unused parameter ‘numLids’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:449:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       if ((src_mesh->is_split) && (elem_id > src_mesh->max_non_split_id)) {
-                                                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:588:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       if (elemId[e] > max_id) {
-                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C: In constructor ‘ESMCI::MBMesh_BBox::MBMesh_BBox(ESMCI::MBMesh*, moab::EntityHandle, double, bool)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:151:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (UInt i =0; i < dim; i++) {
-                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:170:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (UInt n = 1; n < num_p; n++) {
-                          ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:129:1: warning: unused parameter ‘normexp’ [-Wunused-parameter]
- MBMesh_BBox::MBMesh_BBox(MBMesh *mbmp, EntityHandle elem, double normexp, bool is_sph) :
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘void ESMCI::get_unique_elems_around_node(ESMCI::MeshObj*, ESMCI::Mesh*, ESMCI::MDSS*, int*, ESMCI::UInt*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1070:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       if (elem_id > max_elem_id) {
-                     ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:21:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:36:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_List.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObj.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshDB.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:16:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C: In function ‘bool ESMCI::Mixed_BBoxIntersect(const ESMCI::MBMesh_BBox&, const ESMCI::BBox&, double)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:337:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   ThrowAssert(b1.dimension() == b2.dimension());
-                                              ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Exception.h:103:28: note: in definition of macro ‘ThrowAssert’
- #define ThrowAssert(cond) (cond ? (void) 0 : throw Ex() << "Condition {" << #cond << "} failed at " << __FILE__ << ", line:" << __LINE__)
-                            ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:305:8: warning: unused parameter ‘out_mesh’ [-Wunused-parameter]
-   void unpack_gid_vert_comm(MBMesh *out_mesh, char *buff, int *gid) {
-        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1174:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       if (tmp_mdss[i].id != prev_id) {
-                             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘void ESMCI::add_ghost_elems_to_split_orig_id_map(ESMCI::Mesh*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1213:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       if (elem_id <=  mesh->max_non_split_id) continue;
-                             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1241:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         if (elem_id <=  mesh->max_non_split_id) continue;
-                               ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C: In function ‘void ESMCI::build_pl_mb_bbox(double*, double*, ESMCI::PointList*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:429:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (UInt d = 0; d < sdim; d++) {
-                          ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1287:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (elem_id <=  mesh->max_non_split_id) continue;
-                           ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C:23:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1312:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (elem_id <=  mesh->max_non_split_id) continue;
-                           ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C: In function ‘void create_pointlist_of_points_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, ESMCI::PointList**)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:47:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     while ((wi != we) && (wi->first.id < id)) {
-                                          ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C: In function ‘void calc_nearest_npts_mat(ESMCI::PointList*, ESMCI::PointList*, ESMC_R8, ESMCI::SearchNearestResultList&, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:147:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<sr.nodes.size(); i++) {
-                                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::create_mbmesh_redist_elem_move_verts(ESMCI::MBMesh*, std::vector<ESMCI::EH_Comm_Pair>*, std::map<int, long unsigned int>*, ESMCI::MBMesh*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:388:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<elem_to_proc_list->size(); i++) {
-                                             ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C:25:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h:26,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:23:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:52:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (wi->first.id != id) {
-                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1333:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (int i=0; i<lookups.size(); i++) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:170:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<sr.nodes.size(); i++) {
-                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:71:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     while ((wi != we) && (wi->first.id < id)) {
-                                          ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:76:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (wi->first.id != id) {
-                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:203:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<sr.nodes.size(); i++) {
-                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:233:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<cols.size(); i++) {
-                               ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C: In function ‘void replace_mapped_with_mapped_extrap(ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:95:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i = 0; i < col.size(); ++i) {
-                                  ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:19:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [39]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:1699:22:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-   MeshNullStream& operator<<(const T &t) {return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = ESMCI::MeshObj]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:1699:66:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:104:6: warning: unused parameter ‘pole_constraint_id’ [-Wunused-parameter]
- void MBMesh_Extrapolate(MBMesh *srcmesh, PointList *srcpointlist, 
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:104:6: warning: unused parameter ‘extrapNumLevels’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:104:6: warning: unused parameter ‘extrapNumInputLevels’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:104:6: warning: unused parameter ‘rc’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:703:8: warning: unused parameter ‘out_mesh’ [-Wunused-parameter]
-   void unpack_gid_elem_comm(MBMesh *out_mesh, char *buff, int *_gid) {
-        ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:40:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:610:6: warning: unused parameter ‘regridScheme’ [-Wunused-parameter]
- void ESMCI_regrid_getarea(Grid **gridpp,
-      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::MeshRedistNode(ESMCI::Mesh*, int, int*, ESMCI::Mesh**)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:165:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int i=0; i< num_src_gids; i++) {
                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void get_mesh_node_ids_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, std::vector<int>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:727:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     while ((wi != we) && (wi->first.id < id)) {
-                                          ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::create_mbmesh_redist_elem_move_elems(ESMCI::MBMesh*, std::vector<ESMCI::EH_Comm_Pair>*, std::map<int, long unsigned int>*, ESMCI::MBMesh*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:862:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<elem_to_proc_list->size(); i++) {
-                                             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:732:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (wi->first.id != id) {
-                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:921:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<elem_to_proc_list->size(); i++) {
-                                             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void get_mesh_elem_ids_not_in_wmat(ESMCI::Mesh*, ESMCI::WMat&, std::vector<int>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:773:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     while ((wi != we) && (wi->first.id <elem_id)) {
-                                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:778:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (wi->first.id != elem_id) {
-                         ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_GridToMesh.h:26,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:28:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h:25,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:23:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘bool all_mesh_node_ids_in_wmat(ESMCI::PointList*, ESMCI::WMat&, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:807:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     while ((wi != we) && (wi->first.id < id)) {
-                                          ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:822:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (wi->first.id != id) {
-                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘bool all_mesh_elem_ids_in_wmat(ESMCI::Mesh*, ESMCI::WMat&, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:874:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     while ((wi != we) && (wi->first.id <elem_id)) {
-                                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:887:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (wi->first.id != elem_id) {
-                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:974:49: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     while ((pos<num_dst_ids) && (dst_ids[pos] < elem_id)) {
-                                                 ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:987:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (dst_ids[pos] != elem_id) {
-                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void translate_split_src_elems_in_wts(ESMCI::Mesh*, int, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:1595:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-      if (src_id > srcmesh->max_non_split_id) {
-                            ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:637:5: warning: unused parameter ‘sdim’ [-Wunused-parameter]
- int ElemType2NumNodesCXX(int pdim, int sdim, int etype) {
-     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:1616:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (int i=0; i<num_src_split_gids; i++) {
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:439:5: warning: unused parameter ‘sdim’ [-Wunused-parameter]
- int ElemType2NumNodes(int pdim, int sdim, int etype) {
-     ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:37:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
-   const int   *getMinIndex(int tileno) const { return minIndex; }
-                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
-   const int   *getMaxIndex(int tileno) const { return maxIndex; }
-                ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh_Glue.h:43:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:36:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:15:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:18:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
    static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
                  ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_ConserveInterp.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:21:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:20:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
    static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshaddnodes(ESMCI::Mesh**, int*, int*, double*, int*, ESMCI::InterArray<int>*, ESMC_CoordSys_Flag*, int*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:277:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         for (UInt c = 0; c < sdim; ++c)
-                              ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void copy_rs_from_WMat_to_Array(ESMCI::WMat*, ESMCI::Array*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:2249:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         if (w.id == seq_ind) {
-                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:290:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         for (UInt c = 0; c<orig_sdim; ++c)
-                            ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void copy_cnsv_rs_from_WMat_to_Array(ESMCI::WMat*, ESMCI::Array*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:2401:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         if (w.id == seq_ind) {
-                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:487:12: warning: unused parameter ‘sdim’ [-Wunused-parameter]
- static int ElemType2NumNodes(int pdim, int sdim, int etype) {
-            ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:76:13: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
+ static void GetObjList(void *user, int numGlobalIds, int numLids, ZOLTAN_ID_PTR gids, ZOLTAN_ID_PTR lids,
+             ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:76:13: warning: unused parameter ‘numLids’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:76:13: warning: unused parameter ‘wgt_dim’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:76:13: warning: unused parameter ‘obj_wghts’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:120:13: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
+ static void GetObject(void *user, int numGlobalIds, int numLids, int numObjs,
+             ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:120:13: warning: unused parameter ‘numLids’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:23:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C: In function ‘void assign_points_to_procs(ESMCI::PointList*, int, ZOLTAN_ID_PTR, ZOLTAN_ID_PTR, int*, int, std::vector<ESMCI::PL_Comm_Pair>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:335:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (unsigned int i = 0; i < numExport; ++i) {
+                                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::set_node_owners(ESMCI::Mesh*, ESMCI::DDir<>)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:843:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<num_src_gids; i++) {
                      ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Macros.h:26:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:16:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C: In member function ‘int ESMCI::MeshCXX::createDistGrids(int*, int*, int*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:41:38: warning: the address of ‘localrc’ will never be NULL [-Waddress]
- #define ESMC_PRESENT(arg) ( (arg) != 0 )
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_F90Interface.h:183:30: note: in expansion of macro ‘ESMC_PRESENT’
-                            (!ESMC_PRESENT(arg) ? ESMC_NULL_POINTER : (arg))
-                              ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:1037:38: note: in expansion of macro ‘ESMC_NOT_PRESENT_FILTER’
-                                      ESMC_NOT_PRESENT_FILTER(&localrc));
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:41:38: warning: the address of ‘localrc’ will never be NULL [-Waddress]
- #define ESMC_PRESENT(arg) ( (arg) != 0 )
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_F90Interface.h:183:30: note: in expansion of macro ‘ESMC_PRESENT’
-                            (!ESMC_PRESENT(arg) ? ESMC_NULL_POINTER : (arg))
-                              ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:1047:38: note: in expansion of macro ‘ESMC_NOT_PRESENT_FILTER’
-                                      ESMC_NOT_PRESENT_FILTER(&localrc));
-                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:326:13: warning: unused parameter ‘pl’ [-Wunused-parameter]
+ static void assign_points_to_procs(PointList *pl, int numExport, ZOLTAN_ID_PTR exportGids,
+             ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::set_node_owners_wo_list(ESMCI::Mesh*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1010:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
       for (int i=0; i<gids.size(); i++) {
@@ -7969,6 +7374,10 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1068:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<num_src_gids; i++) {
                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C: In function ‘void MBMesh_get_local_elem_gids(ESMCI::MBMesh*, std::vector<unsigned int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:284:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i<pos_and_gids.size(); ++i) {
+                                       ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::redist_nohome_nodes(ESMCI::Mesh*, int, int*, ESMCI::Mesh*, ESMCI::CommReg*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1249:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<num_sn_gids; i++) {
@@ -7987,135 +7396,226 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1775:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
           if (owner==Par::Rank()) {
                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void getElemGIDS(ESMCI::MBMesh*, std::vector<int>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2286:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (int i = 0; i<pos_and_gids.size(); ++i) {
-                                       ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:18:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::set_split_orig_id_map(ESMCI::Mesh*, ESMCI::Mesh*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:2086:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<lookups.size(); i++) {
                                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:136:6: warning: unused parameter ‘pdim’ [-Wunused-parameter]
- void sintd_cell::get_centroid(double * centroid, int sdim, int pdim){
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:230:6: warning: unused parameter ‘on_p_seg’ [-Wunused-parameter]
- bool line_intersect_2D_3D(double *a1, double *a2, double *q1, double *q2, double *q3,
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:230:6: warning: unused parameter ‘on_q_seg’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2016:6: warning: unused parameter ‘buffer_l’ [-Wunused-parameter]
- void ESMCI_meshinfoserialize(int *intMeshFreed,
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void getElems(void**, std::vector<long unsigned int>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2432:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (int i = 0; i<pos_and_elems.size(); ++i) {
-                                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:414:5: warning: unused parameter ‘pdim’ [-Wunused-parameter]
- int insert_intersect(int pdim, int sdim, std::list<xpoint> & final_nodes, const std::vector<xpoint> & nodes, unsigned int i,
-     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2061:6: warning: unused parameter ‘buffer_l’ [-Wunused-parameter]
- void ESMCI_meshinfodeserialize(int *intMeshFreed,
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_getlocalelemcoords(void**, double*, int*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2474:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         for (int i=0; i<ehs.size(); i++) {
-                                  ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:37:0:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:31:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:35:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FindPnts.h:20,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:37,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:36:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_GridToMesh.h:26,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:28:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:62:13: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
+ static void GetObjList(void *user, int numGlobalIds, int numLids, ZOLTAN_ID_PTR gids, ZOLTAN_ID_PTR lids,
+             ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:62:13: warning: unused parameter ‘numLids’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:62:13: warning: unused parameter ‘wgt_dim’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:62:13: warning: unused parameter ‘obj_wghts’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:106:13: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
+ static void GetObject(void *user, int numGlobalIds, int numLids, int numObjs,
+             ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:106:13: warning: unused parameter ‘numLids’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C: In function ‘void assign_points_to_procs(ESMCI::PointList*, int, ZOLTAN_ID_PTR, ZOLTAN_ID_PTR, int*, int, int, std::vector<ESMCI::PL_Comm_Pair>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:153:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (unsigned int i = 0; i < numExport; ++i) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:154:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (exportGids[i*2]==src_or_dst) {
+                          ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h:26,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:23:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2487:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         for (int i=0; i<ehs.size(); i++) {
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshserialize(ESMCI::Mesh**, char*, int*, int*, ESMC_InquireFlag*, int*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2217:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-           for (int j=0; j<nvalSetSizes[i]; j++) {
-                                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:553:14: warning: unused parameter ‘pdim’ [-Wunused-parameter]
- unsigned int point_in_poly(int pdim, int sdim, int nvert, const double * const poly_cd, const double * const point){
-              ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_2D_cart(ESMCI::MBMesh*, moab::EntityHandle, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:101:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_getarea(void**, int*, double*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2560:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (*num_elem != ehs.size()) {
-                               ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2234:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-           for (int j=0; j<nvalSetObjSizes[i]; j++) {
-                                            ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:144:13: warning: unused parameter ‘pl’ [-Wunused-parameter]
+ static void assign_points_to_procs(PointList *pl, int numExport, ZOLTAN_ID_PTR exportGids,
+             ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:35:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:19:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h: In instantiation of ‘void ESMCI::MBMapping<MPTRAITS>::normal(ESMCI::UInt, const mdata_type*, const pcoord_type*, typename ESMCI::mbmesh_richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with MPTRAITS = ESMCI::MBTraits<>; ESMCI::UInt = unsigned int; ESMCI::MBMapping<MPTRAITS>::mdata_type = double; ESMCI::MBMapping<MPTRAITS>::pcoord_type = double; typename ESMCI::mbmesh_richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = double]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:1107:1:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h:136:16: warning: unused parameter ‘npts’ [-Wunused-parameter]
+   virtual void normal(UInt npts, const mdata_type mdata[],
+                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h:136:16: warning: unused parameter ‘mdata’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h:136:16: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h:136:16: warning: unused parameter ‘result’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FindPnts.h:20,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:37,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:36:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:31:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_GridToMesh.h:26,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:28:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MeshCXX.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:22:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:38:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:38,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:23:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
    static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:114:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:600:9: warning: unused parameter ‘pdim’ [-Wunused-parameter]
- polygon make_concave_polygon(const int pdim, const int sdim, const std::vector<xpoint> & subject,
-         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:130:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2095:6: warning: unused parameter ‘buffer_l’ [-Wunused-parameter]
- void ESMCI_meshserialize(Mesh **meshpp,
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:35:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C: In constructor ‘ESMCI::MBMesh_BBox::MBMesh_BBox(ESMCI::MBMesh*, moab::EntityHandle, double, bool)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:151:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (UInt i =0; i < dim; i++) {
+                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:170:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (UInt n = 1; n < num_p; n++) {
+                          ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Regrid_Glue.h:29:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:25:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
+   const int   *getMinIndex(int tileno) const { return minIndex; }
+                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
+   const int   *getMaxIndex(int tileno) const { return maxIndex; }
+                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:129:1: warning: unused parameter ‘normexp’ [-Wunused-parameter]
+ MBMesh_BBox::MBMesh_BBox(MBMesh *mbmp, EntityHandle elem, double normexp, bool is_sph) :
+ ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_List.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObj.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshDB.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:16:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C: In function ‘bool ESMCI::Mixed_BBoxIntersect(const ESMCI::MBMesh_BBox&, const ESMCI::BBox&, double)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:337:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   ThrowAssert(b1.dimension() == b2.dimension());
+                                              ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Exception.h:103:28: note: in definition of macro ‘ThrowAssert’
+ #define ThrowAssert(cond) (cond ? (void) 0 : throw Ex() << "Condition {" << #cond << "} failed at " << __FILE__ << ", line:" << __LINE__)
+                            ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:30:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:21:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C: In function ‘void ESMCI::build_pl_mb_bbox(double*, double*, ESMCI::PointList*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:429:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (UInt d = 0; d < sdim; d++) {
+                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C: In function ‘void ESMCI::get_elem_coords(const ESMCI::MeshObj*, const ESMCI::MEField<ESMCI::_field>*, int, int, int*, double*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:365:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (topo->num_nodes > max_num_nodes) {
+                             ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C: In function ‘void ESMCI::get_elem_coords_and_ids(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, int, int, int*, double*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:520:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (topo->num_nodes > max_num_nodes) {
+                             ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:16:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjPack.h:101:3: warning: unused parameter ‘ghosting’ [-Wunused-parameter]
+   SparsePack(SparseMsg::buffer &b, const Attr &a, bool ghosting = false) {
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:19:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MeshCXX.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:22:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:2511:10: warning: unused parameter ‘un’ [-Wunused-parameter]
+   double calc_angle<GEOM_CART2D>(double *a, double *b, double *un) {
+          ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:13:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h: In constructor ‘ESMCI::Mesh::Mesh()’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:140:6: warning: ‘ESMCI::Mesh::committed’ will be initialized after [-Wreorder]
+ bool committed;
       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:159:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2591:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<ehs.size(); i++) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:247:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshdeserialize(ESMCI::Mesh**, char*, int*, int*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2341:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         for (int j=0; j<nvalSetSizes[i]; j++) {
-                                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:263:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2360:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         for (int j=0; j<nvalSetObjSizes[i]; j++) {
-                                          ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_3D_sph_src_pnts(int, double*, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:402:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void getNodes(void**, std::vector<long unsigned int>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2790:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (int i = 0; i<pos_and_nodes.size(); ++i) {
-                                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:434:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_getlocalcoords(void**, double*, int*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2830:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<nodes.size(); i++) {
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2274:6: warning: unused parameter ‘buffer_l’ [-Wunused-parameter]
- void ESMCI_meshdeserialize(Mesh **meshpp,
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2843:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<nodes.size(); i++) {
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_3D_sph(ESMCI::MBMesh*, moab::EntityHandle, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:645:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:657:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:769:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:779:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:128:7: warning:   ‘bool ESMCI::Mesh::is_split’ [-Wreorder]
+  bool is_split;
+       ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:61:1: warning:   when initialized here [-Wreorder]
+ Mesh::Mesh() : MeshDB(), FieldReg(), CommReg(),
+ ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FindPnts.h:20,
@@ -8124,102 +7624,70 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:37:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void calc_conserve_mat_serial_2D_2D_cart(ESMCI::MBMesh*, ESMCI::MBMesh*, MBMesh_Search_EToE_Result_List&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:833:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (sr.dst_elems.size() > max_num_dst_elems) max_num_dst_elems=sr.dst_elems.size();
-                               ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:861:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<sr.dst_elems.size(); i++) {
-                                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_geteleminfointoarray(ESMCI::Mesh*, ESMCI::DistGrid*, int, int*, ESMCI::Array**, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2832:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-             for (int i=0; i<seqIndexList.size(); i++) {
-                                               ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2866:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-             for (int i=0; i<seqIndexList.size(); i++) {
-                                               ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:908:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<sr.dst_elems.size(); i++) {
-                                         ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h:30:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:23:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
    static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:940:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<sr.dst_elems.size(); i++) {
-                                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:960:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         for (int i=0; i<sr.dst_elems.size(); i++) {
-                                           ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetarea(ESMCI::Mesh**, int*, double*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3079:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (*num_elem != egids.size()) {
-                                 ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:979:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         for (int i=0; i<sr.dst_elems.size(); i++) {
-                                           ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1014:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<sr.dst_elems.size(); i++) {
-                                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3090:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<egids.size(); i++) {
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void calc_conserve_mat_serial_2D_3D_sph(ESMCI::MBMesh*, ESMCI::MBMesh*, MBMesh_Search_EToE_Result_List&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1081:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-      if (sr.dst_elems.size() > max_num_dst_elems) max_num_dst_elems=sr.dst_elems.size();
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3116:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         for (int i=0; i<egids.size(); i++) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1109:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<sr.dst_elems.size(); i++) {
-                                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3166:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<egids.size(); i++) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1155:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<sr.dst_elems.size(); i++) {
-                                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1187:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<sr.dst_elems.size(); i++) {
-                                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3216:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<egids.size(); i++) {
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1207:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         for (int i=0; i<sr.dst_elems.size(); i++) {
-                                           ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_GridToMesh.h:26,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Regrid_Glue.h:30,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:25:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:32:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:30:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_ConserveInterp.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:21:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:23:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C: In function ‘void calc_bilinear_mat(ESMCI::MBMesh*, ESMCI::PointList*, MBMesh_Search_EToP_Result_List&, ESMCI::IWeights&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:171:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for(int i = 0; i < nodes.size(); ++i) {
+                                     ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:25:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:79:6: warning: unused parameter ‘dstpl’ [-Wunused-parameter]
+ void calc_bilinear_mat(MBMesh *srcmb, PointList *dstpl,
+      ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_GridToMesh.h:26,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:24:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘void ESMCI::ESMCI_GridToMesh(const ESMCI::Grid&, int, const std::vector<ESMCI::Array*>&, ESMCI::InterArray<int>*, int*, ESMCI::Mesh**, int*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:257:49: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
           if (lb == owned_shared.end() || *lb != gid)
                                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1226:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         for (int i=0; i<sr.dst_elems.size(); i++) {
-                                           ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1253:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<sr.dst_elems.size(); i++) {
-                                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:1419:6: warning: unused parameter ‘pdim’ [-Wunused-parameter]
- void construct_sintd(double area, int num_sintd_nodes, double * sintd_coords, int pdim, int sdim,
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetcentroid(ESMCI::Mesh**, int*, double*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3392:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (*num_elem != egids.size()) {
-                                 ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:301:52: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
           if (lb == notowned_shared.end() || *lb != gid)
                                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:1575:5: warning: unused parameter ‘regridConserve’ [-Wunused-parameter]
- int online_regrid_xgrid(Mesh &srcmesh, Mesh &dstmesh, Mesh * midmesh, IWeights &wts,
-     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3402:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<egids.size(); i++) {
-                                  ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_List.h:15:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObj.h:17,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshDB.h:15,
@@ -8232,16 +7700,24 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Exception.h:107:29: note: in definition of macro ‘ThrowRequire’
  #define ThrowRequire(cond) (cond ? (void) 0 : throw Ex() << "Condition {" << #cond << "} failed at " << __FILE__ << ", line:" << __LINE__)
                              ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3437:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<egids.size(); i++) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetfrac(ESMCI::Mesh**, int*, double*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3545:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (num_elem != egids.size()) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3555:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<egids.size(); i++) {
-                                  ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:37:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:470:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<sdim; i++) {
+                       ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_GridToMesh.h:26,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Regrid_Glue.h:30,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:25:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
@@ -8253,26 +7729,86 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3580:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<egids.size(); i++) {
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C:188:8: warning: unused parameter ‘unmappedactionA’ [-Wunused-parameter]
-   void MBMesh_Search_EToE(MBMesh *mbmAp, int unmappedactionA, MBMesh *mbmBp, int unmappedactionB,
-        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetfrac2(ESMCI::Mesh**, int*, double*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3693:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (*num_elem != egids.size()) {
-                                 ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:470:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<sdim; i++) {
-                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3702:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<egids.size(); i++) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4255:6: warning: unused parameter ‘meshop’ [-Wunused-parameter]
- void ESMCI_meshcreatefrommeshes(Mesh **meshapp, Mesh **meshbpp, Mesh **meshpp,
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘void ESMCI::_add_missing_multitile_elems(ESMCI::Mesh*, std::vector<ESMCI::MM_ELEM>*, int, int, int)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:1206:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i < missing_elems->size(); i++) {
+                                           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘bool ESMCI::_get_global_id(ESMCI::DistGrid*, int, int*, int*, bool*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:1262:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<seqIndex.size(); i++) {
+                                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:136:6: warning: unused parameter ‘pdim’ [-Wunused-parameter]
+ void sintd_cell::get_centroid(double * centroid, int sdim, int pdim){
       ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:230:6: warning: unused parameter ‘on_p_seg’ [-Wunused-parameter]
+ bool line_intersect_2D_3D(double *a1, double *a2, double *q1, double *q2, double *q3,
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:305:8: warning: unused parameter ‘out_mesh’ [-Wunused-parameter]
+   void unpack_gid_vert_comm(MBMesh *out_mesh, char *buff, int *gid) {
+        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:230:6: warning: unused parameter ‘on_q_seg’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:414:5: warning: unused parameter ‘pdim’ [-Wunused-parameter]
+ int insert_intersect(int pdim, int sdim, std::list<xpoint> & final_nodes, const std::vector<xpoint> & nodes, unsigned int i,
+     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::create_mbmesh_redist_elem_move_verts(ESMCI::MBMesh*, std::vector<ESMCI::EH_Comm_Pair>*, std::map<int, long unsigned int>*, ESMCI::MBMesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:388:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<elem_to_proc_list->size(); i++) {
+                                             ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘void ESMCI::ESMCI_GridToMeshCell(const ESMCI::Grid&, const std::vector<ESMCI::Array*>&, ESMCI::Mesh**, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:1664:51: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+ #define BAD_PROC (std::numeric_limits<UInt>::max())
+                                                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:2026:17: note: in expansion of macro ‘BAD_PROC’
+    if (owner != BAD_PROC) continue;
+                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:553:14: warning: unused parameter ‘pdim’ [-Wunused-parameter]
+ unsigned int point_in_poly(int pdim, int sdim, int nvert, const double * const poly_cd, const double * const point){
+              ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:600:9: warning: unused parameter ‘pdim’ [-Wunused-parameter]
+ polygon make_concave_polygon(const int pdim, const int sdim, const std::vector<xpoint> & subject,
+         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:1798:6: warning: unused parameter ‘arrays’ [-Wunused-parameter]
+ void ESMCI_GridToMeshCell(const Grid &grid_,
+      ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:32:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_GridToMesh.h:26,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:24:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:703:8: warning: unused parameter ‘out_mesh’ [-Wunused-parameter]
+   void unpack_gid_elem_comm(MBMesh *out_mesh, char *buff, int *_gid) {
+        ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C:23:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::create_mbmesh_redist_elem_move_elems(ESMCI::MBMesh*, std::vector<ESMCI::EH_Comm_Pair>*, std::map<int, long unsigned int>*, ESMCI::MBMesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:862:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<elem_to_proc_list->size(); i++) {
+                                             ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:921:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<elem_to_proc_list->size(); i++) {
+                                             ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C:25:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Regrid_Nearest.h:16,
@@ -8281,60 +7817,190 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void expand_split_elem_ids(ESMCI::Mesh*, int, int*, int*, int**, std::map<unsigned int, unsigned int>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4388:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<lookups.size(); i++) {
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘void ESMCI::_add_missing_multitile_elems(ESMCI::Mesh*, std::vector<ESMCI::MM_ELEM>*, int, int, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:1206:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i < missing_elems->size(); i++) {
-                                           ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void calc_split_id_to_frac(ESMCI::Mesh*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4453:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (int i=0; i<split_ids.size(); i++) {
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘bool ESMCI::_get_global_id(ESMCI::DistGrid*, int, int*, int*, bool*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:1262:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<seqIndex.size(); i++) {
-                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4500:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (int i=0; i<split_ids.size(); i++) {
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘void ESMCI::ESMCI_GridToMeshCell(const ESMCI::Grid&, const std::vector<ESMCI::Array*>&, ESMCI::Mesh**, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:1664:51: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
- #define BAD_PROC (std::numeric_limits<UInt>::max())
-                                                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:2026:17: note: in expansion of macro ‘BAD_PROC’
-    if (owner != BAD_PROC) continue;
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:38,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:36:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:1798:6: warning: unused parameter ‘arrays’ [-Wunused-parameter]
- void ESMCI_GridToMeshCell(const Grid &grid_,
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:32:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:1419:6: warning: unused parameter ‘pdim’ [-Wunused-parameter]
+ void construct_sintd(double area, int num_sintd_nodes, double * sintd_coords, int pdim, int sdim,
       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C: In function ‘void calc_bilinear_mat(ESMCI::MBMesh*, ESMCI::PointList*, MBMesh_Search_EToP_Result_List&, ESMCI::IWeights&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:171:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for(int i = 0; i < nodes.size(); ++i) {
-                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:79:6: warning: unused parameter ‘dstpl’ [-Wunused-parameter]
- void calc_bilinear_mat(MBMesh *srcmb, PointList *dstpl,
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:36:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:1575:5: warning: unused parameter ‘regridConserve’ [-Wunused-parameter]
+ int online_regrid_xgrid(Mesh &srcmesh, Mesh &dstmesh, Mesh * midmesh, IWeights &wts,
+     ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:38,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:36:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:32:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C: In function ‘void create_pointlist_of_points_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, ESMCI::PointList**)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:47:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     while ((wi != we) && (wi->first.id < id)) {
+                                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:52:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (wi->first.id != id) {
+                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:71:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     while ((wi != we) && (wi->first.id < id)) {
+                                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:76:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (wi->first.id != id) {
+                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C: In function ‘void replace_mapped_with_mapped_extrap(ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:95:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i = 0; i < col.size(); ++i) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:104:6: warning: unused parameter ‘pole_constraint_id’ [-Wunused-parameter]
+ void MBMesh_Extrapolate(MBMesh *srcmesh, PointList *srcpointlist, 
       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_MeshFitOnVM(ESMCI::Mesh**, ESMCI::VM**, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5279:26: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
-        if ((orig_owner < 0) || (orig_owner > curr_vm_size-1)) {
-                          ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5279:59: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-        if ((orig_owner < 0) || (orig_owner > curr_vm_size-1)) {
-                                                           ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5309:26: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
-        if ((orig_owner < 0) || (orig_owner > curr_vm_size-1)) {
-                          ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5309:59: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-        if ((orig_owner < 0) || (orig_owner > curr_vm_size-1)) {
-                                                           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:104:6: warning: unused parameter ‘extrapNumLevels’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:104:6: warning: unused parameter ‘extrapNumInputLevels’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:104:6: warning: unused parameter ‘rc’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_2D_cart(ESMCI::MBMesh*, moab::EntityHandle, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:101:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:114:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:130:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:159:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:247:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                                    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:34:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:263:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_3D_sph_src_pnts(int, double*, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:402:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:434:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_3D_sph(ESMCI::MBMesh*, moab::EntityHandle, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:645:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:31:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:657:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:25:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:769:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:779:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                                    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:27:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:28:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void calc_conserve_mat_serial_2D_2D_cart(ESMCI::MBMesh*, ESMCI::MBMesh*, MBMesh_Search_EToE_Result_List&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:833:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (sr.dst_elems.size() > max_num_dst_elems) max_num_dst_elems=sr.dst_elems.size();
+                               ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:861:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<sr.dst_elems.size(); i++) {
+                                       ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:20:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh_Glue.h:37,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:21:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:908:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<sr.dst_elems.size(); i++) {
+                                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:940:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<sr.dst_elems.size(); i++) {
+                                       ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:960:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int i=0; i<sr.dst_elems.size(); i++) {
+                                           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:979:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int i=0; i<sr.dst_elems.size(); i++) {
+                                           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1014:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<sr.dst_elems.size(); i++) {
+                                         ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:28:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void calc_conserve_mat_serial_2D_3D_sph(ESMCI::MBMesh*, ESMCI::MBMesh*, MBMesh_Search_EToE_Result_List&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1081:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+      if (sr.dst_elems.size() > max_num_dst_elems) max_num_dst_elems=sr.dst_elems.size();
+                                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:91:6: warning: unused parameter ‘norm_type’ [-Wunused-parameter]
  void MBMesh_regrid_create(void **meshsrcpp, ESMCI::Array **arraysrcpp, 
       ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1109:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<sr.dst_elems.size(); i++) {
+                                       ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘void get_mbmesh_node_ids_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, std::vector<int>*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:656:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      while ((wi != we) && (wi->first.id < id)) {
@@ -8342,16 +8008,28 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:661:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      if (wi->first.id != id) {
                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1155:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<sr.dst_elems.size(); i++) {
+                                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1187:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<sr.dst_elems.size(); i++) {
+                                       ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1207:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int i=0; i<sr.dst_elems.size(); i++) {
+                                           ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘void get_mbmesh_elem_ids_not_in_wmat(ESMCI::MBMesh*, ESMCI::WMat&, std::vector<int>*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:714:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      while ((wi != we) && (wi->first.id <elem_id)) wi++;
                                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1226:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int i=0; i<sr.dst_elems.size(); i++) {
+                                           ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:717:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      if (wi->first.id != elem_id) {
                          ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:132:13: warning: unused parameter ‘result’ [-Wunused-parameter]
- static void populate_box_elems(OTree *box,
-             ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1253:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<sr.dst_elems.size(); i++) {
+                                         ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘bool all_mbmesh_node_ids_in_wmat(ESMCI::PointList*, ESMCI::WMat&, int*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:745:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      while ((wi != we) && (wi->first.id < id)) {
@@ -8374,21 +8052,23 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:1118:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
          if (w.id == seq_ind) {
                      ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:19:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [39]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:1699:22:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+   MeshNullStream& operator<<(const T &t) {return *this; }
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: At global scope:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:1165:5: warning: unused parameter ‘regridConserve’ [-Wunused-parameter]
  int calc_regrid_wgts(MBMesh *srcmbmp, MBMesh *dstmbmp,
      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = ESMCI::MeshObj]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:1699:66:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:1165:5: warning: unused parameter ‘regridPoleType’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:1165:5: warning: unused parameter ‘regridPoleNPnts’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:1165:5: warning: unused parameter ‘regridScheme’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:1165:5: warning: unused parameter ‘unmappedaction’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C: In function ‘void MBMesh_Search_EToP(ESMCI::MBMesh*, ESMCI::PointList*, int, int*, double, MBMesh_Search_EToP_Result_List&, bool, ESMCI::WMat&, std::vector<int>*, ESMCI::OTree*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:616:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (int p = 0; p < dst_loc->size(); ++p) {
-                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:641:12: warning: converting to non-pointer type ‘moab::EntityHandle {aka long unsigned int}’ from NULL [-Wconversion-null]
-     si.elem=NULL;
-            ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:17,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:38,
@@ -8396,6 +8076,18 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
    static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C:188:8: warning: unused parameter ‘unmappedactionA’ [-Wunused-parameter]
+   void MBMesh_Search_EToE(MBMesh *mbmAp, int unmappedactionA, MBMesh *mbmBp, int unmappedactionB,
+        ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Comp.h:35:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_TraceRegion.h:14,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:34:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
+   const int   *getMinIndex(int tileno) const { return minIndex; }
+                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
+   const int   *getMaxIndex(int tileno) const { return maxIndex; }
+                ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
@@ -8406,12 +8098,332 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh_Glue.h:37,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:36:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_XGrid_Glue.C:37:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
+   const int   *getMinIndex(int tileno) const { return minIndex; }
+                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
+   const int   *getMaxIndex(int tileno) const { return maxIndex; }
+                ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:40:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:36:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:439:5: warning: unused parameter ‘sdim’ [-Wunused-parameter]
+ int ElemType2NumNodes(int pdim, int sdim, int etype) {
+     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:610:6: warning: unused parameter ‘regridScheme’ [-Wunused-parameter]
+ void ESMCI_regrid_getarea(Grid **gridpp,
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void get_mesh_node_ids_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, std::vector<int>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:727:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     while ((wi != we) && (wi->first.id < id)) {
+                                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:732:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (wi->first.id != id) {
+                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void get_mesh_elem_ids_not_in_wmat(ESMCI::Mesh*, ESMCI::WMat&, std::vector<int>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:773:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     while ((wi != we) && (wi->first.id <elem_id)) {
+                                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:778:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (wi->first.id != elem_id) {
+                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘bool all_mesh_node_ids_in_wmat(ESMCI::PointList*, ESMCI::WMat&, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:807:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     while ((wi != we) && (wi->first.id < id)) {
+                                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:822:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (wi->first.id != id) {
+                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘bool all_mesh_elem_ids_in_wmat(ESMCI::Mesh*, ESMCI::WMat&, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:874:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     while ((wi != we) && (wi->first.id <elem_id)) {
+                                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:887:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (wi->first.id != elem_id) {
+                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:974:49: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     while ((pos<num_dst_ids) && (dst_ids[pos] < elem_id)) {
+                                                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:987:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (dst_ids[pos] != elem_id) {
+                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshaddnodes(ESMCI::Mesh**, int*, int*, double*, int*, ESMCI::InterArray<int>*, ESMC_CoordSys_Flag*, int*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:277:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (UInt c = 0; c < sdim; ++c)
+                              ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:290:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (UInt c = 0; c<orig_sdim; ++c)
+                            ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void translate_split_src_elems_in_wts(ESMCI::Mesh*, int, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:1595:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+      if (src_id > srcmesh->max_non_split_id) {
+                            ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void getElemGIDS(ESMCI::MBMesh*, std::vector<int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2286:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i<pos_and_gids.size(); ++i) {
+                                       ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:1616:19: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<num_src_split_gids; i++) {
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:487:12: warning: unused parameter ‘sdim’ [-Wunused-parameter]
+ static int ElemType2NumNodes(int pdim, int sdim, int etype) {
+            ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘void ESMCI::MeshDual(ESMCI::Mesh*, ESMCI::Mesh**)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:266:54: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if ((src_mesh->is_split) && (elem_id > src_mesh->max_non_split_id)) {
+                                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void getElems(void**, std::vector<long unsigned int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2432:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i<pos_and_elems.size(); ++i) {
+                                        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_getlocalelemcoords(void**, double*, int*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2474:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int i=0; i<ehs.size(); i++) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2487:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int i=0; i<ehs.size(); i++) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void copy_rs_from_WMat_to_Array(ESMCI::WMat*, ESMCI::Array*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:2249:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (w.id == seq_ind) {
+                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_getarea(void**, int*, double*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2560:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (*num_elem != ehs.size()) {
+                               ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void copy_cnsv_rs_from_WMat_to_Array(ESMCI::WMat*, ESMCI::Array*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:2401:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (w.id == seq_ind) {
+                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2591:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<ehs.size(); i++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:637:5: warning: unused parameter ‘sdim’ [-Wunused-parameter]
+ int ElemType2NumNodesCXX(int pdim, int sdim, int etype) {
+     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C: In function ‘void ESMCI::get_unique_elems_around_node(const EntityHandle*, ESMCI::MBMesh*, ESMCI::MDSS*, int*, int*, bool&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C:1257:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (owner == Par::Rank()) allnotowned = false;
+                              ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void getNodes(void**, std::vector<long unsigned int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2790:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i = 0; i<pos_and_nodes.size(); ++i) {
+                                        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_getlocalcoords(void**, double*, int*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2830:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<nodes.size(); i++) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2843:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<nodes.size(); i++) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:449:56: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if ((src_mesh->is_split) && (elem_id > src_mesh->max_non_split_id)) {
+                                                        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:588:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (elemId[e] > max_id) {
+                       ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Macros.h:26:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:16:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C: In member function ‘int ESMCI::MeshCXX::createDistGrids(int*, int*, int*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:41:38: warning: the address of ‘localrc’ will never be NULL [-Waddress]
+ #define ESMC_PRESENT(arg) ( (arg) != 0 )
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_F90Interface.h:183:30: note: in expansion of macro ‘ESMC_PRESENT’
+                            (!ESMC_PRESENT(arg) ? ESMC_NULL_POINTER : (arg))
+                              ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:1037:38: note: in expansion of macro ‘ESMC_NOT_PRESENT_FILTER’
+                                      ESMC_NOT_PRESENT_FILTER(&localrc));
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2016:6: warning: unused parameter ‘buffer_l’ [-Wunused-parameter]
+ void ESMCI_meshinfoserialize(int *intMeshFreed,
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:41:38: warning: the address of ‘localrc’ will never be NULL [-Waddress]
+ #define ESMC_PRESENT(arg) ( (arg) != 0 )
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_F90Interface.h:183:30: note: in expansion of macro ‘ESMC_PRESENT’
+                            (!ESMC_PRESENT(arg) ? ESMC_NULL_POINTER : (arg))
+                              ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:1047:38: note: in expansion of macro ‘ESMC_NOT_PRESENT_FILTER’
+                                      ESMC_NOT_PRESENT_FILTER(&localrc));
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘void ESMCI::get_unique_elems_around_node(ESMCI::MeshObj*, ESMCI::Mesh*, ESMCI::MDSS*, int*, ESMCI::UInt*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1070:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (elem_id > max_elem_id) {
+                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2061:6: warning: unused parameter ‘buffer_l’ [-Wunused-parameter]
+ void ESMCI_meshinfodeserialize(int *intMeshFreed,
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1174:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (tmp_mdss[i].id != prev_id) {
+                             ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh_Glue.h:43:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:36:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshserialize(ESMCI::Mesh**, char*, int*, int*, ESMC_InquireFlag*, int*, ESMCI_FortranStrLenArg)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2217:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+           for (int j=0; j<nvalSetSizes[i]; j++) {
+                                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘void ESMCI::add_ghost_elems_to_split_orig_id_map(ESMCI::Mesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1213:29: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (elem_id <=  mesh->max_non_split_id) continue;
+                             ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2234:44: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+           for (int j=0; j<nvalSetObjSizes[i]; j++) {
+                                            ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1241:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if (elem_id <=  mesh->max_non_split_id) continue;
+                               ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2095:6: warning: unused parameter ‘buffer_l’ [-Wunused-parameter]
+ void ESMCI_meshserialize(Mesh **meshpp,
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1287:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (elem_id <=  mesh->max_non_split_id) continue;
+                           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1312:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (elem_id <=  mesh->max_non_split_id) continue;
+                           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshdeserialize(ESMCI::Mesh**, char*, int*, int*, ESMCI_FortranStrLenArg)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2341:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int j=0; j<nvalSetSizes[i]; j++) {
+                                       ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1333:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<lookups.size(); i++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2360:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int j=0; j<nvalSetObjSizes[i]; j++) {
+                                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2274:6: warning: unused parameter ‘buffer_l’ [-Wunused-parameter]
+ void ESMCI_meshdeserialize(Mesh **meshpp,
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_geteleminfointoarray(ESMCI::Mesh*, ESMCI::DistGrid*, int, int*, ESMCI::Array**, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2832:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i=0; i<seqIndexList.size(); i++) {
+                                               ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2866:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+             for (int i=0; i<seqIndexList.size(); i++) {
+                                               ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetarea(ESMCI::Mesh**, int*, double*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3079:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (*num_elem != egids.size()) {
+                                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3090:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<egids.size(); i++) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3116:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (int i=0; i<egids.size(); i++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3166:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<egids.size(); i++) {
+                                ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:37:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3216:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<egids.size(); i++) {
+                                  ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:38:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetcentroid(ESMCI::Mesh**, int*, double*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3392:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (*num_elem != egids.size()) {
+                                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3402:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<egids.size(); i++) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3437:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<egids.size(); i++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetfrac(ESMCI::Mesh**, int*, double*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3545:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (num_elem != egids.size()) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3555:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<egids.size(); i++) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3580:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<egids.size(); i++) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetfrac2(ESMCI::Mesh**, int*, double*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3693:33: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (*num_elem != egids.size()) {
+                                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3702:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<egids.size(); i++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4255:6: warning: unused parameter ‘meshop’ [-Wunused-parameter]
+ void ESMCI_meshcreatefrommeshes(Mesh **meshapp, Mesh **meshbpp, Mesh **meshpp,
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void expand_split_elem_ids(ESMCI::Mesh*, int, int*, int*, int**, std::map<unsigned int, unsigned int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4388:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<lookups.size(); i++) {
+                                  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘moab::EntityType ESMCI::_get_entity_type(int, int)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:731:4: warning: control reaches end of non-void function [-Wreturn-type]
     }
     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘const ESMCI::MeshObjTopo* ESMCI::ElemType2Topo(int, int, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:864:1: warning: control reaches end of non-void function [-Wreturn-type]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void calc_split_id_to_frac(ESMCI::Mesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4453:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<split_ids.size(); i++) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4500:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<split_ids.size(); i++) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_MeshFitOnVM(ESMCI::Mesh**, ESMCI::VM**, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5279:26: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+        if ((orig_owner < 0) || (orig_owner > curr_vm_size-1)) {
+                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5279:59: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if ((orig_owner < 0) || (orig_owner > curr_vm_size-1)) {
+                                                           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5309:26: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+        if ((orig_owner < 0) || (orig_owner > curr_vm_size-1)) {
+                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5309:59: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        if ((orig_owner < 0) || (orig_owner > curr_vm_size-1)) {
+                                                           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:132:13: warning: unused parameter ‘result’ [-Wunused-parameter]
+ static void populate_box_elems(OTree *box,
+             ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C: In function ‘void MBMesh_Search_EToP(ESMCI::MBMesh*, ESMCI::PointList*, int, int*, double, MBMesh_Search_EToP_Result_List&, bool, ESMCI::WMat&, std::vector<int>*, ESMCI::OTree*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:616:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int p = 0; p < dst_loc->size(); ++p) {
+                                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:641:12: warning: converting to non-pointer type ‘moab::EntityHandle {aka long unsigned int}’ from NULL [-Wconversion-null]
+     si.elem=NULL;
+            ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_3D_sph(ESMCI::MBMesh*, moab::EntityHandle, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:766:36: warning: ‘src_elem_area2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+       *src_elem_area=*src_elem_area+src_elem_area2;
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C: In function ‘const ESMCI::MeshObjTopo* ESMCI::ElemType2TopoCXX(int, int, int)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:629:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C: In function ‘int ESMCI::ElemType2NumNodesCXX(int, int, int)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:650:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C: In static member function ‘static ESMCI::MeshCap* ESMCI::MeshCap::GridToMesh(const ESMCI::Grid&, int, const std::vector<ESMCI::Array*>&, ESMCI::InterArray<int>*, int*, int*)’:
@@ -8430,18 +8442,10 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1718:22: warning: ‘mbmesh’ may be used uninitialized in this function [-Wmaybe-uninitialized]
      mc->mbmesh=mbmesh;
                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C: In function ‘const ESMCI::MeshObjTopo* ESMCI::ElemType2TopoCXX(int, int, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:629:1: warning: control reaches end of non-void function [-Wreturn-type]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘const ESMCI::MeshObjTopo* ESMCI::ElemType2Topo(int, int, int)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:864:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C: In function ‘int ESMCI::ElemType2NumNodesCXX(int, int, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:650:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C: In function ‘void ESMCI::get_unique_elems_around_node(const EntityHandle*, ESMCI::MBMesh*, ESMCI::MDSS*, int*, int*, bool&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C:1257:30: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       if (owner == Par::Rank()) allnotowned = false;
-                              ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘moab::EntityType get_entity_type(int, int)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:433:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
@@ -8450,10 +8454,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:452:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_3D_sph(ESMCI::MBMesh*, moab::EntityHandle, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:766:36: warning: ‘src_elem_area2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-       *src_elem_area=*src_elem_area+src_elem_area2;
-                                    ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘const ESMCI::MeshObjTopo* ElemType2Topo(int, int, int)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:483:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
@@ -8492,6 +8492,17 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:13:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
@@ -8504,42 +8515,8 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:13:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C:14:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:14:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshNC.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:12:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C:14:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -8562,44 +8539,7 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:24:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshSkin.C:12:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:12:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C:14:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C:14:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -8610,6 +8550,29 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Array.h:38,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshVTK.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C:12:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:14:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:24:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -8633,8 +8596,8 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:18:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshNC.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:12:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -8647,6 +8610,43 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshPartition.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPartition.C:12:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPNC.C:17:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:12:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshSkin.C:12:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -8681,51 +8681,21 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPNC.C:17:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:18:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GlobalIds.C:13:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEFamily.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEFamily.C:15:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ShapeLagrange.h:45:14: warning: unused parameter ‘side_num’ [-Wunused-parameter]
-   ShapeFunc *side_shape(UInt side_num) const {
-              ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshField.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshField.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Kernel.C:13:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshField.h:17,
@@ -8733,45 +8703,53 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshField.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshField.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Kernel.C:13:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_ParEnv.C:12:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_ParEnv.C:39:1: warning: unused parameter ‘fname’ [-Wunused-parameter]
+ ParLog::ParLog(const std::string &fname, bool _use_log) :
+ ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshField.h:19:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshField.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_ParEnv.C:12:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = std::basic_string<char>]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_ParEnv.C:86:35:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+   MeshNullStream& operator<<(const T &t) {return *this; }
+                   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:17:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjPack.h:101:3: warning: unused parameter ‘ghosting’ [-Wunused-parameter]
    SparsePack(SparseMsg::buffer &b, const Attr &a, bool ghosting = false) {
    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:18:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Migrator.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:14:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:14:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshNC.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshNC.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:12:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
@@ -8779,53 +8757,101 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C: In member function ‘void ESMCI::FieldReg::Commit(ESMCI::MeshDB&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:389:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<nvalSet.size(); i++) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:396:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<nvalSetObj.size(); i++) {
-                                       ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:18:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjPack.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjPack.C:12:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C:13:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C: In member function ‘void ESMCI::FieldReg::ProxyCommit(ESMCI::MeshDB&, int, std::vector<unsigned int>, std::vector<unsigned int>, std::vector<unsigned int>, std::vector<unsigned int>)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:559:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<nvalSetSizesArg[setPos]; i++) {
-                                             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:565:48: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<nvalSetObjSizesArg[setPos]; i++) {
-                                                ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Migrator.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C:14:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_grads(ESMCI::UInt, ESMCI::UInt, const ESMCI::Mapping<typename ESMCI::ME2MPTraits<METRAITS>::value>*, const mdata_type*, const double*, const field_type*, typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value*, ESMCI::MasterElementV<METRAITS>::mdata_type*) const [with METRAITS = ESMCI::METraits<>; ESMCI::UInt = unsigned int; typename ESMCI::ME2MPTraits<METRAITS>::value = ESMCI::MPTraits<>; ESMCI::MasterElementV<METRAITS>::mdata_type = double; ESMCI::MasterElementV<METRAITS>::field_type = double; typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value = double]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:307:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
+ void MasterElementV<METRAITS>::function_grads(UInt npts, UInt fdim,
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_values(ESMCI::UInt, ESMCI::UInt, const double*, const field_type*, ESMCI::MasterElementV<METRAITS>::field_type*, double*) const [with METRAITS = ESMCI::METraits<>; ESMCI::UInt = unsigned int; ESMCI::MasterElementV<METRAITS>::field_type = double]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:307:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:239:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
+ void MasterElementV<METRAITS>::function_values(
+      ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshPartition.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPartition.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:16:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_grads(ESMCI::UInt, ESMCI::UInt, const ESMCI::Mapping<typename ESMCI::ME2MPTraits<METRAITS>::value>*, const mdata_type*, const double*, const field_type*, typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value*, ESMCI::MasterElementV<METRAITS>::mdata_type*) const [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, double>; ESMCI::UInt = unsigned int; typename ESMCI::ME2MPTraits<METRAITS>::value = ESMCI::MPTraits<>; ESMCI::MasterElementV<METRAITS>::mdata_type = double; ESMCI::MasterElementV<METRAITS>::field_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value = Sacado::Fad::DFad<double>]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:308:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
+ void MasterElementV<METRAITS>::function_grads(UInt npts, UInt fdim,
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:14:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:17:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjPack.C:12:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjPack.h:101:3: warning: unused parameter ‘ghosting’ [-Wunused-parameter]
-   SparsePack(SparseMsg::buffer &b, const Attr &a, bool ghosting = false) {
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshllField.C:12:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjPack.C:13:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_HAdapt.h:20,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:12:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_values(ESMCI::UInt, ESMCI::UInt, const double*, const field_type*, ESMCI::MasterElementV<METRAITS>::field_type*, double*) const [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, double>; ESMCI::UInt = unsigned int; ESMCI::MasterElementV<METRAITS>::field_type = Sacado::Fad::DFad<double>]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:308:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:239:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
+ void MasterElementV<METRAITS>::function_values(
+      ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEFamily.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [3]]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:640:22:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
@@ -8849,23 +8875,73 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = long int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:641:75:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_grads(ESMCI::UInt, ESMCI::UInt, const ESMCI::Mapping<typename ESMCI::ME2MPTraits<METRAITS>::value>*, const mdata_type*, const double*, const field_type*, typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value*, ESMCI::MasterElementV<METRAITS>::mdata_type*) const [with METRAITS = ESMCI::METraits<double, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int; typename ESMCI::ME2MPTraits<METRAITS>::value = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>; ESMCI::MasterElementV<METRAITS>::mdata_type = Sacado::Fad::DFad<double>; ESMCI::MasterElementV<METRAITS>::field_type = double; typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value = Sacado::Fad::DFad<double>]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:309:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
+ void MasterElementV<METRAITS>::function_grads(UInt npts, UInt fdim,
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_values(ESMCI::UInt, ESMCI::UInt, const double*, const field_type*, ESMCI::MasterElementV<METRAITS>::field_type*, double*) const [with METRAITS = ESMCI::METraits<double, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int; ESMCI::MasterElementV<METRAITS>::field_type = double]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:309:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:239:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
+ void MasterElementV<METRAITS>::function_values(
+      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [28]]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:1205:21:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [20]]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:1206:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h: In instantiation of ‘ESMCI::_fieldType<SCALAR>::_fieldType(const ESMCI::_fieldType<SCALAR>&) [with SCALAR = char]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshllField.C:54:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:140:3: warning: base class ‘class ESMCI::_fieldTypeBase’ should be explicitly initialized in the copy constructor [-Wextra]
-   _fieldType(const _fieldType &rhs) : ti(rhs.ti) {}
-   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [12]]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:1206:47:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [9]]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:1206:72:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEFamily.C:15:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ShapeLagrange.h:45:14: warning: unused parameter ‘side_num’ [-Wunused-parameter]
+   ShapeFunc *side_shape(UInt side_num) const {
+              ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshPartition.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPartition.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_grads(ESMCI::UInt, ESMCI::UInt, const ESMCI::Mapping<typename ESMCI::ME2MPTraits<METRAITS>::value>*, const mdata_type*, const double*, const field_type*, typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value*, ESMCI::MasterElementV<METRAITS>::mdata_type*) const [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int; typename ESMCI::ME2MPTraits<METRAITS>::value = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>; ESMCI::MasterElementV<METRAITS>::mdata_type = Sacado::Fad::DFad<double>; ESMCI::MasterElementV<METRAITS>::field_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value = Sacado::Fad::DFad<double>]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:310:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
+ void MasterElementV<METRAITS>::function_grads(UInt npts, UInt fdim,
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_values(ESMCI::UInt, ESMCI::UInt, const double*, const field_type*, ESMCI::MasterElementV<METRAITS>::field_type*, double*) const [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int; ESMCI::MasterElementV<METRAITS>::field_type = Sacado::Fad::DFad<double>]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:310:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:239:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
+ void MasterElementV<METRAITS>::function_values(
+      ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GlobalIds.C:13:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshllField.C:12:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_HAdapt.h:20,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h: In instantiation of ‘ESMCI::_fieldType<SCALAR>::_fieldType(const ESMCI::_fieldType<SCALAR>&) [with SCALAR = char]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshllField.C:54:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:140:3: warning: base class ‘class ESMCI::_fieldTypeBase’ should be explicitly initialized in the copy constructor [-Wextra]
+   _fieldType(const _fieldType &rhs) : ti(rhs.ti) {}
+   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h: In instantiation of ‘ESMCI::_fieldType<SCALAR>::_fieldType(const ESMCI::_fieldType<SCALAR>&) [with SCALAR = long int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshllField.C:55:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:140:3: warning: base class ‘class ESMCI::_fieldTypeBase’ should be explicitly initialized in the copy constructor [-Wextra]
@@ -8881,6 +8957,19 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h: In instantiation of ‘ESMCI::_fieldType<SCALAR>::_fieldType(const ESMCI::_fieldType<SCALAR>&) [with SCALAR = double]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshllField.C:59:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:140:3: warning: base class ‘class ESMCI::_fieldTypeBase’ should be explicitly initialized in the copy constructor [-Wextra]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Phedra.h:5,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Phedra.C:10:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
@@ -8889,9 +8978,41 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Phedra.h:5,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Phedra.C:10:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommReg.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:12:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshDB.C:16:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:18:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjPack.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjPack.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
@@ -8902,32 +9023,38 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshRefine.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Phedra.h:5,
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C: In function ‘void ESMCI::build_pl_bbox(double*, double*, ESMCI::PointList*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:355:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (UInt d = 0; d < sdim; d++) {
+                          ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Phedra.h:5:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Phedra.C:10:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C:13:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshRefine.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:12:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:12:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshDB.C:18:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:14:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
@@ -8937,15 +9064,34 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:12:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h: In instantiation of ‘ESMCI::MasterElement<METRAITS>* ESMCI::MasterElement<METRAITS>::side_element(ESMCI::UInt) const [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:370:1:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:245:36: warning: unused parameter ‘side’ [-Wunused-parameter]
+   virtual MasterElement<METRAITS> *side_element(UInt side) const {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h: In instantiation of ‘ESMCI::MasterElement<METRAITS>* ESMCI::MasterElement<METRAITS>::side_element(ESMCI::UInt) const [with METRAITS = ESMCI::METraits<double, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:370:1:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:245:36: warning: unused parameter ‘side’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h: In instantiation of ‘ESMCI::MasterElement<METRAITS>* ESMCI::MasterElement<METRAITS>::side_element(ESMCI::UInt) const [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, double>; ESMCI::UInt = unsigned int]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:370:1:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:245:36: warning: unused parameter ‘side’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h: In instantiation of ‘ESMCI::MasterElement<METRAITS>* ESMCI::MasterElement<METRAITS>::side_element(ESMCI::UInt) const [with METRAITS = ESMCI::METraits<>; ESMCI::UInt = unsigned int]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:370:1:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:245:36: warning: unused parameter ‘side’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:16:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Phedra.h:5,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Phedra.C:10:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h: In instantiation of ‘void ESMCI::Mapping<MPTRAITS>::normal(ESMCI::UInt, const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with MPTRAITS = ESMCI::MPTraits<>; ESMCI::UInt = unsigned int; ESMCI::Mapping<MPTRAITS>::mdata_type = double; ESMCI::Mapping<MPTRAITS>::pcoord_type = double; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = double]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:84:40:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘npts’ [-Wunused-parameter]
+   virtual void normal(UInt npts, const mdata_type mdata[],
+                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘mdata’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘result’ [-Wunused-parameter]
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
@@ -8957,12 +9103,82 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshDB.C:16:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshField.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:23:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjPack.C:12:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjPack.h:101:3: warning: unused parameter ‘ghosting’ [-Wunused-parameter]
+   SparsePack(SparseMsg::buffer &b, const Attr &a, bool ghosting = false) {
+   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C:28:6: warning: unused parameter ‘imname’ [-Wunused-parameter]
+ void MEImprintValSets(const std::string &imname, MeshObj &obj, const MasterElementBase &me,
+      ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C:13:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjPack.C:13:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommReg.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshField.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:23:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshDB.C:20:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:14:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPNC.C:17:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:14:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
@@ -8971,25 +9187,44 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C:13:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Phedra.h:5:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Phedra.C:10:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_ConserveInterp.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:13:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
    static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
                  ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Kernel.C:13:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshRefine.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPartition.C:58:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
+ void GetMetisPartition(const Mesh &mesh, UInt npart, const MEField<> &ep) {
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPartition.C:58:6: warning: unused parameter ‘npart’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPartition.C:58:6: warning: unused parameter ‘ep’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C:16:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshRead.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRead.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshSkin.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshNC.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
@@ -8997,12 +9232,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObj.C:12:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObj.h: In constructor ‘ESMCI::MeshObj::MeshObj(ESMCI::UChar, int, long int, int)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObj.h:148:8: warning: ‘ESMCI::MeshObj::type’ will be initialized after [-Wreorder]
@@ -9014,47 +9243,54 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObj.C:26:1: warning:   when initialized here [-Wreorder]
  MeshObj::MeshObj(UChar _type, int _id, long _data_index, int _owner) :
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_grads(ESMCI::UInt, ESMCI::UInt, const ESMCI::Mapping<typename ESMCI::ME2MPTraits<METRAITS>::value>*, const mdata_type*, const double*, const field_type*, typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value*, ESMCI::MasterElementV<METRAITS>::mdata_type*) const [with METRAITS = ESMCI::METraits<>; ESMCI::UInt = unsigned int; typename ESMCI::ME2MPTraits<METRAITS>::value = ESMCI::MPTraits<>; ESMCI::MasterElementV<METRAITS>::mdata_type = double; ESMCI::MasterElementV<METRAITS>::field_type = double; typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value = double]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:307:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
- void MasterElementV<METRAITS>::function_grads(UInt npts, UInt fdim,
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_values(ESMCI::UInt, ESMCI::UInt, const double*, const field_type*, ESMCI::MasterElementV<METRAITS>::field_type*, double*) const [with METRAITS = ESMCI::METraits<>; ESMCI::UInt = unsigned int; ESMCI::MasterElementV<METRAITS>::field_type = double]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:307:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:239:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
- void MasterElementV<METRAITS>::function_values(
-      ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C:14:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshRefine.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:16:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:12:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshNC.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshDB.C:18:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:15:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_grads(ESMCI::UInt, ESMCI::UInt, const ESMCI::Mapping<typename ESMCI::ME2MPTraits<METRAITS>::value>*, const mdata_type*, const double*, const field_type*, typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value*, ESMCI::MasterElementV<METRAITS>::mdata_type*) const [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, double>; ESMCI::UInt = unsigned int; typename ESMCI::ME2MPTraits<METRAITS>::value = ESMCI::MPTraits<>; ESMCI::MasterElementV<METRAITS>::mdata_type = double; ESMCI::MasterElementV<METRAITS>::field_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value = Sacado::Fad::DFad<double>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:308:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
- void MasterElementV<METRAITS>::function_grads(UInt npts, UInt fdim,
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Kernel.C:13:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPNC.C:17:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C:242:8: warning: unused parameter ‘elemArrays’ [-Wunused-parameter]
+   void WriteVTKMesh(const Mesh &mesh, const std::string &filename,
+        ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshSkin.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
@@ -9062,261 +9298,77 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjPack.h:101:3: warning: unused parameter ‘ghosting’ [-Wunused-parameter]
    SparsePack(SparseMsg::buffer &b, const Attr &a, bool ghosting = false) {
    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_values(ESMCI::UInt, ESMCI::UInt, const double*, const field_type*, ESMCI::MasterElementV<METRAITS>::field_type*, double*) const [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, double>; ESMCI::UInt = unsigned int; ESMCI::MasterElementV<METRAITS>::field_type = Sacado::Fad::DFad<double>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:308:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:239:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
- void MasterElementV<METRAITS>::function_values(
-      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C: In member function ‘void ESMCI::FieldReg::Commit(ESMCI::MeshDB&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:389:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<nvalSet.size(); i++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:396:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<nvalSetObj.size(); i++) {
+                                       ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshRead.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRead.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C: In member function ‘void ESMCI::FieldReg::ProxyCommit(ESMCI::MeshDB&, int, std::vector<unsigned int>, std::vector<unsigned int>, std::vector<unsigned int>, std::vector<unsigned int>)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:559:45: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<nvalSetSizesArg[setPos]; i++) {
+                                             ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:565:48: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<nvalSetObjSizesArg[setPos]; i++) {
+                                                ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:16:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [31]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1030:28:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+   MeshNullStream& operator<<(const T &t) {return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = ESMCI::MeshObj]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1030:64:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [12]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1032:28:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [2]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1034:30:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = long int]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1034:54:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [13]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1036:28:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [19]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1042:28:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [18]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1043:28:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:16:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_ParEnv.C:12:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshField.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:23:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C:13:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_grads(ESMCI::UInt, ESMCI::UInt, const ESMCI::Mapping<typename ESMCI::ME2MPTraits<METRAITS>::value>*, const mdata_type*, const double*, const field_type*, typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value*, ESMCI::MasterElementV<METRAITS>::mdata_type*) const [with METRAITS = ESMCI::METraits<double, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int; typename ESMCI::ME2MPTraits<METRAITS>::value = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>; ESMCI::MasterElementV<METRAITS>::mdata_type = Sacado::Fad::DFad<double>; ESMCI::MasterElementV<METRAITS>::field_type = double; typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value = Sacado::Fad::DFad<double>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:309:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
- void MasterElementV<METRAITS>::function_grads(UInt npts, UInt fdim,
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C: In instantiation of ‘void ESMCI::MEValues<METRAITS, FIELD>::compute_jxw(const ESMCI::MeshObj&, const double*) [with METRAITS = ESMCI::METraits<>; FIELD = ESMCI::MEField<ESMCI::_field>]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:389:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:260:6: warning: unused parameter ‘elem’ [-Wunused-parameter]
+ void MEValues<METRAITS,FIELD>::compute_jxw(const MeshObj &elem, const double mdata[]) {
       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_ParEnv.C:39:1: warning: unused parameter ‘fname’ [-Wunused-parameter]
- ParLog::ParLog(const std::string &fname, bool _use_log) :
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_values(ESMCI::UInt, ESMCI::UInt, const double*, const field_type*, ESMCI::MasterElementV<METRAITS>::field_type*, double*) const [with METRAITS = ESMCI::METraits<double, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int; ESMCI::MasterElementV<METRAITS>::field_type = double]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:309:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:239:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
- void MasterElementV<METRAITS>::function_values(
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C: In instantiation of ‘void ESMCI::MEValues<METRAITS, FIELD>::GetInterpolationPoints(double*) [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, double>; FIELD = ESMCI::MEField<ESMCI::SField>]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:390:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:314:6: warning: unused parameter ‘values’ [-Wunused-parameter]
+ void MEValues<METRAITS,FIELD>::GetInterpolationPoints(double values[]) {
       ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshRead.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRead.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_ParEnv.C:12:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = std::basic_string<char>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_ParEnv.C:86:35:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-   MeshNullStream& operator<<(const T &t) {return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:17:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:18:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_grads(ESMCI::UInt, ESMCI::UInt, const ESMCI::Mapping<typename ESMCI::ME2MPTraits<METRAITS>::value>*, const mdata_type*, const double*, const field_type*, typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value*, ESMCI::MasterElementV<METRAITS>::mdata_type*) const [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int; typename ESMCI::ME2MPTraits<METRAITS>::value = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>; ESMCI::MasterElementV<METRAITS>::mdata_type = Sacado::Fad::DFad<double>; ESMCI::MasterElementV<METRAITS>::field_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename METRAITS::mdata_type, typename METRAITS::field_type>::value = Sacado::Fad::DFad<double>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:310:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
- void MasterElementV<METRAITS>::function_grads(UInt npts, UInt fdim,
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C: In instantiation of ‘void ESMCI::MEValues<METRAITS, FIELD>::Interpolate(const FIELD&, const double*) [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, double>; FIELD = ESMCI::MEField<ESMCI::SField>]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:390:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:327:6: warning: unused parameter ‘f’ [-Wunused-parameter]
+ void MEValues<METRAITS,FIELD>::Interpolate(const FIELD &f, const double fvals[]) {
       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:179:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C: In function ‘void ESMCI::Cart2D(ESMCI::Mesh&, int, int, double, double, double, double)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:359:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (UInt i=0; i<X*Y; ++i) {
-                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:366:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for(UInt j=0; j<Y-1; ++j) {
-                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:367:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for(UInt i=0; i<X-1; ++i) {
-                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C: In instantiation of ‘void ESMCI::MasterElementV<METRAITS>::function_values(ESMCI::UInt, ESMCI::UInt, const double*, const field_type*, ESMCI::MasterElementV<METRAITS>::field_type*, double*) const [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int; ESMCI::MasterElementV<METRAITS>::field_type = Sacado::Fad::DFad<double>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:310:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:239:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
- void MasterElementV<METRAITS>::function_values(
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:384:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (UInt i=0; i<X*Y; ++i) {
-                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C: In function ‘void ESMCI::SphShell(ESMCI::Mesh&, int, int, double, double, double, double)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:403:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (UInt i=0; i<lat*lon; ++i) {
-                          ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:410:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for(UInt j=0; j<lon-1; ++j) {
-                         ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshField.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:23:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:411:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for(UInt i=0; i<lat-1; ++i) {
-                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:434:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (UInt i=0; i<lat*lon; ++i) {
-                          ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C:13:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObjConn.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshSkin.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:21:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshDB.C:20:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:63:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
- void LoadNCMesh(Mesh &mesh, const std::string name) {
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:63:6: warning: unused parameter ‘name’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshRead.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRead.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshPartition.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPartition.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:337:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
- void LoadNCDualMesh(Mesh &mesh, const std::string fname, bool use_quad) {
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:337:6: warning: unused parameter ‘fname’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:337:6: warning: unused parameter ‘use_quad’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:658:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
- void LoadNCTMesh(Mesh &mesh, const std::string name,
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:658:6: warning: unused parameter ‘name’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:658:6: warning: unused parameter ‘lf’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:805:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
- bool LoadNCTData(MeshDB &mesh, 
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:805:6: warning: unused parameter ‘filename’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:805:6: warning: unused parameter ‘vnames’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:805:6: warning: unused parameter ‘field’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:805:6: warning: unused parameter ‘timestep’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshUtils.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshUtils.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshSkin.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:16:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshPartition.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPartition.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C:16:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:17:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:327:6: warning: unused parameter ‘fvals’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [22]]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshDB.C:506:17:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
@@ -9337,212 +9389,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [3]]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshDB.C:507:37:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_ConserveInterp.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:13:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:16:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:60:13: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
- static void GetObjList(void *user, int numGlobalIds, int numLids, ZOLTAN_ID_PTR gids, ZOLTAN_ID_PTR lids,
-             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:60:13: warning: unused parameter ‘numLids’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:60:13: warning: unused parameter ‘wgt_dim’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:60:13: warning: unused parameter ‘obj_wghts’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:119:13: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
- static void GetObject(void *user, int numGlobalIds, int numLids, int numObjs,
-             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:119:13: warning: unused parameter ‘numLids’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h: In constructor ‘ESMCI::GeomRend::GeomRend(ESMCI::Mesh*, ESMCI::PointList*, ESMCI::Mesh*, ESMCI::PointList*, const ESMCI::GeomRend::DstConfig&, bool, bool)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:166:8: warning: ‘ESMCI::GeomRend::freeze_src’ will be initialized after [-Wreorder]
-   bool freeze_src;  // true if src mesh will not be migrated to create src rendezvous mesh
-        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:154:14: warning:   ‘ESMCI::PointList* ESMCI::GeomRend::srcplist_rend’ [-Wreorder]
-   PointList *srcplist_rend;
-              ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C:242:8: warning: unused parameter ‘elemArrays’ [-Wunused-parameter]
-   void WriteVTKMesh(const Mesh &mesh, const std::string &filename,
-        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:182:3: warning:   when initialized here [-Wreorder]
-   GeomRend::GeomRend(Mesh *_srcmesh, PointList *_srcplist,
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:169:8: warning: ‘ESMCI::GeomRend::on_sph’ will be initialized after [-Wreorder]
-   bool on_sph;
-        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:103:7: warning:   ‘int ESMCI::GeomRend::status’ [-Wreorder]
-   int status;
-       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:182:3: warning:   when initialized here [-Wreorder]
-   GeomRend::GeomRend(Mesh *_srcmesh, PointList *_srcplist,
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_List.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObj.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshDB.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommReg.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:217:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   ThrowRequire(sdim == dst_dim);
-                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Exception.h:107:29: note: in definition of macro ‘ThrowRequire’
- #define ThrowRequire(cond) (cond ? (void) 0 : throw Ex() << "Condition {" << #cond << "} failed at " << __FILE__ << ", line:" << __LINE__)
-                             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C: In member function ‘void ESMCI::GeomRend::build_dst_mig(Zoltan_Struct*, ESMCI::GeomRend::ZoltanUD&, int, ZOLTAN_ID_PTR, ZOLTAN_ID_PTR, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:769:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (UInt i = 0; i < nd_size; i++) {
-                          ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:12:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h: In instantiation of ‘ESMCI::MasterElement<METRAITS>* ESMCI::MasterElement<METRAITS>::side_element(ESMCI::UInt) const [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:370:1:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:245:36: warning: unused parameter ‘side’ [-Wunused-parameter]
-   virtual MasterElement<METRAITS> *side_element(UInt side) const {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h: In instantiation of ‘ESMCI::MasterElement<METRAITS>* ESMCI::MasterElement<METRAITS>::side_element(ESMCI::UInt) const [with METRAITS = ESMCI::METraits<double, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:370:1:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:245:36: warning: unused parameter ‘side’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h: In instantiation of ‘ESMCI::MasterElement<METRAITS>* ESMCI::MasterElement<METRAITS>::side_element(ESMCI::UInt) const [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, double>; ESMCI::UInt = unsigned int]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:370:1:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:245:36: warning: unused parameter ‘side’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h: In instantiation of ‘ESMCI::MasterElement<METRAITS>* ESMCI::MasterElement<METRAITS>::side_element(ESMCI::UInt) const [with METRAITS = ESMCI::METraits<>; ESMCI::UInt = unsigned int]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MasterElement.C:370:1:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:245:36: warning: unused parameter ‘side’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:15:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:1270:6: warning: unused parameter ‘scoord’ [-Wunused-parameter]
- void mesh_isect(const MEField<> & scoord, const BBox & srcBBox, const MEField<> & dcoord, std::vector<MeshObj *> objlist,
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:1270:6: warning: unused parameter ‘sdim’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:1314:6: warning: unused parameter ‘zzp’ [-Wunused-parameter]
- void GeomRend::Build_Merge(UInt nsrcF, MEField<> **srcF, UInt ndstF, MEField<> **dstF, struct Zoltan_Struct **zzp) {
-      ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPNC.C:17:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:21:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C: In member function ‘void ESMCI::HAdapt::refinement_resolution() const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:303:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-           for (UInt sn = 0; !constr && sn != etopo->num_side_nodes; ++sn) {
-                                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C:28:6: warning: unused parameter ‘imname’ [-Wunused-parameter]
- void MEImprintValSets(const std::string &imname, MeshObj &obj, const MasterElementBase &me,
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C: In function ‘void ESMCI::retrieve_nodes(ESMCI::MeshObj&, const ESMCI::MeshObjTopo*, std::vector<ESMCI::MeshObj*>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:146:63: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (UInt i = topo->num_nodes; !need_edges && i < topo->num_child_nodes; i++)
-                                                               ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:150:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         for (UInt s = 0; s < topo->num_edges; s++) {
-                                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPNC.C:17:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:18:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C: In function ‘void ESMCI::build_pl_bbox(double*, double*, ESMCI::PointList*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:355:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (UInt d = 0; d < sdim; d++) {
-                          ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:16:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:16:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h: In instantiation of ‘void ESMCI::Mapping<MPTRAITS>::normal(ESMCI::UInt, const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with MPTRAITS = ESMCI::MPTraits<>; ESMCI::UInt = unsigned int; ESMCI::Mapping<MPTRAITS>::mdata_type = double; ESMCI::Mapping<MPTRAITS>::pcoord_type = double; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = double]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:84:40:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘npts’ [-Wunused-parameter]
-   virtual void normal(UInt npts, const mdata_type mdata[],
-                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘mdata’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘result’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRead.C:19:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:21:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [6]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:972:15:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-   MeshNullStream& operator<<(const T &t) {return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = unsigned int]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:972:26:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [7]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:972:34:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [9]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:972:53:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [18]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:973:15:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [20]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:995:15:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = std::basic_string<char>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:1020:33:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = double]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:1025:32:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [2]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:1025:37:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshSkin.C:19:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C: In instantiation of ‘void ESMCI::MEValues<METRAITS, FIELD>::compute_jxw(const ESMCI::MeshObj&, const double*) [with METRAITS = ESMCI::METraits<>; FIELD = ESMCI::MEField<ESMCI::_field>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:389:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:260:6: warning: unused parameter ‘elem’ [-Wunused-parameter]
- void MEValues<METRAITS,FIELD>::compute_jxw(const MeshObj &elem, const double mdata[]) {
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C: In instantiation of ‘void ESMCI::MEValues<METRAITS, FIELD>::GetInterpolationPoints(double*) [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, double>; FIELD = ESMCI::MEField<ESMCI::SField>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:390:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:314:6: warning: unused parameter ‘values’ [-Wunused-parameter]
- void MEValues<METRAITS,FIELD>::GetInterpolationPoints(double values[]) {
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C: In instantiation of ‘void ESMCI::MEValues<METRAITS, FIELD>::Interpolate(const FIELD&, const double*) [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, double>; FIELD = ESMCI::MEField<ESMCI::SField>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:390:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:327:6: warning: unused parameter ‘f’ [-Wunused-parameter]
- void MEValues<METRAITS,FIELD>::Interpolate(const FIELD &f, const double fvals[]) {
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:327:6: warning: unused parameter ‘fvals’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C: In instantiation of ‘void ESMCI::MEValues<METRAITS, FIELD>::compute_jxw(const ESMCI::MeshObj&, const double*) [with METRAITS = ESMCI::METraits<Sacado::Fad::DFad<double>, double>; FIELD = ESMCI::MEField<ESMCI::SField>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:390:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:260:6: warning: unused parameter ‘elem’ [-Wunused-parameter]
@@ -9570,90 +9416,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:452:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
  void MESideValues<METRAITS,FIELD>::compute_jxw(const MeshObj &elem, const double mdata[]) {
       ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_WriteWeightsPar.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:12:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FindPnts.h:20,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FindPnts.C:12:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C:13:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:28:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [36]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:224:21:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-   MeshNullStream& operator<<(const T &t) {return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = ESMCI::MeshObj]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:224:62:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [15]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:225:21:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:61:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
- void LoadExMesh(Mesh &mesh, const std::string &filename, int nstep) {
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:61:6: warning: unused parameter ‘filename’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = ESMCI::Context]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:225:41:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:61:6: warning: unused parameter ‘nstep’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [35]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:234:21:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = ESMCI::Attr]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:235:41:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [16]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:236:21:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = unsigned int]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:236:42:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:450:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
- void WriteExMesh(const Mesh &mesh, const std::string &filename, int nstep, double tstep) {
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:450:6: warning: unused parameter ‘filename’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:450:6: warning: unused parameter ‘nstep’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:450:6: warning: unused parameter ‘tstep’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:791:6: warning: unused parameter ‘nstep’ [-Wunused-parameter]
- void WriteExMeshTimeStep(int nstep, double tstep, const Mesh &mesh, const std::string &filename) {
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:791:6: warning: unused parameter ‘tstep’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:791:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:791:6: warning: unused parameter ‘filename’ [-Wunused-parameter]
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:16:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:12:
@@ -9683,62 +9445,147 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:130:36: warning: unused parameter ‘side_num’ [-Wunused-parameter]
    virtual const Mapping<MPTRAITS> *side_mapping(UInt side_num) const {
                                     ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C:15:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshUtils.C:20:0:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshUtils.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:17:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Quadrature.C:12:0:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshUtils.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:16:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [31]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1030:28:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-   MeshNullStream& operator<<(const T &t) {return *this; }
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:16:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = ESMCI::MeshObj]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1030:64:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [12]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1032:28:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [2]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1034:30:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = long int]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1034:54:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [13]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1036:28:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [19]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1042:28:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [18]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:1043:28:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPartition.C:58:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
- void GetMetisPartition(const Mesh &mesh, UInt npart, const MEField<> &ep) {
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPartition.C:58:6: warning: unused parameter ‘npart’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPartition.C:58:6: warning: unused parameter ‘ep’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:60:13: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
+ static void GetObjList(void *user, int numGlobalIds, int numLids, ZOLTAN_ID_PTR gids, ZOLTAN_ID_PTR lids,
+             ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:60:13: warning: unused parameter ‘numLids’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:60:13: warning: unused parameter ‘wgt_dim’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:60:13: warning: unused parameter ‘obj_wghts’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:119:13: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
+ static void GetObject(void *user, int numGlobalIds, int numLids, int numObjs,
+             ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:119:13: warning: unused parameter ‘numLids’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h: In constructor ‘ESMCI::GeomRend::GeomRend(ESMCI::Mesh*, ESMCI::PointList*, ESMCI::Mesh*, ESMCI::PointList*, const ESMCI::GeomRend::DstConfig&, bool, bool)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:166:8: warning: ‘ESMCI::GeomRend::freeze_src’ will be initialized after [-Wreorder]
+   bool freeze_src;  // true if src mesh will not be migrated to create src rendezvous mesh
+        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:154:14: warning:   ‘ESMCI::PointList* ESMCI::GeomRend::srcplist_rend’ [-Wreorder]
+   PointList *srcplist_rend;
+              ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:182:3: warning:   when initialized here [-Wreorder]
+   GeomRend::GeomRend(Mesh *_srcmesh, PointList *_srcplist,
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:169:8: warning: ‘ESMCI::GeomRend::on_sph’ will be initialized after [-Wreorder]
+   bool on_sph;
+        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:103:7: warning:   ‘int ESMCI::GeomRend::status’ [-Wreorder]
+   int status;
+       ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:182:3: warning:   when initialized here [-Wreorder]
+   GeomRend::GeomRend(Mesh *_srcmesh, PointList *_srcplist,
+   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C:17:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_List.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObj.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshDB.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommReg.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:217:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   ThrowRequire(sdim == dst_dim);
+                        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Exception.h:107:29: note: in definition of macro ‘ThrowRequire’
+ #define ThrowRequire(cond) (cond ? (void) 0 : throw Ex() << "Condition {" << #cond << "} failed at " << __FILE__ << ", line:" << __LINE__)
+                             ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:21:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C: In member function ‘void ESMCI::GeomRend::build_dst_mig(Zoltan_Struct*, ESMCI::GeomRend::ZoltanUD&, int, ZOLTAN_ID_PTR, ZOLTAN_ID_PTR, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:769:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (UInt i = 0; i < nd_size; i++) {
+                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C: In member function ‘void ESMCI::HAdapt::refinement_resolution() const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:303:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+           for (UInt sn = 0; !constr && sn != etopo->num_side_nodes; ++sn) {
+                                                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:1270:6: warning: unused parameter ‘scoord’ [-Wunused-parameter]
+ void mesh_isect(const MEField<> & scoord, const BBox & srcBBox, const MEField<> & dcoord, std::vector<MeshObj *> objlist,
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:1270:6: warning: unused parameter ‘sdim’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:1314:6: warning: unused parameter ‘zzp’ [-Wunused-parameter]
+ void GeomRend::Build_Merge(UInt nsrcF, MEField<> **srcF, UInt ndstF, MEField<> **dstF, struct Zoltan_Struct **zzp) {
+      ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:18:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C: In function ‘void ESMCI::Cart2D(ESMCI::Mesh&, int, int, double, double, double, double)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:359:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (UInt i=0; i<X*Y; ++i) {
+                        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:366:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(UInt j=0; j<Y-1; ++j) {
+                       ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:367:23: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(UInt i=0; i<X-1; ++i) {
+                       ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:384:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (UInt i=0; i<X*Y; ++i) {
+                        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C: In function ‘void ESMCI::SphShell(ESMCI::Mesh&, int, int, double, double, double, double)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:403:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (UInt i=0; i<lat*lon; ++i) {
+                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:410:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(UInt j=0; j<lon-1; ++j) {
+                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:411:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for(UInt i=0; i<lat-1; ++i) {
+                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:434:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (UInt i=0; i<lat*lon; ++i) {
+                          ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:28:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:61:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
+ void LoadExMesh(Mesh &mesh, const std::string &filename, int nstep) {
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:61:6: warning: unused parameter ‘filename’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:61:6: warning: unused parameter ‘nstep’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:450:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
+ void WriteExMesh(const Mesh &mesh, const std::string &filename, int nstep, double tstep) {
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:450:6: warning: unused parameter ‘filename’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:450:6: warning: unused parameter ‘nstep’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:450:6: warning: unused parameter ‘tstep’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:791:6: warning: unused parameter ‘nstep’ [-Wunused-parameter]
+ void WriteExMeshTimeStep(int nstep, double tstep, const Mesh &mesh, const std::string &filename) {
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:791:6: warning: unused parameter ‘tstep’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:791:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:791:6: warning: unused parameter ‘filename’ [-Wunused-parameter]
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPNC.C:21:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
@@ -9747,6 +9594,77 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
  void LoadNCDualMeshPar(Mesh &mesh, const std::string fname) {
       ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPNC.C:47:6: warning: unused parameter ‘fname’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:21:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [6]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:972:15:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+   MeshNullStream& operator<<(const T &t) {return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = unsigned int]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:972:26:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [7]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:972:34:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [9]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:972:53:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [18]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:973:15:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [20]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:995:15:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C: In function ‘void ESMCI::retrieve_nodes(ESMCI::MeshObj&, const ESMCI::MeshObjTopo*, std::vector<ESMCI::MeshObj*>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:146:63: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (UInt i = topo->num_nodes; !need_edges && i < topo->num_child_nodes; i++)
+                                                               ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:150:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         for (UInt s = 0; s < topo->num_edges; s++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = std::basic_string<char>]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:1020:33:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = double]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:1025:32:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [2]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:1025:37:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [36]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:224:21:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+   MeshNullStream& operator<<(const T &t) {return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = ESMCI::MeshObj]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:224:62:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [15]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:225:21:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = ESMCI::Context]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:225:41:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [35]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:234:21:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = ESMCI::Attr]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:235:41:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [16]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:236:21:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = unsigned int]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C:236:42:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRead.C:19:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshSkin.C:19:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C: In function ‘void ESMCI::concat_meshes(const ESMCI::Mesh&, const ESMCI::Mesh&, ESMCI::Mesh&, const ESMCI::Mesh&, const ESMCI::Mesh&, ESMCI::SearchResult&, ESMCI::interp_mapp)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:634:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (UInt n = 0; n < subject_num_nodes; n++) {
@@ -9771,6 +9689,88 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
         ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:1174:8: warning: unused parameter ‘mesh_dst’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:1174:8: warning: unused parameter ‘sres’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:21:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:63:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
+ void LoadNCMesh(Mesh &mesh, const std::string name) {
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:63:6: warning: unused parameter ‘name’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:337:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
+ void LoadNCDualMesh(Mesh &mesh, const std::string fname, bool use_quad) {
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:337:6: warning: unused parameter ‘fname’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:337:6: warning: unused parameter ‘use_quad’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:658:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
+ void LoadNCTMesh(Mesh &mesh, const std::string name,
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:658:6: warning: unused parameter ‘name’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:658:6: warning: unused parameter ‘lf’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:805:6: warning: unused parameter ‘mesh’ [-Wunused-parameter]
+ bool LoadNCTData(MeshDB &mesh, 
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:805:6: warning: unused parameter ‘filename’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:805:6: warning: unused parameter ‘vnames’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:805:6: warning: unused parameter ‘field’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:805:6: warning: unused parameter ‘timestep’ [-Wunused-parameter]
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_WriteWeightsPar.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:12:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C:13:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FindPnts.h:20,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FindPnts.C:12:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshUtils.C:20:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Quadrature.C:12:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C:15:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Rebalance.C:13:
@@ -9794,10 +9794,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SparseMsg.C:14:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_ShapeLagrange.C:827:6: warning: unused parameter ‘npts’ [-Wunused-parameter]
  void ShapeLagrangeBar::shape_grads(UInt npts, const fad_type pcoord[], fad_type results[]) const {
       ^
@@ -9818,6 +9814,10 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
       ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_ShapeLagrange.C:1257:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_ShapeLagrange.C:1257:6: warning: unused parameter ‘results’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SparseMsg.C:14:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_Rebalance.C:15:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
@@ -9851,6 +9851,12 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_WriteWeightsPar.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
@@ -9859,12 +9865,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_WriteWeightsPar.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FindPnts.h:20,
@@ -9952,10 +9952,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C:174:6: warning: unused parameter ‘fbase’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C:174:6: warning: unused parameter ‘nproc’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C:174:6: warning: unused parameter ‘rank’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C:22:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C: In function ‘void ESMCI::nc_grid_file_2deg(ESMCI::nc_grid_file&)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C:311:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
    for (UInt i = 0; i < ncf.grid_size; i++) {
@@ -9975,6 +9971,10 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C:496:6: warning: unused parameter ‘outfile’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C:496:6: warning: unused parameter ‘w’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C:496:6: warning: unused parameter ‘ordering’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C:22:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C: In function ‘void ESMCI::GatherForWrite(ESMCI::IWeights&)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:73:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
    for (UInt i = 0; i < rows_per_proc; i++) {
@@ -10001,17 +10001,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:349:6: warning: unused parameter ‘regridConserve’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:349:6: warning: unused parameter ‘regridMethod’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:349:6: warning: unused parameter ‘ordering’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C: In function ‘void ESMCI::create_SM_cells_2D_2D_cart_src_pnts(int, double*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<ESMCI::SM_CELL>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C:176:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C:208:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C: In function ‘void ESMCI::create_SM_cells_2D_2D_cart(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<ESMCI::SM_CELL>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C:403:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
@@ -10025,9 +10014,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = long int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:68:31:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C:415:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [11]]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:68:42:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
@@ -10037,6 +10023,30 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:68:81:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:14:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h: In instantiation of ‘void ESMCI::Migrator::Migrate(T&, R&, bool) [with T = ESMCI::WMat; R = ESMCI::WMat]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:107:5:   required from ‘void ESMCI::Migrator::Migrate(T&) [with T = ESMCI::WMat]’
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:87:36:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:121:6: warning: unused parameter ‘r’ [-Wunused-parameter]
+ void Migrator::Migrate(T &t, R &r, bool obj_equal) {
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C: In function ‘void ESMCI::create_SM_cells_2D_2D_cart_src_pnts(int, double*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<ESMCI::SM_CELL>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C:176:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C:208:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C: In function ‘void ESMCI::create_SM_cells_2D_2D_cart(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<ESMCI::SM_CELL>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C:403:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C:415:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C:522:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int i=0; i<dst_elems.size(); i++) {
                                       ^
@@ -10057,20 +10067,27 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_SM.C:1040:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int i=0; i<dst_elems.size(); i++) {
                                       ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:14:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h: In instantiation of ‘void ESMCI::Migrator::Migrate(T&, R&, bool) [with T = ESMCI::WMat; R = ESMCI::WMat]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:107:5:   required from ‘void ESMCI::Migrator::Migrate(T&) [with T = ESMCI::WMat]’
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C:87:36:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:121:6: warning: unused parameter ‘r’ [-Wunused-parameter]
- void Migrator::Migrate(T &t, R &r, bool obj_equal) {
-      ^
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Regrid_Helper.C:21:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:266:7: warning: multi-line comment [-Wcomment]
+       // Get rid of degenerate edges\
+       ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Integrate.C:13:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -10093,48 +10110,8 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:13:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:15:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:15:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:266:7: warning: multi-line comment [-Wcomment]
-       // Get rid of degenerate edges\
-       ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:12:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -10158,10 +10135,8 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Integrate.C:13:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:13:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -10172,8 +10147,58 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:12:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:15:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:17:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Integrate.C:245:1: warning: multi-line comment [-Wcomment]
+ //    | \
+ ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:14:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:17:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -10195,33 +10220,8 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:17:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:14:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Integrate.C:245:1: warning: multi-line comment [-Wcomment]
- //    | \
- ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:17:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -10247,6 +10247,10 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:707:6: warning: unused parameter ‘dist’ [-Wunused-parameter]
  bool quad_zeroderiv_shape_func::is_in(const double pcoord[], double *dist) {
       ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:14:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C: In instantiation of ‘static bool ESMCI::dg0_shape_func<PDIM>::is_in(const double*, double*) [with int PDIM = 1]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:723:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:56:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
@@ -10261,19 +10265,11 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:725:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:56:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:56:6: warning: unused parameter ‘dist’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SpaceDir.C:31:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C: In instantiation of ‘static void ESMCI::dg0_shape_func<PDIM>::shape(unsigned int, const ScalarT*, ScalarT*) [with ScalarT = double; int PDIM = 1]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:727:98:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:43:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
  void dg0_shape_func<PDIM>::shape(unsigned int npts, const ScalarT pcoord[], ScalarT results[]) {
       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SpaceDir.C: In constructor ‘ESMCI::SpaceDir::SpaceDir(double*, double*, ESMCI::OTree*, bool)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SpaceDir.C:140:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-      if (!search_this_proc && i == Par::Rank()) continue;
-                                              ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C: In instantiation of ‘static void ESMCI::dg0_shape_func<PDIM>::shape(unsigned int, const ScalarT*, ScalarT*) [with ScalarT = Sacado::Fad::DFad<double>; int PDIM = 1]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:728:136:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:43:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
@@ -10334,9 +10330,17 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:85:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
  void bar_shape_func::shape_grads(unsigned int npts, const ScalarT pcoord[], ScalarT results[]) {
       ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SpaceDir.C:31:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C: In instantiation of ‘static void ESMCI::bar_shape_func::shape_grads(unsigned int, const ScalarT*, ScalarT*) [with ScalarT = Sacado::Fad::DFad<double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:749:70:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:85:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SpaceDir.C: In constructor ‘ESMCI::SpaceDir::SpaceDir(double*, double*, ESMCI::OTree*, bool)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SpaceDir.C:140:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+      if (!search_this_proc && i == Par::Rank()) continue;
+                                              ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C: In instantiation of ‘static void ESMCI::tri_shape_func::shape_grads(unsigned int, const ScalarT*, ScalarT*) [with ScalarT = double]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:760:101:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:175:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
@@ -10345,26 +10349,17 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C: In instantiation of ‘static void ESMCI::tri_shape_func::shape_grads(unsigned int, const ScalarT*, ScalarT*) [with ScalarT = Sacado::Fad::DFad<double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:762:70:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:175:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:14:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:14:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Integrate.C:13:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Integrate.C:13:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
                    ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C: In instantiation of ‘static void ESMCI::quad_zeroderiv_shape_func::shape_grads(unsigned int, const ScalarT*, ScalarT*) [with ScalarT = double]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:780:112:   required from here
@@ -10378,6 +10373,12 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:703:6: warning: unused parameter ‘npts’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:703:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:703:6: warning: unused parameter ‘results’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:17:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C: In instantiation of ‘static void ESMCI::tet_shape_func::shape_grads(unsigned int, const ScalarT*, ScalarT*) [with ScalarT = double]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:793:101:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ShapeFunc.C:640:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
@@ -10389,23 +10390,8 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:14:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Integrate.C:13:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:12:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:17:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
@@ -10417,70 +10403,8 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_PatchRecovery.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Conserve2ndInterp.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_PatchRecovery.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_ConserveInterp.h:18,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:13:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Conserve2ndInterp.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_ConserveInterp.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:17:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
@@ -10492,26 +10416,114 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Conserve2ndInterp.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_ConserveInterp.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:14:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_PatchRecovery.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Conserve2ndInterp.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:17:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:13:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:14:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
                    ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:17:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_PatchRecovery.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:745:29: warning: unused parameter ‘side_num’ [-Wunused-parameter]
+ const Mapping<MPTraits<> > *POLY_Mapping<quad_shape_func,MPTraits<>,2, 2>::side_mapping(UInt side_num) const
+                             ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:14:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:751:29: warning: unused parameter ‘side_num’ [-Wunused-parameter]
+ const Mapping<MPTraits<> > *POLY_Mapping<tri_shape_func,MPTraits<>,2, 2>::side_mapping(UInt side_num) const
+                             ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:757:29: warning: unused parameter ‘side_num’ [-Wunused-parameter]
+ const Mapping<MPTraits<> > *POLY_Mapping<hex_shape_func,MPTraits<>,3, 3>::side_mapping(UInt side_num) const
+                             ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_ConserveInterp.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
@@ -10532,13 +10544,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Conserve2ndInterp.h:22,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:12:
@@ -10552,20 +10557,12 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestLGC.C:147:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
    for (UInt p = 0; p < num_nodes_to_search; ++p) {
                         ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_ConserveInterp.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestLGC.C:190:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
    for (UInt p = 0; p < dst_size; ++p) {
                         ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:12:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:12:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
@@ -10576,74 +10573,20 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestLGC.C:376:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
    for (UInt p = 0; p < dst_size; ++p) {
                         ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:17:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestLGC.C:476:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int j=0; j<proc_lists[i].size(); j++) {
                                           ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestLGC.C:547:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int j=0; j<snd_inds[i].size(); j++) {
                                       ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:14:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:745:29: warning: unused parameter ‘side_num’ [-Wunused-parameter]
- const Mapping<MPTraits<> > *POLY_Mapping<quad_shape_func,MPTraits<>,2, 2>::side_mapping(UInt side_num) const
-                             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:751:29: warning: unused parameter ‘side_num’ [-Wunused-parameter]
- const Mapping<MPTraits<> > *POLY_Mapping<tri_shape_func,MPTraits<>,2, 2>::side_mapping(UInt side_num) const
-                             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:757:29: warning: unused parameter ‘side_num’ [-Wunused-parameter]
- const Mapping<MPTraits<> > *POLY_Mapping<hex_shape_func,MPTraits<>,3, 3>::side_mapping(UInt side_num) const
-                             ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:14:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:14:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:14:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:17:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:14:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:17:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:17:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
-   _fieldTypeBase(const _fieldTypeBase &rhs) {}
-   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::bar_shape_func; MPTRAITS = ESMCI::MPTraits<>; int SPATIAL_DIM = 1; int PARAMETRIC_DIM = 1; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:972:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
@@ -10662,15 +10605,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:696:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
  void POLY_Mapping<SFUNC_TYPE,MPTRAITS,3,1>::jac_inv(
       ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:17:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:696:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:696:6: warning: unused parameter ‘result’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘void ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::normal(ESMCI::UInt, const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with SFUNC_TYPE = ESMCI::bar_shape_func; MPTRAITS = ESMCI::MPTraits<>; ESMCI::UInt = unsigned int; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::mdata_type = double; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::pcoord_type = double; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = double]’:
@@ -10704,20 +10638,19 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:772:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:772:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:772:6: warning: unused parameter ‘result’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::bar_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>; int SPATIAL_DIM = 1; int PARAMETRIC_DIM = 1; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:975:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
  const Mapping<MPTRAITS> *POLY_Mapping<SFUNC_TYPE,MPTRAITS,SPATIAL_DIM,PARAMETRIC_DIM>::side_mapping(UInt side_num) const
                           ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:17:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘bool ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::is_in_cell(const double*, const double*, double*, double*) const [with SFUNC_TYPE = ESMCI::bar_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:976:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:78:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
@@ -10756,15 +10689,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
       ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:704:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:704:6: warning: unused parameter ‘result’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:17:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
-   const intgRule *ChangeOrder(UInt q) const {
-                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘void ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::normal(ESMCI::UInt, const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with SFUNC_TYPE = ESMCI::bar_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>; ESMCI::UInt = unsigned int; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::mdata_type = Sacado::Fad::DFad<double>; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::pcoord_type = double; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = Sacado::Fad::DFad<double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:977:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:772:6: warning: unused parameter ‘npts’ [-Wunused-parameter]
@@ -10773,6 +10697,25 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:772:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:772:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:772:6: warning: unused parameter ‘result’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:14:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:17:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:14:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::bar_shape_func; MPTRAITS = ESMCI::MPTraits<double, Sacado::Fad::DFad<double> >; int SPATIAL_DIM = 1; int PARAMETRIC_DIM = 1; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:978:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
@@ -10854,8 +10797,13 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:763:6: warning: unused parameter ‘result’ [-Wunused-parameter]
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_GridToMesh.h:26,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Regrid_Helper.C:24:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:17:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:17:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
@@ -10882,11 +10830,38 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:772:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:772:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:772:6: warning: unused parameter ‘result’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:14:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:14:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::bar3_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>; int SPATIAL_DIM = 1; int PARAMETRIC_DIM = 1; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:988:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
  const Mapping<MPTRAITS> *POLY_Mapping<SFUNC_TYPE,MPTRAITS,SPATIAL_DIM,PARAMETRIC_DIM>::side_mapping(UInt side_num) const
                           ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:17:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘bool ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::is_in_cell(const double*, const double*, double*, double*) const [with SFUNC_TYPE = ESMCI::bar3_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:989:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:78:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
@@ -10946,6 +10921,13 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:78:6: warning: unused parameter ‘point’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:78:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:78:6: warning: unused parameter ‘dist’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_GridToMesh.h:26,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Regrid_Helper.C:24:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘void ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::jac_inv(const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with SFUNC_TYPE = ESMCI::bar3_shape_func; MPTRAITS = ESMCI::MPTraits<double, Sacado::Fad::DFad<double> >; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::mdata_type = double; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::pcoord_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = Sacado::Fad::DFad<double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:992:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:696:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
@@ -10969,11 +10951,29 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:87:6: warning: unused parameter ‘point’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:87:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:87:6: warning: unused parameter ‘dist’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:17:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘void ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::jac_inv(const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with SFUNC_TYPE = ESMCI::bar3_shape_func; MPTRAITS = ESMCI::MPTraits<double, Sacado::Fad::DFad<double> >; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::mdata_type = double; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::pcoord_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = Sacado::Fad::DFad<double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:993:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:704:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
  void POLY_Mapping<SFUNC_TYPE,MPTRAITS,2,1>::jac_inv(
       ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:17:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:704:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:704:6: warning: unused parameter ‘result’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘void ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::normal(ESMCI::UInt, const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with SFUNC_TYPE = ESMCI::bar3_shape_func; MPTRAITS = ESMCI::MPTraits<double, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::mdata_type = double; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::pcoord_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = Sacado::Fad::DFad<double>]’:
@@ -10989,6 +10989,12 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
  const Mapping<MPTRAITS> *POLY_Mapping<SFUNC_TYPE,MPTRAITS,SPATIAL_DIM,PARAMETRIC_DIM>::side_mapping(UInt side_num) const
                           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::tri_shape_func; MPTRAITS = ESMCI::MPTraits<double, Sacado::Fad::DFad<double> >; int SPATIAL_DIM = 2; int PARAMETRIC_DIM = 2; ESMCI::UInt = unsigned int]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1000:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::quad_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>; int SPATIAL_DIM = 2; int PARAMETRIC_DIM = 2; ESMCI::UInt = unsigned int]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1005:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
@@ -10999,42 +11005,18 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter ‘q’ [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::tri_shape_func; MPTRAITS = ESMCI::MPTraits<double, Sacado::Fad::DFad<double> >; int SPATIAL_DIM = 2; int PARAMETRIC_DIM = 2; ESMCI::UInt = unsigned int]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1000:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::quad_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>; int SPATIAL_DIM = 2; int PARAMETRIC_DIM = 2; ESMCI::UInt = unsigned int]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1005:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:21:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::quad_shape_func; MPTRAITS = ESMCI::MPTraits<double, Sacado::Fad::DFad<double> >; int SPATIAL_DIM = 2; int PARAMETRIC_DIM = 2; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1007:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:13:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::quad9_shape_func; MPTRAITS = ESMCI::MPTraits<>; int SPATIAL_DIM = 2; int PARAMETRIC_DIM = 2; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1011:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::quad9_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>; int SPATIAL_DIM = 2; int PARAMETRIC_DIM = 2; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1013:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:22:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::quad9_shape_func; MPTRAITS = ESMCI::MPTraits<double, Sacado::Fad::DFad<double> >; int SPATIAL_DIM = 2; int PARAMETRIC_DIM = 2; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1015:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:22:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
-   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
-                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::hex_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>; int SPATIAL_DIM = 3; int PARAMETRIC_DIM = 3; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1020:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
@@ -11050,18 +11032,24 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::tet_shape_func; MPTRAITS = ESMCI::MPTraits<double, Sacado::Fad::DFad<double> >; int SPATIAL_DIM = 3; int PARAMETRIC_DIM = 3; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1026:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C: In function ‘void ESMCI::MeshAddPole(ESMCI::Mesh&, ESMCI::UInt, ESMCI::UInt, ESMCI::IWeights&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:382:67: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘ESMCI::MeshObj::id_type {aka long int}’ [-Wformat=]
-         printf("elem.id=%d pole_side=%d\n",elem.get_id(),pole_side);
-                                                                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C: In instantiation of ‘void ESMCI::PatchRecov<NFIELD, Real>::CreatePatch(ESMCI::UInt, const ESMCI::MeshDB&, const ESMCI::MeshObj&, const ESMCI::MeshObj*, ESMCI::UInt, NFIELD**, ESMCI::UInt, const ESMCI::MEField<ESMCI::_field>&, const ESMCI::MCoord*, ESMCI::MEField<ESMCI::_field>*) [with NFIELD = ESMCI::MEField<ESMCI::_field>; Real = double; ESMCI::UInt = unsigned int]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1574:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:677:6: warning: unused parameter ‘elem_hint’ [-Wunused-parameter]
- void PatchRecov<NFIELD,Real>::CreatePatch(
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C: In instantiation of ‘void ESMCI::PatchRecov<NFIELD, Real>::CreatePatch(ESMCI::UInt, const ESMCI::MeshDB&, const ESMCI::MeshObj&, const ESMCI::MeshObj*, ESMCI::UInt, NFIELD**, ESMCI::UInt, const ESMCI::MEField<ESMCI::_field>&, const ESMCI::MCoord*, ESMCI::MEField<ESMCI::_field>*) [with NFIELD = ESMCI::MEField<ESMCI::SField>; Real = Sacado::Fad::DFad<double>; ESMCI::UInt = unsigned int]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1575:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:677:6: warning: unused parameter ‘elem_hint’ [-Wunused-parameter]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:22:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:13:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:22:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:21:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter ‘f’ [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::tet_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; int SPATIAL_DIM = 3; int PARAMETRIC_DIM = 3; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
@@ -11074,123 +11062,28 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘mdata’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘result’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:39:1: warning: unused parameter ‘rhs’ [-Wunused-parameter]
- WMat::WMat(const WMat &rhs)
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::hex_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; int SPATIAL_DIM = 3; int PARAMETRIC_DIM = 3; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
  const Mapping<MPTRAITS> *POLY_Mapping<SFUNC_TYPE,MPTRAITS,SPATIAL_DIM,PARAMETRIC_DIM>::side_mapping(UInt side_num) const
                           ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C: In function ‘void ESMCI::_create_pointlist_of_points_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, ESMCI::PointList**)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:531:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     while ((wi != we) && (wi->first.id < id)) {
-                                          ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:536:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (wi->first.id != id) {
-                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:555:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     while ((wi != we) && (wi->first.id < id)) {
-                                          ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:12:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::Mapping<MPTRAITS>::side_mapping(ESMCI::UInt) const [with MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:130:36: warning: unused parameter ‘side_num’ [-Wunused-parameter]
    virtual const Mapping<MPTRAITS> *side_mapping(UInt side_num) const {
                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:560:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     if (wi->first.id != id) {
-                         ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C: In function ‘void ESMCI::_replace_mapped_with_mapped_extrap(ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:579:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-      for (int i = 0; i < col.size(); ++i) {
-                                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:1170:8: warning: unused parameter ‘constraint_id’ [-Wunused-parameter]
-   void MeshAddPoleTeeth(Mesh &mesh,  UInt node_id,
-        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:1170:8: warning: unused parameter ‘cweights’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:20:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::quad9_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; int SPATIAL_DIM = 2; int PARAMETRIC_DIM = 2; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
  const Mapping<MPTRAITS> *POLY_Mapping<SFUNC_TYPE,MPTRAITS,SPATIAL_DIM,PARAMETRIC_DIM>::side_mapping(UInt side_num) const
                           ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C: In function ‘void ESMCI::_dst_merge_creep_wts_into_regrid_wts(ESMCI::Mesh&, ESMCI::WMat&, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:668:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-      for (int i=0; i<cw_cols.size(); i++) {
-                                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C: In function ‘int ESMCI::found_func(void*, void*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:273:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i< mme->num_functions(); i++) {
-                                           ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:697:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-          if (tmp_row.id == id) {
-                            ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C: In function ‘void ESMCI::ParSearchNearestDstToSrc(const ESMCI::Mesh&, const ESMCI::Mesh&, int, ESMCI::SearchResult&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:520:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (int i=0; i<src_nlist.size(); i++) {
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:710:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-        for (int j=0; j<tmp_cols.size(); j++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:565:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<src_nlist.size(); i++) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:566:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int j=0; j<proc_lists[i].size(); j++) {
-                                          ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::quad_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; int SPATIAL_DIM = 2; int PARAMETRIC_DIM = 2; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:638:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int j=0; j<snd_inds[i].size(); j++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_make_nbr_elems_cntrclk_2D_2D_cart(double*, std::vector<ESMCI::NBR_ELEM>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:164:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int n=0; n<nbrs->size(); n++) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:171:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       if (elem_id > max_nbr_id) {
-                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:848:6: warning: unused parameter ‘regridScheme’ [-Wunused-parameter]
-  int regrid(Mesh *srcmesh, PointList *srcpointlist, Mesh *dstmesh, PointList *dstpointlist,
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:203:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int n=0; n<nbrs->size(); n++) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_2D_cart_orig(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:94:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:107:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:123:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:152:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                                    ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::tri_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; int SPATIAL_DIM = 2; int PARAMETRIC_DIM = 2; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C: In member function ‘void ESMCI::WMat::InsertRowMerge(const ESMCI::WMat::Entry&, const std::vector<ESMCI::WMat::Entry>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:278:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=1; i<tmp_cols.size(); i++) {
-                                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_calc_centroid_from_sm_cells_2D_2D_cart(std::vector<ESMCI::SM_CELL>*, double*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:228:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<sm_cells->size(); i++) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C: In function ‘void ESMCI::ClampPCoords(int, ESMCI::SearchResult&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:720:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-           for (int i= 0; i<sr->nodes.size(); i++) {
-                                           ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘bool ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::is_in_cell(const double*, const double*, double*, double*) const [with SFUNC_TYPE = ESMCI::bar3_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:87:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
@@ -11199,19 +11092,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:87:6: warning: unused parameter ‘point’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:87:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:87:6: warning: unused parameter ‘dist’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘bool ESMCI::_set_grad_info_using_greens_2D_2D_cart(double*, double*, std::vector<ESMCI::NBR_ELEM>*, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:260:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<nbrs->size(); i++) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:752:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-           for (int i= 0; i<sr->nodes.size(); i++) {
-                                           ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:274:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<nbrs->size(); i++) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:287:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<nbrs->size(); i++) {
-                                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘void ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::jac_inv(const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with SFUNC_TYPE = ESMCI::bar3_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::mdata_type = Sacado::Fad::DFad<double>; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::pcoord_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = Sacado::Fad::DFad<double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:704:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
@@ -11219,9 +11099,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
       ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:704:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:704:6: warning: unused parameter ‘result’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:781:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-           for (int i= 0; i<sr->nodes.size(); i++) {
-                                           ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘void ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::normal(ESMCI::UInt, const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with SFUNC_TYPE = ESMCI::bar3_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::mdata_type = Sacado::Fad::DFad<double>; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::pcoord_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = Sacado::Fad::DFad<double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:772:6: warning: unused parameter ‘npts’ [-Wunused-parameter]
@@ -11230,28 +11107,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:772:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:772:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:772:6: warning: unused parameter ‘result’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:324:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<nbrs->size(); i++) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:752:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (int i=0; i< rcv_pets.size(); i++) {
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C: In function ‘void ESMCI::OctSearch(const ESMCI::Mesh&, ESMCI::PointList&, ESMCI::MAP_TYPE, ESMCI::UInt, int, ESMCI::SearchResult&, bool, ESMCI::WMat&, double, std::vector<int>*, ESMCI::OTree*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:825:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   if (sdim != dst_pl.get_coord_dim()) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:247:8: warning: unused parameter ‘src_cntr’ [-Wunused-parameter]
-   bool _set_grad_info_using_greens_2D_2D_cart(double *src_cntr, double *src_grad, std::vector<NBR_ELEM> *nbrs, int se_id) {
-        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:247:8: warning: unused parameter ‘se_id’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:773:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (int i=0; i< rcv_pets.size(); i++) {
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_set_grad_info_to_0_2D_2D_cart(double*, double*, std::vector<ESMCI::NBR_ELEM>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:350:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<nbrs->size(); i++) {
-                                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘bool ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::is_in_cell(const double*, const double*, double*, double*) const [with SFUNC_TYPE = ESMCI::bar3_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:78:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
@@ -11259,24 +11114,7 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
       ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:78:6: warning: unused parameter ‘point’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:78:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:775:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int j=0; j<rcv_results[i].size(); j++) {
-                                         ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:78:6: warning: unused parameter ‘dist’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:344:8: warning: unused parameter ‘src_cntr’ [-Wunused-parameter]
-   void _set_grad_info_to_0_2D_2D_cart(double *src_cntr, double *src_grad, std::vector<NBR_ELEM> *nbrs) {
-        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:357:10: warning: unused parameter ‘coords’ [-Wunused-parameter]
-   double const_func_2D_2D_cart(double *coords) {
-          ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:836:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (int i=0; i<src_nlist.size(); i++) {
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_debug_calc_gradient_2D_2D_cart(double*, double*, std::vector<ESMCI::NBR_ELEM>*, double (*)(double*), double*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:373:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int n=0; n<nbrs->size(); n++) {
-                                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘void ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::jac_inv(const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with SFUNC_TYPE = ESMCI::bar3_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::mdata_type = Sacado::Fad::DFad<double>; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::pcoord_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = Sacado::Fad::DFad<double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:696:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
@@ -11284,10 +11122,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
       ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:696:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:696:6: warning: unused parameter ‘result’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘bool ESMCI::_is_src_cntr_in_nbr_poly_2D_2D_cart(double*, std::vector<ESMCI::NBR_ELEM>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:407:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<nbrs->size(); i++) {
-                                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘void ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::normal(ESMCI::UInt, const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with SFUNC_TYPE = ESMCI::bar3_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::mdata_type = Sacado::Fad::DFad<double>; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::pcoord_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = Sacado::Fad::DFad<double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:763:6: warning: unused parameter ‘npts’ [-Wunused-parameter]
@@ -11296,10 +11130,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:763:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:763:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:763:6: warning: unused parameter ‘result’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::calc_2nd_order_weights_2D_2D_cart(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<ESMCI::HC_WGHT>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<ESMCI::SM_CELL>*, std::vector<ESMCI::NBR_ELEM>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:559:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<sm_cells->size(); i++) {
-                                    ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::bar3_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; int SPATIAL_DIM = 1; int PARAMETRIC_DIM = 1; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
@@ -11313,13 +11143,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:87:6: warning: unused parameter ‘point’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:87:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:87:6: warning: unused parameter ‘dist’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:23:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:593:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int n=0; n<nbrs->size(); n++) {
-                                  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘void ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::jac_inv(const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with SFUNC_TYPE = ESMCI::bar_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::mdata_type = Sacado::Fad::DFad<double>; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 2, 1>::pcoord_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = Sacado::Fad::DFad<double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:704:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
@@ -11343,23 +11166,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:78:6: warning: unused parameter ‘point’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:78:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:78:6: warning: unused parameter ‘dist’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_make_nbr_elems_cntrclk(double*, std::vector<ESMCI::NBR_ELEM>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:743:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int n=0; n<nbrs->size(); n++) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:750:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       if (elem_id > max_nbr_id) {
-                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:280:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C: In function ‘void ESMCI::SearchNearestSrcToDstNPnts(const ESMCI::PointList&, const ESMCI::PointList&, int, int, ESMCI::SearchResult&, bool, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:324:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   if (sdim != dst_pl.get_coord_dim()) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:296:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                                    ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘void ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::jac_inv(const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with SFUNC_TYPE = ESMCI::bar_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::mdata_type = Sacado::Fad::DFad<double>; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::pcoord_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = Sacado::Fad::DFad<double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:696:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
@@ -11367,12 +11173,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
       ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:696:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:696:6: warning: unused parameter ‘result’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:787:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int n=0; n<nbrs->size(); n++) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:335:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (UInt p = 0; p < num_nodes_to_search; ++p) {
-                        ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘void ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::normal(ESMCI::UInt, const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with SFUNC_TYPE = ESMCI::bar_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::mdata_type = Sacado::Fad::DFad<double>; ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 1>::pcoord_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = Sacado::Fad::DFad<double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:763:6: warning: unused parameter ‘npts’ [-Wunused-parameter]
@@ -11381,60 +11181,11 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:763:6: warning: unused parameter ‘mdata’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:763:6: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:763:6: warning: unused parameter ‘result’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:372:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (UInt p = 0; p < dst_size; ++p) {
-                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_calc_centroid_from_sm_cells(std::vector<ESMCI::SM_CELL>*, double*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:812:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<sm_cells->size(); i++) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:312:8: warning: unused parameter ‘midmesh’ [-Wunused-parameter]
-   void calc_1st_order_weights_2D_2D_cart_src_and_dst_pnts(int num_src_nodes, double *src_coords,
-        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:312:8: warning: unused parameter ‘sintd_nodes’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:312:8: warning: unused parameter ‘sintd_cells’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:312:8: warning: unused parameter ‘res_map’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:312:8: warning: unused parameter ‘zz’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_ConserveInterp.h:22,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:25:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_2D_cart_src_pnts(int, double*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:438:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:470:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘bool ESMCI::_set_grad_info_using_greens(double*, double*, std::vector<ESMCI::NBR_ELEM>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:844:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<nbrs->size(); i++) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C: In function ‘void ESMCI::ParSearchNearestSrcToDstNPnts(const ESMCI::PointList&, const ESMCI::PointList&, int, int, ESMCI::SearchResult&, bool, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:507:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (UInt p = 0; p < num_nodes_to_search; ++p) {
-                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:886:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<nbrs->size(); i++) {
-                                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:899:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<nbrs->size(); i++) {
-                                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::side_mapping(ESMCI::UInt) const [with SFUNC_TYPE = ESMCI::bar_shape_func; MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, Sacado::Fad::DFad<double> >; int SPATIAL_DIM = 1; int PARAMETRIC_DIM = 1; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:739:26: warning: unused parameter ‘side_num’ [-Wunused-parameter]
  const Mapping<MPTRAITS> *POLY_Mapping<SFUNC_TYPE,MPTRAITS,SPATIAL_DIM,PARAMETRIC_DIM>::side_mapping(UInt side_num) const
                           ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_2D_cart(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:691:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:941:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<nbrs->size(); i++) {
-                                ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:12:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h: In instantiation of ‘void ESMCI::Mapping<MPTRAITS>::normal(ESMCI::UInt, const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with MPTRAITS = ESMCI::MPTraits<double, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int; ESMCI::Mapping<MPTRAITS>::mdata_type = double; ESMCI::Mapping<MPTRAITS>::pcoord_type = Sacado::Fad::DFad<double>; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = Sacado::Fad::DFad<double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
@@ -11444,98 +11195,217 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘mdata’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘result’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:703:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h: In instantiation of ‘void ESMCI::Mapping<MPTRAITS>::normal(ESMCI::UInt, const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>; ESMCI::UInt = unsigned int; ESMCI::Mapping<MPTRAITS>::mdata_type = Sacado::Fad::DFad<double>; ESMCI::Mapping<MPTRAITS>::pcoord_type = double; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = Sacado::Fad::DFad<double>]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘npts’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘mdata’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘result’ [-Wunused-parameter]
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:23:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
-   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
-                 ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::Mapping<MPTRAITS>::side_mapping(ESMCI::UInt) const [with MPTRAITS = ESMCI::MPTraits<double, Sacado::Fad::DFad<double> >; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:130:36: warning: unused parameter ‘side_num’ [-Wunused-parameter]
    virtual const Mapping<MPTRAITS> *side_mapping(UInt side_num) const {
                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_set_grad_info_to_0(double*, double*, std::vector<ESMCI::NBR_ELEM>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1071:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<nbrs->size(); i++) {
-                                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::Mapping<MPTRAITS>::side_mapping(ESMCI::UInt) const [with MPTRAITS = ESMCI::MPTraits<Sacado::Fad::DFad<double>, double>; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:130:36: warning: unused parameter ‘side_num’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h: In instantiation of ‘const ESMCI::Mapping<MPTRAITS>* ESMCI::Mapping<MPTRAITS>::side_mapping(ESMCI::UInt) const [with MPTRAITS = ESMCI::MPTraits<>; ESMCI::UInt = unsigned int]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:130:36: warning: unused parameter ‘side_num’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: At global scope:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1065:8: warning: unused parameter ‘src_cntr’ [-Wunused-parameter]
-   void _set_grad_info_to_0(double *src_cntr, double *src_grad, std::vector<NBR_ELEM> *nbrs) {
-        ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h: In instantiation of ‘void ESMCI::Mapping<MPTRAITS>::normal(ESMCI::UInt, const mdata_type*, const pcoord_type*, typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with MPTRAITS = ESMCI::MPTraits<>; ESMCI::UInt = unsigned int; ESMCI::Mapping<MPTRAITS>::mdata_type = double; ESMCI::Mapping<MPTRAITS>::pcoord_type = double; typename ESMCI::richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = double]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Mapping.C:1029:1:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘npts’ [-Wunused-parameter]
    virtual void normal(UInt npts, const mdata_type mdata[],
                 ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘mdata’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘result’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_2D_cart_orig(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:94:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:107:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:123:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:152:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C: In instantiation of ‘void ESMCI::PatchRecov<NFIELD, Real>::CreatePatch(ESMCI::UInt, const ESMCI::MeshDB&, const ESMCI::MeshObj&, const ESMCI::MeshObj*, ESMCI::UInt, NFIELD**, ESMCI::UInt, const ESMCI::MEField<ESMCI::_field>&, const ESMCI::MCoord*, ESMCI::MEField<ESMCI::_field>*) [with NFIELD = ESMCI::MEField<ESMCI::_field>; Real = double; ESMCI::UInt = unsigned int]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1574:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:677:6: warning: unused parameter ‘elem_hint’ [-Wunused-parameter]
+ void PatchRecov<NFIELD,Real>::CreatePatch(
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C: In function ‘void ESMCI::_create_pointlist_of_points_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, ESMCI::PointList**)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:531:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     while ((wi != we) && (wi->first.id < id)) {
+                                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:536:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (wi->first.id != id) {
+                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:555:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     while ((wi != we) && (wi->first.id < id)) {
+                                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:560:25: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     if (wi->first.id != id) {
+                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C: In function ‘void ESMCI::_replace_mapped_with_mapped_extrap(ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:579:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+      for (int i = 0; i < col.size(); ++i) {
+                                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C: In instantiation of ‘void ESMCI::PatchRecov<NFIELD, Real>::CreatePatch(ESMCI::UInt, const ESMCI::MeshDB&, const ESMCI::MeshObj&, const ESMCI::MeshObj*, ESMCI::UInt, NFIELD**, ESMCI::UInt, const ESMCI::MEField<ESMCI::_field>&, const ESMCI::MCoord*, ESMCI::MEField<ESMCI::_field>*) [with NFIELD = ESMCI::MEField<ESMCI::SField>; Real = Sacado::Fad::DFad<double>; ESMCI::UInt = unsigned int]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1575:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:677:6: warning: unused parameter ‘elem_hint’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_make_nbr_elems_cntrclk_2D_2D_cart(double*, std::vector<ESMCI::NBR_ELEM>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:164:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int n=0; n<nbrs->size(); n++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:171:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (elem_id > max_nbr_id) {
+                     ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:20:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:280:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:203:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int n=0; n<nbrs->size(); n++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:296:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C: In function ‘void ESMCI::_dst_merge_creep_wts_into_regrid_wts(ESMCI::Mesh&, ESMCI::WMat&, ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:668:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+      for (int i=0; i<cw_cols.size(); i++) {
+                                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:697:28: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+          if (tmp_row.id == id) {
+                            ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:312:8: warning: unused parameter ‘midmesh’ [-Wunused-parameter]
+   void calc_1st_order_weights_2D_2D_cart_src_and_dst_pnts(int num_src_nodes, double *src_coords,
+        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:312:8: warning: unused parameter ‘sintd_nodes’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:312:8: warning: unused parameter ‘sintd_cells’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:312:8: warning: unused parameter ‘res_map’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:312:8: warning: unused parameter ‘zz’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:710:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+        for (int j=0; j<tmp_cols.size(); j++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_2D_cart_src_pnts(int, double*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:438:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:470:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                                    ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:23:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_calc_centroid_from_sm_cells_2D_2D_cart(std::vector<ESMCI::SM_CELL>*, double*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:228:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<sm_cells->size(); i++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_2D_cart(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:691:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C: In function ‘int ESMCI::found_func(void*, void*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:273:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i< mme->num_functions(); i++) {
+                                           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:848:6: warning: unused parameter ‘regridScheme’ [-Wunused-parameter]
+  int regrid(Mesh *srcmesh, PointList *srcpointlist, Mesh *dstmesh, PointList *dstpointlist,
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘bool ESMCI::_set_grad_info_using_greens_2D_2D_cart(double*, double*, std::vector<ESMCI::NBR_ELEM>*, int)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:260:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<nbrs->size(); i++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:703:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:274:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<nbrs->size(); i++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:287:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<nbrs->size(); i++) {
+                                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:817:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int i=0; i<dst_elems.size(); i++) {
                                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘pcoord’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Mapping.h:138:16: warning: unused parameter ‘result’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1078:10: warning: unused parameter ‘coords’ [-Wunused-parameter]
-   double const_func(double *coords) {
-          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:324:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<nbrs->size(); i++) {
+                                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:843:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<dst_elems.size(); i++) {
                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:550:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-   for (UInt p = 0; p < dst_size; ++p) {
-                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_debug_calc_gradient(double*, double*, std::vector<ESMCI::NBR_ELEM>*, double (*)(double*), double*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1095:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int n=0; n<nbrs->size(); n++) {
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:247:8: warning: unused parameter ‘src_cntr’ [-Wunused-parameter]
+   bool _set_grad_info_using_greens_2D_2D_cart(double *src_cntr, double *src_grad, std::vector<NBR_ELEM> *nbrs, int se_id) {
+        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:247:8: warning: unused parameter ‘se_id’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_set_grad_info_to_0_2D_2D_cart(double*, double*, std::vector<ESMCI::NBR_ELEM>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:350:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<nbrs->size(); i++) {
                                 ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:606:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int j=0; j<proc_lists[i].size(); j++) {
-                                          ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_3D_sph_orig(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:937:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int i=0; i<dst_elems.size(); i++) {
                                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘bool ESMCI::_is_src_cntr_in_nbr_poly_2D_3D_sph(double*, std::vector<ESMCI::NBR_ELEM>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1131:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<nbrs->size(); i++) {
-                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:344:8: warning: unused parameter ‘src_cntr’ [-Wunused-parameter]
+   void _set_grad_info_to_0_2D_2D_cart(double *src_cntr, double *src_grad, std::vector<NBR_ELEM> *nbrs) {
+        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:357:10: warning: unused parameter ‘coords’ [-Wunused-parameter]
+   double const_func_2D_2D_cart(double *coords) {
+          ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:951:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int i=0; i<dst_elems.size(); i++) {
                                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:674:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int j=0; j<snd_inds[i].size(); j++) {
-                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_debug_calc_gradient_2D_2D_cart(double*, double*, std::vector<ESMCI::NBR_ELEM>*, double (*)(double*), double*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:373:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int n=0; n<nbrs->size(); n++) {
+                                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:969:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int i=0; i<dst_elems.size(); i++) {
                                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::calc_2nd_order_weights_2D_3D_sph(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<ESMCI::HC_WGHT>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<ESMCI::SM_CELL>*, std::vector<ESMCI::NBR_ELEM>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1305:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<sm_cells->size(); i++) {
-                                    ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:998:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<dst_elems.size(); i++) {
                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1339:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int n=0; n<nbrs->size(); n++) {
-                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘bool ESMCI::_is_src_cntr_in_nbr_poly_2D_2D_cart(double*, std::vector<ESMCI::NBR_ELEM>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:407:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<nbrs->size(); i++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::calc_2nd_order_weights_2D_2D_cart(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<ESMCI::HC_WGHT>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<ESMCI::SM_CELL>*, std::vector<ESMCI::NBR_ELEM>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:559:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<sm_cells->size(); i++) {
+                                    ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1139:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<dst_elems.size(); i++) {
                                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C: In function ‘void ESMCI::ParSearchNearestDstToSrc(const ESMCI::Mesh&, const ESMCI::Mesh&, int, ESMCI::SearchResult&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:520:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<src_nlist.size(); i++) {
+                                  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1155:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<dst_elems.size(); i++) {
                                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:565:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<src_nlist.size(); i++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C: In function ‘void ESMCI::ClampPCoords(int, ESMCI::SearchResult&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:720:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+           for (int i= 0; i<sr->nodes.size(); i++) {
+                                           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:566:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int j=0; j<proc_lists[i].size(); j++) {
+                                          ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: At global scope:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1171:8: warning: unused parameter ‘midmesh’ [-Wunused-parameter]
    void calc_1st_order_weights_2D_3D_sph_src_and_dst_pnts(int num_src_nodes, double *src_coords,
@@ -11544,67 +11414,155 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1171:8: warning: unused parameter ‘sintd_cells’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1171:8: warning: unused parameter ‘res_map’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1171:8: warning: unused parameter ‘zz’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:752:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+           for (int i= 0; i<sr->nodes.size(); i++) {
+                                           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:638:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int j=0; j<snd_inds[i].size(); j++) {
+                                      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_3D_sph_src_pnts(int, double*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1287:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int i=0; i<dst_elems.size(); i++) {
                                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:830:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int j=0; j<rcv_results_array[i].size(); j++) {
-                                               ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C: In function ‘void ESMCI::MeshAddPole(ESMCI::Mesh&, ESMCI::UInt, ESMCI::UInt, ESMCI::IWeights&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:382:67: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘ESMCI::MeshObj::id_type {aka long int}’ [-Wformat=]
+         printf("elem.id=%d pole_side=%d\n",elem.get_id(),pole_side);
+                                                                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:781:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+           for (int i= 0; i<sr->nodes.size(); i++) {
+                                           ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1319:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<dst_elems.size(); i++) {
                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_3D_sph(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1549:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1561:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:593:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int n=0; n<nbrs->size(); n++) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C: In function ‘void ESMCI::OctSearch(const ESMCI::Mesh&, ESMCI::PointList&, ESMCI::MAP_TYPE, ESMCI::UInt, int, ESMCI::SearchResult&, bool, ESMCI::WMat&, double, std::vector<int>*, ESMCI::OTree*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:825:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (sdim != dst_pl.get_coord_dim()) {
+                                    ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In member function ‘ESMCI::UInt ESMCI::CreepNode::packed_size()’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:172:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int dl=0; dl < donors.size(); dl++) {
                                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1686:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_3D_sph(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1549:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int i=0; i<dst_elems.size(); i++) {
                                       ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In member function ‘void ESMCI::CreepNode::pack(ESMCI::UChar*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:215:39: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int dl=0; dl < donors.size(); dl++) {
                                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1712:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_make_nbr_elems_cntrclk(double*, std::vector<ESMCI::NBR_ELEM>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:743:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int n=0; n<nbrs->size(); n++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1561:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:222:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
          for (int i=0; i<donors[dl].size(); i++) {
                                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:750:21: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       if (elem_id > max_nbr_id) {
+                     ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In member function ‘void ESMCI::CreepNode::add_donor(int, ESMCI::CreepNode*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:286:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        if (level >= donors.size()) {
                                 ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_3D_3D_cart(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2142:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:787:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int n=0; n<nbrs->size(); n++) {
+                                ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:23:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:292:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int i=0; i<donors[level].size(); i++) {
                                           ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2158:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1686:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int i=0; i<dst_elems.size(); i++) {
                                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2178:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_calc_centroid_from_sm_cells(std::vector<ESMCI::SM_CELL>*, double*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:812:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<sm_cells->size(); i++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1712:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<dst_elems.size(); i++) {
                                     ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::CreepFill(ESMCI::Mesh&, std::vector<int>&, int, int, ESMCI::WMat&, bool, ESMCI::WMat&)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:351:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<valid_gids.size(); i++) {
                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘bool ESMCI::_set_grad_info_using_greens(double*, double*, std::vector<ESMCI::NBR_ELEM>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:844:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<nbrs->size(); i++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_3D_3D_cart(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2142:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:886:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<nbrs->size(); i++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:899:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<nbrs->size(); i++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2158:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C: In function ‘void ESMCI::SearchNearestSrcToDstNPnts(const ESMCI::PointList&, const ESMCI::PointList&, int, int, ESMCI::SearchResult&, bool, ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:324:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   if (sdim != dst_pl.get_coord_dim()) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2178:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:335:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (UInt p = 0; p < num_nodes_to_search; ++p) {
+                        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:752:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i< rcv_pets.size(); i++) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:941:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<nbrs->size(); i++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:372:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (UInt p = 0; p < dst_size; ++p) {
+                        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:773:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i< rcv_pets.size(); i++) {
+                                  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2252:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<dst_elems.size(); i++) {
                                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_set_grad_info_to_0(double*, double*, std::vector<ESMCI::NBR_ELEM>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1071:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<nbrs->size(); i++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:775:41: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int j=0; j<rcv_results[i].size(); j++) {
+                                         ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2267:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<dst_elems.size(); i++) {
                                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1065:8: warning: unused parameter ‘src_cntr’ [-Wunused-parameter]
+   void _set_grad_info_to_0(double *src_cntr, double *src_grad, std::vector<NBR_ELEM> *nbrs) {
+        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:836:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (int i=0; i<src_nlist.size(); i++) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1078:10: warning: unused parameter ‘coords’ [-Wunused-parameter]
+   double const_func(double *coords) {
+          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:39:1: warning: unused parameter ‘rhs’ [-Wunused-parameter]
+ WMat::WMat(const WMat &rhs)
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C: In function ‘void ESMCI::ParSearchNearestSrcToDstNPnts(const ESMCI::PointList&, const ESMCI::PointList&, int, int, ESMCI::SearchResult&, bool, ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:507:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (UInt p = 0; p < num_nodes_to_search; ++p) {
+                        ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: At global scope:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2126:8: warning: unused parameter ‘dst_mask_field’ [-Wunused-parameter]
    void calc_1st_order_weights_3D_3D_cart(const MeshObj *src_elem, MEField<> *src_cfield,
@@ -11615,24 +11573,33 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2126:8: warning: unused parameter ‘sintd_cells’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2126:8: warning: unused parameter ‘res_map’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2126:8: warning: unused parameter ‘zz’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_debug_calc_gradient(double*, double*, std::vector<ESMCI::NBR_ELEM>*, double (*)(double*), double*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1095:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int n=0; n<nbrs->size(); n++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘bool ESMCI::_is_src_cntr_in_nbr_poly_2D_3D_sph(double*, std::vector<ESMCI::NBR_ELEM>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1131:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<nbrs->size(); i++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::calc_2nd_order_weights_2D_3D_sph(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<ESMCI::HC_WGHT>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<ESMCI::SM_CELL>*, std::vector<ESMCI::NBR_ELEM>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1305:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<sm_cells->size(); i++) {
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1339:34: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int n=0; n<nbrs->size(); n++) {
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:550:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (UInt p = 0; p < dst_size; ++p) {
+                        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:606:42: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+       for (int j=0; j<proc_lists[i].size(); j++) {
+                                          ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:391:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int i=0; i<creep_levels[l-1].size(); i++) {
                                               ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:21:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [15]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1448:16:   required from ‘void ESMCI::ElemPatch<NFIELD, Real>::CreateElemPatch(ESMCI::UInt, ESMCI::UInt, const ESMCI::MeshObj&, const ESMCI::MEField<ESMCI::_field>&, ESMCI::MEField<ESMCI::_field>*, ESMCI::UInt, NFIELD**, ESMCI::UInt, bool) [with NFIELD = ESMCI::MEField<ESMCI::_field>; Real = double; ESMCI::UInt = unsigned int]’
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1577:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-   MeshNullStream& operator<<(const T &t) {return *this; }
-                   ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = long int]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1448:35:   required from ‘void ESMCI::ElemPatch<NFIELD, Real>::CreateElemPatch(ESMCI::UInt, ESMCI::UInt, const ESMCI::MeshObj&, const ESMCI::MEField<ESMCI::_field>&, ESMCI::MEField<ESMCI::_field>*, ESMCI::UInt, NFIELD**, ESMCI::UInt, bool) [with NFIELD = ESMCI::MEField<ESMCI::_field>; Real = double; ESMCI::UInt = unsigned int]’
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1577:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [37]]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1448:52:   required from ‘void ESMCI::ElemPatch<NFIELD, Real>::CreateElemPatch(ESMCI::UInt, ESMCI::UInt, const ESMCI::MeshObj&, const ESMCI::MEField<ESMCI::_field>&, ESMCI::MEField<ESMCI::_field>*, ESMCI::UInt, NFIELD**, ESMCI::UInt, bool) [with NFIELD = ESMCI::MEField<ESMCI::_field>; Real = double; ESMCI::UInt = unsigned int]’
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1577:16:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:674:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int j=0; j<snd_inds[i].size(); j++) {
+                                      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_convert_creep_levels_to_weights(int, std::vector<ESMCI::CreepNode*>*, ESMCI::WMat&)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:546:40: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
    for (int i=0; i<creep_levels[1].size(); i++) {
@@ -11652,6 +11619,15 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:810:31: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<cols.size(); i++) {
                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:830:47: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int j=0; j<rcv_results_array[i].size(); j++) {
+                                               ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_ConserveInterp.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:25:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:236:17: warning: unused parameter ‘p’ [-Wunused-parameter]
+   static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
+                 ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:830:37: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int j=0; j<tmp_cols.size(); j++) {
                                      ^
@@ -11672,6 +11648,11 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:892:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (int d=0; d<cnode->donors[dl].size(); d++) {
                                               ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C: At global scope:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:1170:8: warning: unused parameter ‘constraint_id’ [-Wunused-parameter]
+   void MeshAddPoleTeeth(Mesh &mesh,  UInt node_id,
+        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:1170:8: warning: unused parameter ‘cweights’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_propagate_level_to_other_procs(ESMCI::Mesh&, std::vector<ESMCI::CreepNode*>&, std::map<int, ESMCI::CreepNode>&)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:915:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (int i=0; i<level.size(); i++) {
@@ -11679,6 +11660,14 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:975:46: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
          for (int i=0; i<snd_to_procs[p].size(); i++) {
                                               ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_write_level(const char*, ESMCI::Mesh&, std::vector<ESMCI::CreepNode*>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:1081:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=0; i<level.size(); i++) {
+                                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C: In member function ‘void ESMCI::WMat::InsertRowMerge(const ESMCI::WMat::Entry&, const std::vector<ESMCI::WMat::Entry>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:278:35: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (int i=1; i<tmp_cols.size(); i++) {
+                                   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
@@ -11690,18 +11679,21 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:121:6: warning: unused parameter ‘r’ [-Wunused-parameter]
  void Migrator::Migrate(T &t, R &r, bool obj_equal) {
       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_write_level(const char*, ESMCI::Mesh&, std::vector<ESMCI::CreepNode*>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:1081:32: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-     for (int i=0; i<level.size(); i++) {
-                                ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h: In instantiation of ‘void ESMCI::Migrator::Migrate(T&, R&, bool) [with T = ESMCI::WMat; R = ESMCI::WMat]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:107:5:   required from ‘void ESMCI::Migrator::Migrate(T&) [with T = ESMCI::WMat]’
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:439:22:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:121:6: warning: unused parameter ‘r’ [-Wunused-parameter]
- void Migrator::Migrate(T &t, R &r, bool obj_equal) {
-      ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:21:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [15]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1448:16:   required from ‘void ESMCI::ElemPatch<NFIELD, Real>::CreateElemPatch(ESMCI::UInt, ESMCI::UInt, const ESMCI::MeshObj&, const ESMCI::MEField<ESMCI::_field>&, ESMCI::MEField<ESMCI::_field>*, ESMCI::UInt, NFIELD**, ESMCI::UInt, bool) [with NFIELD = ESMCI::MEField<ESMCI::_field>; Real = double; ESMCI::UInt = unsigned int]’
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1577:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+   MeshNullStream& operator<<(const T &t) {return *this; }
+                   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = long int]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1448:35:   required from ‘void ESMCI::ElemPatch<NFIELD, Real>::CreateElemPatch(ESMCI::UInt, ESMCI::UInt, const ESMCI::MeshObj&, const ESMCI::MEField<ESMCI::_field>&, ESMCI::MEField<ESMCI::_field>*, ESMCI::UInt, NFIELD**, ESMCI::UInt, bool) [with NFIELD = ESMCI::MEField<ESMCI::_field>; Real = double; ESMCI::UInt = unsigned int]’
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1577:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h: In instantiation of ‘ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [37]]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1448:52:   required from ‘void ESMCI::ElemPatch<NFIELD, Real>::CreateElemPatch(ESMCI::UInt, ESMCI::UInt, const ESMCI::MeshObj&, const ESMCI::MEField<ESMCI::_field>&, ESMCI::MEField<ESMCI::_field>*, ESMCI::UInt, NFIELD**, ESMCI::UInt, bool) [with NFIELD = ESMCI::MEField<ESMCI::_field>; Real = double; ESMCI::UInt = unsigned int]’
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C:1577:16:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter ‘t’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In constructor ‘ESMCI::dof_add_col::dof_add_col(std::vector<ESMCI::WMat::Entry>&, ESMCI::UInt, double*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:640:6: warning: ‘ESMCI::dof_add_col::fdim’ will be initialized after [-Wreorder]
  UInt fdim;
@@ -11715,6 +11707,14 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: At global scope:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:621:6: warning: unused parameter ‘nvalset’ [-Wunused-parameter]
  void operator()(MeshObj *obj, UInt nvalset, UInt n) {
+      ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h: In instantiation of ‘void ESMCI::Migrator::Migrate(T&, R&, bool) [with T = ESMCI::WMat; R = ESMCI::WMat]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:107:5:   required from ‘void ESMCI::Migrator::Migrate(T&) [with T = ESMCI::WMat]’
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:439:22:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:121:6: warning: unused parameter ‘r’ [-Wunused-parameter]
+ void Migrator::Migrate(T &t, R &r, bool obj_equal) {
       ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In function ‘void ESMCI::calc_2nd_order_conserve_mat_serial_2D_3D_sph(ESMCI::Mesh&, ESMCI::Mesh&, ESMCI::Mesh*, ESMCI::SearchResult&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&, Zoltan_Struct*, bool, ESMCI::WMat&)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:828:27: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
@@ -11918,19 +11918,16 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/DD_Set_Neighbor_Hash_Fn1.c:71:21: warning: unused parameter ‘gid_length’ [-Wunused-parameter]
  static unsigned int dd_nh1 (ZOLTAN_ID_PTR gid, int gid_length,
                      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/DD_Set_Neighbor_Hash_Fn3.c:76:21: warning: unused parameter ‘gid_length’ [-Wunused-parameter]
- static unsigned int dd_nh3 (ZOLTAN_ID_PTR gid, int gid_length,
-                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/DD_Set_Neighbor_Hash_Fn3.c:76:21: warning: unused parameter ‘nproc’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/DD_Set_Neighbor_Hash_Fn2.c:115:21: warning: unused parameter ‘gid_length’ [-Wunused-parameter]
  static unsigned int dd_nh2 (ZOLTAN_ID_PTR gid, int gid_length,
                      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/DD_Set_Neighbor_Hash_Fn2.c:115:21: warning: unused parameter ‘junk’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/DD_Set_Neighbor_Hash_Fn3.c:76:21: warning: unused parameter ‘gid_length’ [-Wunused-parameter]
+ static unsigned int dd_nh3 (ZOLTAN_ID_PTR gid, int gid_length,
+                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/DD_Set_Neighbor_Hash_Fn3.c:76:21: warning: unused parameter ‘nproc’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/build_graph.c:55:5: warning: unused parameter ‘obj_wgt_dim’ [-Wunused-parameter]
  int Zoltan_Build_Graph(
-     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/divide_machine.c:146:5: warning: unused parameter ‘zz’ [-Wunused-parameter]
- int Zoltan_Divide_Parts(
      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/coloring.c:945:12: warning: unused parameter ‘distance’ [-Wunused-parameter]
  static int ReorderGraph(
@@ -11957,16 +11954,8 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/coloring.c:1696:12: warning: unused parameter ‘nlvtx’ [-Wunused-parameter]
  static int D2DetectConflicts(ZZ *zz, G2LHash *hash, int nlvtx, int *wset, int wsize, int *xadj, int *adj, int *adjproc, int *nColor, int *color, int *conflicts, int *rand_key, int *vmark, int *seen, int *where, int *pwhere, int **rcsendbuf, int **rcrecbuf, int *rcsendsize, int *rcrecsize, int **srp, MPI_Request *sreqsC, MPI_Request *rreqsC, int *rreqfromC, MPI_Status *stats, int *nconflict)
             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_mmio.c:269:5: warning: unused parameter ‘M’ [-Wunused-parameter]
- int mm_read_mtx_crd_data(FILE *f, int M, int N, int nz, int I[], int J[],
-     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_mmio.c:269:5: warning: unused parameter ‘N’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_gnuplot.c:37:5: warning: unused parameter ‘cmd_file’ [-Wunused-parameter]
- int output_gnu(const char *cmd_file,
-     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_gnuplot.c:37:5: warning: unused parameter ‘prob’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_chaco_io.c:176:5: warning: unused parameter ‘base’ [-Wunused-parameter]
- int chaco_setup_mesh_struct(
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/divide_machine.c:146:5: warning: unused parameter ‘zz’ [-Wunused-parameter]
+ int Zoltan_Divide_Parts(
      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_exoII_io.c:54:5: warning: unused parameter ‘Proc’ [-Wunused-parameter]
  int read_exoII_file(int Proc,
@@ -11975,18 +11964,29 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_exoII_io.c:54:5: warning: unused parameter ‘prob’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_exoII_io.c:54:5: warning: unused parameter ‘pio_info’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_exoII_io.c:54:5: warning: unused parameter ‘mesh’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_gnuplot.c:37:5: warning: unused parameter ‘cmd_file’ [-Wunused-parameter]
+ int output_gnu(const char *cmd_file,
+     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_gnuplot.c:37:5: warning: unused parameter ‘prob’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_mmio.c:269:5: warning: unused parameter ‘M’ [-Wunused-parameter]
+ int mm_read_mtx_crd_data(FILE *f, int M, int N, int nz, int I[], int J[],
+     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_mmio.c:269:5: warning: unused parameter ‘N’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_chaco_io.c:176:5: warning: unused parameter ‘base’ [-Wunused-parameter]
+ int chaco_setup_mesh_struct(
+     ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_chaco_io.c:290:5: warning: unused parameter ‘prob’ [-Wunused-parameter]
  int chaco_fill_elements(
      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_chaco_io.c:290:5: warning: unused parameter ‘nvtxs’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_chaco_io.c:290:5: warning: unused parameter ‘ewgt_dim’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_chaco_io.c:290:5: warning: unused parameter ‘ndim’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_chaco_io.c:428:6: warning: unused parameter ‘base’ [-Wunused-parameter]
- void chaco_init_local_ids(
-      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_output.c:170:5: warning: unused parameter ‘prob’ [-Wunused-parameter]
  int output_results(const char *cmd_file,
      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_chaco_io.c:428:6: warning: unused parameter ‘base’ [-Wunused-parameter]
+ void chaco_init_local_ids(
+      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_mm_readfile.c:42:5: warning: unused parameter ‘Proc’ [-Wunused-parameter]
  int MM_readfile (
      ^
@@ -12005,15 +12005,18 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/exmesh.c:172:5: warning: unused parameter ‘userDefinedData’ [-Wunused-parameter]
  int exGetObjectSize(void *userDefinedData, int *err)
      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/exphg.c:290:6: warning: unused parameter ‘num_gid_entries’ [-Wunused-parameter]
- void exGetHg(void *data,  int num_gid_entries,
-      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/exmesh.c:177:6: warning: unused parameter ‘userDefinedData’ [-Wunused-parameter]
  void exGetObject(void *userDefinedData, int numGlobalIds, int numLids, int numObjs,
       ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/exmesh.c:177:6: warning: unused parameter ‘numGlobalIds’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/exmesh.c:177:6: warning: unused parameter ‘numLids’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/exmesh.c:177:6: warning: unused parameter ‘gids’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/exmisc.c:43:5: warning: unused parameter ‘me’ [-Wunused-parameter]
+ int exGlobalSuccess(int rc, int nprocs, int me, int verbose)
+     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/exphg.c:290:6: warning: unused parameter ‘num_gid_entries’ [-Wunused-parameter]
+ void exGetHg(void *data,  int num_gid_entries,
+      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/exphg.c:362:6: warning: unused parameter ‘num_gid_entries’ [-Wunused-parameter]
  void exGetHgEdgeWeights(void *data,  int num_gid_entries,
       ^
@@ -12027,12 +12030,18 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
  void exGetHgVerticesAndWeights(void *data, int num_gid_entries,
       ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/exphg.c:412:6: warning: unused parameter ‘num_lid_entries’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/exmisc.c:43:5: warning: unused parameter ‘me’ [-Wunused-parameter]
- int exGlobalSuccess(int rc, int nprocs, int me, int verbose)
-     ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/inertial1d.c:30:5: warning: unused parameter ‘wgtflag’ [-Wunused-parameter]
  int Zoltan_RIB_inertial1d(
      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc.c:52:5: warning: unused parameter ‘import_gids’ [-Wunused-parameter]
+ int Zoltan_HSFC(
+     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc.c:52:5: warning: unused parameter ‘import_lids’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc.c:52:5: warning: unused parameter ‘import_procs’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc.c:52:5: warning: unused parameter ‘import_to_part’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc.c:708:7: warning: unused parameter ‘datatype’ [-Wunused-parameter]
+ void  Zoltan_HSFC_mpi_sum_max_min (void *in, void *inout, int *len,
+       ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc_box_assign.c: In function ‘double next_query_2d(ZZ*, double*, double*, double)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc_box_assign.c:333:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
           if  (prune && (quadrant > startbits))
@@ -12045,26 +12054,10 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc_box_assign.c:482:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
           if  (prune && (quadrant > startbits))
                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc.c:52:5: warning: unused parameter ‘import_gids’ [-Wunused-parameter]
- int Zoltan_HSFC(
-     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc.c:52:5: warning: unused parameter ‘import_lids’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc.c:52:5: warning: unused parameter ‘import_procs’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc.c:52:5: warning: unused parameter ‘import_to_part’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc_box_assign.c: At global scope:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc_box_assign.c:395:15: warning: unused parameter ‘zz’ [-Wunused-parameter]
  static double next_query_3d (ZZ *zz, double *lquerybox, double *hquerybox,
                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/hsfc.c:708:7: warning: unused parameter ‘datatype’ [-Wunused-parameter]
- void  Zoltan_HSFC_mpi_sum_max_min (void *in, void *inout, int *len,
-       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/lb_balance.c:175:12: warning: unused parameter ‘include_parts’ [-Wunused-parameter]
- static int Zoltan_LB(
-            ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/lb_balance.c:977:6: warning: unused parameter ‘len’ [-Wunused-parameter]
- void Zoltan_PartDist_MPIOp(
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/lb_balance.c:977:6: warning: unused parameter ‘dptr’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_migrate.c:95:5: warning: unused parameter ‘num_gid_entries’ [-Wunused-parameter]
  int migrate_elements(
      ^
@@ -12101,6 +12094,9 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
  int get_next_coarse_element(void *data, int num_gid_entries, 
      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_loadbal.c:1282:5: warning: unused parameter ‘out_vertex’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/lb_balance.c:175:12: warning: unused parameter ‘include_parts’ [-Wunused-parameter]
+ static int Zoltan_LB(
+            ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_loadbal.c:1341:5: warning: unused parameter ‘data’ [-Wunused-parameter]
  int get_num_child(void *data, int num_gid_entries, int num_lid_entries, 
      ^
@@ -12123,6 +12119,10 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_loadbal.c:1354:6: warning: unused parameter ‘ref_type’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_loadbal.c:1354:6: warning: unused parameter ‘in_vertex’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/dr_loadbal.c:1354:6: warning: unused parameter ‘out_vertex’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/lb_balance.c:977:6: warning: unused parameter ‘len’ [-Wunused-parameter]
+ void Zoltan_PartDist_MPIOp(
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/lb_balance.c:977:6: warning: unused parameter ‘dptr’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/migoct.c:431:12: warning: unused parameter ‘nrecocts’ [-Wunused-parameter]
  static int Zoltan_Oct_Final_Migration(
             ^
@@ -12139,6 +12139,18 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/octupdate.c:89:5: warning: unused parameter ‘import_local_ids’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/octupdate.c:89:5: warning: unused parameter ‘import_procs’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/octupdate.c:89:5: warning: unused parameter ‘import_to_part’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/par_median.c:57:5: warning: unused parameter ‘nprocs’ [-Wunused-parameter]
+ int Zoltan_RB_find_median(
+     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/par_median.c:57:5: warning: unused parameter ‘num_parts’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/par_median.c:481:6: warning: unused parameter ‘len’ [-Wunused-parameter]
+ void Zoltan_RB_median_merge(void *in, void *inout, int *len, MPI_Datatype *dptr)
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/par_median.c:481:6: warning: unused parameter ‘dptr’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/par_bisect.c:1124:6: warning: unused parameter ‘len’ [-Wunused-parameter]
+ void Zoltan_bisector_merge(void *in, void *inout, int *len, MPI_Datatype *dptr)
+      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/par_bisect.c:1124:6: warning: unused parameter ‘dptr’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/parmetis_jostle.c:144:12: warning: unused parameter ‘part_sizes’ [-Wunused-parameter]
  static int Zoltan_ParMetis_Shared(
             ^
@@ -12176,31 +12188,19 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_build_calls.c:588:36: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
        for (i=0, v=0, e=0; i< egid[0]; i++) {
                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg.c:153:5: warning: unused parameter ‘imp_to_part’ [-Wunused-parameter]
- int Zoltan_PHG(
-     ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_build_calls.c:629:24: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
      for (i=0; i< egid[0]; i++) {
                         ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg.c:153:5: warning: unused parameter ‘imp_to_part’ [-Wunused-parameter]
+ int Zoltan_PHG(
+     ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_build_calls.c: At global scope:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_build_calls.c:663:12: warning: unused parameter ‘out_weights_size’ [-Wunused-parameter]
  static int exchange(ZZ *zz, int proc, int *change, void *htptr,
             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/par_median.c:57:5: warning: unused parameter ‘nprocs’ [-Wunused-parameter]
- int Zoltan_RB_find_median(
-     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/par_median.c:57:5: warning: unused parameter ‘num_parts’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/par_median.c:481:6: warning: unused parameter ‘len’ [-Wunused-parameter]
- void Zoltan_RB_median_merge(void *in, void *inout, int *len, MPI_Datatype *dptr)
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/par_median.c:481:6: warning: unused parameter ‘dptr’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_build_calls.c:1742:12: warning: unused parameter ‘vtx_GID’ [-Wunused-parameter]
  static int remove_empty_edges(ZZ *zz, int *num_lists, int num_pins, 
             ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/par_bisect.c:1124:6: warning: unused parameter ‘len’ [-Wunused-parameter]
- void Zoltan_bisector_merge(void *in, void *inout, int *len, MPI_Datatype *dptr)
-      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/par_bisect.c:1124:6: warning: unused parameter ‘dptr’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_coarse.c:168:13: warning: unused parameter ‘dt’ [-Wunused-parameter]
  static void identicalOperator(void *va, void *vb, int *len, MPI_Datatype *dt)
              ^
@@ -12219,15 +12219,15 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_parkway.c:38:5: warning: unused parameter ‘nparts’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_parkway.c:38:5: warning: unused parameter ‘partvec’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_parkway.c:38:5: warning: unused parameter ‘hgp’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_match.c:1153:13: warning: unused parameter ‘mytype’ [-Wunused-parameter]
+ static void phasethreereduce (
+             ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_patoh.c:34:5: warning: unused parameter ‘hg’ [-Wunused-parameter]
  int Zoltan_PHG_PaToH(
      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_patoh.c:34:5: warning: unused parameter ‘nparts’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_patoh.c:34:5: warning: unused parameter ‘partvec’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_patoh.c:34:5: warning: unused parameter ‘hgp’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_match.c:1153:13: warning: unused parameter ‘mytype’ [-Wunused-parameter]
- static void phasethreereduce (
-             ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/phg_refinement.c:64:12: warning: unused parameter ‘zz’ [-Wunused-parameter]
  static int refine_no (ZZ *zz,     /* Zoltan data structure */
             ^
@@ -12289,16 +12289,16 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/rootlist.c:74:5: warning: unused parameter ‘OCT_info’ [-Wunused-parameter]
  int RL_delRootOctant(OCT_Global_Info *OCT_info, pRList *rootlist, pOctant oct) {
      ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/rib.c: In function ‘int rib_fn(ZZ*, int*, ZOLTAN_ID_TYPE**, ZOLTAN_ID_TYPE**, int**, int**, double, int, int, int, int, int, float*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/rib.c:556:28: warning: ‘tmp_comm’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-       local_comm = tmp_comm;
-                            ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/reftree_part.c:69:5: warning: unused parameter ‘import_global_ids’ [-Wunused-parameter]
  int Zoltan_Reftree_Part(
      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/reftree_part.c:69:5: warning: unused parameter ‘import_local_ids’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/reftree_part.c:69:5: warning: unused parameter ‘import_procs’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/reftree_part.c:69:5: warning: unused parameter ‘import_to_part’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/rib.c: In function ‘int rib_fn(ZZ*, int*, ZOLTAN_ID_TYPE**, ZOLTAN_ID_TYPE**, int**, int**, double, int, int, int, int, int, float*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/rib.c:556:28: warning: ‘tmp_comm’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+       local_comm = tmp_comm;
+                            ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Mesh/src/Zoltan/reftree_coarse_path.c:1799:12: warning: unused parameter ‘gids’ [-Wunused-parameter]
  static int sfc_coarse_grid_path(int nobj, int *num_vert, ZOLTAN_ID_PTR vertices,
             ^
@@ -13595,7 +13595,7 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/LocStream/interface/../include/ESMCI_LocStream.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/LocStream/interface/ESMCI_LocStream.C:27:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/LocStream/interface/ESMC_LocStream.C:27:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -13605,7 +13605,7 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/LocStream/interface/../include/ESMCI_LocStream.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/LocStream/interface/ESMC_LocStream.C:27:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/LocStream/interface/ESMCI_LocStream.C:27:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -13657,13 +13657,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
  #define FTN_X(func) func##_
                      ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/LocStream/interface/ESMC_LocStream.C:31:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
-   const int   *getMinIndex(int tileno) const { return minIndex; }
-                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
-   const int   *getMaxIndex(int tileno) const { return maxIndex; }
-                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/LocStream/interface/ESMCI_LocStream_F.C:371:12: warning: unused parameter ‘buffer_l’ [-Wunused-parameter]
  void FTN_X(c_esmc_locstreamkeyserialize)(
             ^
@@ -13682,12 +13675,19 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
  #define FTN_X(func) func##_
                      ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/LocStream/interface/ESMC_LocStream.C:31:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
+   const int   *getMinIndex(int tileno) const { return minIndex; }
+                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/LocStream/interface/ESMCI_LocStream_F.C:443:12: warning: unused parameter ‘longName_l’ [-Wunused-parameter]
  void FTN_X(c_esmc_locstreamkeydeserialize)(
             ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro ‘FTN_X’
  #define FTN_X(func) func##_
                      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
+   const int   *getMaxIndex(int tileno) const { return maxIndex; }
+                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/LocStream/interface/ESMCI_LocStream_F.C:443:12: warning: unused parameter ‘buffer_l’ [-Wunused-parameter]
  void FTN_X(c_esmc_locstreamkeydeserialize)(
             ^
@@ -13767,14 +13767,14 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/XGrid/interface/ESMC_XGrid.C:31:0:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/XGrid/interface/ESMCI_XGrid.C:35:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
    const int   *getMinIndex(int tileno) const { return minIndex; }
                 ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
    const int   *getMaxIndex(int tileno) const { return maxIndex; }
                 ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/XGrid/interface/ESMCI_XGrid.C:35:0:
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/XGrid/interface/ESMC_XGrid.C:31:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
    const int   *getMinIndex(int tileno) const { return minIndex; }
                 ^
@@ -14114,18 +14114,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldHalo.F90:103:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
    subroutine ESMF_FieldHalo(field, routehandle, keywordEnforcer,  &
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:2172:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter7Dr8(field, farray, & 
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:2125:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter7Dr4(field, farray, & 
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:2078:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter7Di8(field, farray, & 
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:2031:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter7Di4(field, farray, & 
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldWr.F90:76:0: warning: unused parameter ‘field’ [-Wunused-parameter]
    subroutine ESMF_FieldWrite(field, fileName, keywordEnforcer,   &
  ^
@@ -14135,95 +14123,107 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldWr.F90:76:0: warning: unused parameter ‘status’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldWr.F90:76:0: warning: unused parameter ‘timeslice’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldWr.F90:76:0: warning: unused parameter ‘iofmt’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1984:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter6Dr8(field, farray, & 
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1937:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter6Dr4(field, farray, & 
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1890:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter6Di8(field, farray, & 
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1843:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter6Di4(field, farray, & 
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:1842:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
      subroutine ESMF_FieldSMMStoreFromFileTR(srcField, dstField, filename, &
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1795:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter5Dr8(field, farray, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:1684:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
      subroutine ESMF_FieldSMMStoreFromFile(srcField, dstField, filename, &
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1748:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter5Dr4(field, farray, & 
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:1483:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
      subroutine ESMF_FieldSMMStoreNFTR(srcField, dstField, &
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:2172:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter7Dr8(field, farray, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:1268:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
      subroutine ESMF_FieldSMMStoreNF(srcField, dstField, &
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1700:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter5Di8(field, farray, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:2125:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter7Dr4(field, farray, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:1199:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
      subroutine ESMF_FieldSMMStoreR8TR(srcField, dstField, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1652:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter5Di4(field, farray, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:2078:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter7Di8(field, farray, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:1131:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
      subroutine ESMF_FieldSMMStoreR4TR(srcField, dstField, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1604:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter4Dr8(field, farray, & 
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:1063:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
      subroutine ESMF_FieldSMMStoreI8TR(srcField, dstField, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1557:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter4Dr4(field, farray, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:2031:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter7Di4(field, farray, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:995:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
      subroutine ESMF_FieldSMMStoreI4TR(srcField, dstField, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1509:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter4Di8(field, farray, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1984:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter6Dr8(field, farray, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:730:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
      subroutine ESMF_FieldSMMStoreR8(srcField, dstField, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1461:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter4Di4(field, farray, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1937:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter6Dr4(field, farray, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:663:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
      subroutine ESMF_FieldSMMStoreR4(srcField, dstField, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1414:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter3Dr8(field, farray, & 
- ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:596:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
      subroutine ESMF_FieldSMMStoreI8(srcField, dstField, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1367:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-  subroutine ESMF_FieldScatter3Dr4(field, farray, & 
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1890:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter6Di8(field, farray, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:529:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
      subroutine ESMF_FieldSMMStoreI4(srcField, dstField, & 
  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1843:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter6Di4(field, farray, & 
+ ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:240:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
    subroutine ESMF_FieldSMMRelease(routehandle, keywordEnforcer, noGarbage, rc)
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1795:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter5Dr8(field, farray, & 
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:89:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+   subroutine ESMF_FieldSMM(srcField, dstField, routehandle, keywordEnforcer, &
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1748:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter5Dr4(field, farray, & 
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1700:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter5Di8(field, farray, & 
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1652:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter5Di4(field, farray, & 
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1604:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter4Dr8(field, farray, & 
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1557:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter4Dr4(field, farray, & 
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1509:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter4Di8(field, farray, & 
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1461:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter4Di4(field, farray, & 
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1414:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter3Dr8(field, farray, & 
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1367:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+  subroutine ESMF_FieldScatter3Dr4(field, farray, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1319:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_FieldScatter3Di8(field, farray, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1271:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_FieldScatter3Di4(field, farray, & 
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldSMM.F90:89:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-   subroutine ESMF_FieldSMM(srcField, dstField, routehandle, keywordEnforcer, &
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldScatter.F90:1224:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_FieldScatter2Dr8(field, farray, & 
@@ -14270,11 +14270,21 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldGather.F90:2562:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_FieldGather6Di8(field, farray, & 
  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldPr.F90:223:0: warning: unused parameter ‘field’ [-Wunused-parameter]
+   subroutine ESMF_FieldRead(field, fileName, keywordEnforcer,        &
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldPr.F90:223:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldPr.F90:223:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldPr.F90:223:0: warning: unused parameter ‘timeslice’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldPr.F90:223:0: warning: unused parameter ‘iofmt’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldGather.F90:2518:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_FieldGather6Di4(field, farray, & 
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldGather.F90:2473:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_FieldGather5Dr8(field, farray, & 
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldPr.F90:86:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
+   subroutine ESMF_FieldPrint(field, keywordEnforcer, rc)
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldGather.F90:2429:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_FieldGather5Dr4(field, farray, & 
@@ -14300,18 +14310,8 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldGather.F90:2116:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_FieldGather3Dr8(field, farray, & 
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldPr.F90:223:0: warning: unused parameter ‘field’ [-Wunused-parameter]
-   subroutine ESMF_FieldRead(field, fileName, keywordEnforcer,        &
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldPr.F90:223:0: warning: unused parameter ‘filename’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldPr.F90:223:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldPr.F90:223:0: warning: unused parameter ‘timeslice’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldPr.F90:223:0: warning: unused parameter ‘iofmt’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldGather.F90:2072:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_FieldGather3Dr4(field, farray, & 
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldPr.F90:86:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
-   subroutine ESMF_FieldPrint(field, keywordEnforcer, rc)
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/src/ESMF_FieldGather.F90:2027:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
   subroutine ESMF_FieldGather3Di8(field, farray, & 
@@ -15949,7 +15949,9 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/interface/ESMCI_Field_F.C:25:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/interface/../include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/interface/ESMCI_Field.C:27:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -15957,9 +15959,7 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/interface/../include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/interface/ESMCI_Field.C:27:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Field/interface/ESMCI_Field_F.C:25:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -16543,7 +16543,25 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_IO_XML.h:46,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:29:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_IO_XML.h:46,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:31:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_IO_XML.h:46,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWrite.C:31:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -16562,24 +16580,6 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_IO_XML.h:46,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:31:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_IO_XML.h:46,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWrite.C:31:
-/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^
-In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_IO_XML.h:46,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:29:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -16661,18 +16661,6 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:2447:54: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
          for(int j=0; j<linkList.at(i)->packList.size(); j++) {
                                                       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In member function ‘int ESMCI::Attribute::streamAttributeListToJSON(std::vector<ESMCI::Attribute*>, ESMC_Logical, ESMC_Logical, std::string&, int*) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:247:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-                 for (int i = 0; i < attrVector.size(); i++) {
-                                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In member function ‘int ESMCI::Attribute::streamAttributePackToJSON(std::vector<ESMCI::Attribute*>, ESMC_Logical, ESMC_Logical, ESMC_Logical, std::string&, int*) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:340:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-                 for (int i = 0; i < attrVector.size(); i++) {
-                                                     ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In member function ‘int ESMCI::Attribute::streamAttributeLinksToJSON(std::vector<ESMCI::Attribute*>, ESMC_Logical, ESMC_Logical, std::string&, int*) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:380:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-                 for (int i = 0; i < attrVector.size(); i++) {
-                                                     ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:33:0:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
    const int   *getMinIndex(int tileno) const { return minIndex; }
@@ -16687,16 +16675,13 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:138:58: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
              for(int j=0; j<linkList.at(i)->packList.size(); j++) {
                                                           ^
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:35:0:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
-   const int   *getMinIndex(int tileno) const { return minIndex; }
-                ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
-   const int   *getMaxIndex(int tileno) const { return maxIndex; }
-                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:206:57: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
                  for (int i=0;  i<attpack->attrList.size(); ++i) {
                                                          ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In member function ‘int ESMCI::Attribute::streamAttributeListToJSON(std::vector<ESMCI::Attribute*>, ESMC_Logical, ESMC_Logical, std::string&, int*) const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:247:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < attrVector.size(); i++) {
+                                                     ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C: In member function ‘bool ESMCI::Attribute::AttributeWriteCIMgridPresent(std::string) const’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:332:38: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
          for(int i=0; i<linkList.size(); i++) {
@@ -16704,6 +16689,14 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:348:58: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
              for(int j=0; j<linkList.at(i)->packList.size(); j++) {
                                                           ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In member function ‘int ESMCI::Attribute::streamAttributePackToJSON(std::vector<ESMCI::Attribute*>, ESMC_Logical, ESMC_Logical, ESMC_Logical, std::string&, int*) const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:340:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < attrVector.size(); i++) {
+                                                     ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In member function ‘int ESMCI::Attribute::streamAttributeLinksToJSON(std::vector<ESMCI::Attribute*>, ESMC_Logical, ESMC_Logical, std::string&, int*) const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:380:53: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+                 for (int i = 0; i < attrVector.size(); i++) {
+                                                     ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C: In member function ‘std::string ESMCI::Attribute::AttributeGetInternalGridInt(std::string) const’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:612:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
              for (int i=0; i<attrList.size(); ++i) {
@@ -16712,6 +16705,13 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:688:43: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
              for (int i=0; i<attrList.size(); ++i) {
                                            ^
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:35:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
+   const int   *getMinIndex(int tileno) const { return minIndex; }
+                ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
+   const int   *getMaxIndex(int tileno) const { return maxIndex; }
+                ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C: In member function ‘int ESMCI::Attribute::AttPackCreateStandard(const string&, const string&, const string&, const std::vector<std::basic_string<char> >&, const std::vector<std::basic_string<char> >&, const std::vector<int>&, int, std::vector<std::basic_string<char> >&, int&)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:882:14: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
    for(i=0; i<nestCount; i++) {
@@ -17002,7 +17002,7 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Array.h:38,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/State/interface/../include/ESMCI_State.h:37,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/State/interface/ESMCI_State.C:27:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/State/interface/ESMCI_State_F.C:24:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -17012,7 +17012,7 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Array.h:38,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/State/interface/../include/ESMCI_State.h:37,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/State/interface/ESMCI_State_F.C:24:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/State/interface/ESMCI_State.C:27:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
@@ -17111,13 +17111,13 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstru
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/Component/src/ESMCI_FTable.C:2107:5: warning: unused parameter ‘options’ [-Wunused-parameter]
  int FTable::validate(
      ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/Component/src/ESMCI_FTable.C:2135:5: warning: unused parameter ‘options’ [-Wunused-parameter]
+ int FTable::print(
+     ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/Component/src/ESMCI_CompTunnel.C: In member function ‘int ESMCI::CompTunnel::actual2dual(void*, int, double)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/Component/src/ESMCI_CompTunnel.C:939:49: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
          for (int i=0; i<localSendToPetList.size(); i++)
                                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/Component/src/ESMCI_FTable.C:2135:5: warning: unused parameter ‘options’ [-Wunused-parameter]
- int FTable::print(
-     ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/Component/src/ESMF_SciComp.F90:638:0: warning: unused parameter ‘keywordenforcer’ [-Wunused-parameter]
    subroutine ESMF_SciCompValidate(scicomp, keywordEnforcer, rc)
  ^
@@ -17308,7 +17308,7 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
  #warning \
   ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/Component/interface/../include/ESMCI_Comp.h:35:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/Component/interface/ESMCI_Comp.C:26:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/Component/interface/ESMC_Comp.C:33:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
    const int   *getMinIndex(int tileno) const { return minIndex; }
                 ^
@@ -17316,7 +17316,7 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstru
    const int   *getMaxIndex(int tileno) const { return maxIndex; }
                 ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/Component/interface/../include/ESMCI_Comp.h:35:0,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/Component/interface/ESMC_Comp.C:33:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/Component/interface/ESMCI_Comp.C:26:
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter ‘tileno’ [-Wunused-parameter]
    const int   *getMinIndex(int tileno) const { return minIndex; }
                 ^
@@ -18545,6 +18545,9 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServNetEsmfClient.C:343:6: warning: unused parameter ‘request’ [-Wunused-parameter]
+ int  ESMCI_WebServNetEsmfClient::getResponse(
+      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServDataDesc.C:139:6: warning: unused parameter ‘varName’ [-Wunused-parameter]
  int  ESMCI_WebServDataDesc::getVarIndex(
       ^
@@ -18553,15 +18556,19 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
          ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServDataContent.C:199:9: warning: unused parameter ‘latValueIdx’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServDataContent.C:199:9: warning: unused parameter ‘lonValueIdx’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServNetEsmfClient.C:343:6: warning: unused parameter ‘request’ [-Wunused-parameter]
- int  ESMCI_WebServNetEsmfClient::getResponse(
-      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServDataMgr.C:456:28: warning: unused parameter ‘timeStamp’ [-Wunused-parameter]
  ESMCI_WebServDataContent*  ESMCI_WebServDataMgr::getDataValues(
                             ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServForkClient.C:233:6: warning: unused parameter ‘jobId’ [-Wunused-parameter]
  int  ESMCI_WebServForkClient::jobStatus(
       ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServProcCtrlClient.C: In member function ‘int ESMCI::ESMCI_WebServProcCtrlClient::newClient()’:
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServProcCtrlClient.C:204:78: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if ((bytesSent = sendString(theUserName)) != (strlen(theUserName) + 1))
+                                                                              ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServProcCtrlClient.C:214:78: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+         if ((bytesSent = sendString(thePassword)) != (strlen(thePassword) + 1))
+                                                                              ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServGRAMClient.C:108:6: warning: unused parameter ‘userName’ [-Wunused-parameter]
  int  ESMCI_WebServGRAMClient::loginToServer(
       ^
@@ -18577,13 +18584,6 @@ In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServGRAMClient.C:186:6: warning: unused parameter ‘jobId’ [-Wunused-parameter]
  int  ESMCI_WebServGRAMClient::jobStatus(
       ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServProcCtrlClient.C: In member function ‘int ESMCI::ESMCI_WebServProcCtrlClient::newClient()’:
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServProcCtrlClient.C:204:78: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         if ((bytesSent = sendString(theUserName)) != (strlen(theUserName) + 1))
-                                                                              ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServProcCtrlClient.C:214:78: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
-         if ((bytesSent = sendString(thePassword)) != (strlen(thePassword) + 1))
-                                                                              ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/ESMCI_Comp.h:35:0,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/../include/ESMCI_WebServComponentSvr.h:23,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/Superstructure/WebServices/src/ESMCI_WebServComponentSvr.C:32:
@@ -19050,6 +19050,14 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
      recursive subroutine NUOPC_CheckField(prefix, referenceName, field, stateid, rc)
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/addon/NUOPC/src/NUOPC_Compliance_Base.F90:1611:0: warning: unused parameter ‘referencename’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/addon/NUOPC/src/NUOPC_Compliance_Connector.F90:1056:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
+     recursive subroutine checkPhaseEpilogue_CplListEstablished(prefix, comp, &
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/addon/NUOPC/src/NUOPC_Compliance_Connector.F90:1056:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/addon/NUOPC/src/NUOPC_Compliance_Connector.F90:1056:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
+/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/addon/NUOPC/src/NUOPC_Compliance_Connector.F90:51:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
+     recursive subroutine setvmIC(comp, rc)
+ ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/addon/NUOPC/src/NUOPC_Compliance_Model.F90:1103:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
      recursive subroutine checkEpi_InternalClockSet(prefix, comp, &
  ^
@@ -19059,14 +19067,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/include/E
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/addon/NUOPC/src/NUOPC_Compliance_Model.F90:1054:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/addon/NUOPC/src/NUOPC_Compliance_Model.F90:54:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
-     recursive subroutine setvmIC(comp, rc)
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/addon/NUOPC/src/NUOPC_Compliance_Connector.F90:1056:0: warning: unused parameter ‘importstate’ [-Wunused-parameter]
-     recursive subroutine checkPhaseEpilogue_CplListEstablished(prefix, comp, &
- ^
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/addon/NUOPC/src/NUOPC_Compliance_Connector.F90:1056:0: warning: unused parameter ‘exportstate’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/addon/NUOPC/src/NUOPC_Compliance_Connector.F90:1056:0: warning: unused parameter ‘clock’ [-Wunused-parameter]
-/work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/addon/NUOPC/src/NUOPC_Compliance_Connector.F90:51:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
      recursive subroutine setvmIC(comp, rc)
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_mpiuni_g/src/addon/NUOPC/src/NUOPC_Compliance_Driver.F90:1158:0: warning: unused parameter ‘comp’ [-Wunused-parameter]
