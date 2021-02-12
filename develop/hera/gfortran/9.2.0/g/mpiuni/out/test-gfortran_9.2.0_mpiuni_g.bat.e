@@ -10,36 +10,36 @@ Also make sure that all modulefiles written in TCL start with the string
 
 
 
-sed: can't read /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/test/testg/Linux.gfortran.64.mpiuni.default/unit_tests.config: No such file or directory
+sed: can't read /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/test/testg/Linux.gfortran.64.mpiuni.default/unit_tests.config: No such file or directory
 In file included from ESMCI_StringSubr.C:27:0:
 ESMCI_StringSubr.C:103:14: warning: unused parameter 'str1' [-Wunused-parameter]
    void FTN_X(c_5strings)(char *str1, char *str2, char *str3, char *str4,
               ^
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro 'FTN_X'
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro 'FTN_X'
  #define FTN_X(func) func##_
                      ^
 ESMCI_StringSubr.C:103:14: warning: unused parameter 'str2' [-Wunused-parameter]
    void FTN_X(c_5strings)(char *str1, char *str2, char *str3, char *str4,
               ^
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro 'FTN_X'
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro 'FTN_X'
  #define FTN_X(func) func##_
                      ^
 ESMCI_StringSubr.C:103:14: warning: unused parameter 'str3' [-Wunused-parameter]
    void FTN_X(c_5strings)(char *str1, char *str2, char *str3, char *str4,
               ^
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro 'FTN_X'
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro 'FTN_X'
  #define FTN_X(func) func##_
                      ^
 ESMCI_StringSubr.C:103:14: warning: unused parameter 'str4' [-Wunused-parameter]
    void FTN_X(c_5strings)(char *str1, char *str2, char *str3, char *str4,
               ^
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro 'FTN_X'
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro 'FTN_X'
  #define FTN_X(func) func##_
                      ^
 ESMCI_StringSubr.C:103:14: warning: unused parameter 'str5' [-Wunused-parameter]
    void FTN_X(c_5strings)(char *str1, char *str2, char *str3, char *str4,
               ^
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro 'FTN_X'
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/build_config/Linux.gfortran.default/ESMC_Conf.h:22:21: note: in definition of macro 'FTN_X'
  #define FTN_X(func) func##_
                      ^
 ESMF_StringUTest.F90:186:0: warning: unused parameter 'rc' [-Wunused-parameter]
@@ -49,37 +49,37 @@ ESMF_StringUTest.F90:157:0: warning: unused parameter 'rc' [-Wunused-parameter]
  subroutine f90string2(i1, i2, fstr, i3, i4, rc)
  ^
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI.h:25,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI.h:25,
                  from ESMCI_WordsizeSubr.C:24:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI.h:49:0,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI.h:49:0,
                  from ESMCI_WordsizeSubr.C:24:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter 'tileno' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter 'tileno' [-Wunused-parameter]
    const int   *getMinIndex(int tileno) const { return minIndex; }
                 ^
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter 'tileno' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter 'tileno' [-Wunused-parameter]
    const int   *getMaxIndex(int tileno) const { return maxIndex; }
                 ^
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI.h:25,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI.h:25,
                  from ESMCI_FeatureSubr.C:21:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI.h:49:0,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI.h:49:0,
                  from ESMCI_FeatureSubr.C:21:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter 'tileno' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter 'tileno' [-Wunused-parameter]
    const int   *getMinIndex(int tileno) const { return minIndex; }
                 ^
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter 'tileno' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter 'tileno' [-Wunused-parameter]
    const int   *getMaxIndex(int tileno) const { return maxIndex; }
                 ^
 ESMF_FeatureTR15581Subr.F90: In function 'esmf_featureallocargstr':
@@ -87,20 +87,20 @@ ESMF_FeatureTR15581Subr.F90:122:0: warning: '.str_dllensize' may be used uniniti
          do, i=1, len (str_dllensize)
  ^
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI.h:25,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI.h:25,
                  from ESMCI_FeatureUTest.C:14:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI.h:49:0,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI.h:49:0,
                  from ESMCI_FeatureUTest.C:14:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter 'tileno' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Grid.h:328:16: warning: unused parameter 'tileno' [-Wunused-parameter]
    const int   *getMinIndex(int tileno) const { return minIndex; }
                 ^
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter 'tileno' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Grid.h:329:16: warning: unused parameter 'tileno' [-Wunused-parameter]
    const int   *getMaxIndex(int tileno) const { return maxIndex; }
                 ^
 ESMF_TestHarnessUtilMod.F90: In function 'dist_rank':
@@ -217,8 +217,8 @@ ESMF_InitMacrosUTest.F90:42.40:
                                         1
 Warning: Unused parameter 'version' declared at (1)
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from ESMC_LogErrPerfUTest.C:19:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
@@ -683,14 +683,14 @@ ESMF_TraceMPIUTest.F90:41.36:
                                     1
 Warning: Unused parameter 'version' declared at (1)
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from ESMC_TraceRegionUTest.C:27:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
 In file included from ESMC_TraceRegionUTest.C:28:0:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Trace/tests/../include/ESMCI_RegionNode.h:497:10: warning: unused parameter 'bufferSize' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Trace/tests/../include/ESMCI_RegionNode.h:497:10: warning: unused parameter 'bufferSize' [-Wunused-parameter]
      void deserializeLocal(char *buffer, size_t *offset, size_t bufferSize) { 
           ^
 ESMF_SimpleCompB.F90:100:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
@@ -722,39 +722,39 @@ ESMF_BaseUTest.F90:36.40:
                                         1
 Warning: Unused parameter 'version' declared at (1)
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from ESMC_BaseUTest.C:23:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
                  from ESMC_NlohmannJSONUTest.C:20:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Info.h:24,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Info.h:24,
                  from ESMC_InfoUTest.C:21:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Info.h:24:0,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Info.h:24:0,
                  from ESMC_InfoUTest.C:21:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h: In member function 'void ESMC_Base::ESMC_BaseDeleteInfo()':
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:140:60: warning: possible problem detected in invocation of delete operator: [enabled by default]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h: In member function 'void ESMC_Base::ESMC_BaseDeleteInfo()':
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:140:60: warning: possible problem detected in invocation of delete operator: [enabled by default]
      void ESMC_BaseDeleteInfo(void) {if (!infoalias) delete info;}
                                                             ^
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:140:60: warning: invalid use of incomplete type 'class ESMCI::Info' [enabled by default]
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:70:9: warning: forward declaration of 'class ESMCI::Info' [enabled by default]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:140:60: warning: invalid use of incomplete type 'class ESMCI::Info' [enabled by default]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:70:9: warning: forward declaration of 'class ESMCI::Info' [enabled by default]
    class Info;
          ^
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:140:60: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:140:60: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
      void ESMC_BaseDeleteInfo(void) {if (!infoalias) delete info;}
                                                             ^
 ESMF_InfoUTest.F90:40.36:
@@ -767,24 +767,11 @@ ESMF_CalendarUTest.F90:42.40:
       character(*), parameter :: version = &
                                         1
 Warning: Unused parameter 'version' declared at (1)
-ESMF_AlarmUTest.F90: In function 'esmf_alarmtest':
-ESMF_AlarmUTest.F90:3496:0: warning: unused parameter 'rc' [-Wunused-parameter]
- subroutine Test_AlarmHang(testPass, rc)
- ^
-ESMF_AlarmUTest.F90:3392:0: warning: unused parameter 'rc' [-Wunused-parameter]
- subroutine test_reverseAlarms(testPass, rc)
- ^
 ESMF_AlarmUTest.F90:37.40:
 
       character(*), parameter :: version = &
                                         1
 Warning: Unused parameter 'version' declared at (1)
-ESMF_AlarmUTest.F90:3496:0: warning: unused parameter 'rc' [-Wunused-parameter]
- subroutine Test_AlarmHang(testPass, rc)
- ^
-ESMF_AlarmUTest.F90:3392:0: warning: unused parameter 'rc' [-Wunused-parameter]
- subroutine test_reverseAlarms(testPass, rc)
- ^
 ESMF_ClockUTest.F90:39.40:
 
       character(*), parameter :: version = &
@@ -1037,10 +1024,10 @@ ESMF_ArrayBundleRedistUTest.F90:36.36:
 Warning: Unused parameter 'version' declared at (1)
 ESMF_ArrayBundleRedistUTest.F90:675:0: warning: unused parameter 'arraylist2' [-Wunused-parameter]
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/IO/tests/../include/ESMCI_IO_NetCDF.h:39,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/IO/tests/../include/ESMCI_IO_NetCDF.h:39,
                  from ESMCI_IO_NetCDFUTest.C:18:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
@@ -1146,10 +1133,10 @@ ESMF_GridArbitraryUTest.F90:36.36:
                                     1
 Warning: Unused parameter 'version' declared at (1)
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh.h:22,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh.h:22,
                  from ESMC_MBMeshUTest.C:24:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
@@ -1179,40 +1166,40 @@ ESMC_MBTGen.C:1177:3: warning: multi-line comment [-Wcomment]
 ESMC_MBTGen.C:1179:3: warning: multi-line comment [-Wcomment]
    //         |                \ |          \
    ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
                  from ESMC_MBMeshUTest.C:25:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter 'rhs' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter 'rhs' [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
                  from ESMC_MBMeshUTest.C:25:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter 'q' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter 'q' [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:17,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:17,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
                  from ESMC_MBMeshUTest.C:25:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:238:17: warning: unused parameter 'p' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:238:17: warning: unused parameter 'p' [-Wunused-parameter]
    static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
                  ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:18,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:18,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
                  from ESMC_MBMeshUTest.C:25:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter 'f' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter 'f' [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
 In file included from ESMC_MBTGen.C:26:0,
@@ -1228,10 +1215,10 @@ ESMC_MBMeshUTest.C:49:5: warning: unused parameter 'argc' [-Wunused-parameter]
      ^
 ESMC_MBMeshUTest.C:49:5: warning: unused parameter 'argv' [-Wunused-parameter]
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh.h:22,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh.h:22,
                  from ESMC_MBMeshRegridUTest.C:24:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
@@ -1261,40 +1248,40 @@ ESMC_MBTGen.C:1177:3: warning: multi-line comment [-Wcomment]
 ESMC_MBTGen.C:1179:3: warning: multi-line comment [-Wcomment]
    //         |                \ |          \
    ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
                  from ESMC_MBMeshRegridUTest.C:25:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter 'rhs' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter 'rhs' [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
                  from ESMC_MBMeshRegridUTest.C:25:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter 'q' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter 'q' [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:17,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:17,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
                  from ESMC_MBMeshRegridUTest.C:25:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:238:17: warning: unused parameter 'p' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:238:17: warning: unused parameter 'p' [-Wunused-parameter]
    static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
                  ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:18,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:18,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
                  from ESMC_MBMeshRegridUTest.C:25:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter 'f' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter 'f' [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
 In file included from ESMC_MBTGen.C:26:0,
@@ -1310,23 +1297,23 @@ ESMC_MBMeshRegridUTest.C:49:5: warning: unused parameter 'argc' [-Wunused-parame
      ^
 ESMC_MBMeshRegridUTest.C:49:5: warning: unused parameter 'argv' [-Wunused-parameter]
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_Regrid_Nearest.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_Regrid_Nearest.h:16,
                  from ESMC_MeshTestGenPL.C:25,
                  from ESMC_MBMesh_ExtrapolateUTest.C:24:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_Regrid_Nearest.h:16,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_Regrid_Nearest.h:16,
                  from ESMC_MeshTestGenPL.C:25,
                  from ESMC_MBMesh_ExtrapolateUTest.C:24:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter 'f' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter 'f' [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
 In file included from ESMC_MBMesh_ExtrapolateUTest.C:24:0:
@@ -1344,48 +1331,48 @@ ESMC_MBMesh_ExtrapolateUTest.C:116:5: warning: unused parameter 'argc' [-Wunused
      ^
 ESMC_MBMesh_ExtrapolateUTest.C:116:5: warning: unused parameter 'argv' [-Wunused-parameter]
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh.h:22,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh.h:22,
                  from ESMC_MBMesh_UtilUTest.C:25:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
                  from ESMC_MBMesh_UtilUTest.C:26:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter 'rhs' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter 'rhs' [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:17,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
                  from ESMC_MBMesh_UtilUTest.C:26:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter 'q' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter 'q' [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:17,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Sintdnode.h:22:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:17,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
                  from ESMC_MBMesh_UtilUTest.C:26:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:238:17: warning: unused parameter 'p' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MathUtil.h:238:17: warning: unused parameter 'p' [-Wunused-parameter]
    static double turn(double *a, double *b, double *p) {return a[0]*b[1]-a[1]*b[0];}
                  ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:18,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_XGridUtil.h:18,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Glue.h:38,
                  from ESMC_MBMesh_UtilUTest.C:26:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter 'f' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter 'f' [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
 ESMC_MBMesh_UtilUTest.C:121:5: warning: unused parameter 'argc' [-Wunused-parameter]
@@ -1393,37 +1380,37 @@ ESMC_MBMesh_UtilUTest.C:121:5: warning: unused parameter 'argc' [-Wunused-parame
      ^
 ESMC_MBMesh_UtilUTest.C:121:5: warning: unused parameter 'argv' [-Wunused-parameter]
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/Regridding/ESMCI_Interp.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/Regridding/ESMCI_Interp.h:16,
                  from ESMCI_IntegrateUTest.C:19:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/Regridding/ESMCI_Interp.h:15,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:15:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/Regridding/ESMCI_Interp.h:15,
                  from ESMCI_IntegrateUTest.C:19:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter 'rhs' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter 'rhs' [-Wunused-parameter]
    _fieldTypeBase(const _fieldTypeBase &rhs) {}
    ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/Regridding/ESMCI_Interp.h:15,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/Regridding/ESMCI_Interp.h:15,
                  from ESMCI_IntegrateUTest.C:19:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter 'q' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter 'q' [-Wunused-parameter]
    const intgRule *ChangeOrder(UInt q) const {
                    ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/Regridding/ESMCI_Interp.h:16,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/Regridding/ESMCI_Interp.h:16,
                  from ESMCI_IntegrateUTest.C:19:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter 'f' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter 'f' [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
 ESMF_MeshOpUTest.F90:37.38:
@@ -1600,23 +1587,23 @@ ESMF_MeshUTest.F90:5973:0: warning: unused parameter 'correct' [-Wunused-paramet
  subroutine test_mesh_create_easy_elems(correct, rc)
  ^
 In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_Regrid_Nearest.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_Regrid_Nearest.h:16,
                  from ESMC_MeshTestGenPL.C:25,
                  from ESMC_NearestUTest.C:24:
 /usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^
-In file included from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
-                 from /scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_Regrid_Nearest.h:16,
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Migrator.h:18:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:15,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/tests/../include/ESMCI_Regrid_Nearest.h:16,
                  from ESMC_MeshTestGenPL.C:25,
                  from ESMC_NearestUTest.C:24:
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter 'f' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter 'f' [-Wunused-parameter]
    MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
                    ^
 In file included from ESMC_NearestUTest.C:24:0:
@@ -3823,11 +3810,2200 @@ user_coupler.F90:94:0: warning: unused parameter 'clock' [-Wunused-parameter]
 user_coupler.F90:34:0: warning: unused parameter 'comp' [-Wunused-parameter]
    subroutine usercpl_setvm(comp, rc)
  ^
-user_coupler.o: In function `__user_coupler_MOD_user_init':
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/system_tests/ESMF_ArrayRedistMPMD/user_coupler.F90:117: undefined reference to `__esmf_statereconcile2mod_MOD_esmf_statereconcile'
-/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/src/system_tests/ESMF_ArrayRedistMPMD/user_coupler.F90:119: undefined reference to `__esmf_statereconcile2mod_MOD_esmf_statereconcile'
-collect2: error: ld returned 1 exit status
-make[3]: *** [/scratch1/NCEPDEV/da/Mark.Potts/tmp/gfortran_9.2.0_mpiuni_g/test/testg/Linux.gfortran.64.mpiuni.default/ESMF_ArrayRedistSTestA] Error 1
-make[2]: *** [tree] Error 1
-make[1]: *** [build_system_tests] Error 2
-make: *** [all_tests] Error 2
+user_model1.F90:185:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:185:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:185:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:140:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:140:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:140:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:93:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:93:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_coupler.F90:180:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:180:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:180:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:180:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:144:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:144:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:94:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:34:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_model2.F90:187:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:187:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:187:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:139:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:139:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:139:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:92:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:92:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_model1.F90:188:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:188:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:188:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:140:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:140:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:140:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:93:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:93:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:195:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:195:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:195:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:139:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:139:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:139:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:92:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:92:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:177:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:177:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:177:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:177:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:141:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:141:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:91:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:34:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_model1.F90:207:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:207:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:207:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:149:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:149:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:149:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:93:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:93:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:223:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:223:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:223:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:149:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:149:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:149:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:92:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:92:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:221:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:221:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:221:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:221:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:184:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:184:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:94:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:34:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_model1.F90:207:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:207:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:207:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:149:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:149:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:149:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:93:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:93:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:226:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:226:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:226:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:149:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:149:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:149:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:92:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:92:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:181:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:181:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:181:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:181:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:144:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:144:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:94:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:34:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_model1.F90:193:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:193:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:193:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:136:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:136:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:136:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:90:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:90:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:197:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:197:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:197:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:136:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:136:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:136:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:89:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:89:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:233:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:233:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:233:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:233:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:188:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:188:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:91:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:34:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_model1.F90:210:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:210:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:210:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:162:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:162:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:162:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:103:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:103:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:36:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:196:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:196:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:196:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:153:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:153:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:153:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:101:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:101:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:36:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:224:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:224:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:224:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:224:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:184:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:184:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:103:0: warning: unused parameter 'clock' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:39:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_model1.F90:216:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:216:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:216:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:168:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:168:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:168:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:102:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:102:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:36:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:203:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:203:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:203:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:160:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:160:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:160:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:101:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:101:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:36:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:236:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:236:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:236:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:236:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:196:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:196:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:105:0: warning: unused parameter 'clock' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:39:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_model1.F90:209:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:209:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:209:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:145:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:145:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:145:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:90:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:90:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:225:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:225:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:225:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:156:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:156:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:156:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:89:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:89:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:220:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:220:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:220:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:220:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:184:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:184:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:91:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:34:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_model1.F90:216:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:216:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:216:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:153:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:153:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:153:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:90:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:90:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:217:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:217:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:217:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:153:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:153:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:153:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:89:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:89:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:220:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:220:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:220:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:220:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:184:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:184:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:91:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:34:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_model1.F90:216:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:216:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:216:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:153:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:153:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:153:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:90:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:90:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:217:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:217:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:217:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:153:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:153:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:153:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:89:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:89:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:184:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:184:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:184:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:184:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:148:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:148:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:91:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:34:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_model1.F90:222:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:222:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:222:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:159:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:159:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:159:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:90:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:90:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:231:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:231:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:231:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:166:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:166:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:166:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:89:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:89:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:184:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:184:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:184:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:184:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:148:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:148:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:91:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:34:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+ESMF_FieldRedistSTest.F90:282.13:
+
+        if ((srcdata(i,j) .ne. resdata(i,j)) .OR. &
+             1
+Warning: Inequality comparison for REAL(8) at (1)
+ESMF_FieldRedistBlk2BlkSTest.F90:283.13:
+
+        if ((srcdata(i,j) .ne. resdata(i,j)) .OR. &
+             1
+Warning: Inequality comparison for REAL(8) at (1)
+ESMF_FieldRedistBlk2ArbSTest.F90:250.13:
+
+        if ((srcdata(i,j) .ne. resdata(i,j)) .OR. &
+             1
+Warning: Inequality comparison for REAL(8) at (1)
+ESMF_FieldRedistArb2ArbSTest.F90:262.13:
+
+        if ((srcdata(i) .ne. resdata(i)) .OR. &
+             1
+Warning: Inequality comparison for REAL(8) at (1)
+user_model1.F90:202:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:202:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:173:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:173:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model1.F90:173:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:62:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:62:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:257:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:257:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:154:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:154:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:61:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:61:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:143:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:143:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:143:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:143:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:107:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:107:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:58:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:233:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:233:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:204:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:204:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model1.F90:204:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:72:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:72:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:342:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:342:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:171:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:171:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:68:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:68:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:143:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:143:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:143:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:143:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:107:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:107:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:58:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+ESMF_FieldBundleRedistBlk2BlkSTest.F90:324.13:
+
+        if ((srcdata(i,j) .ne. resdata(i,j)) .OR. &
+             1
+Warning: Inequality comparison for REAL(8) at (1)
+ESMF_FieldBundleRedistBlk2ArbSTest.F90:269.13:
+
+        if ((srcdata(i,j) .ne. resdata(i,j)) .OR. &
+             1
+Warning: Inequality comparison for REAL(8) at (1)
+ESMF_FieldBundleRedistArb2ArbSTest.F90:291.13:
+
+        if ((srcdata(i) .ne. resdata(i)) .OR. &
+             1
+Warning: Inequality comparison for REAL(8) at (1)
+user_model1.F90:216:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:216:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:216:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:144:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:144:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:144:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:57:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:57:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:171:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:171:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:145:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:145:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:145:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:56:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:56:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:151:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:151:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:151:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:151:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:109:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:109:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:59:0: warning: unused parameter 'clock' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:216:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:216:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:216:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:144:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:144:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:144:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:57:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:57:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:171:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:171:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:145:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:145:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:145:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:56:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:56:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:159:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:159:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:159:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:159:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:117:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:117:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:59:0: warning: unused parameter 'clock' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:216:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:216:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:216:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:144:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:144:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:144:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:57:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:57:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:171:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:171:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:145:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:145:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:145:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:56:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:56:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:170:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:170:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:170:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:170:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:128:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:128:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:59:0: warning: unused parameter 'clock' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:240:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:240:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:240:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:215:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:215:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:215:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model1.F90:215:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:57:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:57:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:272:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:272:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:272:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:185:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:185:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:185:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:56:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:56:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:154:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:154:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:154:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:154:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:117:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:117:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:59:0: warning: unused parameter 'clock' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:251:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:251:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:251:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:226:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:226:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:226:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model1.F90:226:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:57:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:57:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:399:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:399:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:399:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:310:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:310:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:56:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:56:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:154:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:154:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:154:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:154:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:117:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:117:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:59:0: warning: unused parameter 'clock' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:183:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:183:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:183:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:163:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:163:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:163:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model1.F90:163:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:59:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:59:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:208:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:208:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:136:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:136:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:58:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:58:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:162:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:162:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:162:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:162:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:121:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:121:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:59:0: warning: unused parameter 'clock' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:186:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:186:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:186:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:166:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:166:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:166:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model1.F90:166:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:62:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:62:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:235:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:235:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:135:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:135:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:61:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:61:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:162:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:162:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:162:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:162:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:121:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:121:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:59:0: warning: unused parameter 'clock' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:146:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:146:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:146:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:126:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:126:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:126:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model1.F90:126:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:59:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:59:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:157:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:157:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:118:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:118:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:118:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:58:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:58:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:175:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:175:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:175:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:175:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:134:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:134:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:59:0: warning: unused parameter 'clock' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:281:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:281:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:281:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:261:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:261:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:261:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model1.F90:261:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:59:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:59:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:154:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:154:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:115:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:115:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:115:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:58:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:58:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:220:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:220:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:220:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:220:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:179:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:179:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:59:0: warning: unused parameter 'clock' [-Wunused-parameter]
+     subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:315:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:315:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:315:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:252:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:252:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:252:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:210:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP3(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:210:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:210:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:155:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP2(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:155:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:155:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:102:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_initP1(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:102:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:28:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:268:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:268:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model2.F90:268:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:268:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:236:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:236:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:236:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:202:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP3(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:202:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:202:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:151:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP2(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:151:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:151:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:102:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP1(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:102:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:102:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:28:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:378:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:378:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:378:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:378:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:329:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:329:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:258:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP3(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:258:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:194:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP2(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:194:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:113:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP1(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:113:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_model1.F90:413:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:413:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:413:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:365:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:365:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:365:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:327:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP3(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:327:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:327:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:295:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP2(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:295:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:295:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:98:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_initP1(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:98:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:28:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:254:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:254:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model2.F90:254:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:254:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:226:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:226:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:226:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:196:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP3(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:196:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:196:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:143:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP2(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:143:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:143:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:98:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP1(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:98:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:98:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:28:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:428:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:428:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:428:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:428:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:369:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:369:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:294:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP3(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:294:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:213:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP2(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:213:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:109:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_initP1(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:109:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_modelA.F90:199:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_modelA.F90:199:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelA.F90:145:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_modelA.F90:145:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelA.F90:69:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_modelA.F90:69:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelB.F90:203:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_modelB.F90:203:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelB.F90:149:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_modelB.F90:149:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelB.F90:69:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_modelB.F90:69:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelC.F90:194.16:
+
+            if (ftrptr1(i,j) /= solution) count = count+1
+                1
+Warning: Inequality comparison for REAL(8) at (1)
+user_modelC.F90:212:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_modelC.F90:212:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_modelC.F90:212:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelC.F90:112:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_modelC.F90:112:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelC.F90:61:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_modelC.F90:61:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:182:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:182:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:182:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:130:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:130:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:58:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_modelA.F90:199:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_modelA.F90:199:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelA.F90:145:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_modelA.F90:145:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelA.F90:69:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_modelA.F90:69:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelB.F90:203:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_modelB.F90:203:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelB.F90:149:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_modelB.F90:149:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelB.F90:69:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_modelB.F90:69:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelC.F90:194.16:
+
+            if (ftrptr1(i,j) /= solution) count = count+1
+                1
+Warning: Inequality comparison for REAL(8) at (1)
+user_modelC.F90:212:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_modelC.F90:212:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_modelC.F90:212:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelC.F90:112:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_modelC.F90:112:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_modelC.F90:61:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_modelC.F90:61:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:185:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:185:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:185:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:133:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:133:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:58:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:192:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:192:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:192:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:136:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:136:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:136:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:86:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:86:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:187:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:187:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:187:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:139:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:139:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:139:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:92:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:92:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:180:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:180:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:180:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:180:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:144:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:144:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:94:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:34:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_model1.F90:193:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:193:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:193:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:138:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:138:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_model1.F90:138:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:88:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:88:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:187:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:187:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:187:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:139:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:139:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:139:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:92:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:92:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:180:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:180:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:180:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:180:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:144:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:144:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:94:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:34:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_model1.F90:143:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user1_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:143:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:89:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user1_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:89:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:91:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user2_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:91:0: warning: unused parameter 'clock' [-Wunused-parameter]
+cplComp.F90:191:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine compFinal2(comp, importState, exportState, clock, rc)
+ ^
+cplComp.F90:191:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+cplComp.F90:191:0: warning: unused parameter 'clock' [-Wunused-parameter]
+cplComp.F90:168:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine compFinal1(comp, importState, exportState, clock, rc)
+ ^
+cplComp.F90:168:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+cplComp.F90:168:0: warning: unused parameter 'clock' [-Wunused-parameter]
+cplComp.F90:121:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine compInit2(comp, importState, exportState, clock, rc)
+ ^
+cplComp.F90:74:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine compInit1(comp, importState, exportState, clock, rc)
+ ^
+cplComp.F90:21:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine cplCompSetVM(comp, rc)
+ ^
+ioComp.F90:132.9:
+
+    pi = 3.14159d0
+         1
+Warning: Change of value in conversion from  REAL(8) to REAL(4) at (1)
+ioComp.F90:210:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine compFinal(comp, importState, exportState, clock, rc)
+ ^
+ioComp.F90:210:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ioComp.F90:116:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine compRun(comp, importState, exportState, clock, rc)
+ ^
+ioComp.F90:116:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ioComp.F90:71:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine compInit(comp, importState, exportState, clock, rc)
+ ^
+ioComp.F90:21:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine ioCompSetVM(comp, rc)
+ ^
+modelAComp.F90:156:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine compFinal(comp, importState, exportState, clock, rc)
+ ^
+modelAComp.F90:156:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+modelAComp.F90:156:0: warning: unused parameter 'clock' [-Wunused-parameter]
+modelAComp.F90:111:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine compRun(comp, importState, exportState, clock, rc)
+ ^
+modelAComp.F90:111:0: warning: unused parameter 'clock' [-Wunused-parameter]
+modelAComp.F90:71:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine compInit(comp, importState, exportState, clock, rc)
+ ^
+modelAComp.F90:21:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine modelACompSetVM(comp, rc)
+ ^
+modelBComp.F90:156:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine compFinal(comp, importState, exportState, clock, rc)
+ ^
+modelBComp.F90:156:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+modelBComp.F90:156:0: warning: unused parameter 'clock' [-Wunused-parameter]
+modelBComp.F90:111:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine compRun(comp, importState, exportState, clock, rc)
+ ^
+modelBComp.F90:111:0: warning: unused parameter 'clock' [-Wunused-parameter]
+modelBComp.F90:71:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine compInit(comp, importState, exportState, clock, rc)
+ ^
+modelBComp.F90:21:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine modelBCompSetVM(comp, rc)
+ ^
+modelComp.F90:200:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine compFinal(comp, importState, exportState, clock, rc)
+ ^
+modelComp.F90:200:0: warning: unused parameter 'clock' [-Wunused-parameter]
+modelComp.F90:178:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine compRun(comp, importState, exportState, clock, rc)
+ ^
+modelComp.F90:178:0: warning: unused parameter 'clock' [-Wunused-parameter]
+modelComp.F90:79:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine compInit(comp, importState, exportState, clock, rc)
+ ^
+modelComp.F90:29:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine modelCompSetVM(comp, rc)
+ ^
+atmos_comp.F90:182:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine atmos_final(comp, importState, exportState, clock, rc)
+ ^
+atmos_comp.F90:182:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+atmos_comp.F90:182:0: warning: unused parameter 'clock' [-Wunused-parameter]
+atmos_comp.F90:144:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine atmos_run(comp, importState, exportState, clock, rc)
+ ^
+atmos_comp.F90:144:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+atmos_comp.F90:144:0: warning: unused parameter 'clock' [-Wunused-parameter]
+atmos_comp.F90:91:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine atmos_init(comp, importState, exportState, clock, rc)
+ ^
+atmos_comp.F90:91:0: warning: unused parameter 'clock' [-Wunused-parameter]
+atmos_comp.F90:32:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine atmos_setvm(comp, rc)
+ ^
+land_comp.F90:185:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine land_final(comp, importState, exportState, clock, rc)
+ ^
+land_comp.F90:185:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+land_comp.F90:185:0: warning: unused parameter 'clock' [-Wunused-parameter]
+land_comp.F90:139:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine land_run(comp, importState, exportState, clock, rc)
+ ^
+land_comp.F90:139:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+land_comp.F90:139:0: warning: unused parameter 'clock' [-Wunused-parameter]
+land_comp.F90:91:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine land_init(comp, importState, exportState, clock, rc)
+ ^
+land_comp.F90:91:0: warning: unused parameter 'clock' [-Wunused-parameter]
+land_comp.F90:32:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine land_setvm(comp, rc)
+ ^
+coupler_comp.F90:229:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+coupler_comp.F90:229:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+coupler_comp.F90:229:0: warning: unused parameter 'clock' [-Wunused-parameter]
+coupler_comp.F90:182:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+coupler_comp.F90:182:0: warning: unused parameter 'clock' [-Wunused-parameter]
+coupler_comp.F90:88:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+coupler_comp.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+atmos_comp.F90:179:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine atmos_final(comp, importState, exportState, clock, rc)
+ ^
+atmos_comp.F90:179:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+atmos_comp.F90:179:0: warning: unused parameter 'clock' [-Wunused-parameter]
+atmos_comp.F90:144:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine atmos_run(comp, importState, exportState, clock, rc)
+ ^
+atmos_comp.F90:144:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+atmos_comp.F90:144:0: warning: unused parameter 'clock' [-Wunused-parameter]
+atmos_comp.F90:91:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine atmos_init(comp, importState, exportState, clock, rc)
+ ^
+atmos_comp.F90:91:0: warning: unused parameter 'clock' [-Wunused-parameter]
+atmos_comp.F90:32:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine atmos_setvm(comp, rc)
+ ^
+land_comp.F90:186:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine land_final(comp, importState, exportState, clock, rc)
+ ^
+land_comp.F90:186:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+land_comp.F90:186:0: warning: unused parameter 'clock' [-Wunused-parameter]
+land_comp.F90:140:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine land_run(comp, importState, exportState, clock, rc)
+ ^
+land_comp.F90:140:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+land_comp.F90:140:0: warning: unused parameter 'clock' [-Wunused-parameter]
+land_comp.F90:91:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine land_init(comp, importState, exportState, clock, rc)
+ ^
+land_comp.F90:91:0: warning: unused parameter 'clock' [-Wunused-parameter]
+land_comp.F90:32:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine land_setvm(comp, rc)
+ ^
+ocean_comp.F90:184:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine ocean_final(comp, importState, exportState, clock, rc)
+ ^
+ocean_comp.F90:184:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ocean_comp.F90:184:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ocean_comp.F90:138:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine ocean_run(comp, importState, exportState, clock, rc)
+ ^
+ocean_comp.F90:138:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ocean_comp.F90:138:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ocean_comp.F90:91:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine ocean_init(comp, importState, exportState, clock, rc)
+ ^
+ocean_comp.F90:91:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ocean_comp.F90:32:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine ocean_setvm(comp, rc)
+ ^
+coupler_comp.F90:245:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+coupler_comp.F90:245:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+coupler_comp.F90:245:0: warning: unused parameter 'clock' [-Wunused-parameter]
+coupler_comp.F90:191:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+coupler_comp.F90:191:0: warning: unused parameter 'clock' [-Wunused-parameter]
+coupler_comp.F90:88:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+coupler_comp.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+user_model1.F90:196:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:196:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model1.F90:196:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:167:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:167:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model1.F90:110:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model1.F90:110:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model1.F90:33:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm1_setvm(comp, rc)
+ ^
+user_model2.F90:202:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+  subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:202:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:202:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:176:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:176:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_model2.F90:176:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_model2.F90:108:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_model2.F90:31:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine userm2_setvm(comp, rc)
+ ^
+user_coupler.F90:141:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:141:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:141:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:141:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:118:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:118:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:118:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:118:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:95:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+user_coupler.F90:95:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+user_coupler.F90:95:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+user_coupler.F90:95:0: warning: unused parameter 'clock' [-Wunused-parameter]
+user_coupler.F90:34:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine usercpl_setvm(comp, rc)
+ ^
+ESMF_VMComponentEx.F90:109:0: warning: unused parameter 'istate' [-Wunused-parameter]
+   recursive subroutine mygcomp_final(gcomp, istate, estate, clock, rc)
+ ^
+ESMF_VMComponentEx.F90:109:0: warning: unused parameter 'estate' [-Wunused-parameter]
+ESMF_VMComponentEx.F90:109:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_VMComponentEx.F90:89:0: warning: unused parameter 'istate' [-Wunused-parameter]
+   recursive subroutine mygcomp_run(gcomp, istate, estate, clock, rc)
+ ^
+ESMF_VMComponentEx.F90:89:0: warning: unused parameter 'estate' [-Wunused-parameter]
+ESMF_VMComponentEx.F90:89:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_VMComponentEx.F90:68:0: warning: unused parameter 'istate' [-Wunused-parameter]
+   recursive subroutine mygcomp_init(gcomp, istate, estate, clock, rc)
+ ^
+ESMF_VMComponentEx.F90:68:0: warning: unused parameter 'estate' [-Wunused-parameter]
+ESMF_VMComponentEx.F90:68:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_TraceEx.F90:69:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+     subroutine Finalize(gcomp, istate, estate, clock, rc)
+ ^
+ESMF_TraceEx.F90:69:0: warning: unused parameter 'istate' [-Wunused-parameter]
+ESMF_TraceEx.F90:69:0: warning: unused parameter 'estate' [-Wunused-parameter]
+ESMF_TraceEx.F90:69:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_TraceEx.F90:69:0: warning: unused parameter 'rc' [-Wunused-parameter]
+ESMF_TraceEx.F90:59:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+     subroutine Run(gcomp, istate, estate, clock, rc)
+ ^
+ESMF_TraceEx.F90:59:0: warning: unused parameter 'istate' [-Wunused-parameter]
+ESMF_TraceEx.F90:59:0: warning: unused parameter 'estate' [-Wunused-parameter]
+ESMF_TraceEx.F90:59:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_TraceEx.F90:59:0: warning: unused parameter 'rc' [-Wunused-parameter]
+ESMF_TraceEx.F90:49:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+     subroutine Init(gcomp, istate, estate, clock, rc)
+ ^
+ESMF_TraceEx.F90:49:0: warning: unused parameter 'istate' [-Wunused-parameter]
+ESMF_TraceEx.F90:49:0: warning: unused parameter 'estate' [-Wunused-parameter]
+ESMF_TraceEx.F90:49:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_TraceEx.F90:49:0: warning: unused parameter 'rc' [-Wunused-parameter]
+ESMF_InfoTutorialEx.F90: In function 'esmf_infotutorial':
+ESMF_InfoTutorialEx.F90:167:0: warning: '.output' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     output = ESMF_InfoDump(info, rc=rc)
+ ^
+ESMF_InfoTutorialEx.F90:35:0: note: '.output' was declared here
+     program ESMF_InfoTutorial
+ ^
+ESMF_ConfigOverviewEx.F90:165.7:
+
+    if(radius .ne. 6.37E6)then
+       1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_ConfigOverviewEx.F90:286.10:
+
+      if (param_1 .ne. 3.1415 .or. i_n .ne. 25) then
+          1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_ConfigOverviewEx.F90:381.35:
+
+      if(table(1,3) .ne. 263.0 .or. table(6,1) .ne. 400)then
+                                   1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_ConfigOverviewEx.F90:381.9:
+
+      if(table(1,3) .ne. 263.0 .or. table(6,1) .ne. 400)then
+         1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleBitForBitEx.F90:462.8:
+
+    if (farrayPtr(1) /= sumA) &
+        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleBitForBitEx.F90:551.8:
+
+    if (farrayPtr(1) /= sumA) &
+        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleBitForBitEx.F90:647.8:
+
+    if (farrayPtr(1) /= sumA) &
+        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleBitForBitEx.F90:741.8:
+
+    if (farrayPtr(1) /= sumB) &
+        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleBitForBitEx.F90:834.8:
+
+    if (farrayPtr(1) /= sumA) &
+        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleBitForBitEx.F90:924.8:
+
+    if (farrayPtr(1) /= sumB) &
+        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleBitForBitEx.F90:1014.8:
+
+    if (farrayPtr(1) /= sumA) &
+        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleBitForBitEx.F90:1061.8:
+
+    if (farrayPtr(1) /= sumA) &
+        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleBitForBitEx.F90:1111.8:
+
+    if (farrayPtr(1) /= sumB) &
+        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleBitForBitEx.F90:1207.8:
+
+    if (farrayPtr(1) /= sumC) &
+        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleBitForBitEx.F90:1277.8:
+
+    if (farrayPtr(1) /= sumD) &
+        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleBitForBitEx.F90:1343.8:
+
+    if (farrayPtr(1) /= sumE) &
+        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleBitForBitEx.F90:1483.10:
+
+      if (farrayPtr(1) /= sumCompare) then
+          1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleBitForBitEx.F90:1539.8:
+
+    if (farrayPtr(1) /= sumC) &
+        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_RHandleFromRHandleEx.F90:94:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine Finalize(comp, importState, exportState, clock, rc)
+ ^
+ESMF_RHandleFromRHandleEx.F90:94:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_RHandleFromRHandleEx.F90:94:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_RHandleFromRHandleEx.F90:44:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+   subroutine Initialize(comp, importState, exportState, clock, rc)
+ ^
+ESMF_RHandleFromRHandleEx.F90:44:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_RHandleFromRHandleEx.F90:195:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine Finalize(comp, importState, exportState, clock, rc)
+ ^
+ESMF_RHandleFromRHandleEx.F90:195:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_RHandleFromRHandleEx.F90:195:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_RHandleFromRHandleEx.F90:158:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+   subroutine Initialize(comp, importState, exportState, clock, rc)
+ ^
+ESMF_RHandleFromRHandleEx.F90:158:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_RHandleDynamicMaskingEx.F90:215.15:
+
+    matchR4 = (val1 .eq. val2)
+               1
+Warning: Equality comparison for REAL(4) at (1)
+ESMF_RHandleDynamicMaskingEx.F90:204.15:
+
+    matchR8 = (val1 .eq. val2)
+               1
+Warning: Equality comparison for REAL(8) at (1)
+ESMF_GridUsageEx.F90:33.39:
+
+      integer, parameter :: ESMF_Coord1=1, ESMF_Coord2=2, ESMF_Coord3=3
+                                       1
+Warning: Unused parameter 'esmf_coord1' declared at (1)
+ESMF_GridUsageEx.F90:33.54:
+
+      integer, parameter :: ESMF_Coord1=1, ESMF_Coord2=2, ESMF_Coord3=3
+                                                      1
+Warning: Unused parameter 'esmf_coord2' declared at (1)
+ESMF_GridUsageEx.F90:33.69:
+
+      integer, parameter :: ESMF_Coord1=1, ESMF_Coord2=2, ESMF_Coord3=3
+                                                                     1
+Warning: Unused parameter 'esmf_coord3' declared at (1)
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/ESMCI_Mesh.h:23,
+                 from ESMC_DCatEx.C:20:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/ESMCI_Mesh.h:16,
+                 from ESMC_DCatEx.C:20:
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter 'rhs' [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/ESMCI_Mesh.h:17,
+                 from ESMC_DCatEx.C:20:
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter 'q' [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from ESMC_DCatEx.C:30:0:
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter 'f' [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+In file included from /usr/include/c++/4.8.2/backward/strstream:51:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VMKernel.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_VM.h:41,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_Base.h:27,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/include/ESMCI_RHandle.h:39,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/ESMCI_Mesh.h:23,
+                 from ESMC_RefineEx.C:13:
+/usr/include/c++/4.8.2/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:19:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/ESMCI_Mesh.h:16,
+                 from ESMC_RefineEx.C:13:
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshllField.h:122:3: warning: unused parameter 'rhs' [-Wunused-parameter]
+   _fieldTypeBase(const _fieldTypeBase &rhs) {}
+   ^
+In file included from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MasterElement.h:18:0,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEFamily.h:15,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEField.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FieldReg.h:16,
+                 from /scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/ESMCI_Mesh.h:17,
+                 from ESMC_RefineEx.C:13:
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Quadrature.h:71:19: warning: unused parameter 'q' [-Wunused-parameter]
+   const intgRule *ChangeOrder(UInt q) const {
+                   ^
+In file included from ESMC_RefineEx.C:21:0:
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/Legacy/ESMCI_ParEnv.h:68:19: warning: unused parameter 'f' [-Wunused-parameter]
+   MeshNullStream& operator<<(std::ostream &(*f)(std::ostream &t)) { return *this; }
+                   ^
+ESMC_RefineEx.C: In function 'int main(int, char**)':
+ESMC_RefineEx.C:290:26: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+     for (UInt i = 0; i < nref; i++) {
+                          ^
+In file included from ESMC_RefineEx.C:21:0:
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/Legacy/ESMCI_ParEnv.h: In instantiation of 'ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [23]]':
+ESMC_RefineEx.C:76:17:   required from here
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter 't' [-Wunused-parameter]
+   MeshNullStream& operator<<(const T &t) {return *this; }
+                   ^
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/Legacy/ESMCI_ParEnv.h: In instantiation of 'ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [21]]':
+ESMC_RefineEx.C:79:17:   required from here
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter 't' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/Legacy/ESMCI_ParEnv.h: In instantiation of 'ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [24]]':
+ESMC_RefineEx.C:84:19:   required from here
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter 't' [-Wunused-parameter]
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/Legacy/ESMCI_ParEnv.h: In instantiation of 'ESMCI::MeshNullStream& ESMCI::MeshNullStream::operator<<(const T&) [with T = char [16]]':
+ESMC_RefineEx.C:284:19:   required from here
+/scratch1/NCEPDEV/da/Mark.Potts/gfortran_9.2.0_mpiuni_g/src/Infrastructure/Mesh/examples/../include/Legacy/ESMCI_ParEnv.h:66:19: warning: unused parameter 't' [-Wunused-parameter]
+ESMF_LocStreamEx.F90:31.39:
+
+      integer, parameter :: ESMF_Coord1=1, ESMF_Coord2=2, ESMF_Coord3=3
+                                       1
+Warning: Unused parameter 'esmf_coord1' declared at (1)
+ESMF_LocStreamEx.F90:31.54:
+
+      integer, parameter :: ESMF_Coord1=1, ESMF_Coord2=2, ESMF_Coord3=3
+                                                      1
+Warning: Unused parameter 'esmf_coord2' declared at (1)
+ESMF_LocStreamEx.F90:31.69:
+
+      integer, parameter :: ESMF_Coord1=1, ESMF_Coord2=2, ESMF_Coord3=3
+                                                                     1
+Warning: Unused parameter 'esmf_coord3' declared at (1)
+ESMF_FieldRegridEx.F90:39.36:
+
+  character(*), parameter :: version = &
+                                    1
+Warning: Unused parameter 'version' declared at (1)
+ESMF_FieldRegridMaskEx.F90:39.36:
+
+  character(*), parameter :: version = &
+                                    1
+Warning: Unused parameter 'version' declared at (1)
+ESMF_FieldSphereRegridEx.F90:48.36:
+
+  character(*), parameter :: version = &
+                                    1
+Warning: Unused parameter 'version' declared at (1)
+ESMF_FieldMeshRegridEx.F90:35.36:
+
+  character(*), parameter :: version = &
+                                    1
+Warning: Unused parameter 'version' declared at (1)
+ESMF_FieldRepDimEx.F90:213.11:
+
+        if(farray1(ii,ij,ik) .ne. n ) rc = ESMF_FAILURE
+           1
+Warning: Inequality comparison for REAL(8) at (1)
+ESMF_FieldCommEx.F90:40.38:
+
+    character(*), parameter :: version = &
+                                      1
+Warning: Unused parameter 'version' declared at (1)
+ESMF_FieldRedistEx.F90:36.38:
+
+    character(*), parameter :: version = &
+                                      1
+Warning: Unused parameter 'version' declared at (1)
+ESMF_FieldSMMEx.F90:37.38:
+
+    character(*), parameter :: version = &
+                                      1
+Warning: Unused parameter 'version' declared at (1)
+ESMF_FieldHaloEx.F90:37.38:
+
+    character(*), parameter :: version = &
+                                      1
+Warning: Unused parameter 'version' declared at (1)
+ESMF_FieldBundleRedistEx.F90:36.38:
+
+    character(*), parameter :: version = &
+                                      1
+Warning: Unused parameter 'version' declared at (1)
+ESMF_FieldBundleSMMEx.F90:36.38:
+
+    character(*), parameter :: version = &
+                                      1
+Warning: Unused parameter 'version' declared at (1)
+ESMF_FieldBundleHaloEx.F90:36.38:
+
+    character(*), parameter :: version = &
+                                      1
+Warning: Unused parameter 'version' declared at (1)
+ESMF_AppMainEx.F90:76:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+     subroutine my_final(gcomp, importState, exportState, externalclock, rc)
+ ^
+ESMF_AppMainEx.F90:76:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_AppMainEx.F90:76:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_AppMainEx.F90:76:0: warning: unused parameter 'externalclock' [-Wunused-parameter]
+ESMF_AppMainEx.F90:63:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+     subroutine my_run(gcomp, importState, exportState, externalclock, rc)
+ ^
+ESMF_AppMainEx.F90:63:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_AppMainEx.F90:63:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_AppMainEx.F90:63:0: warning: unused parameter 'externalclock' [-Wunused-parameter]
+ESMF_AppMainEx.F90:50:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+     subroutine my_init(gcomp, importState, exportState, externalclock, rc)
+ ^
+ESMF_AppMainEx.F90:50:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_AppMainEx.F90:50:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_AppMainEx.F90:50:0: warning: unused parameter 'externalclock' [-Wunused-parameter]
+ESMF_AppMainEx.F90:139:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+     subroutine my_final(gcomp, importState, exportState, externalclock, rc)
+ ^
+ESMF_AppMainEx.F90:139:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_AppMainEx.F90:139:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_AppMainEx.F90:139:0: warning: unused parameter 'externalclock' [-Wunused-parameter]
+ESMF_AppMainEx.F90:126:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+     subroutine my_run(gcomp, importState, exportState, externalclock, rc)
+ ^
+ESMF_AppMainEx.F90:126:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_AppMainEx.F90:126:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_AppMainEx.F90:126:0: warning: unused parameter 'externalclock' [-Wunused-parameter]
+ESMF_AppMainEx.F90:113:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+     subroutine my_init(gcomp, importState, exportState, externalclock, rc)
+ ^
+ESMF_AppMainEx.F90:113:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_AppMainEx.F90:113:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_AppMainEx.F90:113:0: warning: unused parameter 'externalclock' [-Wunused-parameter]
+ESMF_AppMainEx.F90:203:0: warning: unused parameter 'cpl' [-Wunused-parameter]
+     subroutine my_final(cpl, importStatelist, exportStatelist, externalclock, rc)
+ ^
+ESMF_AppMainEx.F90:203:0: warning: unused parameter 'importstatelist' [-Wunused-parameter]
+ESMF_AppMainEx.F90:203:0: warning: unused parameter 'exportstatelist' [-Wunused-parameter]
+ESMF_AppMainEx.F90:203:0: warning: unused parameter 'externalclock' [-Wunused-parameter]
+ESMF_AppMainEx.F90:190:0: warning: unused parameter 'cpl' [-Wunused-parameter]
+     subroutine my_run(cpl, importStatelist, exportStatelist, externalclock, rc)
+ ^
+ESMF_AppMainEx.F90:190:0: warning: unused parameter 'importstatelist' [-Wunused-parameter]
+ESMF_AppMainEx.F90:190:0: warning: unused parameter 'exportstatelist' [-Wunused-parameter]
+ESMF_AppMainEx.F90:190:0: warning: unused parameter 'externalclock' [-Wunused-parameter]
+ESMF_AppMainEx.F90:177:0: warning: unused parameter 'cpl' [-Wunused-parameter]
+     subroutine my_init(cpl, importStatelist, exportStatelist, externalclock, rc)
+ ^
+ESMF_AppMainEx.F90:177:0: warning: unused parameter 'importstatelist' [-Wunused-parameter]
+ESMF_AppMainEx.F90:177:0: warning: unused parameter 'exportstatelist' [-Wunused-parameter]
+ESMF_AppMainEx.F90:177:0: warning: unused parameter 'externalclock' [-Wunused-parameter]
+ESMF_CplEx.F90:178:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine CPL_Final(comp, importState, exportState, clock, rc)
+ ^
+ESMF_CplEx.F90:178:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_CplEx.F90:178:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_CplEx.F90:178:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_CplEx.F90:140:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine CPL_Run(comp, importState, exportState, clock, rc)
+ ^
+ESMF_CplEx.F90:140:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_CplEx.F90:140:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_CplEx.F90:140:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_CplEx.F90:94:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine CPL_Init(comp, importState, exportState, clock, rc)
+ ^
+ESMF_CplEx.F90:94:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_CplEx.F90:94:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_CplEx.F90:94:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_GCompEx.F90:184:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine GComp_Final(comp, importState, exportState, clock, rc)
+ ^
+ESMF_GCompEx.F90:184:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_GCompEx.F90:184:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_GCompEx.F90:184:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_GCompEx.F90:143:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine GComp_Run(comp, importState, exportState, clock, rc)
+ ^
+ESMF_GCompEx.F90:143:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_GCompEx.F90:143:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_GCompEx.F90:143:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_GCompEx.F90:96:0: warning: unused parameter 'comp' [-Wunused-parameter]
+     subroutine GComp_Init(comp, importState, exportState, clock, rc)
+ ^
+ESMF_GCompEx.F90:96:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_GCompEx.F90:96:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_GCompEx.F90:96:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_InternalStateEx.F90:117.40:
+
+  if ((datap%testValue .ne. 4567) .or. (datap%testScaling .ne. 0.5)) then
+                                        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_InternalStateModEx.F90:147.8:
+
+    if (data%testScaling .ne. 0.5) match = .false.  ! test scalar data
+        1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_InternalStateModEx.F90:149.10:
+
+      if (data%testArray(i) .ne. real(i)) match = .false. ! test array data
+          1
+Warning: Inequality comparison for REAL(4) at (1)
+ESMF_InternalStateModEx.F90:161:0: warning: unused parameter 'istate' [-Wunused-parameter]
+   subroutine mygcomp_final(gcomp, istate, estate, clock, rc)
+ ^
+ESMF_InternalStateModEx.F90:161:0: warning: unused parameter 'estate' [-Wunused-parameter]
+ESMF_InternalStateModEx.F90:161:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_InternalStateModEx.F90:126:0: warning: unused parameter 'istate' [-Wunused-parameter]
+   subroutine mygcomp_run(gcomp, istate, estate, clock, rc)
+ ^
+ESMF_InternalStateModEx.F90:126:0: warning: unused parameter 'estate' [-Wunused-parameter]
+ESMF_InternalStateModEx.F90:126:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_InternalStateModEx.F90:88:0: warning: unused parameter 'istate' [-Wunused-parameter]
+   subroutine mygcomp_init(gcomp, istate, estate, clock, rc)
+ ^
+ESMF_InternalStateModEx.F90:88:0: warning: unused parameter 'estate' [-Wunused-parameter]
+ESMF_InternalStateModEx.F90:88:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_CompTunnelEx.F90:108:0: warning: unused parameter 'cplcomp' [-Wunused-parameter]
+   recursive subroutine setservicesCPL(cplcomp, rc)
+ ^
+ESMF_CompTunnelEx.F90:90:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+   recursive subroutine finalize(gcomp, istate, estate, clock, rc)
+ ^
+ESMF_CompTunnelEx.F90:90:0: warning: unused parameter 'istate' [-Wunused-parameter]
+ESMF_CompTunnelEx.F90:90:0: warning: unused parameter 'estate' [-Wunused-parameter]
+ESMF_CompTunnelEx.F90:90:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_CompTunnelEx.F90:72:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+   recursive subroutine run(gcomp, istate, estate, clock, rc)
+ ^
+ESMF_CompTunnelEx.F90:72:0: warning: unused parameter 'istate' [-Wunused-parameter]
+ESMF_CompTunnelEx.F90:72:0: warning: unused parameter 'estate' [-Wunused-parameter]
+ESMF_CompTunnelEx.F90:72:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_CompTunnelEx.F90:54:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+   recursive subroutine initialize(gcomp, istate, estate, clock, rc)
+ ^
+ESMF_CompTunnelEx.F90:54:0: warning: unused parameter 'istate' [-Wunused-parameter]
+ESMF_CompTunnelEx.F90:54:0: warning: unused parameter 'estate' [-Wunused-parameter]
+ESMF_CompTunnelEx.F90:54:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_AttachMethodsEx.F90:65:0: warning: unused parameter 'state' [-Wunused-parameter]
+   subroutine finalCalc(state, rc)
+ ^
+ESMF_AttachMethodsEx.F90:42:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+   subroutine init(gcomp, importState, exportState, clock, rc)
+ ^
+ESMF_AttachMethodsEx.F90:42:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_AttachMethodsEx.F90:42:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_AttachMethodsEx.F90:106:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+   subroutine init(gcomp, importState, exportState, clock, rc)
+ ^
+ESMF_AttachMethodsEx.F90:106:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_AttachMethodsEx.F90:106:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_StateReconcileEx.F90:70:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+ subroutine comp_dummy(gcomp, rc)
+ ^
+ESMF_StateReconcileEx.F90:51:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+ subroutine comp2_init(gcomp, istate, ostate, clock, rc)
+ ^
+ESMF_StateReconcileEx.F90:51:0: warning: unused parameter 'ostate' [-Wunused-parameter]
+ESMF_StateReconcileEx.F90:51:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_StateReconcileEx.F90:31:0: warning: unused parameter 'gcomp' [-Wunused-parameter]
+ subroutine comp1_init(gcomp, istate, ostate, clock, rc)
+ ^
+ESMF_StateReconcileEx.F90:31:0: warning: unused parameter 'ostate' [-Wunused-parameter]
+ESMF_StateReconcileEx.F90:31:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_WebServicesEx.F90:108:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_final(comp, importState, exportState, clock, rc)
+ ^
+ESMF_WebServicesEx.F90:108:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_WebServicesEx.F90:108:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_WebServicesEx.F90:108:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_WebServicesEx.F90:92:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_run(comp, importState, exportState, clock, rc)
+ ^
+ESMF_WebServicesEx.F90:92:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_WebServicesEx.F90:92:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_WebServicesEx.F90:92:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_WebServicesEx.F90:76:0: warning: unused parameter 'comp' [-Wunused-parameter]
+   subroutine user_init(comp, importState, exportState, clock, rc)
+ ^
+ESMF_WebServicesEx.F90:76:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_WebServicesEx.F90:76:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_WebServicesEx.F90:76:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_NUOPCBasicModelEx.F90:106:0: warning: unused parameter 'model' [-Wunused-parameter]
+   subroutine RealizeFields(model, importState, exportState, clock, rc)
+ ^
+ESMF_NUOPCBasicModelEx.F90:106:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_NUOPCBasicModelEx.F90:106:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_NUOPCBasicModelEx.F90:106:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_NUOPCBasicModelEx.F90:88:0: warning: unused parameter 'model' [-Wunused-parameter]
+   subroutine AdvertiseFields(model, importState, exportState, clock, rc)
+ ^
+ESMF_NUOPCBasicModelEx.F90:88:0: warning: unused parameter 'importstate' [-Wunused-parameter]
+ESMF_NUOPCBasicModelEx.F90:88:0: warning: unused parameter 'exportstate' [-Wunused-parameter]
+ESMF_NUOPCBasicModelEx.F90:88:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_NUOPCAtmModelEx.F90:321:0: warning: unused parameter 'model' [-Wunused-parameter]
+   subroutine InitializeP2(model, importState, exportState, clock, rc)
+ ^
+ESMF_NUOPCAtmModelEx.F90:321:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_NUOPCAtmModelEx.F90:239:0: warning: unused parameter 'model' [-Wunused-parameter]
+   subroutine InitializeP1(model, importState, exportState, clock, rc)
+ ^
+ESMF_NUOPCAtmModelEx.F90:239:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_NUOPCAtmModelEx.F90:686:0: warning: unused parameter 'drvr' [-Wunused-parameter]
+   subroutine RealizeMirroredFields(drvr, importState, exportState, clock, rc)
+ ^
+ESMF_NUOPCAtmModelEx.F90:686:0: warning: unused parameter 'clock' [-Wunused-parameter]
+ESMF_NUOPCAtmModelEx.F90:632:0: warning: unused parameter 'clock' [-Wunused-parameter]
+   subroutine InitializeP1(drvr, importState, exportState, clock, rc)
+ ^
