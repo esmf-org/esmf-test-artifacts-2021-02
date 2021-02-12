@@ -7,15 +7,15 @@
  GridComp Create returned, name = Atmosphere
  GridComp Create returned, name = Atmosphere
  GridComp Create returned, name = Ocean
- State Create returned, name = Ocn2Atm
- State Example 1 finished
  GridComp Create returned, name = Ocean
  GridComp Create returned, name = Ocean
  State Create returned, name = Ocn2Atm
  State Example 1 finished
- GridComp Create returned, name = Ocean
  State Create returned, name = Ocn2Atm
  State Example 1 finished
+ State Create returned, name = Ocn2Atm
+ State Example 1 finished
+ GridComp Create returned, name = Ocean
  State Create returned, name = Ocn2Atm
  State Example 1 finished
  ready to set entry point 1
@@ -25,6 +25,7 @@
  ready to set entry point 1
  ready to set entry point 2
  ready to call init for comp 1
+ i am comp1_init
  ready to set entry point 1
  ready to set entry point 2
  ready to call init for comp 1
@@ -35,16 +36,13 @@
  ready to call init for comp 1
  ready to call init for comp 2
  i am comp2_init
- i am comp1_init
  ready to call init for comp 2
+ State Example 2 finished
+ State before calling StateReconcile()
  State Example 2 finished
  State before calling StateReconcile()
  ESMF_StatePrint: (pet 0):
   State name: Ocn2Atm
- State Example 2 finished
- State before calling StateReconcile()
-     status: Unspecified intent direction, object count: 0
-     reconcile needed: F
  ready to call init for comp 2
  State Example 2 finished
  State before calling StateReconcile()
@@ -53,30 +51,32 @@
  State Example 2 finished
  State before calling StateReconcile()
  ESMF_StatePrint: (pet 3):
-  State name: Ocn2Atm
      status: Unspecified intent direction, object count: 0
- Base name    = Ocn2Atm
- Status: Base = Ready,  object = Ready
- Proxy        = no ESMF_StatePrint: (pet 1):
+     reconcile needed: F
+ ESMF_StatePrint: (pet 1):
   State name: Ocn2Atm
      status: Unspecified intent direction, object count: 0
      reconcile needed: F
- Base name    =      status: Unspecified intent direction, object count: 0
+ Base name    = Ocn2Atm  State name: Ocn2Atm
+     status: Unspecified intent direction, object count: 0
      reconcile needed: F
  Base name    = Ocn2Atm
- Status: Base = Ready,  object =      reconcile needed: F
+ Status: Base = Ready,  object = Ready     status: Unspecified intent direction, object count: 0
+     reconcile needed: F
  Base name    = Ocn2Atm
  Status: Base = Ready,  object = Ready
- Proxy        = no
+ Base name    = Ocn2Atm
 
- Root Info (Attributes):
-Ocn2Atm
-Ready
  Proxy        = no
  Root Info (Attributes):
+
+ Status: Base = Ready,  object = Ready
+ Proxy        =  Proxy        = no
  Root Info (Attributes):
-{} Status: Base = Ready,  object = Ready
+ Status: Base = Ready,  object = Ready
  Proxy        = no
+ Root Info (Attributes):
+{}no
  Root Info (Attributes):
 {}{}{}
 Program received signal SIGABRT: Process abort signal.
@@ -86,30 +86,30 @@ Backtrace for this error:
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-
-Program received signal SIGABRT: Process abort signal.
-
-Backtrace for this error:
-#0  0x1031e448d
-#1  0x1031e38c3
+#0  0x110ce648d
+#1  0x110ce58c3
 #2  0x7fff5dcf7b5c
 
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-#0  0x10b64148d
-#1  0x10b6408c3
+
+Program received signal SIGABRT: Process abort signal.
+
+Backtrace for this error:
+#0  0x10298348d
+#1  0x1029828c3
 #2  0x7fff5dcf7b5c
-#0  0x10f6bd48d
-#1  0x10f6bc8c3
+#0  0x10b0da48d
+#1  0x10b0d98c3
 #2  0x7fff5dcf7b5c
-#0  0x10757648d
-#1  0x1075758c3
+#0  0x10357548d
+#1  0x1035748c3
 #2  0x7fff5dcf7b5c
 
 ===================================================================================
 =   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
-=   PID 91450 RUNNING AT cgdm-catania
+=   PID 14840 RUNNING AT cgdm-catania
 =   EXIT CODE: 6
 =   CLEANING UP REMAINING PROCESSES
 =   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
@@ -117,4 +117,4 @@ Backtrace for this error:
 YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Abort trap: 6 (signal 6)
 This typically refers to a problem with your application.
 Please see the FAQ page for debugging suggestions
-Thu Feb 11 09:42:57 MST 2021
+Fri Feb 12 15:29:45 MST 2021
