@@ -629,7 +629,7 @@ which: no icpc in (/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin
 /bin/sh: line 0: [: -ge: unary operator expected
 /bin/sh: line 0: [: -ge: unary operator expected
 make[8]: icpc: Command not found
-make[8]: *** [/scratch1/NCEPDEV/da/Mark.Potts/tmp/intel_18.0.4_mpiuni_O/obj/objO/Linux.intel.64.mpiuni.default/binary.o] Error 127
+make[8]: *** [/scratch1/NCEPDEV/da/Mark.Potts/intel_18.0.4_mpiuni_O/obj/objO/Linux.intel.64.mpiuni.default/binary.o] Error 127
 make[7]: *** [esmflib] Error 2
 make[6]: *** [tree_lib] Error 2
 make[5]: *** [tree] Error 1
