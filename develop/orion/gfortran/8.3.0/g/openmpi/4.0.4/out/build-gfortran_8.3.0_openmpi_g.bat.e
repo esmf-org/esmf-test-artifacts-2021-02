@@ -6,38 +6,44 @@ Currently Loaded Modules:
  
 
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMCI_Util.C: In function ‘char* ESMC_F90toCstring(const char*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMCI_Util.C:331:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMCI_Util.C:422:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
      if ((src == NULL) || (src[0] == '\0') || (slen < 0)) {
                                                ~~~~~^~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMCI_Util.C: In function ‘void esmf_f90tocstring_(const char*, char*, int*, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMCI_Util.C:478:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMCI_Util.C:569:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
      if ((src == NULL) || (src[0] == '\0') || (slen < 0) ||
                                                ~~~~~^~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMCI_Util.C: In function ‘void esmf_ctof90string_(const char*, char*, int*, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMCI_Util.C:536:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMCI_Util.C:627:52: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
      if ((src == NULL) || (src[0] == '\0') || (slen < 0) ||
                                                ~~~~~^~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMF_LogErr.F90:101:59:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMCI_Util.C: In function ‘void esmf_pointerdifference_(long int*, short int*, short int*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMCI_Util.C:729:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘long int’ [-Wformat=]
+         printf("  fortran is sending %d bytes, C expects %ld bytes\n",
+                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   *n, (long) sizeof(n));
+                   ~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMF_LogErr.F90:104:59:
 
      ESMF_LOGMSG_NONE(0) = (/ (ESMF_LogMsg_Flag(0), i_ac=1,0) /)
                                                            1
 Warning: DO loop at (1) will be executed zero times [-Wzerotrip]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90:404:5:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90:423:5:
 
   if (var==var) continue ! dummy check to quiet down compiler warnings
      1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90:359:5:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90:378:5:
 
   if (var==var) continue ! dummy check to quiet down compiler warnings
      1
 Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90:92:4:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90:111:4:
 
      udt_ptr1 => udt
     1
 Warning: Pointer at (1) in pointer assignment might outlive the pointer target [-Wtarget-lifetime]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90:93:4:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/src/ESMF_FortranWordsize.F90:112:4:
 
      udt_ptr2 => udt
     1
@@ -143,7 +149,7 @@ Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
                            1
 Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/interface/ESMCI_Util_F.C: In function ‘void c_esmc_getcwd_(char*, int*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/interface/ESMCI_Util_F.C:370:11: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI_FortranStrLenArg’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Util/interface/ESMCI_Util_F.C:371:11: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI_FortranStrLenArg’ {aka ‘long unsigned int’} [-Wsign-compare]
    if (len < pathname_l)
        ~~~~^~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/LogErr/interface/ESMCI_LogErr_F.C: In function ‘void c_esmc_loggeterrormsg_(int*, char*, int*, ESMCI_FortranStrLenArg)’:
@@ -153,7 +159,7 @@ Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/VM/src/../include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/VM/src/ESMCI_VM.C:39:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/VM/src/ESMCI_VM.C:40:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -164,11 +170,11 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
  #warning \
   ^~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/VM/src/ESMCI_VMKernel.C: In member function ‘int ESMCI::VMK::commtest(ESMCI::VMK::commhandle**, int*, ESMCI::VMK::status*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/VM/src/ESMCI_VMKernel.C:2750:40: warning: ‘void* memset(void*, int, size_t)’ clearing an object of non-trivial type ‘struct ESMCI::VMK::status’; use assignment or value-initialization instead [-Wclass-memaccess]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/VM/src/ESMCI_VMKernel.C:3197:40: warning: ‘void* memset(void*, int, size_t)’ clearing an object of non-trivial type ‘struct ESMCI::VMK::status’; use assignment or value-initialization instead [-Wclass-memaccess]
      memset (status, 0, sizeof (*status));     // quiet valgrind
                                         ^
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/VM/src/ESMCI_VMKernel.C:13:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h:154:10: note: ‘struct ESMCI::VMK::status’ declared here
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h:160:10: note: ‘struct ESMCI::VMK::status’ declared here
    struct status{
           ^~~~~~
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
@@ -185,7 +191,7 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/VM/interface/ESMF_VM.F90:8538:16:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/VM/interface/ESMF_VM.F90:9117:16:
 
        do while (t_2 == t_1)
                 1
@@ -1743,6 +1749,16 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastr
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1462:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
    esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 32, uint32_t, (uint32_t) ep_physMem);
    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Comp.h:32,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/ESMCI_TraceWrap.C:13:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c: In function ‘void _serialize_event_default_clk(void*, uint16_t, uint8_t, uint8_t, uint8_t, uint8_t, uint8_t)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:90:29: warning: left shift of negative value [-Wshift-negative-value]
    __v &= ~((~(_vtype) 0) << __length);  \
@@ -1825,6 +1841,13 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastr
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1574:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
    esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_month);
    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/ESMCI_TraceClock.C:31:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:121:34: warning: left shift of negative value [-Wshift-negative-value]
    mask = (~(type) 0) << (end % ts);   \
                                   ^
@@ -1843,121 +1866,124 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastr
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1579:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
    esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_day);
    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:95:40: warning: left shift of negative value [-Wshift-negative-value]
-   mask = ~((~(type) 0) << (__start % ts));  \
-                                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
-  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1579:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
-   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_day);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:97:36: warning: left shift of negative value [-Wshift-negative-value]
-    mask |= (~(type) 0) << (end % ts);  \
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
-  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1579:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
-   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_day);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:106:27: warning: left shift of negative value [-Wshift-negative-value]
-   mask = ~((~(type) 0) << cshift);   \
-                           ^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
-  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1579:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
-   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_day);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:121:34: warning: left shift of negative value [-Wshift-negative-value]
-   mask = (~(type) 0) << (end % ts);   \
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
-  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1579:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
-   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_day);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:90:29: warning: left shift of negative value [-Wshift-negative-value]
-   __v &= ~((~(_vtype) 0) << __length);  \
-                             ^~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
-  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1584:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
-   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_hour);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:95:40: warning: left shift of negative value [-Wshift-negative-value]
-   mask = ~((~(type) 0) << (__start % ts));  \
-                                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
-  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1584:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
-   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_hour);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:97:36: warning: left shift of negative value [-Wshift-negative-value]
-    mask |= (~(type) 0) << (end % ts);  \
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
-  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1584:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
-   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_hour);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:106:27: warning: left shift of negative value [-Wshift-negative-value]
-   mask = ~((~(type) 0) << cshift);   \
-                           ^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
-  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1584:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
-   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_hour);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:121:34: warning: left shift of negative value [-Wshift-negative-value]
-   mask = (~(type) 0) << (end % ts);   \
-                                  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
-  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1584:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
-   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_hour);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:90:29: warning: left shift of negative value [-Wshift-negative-value]
-   __v &= ~((~(_vtype) 0) << __length);  \
-                             ^~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
-  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1589:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
-   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_minute);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:95:40: warning: left shift of negative value [-Wshift-negative-value]
-   mask = ~((~(type) 0) << (__start % ts));  \
-                                        ^
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
-  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1589:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
-   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_minute);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:97:36: warning: left shift of negative value [-Wshift-negative-value]
-    mask |= (~(type) 0) << (end % ts);  \
-                                    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
-  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
-  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1589:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
-   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_minute);
-   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/ESMCI_TraceClock.C:31:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Comp.h:32,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/ESMCI_TraceMetadata.C:17:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:95:40: warning: left shift of negative value [-Wshift-negative-value]
+   mask = ~((~(type) 0) << (__start % ts));  \
+                                        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
+  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1579:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
+   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_day);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:97:36: warning: left shift of negative value [-Wshift-negative-value]
+    mask |= (~(type) 0) << (end % ts);  \
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
+  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1579:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
+   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_day);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:106:27: warning: left shift of negative value [-Wshift-negative-value]
+   mask = ~((~(type) 0) << cshift);   \
+                           ^~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
+  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1579:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
+   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_day);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:121:34: warning: left shift of negative value [-Wshift-negative-value]
+   mask = (~(type) 0) << (end % ts);   \
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
+  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1579:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
+   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_day);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:90:29: warning: left shift of negative value [-Wshift-negative-value]
+   __v &= ~((~(_vtype) 0) << __length);  \
+                             ^~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
+  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1584:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
+   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_hour);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:95:40: warning: left shift of negative value [-Wshift-negative-value]
+   mask = ~((~(type) 0) << (__start % ts));  \
+                                        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
+  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1584:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
+   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_hour);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:97:36: warning: left shift of negative value [-Wshift-negative-value]
+    mask |= (~(type) 0) << (end % ts);  \
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
+  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1584:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
+   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_hour);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:106:27: warning: left shift of negative value [-Wshift-negative-value]
+   mask = ~((~(type) 0) << cshift);   \
+                           ^~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
+  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1584:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
+   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_hour);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:121:34: warning: left shift of negative value [-Wshift-negative-value]
+   mask = (~(type) 0) << (end % ts);   \
+                                  ^
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
+  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1584:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
+   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_hour);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:90:29: warning: left shift of negative value [-Wshift-negative-value]
+   __v &= ~((~(_vtype) 0) << __length);  \
+                             ^~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
+  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1589:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
+   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_minute);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:95:40: warning: left shift of negative value [-Wshift-negative-value]
+   mask = ~((~(type) 0) << (__start % ts));  \
+                                        ^
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
+  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1589:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
+   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_minute);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:97:36: warning: left shift of negative value [-Wshift-negative-value]
+    mask |= (~(type) 0) << (end % ts);  \
+                                    ^
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:197:2: note: in expansion of macro ‘_esmftrc_bt_bitfield_write_le’
+  _esmftrc_bt_bitfield_write_le(ptr, type, _start, _length, _vtype, _v)
+  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/esmftrc.c:1589:3: note: in expansion of macro ‘esmftrc_bt_bitfield_write_le’
+   esmftrc_bt_bitfield_write_le(&ctx->buf[_BITS_TO_BYTES(ctx->at)], uint8_t, 0, 8, uint8_t, (uint8_t) ep_minute);
+   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/esmftrc-bitfield.h:106:27: warning: left shift of negative value [-Wshift-negative-value]
    mask = ~((~(type) 0) << cshift);   \
                            ^~~~~~
@@ -2449,26 +2475,6 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Comp.h:32,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/ESMCI_TraceWrap.C:13:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Comp.h:32,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/../include/ESMCI_Trace.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/src/ESMCI_TraceMetadata.C:17:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Comp.h:32,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/interface/../include/ESMCI_Trace.h:17,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/interface/ESMCI_Trace_F.C:7:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
@@ -2485,25 +2491,178 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/ESMC_InfoCDef.C:26:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C:36:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/../include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/../include/ESMCI_Info.h:24,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/ESMCI_Info.C:27:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/../include/ESMCI_Info.h:24,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/ESMCI_Info.C:27:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/../include/ESMCI_Base.h: In member function ‘void ESMC_Base::ESMC_BaseDeleteInfo()’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/../include/ESMCI_Base.h:140:60: warning: possible problem detected in invocation of delete operator: [-Wdelete-incomplete]
+     void ESMC_BaseDeleteInfo(void) {if (!infoalias) delete info;}
+                                                            ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/../include/ESMCI_Base.h:140:60: warning: invalid use of incomplete type ‘class ESMCI::Info’
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/../include/ESMCI_Base.h:70:9: note: forward declaration of ‘class ESMCI::Info’
+   class Info;
+         ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/../include/ESMCI_Base.h:140:60: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+     void ESMC_BaseDeleteInfo(void) {if (!infoalias) delete info;}
+                                                            ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/ESMCI_Info.C: In member function ‘T ESMCI::Info::get(ESMCI::key_t&, const T*, const int*, bool, std::__cxx11::string*, bool) const [with T = float]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/ESMCI_Info.C:766:35: warning: ‘ret’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+               try { check_overflow(ret, at_index); }
+                     ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/ESMCI_Info.C: In member function ‘T ESMCI::Info::get(ESMCI::key_t&, const T*, const int*, bool, std::__cxx11::string*, bool) const [with T = double]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/ESMCI_Info.C:766:35: warning: ‘ret’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+               try { check_overflow(ret, at_index); }
+                     ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/ESMCI_Info.C: In member function ‘T ESMCI::Info::get(ESMCI::key_t&, const T*, const int*, bool, std::__cxx11::string*, bool) const [with T = int]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/ESMCI_Info.C:766:35: warning: ‘ret’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+               try { check_overflow(ret, at_index); }
+                     ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/ESMCI_Info.C: In member function ‘T ESMCI::Info::get(ESMCI::key_t&, const T*, const int*, bool, std::__cxx11::string*, bool) const [with T = long int]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/ESMCI_Info.C:766:35: warning: ‘ret’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+               try { check_overflow(ret, at_index); }
+                     ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/ESMCI_Info.C: In member function ‘T ESMCI::Info::get(ESMCI::key_t&, const T*, const int*, bool, std::__cxx11::string*, bool) const [with T = bool]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/src/ESMCI_Info.C:766:35: warning: ‘ret’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+               try { check_overflow(ret, at_index); }
+                     ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/../include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMCI_Base_F.C:20:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:433:30: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-       if (strlen(this->name) < nameLen) {
-           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:3193:0:
+
+   if (ESMF_LogFoundError(localrc, ESMF_ERR_PASSTHRU, ESMF_CONTEXT, rcToReturn=rc)) return
+ 
+Warning: ‘typekind’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:3044:0:
+
+     localkeyChild = keyChild
+ 
+Warning: ‘.localkeychild’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:2975:0:
+
+     l_key = key
+ 
+Warning: ‘.l_key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:3362:0:
+
+     local_preString = preString
+ 
+Warning: ‘.local_prestring’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:3367:0:
+
+   output = ESMF_InfoDump(info, indent=local_indent, rc=localrc)
+ 
+Warning: ‘.output’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:1176:0:
+
+     local_pkey = TRIM(pkey)//C_NULL_CHAR
+ 
+Warning: ‘.local_pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:1089:0:
+
+     local_pkey = TRIM(pkey)//C_NULL_CHAR
+ 
+Warning: ‘.local_pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:1048:0:
+
+     local_pkey = TRIM(pkey)//C_NULL_CHAR
+ 
+Warning: ‘.local_pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:1007:0:
+
+     local_pkey = TRIM(pkey)//C_NULL_CHAR
+ 
+Warning: ‘.local_pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:966:0:
+
+     local_pkey = TRIM(pkey)//C_NULL_CHAR
+ 
+Warning: ‘.local_pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:803:0:
+
+     local_pkey = TRIM(pkey)//C_NULL_CHAR
+ 
+Warning: ‘.local_pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:753:0:
+
+     local_pkey = TRIM(pkey)//C_NULL_CHAR
+ 
+Warning: ‘.local_pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:1132:0:
+
+     local_pkey = TRIM(pkey)//C_NULL_CHAR
+ 
+Warning: ‘.local_pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:703:0:
+
+     local_pkey = TRIM(pkey)//C_NULL_CHAR
+ 
+Warning: ‘.local_pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:653:0:
+
+     local_pkey = TRIM(pkey)//C_NULL_CHAR
+ 
+Warning: ‘.local_pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:603:0:
+
+     local_pkey = TRIM(pkey)//C_NULL_CHAR
+ 
+Warning: ‘.local_pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:553:0:
+
+     local_pkey = TRIM(pkey)//C_NULL_CHAR
+ 
+Warning: ‘.local_pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:2708:0:
+
+     local_key = trim(key)
+ 
+Warning: ‘.local_key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/interface/ESMF_Info.F90:233:0:
+
+   if (ESMF_LogFoundError(localrc, ESMF_ERR_PASSTHRU, ESMF_CONTEXT)) return
+ 
+Warning: ‘is_equal’ may be used uninitialized in this function [-Wmaybe-uninitialized]
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::get(int, int*, char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, int*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, bool*, bool*, bool*, bool*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:491:30: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
        if (strlen(this->name) < nameLen) {
            ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::print(const char*) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1759:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
-                ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:433:30: warning: comparison of integer expressions of different signedness: ‘size_t’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+       if (strlen(this->name) < nameLen) {
+           ~~~~~~~~~~~~~~~~~~~^~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::print(const char*) const’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1671:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
+                ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::print(const char*) const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1759:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
        for(i=0; i<strlen(options) && i<ESMF_MAXSTR-1; i++) {
                 ~^~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Time.C: In member function ‘int ESMCI::Time::getString(char*, const char*) const’:
@@ -2532,17 +2691,6 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_TimeInterval.C:3153:17: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
          sprintf(timeString, "%s%dS", timeString, s);
                  ^~~~~~~~~~           ~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:442:25: warning: ‘%s’ directive writing up to 255 bytes into a region of size 245 [-Wformat-overflow=]
-         sprintf(logMsg, "clock name %s, "
-                         ^~~~~~~~~~~~~~~~~
-                 "length >= given character array; truncated.", this->name);
-                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:442:16: note: ‘sprintf’ output between 57 and 312 bytes into a destination of size 256
-         sprintf(logMsg, "clock name %s, "
-         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
-                 "length >= given character array; truncated.", this->name);
-                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::get(int, int*, char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, int*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, bool*, bool*, bool*, bool*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:500:25: warning: ‘%s’ directive writing up to 255 bytes into a region of size 241 [-Wformat-overflow=]
          sprintf(logMsg, "For alarm name %s, "
@@ -2563,23 +2711,6 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
        ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                this->name);
                ~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::advance(ESMCI::TimeInterval*, char*, char*, int, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:668:29: warning: ‘%s’ directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
-             sprintf(logMsg, "For clock %s, "
-                             ^~~~~~~~~~~~~~~~
-                     "trying to report %dth ringing alarm, but given "
-                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                     "ringingAlarmList array can only hold %d.",
-                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:668:20: note: ‘sprintf’ output between 98 and 373 bytes into a destination of size 256
-             sprintf(logMsg, "For clock %s, "
-             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
-                     "trying to report %dth ringing alarm, but given "
-                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                     "ringingAlarmList array can only hold %d.",
-                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                     this->name, j+1, sizeofRingingAlarmList);
-                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::willRingNext(ESMCI::TimeInterval*, int*) const’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:873:23: warning: ‘%s’ directive writing up to 255 bytes into a region of size 250 [-Wformat-overflow=]
        sprintf(logMsg, "alarm %s is not associated with any clock.", name);
@@ -2598,6 +2729,34 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                name);
                ~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:442:25: warning: ‘%s’ directive writing up to 255 bytes into a region of size 245 [-Wformat-overflow=]
+         sprintf(logMsg, "clock name %s, "
+                         ^~~~~~~~~~~~~~~~~
+                 "length >= given character array; truncated.", this->name);
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:442:16: note: ‘sprintf’ output between 57 and 312 bytes into a destination of size 256
+         sprintf(logMsg, "clock name %s, "
+         ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+                 "length >= given character array; truncated.", this->name);
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::advance(ESMCI::TimeInterval*, char*, char*, int, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:668:29: warning: ‘%s’ directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
+             sprintf(logMsg, "For clock %s, "
+                             ^~~~~~~~~~~~~~~~
+                     "trying to report %dth ringing alarm, but given "
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                     "ringingAlarmList array can only hold %d.",
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:668:20: note: ‘sprintf’ output between 98 and 373 bytes into a destination of size 256
+             sprintf(logMsg, "For clock %s, "
+             ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+                     "trying to report %dth ringing alarm, but given "
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                     "ringingAlarmList array can only hold %d.",
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                     this->name, j+1, sizeofRingingAlarmList);
+                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::getAlarmList(ESMC_AlarmList_Flag, char*, char*, int, int*, ESMCI::TimeInterval*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1164:29: warning: ‘%s’ directive writing up to 255 bytes into a region of size 246 [-Wformat-overflow=]
              sprintf(logMsg, "For clock %s, "
@@ -2619,11 +2778,6 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
            sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
                            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:27: note: using the range [-2147483648, 2147483647] for directive argument
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:18: note: ‘sprintf’ output between 39 and 304 bytes into a destination of size 256
-           sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
-           ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-                   this->name, alarmlistflag);
-                   ~~~~~~~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::checkRingTime(int*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1296:25: warning: ‘%s’ directive writing up to 255 bytes into a region of size 243 [-Wformat-overflow=]
          sprintf(logMsg, "Sticky alarm %s cannot be reversed since it has "
@@ -2636,6 +2790,11 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
                          "back on in reverse.", name);
                          ~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1139:18: note: ‘sprintf’ output between 39 and 304 bytes into a destination of size 256
+           sprintf(logMsg, "For clock %s, unknown alarm list flag %d.",
+           ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+                   this->name, alarmlistflag);
+                   ~~~~~~~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1296:16: note: ‘sprintf’ output between 208 and 463 bytes into a destination of size 256
          sprintf(logMsg, "Sticky alarm %s cannot be reversed since it has "
          ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -2702,8 +2861,56 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2104:14: note: ‘sprintf’ output between 33 and 288 bytes into a destination of size 256
        sprintf(logMsg, "For clock %s, given alarm is NULL.", this->name);
        ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::enable()’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:586:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+     if (this == ESMC_NULL_POINTER) {
+     ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::disable()’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:624:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+     if (this == ESMC_NULL_POINTER) {
+     ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::isEnabled(int*) const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:660:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+     if (this == ESMC_NULL_POINTER) {
+     ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::ringerOff()’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:747:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+     if (this == ESMC_NULL_POINTER) {
+     ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::isRinging(int*) const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:817:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+     if (this == ESMC_NULL_POINTER) {
+     ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::wasPrevRinging(int*) const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:934:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+     if (this == ESMC_NULL_POINTER) {
+     ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::setToSticky()’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:971:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+     if (this == ESMC_NULL_POINTER) {
+     ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::isSticky(int*) const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1068:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+     if (this == ESMC_NULL_POINTER) {
+     ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::operator==(const ESMCI::Alarm&) const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1454:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+     if (this == ESMC_NULL_POINTER) {
+     ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::operator!=(const ESMCI::Alarm&) const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1488:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+     if (this == ESMC_NULL_POINTER) {
+     ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::writeRestart() const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1560:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+     if (this == ESMC_NULL_POINTER) {
+     ^~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘bool ESMCI::Clock::isStopTime(int*) const’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:707:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+     if (this == ESMC_NULL_POINTER) {
+     ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::print(const char*) const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1654:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::stopTimeEnable(ESMCI::Time*)’:
@@ -2742,52 +2949,24 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1532:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::enable()’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:586:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::get(int, int*, char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, int*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, bool*, bool*, bool*, bool*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:483:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::disable()’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:624:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::ringerOn()’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:699:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::isEnabled(int*) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:660:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::ringerOff()’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:747:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::willRingNext(ESMCI::TimeInterval*, int*) const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:861:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::print(const char*) const’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1742:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::isRinging(int*) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:817:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::wasPrevRinging(int*) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:934:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::setToSticky()’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:971:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::isSticky(int*) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1068:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::operator==(const ESMCI::Alarm&) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1454:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::operator!=(const ESMCI::Alarm&) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1488:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::writeRestart() const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1560:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::notSticky(ESMCI::TimeInterval*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1012:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::get(int, int*, char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMC_R8*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::TimeInterval*, ESMCI::Calendar**, ESMC_CalKind_Flag*, int*, ESMC_I8*, int*, ESMC_Direction*)’:
@@ -2798,8 +2977,8 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:570:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::print(const char*) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1654:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::checkRingTime(int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1104:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::getAlarm(int, char*, ESMCI::Alarm**)’:
@@ -2810,28 +2989,20 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1083:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::get(int, int*, char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, int*, ESMCI::Time*, ESMCI::Time*, ESMCI::Time*, bool*, bool*, bool*, bool*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:483:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::validate(const char*) const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1600:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::validate(const char*) const’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1570:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::ringerOn()’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:699:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::set(int, const char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, bool*, bool*, bool*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:344:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::syncToRealTime()’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:1318:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::willRingNext(ESMCI::TimeInterval*, int*) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:861:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::notSticky(ESMCI::TimeInterval*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1012:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::set(int, const char*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, ESMCI::Time*, ESMC_I8*, ESMC_Direction*)’:
@@ -2842,20 +3013,8 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2016:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘bool ESMCI::Alarm::checkRingTime(int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1104:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C: In member function ‘int ESMCI::Clock::removeAlarm(ESMCI::Alarm*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Clock.C:2096:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::validate(const char*) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:1600:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C: In member function ‘int ESMCI::Alarm::set(int, const char*, ESMCI::Clock**, ESMCI::Time*, ESMCI::TimeInterval*, ESMCI::Time*, ESMCI::TimeInterval*, int*, ESMCI::Time*, bool*, bool*, bool*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Alarm.C:344:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) {
      ^~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/src/ESMCI_Calendar.C: In member function ‘int ESMCI::Calendar::get(int, int*, char*, ESMC_CalKind_Flag*, int*, int, int*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*, ESMC_I4*)’:
@@ -2934,17 +3093,17 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
        ESMF_INIT_CHECK_DEEP(ESMF_CalendarGetInit,calendar,rc)
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/interface/ESMF_Time.F90:1641:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/interface/ESMF_Time.F90:1701:0:
 
        end function ESMF_TimeDiff
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/interface/ESMF_Time.F90:1606:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/interface/ESMF_Time.F90:1666:0:
 
        end function ESMF_TimeDec
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/interface/ESMF_Time.F90:1572:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/TimeMgr/interface/ESMF_Time.F90:1632:0:
 
        end function ESMF_TimeInc
  
@@ -3269,51 +3428,6 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/../include/ESMCI_SAX2ReadHandler.h:56,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_SAX2ReadHandler.C:25:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO_NetCDF.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C:24:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO_XML.h:46,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C:41:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO.h:34,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO.C:24:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO_Handler.h:38,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_Handler.C:24:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO_Gridspec.h:32,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_Gridspec.C:24:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
@@ -3339,52 +3453,47 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO.h:34,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO.C:24:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO_NetCDF.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C:24:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO_Handler.h:38,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_Handler.C:24:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_YAML.C:36:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C: In member function ‘int ESMCI::IO_XML::read(const string&, const string&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C:234:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C: In member function ‘int ESMCI::IO_XML::writeEndElement(const string&, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C:719:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C: In member function ‘int ESMCI::IO_XML::write(const string&, const char*, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C:927:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C: In member function ‘int ESMCI::IO_XML::replaceXMLEntities(std::__cxx11::string&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C:1018:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C: In member function ‘int ESMCI::IO_XML::writeElementCore(const string&, const string&, int, int, __va_list_tag*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C:439:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C: In member function ‘int ESMCI::IO_XML::writeStartElement(const string&, const string&, int, int, ...)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C:599:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C: In member function ‘int ESMCI::IO_XML::writeElement(const string&, const string&, int, int, ...)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C:658:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C: In member function ‘int ESMCI::IO_XML::writeComment(const string&, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_XML.C:811:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
-     if (this == ESMC_NULL_POINTER) {
-     ^~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_Handler.C: In static member function ‘static int ESMCI::IO_Handler::destroy(ESMCI::IO_Handler**)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_Handler.C:268:21: warning: deleting object of abstract class type ‘ESMCI::IO_Handler’ which has non-virtual destructor will cause undefined behavior [-Wdelete-non-virtual-dtor]
      delete (*ioclass);
                      ^
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C: In member function ‘int ESMCI::IO_NetCDF::read(const string&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C:197:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C:198:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER) localrc = ESMC_RC_PTR_NULL;
      ^~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C: In member function ‘int ESMCI::IO_NetCDF::write(const string&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C:409:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C:410:5: warning: nonnull argument ‘this’ compared to NULL [-Wnonnull-compare]
      if (this == ESMC_NULL_POINTER)
      ^~
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
@@ -3400,15 +3509,6 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/interface/../include/ESMCI_IO_NetCDF.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/interface/ESMCI_IO_NetCDF_F.C:21:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/interface/../include/ESMCI_IO_XML.h:46,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/interface/ESMCI_IO_XML_F.C:21:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -3457,192 +3557,192 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:6988:2:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:7089:2:
 
    function ESMF_GridCreateFrmGridspec(grid_filename, &
   1
 Warning: Return value of function ‘esmf_gridcreatefrmgridspec’ at (1) not set [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:6471:2:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:6572:2:
 
    function ESMF_GridCreateFrmScrip(filename, regDecomp, indexflag, keywordEnforcer, &
   1
 Warning: Return value of function ‘esmf_gridcreatefrmscrip’ at (1) not set [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:29627:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:29729:0:
 
      end function ESMF_GridCreateDistgridArb
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:29360:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:29462:0:
 
      end function ESMF_GridCreateDistgridReg
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:28981:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:29083:0:
 
      end function ESMF_GridCreateDistgridIrreg
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:24248:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:24350:0:
 
                                   ESMF_CONTEXT, rcToReturn=rc)) return
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:17817:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:17919:0:
 
    end function ESMF_GridEmptyCreate
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:16642:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:16744:0:
 
  end function ESMF_GridCreateMosaicIreg
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:16089:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:16191:0:
 
  end function ESMF_GridCreateMosaicReg
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:15334:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:15435:0:
 
  end function ESMF_GridCreateCubedSphereIReg
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:14877:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:14978:0:
 
  end function ESMF_GridCreateCubedSphereReg
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:14408:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:14509:0:
 
      end function ESMF_GridCreateShapeTileArb
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:13790:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:13891:0:
 
      end function ESMF_GridCreateShapeTileReg
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:12869:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:12970:0:
 
      end function ESMF_GridCreateShapeTileIrreg
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:11839:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:11940:0:
 
    end function ESMF_GridCreateNoPeriDimUfrmR
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:11654:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:11755:0:
 
    end function ESMF_GridCreate1PeriDimUfrmB
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:11393:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:11494:0:
 
     end function ESMF_GridCreate1PeriDimUfrmR
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:11022:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:11123:0:
 
      end function ESMF_GridCreateNoPeriDimA
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:10807:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:10908:0:
 
      end function ESMF_GridCreateNoPeriDimR
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:10556:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:10657:0:
 
      end function ESMF_GridCreateNoPeriDimI
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:10292:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:10393:0:
 
      end function ESMF_GridCreate2PeriDimA
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:10068:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:10169:0:
 
      end function ESMF_GridCreate2PeriDimR
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:9809:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:9910:0:
 
      end function ESMF_GridCreate2PeriDimI
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:9535:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:9636:0:
 
      end function ESMF_GridCreate1PeriDimA
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:9295:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:9396:0:
 
      end function ESMF_GridCreate1PeriDimR
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:9015:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:9116:0:
 
      end function ESMF_GridCreate1PeriDimI
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:8566:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:8667:0:
 
  end function ESMF_GridCreateFrmGridCoord
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:8439:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:8540:0:
 
  end function ESMF_GridCreateFrmGrid
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:6464:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:6565:0:
 
  end function ESMF_GridCreateFrmNCFile
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:6166:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:6267:0:
 
  end function ESMF_GridCreateFrmNCFileDG
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:5189:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:5197:0:
 
      end function ESMF_GridCreateFrmDistGridArb
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:4821:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:4829:0:
 
      end function ESMF_GridCreateFrmDistGrid
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:4515:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:4523:0:
 
      end function ESMF_GridCreateEdgeConnA
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:4263:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:4271:0:
 
      end function ESMF_GridCreateEdgeConnR
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:3974:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:3982:0:
 
      end function ESMF_GridCreateEdgeConnI
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:3674:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:3682:0:
 
      end function ESMF_GridCreateCopyFromReg
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:3357:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:3365:0:
 
      end function ESMF_GridCreateCopyFromNewDG
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:2313:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Grid/interface/ESMF_Grid.F90:2314:0:
 
      end function ESMF_ArrayCreateFromGrid
  
@@ -3657,14 +3757,27 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:28:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_ClumpPnts.C:21:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_ClumpPnts.C:21:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Grid.h:35,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_GToM_Util.h:26,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_GToM_Util.C:24:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Grid.h:35,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:23:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -3687,17 +3800,14 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Grid.h:35,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:23:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:28:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:32:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:33:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -3705,6 +3815,15 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C:17:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Grid.h:35,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_Glue.C:25:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -3727,7 +3846,26 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:22:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:19:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Mapping.h:30,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:19:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -3742,10 +3880,9 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:13:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:16:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -3753,10 +3890,29 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:18:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Util.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:17:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Util.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:17:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Util.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:17:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -3779,7 +3935,17 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:18:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:13:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Redist.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:18:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -3790,7 +3956,46 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:31:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:29:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h:20,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Search_Nearest.C:13:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h:20,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:12:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:2902: warning: "DOT_PRODUCT3D" redefined
+ #define DOT_PRODUCT3D(a,b) (a[0]*b[0]+a[1]*b[1]+a[2]*b[2])
+ 
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:950: note: this is the location of the previous definition
+ #define DOT_PRODUCT3D(a,b) a[0]*b[0]+a[1]*b[1]+a[2]*b[2];
+ 
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:19:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -3801,8 +4006,18 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:18:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:12:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
@@ -3810,7 +4025,12 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:33:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:16:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -3818,11 +4038,10 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C:18:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h:20,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:18:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -3842,41 +4061,11 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:16:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Glue.h:34,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:23:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C:31:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:32:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:24:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Patch.C:16:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -3884,16 +4073,11 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Grid.h:35,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Regrid_Glue.h:29,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:25:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:27:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoE.C:18:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -3911,6 +4095,10 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Search_Nearest.C:330:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
    for (UInt p = 0; p < num_nodes_to_search; ++p) {
                     ~~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_GToM_Util.C: In function ‘bool ESMCI::get_global_id_from_tile(ESMCI::DistGrid*, int, int*, int*, bool*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_GToM_Util.C:69:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<seqIndex.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Search_Nearest.C:380:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
    for (UInt p = 0; p < dst_size; ++p) {
                     ~~^~~~~~~~~~
@@ -3946,6 +4134,212 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C:816:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CommDataBack>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int j=0; j<rcv_results_array[i].size(); j++) {
                    ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C: In function ‘void assign_points_to_procs(ESMCI::PointList*, int, ZOLTAN_ID_PTR, ZOLTAN_ID_PTR, int*, int, int, std::vector<ESMCI::PL_Comm_Pair>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:153:30: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+   for (unsigned int i = 0; i < numExport; ++i) {
+                            ~~^~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:154:24: warning: comparison of integer expressions of different signedness: ‘ZOLTAN_ID_TYPE’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     if (exportGids[i*2]==src_or_dst) {
+         ~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C: In function ‘void calc_nearest_npts_mat(ESMCI::PointList*, ESMCI::PointList*, ESMC_R8, ESMCI::SearchNearestResultList&, ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:147:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_nearest_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<sr.nodes.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:170:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_nearest_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sr.nodes.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:203:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_nearest_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sr.nodes.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:233:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<cols.size(); i++) {
+                   ~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C: In function ‘void create_pointlist_of_points_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, ESMCI::PointList**)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:47:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id < id)) {
+                           ~~~~~~~~~~~~~^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:52:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id != id) {
+         ~~~~~~~~~~~~~^~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:71:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id < id)) {
+                           ~~~~~~~~~~~~~^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:76:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id != id) {
+         ~~~~~~~~~~~~~^~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C: In function ‘void replace_mapped_with_mapped_extrap(ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:95:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i = 0; i < col.size(); ++i) {
+                     ~~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_2D_cart(ESMCI::MBMesh*, moab::EntityHandle, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:102:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:115:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:131:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:160:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:248:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:264:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_3D_sph_src_pnts(int, double*, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:403:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:435:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_3D_sph(ESMCI::MBMesh*, moab::EntityHandle, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:646:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:658:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:770:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:780:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void calc_conserve_mat_serial_2D_2D_cart(ESMCI::MBMesh*, ESMCI::MBMesh*, MBMesh_Search_EToE_Result_List&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:841:31: warning: comparison of integer expressions of different signedness: ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+       if (sr.dst_elems.size() > max_num_dst_elems) max_num_dst_elems=sr.dst_elems.size();
+           ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:869:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sr.dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:916:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int i=0; i<sr.dst_elems.size(); i++) {
+                       ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:948:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sr.dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:967:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int i=0; i<sr.dst_elems.size(); i++) {
+                       ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:986:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int i=0; i<sr.dst_elems.size(); i++) {
+                       ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1021:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sr.dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void calc_conserve_mat_serial_2D_3D_sph(ESMCI::MBMesh*, ESMCI::MBMesh*, MBMesh_Search_EToE_Result_List&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1097:32: warning: comparison of integer expressions of different signedness: ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+        if (sr.dst_elems.size() > max_num_dst_elems) max_num_dst_elems=sr.dst_elems.size();
+            ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1123:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sr.dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1168:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int i=0; i<sr.dst_elems.size(); i++) {
+                       ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1199:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sr.dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1219:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int i=0; i<sr.dst_elems.size(); i++) {
+                       ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1238:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int i=0; i<sr.dst_elems.size(); i++) {
+                       ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1265:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sr.dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:13:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h: In constructor ‘ESMCI::Mesh::Mesh()’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:153:6: warning: ‘ESMCI::Mesh::committed’ will be initialized after [-Wreorder]
+ bool committed;
+      ^~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:134:7: warning:   ‘bool ESMCI::Mesh::is_split’ [-Wreorder]
+  bool is_split;
+       ^~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:61:1: warning:   when initialized here [-Wreorder]
+ Mesh::Mesh() : MeshDB(), FieldReg(), CommReg(),
+ ^~~~
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:13:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:145:6: warning: ‘ESMCI::Mesh::ind’ will be initialized after [-Wreorder]
+  int ind; // which number grid on the side
+      ^~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:144:6: warning:   ‘int ESMCI::Mesh::side’ [-Wreorder]
+  int side; // 1=A, 2=B, 3= middle
+      ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:61:1: warning:   when initialized here [-Wreorder]
+ Mesh::Mesh() : MeshDB(), FieldReg(), CommReg(),
+ ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C: In constructor ‘ESMCI::MBMesh_BBox::MBMesh_BBox(ESMCI::MBMesh*, moab::EntityHandle, double, bool)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:151:23: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     for (UInt i =0; i < dim; i++) {
+                     ~~^~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:170:24: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     for (UInt n = 1; n < num_p; n++) {
+                      ~~^~~~~~~
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:26,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:16:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C: In function ‘bool ESMCI::Mixed_BBoxIntersect(const ESMCI::MBMesh_BBox&, const ESMCI::BBox&, double)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:332:30: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+   ThrowAssert(b1.dimension() == b2.dimension());
+               ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Exception.h:103:28: note: in definition of macro ‘ThrowAssert’
+ #define ThrowAssert(cond) (cond ? (void) 0 : throw Ex() << "Condition {" << #cond << "} failed at " << __FILE__ << ", line:" << __LINE__)
+                            ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C: In function ‘void ESMCI::get_elem_coords(const ESMCI::MeshObj*, const ESMCI::MEField<ESMCI::_field>*, int, int, int*, double*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:368:27: warning: comparison of integer expressions of different signedness: ‘const UInt’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+       if (topo->num_nodes > max_num_nodes) {
+           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C: In function ‘void ESMCI::get_elem_coords_and_ids(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, int, int, int*, double*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:523:27: warning: comparison of integer expressions of different signedness: ‘const UInt’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+       if (topo->num_nodes > max_num_nodes) {
+           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C: In function ‘void ESMCI::build_pl_mb_bbox(double*, double*, ESMCI::PointList*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:424:24: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     for (UInt d = 0; d < sdim; d++) {
+                      ~~^~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘void get_mbmesh_node_ids_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, std::vector<int>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:635:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id < id)) {
+                           ~~~~~~~~~~~~~^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:640:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id != id) {
+         ~~~~~~~~~~~~~^~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘void get_mbmesh_elem_ids_not_in_wmat(ESMCI::MBMesh*, ESMCI::WMat&, std::vector<int>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:693:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id <elem_id)) wi++;
+                           ~~~~~~~~~~~~~^~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:696:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id != elem_id) {
+         ~~~~~~~~~~~~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘bool all_mbmesh_node_ids_in_wmat(ESMCI::PointList*, ESMCI::WMat&, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:724:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id < id)) {
+                           ~~~~~~~~~~~~~^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:740:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id != id) {
+         ~~~~~~~~~~~~~^~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘bool all_mbmesh_elem_ids_in_wmat(ESMCI::MBMesh*, ESMCI::WMat&, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:799:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id <elem_id)) wi++;
+                           ~~~~~~~~~~~~~^~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:812:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id != elem_id) {
+         ~~~~~~~~~~~~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘void mbcopy_rs_from_WMat_to_Array(ESMCI::WMat*, ESMCI::Array*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:945:18: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+         if (w.id == seq_ind) {
+             ~~~~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘void mbcopy_cnsv_rs_from_WMat_to_Array(ESMCI::WMat*, ESMCI::Array*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:1097:18: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+         if (w.id == seq_ind) {
+             ~~~~~^~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C: In instantiation of ‘bool ESMCI::MB_POLY_Mapping<SFUNC_TYPE, MPTRAITS, SPATIAL_DIM, PARAMETRIC_DIM>::is_in_cell(const double*, const double*, double*, double*) const [with SFUNC_TYPE = ESMCI::tri_shape_func; MPTRAITS = ESMCI::MBTraits<>; int SPATIAL_DIM = 2; int PARAMETRIC_DIM = 2]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:648:16:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:354:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
@@ -4030,6 +4424,10 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:390:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
      for (int i = 0; i < sdim; i++) {
                      ~~^~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void getElemGIDS(ESMCI::MBMesh*, std::vector<int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:998:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i = 0; i<pos_and_gids.size(); ++i) {
+                     ~^~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:392:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
        for (int j = 0; j < sdim; j++) {
                        ~~^~~~~~
@@ -4170,30 +4568,552 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:543:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
        for (int k = 0; k < SFUNC_TYPE::ndofs; k++) {
                        ~~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C: In function ‘void calc_nearest_npts_mat(ESMCI::PointList*, ESMCI::PointList*, ESMC_R8, ESMCI::SearchNearestResultList&, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:147:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_nearest_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<sr.nodes.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:170:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_nearest_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<sr.nodes.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:13:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h: In constructor ‘ESMCI::Mesh::Mesh()’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:140:6: warning: ‘ESMCI::Mesh::committed’ will be initialized after [-Wreorder]
- bool committed;
-      ^~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:128:7: warning:   ‘bool ESMCI::Mesh::is_split’ [-Wreorder]
-  bool is_split;
-       ^~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:203:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_nearest_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<sr.nodes.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:61:1: warning:   when initialized here [-Wreorder]
- Mesh::Mesh() : MeshDB(), FieldReg(), CommReg(),
- ^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C:233:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<cols.size(); i++) {
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void getElems(ESMCI::MBMesh**, std::vector<long unsigned int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:1104:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, long unsigned int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i = 0; i<pos_and_elems.size(); ++i) {
+                     ~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_getlocalelemcoords(ESMCI::MBMesh**, double*, int*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:1151:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int i=0; i<ehs.size(); i++) {
+                       ~^~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C: In function ‘void ESMCI::get_unique_elems_around_node(const EntityHandle*, ESMCI::MBMesh*, ESMCI::MDSS*, int*, int*, bool&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C:1196:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+       if (owner == Par::Rank()) allnotowned = false;
+           ~~~~~~^~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:1161:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int i=0; i<ehs.size(); i++) {
+                       ~^~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_getarea(ESMCI::MBMesh**, int*, double*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:1214:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     if (*num_elem != ehs.size()) {
+         ~~~~~~~~~~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:1237:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<ehs.size(); i++) {
+                     ~^~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void getNodes(ESMCI::MBMesh**, std::vector<long unsigned int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:1399:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, long unsigned int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i = 0; i<pos_and_nodes.size(); ++i) {
+                     ~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_getlocalcoords(ESMCI::MBMesh**, double*, int*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:1440:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<nodes.size(); i++) {
+                     ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:1450:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<nodes.size(); i++) {
+                     ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_geteleminfointoarray(ESMCI::MBMesh*, ESMCI::DistGrid*, int, int*, ESMCI::Array**, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:1617:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int i=0; i<seqIndexList.size(); i++) {
+                       ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:1653:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int i=0; i<seqIndexList.size(); i++) {
+                       ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C: In member function ‘void ESMCI::Mesh::map_obj_owners(int, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:2088:24: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+        if ((orig_owner < 0) || (orig_owner > num_procs-1)) {
+             ~~~~~~~~~~~^~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:2088:44: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+        if ((orig_owner < 0) || (orig_owner > num_procs-1)) {
+                                 ~~~~~~~~~~~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:2114:24: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+        if ((orig_owner < 0) || (orig_owner > num_procs-1)) {
+             ~~~~~~~~~~~^~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C:2114:44: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+        if ((orig_owner < 0) || (orig_owner > num_procs-1)) {
+                                 ~~~~~~~~~~~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_checknodelist(ESMCI::MBMesh**, int*, int*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2050:47: warning: comparison of integer expressions of different signedness: ‘__gnu_cxx::__alloc_traits<std::allocator<unsigned int>, unsigned int>::value_type’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+       if (local_owners[ni-local_gids.begin()] != localPet) {
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_checkelemlist(ESMCI::MBMesh**, int*, int*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2141:47: warning: comparison of integer expressions of different signedness: ‘__gnu_cxx::__alloc_traits<std::allocator<unsigned int>, unsigned int>::value_type’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+       if (local_owners[ni-local_gids.begin()] != localPet) {
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::MeshRedistNode(ESMCI::Mesh*, int, int*, ESMCI::Mesh**)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:170:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+       for (int i=0; i< num_src_gids; i++) {
+                     ~^~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C: In function ‘void MBMesh_get_local_elem_gids(ESMCI::MBMesh*, std::vector<unsigned int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:300:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   for (int i = 0; i<pos_and_gids.size(); ++i) {
+                   ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C: In function ‘void MBMesh_add_nodes_in_a_group(ESMCI::MBMesh*, std::vector<int>&, std::vector<double>&, std::vector<int>&, std::vector<int>&, std::vector<int>&, std::vector<int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:592:26: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+   if (node_coords.size() != num_nodes*mbmp->orig_sdim) {
+       ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:604:30: warning: comparison of integer expressions of different signedness: ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+     if (node_orig_pos.size() != num_nodes) {
+         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:611:26: warning: comparison of integer expressions of different signedness: ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+   if (node_owners.size() != num_nodes) {
+       ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:623:31: warning: comparison of integer expressions of different signedness: ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+     if (node_mask_vals.size() != num_nodes) {
+         ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:636:27: warning: comparison of integer expressions of different signedness: ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+     if (node_masks.size() != num_nodes) {
+         ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C: In function ‘void assign_points_to_procs(ESMCI::PointList*, int, ZOLTAN_ID_PTR, ZOLTAN_ID_PTR, int*, int, std::vector<ESMCI::PL_Comm_Pair>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:254:30: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+   for (unsigned int i = 0; i < numExport; ++i) {
+                            ~~^~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void get_mesh_node_ids_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, std::vector<int>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:724:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id < id)) {
+                           ~~~~~~~~~~~~~^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:729:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id != id) {
+         ~~~~~~~~~~~~~^~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void get_mesh_elem_ids_not_in_wmat(ESMCI::Mesh*, ESMCI::WMat&, std::vector<int>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:770:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id <elem_id)) {
+                           ~~~~~~~~~~~~~^~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:775:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id != elem_id) {
+         ~~~~~~~~~~~~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘bool all_mesh_node_ids_in_wmat(ESMCI::PointList*, ESMCI::WMat&, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:804:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id < id)) {
+                           ~~~~~~~~~~~~~^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:819:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id != id) {
+         ~~~~~~~~~~~~~^~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘bool all_mesh_elem_ids_in_wmat(ESMCI::Mesh*, ESMCI::WMat&, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:871:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id <elem_id)) {
+                           ~~~~~~~~~~~~~^~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:884:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id != elem_id) {
+         ~~~~~~~~~~~~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:971:47: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((pos<num_dst_ids) && (dst_ids[pos] < elem_id)) {
+                                  ~~~~~~~~~~~~~^~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:984:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     if (dst_ids[pos] != elem_id) {
+         ~~~~~~~~~~~~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void translate_split_src_elems_in_wts(ESMCI::Mesh*, int, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:1592:17: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+      if (src_id > srcmesh->max_non_split_id) {
+          ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:1613:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+   for (int i=0; i<num_src_split_gids; i++) {
+                 ~^~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_Glue.C: In function ‘void ESMCI::_force_add_node(int, int*, ESMCI::MBMesh*, std::map<int, long unsigned int>*, int, int (*)[2], ESMCI::DistGrid*, int (*)[2], ESMCI::DistGrid*, int*, int*, moab::EntityType, bool*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_GToM_Glue.C:196:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+       if (elem_gid == GTOM_BAD_ID) continue;
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::set_node_owners(ESMCI::Mesh*, ESMCI::DDir<>)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:855:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+     for (int i=0; i<num_src_gids; i++) {
+                   ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C: In function ‘void _add_elems_multiple_types(ESMCI::MBMesh*, int, int, int, int*, int*, int*, int*, int*, int, double*, int, double*, int*, int, int*, int*, int*, int, char*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1363:29: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+     if (elem_info_buff_size < num_elems_of_type*sizeof(int)) Throw() << "elem info. buffers too small.";
+         ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1366:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+     if (tmp_buff_size < num_nodes_per_elem*num_elems_of_type*sizeof(EntityHandle)) Throw() << "tmp_buff too small to hold node connections.";
+         ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1445:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+       if (tmp_buff_size < num_elems_of_type*sizeof(int)) Throw() << "tmp_buff too small to hold elem mask val information.";
+           ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1471:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+       if (tmp_buff_size < num_elems_of_type*sizeof(int)) Throw() << "tmp_buff too small to hold elem mask information.";
+           ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1498:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+       if (tmp_buff_size < num_elems_of_type*sizeof(double)) Throw() << "tmp_buff too small to hold elem area information.";
+           ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1525:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘long unsigned int’ [-Wsign-compare]
+       if (tmp_buff_size < mbmp->orig_sdim*num_elems_of_type*sizeof(double)) Throw() << "tmp_buff too small to hold elem area information.";
+           ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::set_node_owners_wo_list(ESMCI::Mesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1022:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+      for (int i=0; i<gids.size(); i++) {
+                    ~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::set_elem_owners(ESMCI::Mesh*, ESMCI::DDir<>)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1080:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+     for (int i=0; i<num_src_gids; i++) {
+                   ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::redist_nohome_nodes(ESMCI::Mesh*, int, int*, ESMCI::Mesh*, ESMCI::CommReg*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1261:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+     for (int i=0; i<num_sn_gids; i++) {
                    ~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C: In function ‘void MBMesh_add_elems_in_groups_by_type(ESMCI::MBMesh*, int, std::vector<int>&, std::vector<int>&, std::vector<int>&, std::vector<int>&, std::vector<int>&, std::vector<double>&, std::vector<double>&, std::vector<int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1729:25: warning: comparison of integer expressions of different signedness: ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+   if (elem_types.size() != num_elems) {
+       ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1735:28: warning: comparison of integer expressions of different signedness: ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+   if (elem_orig_pos.size() != num_elems) {
+       ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1747:31: warning: comparison of integer expressions of different signedness: ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+     if (elem_mask_vals.size() != num_elems) {
+         ~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1760:27: warning: comparison of integer expressions of different signedness: ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+     if (elem_masks.size() != num_elems) {
+         ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1776:27: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+     if (elem_areas.size() != num_elems) {
+         ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::redist_elems(ESMCI::Mesh*, ESMCI::DDir<>, ESMCI::Mesh*, ESMCI::CommReg*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1338:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+   for (int i=0; i<num_src_gids; i++) {
+                 ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1792:28: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+     if (elem_coords.size() != num_elems*mbmp->orig_sdim) {
+         ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void copy_rs_from_WMat_to_Array(ESMCI::WMat*, ESMCI::Array*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:2246:18: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+         if (w.id == seq_ind) {
+             ~~~~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void copy_cnsv_rs_from_WMat_to_Array(ESMCI::WMat*, ESMCI::Array*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:2398:18: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+         if (w.id == seq_ind) {
+             ~~~~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::set_elem_owners_wo_list(ESMCI::Mesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1708:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+      for (int i=0; i<gids.size(); i++) {
+                    ~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1759:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+        for (int i=0; i<split_elems.size(); i++) {
+                      ~^~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1787:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+          if (owner==Par::Rank()) {
+              ~~~~~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::set_split_orig_id_map(ESMCI::Mesh*, ESMCI::Mesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:2098:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::DDir<>::dentry, std::allocator<ESMCI::DDir<>::dentry> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<lookups.size(); i++) {
+                   ~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘void ESMCI::ESMCI_GridToMesh(const ESMCI::Grid&, int, const std::vector<ESMCI::Array*>&, ESMCI::InterArray<int>*, int*, ESMCI::Mesh**, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:203:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+  if (ESMC_LogDefault.MsgFoundError(localrc,ESMCI_ERR_PASSTHRU,ESMC_CONTEXT,NULL))
+  ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:207:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+    std::vector<UInt> owned_shared;
+    ^~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:257:46: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+          if (lb == owned_shared.end() || *lb != gid)
+                                          ~~~~^~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:301:49: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
+          if (lb == notowned_shared.end() || *lb != gid)
+                                             ~~~~^~~~~~
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_List.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObj.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshDB.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h:25,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:23:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:354:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const UInt’ {aka ‘const unsigned int’} [-Wsign-compare]
+      ThrowRequire(cnrCount == ctopo->num_nodes);
+                   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Exception.h:107:29: note: in definition of macro ‘ThrowRequire’
+ #define ThrowRequire(cond) (cond ? (void) 0 : throw Ex() << "Condition {" << #cond << "} failed at " << __FILE__ << ", line:" << __LINE__)
+                             ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C: In function ‘int ESMCI::weiler_clip_difference(int, int, int, double*, int, double*, std::vector<ESMCI::polygon>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:1097:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::xpoint>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<r_plist.size(); i++) {
+                     ~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:470:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sdim; i++) {
+                     ~^~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C: In member function ‘bool ESMCI::UC::operator<(const ESMCI::UC&) const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:1493:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for(int i = 0; i < ids.size(); i ++){
+                      ~~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshaddnodes(ESMCI::Mesh**, int*, int*, double*, int*, ESMCI::InterArray<int>*, ESMC_CoordSys_Flag*, int*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:283:28: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+         for (UInt c = 0; c < sdim; ++c)
+                          ~~^~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:296:27: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+         for (UInt c = 0; c<orig_sdim; ++c)
+                          ~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘void ESMCI::_add_missing_multitile_elems(ESMCI::Mesh*, std::vector<ESMCI::MM_ELEM>*, int, int, int)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:1229:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::MM_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i < missing_elems->size(); i++) {
+                   ~~^~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘bool ESMCI::_get_global_id_from_tile(ESMCI::DistGrid*, int, int*, int*, bool*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:1288:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<seqIndex.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C: In function ‘void ESMCI::unique_cell_list(std::vector<ESMCI::sintd_cell*>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C:1510:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::sintd_cell*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<sintd_cells.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘void ESMCI::_force_add_node(int, int*, ESMCI::Mesh*, int, int (*)[2], ESMCI::DistGrid*, int (*)[2], ESMCI::DistGrid*, int*, int*, std::vector<ESMCI::MeshObj*>*, const ESMCI::MeshObjTopo*, bool*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:2005:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+       if (proc != Par::Rank()) {
+           ~~~~~^~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘void ESMCI::ESMCI_GridToMeshCell(const ESMCI::Grid&, const std::vector<ESMCI::Array*>&, ESMCI::Mesh**, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:2328:14: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+    if (owner != BAD_PROC) continue;
+              ^
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘void ESMCI::MeshDual(ESMCI::Mesh*, ESMCI::Mesh**)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:268:42: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     if ((src_mesh->is_split) && (elem_id > src_mesh->max_non_split_id)) {
+                                  ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_MeshGetElemCreateInfo(ESMCI::Mesh*, ESMCI::InterArray<int>*, ESMCI::InterArray<int>*, ESMCI::InterArray<int>*, ESMCI::InterArray<int>*, ESMCI::InterArray<double>*, ESMCI::InterArray<double>*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2178:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, ESMCI::MeshObj*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sorted_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2193:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, ESMCI::MeshObj*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sorted_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2214:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, ESMCI::MeshObj*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sorted_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2222:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const UInt’ {aka ‘const unsigned int’} [-Wsign-compare]
+         for (int n = 0; n < topo->num_nodes; n++){
+                         ~~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2240:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, ESMCI::MeshObj*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sorted_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2262:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, ESMCI::MeshObj*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sorted_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2289:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, ESMCI::MeshObj*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sorted_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_MeshSetElemInfo(ESMCI::Mesh*, ESMCI::InterArray<int>*, ESMCI::InterArray<double>*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2454:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, ESMCI::MeshObj*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sorted_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:451:44: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+       if ((src_mesh->is_split) && (elem_id > src_mesh->max_non_split_id)) {
+                                    ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2543:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, ESMCI::MeshObj*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sorted_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_MeshGetNodeCreateInfo(ESMCI::Mesh*, ESMCI::InterArray<int>*, ESMCI::InterArray<double>*, ESMCI::InterArray<int>*, ESMCI::InterArray<int>*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2716:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, ESMCI::MeshObj*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sorted_nodes.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:36:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h: In constructor ‘ESMCI::MBMesh::MBMesh()’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:174:9: warning: ‘ESMCI::MBMesh::max_non_split_id’ will be initialized after [-Wreorder]
+     int max_non_split_id;
+         ^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:125:10: warning:   ‘bool ESMCI::MBMesh::has_ghost’ [-Wreorder]
+     bool has_ghost;
+          ^~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2736:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, ESMCI::MeshObj*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sorted_nodes.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:119:1: warning:   when initialized here [-Wreorder]
+ MBMesh::MBMesh():
+ ^~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2757:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, ESMCI::MeshObj*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sorted_nodes.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2773:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, ESMCI::MeshObj*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sorted_nodes.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:36:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h: In constructor ‘ESMCI::MBMesh::MBMesh(int, int, ESMC_CoordSys_Flag)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:174:9: warning: ‘ESMCI::MBMesh::max_non_split_id’ will be initialized after [-Wreorder]
+     int max_non_split_id;
+         ^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:125:10: warning:   ‘bool ESMCI::MBMesh::has_ghost’ [-Wreorder]
+     bool has_ghost;
+          ^~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:153:1: warning:   when initialized here [-Wreorder]
+ MBMesh::MBMesh(int _pdim, int _orig_sdim, ESMC_CoordSys_Flag _coordsys):
+ ^~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:590:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+       if (elemId[e] > max_id) {
+           ~~~~~~~~~~^~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshserialize(ESMCI::Mesh**, char*, int*, int*, ESMC_InquireFlag*, int*, ESMCI_FortranStrLenArg)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3149:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+           for (int j=0; j<nvalSetSizes[i]; j++) {
+                         ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3166:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+           for (int j=0; j<nvalSetObjSizes[i]; j++) {
+                         ~^~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshdeserialize(ESMCI::Mesh**, char*, int*, int*, ESMCI_FortranStrLenArg)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3273:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__gnu_cxx::__alloc_traits<std::allocator<unsigned int>, unsigned int>::value_type’ {aka ‘unsigned int’} [-Wsign-compare]
+         for (int j=0; j<nvalSetSizes[i]; j++) {
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3292:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__gnu_cxx::__alloc_traits<std::allocator<unsigned int>, unsigned int>::value_type’ {aka ‘unsigned int’} [-Wsign-compare]
+         for (int j=0; j<nvalSetObjSizes[i]; j++) {
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘void ESMCI::get_unique_elems_around_node(ESMCI::MeshObj*, ESMCI::Mesh*, ESMCI::MDSS*, int*, ESMCI::UInt*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1120:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+       if (elem_id > max_elem_id) {
+           ~~~~~~~~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_geteleminfointoarray(ESMCI::Mesh*, ESMCI::DistGrid*, int, int*, ESMCI::Array**, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3764:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+             for (int i=0; i<seqIndexList.size(); i++) {
+                           ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3798:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+             for (int i=0; i<seqIndexList.size(); i++) {
+                           ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1229:26: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+       if (tmp_mdss[i].id != prev_id) {
+           ~~~~~~~~~~~~~~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘void ESMCI::add_ghost_elems_to_split_orig_id_map(ESMCI::Mesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1268:19: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+       if (elem_id <=  mesh->max_non_split_id) continue;
+           ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1296:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+         if (elem_id <=  mesh->max_non_split_id) continue;
+             ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1342:17: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     if (elem_id <=  mesh->max_non_split_id) continue;
+         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1367:17: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     if (elem_id <=  mesh->max_non_split_id) continue;
+         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetarea(ESMCI::Mesh**, int*, double*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4011:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     if (*num_elem != egids.size()) {
+         ~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4022:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<egids.size(); i++) {
+                     ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1388:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::DDir<>::dentry, std::allocator<ESMCI::DDir<>::dentry> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   for (int i=0; i<lookups.size(); i++) {
+                 ~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4048:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int i=0; i<egids.size(); i++) {
+                       ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4098:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<egids.size(); i++) {
+                   ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4148:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<egids.size(); i++) {
+                     ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C: In member function ‘void ESMCI::MBMesh::get_sorted_orig_nodes(std::vector<long unsigned int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:540:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, long unsigned int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i = 0; i<pos_and_nodes.size(); ++i) {
+                     ~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetcentroid(ESMCI::Mesh**, int*, double*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4324:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     if (*num_elem != egids.size()) {
+         ~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C: In member function ‘void ESMCI::MBMesh::get_sorted_orig_elems(std::vector<long unsigned int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:590:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, long unsigned int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i = 0; i<pos_and_elems.size(); ++i) {
+                     ~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4334:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<egids.size(); i++) {
+                     ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4369:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<egids.size(); i++) {
+                   ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetfrac(ESMCI::Mesh**, int*, double*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4477:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     if (num_elem != egids.size()) {
+         ~~~~~~~~~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4487:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<egids.size(); i++) {
+                     ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4512:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<egids.size(); i++) {
+                     ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetfrac2(ESMCI::Mesh**, int*, double*, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4625:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     if (*num_elem != egids.size()) {
+         ~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4634:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<egids.size(); i++) {
+                   ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C: In member function ‘void ESMCI::MBMesh::get_elem_connectivity(int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:786:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<nodes_on_elem.size(); ++i) {
+                     ~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void expand_split_elem_ids(ESMCI::Mesh*, int, int*, int*, int**, std::map<unsigned int, unsigned int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5320:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::DDir<>::dentry, std::allocator<ESMCI::DDir<>::dentry> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<lookups.size(); i++) {
+                   ~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C: In member function ‘void ESMCI::MBMesh::get_elem_connectivity(const std::vector<long unsigned int>&, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:871:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<nodes_on_elem.size(); ++i) {
+                     ~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void calc_split_id_to_frac(ESMCI::Mesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5385:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   for (int i=0; i<split_ids.size(); i++) {
+                 ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5432:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   for (int i=0; i<split_ids.size(); i++) {
+                 ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C: In member function ‘void ESMCI::MBMesh::get_node_coords(double*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:940:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘size_t’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<nodes.size(); ++i) {
+                     ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C: In member function ‘void ESMCI::MBMesh::get_node_orig_coords(const std::vector<long unsigned int>&, double*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:1264:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<nodes.size(); i++) {
+                   ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C: In function ‘void MBMesh_Search_EToP(ESMCI::MBMesh*, ESMCI::PointList*, int, int*, double, MBMesh_Search_EToP_Result_List&, bool, ESMCI::WMat&, std::vector<int>*, ESMCI::OTree*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:623:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   for (int p = 0; p < dst_loc->size(); ++p) {
+                   ~~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:648:13: warning: converting to non-pointer type ‘moab::EntityHandle’ {aka ‘long unsigned int’} from NULL [-Wconversion-null]
+     si.elem=NULL;
+             ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:813:3: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+   if (!box_in)
+   ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:816:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     for (auto entry : box_obj)
+     ^~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::create_mbmesh_redist_elem_move_nodes(ESMCI::MBMesh*, std::vector<ESMCI::EH_Comm_Pair>*, ESMCI::MBMesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:279:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::EH_Comm_Pair>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<elem_to_proc_list->size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::create_mbmesh_redist_elem_move_elems(ESMCI::MBMesh*, std::vector<ESMCI::EH_Comm_Pair>*, ESMCI::MBMesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:531:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::EH_Comm_Pair>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<elem_to_proc_list->size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:589:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::EH_Comm_Pair>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<elem_to_proc_list->size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:683:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (auto i=0; i<orig_nodes.size(); i++) {
+                      ~^~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:733:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (auto i=0; i<elem_ids.size(); i++) {
+                    ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::mbmesh_set_split_orig_id_map(ESMCI::MBMesh*, ESMCI::MBMesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:1875:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::DDir<>::dentry, std::allocator<ESMCI::DDir<>::dentry> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<lookups.size(); i++) {
+                   ~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::mbmesh_expand_split_elem_ids(ESMCI::MBMesh*, int, int*, int*, int**, std::map<int, int>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:1990:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::DDir<>::dentry, std::allocator<ESMCI::DDir<>::dentry> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<lookups.size(); i++) {
+                     ~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::mbmesh_calc_split_id_to_frac(ESMCI::MBMesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2065:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<split_ids.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2083:18: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+         if (s_id == elem_id) break;
+             ~~~~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2122:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<split_ids.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::mbmesh_expand_elem_to_proc_list(ESMCI::MBMesh*, const std::vector<unsigned int>&, std::multimap<int, long unsigned int>&, std::vector<ESMCI::EH_Comm_Pair>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2389:9: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
+         if (ehf == elem_to_proc_list.end())
+         ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2392:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+           if (mesh->is_split)
+           ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::mbmesh_set_node_owners(ESMCI::MBMesh*, ESMCI::DDir<>)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2649:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+     for (int i = 0; i < num_src_gids; ++i) {
+                     ~~^~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::mbmesh_set_node_owners_wo_list(ESMCI::MBMesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2825:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i = 0; i < owner.size(); ++i)
+                     ~~^~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C: In function ‘void calc_bilinear_mat(ESMCI::MBMesh*, ESMCI::PointList*, MBMesh_Search_EToP_Result_List&, ESMCI::IWeights&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:174:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for(int i = 0; i < nodes.size(); ++i) {
+                      ~~^~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::mbmesh_set_elem_owners(ESMCI::MBMesh*, ESMCI::DDir<>)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:2879:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+     for (int i = 0; i < num_src_gids; ++i) {
+                     ~~^~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::mbmesh_set_elem_owners_wo_list(ESMCI::MBMesh*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:3101:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<gids.size(); i++) {
+                   ~^~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:3138:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<split_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C: In instantiation of ‘void ESMCI::MB_POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 2>::forward(unsigned int, const mdata_type*, const pcoord_type*, typename ESMCI::mbmesh_richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value*) const [with SFUNC_TYPE = ESMCI::quad9_shape_func; MPTRAITS = ESMCI::MBTraits<>; ESMCI::MB_POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 2>::mdata_type = double; ESMCI::MB_POLY_Mapping<SFUNC_TYPE, MPTRAITS, 3, 2>::pcoord_type = double; typename ESMCI::mbmesh_richest_type<typename MPTRAITS::mdata_type, typename MPTRAITS::pcoord_type>::value = double]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:462:6:   required from here
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:482:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const unsigned int’ [-Wsign-compare]
@@ -4261,501 +5181,6 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastr
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Mapping.C:543:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
        for (int k = 0; k < SFUNC_TYPE::ndofs; k++) {
                        ~~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C: In function ‘void assign_points_to_procs(ESMCI::PointList*, int, ZOLTAN_ID_PTR, ZOLTAN_ID_PTR, int*, int, std::vector<ESMCI::PL_Comm_Pair>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C:335:30: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-   for (unsigned int i = 0; i < numExport; ++i) {
-                            ~~^~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C: In function ‘void MBMesh_get_local_elem_gids(ESMCI::MBMesh*, std::vector<unsigned int>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:284:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   for (int i = 0; i<pos_and_gids.size(); ++i) {
-                   ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C: In function ‘void assign_points_to_procs(ESMCI::PointList*, int, ZOLTAN_ID_PTR, ZOLTAN_ID_PTR, int*, int, int, std::vector<ESMCI::PL_Comm_Pair>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:153:30: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-   for (unsigned int i = 0; i < numExport; ++i) {
-                            ~~^~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C:154:24: warning: comparison of integer expressions of different signedness: ‘ZOLTAN_ID_TYPE’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     if (exportGids[i*2]==src_or_dst) {
-         ~~~~~~~~~~~~~~~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::MeshRedistNode(ESMCI::Mesh*, int, int*, ESMCI::Mesh**)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:165:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
-       for (int i=0; i< num_src_gids; i++) {
-                     ~^~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C: In function ‘void ESMCI::get_elem_coords(const ESMCI::MeshObj*, const ESMCI::MEField<ESMCI::_field>*, int, int, int*, double*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:365:27: warning: comparison of integer expressions of different signedness: ‘const UInt’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-       if (topo->num_nodes > max_num_nodes) {
-           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C: In function ‘void ESMCI::get_elem_coords_and_ids(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, int, int, int*, double*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MathUtil.C:520:27: warning: comparison of integer expressions of different signedness: ‘const UInt’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-       if (topo->num_nodes > max_num_nodes) {
-           ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C: In constructor ‘ESMCI::MBMesh_BBox::MBMesh_BBox(ESMCI::MBMesh*, moab::EntityHandle, double, bool)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:151:23: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     for (UInt i =0; i < dim; i++) {
-                     ~~^~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:170:24: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     for (UInt n = 1; n < num_p; n++) {
-                      ~~^~~~~~~
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_List.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObj.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshDB.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_BBox.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_BBox.h:19,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:16:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C: In function ‘bool ESMCI::Mixed_BBoxIntersect(const ESMCI::MBMesh_BBox&, const ESMCI::BBox&, double)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:337:30: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
-   ThrowAssert(b1.dimension() == b2.dimension());
-               ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Exception.h:103:28: note: in definition of macro ‘ThrowAssert’
- #define ThrowAssert(cond) (cond ? (void) 0 : throw Ex() << "Condition {" << #cond << "} failed at " << __FILE__ << ", line:" << __LINE__)
-                            ^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘void ESMCI::ESMCI_GridToMesh(const ESMCI::Grid&, int, const std::vector<ESMCI::Array*>&, ESMCI::InterArray<int>*, int*, ESMCI::Mesh**, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:203:2: warning: this ‘if’ clause does not guard... [-Wmisleading-indentation]
-  if (ESMC_LogDefault.MsgFoundError(localrc,ESMCI_ERR_PASSTHRU,ESMC_CONTEXT,NULL))
-  ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:207:4: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
-    std::vector<UInt> owned_shared;
-    ^~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:257:46: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-          if (lb == owned_shared.end() || *lb != gid)
-                                          ~~~~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C: In function ‘void ESMCI::build_pl_mb_bbox(double*, double*, ESMCI::PointList*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_BBox.C:429:24: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     for (UInt d = 0; d < sdim; d++) {
-                      ~~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:301:49: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-          if (lb == notowned_shared.end() || *lb != gid)
-                                             ~~~~^~~~~~
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_List.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObj.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshDB.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h:25,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:23:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:354:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const UInt’ {aka ‘const unsigned int’} [-Wsign-compare]
-      ThrowRequire(cnrCount == ctopo->num_nodes);
-                   ~~~~~~~~~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Exception.h:107:29: note: in definition of macro ‘ThrowRequire’
- #define ThrowRequire(cond) (cond ? (void) 0 : throw Ex() << "Condition {" << #cond << "} failed at " << __FILE__ << ", line:" << __LINE__)
-                             ^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:470:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
-       for (int i=0; i<sdim; i++) {
-                     ~^~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::set_node_owners(ESMCI::Mesh*, ESMCI::DDir<>)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:843:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
-     for (int i=0; i<num_src_gids; i++) {
-                   ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::set_node_owners_wo_list(ESMCI::Mesh*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1010:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-      for (int i=0; i<gids.size(); i++) {
-                    ~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::set_elem_owners(ESMCI::Mesh*, ESMCI::DDir<>)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1068:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
-     for (int i=0; i<num_src_gids; i++) {
-                   ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘void ESMCI::_add_missing_multitile_elems(ESMCI::Mesh*, std::vector<ESMCI::MM_ELEM>*, int, int, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:1206:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::MM_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i < missing_elems->size(); i++) {
-                   ~~^~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘bool ESMCI::_get_global_id(ESMCI::DistGrid*, int, int*, int*, bool*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:1262:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<seqIndex.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::redist_nohome_nodes(ESMCI::Mesh*, int, int*, ESMCI::Mesh*, ESMCI::CommReg*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1249:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
-     for (int i=0; i<num_sn_gids; i++) {
-                   ~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::redist_elems(ESMCI::Mesh*, ESMCI::DDir<>, ESMCI::Mesh*, ESMCI::CommReg*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1326:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
-   for (int i=0; i<num_src_gids; i++) {
-                 ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C: In function ‘void ESMCI::ESMCI_GridToMeshCell(const ESMCI::Grid&, const std::vector<ESMCI::Array*>&, ESMCI::Mesh**, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C:2026:14: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
-    if (owner != BAD_PROC) continue;
-              ^
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void get_mesh_node_ids_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, std::vector<int>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:727:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     while ((wi != we) && (wi->first.id < id)) {
-                           ~~~~~~~~~~~~~^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:732:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     if (wi->first.id != id) {
-         ~~~~~~~~~~~~~^~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void get_mesh_elem_ids_not_in_wmat(ESMCI::Mesh*, ESMCI::WMat&, std::vector<int>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:773:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     while ((wi != we) && (wi->first.id <elem_id)) {
-                           ~~~~~~~~~~~~~^~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:778:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     if (wi->first.id != elem_id) {
-         ~~~~~~~~~~~~~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘bool all_mesh_node_ids_in_wmat(ESMCI::PointList*, ESMCI::WMat&, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:807:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     while ((wi != we) && (wi->first.id < id)) {
-                           ~~~~~~~~~~~~~^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::set_elem_owners_wo_list(ESMCI::Mesh*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1696:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-      for (int i=0; i<gids.size(); i++) {
-                    ~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:822:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     if (wi->first.id != id) {
-         ~~~~~~~~~~~~~^~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1747:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-        for (int i=0; i<split_elems.size(); i++) {
-                      ~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘bool all_mesh_elem_ids_in_wmat(ESMCI::Mesh*, ESMCI::WMat&, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:874:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     while ((wi != we) && (wi->first.id <elem_id)) {
-                           ~~~~~~~~~~~~~^~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:887:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     if (wi->first.id != elem_id) {
-         ~~~~~~~~~~~~~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:1775:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
-          if (owner==Par::Rank()) {
-              ~~~~~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:974:47: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     while ((pos<num_dst_ids) && (dst_ids[pos] < elem_id)) {
-                                  ~~~~~~~~~~~~~^~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:987:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     if (dst_ids[pos] != elem_id) {
-         ~~~~~~~~~~~~~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C: In function ‘void ESMCI::set_split_orig_id_map(ESMCI::Mesh*, ESMCI::Mesh*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C:2086:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::DDir<>::dentry, std::allocator<ESMCI::DDir<>::dentry> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<lookups.size(); i++) {
-                   ~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void translate_split_src_elems_in_wts(ESMCI::Mesh*, int, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:1595:17: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-      if (src_id > srcmesh->max_non_split_id) {
-          ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:1616:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
-   for (int i=0; i<num_src_split_gids; i++) {
-                 ~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshaddnodes(ESMCI::Mesh**, int*, int*, double*, int*, ESMCI::InterArray<int>*, ESMC_CoordSys_Flag*, int*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:277:28: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-         for (UInt c = 0; c < sdim; ++c)
-                          ~~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:290:27: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-         for (UInt c = 0; c<orig_sdim; ++c)
-                          ~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void copy_rs_from_WMat_to_Array(ESMCI::WMat*, ESMCI::Array*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:2249:18: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-         if (w.id == seq_ind) {
-             ~~~~~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C: In function ‘void copy_cnsv_rs_from_WMat_to_Array(ESMCI::WMat*, ESMCI::Array*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Regrid_Glue.C:2401:18: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-         if (w.id == seq_ind) {
-             ~~~~~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘void ESMCI::MeshDual(ESMCI::Mesh*, ESMCI::Mesh**)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:266:42: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     if ((src_mesh->is_split) && (elem_id > src_mesh->max_non_split_id)) {
-                                  ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:449:44: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-       if ((src_mesh->is_split) && (elem_id > src_mesh->max_non_split_id)) {
-                                    ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:588:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-       if (elemId[e] > max_id) {
-           ~~~~~~~~~~^~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C: In function ‘void create_pointlist_of_points_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, ESMCI::PointList**)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:47:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     while ((wi != we) && (wi->first.id < id)) {
-                           ~~~~~~~~~~~~~^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:52:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     if (wi->first.id != id) {
-         ~~~~~~~~~~~~~^~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:71:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     while ((wi != we) && (wi->first.id < id)) {
-                           ~~~~~~~~~~~~~^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:76:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     if (wi->first.id != id) {
-         ~~~~~~~~~~~~~^~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C: In function ‘void replace_mapped_with_mapped_extrap(ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C:95:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i = 0; i < col.size(); ++i) {
-                     ~~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshserialize(ESMCI::Mesh**, char*, int*, int*, ESMC_InquireFlag*, int*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2217:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
-           for (int j=0; j<nvalSetSizes[i]; j++) {
-                         ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2234:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
-           for (int j=0; j<nvalSetObjSizes[i]; j++) {
-                         ~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshdeserialize(ESMCI::Mesh**, char*, int*, int*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2341:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__gnu_cxx::__alloc_traits<std::allocator<unsigned int>, unsigned int>::value_type’ {aka ‘unsigned int’} [-Wsign-compare]
-         for (int j=0; j<nvalSetSizes[i]; j++) {
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2360:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__gnu_cxx::__alloc_traits<std::allocator<unsigned int>, unsigned int>::value_type’ {aka ‘unsigned int’} [-Wsign-compare]
-         for (int j=0; j<nvalSetObjSizes[i]; j++) {
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘void ESMCI::get_unique_elems_around_node(ESMCI::MeshObj*, ESMCI::Mesh*, ESMCI::MDSS*, int*, ESMCI::UInt*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1070:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
-       if (elem_id > max_elem_id) {
-           ~~~~~~~~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1174:26: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-       if (tmp_mdss[i].id != prev_id) {
-           ~~~~~~~~~~~~~~~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘void ESMCI::add_ghost_elems_to_split_orig_id_map(ESMCI::Mesh*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1213:19: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-       if (elem_id <=  mesh->max_non_split_id) continue;
-           ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1241:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-         if (elem_id <=  mesh->max_non_split_id) continue;
-             ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1287:17: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     if (elem_id <=  mesh->max_non_split_id) continue;
-         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1312:17: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     if (elem_id <=  mesh->max_non_split_id) continue;
-         ~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:1333:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::DDir<>::dentry, std::allocator<ESMCI::DDir<>::dentry> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   for (int i=0; i<lookups.size(); i++) {
-                 ~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_geteleminfointoarray(ESMCI::Mesh*, ESMCI::DistGrid*, int, int*, ESMCI::Array**, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2832:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-             for (int i=0; i<seqIndexList.size(); i++) {
-                           ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:2866:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-             for (int i=0; i<seqIndexList.size(); i++) {
-                           ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetarea(ESMCI::Mesh**, int*, double*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3079:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     if (*num_elem != egids.size()) {
-         ~~~~~~~~~~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3090:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<egids.size(); i++) {
-                     ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3116:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-         for (int i=0; i<egids.size(); i++) {
-                       ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3166:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<egids.size(); i++) {
-                   ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3216:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<egids.size(); i++) {
-                     ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetcentroid(ESMCI::Mesh**, int*, double*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3392:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     if (*num_elem != egids.size()) {
-         ~~~~~~~~~~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3402:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<egids.size(); i++) {
-                     ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3437:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<egids.size(); i++) {
-                   ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetfrac(ESMCI::Mesh**, int*, double*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3545:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     if (num_elem != egids.size()) {
-         ~~~~~~~~~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3555:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<egids.size(); i++) {
-                     ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3580:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<egids.size(); i++) {
-                     ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_2D_cart(ESMCI::MBMesh*, moab::EntityHandle, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:101:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:114:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:130:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:159:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:247:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:263:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_3D_sph_src_pnts(int, double*, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:402:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:434:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_meshgetfrac2(ESMCI::Mesh**, int*, double*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3693:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     if (*num_elem != egids.size()) {
-         ~~~~~~~~~~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:3702:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<egids.size(); i++) {
-                   ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_3D_sph(ESMCI::MBMesh*, moab::EntityHandle, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:645:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:657:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C: In function ‘void calc_bilinear_mat(ESMCI::MBMesh*, ESMCI::PointList*, MBMesh_Search_EToP_Result_List&, ESMCI::IWeights&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C:171:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for(int i = 0; i < nodes.size(); ++i) {
-                      ~~^~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:769:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:779:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void expand_split_elem_ids(ESMCI::Mesh*, int, int*, int*, int**, std::map<unsigned int, unsigned int>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4388:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::DDir<>::dentry, std::allocator<ESMCI::DDir<>::dentry> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<lookups.size(); i++) {
-                   ~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void calc_conserve_mat_serial_2D_2D_cart(ESMCI::MBMesh*, ESMCI::MBMesh*, MBMesh_Search_EToE_Result_List&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:833:29: warning: comparison of integer expressions of different signedness: ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (sr.dst_elems.size() > max_num_dst_elems) max_num_dst_elems=sr.dst_elems.size();
-         ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:861:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<sr.dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void calc_split_id_to_frac(ESMCI::Mesh*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4453:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   for (int i=0; i<split_ids.size(); i++) {
-                 ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:4500:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   for (int i=0; i<split_ids.size(); i++) {
-                 ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:908:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<sr.dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:940:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<sr.dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:960:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-         for (int i=0; i<sr.dst_elems.size(); i++) {
-                       ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:979:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-         for (int i=0; i<sr.dst_elems.size(); i++) {
-                       ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1014:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<sr.dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void calc_conserve_mat_serial_2D_3D_sph(ESMCI::MBMesh*, ESMCI::MBMesh*, MBMesh_Search_EToE_Result_List&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1081:30: warning: comparison of integer expressions of different signedness: ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-      if (sr.dst_elems.size() > max_num_dst_elems) max_num_dst_elems=sr.dst_elems.size();
-          ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘void ESMCI_MeshFitOnVM(ESMCI::Mesh**, ESMCI::VM**, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5279:24: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
-        if ((orig_owner < 0) || (orig_owner > curr_vm_size-1)) {
-             ~~~~~~~~~~~^~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1109:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<sr.dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5279:44: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-        if ((orig_owner < 0) || (orig_owner > curr_vm_size-1)) {
-                                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5309:24: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
-        if ((orig_owner < 0) || (orig_owner > curr_vm_size-1)) {
-             ~~~~~~~~~~~^~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:5309:44: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-        if ((orig_owner < 0) || (orig_owner > curr_vm_size-1)) {
-                                 ~~~~~~~~~~~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1155:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<sr.dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1187:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<sr.dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1207:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-         for (int i=0; i<sr.dst_elems.size(); i++) {
-                       ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1226:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-         for (int i=0; i<sr.dst_elems.size(); i++) {
-                       ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:1253:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<sr.dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C: In function ‘void ESMCI::get_unique_elems_around_node(const EntityHandle*, ESMCI::MBMesh*, ESMCI::MDSS*, int*, int*, bool&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C:1257:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
-       if (owner == Par::Rank()) allnotowned = false;
-           ~~~~~~^~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C: In function ‘void MBMesh_Search_EToP(ESMCI::MBMesh*, ESMCI::PointList*, int, int*, double, MBMesh_Search_EToP_Result_List&, bool, ESMCI::WMat&, std::vector<int>*, ESMCI::OTree*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:616:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   for (int p = 0; p < dst_loc->size(); ++p) {
-                   ~~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Search_EtoP.C:641:13: warning: converting to non-pointer type ‘moab::EntityHandle’ {aka ‘long unsigned int’} from NULL [-Wconversion-null]
-     si.elem=NULL;
-             ^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::create_mbmesh_redist_elem_move_verts(ESMCI::MBMesh*, std::vector<ESMCI::EH_Comm_Pair>*, std::map<int, long unsigned int>*, ESMCI::MBMesh*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:388:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::EH_Comm_Pair>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<elem_to_proc_list->size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘void ESMCI::create_mbmesh_redist_elem_move_elems(ESMCI::MBMesh*, std::vector<ESMCI::EH_Comm_Pair>*, std::map<int, long unsigned int>*, ESMCI::MBMesh*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:862:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::EH_Comm_Pair>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<elem_to_proc_list->size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:921:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::EH_Comm_Pair>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<elem_to_proc_list->size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘void get_mbmesh_node_ids_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, std::vector<int>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:656:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     while ((wi != we) && (wi->first.id < id)) {
-                           ~~~~~~~~~~~~~^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:661:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     if (wi->first.id != id) {
-         ~~~~~~~~~~~~~^~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘void get_mbmesh_elem_ids_not_in_wmat(ESMCI::MBMesh*, ESMCI::WMat&, std::vector<int>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:714:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     while ((wi != we) && (wi->first.id <elem_id)) wi++;
-                           ~~~~~~~~~~~~~^~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:717:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     if (wi->first.id != elem_id) {
-         ~~~~~~~~~~~~~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘bool all_mbmesh_node_ids_in_wmat(ESMCI::PointList*, ESMCI::WMat&, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:745:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     while ((wi != we) && (wi->first.id < id)) {
-                           ~~~~~~~~~~~~~^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:761:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     if (wi->first.id != id) {
-         ~~~~~~~~~~~~~^~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘bool all_mbmesh_elem_ids_in_wmat(ESMCI::MBMesh*, ESMCI::WMat&, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:820:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     while ((wi != we) && (wi->first.id <elem_id)) wi++;
-                           ~~~~~~~~~~~~~^~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:833:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-     if (wi->first.id != elem_id) {
-         ~~~~~~~~~~~~~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘void mbcopy_rs_from_WMat_to_Array(ESMCI::WMat*, ESMCI::Array*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:966:18: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-         if (w.id == seq_ind) {
-             ~~~~~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C: In function ‘void mbcopy_cnsv_rs_from_WMat_to_Array(ESMCI::WMat*, ESMCI::Array*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C:1118:18: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-         if (w.id == seq_ind) {
-             ~~~~~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void getElemGIDS(ESMCI::MBMesh*, std::vector<int>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2286:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   for (int i = 0; i<pos_and_gids.size(); ++i) {
-                   ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void getElems(void**, std::vector<long unsigned int>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2432:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, long unsigned int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   for (int i = 0; i<pos_and_elems.size(); ++i) {
-                   ~^~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_getlocalelemcoords(void**, double*, int*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2474:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-         for (int i=0; i<ehs.size(); i++) {
-                       ~^~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2487:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-         for (int i=0; i<ehs.size(); i++) {
-                       ~^~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_getarea(void**, int*, double*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2560:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     if (*num_elem != ehs.size()) {
-         ~~~~~~~~~~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2591:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<ehs.size(); i++) {
-                     ~^~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void getNodes(void**, std::vector<long unsigned int>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2790:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::pair<int, long unsigned int> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   for (int i = 0; i<pos_and_nodes.size(); ++i) {
-                   ~^~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘void MBMesh_getlocalcoords(void**, double*, int*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2830:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<nodes.size(); i++) {
-                     ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:2843:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<nodes.size(); i++) {
-                     ~^~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C: In function ‘const ESMCI::MeshObjTopo* ESMCI::ElemType2TopoCXX(int, int, int)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:629:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
@@ -4764,48 +5189,48 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastr
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C:650:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘const ESMCI::MeshObjTopo* ESMCI::ElemType2Topo(int, int, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:864:1: warning: control reaches end of non-void function [-Wreturn-type]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_3D_sph(ESMCI::MBMesh*, moab::EntityHandle, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:767:36: warning: ‘src_elem_area2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+       *src_elem_area=*src_elem_area+src_elem_area2;
+                      ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C: In function ‘int MBMesh_ElemType2NumNodes(int, int)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:518:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘moab::EntityType ESMCI::_get_entity_type(int, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:731:4: warning: control reaches end of non-void function [-Wreturn-type]
-    }
-    ^
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C: In static member function ‘static ESMCI::MeshCap* ESMCI::MeshCap::GridToMesh(const ESMCI::Grid&, int, const std::vector<ESMCI::Array*>&, ESMCI::InterArray<int>*, int*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:341:15: warning: ‘mbmesh’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-     mc->mbmesh=mbmesh;
-     ~~~~~~~~~~^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C: In static member function ‘static ESMCI::MeshCap* ESMCI::MeshCap::GridToMeshCell(const ESMCI::Grid&, const std::vector<ESMCI::Array*>&, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:385:15: warning: ‘mbmesh’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-     mc->mbmesh=mbmesh;
-     ~~~~~~~~~~^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C: In static member function ‘static ESMCI::MeshCap* ESMCI::MeshCap::meshcreate_easy_elems(int*, int*, int*, ESMCI::InterArray<int>*, int*, ESMCI::InterArray<int>*, int*, double*, int*, double*, int*, double*, ESMC_CoordSys_Flag*, bool, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1659:15: warning: ‘mbmesh’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-     mc->mbmesh=mbmesh;
-     ~~~~~~~~~~^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C: In static member function ‘static ESMCI::MeshCap* ESMCI::MeshCap::meshcreate_from_grid(ESMCI::Grid**, bool, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C:1718:15: warning: ‘mbmesh’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-     mc->mbmesh=mbmesh;
-     ~~~~~~~~~~^~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C: In function ‘int MBMesh_num_nodes_to_esmf_etype(int, int)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:535:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C: In function ‘moab::EntityType MBMesh_get_entity_type(int, int)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Util.C:1188:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C: In function ‘const ESMCI::MeshObjTopo* ESMCI::ElemType2Topo(int, int, int)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C:914:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘const ESMCI::MeshObjTopo* ElemType2Topo(int, int, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:483:1: warning: control reaches end of non-void function [-Wreturn-type]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:489:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘int ElemType2NumNodes(int, int, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:503:1: warning: control reaches end of non-void function [-Wreturn-type]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:509:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C: In function ‘void MBMesh_calc_1st_order_weights_2D_3D_sph(ESMCI::MBMesh*, moab::EntityHandle, ESMCI::MBMesh*, std::vector<long unsigned int>, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Conserve.C:766:36: warning: ‘src_elem_area2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-       *src_elem_area=*src_elem_area+src_elem_area2;
-                      ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘moab::EntityType get_entity_type(int, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:433:1: warning: control reaches end of non-void function [-Wreturn-type]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C: In function ‘int _num_nodes_to_elem_type(int, int)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C:1950:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C: In function ‘int ElemType2NumNodes(int, int, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C:452:1: warning: control reaches end of non-void function [-Wreturn-type]
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:36:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h: In member function ‘void ESMCI::MBMesh::get_elem_types(int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:40:3: warning: ‘merr’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   if (merr != MB_SUCCESS) {\
+   ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C:715:9: note: ‘merr’ was declared here
+     int merr;
+         ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C: In function ‘int ESMCI::calc_size_elem_comm(ESMCI::MBMesh*, moab::EntityHandle)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C:1337:1: warning: control reaches end of non-void function [-Wreturn-type]
  }
  ^
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
@@ -4862,18 +5287,6 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C:14:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C:14:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
@@ -4885,42 +5298,7 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:24:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Array.h:38,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshVTK.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C:12:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshNC.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:12:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPNC.C:17:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:14:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -4942,19 +5320,8 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshSkin.C:12:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:14:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C:14:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -4977,8 +5344,31 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C:24:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshNC.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshNC.C:12:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:15:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
@@ -4990,8 +5380,8 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:18:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshSkin.C:12:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -5004,6 +5394,28 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshUtils.C:12:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Array.h:38,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshVTK.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshVTK.C:12:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:18:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -5029,6 +5441,18 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:17,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEValues.C:12:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshSkin.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshPNC.C:17:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -5076,78 +5500,19 @@ In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastr
        for (int i=0; i<nvalSetSizesArg[setPos]; i++) {
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FieldReg.C:565:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘__gnu_cxx::__alloc_traits<std::allocator<unsigned int>, unsigned int>::value_type’ {aka ‘unsigned int’} [-Wsign-compare]
        for (int i=0; i<nvalSetObjSizesArg[setPos]; i++) {
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h: In constructor ‘ESMCI::GeomRend::GeomRend(ESMCI::Mesh*, ESMCI::PointList*, ESMCI::Mesh*, ESMCI::PointList*, const ESMCI::GeomRend::DstConfig&, bool, bool)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:166:8: warning: ‘ESMCI::GeomRend::freeze_src’ will be initialized after [-Wreorder]
-   bool freeze_src;  // true if src mesh will not be migrated to create src rendezvous mesh
-        ^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:154:14: warning:   ‘ESMCI::PointList* ESMCI::GeomRend::srcplist_rend’ [-Wreorder]
-   PointList *srcplist_rend;
-              ^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:182:3: warning:   when initialized here [-Wreorder]
-   GeomRend::GeomRend(Mesh *_srcmesh, PointList *_srcplist,
-   ^~~~~~~~
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:169:8: warning: ‘ESMCI::GeomRend::on_sph’ will be initialized after [-Wreorder]
-   bool on_sph;
-        ^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:103:7: warning:   ‘int ESMCI::GeomRend::status’ [-Wreorder]
-   int status;
-       ^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:182:3: warning:   when initialized here [-Wreorder]
-   GeomRend::GeomRend(Mesh *_srcmesh, PointList *_srcplist,
-   ^~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C: In function ‘void ESMCI::Cart2D(ESMCI::Mesh&, int, int, double, double, double, double)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:359:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     for (UInt i=0; i<X*Y; ++i) {
-                    ~^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:366:20: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     for(UInt j=0; j<Y-1; ++j) {
-                   ~^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:367:20: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     for(UInt i=0; i<X-1; ++i) {
-                   ~^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:384:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     for (UInt i=0; i<X*Y; ++i) {
-                    ~^~~~
-In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_List.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObj.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshDB.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommReg.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:217:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-   ThrowRequire(sdim == dst_dim);
-                ~~~~~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Exception.h:107:29: note: in definition of macro ‘ThrowRequire’
- #define ThrowRequire(cond) (cond ? (void) 0 : throw Ex() << "Condition {" << #cond << "} failed at " << __FILE__ << ", line:" << __LINE__)
-                             ^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C: In function ‘void ESMCI::SphShell(ESMCI::Mesh&, int, int, double, double, double, double)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:403:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     for (UInt i=0; i<lat*lon; ++i) {
-                    ~^~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:410:20: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     for(UInt j=0; j<lon-1; ++j) {
-                   ~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:411:20: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     for(UInt i=0; i<lat-1; ++i) {
-                   ~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:434:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     for (UInt i=0; i<lat*lon; ++i) {
-                    ~^~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C: In member function ‘void ESMCI::GeomRend::build_dst_mig(Zoltan_Struct*, ESMCI::GeomRend::ZoltanUD&, int, ZOLTAN_ID_PTR, ZOLTAN_ID_PTR, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:769:24: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     for (UInt i = 0; i < nd_size; i++) {
-                      ~~^~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C: In function ‘void ESMCI::build_pl_bbox(double*, double*, ESMCI::PointList*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:355:24: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-     for (UInt d = 0; d < sdim; d++) {
-                      ~~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C: In member function ‘void ESMCI::HAdapt::refinement_resolution() const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:303:43: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘const int’ [-Wsign-compare]
-           for (UInt sn = 0; !constr && sn != etopo->num_side_nodes; ++sn) {
-                                        ~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C: In member function ‘void ESMCI::CommRel::map_proc_numbers(int, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:1247:20: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+     if ((orig_proc < 0) || (orig_proc > num_procs-1)) {
+          ~~~~~~~~~~^~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:1247:39: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     if ((orig_proc < 0) || (orig_proc > num_procs-1)) {
+                             ~~~~~~~~~~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:1273:20: warning: comparison of unsigned expression < 0 is always false [-Wtype-limits]
+     if ((orig_proc < 0) || (orig_proc > num_procs-1)) {
+          ~~~~~~~~~~^~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommRel.C:1273:39: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     if ((orig_proc < 0) || (orig_proc > num_procs-1)) {
+                             ~~~~~~~~~~^~~~~~~~~~~~~
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
@@ -5159,58 +5524,22 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C: In function ‘void ESMCI::concat_meshes(const ESMCI::Mesh&, const ESMCI::Mesh&, ESMCI::Mesh&, const ESMCI::Mesh&, const ESMCI::Mesh&, ESMCI::SearchResult&, ESMCI::interp_mapp)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:634:26: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-       for (UInt n = 0; n < subject_num_nodes; n++) {
-                        ~~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:815:33: warning: format ‘%d’ expects argument of type ‘int’, but argument 4 has type ‘ESMCI::MeshObj::id_type’ {aka ‘long int’} [-Wformat=]
-                     sprintf(msg,"%selem Id: %d clip_elem Id: %d\n", msg, elem.get_id(), clip_elem.get_id());
-                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~       ~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:815:33: warning: format ‘%d’ expects argument of type ‘int’, but argument 5 has type ‘ESMCI::MeshObj::id_type’ {aka ‘long int’} [-Wformat=]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:815:29: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
-                     sprintf(msg,"%selem Id: %d clip_elem Id: %d\n", msg, elem.get_id(), clip_elem.get_id());
-                             ^~~                                     ~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:818:66: warning: passing argument 1 to restrict-qualified parameter aliases with argument 3 [-Wrestrict]
-                       for(int npt=0; npt<num_p*2; npt++) sprintf(msg,"%s %g", msg, cd_sph[npt]);
-                                                                  ^~~          ~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C: In function ‘void ESMCI::diff_meshes(const ESMCI::Mesh&, const ESMCI::Mesh&, ESMCI::Mesh&, const ESMCI::Mesh&, const ESMCI::Mesh&, ESMCI::SearchResult&, ESMCI::interp_mapp, double)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:1220:26: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-       for (UInt n = 0; n < subject_num_nodes; n++) {
-                        ~~^~~~~~~~~~~~~~~~~~~
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C:13:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C: In function ‘bool ESMCI::MeshObjConn::get_obj_nodes(const ESMCI::MeshObj&, std::vector<ESMCI::MeshObj*>&, bool)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:396:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
-     for (UInt i = 0; i < npe; i++)
-     ^~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:398:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
-       return true;
-       ^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C: In function ‘void ESMCI::MeshObjConn::get_shared_procs(const ESMCI::MeshObj&, const ESMCI::CommRel&, std::vector<unsigned int>&, bool)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:496:7: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
-       for (; (cl != ce && cl->obj == *ni) && cl->processor < procs[i]; cl++);
-       ^~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:497:8: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
-        if ((cl != ce && cl->obj == *ni) && cl->processor == procs[i]) {
-        ^~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C: In function ‘void ESMCI::MeshObjConn::get_node_support(const ESMCI::MeshObj&, const ESMCI::MeshObjTopo*&, ESMCI::UInt&, std::vector<ESMCI::MeshObj*>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:969:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
-     for (UInt n = 0; n < etopo->num_nodes; n++)
-     ^~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:973:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
-       topo = etopo;
-       ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C: In function ‘void ESMCI::build_pl_bbox(double*, double*, ESMCI::PointList*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_BBox.C:373:24: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     for (UInt d = 0; d < sdim; d++) {
+                      ~~^~~~~~
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
@@ -5247,22 +5576,57 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C: In function ‘void ESMCI::concat_meshes(const ESMCI::Mesh&, const ESMCI::Mesh&, ESMCI::Mesh&, const ESMCI::Mesh&, const ESMCI::Mesh&, ESMCI::SearchResult&, ESMCI::interp_mapp)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:815:33: warning: ‘elem Id: ’ directive writing 9 bytes into a region of size between 1 and 1024 [-Wformat-overflow=]
-                     sprintf(msg,"%selem Id: %d clip_elem Id: %d\n", msg, elem.get_id(), clip_elem.get_id());
-                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:815:33: note: using the range [-2147483648, 2147483647] for directive argument
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:815:33: note: using the range [-2147483648, 2147483647] for directive argument
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:815:28: note: ‘sprintf’ output between 28 and 1071 bytes into a destination of size 1024
-                     sprintf(msg,"%selem Id: %d clip_elem Id: %d\n", msg, elem.get_id(), clip_elem.get_id());
-                     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:818:70: warning: ‘%g’ directive writing between 1 and 13 bytes into a region of size between 0 and 1023 [-Wformat-overflow=]
-                       for(int npt=0; npt<num_p*2; npt++) sprintf(msg,"%s %g", msg, cd_sph[npt]);
-                                                                      ^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:818:70: note: assuming directive output of 12 bytes
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:818:65: note: ‘sprintf’ output between 3 and 1038 bytes into a destination of size 1024
-                       for(int npt=0; npt<num_p*2; npt++) sprintf(msg,"%s %g", msg, cd_sph[npt]);
-                                                          ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C: In function ‘bool ESMCI::MeshObjConn::get_obj_nodes(const ESMCI::MeshObj&, std::vector<ESMCI::MeshObj*>&, bool)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:396:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+     for (UInt i = 0; i < npe; i++)
+     ^~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:398:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+       return true;
+       ^~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C: In function ‘void ESMCI::MeshObjConn::get_shared_procs(const ESMCI::MeshObj&, const ESMCI::CommRel&, std::vector<unsigned int>&, bool)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:496:7: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+       for (; (cl != ce && cl->obj == *ni) && cl->processor < procs[i]; cl++);
+       ^~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:497:8: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+        if ((cl != ce && cl->obj == *ni) && cl->processor == procs[i]) {
+        ^~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C: In function ‘void ESMCI::MeshObjConn::get_node_support(const ESMCI::MeshObj&, const ESMCI::MeshObjTopo*&, ESMCI::UInt&, std::vector<ESMCI::MeshObj*>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:969:5: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
+     for (UInt n = 0; n < etopo->num_nodes; n++)
+     ^~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshObjConn.C:973:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+       topo = etopo;
+       ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C: In member function ‘void ESMCI::HAdapt::refinement_resolution() const’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_HAdapt.C:303:43: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘const int’ [-Wsign-compare]
+           for (UInt sn = 0; !constr && sn != etopo->num_side_nodes; ++sn) {
+                                        ~~~^~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C: In function ‘void ESMCI::Cart2D(ESMCI::Mesh&, int, int, double, double, double, double)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:359:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     for (UInt i=0; i<X*Y; ++i) {
+                    ~^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:366:20: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     for(UInt j=0; j<Y-1; ++j) {
+                   ~^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:367:20: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     for(UInt i=0; i<X-1; ++i) {
+                   ~^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:384:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     for (UInt i=0; i<X*Y; ++i) {
+                    ~^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C: In function ‘void ESMCI::SphShell(ESMCI::Mesh&, int, int, double, double, double, double)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:403:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     for (UInt i=0; i<lat*lon; ++i) {
+                    ~^~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:410:20: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     for(UInt j=0; j<lon-1; ++j) {
+                   ~^~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:411:20: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     for(UInt i=0; i<lat-1; ++i) {
+                   ~^~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C:434:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     for (UInt i=0; i<lat*lon; ++i) {
+                    ~^~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C: In function ‘void ESMCI::retrieve_nodes(ESMCI::MeshObj&, const ESMCI::MeshObjTopo*, std::vector<ESMCI::MeshObj*>&)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:146:55: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘const int’ [-Wsign-compare]
        for (UInt i = topo->num_nodes; !need_edges && i < topo->num_child_nodes; i++)
@@ -5270,6 +5634,52 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshRefine.C:150:28: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘const int’ [-Wsign-compare]
          for (UInt s = 0; s < topo->num_edges; s++) {
                           ~~^~~~~~~~~~~~~~~~~
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h: In constructor ‘ESMCI::GeomRend::GeomRend(ESMCI::Mesh*, ESMCI::PointList*, ESMCI::Mesh*, ESMCI::PointList*, const ESMCI::GeomRend::DstConfig&, bool, bool)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:166:8: warning: ‘ESMCI::GeomRend::freeze_src’ will be initialized after [-Wreorder]
+   bool freeze_src;  // true if src mesh will not be migrated to create src rendezvous mesh
+        ^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:154:14: warning:   ‘ESMCI::PointList* ESMCI::GeomRend::srcplist_rend’ [-Wreorder]
+   PointList *srcplist_rend;
+              ^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:182:3: warning:   when initialized here [-Wreorder]
+   GeomRend::GeomRend(Mesh *_srcmesh, PointList *_srcplist,
+   ^~~~~~~~
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:169:8: warning: ‘ESMCI::GeomRend::on_sph’ will be initialized after [-Wreorder]
+   bool on_sph;
+        ^~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:103:7: warning:   ‘int ESMCI::GeomRend::status’ [-Wreorder]
+   int status;
+       ^~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:182:3: warning:   when initialized here [-Wreorder]
+   GeomRend::GeomRend(Mesh *_srcmesh, PointList *_srcplist,
+   ^~~~~~~~
+In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_List.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshObj.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshDB.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommRel.h:18,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_CommReg.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:12:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:217:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+   ThrowRequire(sdim == dst_dim);
+                ~~~~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_Exception.h:107:29: note: in definition of macro ‘ThrowRequire’
+ #define ThrowRequire(cond) (cond ? (void) 0 : throw Ex() << "Condition {" << #cond << "} failed at " << __FILE__ << ", line:" << __LINE__)
+                             ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C: In member function ‘void ESMCI::GeomRend::build_dst_mig(Zoltan_Struct*, ESMCI::GeomRend::ZoltanUD&, int, ZOLTAN_ID_PTR, ZOLTAN_ID_PTR, int*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C:769:24: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+     for (UInt i = 0; i < nd_size; i++) {
+                      ~~^~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C: In function ‘void ESMCI::concat_meshes(const ESMCI::Mesh&, const ESMCI::Mesh&, ESMCI::Mesh&, const ESMCI::Mesh&, const ESMCI::Mesh&, ESMCI::SearchResult&, ESMCI::interp_mapp)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:707:26: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+       for (UInt n = 0; n < subject_num_nodes; n++) {
+                        ~~^~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C: In function ‘void ESMCI::diff_meshes(const ESMCI::Mesh&, const ESMCI::Mesh&, ESMCI::Mesh&, const ESMCI::Mesh&, const ESMCI::Mesh&, ESMCI::SearchResult&, ESMCI::interp_mapp, double)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C:1439:26: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+       for (UInt n = 0; n < subject_num_nodes; n++) {
+                        ~~^~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FindPnts.C: In function ‘int ESMCI::found_func(void*, void*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FindPnts.C:228:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
        for (int i=0; i< mme->num_functions(); i++) {
@@ -5357,9 +5767,19 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:16,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Integrate.C:13:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:15:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:14:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -5383,7 +5803,32 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:15:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h:17,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Integrate.C:13:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:16,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:12:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:12:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -5394,9 +5839,8 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:14:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:13:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -5428,12 +5872,10 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:12:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:12:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -5441,10 +5883,10 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:17:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestLGC.C:12:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -5455,11 +5897,10 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h:15,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:14:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:12:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -5467,10 +5908,9 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:17:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:12:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -5478,22 +5918,10 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:17:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:14:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:12:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -5528,19 +5956,6 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ExtrapolationPoleLGC.C:382:16: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘ESMCI::MeshObj::id_type’ {aka ‘long int’} [-Wformat=]
          printf("elem.id=%d pole_side=%d\n",elem.get_id(),pole_side);
                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~ ~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C: In function ‘void ESMCI::ParSearchNearestDstToSrc(const ESMCI::Mesh&, const ESMCI::Mesh&, int, ESMCI::SearchResult&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:520:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   for (int i=0; i<src_nlist.size(); i++) {
-                 ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:565:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<src_nlist.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:566:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int j=0; j<proc_lists[i].size(); j++) {
-                     ~^~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:638:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int j=0; j<snd_inds[i].size(); j++) {
-                   ~^~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_make_nbr_elems_cntrclk_2D_2D_cart(double*, std::vector<ESMCI::NBR_ELEM>*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:164:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int n=0; n<nbrs->size(); n++) {
@@ -5548,37 +5963,25 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:171:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
        if (elem_id > max_nbr_id) {
            ~~~~~~~~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:752:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   for (int i=0; i< rcv_pets.size(); i++) {
-                 ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:773:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   for (int i=0; i< rcv_pets.size(); i++) {
-                 ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:775:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CommData>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int j=0; j<rcv_results[i].size(); j++) {
-                   ~^~~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:203:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int n=0; n<nbrs->size(); n++) {
                    ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:836:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   for (int i=0; i<src_nlist.size(); i++) {
-                 ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_2D_cart_orig(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:98:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:111:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:127:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:156:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_calc_centroid_from_sm_cells_2D_2D_cart(std::vector<ESMCI::SM_CELL>*, double*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:228:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::SM_CELL>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sm_cells->size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_2D_cart_orig(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:94:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:107:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:123:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:152:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
                    ~^~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘bool ESMCI::_set_grad_info_using_greens_2D_2D_cart(double*, double*, std::vector<ESMCI::NBR_ELEM>*, int)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:260:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
@@ -5593,10 +5996,6 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:324:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<nbrs->size(); i++) {
                    ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C: In function ‘void ESMCI::SearchNearestSrcToDstNPnts(const ESMCI::PointList&, const ESMCI::PointList&, int, int, ESMCI::SearchResult&, bool, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:324:12: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-   if (sdim != dst_pl.get_coord_dim()) {
-       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_set_grad_info_to_0_2D_2D_cart(double*, double*, std::vector<ESMCI::NBR_ELEM>*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:350:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<nbrs->size(); i++) {
@@ -5605,47 +6004,73 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:373:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int n=0; n<nbrs->size(); n++) {
                    ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:335:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-   for (UInt p = 0; p < num_nodes_to_search; ++p) {
-                    ~~^~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:372:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-   for (UInt p = 0; p < dst_size; ++p) {
-                    ~~^~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘bool ESMCI::_is_src_cntr_in_nbr_poly_2D_2D_cart(double*, std::vector<ESMCI::NBR_ELEM>*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:407:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<nbrs->size(); i++) {
                    ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C: In function ‘void ESMCI::_create_pointlist_of_mesh_nodes_not_in_wmat(ESMCI::Mesh*, ESMCI::WMat&, ESMCI::PointList**)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:132:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id <node_id)) {
+                           ~~~~~~~~~~~~~^~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:138:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id != node_id) {
+         ~~~~~~~~~~~~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:172:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id <node_id)) {
+                           ~~~~~~~~~~~~~^~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:177:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id != node_id) {
+         ~~~~~~~~~~~~~^~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::calc_2nd_order_weights_2D_2D_cart(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<ESMCI::HC_WGHT>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<ESMCI::SM_CELL>*, std::vector<ESMCI::NBR_ELEM>*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:559:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::SM_CELL>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sm_cells->size(); i++) {
                    ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C: In function ‘void ESMCI::_create_pointlist_of_points_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, ESMCI::PointList**)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:531:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C: In function ‘void ESMCI::_create_pointlist_of_mesh_nodes_in_wmat(ESMCI::Mesh*, ESMCI::WMat&, ESMCI::PointList**)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:223:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id <node_id)) {
+                           ~~~~~~~~~~~~~^~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:228:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id == node_id) {
+         ~~~~~~~~~~~~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:262:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id <node_id)) {
+                           ~~~~~~~~~~~~~^~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:267:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id == node_id) {
+         ~~~~~~~~~~~~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C: In function ‘void ESMCI::_create_pointlist_of_points_not_in_wmat(ESMCI::PointList*, ESMCI::WMat&, ESMCI::PointList**)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:313:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
      while ((wi != we) && (wi->first.id < id)) {
                            ~~~~~~~~~~~~~^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:536:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:318:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
      if (wi->first.id != id) {
          ~~~~~~~~~~~~~^~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:555:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:337:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
      while ((wi != we) && (wi->first.id < id)) {
                            ~~~~~~~~~~~~~^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:560:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:342:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
      if (wi->first.id != id) {
          ~~~~~~~~~~~~~^~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C: In function ‘void ESMCI::_replace_mapped_with_mapped_extrap(ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:579:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-      for (int i = 0; i < col.size(); ++i) {
-                      ~~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C: In function ‘void ESMCI::ParSearchNearestSrcToDstNPnts(const ESMCI::PointList&, const ESMCI::PointList&, int, int, ESMCI::SearchResult&, bool, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:507:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-   for (UInt p = 0; p < num_nodes_to_search; ++p) {
-                    ~~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C: In function ‘void ESMCI::_create_pointlist_of_points_in_wmat(ESMCI::PointList*, ESMCI::WMat&, ESMCI::PointList**)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:370:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id < id)) {
+                           ~~~~~~~~~~~~~^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:375:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id == id) {
+         ~~~~~~~~~~~~~^~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:593:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int n=0; n<nbrs->size(); n++) {
                      ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:550:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-   for (UInt p = 0; p < dst_size; ++p) {
-                    ~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:394:40: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     while ((wi != we) && (wi->first.id < id)) {
+                           ~~~~~~~~~~~~~^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:399:22: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+     if (wi->first.id == id) {
+         ~~~~~~~~~~~~~^~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C: In function ‘void ESMCI::_replace_mapped_with_mapped_extrap(ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:419:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+      for (int i = 0; i < col.size(); ++i) {
+                      ~~^~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_make_nbr_elems_cntrclk(double*, std::vector<ESMCI::NBR_ELEM>*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:743:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int n=0; n<nbrs->size(); n++) {
@@ -5653,15 +6078,9 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:750:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
        if (elem_id > max_nbr_id) {
            ~~~~~~~~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:606:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int j=0; j<proc_lists[i].size(); j++) {
-                     ~^~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:787:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int n=0; n<nbrs->size(); n++) {
                    ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:674:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int j=0; j<snd_inds[i].size(); j++) {
-                   ~^~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_calc_centroid_from_sm_cells(std::vector<ESMCI::SM_CELL>*, double*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:812:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::SM_CELL>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sm_cells->size(); i++) {
@@ -5676,54 +6095,34 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:899:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<nbrs->size(); i++) {
                    ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C: In member function ‘void ESMCI::WMat::InsertRowMerge(const ESMCI::WMat::Entry&, const std::vector<ESMCI::WMat::Entry>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:278:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=1; i<tmp_cols.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C: In function ‘int ESMCI::found_func(void*, void*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:273:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
-       for (int i=0; i< mme->num_functions(); i++) {
-                     ~^~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:285:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:301:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:941:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<nbrs->size(); i++) {
                    ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_2D_cart_src_pnts(int, double*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:443:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:475:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_set_grad_info_to_0(double*, double*, std::vector<ESMCI::NBR_ELEM>*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1071:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<nbrs->size(); i++) {
                    ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In member function ‘ESMCI::UInt ESMCI::CreepNode::packed_size()’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:172:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<ESMCI::CreepNode*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int dl=0; dl < donors.size(); dl++) {
-                      ~~~^~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::_debug_calc_gradient(double*, double*, std::vector<ESMCI::NBR_ELEM>*, double (*)(double*), double*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1095:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int n=0; n<nbrs->size(); n++) {
                    ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In member function ‘void ESMCI::CreepNode::pack(ESMCI::UChar*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:215:25: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<ESMCI::CreepNode*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int dl=0; dl < donors.size(); dl++) {
-                      ~~~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:222:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-         for (int i=0; i<donors[dl].size(); i++) {
-                       ~^~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:830:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CommDataBack>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int j=0; j<rcv_results_array[i].size(); j++) {
-                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘bool ESMCI::_is_src_cntr_in_nbr_poly_2D_3D_sph(double*, std::vector<ESMCI::NBR_ELEM>*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1131:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<nbrs->size(); i++) {
                    ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In member function ‘void ESMCI::CreepNode::add_donor(int, ESMCI::CreepNode*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:286:17: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<ESMCI::CreepNode*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       if (level >= donors.size()) {
-           ~~~~~~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C: In function ‘void ESMCI::_dst_merge_creep_wts_into_regrid_wts(ESMCI::Mesh&, ESMCI::WMat&, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:668:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-      for (int i=0; i<cw_cols.size(); i++) {
-                    ~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:292:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<donors[level].size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C: In function ‘void ESMCI::calc_2nd_order_weights_2D_3D_sph(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<ESMCI::HC_WGHT>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<ESMCI::SM_CELL>*, std::vector<ESMCI::NBR_ELEM>*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1305:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::SM_CELL>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sm_cells->size(); i++) {
@@ -5731,36 +6130,89 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C:1339:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::NBR_ELEM>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int n=0; n<nbrs->size(); n++) {
                      ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:697:25: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
-          if (tmp_row.id == id) {
-              ~~~~~~~~~~~^~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_MeshRegrid.C:710:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-        for (int j=0; j<tmp_cols.size(); j++) {
-                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::CreepFill(ESMCI::Mesh&, std::vector<int>&, int, int, ESMCI::WMat&, bool, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:351:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<valid_gids.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:280:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:296:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_2D_cart_src_pnts(int, double*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:438:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:470:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_2D_cart(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:691:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:696:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<dst_elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:703:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:708:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<dst_elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C: In function ‘void ESMCI::_prune_wts_after_dtod_stod_merge(Type&, ESMCI::WMat&) [with Type = ESMCI::PointList]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:515:42: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+       while ((wi != we) && (wi->first.id < id)) {
+                             ~~~~~~~~~~~~~^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:531:24: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+       if (wi->first.id == id) {
+           ~~~~~~~~~~~~~^~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C: In function ‘int ESMCI::found_func(void*, void*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:273:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+       for (int i=0; i< mme->num_functions(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:822:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:848:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C: In member function ‘void ESMCI::WMat::InsertRowMerge(const ESMCI::WMat::Entry&, const std::vector<ESMCI::WMat::Entry>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C:278:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=1; i<tmp_cols.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_3D_sph_orig(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:943:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:957:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:975:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1004:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1204:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1220:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_3D_sph_src_pnts(int, double*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1358:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1393:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_3D_sph(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1639:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1651:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1780:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1806:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_3D_3D_cart(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2236:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2252:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<dst_elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2272:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2346:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2361:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<dst_elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C: In function ‘void ESMCI::ClampPCoords(int, ESMCI::SearchResult&)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:720:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
            for (int i= 0; i<sr->nodes.size(); i++) {
@@ -5768,320 +6220,414 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:752:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
            for (int i= 0; i<sr->nodes.size(); i++) {
                           ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C: In function ‘void ESMCI::ParSearchNearestDstToSrc(const ESMCI::Mesh&, const ESMCI::Mesh&, int, ESMCI::SearchResult&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:520:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   for (int i=0; i<src_nlist.size(); i++) {
+                 ~^~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:781:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
            for (int i= 0; i<sr->nodes.size(); i++) {
                           ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:817:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:843:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:565:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<src_nlist.size(); i++) {
                    ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C: In function ‘void ESMCI::OctSearch(const ESMCI::Mesh&, ESMCI::PointList&, ESMCI::MAP_TYPE, ESMCI::UInt, int, ESMCI::SearchResult&, bool, ESMCI::WMat&, double, std::vector<int>*, ESMCI::OTree*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:825:12: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
-   if (sdim != dst_pl.get_coord_dim()) {
-       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_3D_sph_orig(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:937:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:951:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:969:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:998:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1139:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1155:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_3D_sph_src_pnts(int, double*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1287:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1319:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_2D_3D_sph(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, std::vector<int>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1549:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1561:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1686:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:1712:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C: In function ‘void ESMCI::calc_1st_order_weights_3D_3D_cart(const ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, std::vector<const ESMCI::MeshObj*>, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MEField<ESMCI::_field>*, double*, std::vector<int>*, std::vector<double>*, std::vector<double>*, std::vector<double>*, ESMCI::Mesh*, std::vector<ESMCI::sintd_node*>*, std::vector<ESMCI::sintd_cell*>*, ESMCI::interp_mapp, Zoltan_Struct*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2142:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2158:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<dst_elems.size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2178:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2252:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C:2267:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<dst_elems.size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:391:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<creep_levels[l-1].size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_convert_creep_levels_to_weights(int, std::vector<ESMCI::CreepNode*>*, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:546:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   for (int i=0; i<creep_levels[1].size(); i++) {
-                 ~^~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:568:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<creep_levels[l].size(); i++) {
-                   ~^~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_calc_donor_weights_from_CreepNode(ESMCI::CreepNode*, std::vector<ESMCI::WMat::Entry>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:750:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int d=0; d<cnode->donors[dl].size(); d++) {
-                   ~^~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_convert_creep_levels_to_dst_status(int, std::vector<ESMCI::CreepNode*>*, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:778:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int i=0; i<creep_levels[l].size(); i++) {
-                     ~^~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_replace_src_ids_in_cols_with_their_weights(std::vector<ESMCI::WMat::Entry>&, ESMCI::WMat&, std::vector<ESMCI::WMat::Entry>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:810:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<cols.size(); i++) {
-                   ~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:830:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int j=0; j<tmp_cols.size(); j++) {
-                     ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_get_node_nbrs_in_elem(ESMCI::MeshObj*, ESMCI::MeshObj*, ESMCI::MeshObj**, ESMCI::MeshObj**)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:851:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const UInt’ {aka ‘const unsigned int’} [-Wsign-compare]
-    for (int s = 0; s < topo->num_nodes; s++) {
-                    ~~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:874:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
-    if (node_ind==topo->num_nodes-1) {
-        ~~~~~~~~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_recursively_add_CreepNode_to_snd_lists(ESMCI::CreepNode*, std::vector<unsigned int>&, std::vector<ESMCI::CreepNode*>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:886:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int p=0; p<shared_procs.size(); p++) {
-                   ~^~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:891:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::vector<ESMCI::CreepNode*> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int dl=0; dl<cnode->donors.size(); dl++) {
-                    ~~^~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:892:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       for (int d=0; d<cnode->donors[dl].size(); d++) {
-                     ~^~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_propagate_level_to_other_procs(ESMCI::Mesh&, std::vector<ESMCI::CreepNode*>&, std::map<int, ESMCI::CreepNode>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:915:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<level.size(); i++) {
-                   ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:975:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-         for (int i=0; i<snd_to_procs[p].size(); i++) {
-                       ~^~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_write_level(const char*, ESMCI::Mesh&, std::vector<ESMCI::CreepNode*>&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:1081:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for (int i=0; i<level.size(); i++) {
-                   ~^~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In constructor ‘ESMCI::dof_add_col::dof_add_col(std::vector<ESMCI::WMat::Entry>&, ESMCI::UInt, double*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:640:6: warning: ‘ESMCI::dof_add_col::fdim’ will be initialized after [-Wreorder]
- UInt fdim;
-      ^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:639:9: warning:   ‘double* ESMCI::dof_add_col::sens’ [-Wreorder]
- double *sens;
-         ^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:614:1: warning:   when initialized here [-Wreorder]
- dof_add_col(std::vector<IWeights::Entry> &_col, UInt _fdim, double *_sens) :
- ^~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In function ‘void ESMCI::calc_2nd_order_conserve_mat_serial_2D_3D_sph(ESMCI::Mesh&, ESMCI::Mesh&, ESMCI::Mesh*, ESMCI::SearchResult&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&, Zoltan_Struct*, bool, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:828:25: warning: comparison of integer expressions of different signedness: ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:566:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int j=0; j<proc_lists[i].size(); j++) {
+                     ~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:638:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int j=0; j<snd_inds[i].size(); j++) {
+                   ~^~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In function ‘void ESMCI::calc_max_overlap(ESMCI::Mesh&, double&, int&, int&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:297:25: warning: comparison of integer expressions of different signedness: ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
      if (sr.elems.size() > max_num_dst_elems) max_num_dst_elems=sr.elems.size();
          ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:903:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:381:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:916:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:391:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:929:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:401:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<sr.elems.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:752:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   for (int i=0; i< rcv_pets.size(); i++) {
+                 ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:773:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   for (int i=0; i< rcv_pets.size(); i++) {
+                 ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:775:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CommData>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int j=0; j<rcv_results[i].size(); j++) {
+                   ~^~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestDToSLGC.C:836:18: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+   for (int i=0; i<src_nlist.size(); i++) {
+                 ~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C: In function ‘void ESMCI::_get_elem_and_pcoord_from_node(ESMCI::MeshObj*, ESMCI::MEField<ESMCI::_field>*, ESMCI::MeshObj**, bool*, double*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:948:19: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+       if (elem_id < min_elem_id) {
+           ~~~~~~~~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:973:21: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+         if (elem_id < min_elem_id) {
+             ~~~~~~~~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C: In function ‘void ESMCI::OctSearchInexact(const ESMCI::Mesh&, ESMCI::PointList&, ESMCI::MAP_TYPE, ESMCI::UInt, int, ESMCI::SearchResult&, bool, ESMCI::WMat&, double, std::vector<int>*, ESMCI::OTree*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:1172:12: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+   if (sdim != dst_pl.get_coord_dim()) {
+       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C: In function ‘void ESMCI::OctSearch(const ESMCI::Mesh&, ESMCI::PointList&, ESMCI::MAP_TYPE, ESMCI::UInt, int, ESMCI::SearchResult&, bool, ESMCI::WMat&, double)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C:1349:12: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+   if (sdim != dst_pl.get_coord_dim()) {
+       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C: In function ‘void ESMCI::SearchNearestSrcToDstNPnts(const ESMCI::PointList&, const ESMCI::PointList&, int, int, ESMCI::SearchResult&, bool, ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:324:12: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+   if (sdim != dst_pl.get_coord_dim()) {
+       ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:335:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+   for (UInt p = 0; p < num_nodes_to_search; ++p) {
+                    ~~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:372:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+   for (UInt p = 0; p < dst_size; ++p) {
+                    ~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C: In function ‘void ESMCI::ParSearchNearestSrcToDstNPnts(const ESMCI::PointList&, const ESMCI::PointList&, int, int, ESMCI::SearchResult&, bool, ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:507:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+   for (UInt p = 0; p < num_nodes_to_search; ++p) {
+                    ~~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:550:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+   for (UInt p = 0; p < dst_size; ++p) {
+                    ~~^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:606:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int j=0; j<proc_lists[i].size(); j++) {
+                     ~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:674:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int j=0; j<snd_inds[i].size(); j++) {
+                   ~^~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C:830:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CommDataBack>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int j=0; j<rcv_results_array[i].size(); j++) {
+                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In constructor ‘ESMCI::dof_add_col::dof_add_col(std::vector<ESMCI::WMat::Entry>&, ESMCI::UInt, double*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:628:6: warning: ‘ESMCI::dof_add_col::fdim’ will be initialized after [-Wreorder]
+ UInt fdim;
+      ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:627:9: warning:   ‘double* ESMCI::dof_add_col::sens’ [-Wreorder]
+ double *sens;
+         ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:602:1: warning:   when initialized here [-Wreorder]
+ dof_add_col(std::vector<IWeights::Entry> &_col, UInt _fdim, double *_sens) :
+ ^~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C: In instantiation of ‘void ESMCI::_merge_dst_to_dst_wts_into_src_to_dst_wts(Type&, ESMCI::WMat&, ESMCI::WMat&) [with Type = ESMCI::Mesh]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:653:78:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:569:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+      for (int i=0; i<dw_cols.size(); i++) {
+                    ~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:598:25: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+          if (tmp_row.id == id) {
+              ~~~~~~~~~~~^~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:611:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+        for (int j=0; j<tmp_cols.size(); j++) {
+                      ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In function ‘void ESMCI::calc_2nd_order_conserve_mat_serial_2D_3D_sph(ESMCI::Mesh&, ESMCI::Mesh&, ESMCI::Mesh*, ESMCI::SearchResult&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&, Zoltan_Struct*, bool, ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:816:25: warning: comparison of integer expressions of different signedness: ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+     if (sr.elems.size() > max_num_dst_elems) max_num_dst_elems=sr.elems.size();
+         ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:627:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+      for (int i=1; i<new_cols.size(); i++) {
+                    ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:891:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sr.elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C: In instantiation of ‘void ESMCI::_merge_dst_to_dst_wts_into_src_to_dst_wts(Type&, ESMCI::WMat&, ESMCI::WMat&) [with Type = ESMCI::PointList]’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:656:78:   required from here
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:569:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+      for (int i=0; i<dw_cols.size(); i++) {
+                    ~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:904:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sr.elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:917:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
          for (int i=0; i<sr.elems.size(); i++) {
                        ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:956:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:598:25: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+          if (tmp_row.id == id) {
+              ~~~~~~~~~~~^~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:611:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+        for (int j=0; j<tmp_cols.size(); j++) {
+                      ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:944:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sr.elems.size(); i++) {
                    ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:995:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::HC_WGHT>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C:627:21: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+      for (int i=1; i<new_cols.size(); i++) {
+                    ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:983:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::HC_WGHT>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<wgts.size(); i++) {
                      ~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1012:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::HC_WGHT>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1000:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::HC_WGHT>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<wgts.size(); i++) {
                    ~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1033:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1021:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sr.elems.size(); i++) {
                    ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1052:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1040:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1070:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1058:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sr.elems.size(); i++) {
                    ~^~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In function ‘void ESMCI::calc_2nd_order_conserve_mat_serial_2D_2D_cart(ESMCI::Mesh&, ESMCI::Mesh&, ESMCI::Mesh*, ESMCI::SearchResult&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&, Zoltan_Struct*, bool, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1146:25: warning: comparison of integer expressions of different signedness: ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1134:25: warning: comparison of integer expressions of different signedness: ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
      if (sr.elems.size() > max_num_dst_elems) max_num_dst_elems=sr.elems.size();
          ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1221:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1209:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1234:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1222:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1247:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1235:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
          for (int i=0; i<sr.elems.size(); i++) {
                        ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1274:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1262:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sr.elems.size(); i++) {
                    ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1313:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::HC_WGHT>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1301:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::HC_WGHT>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<wgts.size(); i++) {
                      ~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1330:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::HC_WGHT>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1318:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::HC_WGHT>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<wgts.size(); i++) {
                    ~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1351:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1339:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sr.elems.size(); i++) {
                    ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1370:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1358:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1388:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1376:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sr.elems.size(); i++) {
                    ~^~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In function ‘void ESMCI::calc_conserve_mat_serial_2D_2D_cart(ESMCI::Mesh&, ESMCI::Mesh&, ESMCI::Mesh*, ESMCI::SearchResult&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&, Zoltan_Struct*, bool, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1541:25: warning: comparison of integer expressions of different signedness: ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1529:25: warning: comparison of integer expressions of different signedness: ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
      if (sr.elems.size() > max_num_dst_elems) max_num_dst_elems=sr.elems.size();
          ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1597:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1585:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1607:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1595:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1620:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1608:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
          for (int i=0; i<sr.elems.size(); i++) {
                        ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1639:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1627:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sr.elems.size(); i++) {
                    ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1656:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1644:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sr.elems.size(); i++) {
                    ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1680:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1668:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
          for (int i=0; i<sr.elems.size(); i++) {
                        ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1698:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1686:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
          for (int i=0; i<sr.elems.size(); i++) {
                        ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1724:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1712:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In function ‘void ESMCI::calc_conserve_mat_serial_2D_3D_sph(ESMCI::Mesh&, ESMCI::Mesh&, ESMCI::Mesh*, ESMCI::SearchResult&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&, Zoltan_Struct*, bool, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1827:25: warning: comparison of integer expressions of different signedness: ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1843:25: warning: comparison of integer expressions of different signedness: ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
      if (sr.elems.size() > max_num_dst_elems) max_num_dst_elems=sr.elems.size();
          ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1882:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1911:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1892:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1921:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1905:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1934:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<sr.elems.size(); i++) {
+                     ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1950:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
          for (int i=0; i<sr.elems.size(); i++) {
                        ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1925:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1970:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sr.elems.size(); i++) {
                    ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1943:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1988:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sr.elems.size(); i++) {
                    ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1967:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2012:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
          for (int i=0; i<sr.elems.size(); i++) {
                        ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:1986:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2031:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
          for (int i=0; i<sr.elems.size(); i++) {
                        ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2012:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-        for (int i=0; i<sr.elems.size(); i++) {
-                      ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2059:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int i=0; i<sr.elems.size(); i++) {
+                       ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2085:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+             for (int i=0; i<sr.elems.size(); i++) {
+                           ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2108:30: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+               for (int i=0; i<sr.elems.size(); i++) {
+                             ~^~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2127:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+           for (int i=0; i<sr.elems.size(); i++) {
+                         ~^~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In function ‘void ESMCI::calc_conserve_mat_serial_3D_3D_cart(ESMCI::Mesh&, ESMCI::Mesh&, ESMCI::Mesh*, ESMCI::SearchResult&, ESMCI::IWeights&, ESMCI::IWeights&, ESMCI::IWeights&, Zoltan_Struct*, bool, ESMCI::WMat&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2134:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2244:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2144:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2254:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2157:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2267:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
          for (int i=0; i<sr.elems.size(); i++) {
                        ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2177:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2287:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sr.elems.size(); i++) {
                    ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2195:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2305:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sr.elems.size(); i++) {
                    ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2218:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2328:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2237:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2347:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.elems.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2263:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2373:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<const ESMCI::MeshObj*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sr.elems.size(); i++) {
                    ~^~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In function ‘void ESMCI::calc_nearest_npnts_mat_serial(ESMCI::PointList*, ESMCI::PointList*, ESMC_R8, ESMCI::SearchResult&, ESMCI::IWeights&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2455:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2565:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<sr.nodes.size(); i++) {
                    ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2478:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2588:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.nodes.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2511:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2621:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Search_node_result>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        for (int i=0; i<sr.nodes.size(); i++) {
                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2541:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2651:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::WMat::Entry>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
      for (int i=0; i<cols.size(); i++) {
                    ~^~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In function ‘void ESMCI::mat_point_serial_transfer(ESMCI::MEField<ESMCI::_field>&, ESMCI::SearchResult&, ESMCI::IWeights&, ESMCI::PointList*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2603:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2713:26: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI::UInt’ {aka ‘unsigned int’} [-Wsign-compare]
      if (dstpointlist_dim != sfield.dim())
          ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
 In file included from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:12:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h: In constructor ‘ESMCI::Interp::Interp(ESMCI::Mesh*, ESMCI::PointList*, ESMCI::Mesh*, ESMCI::PointList*, ESMCI::Mesh*, bool, int, bool, ESMCI::WMat&, ESMCI::MAP_TYPE, int, int, ESMC_R8)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:207:14: warning: ‘ESMCI::Interp::dstpointlist’ will be initialized after [-Wreorder]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h: In constructor ‘ESMCI::Interp::Interp(ESMCI::Mesh*, ESMCI::PointList*, ESMCI::Mesh*, ESMCI::PointList*, ESMCI::Mesh*, bool, int, bool, ESMCI::WMat&, ESMCI::MAP_TYPE, int, bool, int, ESMC_R8)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:209:14: warning: ‘ESMCI::Interp::dstpointlist’ will be initialized after [-Wreorder]
    PointList *dstpointlist;
               ^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:205:14: warning:   ‘ESMCI::PointList* ESMCI::Interp::srcpointlist’ [-Wreorder]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:207:14: warning:   ‘ESMCI::PointList* ESMCI::Interp::srcpointlist’ [-Wreorder]
    PointList *srcpointlist;
               ^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2715:1: warning:   when initialized here [-Wreorder]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:2874:1: warning:   when initialized here [-Wreorder]
  Interp::Interp(Mesh *src, PointList *srcplist, Mesh *dest, PointList *dstplist, Mesh *midmesh,
  ^~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In member function ‘void ESMCI::Interp::interpL2csrvM_serial(const ESMCI::IWeights&, ESMCI::IWeights*, const ESMCI::MEField<ESMCI::_field>*, const ESMCI::MEField<ESMCI::_field>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:3271:29: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:3477:29: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
          if ((wi2->first).id == rowT) {
              ~~~~~~~~~~~~~~~~^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:3275:29: warning: comparison of integer expressions of different signedness: ‘ESMCI::WMat::Entry::id_type’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:3481:29: warning: comparison of integer expressions of different signedness: ‘ESMCI::WMat::Entry::id_type’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
              if(_col2[c2].id == colT) {
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C: In member function ‘void ESMCI::Interp::interpL2csrvM_parallel(ESMCI::IWeights&, ESMCI::IWeights*, const ESMCI::MEField<ESMCI::_field>*, const ESMCI::MEField<ESMCI::_field>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:3361:29: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:3567:29: warning: comparison of integer expressions of different signedness: ‘const id_type’ {aka ‘const unsigned int’} and ‘int’ [-Wsign-compare]
          if ((wi2->first).id == rowT) {
              ~~~~~~~~~~~~~~~~^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:3365:29: warning: comparison of integer expressions of different signedness: ‘ESMCI::WMat::Entry::id_type’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C:3571:29: warning: comparison of integer expressions of different signedness: ‘ESMCI::WMat::Entry::id_type’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
              if(_col2[c2].id == colT) {
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In member function ‘void ESMCI::CreepNode::pack(ESMCI::UChar*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:250:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<donors.size(); i++) {
+                     ~^~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:260:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<wgt_ids.size(); i++) {
+                     ~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In member function ‘void ESMCI::CreepNode::add_donor(ESMCI::CreepNode*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:324:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<donors.size(); i++) {
+                     ~^~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In member function ‘void ESMCI::CreepNode::add_weights_to_WMat(ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:370:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<wgt_ids.size(); i++) {
+                     ~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::CreepFill(ESMCI::Mesh&, std::vector<int>&, int, int, ESMCI::WMat&, bool, ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:430:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<valid_gids.size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:475:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<creep_levels[l-1].size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:634:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<creep_levels[num_creep_levels-1].size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_convert_creep_levels_to_WMat(int, std::vector<ESMCI::CreepNode*>*, ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:671:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<creep_levels[l].size(); i++) {
+                   ~^~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_calc_level_1_weights_from_CreepNode(ESMCI::CreepNode*, std::vector<int>&, std::vector<double>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:726:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int d=0; d<cnode->donors.size(); d++) {
+                   ~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_calc_level_gt1_weights_from_CreepNode(ESMCI::CreepNode*, std::vector<int>&, std::vector<double>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:856:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int d=0; d<cnode->donors.size(); d++) {
+                   ~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:874:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int d=0; d<cnode->donors.size(); d++) {
+                   ~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:880:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int w=0; w<dnr->wgt_ids.size(); w++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:894:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int j=0; j<wgt_ids.size(); j++) {
+                       ~^~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_convert_creep_levels_to_dst_status(int, std::vector<ESMCI::CreepNode*>*, ESMCI::WMat&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:929:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int i=0; i<creep_levels[l].size(); i++) {
+                     ~^~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_get_node_nbrs_in_elem(ESMCI::MeshObj*, ESMCI::MeshObj*, ESMCI::MeshObj**, ESMCI::MeshObj**)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:954:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const UInt’ {aka ‘const unsigned int’} [-Wsign-compare]
+    for (int s = 0; s < topo->num_nodes; s++) {
+                    ~~^~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:977:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘unsigned int’ [-Wsign-compare]
+    if (node_ind==topo->num_nodes-1) {
+        ~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_recursively_add_CreepNode_to_snd_lists(ESMCI::CreepNode*, ESMCI::UInt, std::vector<ESMCI::CreepNode*>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:995:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int d=0; d<cnode->donors.size(); d++) {
+                   ~^~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_propagate_level_to_other_procs(ESMCI::Mesh&, std::vector<ESMCI::CreepNode*>&, std::map<int, ESMCI::CreepNode>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:1021:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<level.size(); i++) {
+                   ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:1085:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int i=0; i<snd_to_procs[p].size(); i++) {
+                       ~^~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:1134:25: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+         if (packed_size > packed_buff_size) {
+             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:1165:25: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+         if (packed_size > packed_buff_size) {
+             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:1213:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<level.size(); i++) {
+                   ~^~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:1261:22: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<unsigned int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+       for (int p=0; p<shared_procs.size(); p++) {
+                     ~^~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:1286:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+         for (int i=0; i<snd_to_procs[p].size(); i++) {
+                       ~^~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:1325:25: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+         if (packed_size > packed_buff_size) {
+             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:1356:25: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+         if (packed_size > packed_buff_size) {
+             ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C: In function ‘void ESMCI::_write_level(const char*, ESMCI::Mesh&, std::vector<ESMCI::CreepNode*>&)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C:1414:20: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::CreepNode*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
+     for (int i=0; i<level.size(); i++) {
+                   ~^~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Zoltan/dr_elem.c: In function ‘int get_elem_info(int, E_Type, int)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Zoltan/dr_elem.c:372:7: warning: this statement may fall through [-Wimplicit-fallthrough=]
        switch (sid)
@@ -6309,16 +6855,6 @@ Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
              IF( X( IX ).NE.ZERO ) THEN
                 1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlalsd.F90:258:13:
-
-          IF( D( 1 ).EQ.ZERO ) THEN
-             1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlalsd.F90:298:10:
-
-       IF( ORGNRM.EQ.ZERO ) THEN
-          1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlarf.F90:165:10:
 
        IF( TAU.NE.ZERO ) THEN
@@ -6328,6 +6864,16 @@ Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
 
           DO WHILE( LASTV.GT.0 .AND. V( I ).EQ.ZERO )
                                    1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlalsd.F90:258:13:
+
+          IF( D( 1 ).EQ.ZERO ) THEN
+             1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlalsd.F90:298:10:
+
+       IF( ORGNRM.EQ.ZERO ) THEN
+          1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlasq1.F90:174:10:
 
@@ -6884,6 +7430,830 @@ Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
              IF( AU.EQ.ZERO ) THEN
                 1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dgeev.F90:460:16:
+
+             IF( WI( I ).EQ.ZERO ) THEN
+                1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dgeev.F90:490:16:
+
+             IF( WI( I ).EQ.ZERO ) THEN
+                1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dgebal.F90:267:16:
+
+             IF( A( J, I ).NE.ZERO ) &
+                1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dgebal.F90:289:16:
+
+             IF( A( I, J ).NE.ZERO ) &
+                1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dgebal.F90:329:27:
+
+          IF( C.EQ.ZERO .OR. R.EQ.ZERO ) &
+                           1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dgebal.F90:329:13:
+
+          IF( C.EQ.ZERO .OR. R.EQ.ZERO ) &
+             1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:339:25:
+
+                      IF( T( J+1, J ).EQ.ZERO ) THEN
+                         1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:438:21:
+
+             ELSE IF( T( KI, KI-1 ).EQ.ZERO ) THEN
+                     1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:489:25:
+
+                      IF( T( J, J-1 ).NE.ZERO ) THEN
+                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:515:25:
+
+                      IF( SCALE.NE.ONE ) &
+                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:547:25:
+
+                      IF( SCALE.NE.ONE ) &
+                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:635:25:
+
+                      IF( T( J, J-1 ).NE.ZERO ) THEN
+                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:662:25:
+
+                      IF( SCALE.NE.ONE ) THEN
+                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:702:25:
+
+                      IF( SCALE.NE.ONE ) THEN
+                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:862:21:
+
+             ELSE IF( T( KI+1, KI ).EQ.ZERO ) THEN
+                     1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:911:25:
+
+                      IF( T( J+1, J ).NE.ZERO ) THEN
+                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:943:25:
+
+                      IF( SCALE.NE.ONE ) &
+                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:982:25:
+
+                      IF( SCALE.NE.ONE ) &
+                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:1074:25:
+
+                      IF( T( J+1, J ).NE.ZERO ) THEN
+                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:1110:25:
+
+                      IF( SCALE.NE.ONE ) THEN
+                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:1162:25:
+
+                      IF( SCALE.NE.ONE ) THEN
+                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:438:28:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:429:29:
+
+          DO 140 KI = N, 1, -1
+                             2
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:438:28:
+
+             ELSE IF( T( KI, KI-1 ).EQ.ZERO ) THEN
+                            1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:451:35:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:429:29:
+
+          DO 140 KI = N, 1, -1
+                             2      
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:451:35:
+
+                   IF( .NOT.SELECT( KI-1 ) ) &
+                                   1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:461:38:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:429:29:
+
+          DO 140 KI = N, 1, -1
+                             2         
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:461:38:
+
+                WI = SQRT( ABS( T( KI, KI-1 ) ) )* &
+                                      1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:462:34:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:429:29:
+
+          DO 140 KI = N, 1, -1
+                             2     
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:462:34:
+
+                     SQRT( ABS( T( KI-1, KI ) ) )
+                                  1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:489:31:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:482:38:
+
+                DO 60 J = KI - 1, 1, -1
+                                      2
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:489:31:
+
+                      IF( T( J, J-1 ).NE.ZERO ) THEN
+                               1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:529:37:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:482:38:
+
+                DO 60 J = KI - 1, 1, -1
+                                      2
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:529:37:
+
+                                   T( J-1, J-1 ), LDT, ONE, ONE, &
+                                     1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:529:42:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:482:38:
+
+                DO 60 J = KI - 1, 1, -1
+                                      2    
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:529:42:
+
+                                   T( J-1, J-1 ), LDT, ONE, ONE, &
+                                          1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:537:42:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:482:38:
+
+                DO 60 J = KI - 1, 1, -1
+                                      2    
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:537:42:
+
+                         BETA = MAX( WORK( J-1 ), WORK( J ) )
+                                          1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:554:61:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:482:38:
+
+                DO 60 J = KI - 1, 1, -1
+                                      2                       
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:554:61:
+
+                      CALL DAXPY( J-2, -X( 1, 1 ), T( 1, J-1 ), 1, &
+                                                             1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:607:27:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:429:29:
+
+          DO 140 KI = N, 1, -1
+                             2
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:607:27:
+
+                IF( ABS( T( KI-1, KI ) ).GE.ABS( T( KI, KI-1 ) ) ) THEN
+                           1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:607:55:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:429:29:
+
+          DO 140 KI = N, 1, -1
+                             2                          
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:607:55:
+
+                IF( ABS( T( KI-1, KI ) ).GE.ABS( T( KI, KI-1 ) ) ) THEN
+                                                       1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:609:52:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:429:29:
+
+          DO 140 KI = N, 1, -1
+                             2                       
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:609:52:
+
+                   WORK( KI   + (IV  )*N ) = WI / T( KI-1, KI )
+                                                    1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:611:57:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:429:29:
+
+          DO 140 KI = N, 1, -1
+                             2                            
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:611:57:
+
+                   WORK( KI-1 + (IV-1)*N ) = -WI / T( KI, KI-1 )
+                                                         1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:620:66:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:429:29:
+
+          DO 140 KI = N, 1, -1
+                             2                                     
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:620:66:
+
+                   WORK( K+(IV-1)*N ) = -WORK( KI-1+(IV-1)*N )*T(K,KI-1)
+                                                                  1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:635:31:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:628:38:
+
+                DO 90 J = KI - 2, 1, -1
+                                      2
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:635:31:
+
+                      IF( T( J, J-1 ).NE.ZERO ) THEN
+                               1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:681:37:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:628:38:
+
+                DO 90 J = KI - 2, 1, -1
+                                      2
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:681:37:
+
+                                   T( J-1, J-1 ), LDT, ONE, ONE, &
+                                     1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:681:42:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:628:38:
+
+                DO 90 J = KI - 2, 1, -1
+                                      2    
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:681:42:
+
+                                   T( J-1, J-1 ), LDT, ONE, ONE, &
+                                          1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:689:42:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:628:38:
+
+                DO 90 J = KI - 2, 1, -1
+                                      2    
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:689:42:
+
+                         BETA = MAX( WORK( J-1 ), WORK( J ) )
+                                          1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:713:61:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:628:38:
+
+                DO 90 J = KI - 2, 1, -1
+                                      2                       
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:713:61:
+
+                      CALL DAXPY( J-2, -X( 1, 1 ), T( 1, J-1 ), 1, &
+                                                             1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:717:61:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:628:38:
+
+                DO 90 J = KI - 2, 1, -1
+                                      2                       
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:717:61:
+
+                      CALL DAXPY( J-2, -X( 1, 2 ), T( 1, J-1 ), 1, &
+                                                             1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:752:63:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:429:29:
+
+          DO 140 KI = N, 1, -1
+                             2                                  
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:752:63:
+
+                                  WORK( KI-1 + (IV-1)*N ), VR(1,KI-1), 1)
+                                                               1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:757:67:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:429:29:
+
+          DO 140 KI = N, 1, -1
+                             2                                      
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:757:67:
+
+                      CALL DSCAL( N, WORK(KI-1+(IV-1)*N), VR(1,KI-1), 1)
+                                                                   1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:763:51:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:429:29:
+
+          DO 140 KI = N, 1, -1
+                             2                      
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:763:51:
+
+                      EMAX = MAX( EMAX, ABS( VR( K, KI-1 ) )+ &
+                                                   1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:767:52:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:429:29:
+
+          DO 140 KI = N, 1, -1
+                             2                       
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrevc3.F90:767:52:
+
+                   CALL DSCAL( N, REMAX, VR( 1, KI-1 ), 1 )
+                                                    1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dgebak.F90:243:19:
+
+                K = SCALE( I )
+                   1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dgebak.F90:257:19:
+
+                K = SCALE( I )
+                   1
+Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1) [-Wconversion]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlahr2.F90:276:22:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlahr2.F90:226:21:
+
+       DO 10 I = 1, NB
+                     2 
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlahr2.F90:276:22:
+
+             A( K+I-1, I-1 ) = EI
+                      1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlahqr.F90:322:16:
+
+             IF( TST.EQ.ZERO ) THEN
+                1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlahqr.F90:396:13:
+
+          IF( S.EQ.ZERO ) THEN
+             1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr0.F90:456:19:
+
+                IF( H( K, K-1 ).EQ.ZERO ) &
+                   1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr0.F90:653:25:
+
+                      IF( WI( I ).NE.-WI( I-1 ) ) THEN
+                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr0.F90:672:22:
+
+                   IF( WI( KBOT ).EQ.ZERO ) THEN
+                      1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlanv2.F90:162:10:
+
+       IF( C.EQ.ZERO ) THEN
+          1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlanv2.F90:167:15:
+
+       ELSE IF( B.EQ.ZERO ) THEN
+               1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlanv2.F90:179:36:
+
+       ELSE IF( ( A-D ).EQ.ZERO .AND. SIGN( ONE, B ).NE.SIGN( ONE, C ) ) &
+                                    1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlanv2.F90:179:15:
+
+       ELSE IF( ( A-D ).EQ.ZERO .AND. SIGN( ONE, B ).NE.SIGN( ONE, C ) ) &
+               1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlanv2.F90:241:16:
+
+             IF( C.NE.ZERO ) THEN
+                1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlanv2.F90:242:19:
+
+                IF( B.NE.ZERO ) THEN
+                   1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlanv2.F90:243:22:
+
+                   IF( SIGN( ONE, B ).EQ.SIGN( ONE, C ) ) THEN
+                      1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlanv2.F90:279:10:
+
+       IF( C.EQ.ZERO ) THEN
+          1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dladiv.F90:242:10:
+
+       IF( R.NE.ZERO ) THEN
+          1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dladiv.F90:244:13:
+
+          IF( BR.NE.ZERO ) THEN
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr5.F90:326:13:
+
+          IF( SI( I ).NE.-SI( I+1 ) ) THEN
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr5.F90:434:31:
+
+                       ZERO .OR. H( K+3, K+2 ).EQ.ZERO ) THEN
+                               1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr5.F90:433:46:
+
+                   IF( H( K+3, K ).NE.ZERO .OR. H( K+3, K+1 ).NE. &
+                                              1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr5.F90:433:22:
+
+                   IF( H( K+3, K ).NE.ZERO .OR. H( K+3, K+1 ).NE. &
+                      1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr5.F90:548:19:
+
+                IF( V( 1, M ).NE.ZERO ) THEN
+                   1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr5.F90:593:20:
+
+                IF ( V( 1, M22 ).NE.ZERO ) THEN
+                    1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr5.F90:643:19:
+
+                IF( H( K+1, K ).NE.ZERO ) THEN
+                   1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr5.F90:645:22:
+
+                   IF( TST1.EQ.ZERO ) THEN
+                      1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr5.F90:670:25:
+
+                      IF( TST2.EQ.ZERO .OR. H21*( H12 / SCL ).LE. &
+                         1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr4.F90:462:19:
+
+                IF( H( K, K-1 ).EQ.ZERO ) &
+                   1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr4.F90:652:25:
+
+                      IF( WI( I ).NE.-WI( I-1 ) ) THEN
+                         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr4.F90:671:22:
+
+                   IF( WI( KBOT ).EQ.ZERO ) THEN
+                      1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr3.F90:444:20:
+
+             BULGE = T( NS, NS-1 ).NE.ZERO
+                    1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr3.F90:454:16:
+
+             IF( FOO.EQ.ZERO ) &
+                1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr3.F90:477:16:
+
+             IF( FOO.EQ.ZERO ) &
+                1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr3.F90:525:18:
+
+          ELSE IF( T( I+1, I ).EQ.ZERO ) THEN
+                  1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr3.F90:541:21:
+
+             ELSE IF( T( K+1, K ).EQ.ZERO ) THEN
+                     1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr3.F90:564:21:
+
+             ELSE IF( T( I+1, I ).EQ.ZERO ) THEN
+                     1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr3.F90:584:18:
+
+          ELSE IF( T( I, I-1 ).EQ.ZERO ) THEN
+                  1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr3.F90:601:23:
+
+       IF( NS.LT.JW .OR. S.EQ.ZERO ) THEN
+                       1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr3.F90:602:26:
+
+          IF( NS.GT.1 .AND. S.NE.ZERO ) THEN
+                          1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr3.F90:635:26:
+
+          IF( NS.GT.1 .AND. S.NE.ZERO ) &
+                          1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrexc.F90:218:13:
+
+          IF( T( IFST, IFST-1 ).NE.ZERO ) &
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrexc.F90:223:13:
+
+          IF( T( IFST+1, IFST ).NE.ZERO ) &
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrexc.F90:231:13:
+
+          IF( T( ILST, ILST-1 ).NE.ZERO ) &
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrexc.F90:236:13:
+
+          IF( T( ILST+1, ILST ).NE.ZERO ) &
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrexc.F90:264:19:
+
+                IF( T( HERE+NBF+1, HERE+NBF ).NE.ZERO ) &
+                   1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrexc.F90:278:19:
+
+                IF( T( HERE+1, HERE ).EQ.ZERO ) &
+                   1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrexc.F90:289:19:
+
+                IF( T( HERE+3, HERE+2 ).NE.ZERO ) &
+                   1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrexc.F90:309:19:
+
+                IF( T( HERE+2, HERE+1 ).EQ.ZERO ) &
+                   1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrexc.F90:350:19:
+
+                IF( T( HERE-1, HERE-2 ).NE.ZERO ) &
+                   1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrexc.F90:364:19:
+
+                IF( T( HERE+1, HERE ).EQ.ZERO ) &
+                   1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrexc.F90:375:19:
+
+                IF( T( HERE-1, HERE-2 ).NE.ZERO ) &
+                   1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dtrexc.F90:395:19:
+
+                IF( T( HERE, HERE-1 ).EQ.ZERO ) &
+                   1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr1.F90:153:13:
+
+          IF( S.EQ.ZERO ) THEN
+             1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr2.F90:433:20:
+
+             BULGE = T( NS, NS-1 ).NE.ZERO
+                    1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr1.F90:165:13:
+
+          IF( S.EQ.ZERO ) THEN
+             1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr2.F90:443:16:
+
+             IF( FOO.EQ.ZERO ) &
+                1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr2.F90:466:16:
+
+             IF( FOO.EQ.ZERO ) &
+                1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr2.F90:514:18:
+
+          ELSE IF( T( I+1, I ).EQ.ZERO ) THEN
+                  1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr2.F90:530:21:
+
+             ELSE IF( T( K+1, K ).EQ.ZERO ) THEN
+                     1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr2.F90:553:21:
+
+             ELSE IF( T( I+1, I ).EQ.ZERO ) THEN
+                     1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr2.F90:573:18:
+
+          ELSE IF( T( I, I-1 ).EQ.ZERO ) THEN
+                  1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr2.F90:590:23:
+
+       IF( NS.LT.JW .OR. S.EQ.ZERO ) THEN
+                       1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr2.F90:591:26:
+
+          IF( NS.GT.1 .AND. S.NE.ZERO ) THEN
+                          1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaqr2.F90:624:26:
+
+          IF( NS.GT.1 .AND. S.NE.ZERO ) &
+                          1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlarfx.F90:158:10:
+
+       IF( TAU.EQ.ZERO ) &
+          1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dsterf.F90:193:10:
+
+       IF( ANORM.EQ.ZERO ) &
+          1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dsterf.F90:287:16:
+
+             IF( C.NE.ZERO ) THEN
+                1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dsterf.F90:373:16:
+
+             IF( C.NE.ZERO ) THEN
+                1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dsterf.F90:412:13:
+
+          IF( E( I ).NE.ZERO ) &
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dstedc.F90:349:13:
+
+          IF( ORGNRM.EQ.ZERO ) &
+             1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dsytd2.F90:248:16:
+
+             IF( TAUI.NE.ZERO ) THEN
+                1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dsytd2.F90:289:16:
+
+             IF( TAUI.NE.ZERO ) THEN
+                1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dsteqr.F90:248:16:
+
+             IF( TST.EQ.ZERO ) &
+                1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dsteqr.F90:272:10:
+
+       IF( ANORM.EQ.ZERO ) &
+          1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dsteqr.F90:532:13:
+
+          IF( E( I ).NE.ZERO ) &
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed0.F90:314:28:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed0.F90:309:23:
+
+       DO 70 I = 0, SPM1
+                       2     
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed0.F90:314:28:
+
+             SUBMAT = IWORK( I ) + 1
+                            1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed0.F90:315:43:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed0.F90:309:23:
+
+       DO 70 I = 0, SPM1
+                       2                    
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed0.F90:315:43:
+
+             MATSIZ = IWORK( I+1 ) - IWORK( I )
+                                           1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed0.F90:360:31:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed0.F90:353:29:
+
+          DO 90 I = 0, SPM2, 2
+                             2  
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed0.F90:360:31:
+
+                SUBMAT = IWORK( I ) + 1
+                               1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed0.F90:361:46:
+
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed0.F90:353:29:
+
+          DO 90 I = 0, SPM2, 2
+                             2                 
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed0.F90:361:46:
+
+                MATSIZ = IWORK( I+2 ) - IWORK( I )
+                                              1
+Warning: Array reference at (1) out of bounds (0 < 1) in loop beginning at (2) [-Wdo-subscript]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaev2.F90:221:13:
+
+          IF( AB.EQ.ZERO ) THEN
+             1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed4.F90:334:13:
+
+          IF( C.EQ.ZERO ) THEN
+             1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed4.F90:631:16:
+
+             IF( C.EQ.ZERO ) THEN
+                1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed4.F90:632:19:
+
+                IF( A.EQ.ZERO ) THEN
+                   1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed4.F90:787:19:
+
+                IF( C.EQ.ZERO ) THEN
+                   1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Lapack/dlaed4.F90:788:22:
+
+                   IF( A.EQ.ZERO ) THEN
+                      1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dger.F90:185:39:
 
        IF ((M.EQ.0) .OR. (N.EQ.0) .OR. (ALPHA.EQ.ZERO)) RETURN
@@ -7139,6 +8509,156 @@ Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
        IF (DA.EQ.0.0d0) RETURN
           1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:267:26:
+
+           (K.EQ.0)).AND. (BETA.EQ.ONE))) RETURN
+                          1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:266:27:
+
+       IF ((N.EQ.0) .OR. (((ALPHA.EQ.ZERO).OR. &
+                           1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:271:10:
+
+       IF (ALPHA.EQ.ZERO) THEN
+          1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:273:18:
+
+               IF (BETA.EQ.ZERO) THEN
+                  1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:287:18:
+
+               IF (BETA.EQ.ZERO) THEN
+                  1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:312:22:
+
+                   IF (BETA.EQ.ZERO) THEN
+                      1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:316:27:
+
+                   ELSE IF (BETA.NE.ONE) THEN
+                           1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:322:49:
+
+                       IF ((A(J,L).NE.ZERO) .OR. (B(J,L).NE.ZERO)) THEN
+                                                 1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:322:27:
+
+                       IF ((A(J,L).NE.ZERO) .OR. (B(J,L).NE.ZERO)) THEN
+                           1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:334:22:
+
+                   IF (BETA.EQ.ZERO) THEN
+                      1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:338:27:
+
+                   ELSE IF (BETA.NE.ONE) THEN
+                           1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:344:49:
+
+                       IF ((A(J,L).NE.ZERO) .OR. (B(J,L).NE.ZERO)) THEN
+                                                 1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:344:27:
+
+                       IF ((A(J,L).NE.ZERO) .OR. (B(J,L).NE.ZERO)) THEN
+                           1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:368:26:
+
+                       IF (BETA.EQ.ZERO) THEN
+                          1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2k.F90:385:26:
+
+                       IF (BETA.EQ.ZERO) THEN
+                          1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2.F90:207:25:
+
+       IF ((N.EQ.0) .OR. (ALPHA.EQ.ZERO)) RETURN
+                         1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2.F90:237:43:
+
+                   IF ((X(J).NE.ZERO) .OR. (Y(J).NE.ZERO)) THEN
+                                           1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2.F90:237:23:
+
+                   IF ((X(J).NE.ZERO) .OR. (Y(J).NE.ZERO)) THEN
+                       1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2.F90:247:44:
+
+                   IF ((X(JX).NE.ZERO) .OR. (Y(JY).NE.ZERO)) THEN
+                                            1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2.F90:247:23:
+
+                   IF ((X(JX).NE.ZERO) .OR. (Y(JY).NE.ZERO)) THEN
+                       1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2.F90:268:43:
+
+                   IF ((X(J).NE.ZERO) .OR. (Y(J).NE.ZERO)) THEN
+                                           1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2.F90:268:23:
+
+                   IF ((X(J).NE.ZERO) .OR. (Y(J).NE.ZERO)) THEN
+                       1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2.F90:278:44:
+
+                   IF ((X(JX).NE.ZERO) .OR. (Y(JY).NE.ZERO)) THEN
+                                            1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsyr2.F90:278:23:
+
+                   IF ((X(JX).NE.ZERO) .OR. (Y(JY).NE.ZERO)) THEN
+                       1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsymv.F90:212:47:
+
+       IF ((N.EQ.0) .OR. ((ALPHA.EQ.ZERO).AND. (BETA.EQ.ONE))) RETURN
+                                               1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsymv.F90:212:26:
+
+       IF ((N.EQ.0) .OR. ((ALPHA.EQ.ZERO).AND. (BETA.EQ.ONE))) RETURN
+                          1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsymv.F90:233:10:
+
+       IF (BETA.NE.ONE) THEN
+          1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsymv.F90:235:18:
+
+               IF (BETA.EQ.ZERO) THEN
+                  1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsymv.F90:246:18:
+
+               IF (BETA.EQ.ZERO) THEN
+                  1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/BLAS/dsymv.F90:259:10:
+
+       IF (ALPHA.EQ.ZERO) RETURN
+          1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/BitPage.cpp: In constructor ‘moab::BitPage::BitPage(int, unsigned char)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/BitPage.cpp:28:22: warning: this statement may fall through [-Wimplicit-fallthrough=]
      case 1: init_val |= (unsigned char)(init_val << 1);
@@ -7152,47 +8672,34 @@ Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/BitPage.cpp:30:5: note: here
      case 4: init_val |= (unsigned char)(init_val << 4);
      ^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/OrientedBoxTreeTool.cpp: In function ‘bool moab::edge_node_intersect(moab::EntityHandle, const moab::CartVect&, moab::GeomUtil::intersection_type, const std::vector<long unsigned int>&, const std::vector<int>&, const moab::Interface*, std::vector<long unsigned int>*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/OrientedBoxTreeTool.cpp:65:41: warning: enum constant in boolean context [-Wint-in-bool-context]
-   if(MB_SUCCESS!=rval || 3!=len) return MB_FAILURE;
-                                         ^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/OrientedBoxTreeTool.cpp:84:45: warning: enum constant in boolean context [-Wint-in-bool-context]
-       if(MB_SUCCESS!=rval || 3!=len) return MB_FAILURE;
-                                             ^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/OrientedBoxTreeTool.cpp:93:14: warning: enum constant in boolean context [-Wint-in-bool-context]
-       return MB_FAILURE;
-              ^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/OrientedBoxTreeTool.cpp:115:45: warning: enum constant in boolean context [-Wint-in-bool-context]
-       if(MB_SUCCESS!=rval || 3!=len) return MB_FAILURE;
-                                             ^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/OrientedBoxTreeTool.cpp:137:12: warning: enum constant in boolean context [-Wint-in-bool-context]
-     return MB_FAILURE;
-            ^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/OrientedBoxTreeTool.cpp:152:43: warning: enum constant in boolean context [-Wint-in-bool-context]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/GeomQueryTool.cpp: In member function ‘bool moab::GQT_IntRegCtxt::edge_node_piercing_intersect(moab::EntityHandle, const moab::CartVect&, moab::GeomUtil::intersection_type, const std::vector<long unsigned int>&, const std::vector<int>&, const moab::Interface*, std::vector<long unsigned int>*)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/GeomQueryTool.cpp:210:43: warning: enum constant in boolean context [-Wint-in-bool-context]
      if(MB_SUCCESS!=rval || 3!=len) return MB_FAILURE;
                                            ^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/OrientedBoxTreeTool.cpp:155:35: warning: enum constant in boolean context [-Wint-in-bool-context]
-     if(MB_SUCCESS != rval) return MB_FAILURE;
-                                   ^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/GeomQueryTool.cpp:229:47: warning: enum constant in boolean context [-Wint-in-bool-context]
+         if(MB_SUCCESS!=rval || 3!=len) return MB_FAILURE;
+                                               ^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/GeomQueryTool.cpp:238:16: warning: enum constant in boolean context [-Wint-in-bool-context]
+         return MB_FAILURE;
+                ^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/GeomQueryTool.cpp:260:47: warning: enum constant in boolean context [-Wint-in-bool-context]
+         if(MB_SUCCESS!=rval || 3!=len) return MB_FAILURE;
+                                               ^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/GeomQueryTool.cpp:282:14: warning: enum constant in boolean context [-Wint-in-bool-context]
+       return MB_FAILURE;
+              ^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/GeomQueryTool.cpp:297:45: warning: enum constant in boolean context [-Wint-in-bool-context]
+       if(MB_SUCCESS!=rval || 3!=len) return MB_FAILURE;
+                                             ^~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/GeomQueryTool.cpp:300:37: warning: enum constant in boolean context [-Wint-in-bool-context]
+       if(MB_SUCCESS != rval) return MB_FAILURE;
+                                     ^~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/HigherOrderFactory.cpp: In member function ‘moab::ErrorCode moab::HigherOrderFactory::convert_sequence(moab::ElementSequence*, moab::EntityHandle, moab::EntityHandle, bool, bool, bool)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/HigherOrderFactory.cpp:149:22: warning: this statement may fall through [-Wimplicit-fallthrough=]
        mid_face_nodes = false;
        ~~~~~~~~~~~~~~~^~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/HigherOrderFactory.cpp:150:5: note: here
      case MBTRI:
-     ^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/SweptElementData.cpp: In static member function ‘static moab::EntityID moab::SweptElementData::calc_num_entities(moab::EntityHandle, int, int, int)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/SweptElementData.cpp:33:20: warning: this statement may fall through [-Wimplicit-fallthrough=]
-     case 3: result *= krange;
-             ~~~~~~~^~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/SweptElementData.cpp:34:5: note: here
-     case 2: result *= jrange;
-     ^~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/SweptElementData.cpp:34:20: warning: this statement may fall through [-Wimplicit-fallthrough=]
-     case 2: result *= jrange;
-             ~~~~~~~^~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/SweptElementData.cpp:35:5: note: here
-     case 1: result *= irange;
      ^~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/ScdElementData.cpp: In static member function ‘static moab::EntityID moab::ScdElementData::calc_num_entities(moab::EntityHandle, int, int, int, int*)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/ScdElementData.cpp:34:20: warning: this statement may fall through [-Wimplicit-fallthrough=]
@@ -7206,6 +8713,19 @@ Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
              ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/ScdElementData.cpp:36:5: note: here
      case 1: result *= (is_periodic && is_periodic[0] ? (irange+1) : irange);
+     ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/SweptElementData.cpp: In static member function ‘static moab::EntityID moab::SweptElementData::calc_num_entities(moab::EntityHandle, int, int, int)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/SweptElementData.cpp:33:20: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 3: result *= krange;
+             ~~~~~~~^~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/SweptElementData.cpp:34:5: note: here
+     case 2: result *= jrange;
+     ^~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/SweptElementData.cpp:34:20: warning: this statement may fall through [-Wimplicit-fallthrough=]
+     case 2: result *= jrange;
+             ~~~~~~~^~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/SweptElementData.cpp:35:5: note: here
+     case 1: result *= irange;
      ^~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/Skinner.cpp: In constructor ‘moab::AdjSides<CORNERS>::Side::Side(const EntityHandle*, int, moab::EntityHandle, short unsigned int) [with unsigned int CORNERS = 2]’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/src/Moab/Skinner.cpp:1214:17: warning: this statement may fall through [-Wimplicit-fallthrough=]
@@ -7242,52 +8762,52 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:5141:9:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:5614:9:
 
        if(area1(i) /= area2(i)) then
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2371:16:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2428:16:
 
              if (varbuffer(i) == missingvalue) elementMask(i)=0
                 1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2387:16:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2444:16:
 
              if (varbuffer(i) == missingvalue) glbNodeMask(i)=0
                 1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:5411:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:5917:0:
 
                                   ESMF_CONTEXT, rcToReturn=rc)) return
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:4465:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:4545:0:
 
  end function ESMF_MeshCreateCubedSphere
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:3658:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:3735:0:
 
  end function ESMF_MeshCreateDual
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:3550:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:3627:0:
 
  end function ESMF_MeshCreateRedist
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2905:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2961:0:
 
  end function ESMF_MeshCreateFromScrip
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2751:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2807:0:
 
  end function ESMF_MeshCreateFromUnstruct
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2074:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/interface/ESMF_Mesh.F90:2131:0:
 
  end function ESMF_MeshCreateFromFile
  
@@ -7334,11 +8854,11 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
    for (UInt i = 0; i < *num_arrays; ++i)
                     ~~^~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GridUtil/interface/ESMCI_GridUtil_F.C: In function ‘void c_esmc_gridio_(ESMCI::Grid**, int*, int*, char*, int*, ESMCI::Array**, ESMCI::Array**, ESMCI::Array**, ESMCI::Array**, ESMCI::Array**, ESMCI::Array**, int*, int*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GridUtil/interface/ESMCI_GridUtil_F.C:160:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GridUtil/interface/ESMCI_GridUtil_F.C:161:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
    for (UInt i = 0; i < *num_arrays; ++i)
                     ~~^~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GridUtil/interface/ESMCI_GridUtil_F.C: In function ‘void c_esmc_gridcellio_(ESMCI::Grid**, int*, char*, int*, ESMCI::Array**, ESMCI::Array**, ESMCI::Array**, ESMCI::Array**, ESMCI::Array**, ESMCI::Array**, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GridUtil/interface/ESMCI_GridUtil_F.C:210:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GridUtil/interface/ESMCI_GridUtil_F.C:212:22: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘int’ [-Wsign-compare]
    for (UInt i = 0; i < *num_arrays; ++i)
                     ~~^~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GridUtil/interface/ESMF_GridUtil.F90:535:0:
@@ -7356,12 +8876,12 @@ Warning: control reaches end of non-void function [-Wreturn-type]
        function ESMF_LocStreamCreateFromFile(filename, keywordEnforcer, &
       1
 Warning: Return value of function ‘esmf_locstreamcreatefromfile’ at (1) not set [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/LocStream/src/ESMF_LocStream.F90:4595:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/LocStream/src/ESMF_LocStream.F90:4652:0:
 
       end function ESMF_LocStreamCreatePetList
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/LocStream/src/ESMF_LocStream.F90:4106:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/LocStream/src/ESMF_LocStream.F90:4163:0:
 
       end function ESMF_LocStreamDeserialize
  
@@ -7405,8 +8925,9 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_DistGrid.h:36,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/LocStream/interface/ESMCI_LocStream_F.C:27:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/LocStream/interface/../include/ESMCI_LocStream.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/LocStream/interface/ESMCI_LocStream.C:27:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -7414,9 +8935,8 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/LocStream/interface/../include/ESMCI_LocStream.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/LocStream/interface/ESMCI_LocStream.C:27:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_DistGrid.h:36,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/LocStream/interface/ESMCI_LocStream_F.C:27:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -7430,27 +8950,27 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/XGrid/src/ESMF_XGrid.F90:486:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/XGrid/src/ESMF_XGrid.F90:487:0:
 
        fp1 = xgrid1%xgtypep
  
 Warning: ‘fp1’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/XGrid/src/ESMF_XGrid.F90:487:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/XGrid/src/ESMF_XGrid.F90:488:0:
 
        fp2 = xgrid2%xgtypep
  
 Warning: ‘fp2’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:2245:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:2278:0:
 
  end function ESMF_XGridDGOverlay
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:1715:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:1748:0:
 
  end function ESMF_XGridCreateFromSparseMat
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:1229:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/XGrid/src/ESMF_XGridCreate.F90:1262:0:
 
  end function ESMF_XGridCreate
  
@@ -7489,22 +9009,22 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/XGrid/interface/ESMCI_XGrid_F.C:101:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
        ptr += sizeof(int);
        ^~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GeomBase/src/ESMF_GeomBase.F90:1645:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GeomBase/src/ESMF_GeomBase.F90:1692:0:
 
-       end function ESMF_GeomBaseDeserialize
+     end function ESMF_GeomBaseDeserialize
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GeomBase/src/ESMF_GeomBase.F90:685:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GeomBase/src/ESMF_GeomBase.F90:755:0:
 
      ESMF_INIT_CHECK_DEEP_SHORT(ESMF_XGridGetInit, xgrid, rc)
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GeomBase/src/ESMF_GeomBase.F90:608:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GeomBase/src/ESMF_GeomBase.F90:678:0:
 
      ESMF_INIT_CHECK_DEEP_SHORT(ESMF_LocStreamGetInit, locstream, rc)
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GeomBase/src/ESMF_GeomBase.F90:532:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/GeomBase/src/ESMF_GeomBase.F90:537:0:
 
      ESMF_INIT_CHECK_DEEP_SHORT(ESMF_MeshGetInit, mesh, rc)
  
@@ -7562,1193 +9082,1201 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
         if(l_g2fm(i) .lt. 0 .and. l_g2fm(i) .gt. arrayrank) then
  
 Warning: ‘arrayrank’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33770:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33071:0:
 
   end function ESMF_FieldCreateXGDataPtr7Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33712:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33013:0:
 
   end function ESMF_FieldCreateXGDataPtr7Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33654:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32955:0:
 
   end function ESMF_FieldCreateXGDataPtr7Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33596:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32897:0:
 
   end function ESMF_FieldCreateXGDataPtr7Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33538:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32839:0:
 
   end function ESMF_FieldCreateXGDataPtr6Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33480:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32781:0:
 
   end function ESMF_FieldCreateXGDataPtr6Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33422:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32723:0:
 
   end function ESMF_FieldCreateXGDataPtr6Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33364:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32665:0:
 
   end function ESMF_FieldCreateXGDataPtr6Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33305:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32606:0:
 
   end function ESMF_FieldCreateXGDataPtr5Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33247:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32548:0:
 
   end function ESMF_FieldCreateXGDataPtr5Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33188:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32489:0:
 
   end function ESMF_FieldCreateXGDataPtr5Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33129:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32430:0:
 
   end function ESMF_FieldCreateXGDataPtr5Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33070:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32371:0:
 
   end function ESMF_FieldCreateXGDataPtr4Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:33012:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32313:0:
 
   end function ESMF_FieldCreateXGDataPtr4Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32953:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32254:0:
 
   end function ESMF_FieldCreateXGDataPtr4Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32894:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32195:0:
 
   end function ESMF_FieldCreateXGDataPtr4Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32836:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32137:0:
 
   end function ESMF_FieldCreateXGDataPtr3Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32778:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32079:0:
 
   end function ESMF_FieldCreateXGDataPtr3Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32719:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32020:0:
 
   end function ESMF_FieldCreateXGDataPtr3Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32660:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:31961:0:
 
   end function ESMF_FieldCreateXGDataPtr3Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32602:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:31903:0:
 
   end function ESMF_FieldCreateXGDataPtr2Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32544:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:31845:0:
 
   end function ESMF_FieldCreateXGDataPtr2Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32485:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:31786:0:
 
   end function ESMF_FieldCreateXGDataPtr2Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32426:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:31727:0:
 
   end function ESMF_FieldCreateXGDataPtr2Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32368:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:31669:0:
 
   end function ESMF_FieldCreateXGDataPtr1Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32310:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:31611:0:
 
   end function ESMF_FieldCreateXGDataPtr1Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32251:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:31552:0:
 
   end function ESMF_FieldCreateXGDataPtr1Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:32192:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:31493:0:
 
   end function ESMF_FieldCreateXGDataPtr1Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:31220:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30521:0:
 
   end function ESMF_FieldCreateXGData7Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:31140:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30441:0:
 
   end function ESMF_FieldCreateXGData7Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:31060:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30361:0:
 
   end function ESMF_FieldCreateXGData7Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30980:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30281:0:
 
   end function ESMF_FieldCreateXGData7Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30900:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30201:0:
 
   end function ESMF_FieldCreateXGData6Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30820:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30121:0:
 
   end function ESMF_FieldCreateXGData6Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30740:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30041:0:
 
   end function ESMF_FieldCreateXGData6Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30660:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29961:0:
 
   end function ESMF_FieldCreateXGData6Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30579:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29880:0:
 
   end function ESMF_FieldCreateXGData5Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30499:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29800:0:
 
   end function ESMF_FieldCreateXGData5Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30418:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29719:0:
 
   end function ESMF_FieldCreateXGData5Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30337:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29638:0:
 
   end function ESMF_FieldCreateXGData5Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30256:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29557:0:
 
   end function ESMF_FieldCreateXGData4Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30176:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29477:0:
 
   end function ESMF_FieldCreateXGData4Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30095:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29396:0:
 
   end function ESMF_FieldCreateXGData4Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:30014:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29315:0:
 
   end function ESMF_FieldCreateXGData4Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29934:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29235:0:
 
   end function ESMF_FieldCreateXGData3Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29854:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29155:0:
 
   end function ESMF_FieldCreateXGData3Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29773:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29074:0:
 
   end function ESMF_FieldCreateXGData3Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29692:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:28993:0:
 
   end function ESMF_FieldCreateXGData3Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29612:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:28913:0:
 
   end function ESMF_FieldCreateXGData2Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29532:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:28833:0:
 
   end function ESMF_FieldCreateXGData2Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29451:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:28752:0:
 
   end function ESMF_FieldCreateXGData2Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29370:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:28671:0:
 
   end function ESMF_FieldCreateXGData2Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29290:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:28591:0:
 
   end function ESMF_FieldCreateXGData1Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29210:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:28511:0:
 
   end function ESMF_FieldCreateXGData1Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29129:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:28430:0:
 
   end function ESMF_FieldCreateXGData1Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:29048:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:28349:0:
 
   end function ESMF_FieldCreateXGData1Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:27729:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:27030:0:
 
    end function ESMF_FieldCreateXGArray
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:27590:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26891:0:
 
    end function ESMF_FieldCreateXGArraySpec
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:27457:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26753:0:
 
  end function ESMF_FieldCreateXGTKR
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:27300:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26591:0:
 
   end function ESMF_FieldCreateMeshDataPtr7Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:27243:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26534:0:
 
   end function ESMF_FieldCreateMeshDataPtr7Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:27186:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26477:0:
 
   end function ESMF_FieldCreateMeshDataPtr7Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:27129:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26420:0:
 
   end function ESMF_FieldCreateMeshDataPtr7Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:27072:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26363:0:
 
   end function ESMF_FieldCreateMeshDataPtr6Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:27015:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26306:0:
 
   end function ESMF_FieldCreateMeshDataPtr6Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26958:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26249:0:
 
   end function ESMF_FieldCreateMeshDataPtr6Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26901:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26192:0:
 
   end function ESMF_FieldCreateMeshDataPtr6Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26843:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26134:0:
 
   end function ESMF_FieldCreateMeshDataPtr5Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26786:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26077:0:
 
   end function ESMF_FieldCreateMeshDataPtr5Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26728:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26019:0:
 
   end function ESMF_FieldCreateMeshDataPtr5Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26670:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25961:0:
 
   end function ESMF_FieldCreateMeshDataPtr5Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26612:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25903:0:
 
   end function ESMF_FieldCreateMeshDataPtr4Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26555:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25846:0:
 
   end function ESMF_FieldCreateMeshDataPtr4Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26497:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25788:0:
 
   end function ESMF_FieldCreateMeshDataPtr4Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26439:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25730:0:
 
   end function ESMF_FieldCreateMeshDataPtr4Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26382:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25673:0:
 
   end function ESMF_FieldCreateMeshDataPtr3Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26325:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25616:0:
 
   end function ESMF_FieldCreateMeshDataPtr3Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26267:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25558:0:
 
   end function ESMF_FieldCreateMeshDataPtr3Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26209:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25500:0:
 
   end function ESMF_FieldCreateMeshDataPtr3Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26152:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25443:0:
 
   end function ESMF_FieldCreateMeshDataPtr2Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26095:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25386:0:
 
   end function ESMF_FieldCreateMeshDataPtr2Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:26037:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25328:0:
 
   end function ESMF_FieldCreateMeshDataPtr2Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25979:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25270:0:
 
   end function ESMF_FieldCreateMeshDataPtr2Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25922:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25213:0:
 
   end function ESMF_FieldCreateMeshDataPtr1Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25865:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25156:0:
 
   end function ESMF_FieldCreateMeshDataPtr1Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25807:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25098:0:
 
   end function ESMF_FieldCreateMeshDataPtr1Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25749:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:25040:0:
 
   end function ESMF_FieldCreateMeshDataPtr1Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24794:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24085:0:
 
   end function ESMF_FieldCreateMeshData7Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24732:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24023:0:
 
   end function ESMF_FieldCreateMeshData7Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24670:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23961:0:
 
   end function ESMF_FieldCreateMeshData7Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24608:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23899:0:
 
   end function ESMF_FieldCreateMeshData7Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24546:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23837:0:
 
   end function ESMF_FieldCreateMeshData6Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24484:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23775:0:
 
   end function ESMF_FieldCreateMeshData6Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24422:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23713:0:
 
   end function ESMF_FieldCreateMeshData6Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24360:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23651:0:
 
   end function ESMF_FieldCreateMeshData6Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24297:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23588:0:
 
   end function ESMF_FieldCreateMeshData5Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24235:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23526:0:
 
   end function ESMF_FieldCreateMeshData5Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24172:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23463:0:
 
   end function ESMF_FieldCreateMeshData5Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24109:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23400:0:
 
   end function ESMF_FieldCreateMeshData5Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:24046:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23337:0:
 
   end function ESMF_FieldCreateMeshData4Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23984:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23275:0:
 
   end function ESMF_FieldCreateMeshData4Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23921:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23212:0:
 
   end function ESMF_FieldCreateMeshData4Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23858:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23149:0:
 
   end function ESMF_FieldCreateMeshData4Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23796:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23087:0:
 
   end function ESMF_FieldCreateMeshData3Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23734:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23025:0:
 
   end function ESMF_FieldCreateMeshData3Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23671:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:22962:0:
 
   end function ESMF_FieldCreateMeshData3Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23608:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:22899:0:
 
   end function ESMF_FieldCreateMeshData3Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23546:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:22837:0:
 
   end function ESMF_FieldCreateMeshData2Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23484:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:22775:0:
 
   end function ESMF_FieldCreateMeshData2Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23421:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:22712:0:
 
   end function ESMF_FieldCreateMeshData2Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23358:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:22649:0:
 
   end function ESMF_FieldCreateMeshData2Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23296:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:22587:0:
 
   end function ESMF_FieldCreateMeshData1Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23234:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:22525:0:
 
   end function ESMF_FieldCreateMeshData1Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23171:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:22462:0:
 
   end function ESMF_FieldCreateMeshData1Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:23108:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:22399:0:
 
   end function ESMF_FieldCreateMeshData1Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:22062:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21353:0:
 
    end function ESMF_FieldCreateMeshArray
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21936:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21227:0:
 
    end function ESMF_FieldCreateMeshArraySpec
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21821:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21102:0:
 
  end function ESMF_FieldCreateMeshTKR
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21648:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20918:0:
 
   end function ESMF_FieldCreateLSDataPtr7Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21592:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20862:0:
 
   end function ESMF_FieldCreateLSDataPtr7Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21536:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20806:0:
 
   end function ESMF_FieldCreateLSDataPtr7Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21480:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20750:0:
 
   end function ESMF_FieldCreateLSDataPtr7Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21424:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20694:0:
 
   end function ESMF_FieldCreateLSDataPtr6Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21368:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20638:0:
 
   end function ESMF_FieldCreateLSDataPtr6Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21312:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20582:0:
 
   end function ESMF_FieldCreateLSDataPtr6Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21256:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20526:0:
 
   end function ESMF_FieldCreateLSDataPtr6Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21199:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20469:0:
 
   end function ESMF_FieldCreateLSDataPtr5Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21143:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20413:0:
 
   end function ESMF_FieldCreateLSDataPtr5Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21086:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20356:0:
 
   end function ESMF_FieldCreateLSDataPtr5Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:21029:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20299:0:
 
   end function ESMF_FieldCreateLSDataPtr5Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20972:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20242:0:
 
   end function ESMF_FieldCreateLSDataPtr4Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20916:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20186:0:
 
   end function ESMF_FieldCreateLSDataPtr4Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20859:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20129:0:
 
   end function ESMF_FieldCreateLSDataPtr4Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20802:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20072:0:
 
   end function ESMF_FieldCreateLSDataPtr4Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20746:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20016:0:
 
   end function ESMF_FieldCreateLSDataPtr3Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20690:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19960:0:
 
   end function ESMF_FieldCreateLSDataPtr3Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20633:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19903:0:
 
   end function ESMF_FieldCreateLSDataPtr3Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20576:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19846:0:
 
   end function ESMF_FieldCreateLSDataPtr3Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20520:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19790:0:
 
   end function ESMF_FieldCreateLSDataPtr2Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20464:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19734:0:
 
   end function ESMF_FieldCreateLSDataPtr2Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20407:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19677:0:
 
   end function ESMF_FieldCreateLSDataPtr2Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20350:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19620:0:
 
   end function ESMF_FieldCreateLSDataPtr2Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20294:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19564:0:
 
   end function ESMF_FieldCreateLSDataPtr1Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20238:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19508:0:
 
   end function ESMF_FieldCreateLSDataPtr1Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20181:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19451:0:
 
   end function ESMF_FieldCreateLSDataPtr1Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:20124:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19394:0:
 
   end function ESMF_FieldCreateLSDataPtr1Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19189:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18459:0:
 
   end function ESMF_FieldCreateLSData7Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19128:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18398:0:
 
   end function ESMF_FieldCreateLSData7Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19067:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18337:0:
 
   end function ESMF_FieldCreateLSData7Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:19006:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18276:0:
 
   end function ESMF_FieldCreateLSData7Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18945:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18215:0:
 
   end function ESMF_FieldCreateLSData6Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18884:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18154:0:
 
   end function ESMF_FieldCreateLSData6Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18823:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18093:0:
 
   end function ESMF_FieldCreateLSData6Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18762:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18032:0:
 
   end function ESMF_FieldCreateLSData6Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18700:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17970:0:
 
   end function ESMF_FieldCreateLSData5Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18639:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17909:0:
 
   end function ESMF_FieldCreateLSData5Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18577:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17847:0:
 
   end function ESMF_FieldCreateLSData5Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18515:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17785:0:
 
   end function ESMF_FieldCreateLSData5Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18453:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17723:0:
 
   end function ESMF_FieldCreateLSData4Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18392:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17662:0:
 
   end function ESMF_FieldCreateLSData4Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18330:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17600:0:
 
   end function ESMF_FieldCreateLSData4Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18268:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17538:0:
 
   end function ESMF_FieldCreateLSData4Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18207:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17477:0:
 
   end function ESMF_FieldCreateLSData3Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18146:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17416:0:
 
   end function ESMF_FieldCreateLSData3Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18084:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17354:0:
 
   end function ESMF_FieldCreateLSData3Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:18022:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17292:0:
 
   end function ESMF_FieldCreateLSData3Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17961:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17231:0:
 
   end function ESMF_FieldCreateLSData2Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17900:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17170:0:
 
   end function ESMF_FieldCreateLSData2Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17838:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17108:0:
 
   end function ESMF_FieldCreateLSData2Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17776:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17046:0:
 
   end function ESMF_FieldCreateLSData2Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17715:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:16985:0:
 
   end function ESMF_FieldCreateLSData1Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17654:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:16924:0:
 
   end function ESMF_FieldCreateLSData1Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17592:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:16862:0:
 
   end function ESMF_FieldCreateLSData1Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:17530:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:16800:0:
 
   end function ESMF_FieldCreateLSData1Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:16504:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15774:0:
 
    end function ESMF_FieldCreateLSArray
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:16391:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15661:0:
 
    end function ESMF_FieldCreateLSArraySpec
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:16284:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15549:0:
 
  end function ESMF_FieldCreateLSTKR
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:16152:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15412:0:
 
   end function ESMF_FieldCreateGridDataPtr7Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:16053:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15322:0:
 
   end function ESMF_FieldCreateGridDataPtr7Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15954:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15232:0:
 
   end function ESMF_FieldCreateGridDataPtr7Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15855:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15142:0:
 
   end function ESMF_FieldCreateGridDataPtr7Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15756:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15052:0:
 
   end function ESMF_FieldCreateGridDataPtr6Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15657:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14962:0:
 
   end function ESMF_FieldCreateGridDataPtr6Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15558:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14872:0:
 
   end function ESMF_FieldCreateGridDataPtr6Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15459:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14782:0:
 
   end function ESMF_FieldCreateGridDataPtr6Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15359:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14691:0:
 
   end function ESMF_FieldCreateGridDataPtr5Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15260:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14601:0:
 
   end function ESMF_FieldCreateGridDataPtr5Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15160:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14510:0:
 
   end function ESMF_FieldCreateGridDataPtr5Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:15060:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14419:0:
 
   end function ESMF_FieldCreateGridDataPtr5Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14960:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14328:0:
 
   end function ESMF_FieldCreateGridDataPtr4Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14861:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14238:0:
 
   end function ESMF_FieldCreateGridDataPtr4Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14761:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14147:0:
 
   end function ESMF_FieldCreateGridDataPtr4Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14661:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14056:0:
 
   end function ESMF_FieldCreateGridDataPtr4Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14562:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13966:0:
 
   end function ESMF_FieldCreateGridDataPtr3Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14463:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13876:0:
 
   end function ESMF_FieldCreateGridDataPtr3Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14363:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13785:0:
 
   end function ESMF_FieldCreateGridDataPtr3Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14263:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13694:0:
 
   end function ESMF_FieldCreateGridDataPtr3Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14164:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13604:0:
 
   end function ESMF_FieldCreateGridDataPtr2Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:14065:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13514:0:
 
   end function ESMF_FieldCreateGridDataPtr2Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13965:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13423:0:
 
   end function ESMF_FieldCreateGridDataPtr2Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13865:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13332:0:
 
   end function ESMF_FieldCreateGridDataPtr2Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13766:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13242:0:
 
   end function ESMF_FieldCreateGridDataPtr1Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13667:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13152:0:
 
   end function ESMF_FieldCreateGridDataPtr1Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13567:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13061:0:
 
   end function ESMF_FieldCreateGridDataPtr1Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:13467:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:12970:0:
 
   end function ESMF_FieldCreateGridDataPtr1Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11851:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11489:0:
 
   end function ESMF_FieldCreateGridData7Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11746:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11393:0:
 
   end function ESMF_FieldCreateGridData7Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11641:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11297:0:
 
   end function ESMF_FieldCreateGridData7Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11536:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11201:0:
 
   end function ESMF_FieldCreateGridData7Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11431:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11105:0:
 
   end function ESMF_FieldCreateGridData6Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11326:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11009:0:
 
   end function ESMF_FieldCreateGridData6Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11221:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10913:0:
 
   end function ESMF_FieldCreateGridData6Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11116:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10817:0:
 
   end function ESMF_FieldCreateGridData6Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:11010:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10720:0:
 
   end function ESMF_FieldCreateGridData5Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10905:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10624:0:
 
   end function ESMF_FieldCreateGridData5Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10799:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10527:0:
 
   end function ESMF_FieldCreateGridData5Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10693:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10430:0:
 
   end function ESMF_FieldCreateGridData5Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10587:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10333:0:
 
   end function ESMF_FieldCreateGridData4Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10482:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10237:0:
 
   end function ESMF_FieldCreateGridData4Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10376:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10140:0:
 
   end function ESMF_FieldCreateGridData4Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10270:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10043:0:
 
   end function ESMF_FieldCreateGridData4Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10165:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9947:0:
 
   end function ESMF_FieldCreateGridData3Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:10060:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9851:0:
 
   end function ESMF_FieldCreateGridData3Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9954:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9754:0:
 
   end function ESMF_FieldCreateGridData3Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9848:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9657:0:
 
   end function ESMF_FieldCreateGridData3Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9743:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9561:0:
 
   end function ESMF_FieldCreateGridData2Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9638:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9465:0:
 
   end function ESMF_FieldCreateGridData2Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9532:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9368:0:
 
   end function ESMF_FieldCreateGridData2Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9426:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9271:0:
 
   end function ESMF_FieldCreateGridData2Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9321:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9175:0:
 
   end function ESMF_FieldCreateGridData1Dr8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9216:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9079:0:
 
   end function ESMF_FieldCreateGridData1Dr4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9110:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:8982:0:
 
   end function ESMF_FieldCreateGridData1Di8
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:9004:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:8885:0:
 
   end function ESMF_FieldCreateGridData1Di4
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:7280:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:7296:0:
 
    end function ESMF_FieldCreateGridArray
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:7077:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:7100:0:
 
    end function ESMF_FieldCreateGridArraySpec
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:6880:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldCreate.F90:6899:0:
 
  end function ESMF_FieldCreateGridTKR
+ 
+Warning: control reaches end of non-void function [-Wreturn-type]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldRegrid.F90:1742:0:
+
+     end function b_or_p_GridToMesh
+ 
+Warning: control reaches end of non-void function [-Wreturn-type]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/src/ESMF_FieldRegrid.F90:1667:0:
+
+     end function conserve_GridToMesh
  
 Warning: control reaches end of non-void function [-Wreturn-type]
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/interface/../include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/interface/ESMCI_Field.C:27:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/interface/ESMCI_Field_F.C:25:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -8756,7 +10284,9 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/interface/ESMCI_Field_F.C:25:
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/interface/../include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/interface/ESMCI_Field.C:27:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
@@ -8788,17 +10318,17 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Container/interface/ESMCI_Container_F.C:1086:30: warning: comparison of integer expressions of different signedness: ‘const int’ and ‘std::vector<ESMCI::F90ClassHolder, std::allocator<ESMCI::F90ClassHolder> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
        if (*item < 1 || *item > garbage.size()){
                         ~~~~~~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Container/interface/ESMF_Container.F90:464:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Container/interface/ESMF_Container.F90:511:0:
 
        ESMF_CONTEXT, rcToReturn=rc)) return
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/FieldBundle/src/ESMF_FieldBundle.F90:18033:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/FieldBundle/src/ESMF_FieldBundle.F90:18200:0:
 
    end function ESMF_FieldBundleToAB
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/FieldBundle/src/ESMF_FieldBundle.F90:1080:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/FieldBundle/src/ESMF_FieldBundle.F90:1051:0:
 
        ESMF_INIT_CHECK_DEEP(ESMF_FieldGetInit, fieldList(i), rc)
  
@@ -8808,364 +10338,9 @@ Warning: control reaches end of non-void function [-Wreturn-type]
       bundlep => thebundle
      1
 Warning: Pointer at (1) in pointer assignment might outlive the pointer target [-Wtarget-lifetime]
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeUpdate.C:34:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_IO_XML.h:46,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:31:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_IO_XML.h:46,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:29:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_IO_XML.h:46,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:29:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_IO_XML.h:46,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWrite.C:31:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_IO_XML.h:46,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteXML.C:29:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_IO_XML.h:46,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:31:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteTab.C: In member function ‘int ESMCI::Attribute::AttributeWriteTab(const string&, const string&, const string&, const string&, const string&) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteTab.C:110:16: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-     for (i=0; i<columns; i++) attrLens[i] = 0;
-               ~^~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteTab.C:129:16: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-     for (i=0; i<columns; i++) {
-               ~^~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteTab.C: In member function ‘int ESMCI::Attribute::AttributeWriteTabBuffer(FILE*, int&, const int&, int*, const std::vector<std::__cxx11::basic_string<char> >&) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteTab.C:252:33: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-             if (attrLens[index] < attrNames.at(index).size())
-                 ~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeUpdate.C: In member function ‘int ESMCI::Attribute::AttributeUpdate(ESMCI::VM*, const std::vector<int>&, ESMCI::InterArray<int>*, bool)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeUpdate.C:113:15: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-     for(i=0; i<petList->extent[0]; ++i) {
-              ~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeUpdate.C:119:15: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-     for(i=0; i<petCount; ++i) {
-              ~^~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeUpdate.C: In member function ‘int ESMCI::Attribute::AttributeUpdateBufRecv(char*, int, int*, const int&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeUpdate.C:375:14: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-   for (i=0; i<attrChange; ++i) {
-             ~^~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeUpdate.C:411:14: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-   for (i=0; i<valueChange; ++i) {
-             ~^~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeUpdate.C:485:14: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-   for (i=0; i<packChange; ++i) {
-             ~^~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeUpdate.C: In member function ‘int ESMCI::Attribute::AttributeUpdateComm(ESMCI::VM*, int, int*, char*, char*, const std::vector<int>&, const std::vector<int>&) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeUpdate.C:1097:16: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-     for (i=0; i<ceilID; ++i) {
-               ~^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeUpdate.C:1101:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       if (indSend < nonroots.size()) {
-           ~~~~~~~~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C: In member function ‘int ESMCI::Attribute::AttributeWriteCIMmodelComp(ESMCI::IO_XML*, const string&, int, bool, std::__cxx11::string) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:432:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for(int i=0; i<linkList.size(); i++) {
-                  ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:434:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-         for(int j=0; j<linkList.at(i)->packList.size(); j++) {
-                      ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C: In member function ‘int ESMCI::Attribute::AttributeWriteCIMRP(ESMCI::IO_XML*, int) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:1304:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for(int i=0; i<packList.size(); i++) {
-                  ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C: In member function ‘int ESMCI::Attribute::AttributeWriteCIMCP(ESMCI::IO_XML*, const string&, const string&, int) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:1656:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for(int i=0; i<attpack->attrList.size(); i++) {
-                  ~^~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:1669:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::__cxx11::basic_string<char> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                 for(int j=0; j<valuevector.size(); j++) {
-                              ~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:1690:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::__cxx11::basic_string<char> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                 for(int j=0; j<valuevector.size(); j++) {
-                              ~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C: In member function ‘int ESMCI::Attribute::AttributeWriteCIMCPfield(ESMCI::IO_XML*, const string&, int) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:1744:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for(int i=0; i<linkList.size(); i++) {
-                  ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:1755:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-         for(int j=0; j<linkList.at(i)->packList.size(); j++) {
-                      ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C: In member function ‘int ESMCI::Attribute::AttributeWriteCIMcitation(ESMCI::IO_XML*, int) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:1943:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for(int i=0; i<packList.size(); i++) {
-                  ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C: In member function ‘int ESMCI::Attribute::AttributeWriteCIMinput(ESMCI::IO_XML*, const string&) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:2446:19: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-     for(int i=0; i<linkList.size(); i++) {
-                  ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIM.C:2447:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-         for(int j=0; j<linkList.at(i)->packList.size(); j++) {
-                      ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C: In member function ‘int ESMCI::Attribute::AttributeWriteCIMgrids(ESMCI::IO_XML*, std::__cxx11::string, std::__cxx11::string, int, bool) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:126:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-         for(int i=0; i<linkList.size(); i++) {
-                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:138:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-             for(int j=0; j<linkList.at(i)->packList.size(); j++) {
-                          ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In member function ‘int ESMCI::Attribute::streamAttributeListToJSON(std::vector<ESMCI::Attribute*>, ESMC_Logical, ESMC_Logical, std::__cxx11::string&, int*) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:247:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                 for (int i = 0; i < attrVector.size(); i++) {
-                                 ~~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:206:33: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                 for (int i=0;  i<attpack->attrList.size(); ++i) {
-                                ~^~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In member function ‘int ESMCI::Attribute::streamAttributePackToJSON(std::vector<ESMCI::Attribute*>, ESMC_Logical, ESMC_Logical, ESMC_Logical, std::__cxx11::string&, int*) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:340:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                 for (int i = 0; i < attrVector.size(); i++) {
-                                 ~~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C: In member function ‘bool ESMCI::Attribute::AttributeWriteCIMgridPresent(std::__cxx11::string) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:332:23: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-         for(int i=0; i<linkList.size(); i++) {
-                      ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:348:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-             for(int j=0; j<linkList.at(i)->packList.size(); j++) {
-                          ~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In member function ‘int ESMCI::Attribute::streamAttributeLinksToJSON(std::vector<ESMCI::Attribute*>, ESMC_Logical, ESMC_Logical, std::__cxx11::string&, int*) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:380:35: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                 for (int i = 0; i < attrVector.size(); i++) {
-                                 ~~^~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C: In member function ‘std::__cxx11::string ESMCI::Attribute::AttributeGetInternalGridInt(std::__cxx11::string) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:612:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-             for (int i=0; i<attrList.size(); ++i) {
-                           ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C: In member function ‘std::__cxx11::string ESMCI::Attribute::AttributeGetInternalGridString(std::__cxx11::string) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteCIMgrids.C:688:28: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-             for (int i=0; i<attrList.size(); ++i) {
-                           ~^~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C: In member function ‘int ESMCI::Attribute::AttPackCreateStandard(const string&, const string&, const string&, const std::vector<std::__cxx11::basic_string<char> >&, const std::vector<std::__cxx11::basic_string<char> >&, const std::vector<int>&, int, std::vector<std::__cxx11::basic_string<char> >&, int&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:882:13: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-   for(i=0; i<nestCount; i++) {
-            ~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:891:15: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘const value_type’ {aka ‘const int’} [-Wsign-compare]
-     for(j=0; j<nestAttPackInstanceCountList[i]; j++) {
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C: In member function ‘int ESMCI::Attribute::AttPackNest(const string&, const string&, const string&, int, const std::vector<std::__cxx11::basic_string<char> >&, const std::vector<std::__cxx11::basic_string<char> >&)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:1042:13: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-   for(i=0; i<nestCount; i++) {
-            ~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:1099:14: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-   for (i=0; i<nestCount; i++) {
-             ~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C: In member function ‘ESMCI::Attribute* ESMCI::Attribute::AttPackGetAttribute(const int&) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:1353:11: warning: comparison of integer expressions of different signedness: ‘const int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   if (num >= attrList.size()) {
-       ~~~~^~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C: In member function ‘ESMCI::Attribute* ESMCI::Attribute::AttPackGetAttribute(const int&, ESMC_AttNest_Flag) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:1440:11: warning: comparison of integer expressions of different signedness: ‘const int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   if (num < attrList.size())
-       ~~~~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C: In member function ‘int ESMCI::Attribute::AttributeCountTreeLensAttpack(int&, int*, std::vector<std::__cxx11::basic_string<char> >&) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:2575:50: warning: comparison of integer expressions of different signedness: ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-           if ((attrList.at(i)->vcpp[0].size()+3) > attrLens[index])
-               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C: In member function ‘int ESMCI::Attribute::get(int*, int) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:2895:16: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-     for (i=0; i<count; i++)
-               ~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:2908:27: warning: comparison of integer expressions of different signedness: ‘int’ and ‘const unsigned int’ [-Wsign-compare]
-   if (count < 0 || (count > items)) {
-                     ~~~~~~^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:2916:14: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-   for (i=0; i<count; i++)
-             ~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C: In member function ‘ESMCI::Attribute* ESMCI::Attribute::AttributeGet(int) const’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:3069:31: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMCI::Attribute*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-   if ((number < 0) || (number >= attrList.size())) {
-                        ~~~~~~~^~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In instantiation of ‘std::__cxx11::string ESMCI::Attribute::attrValuesToString(const std::vector<T>*) const [with T = std::__cxx11::basic_string<char>; std::__cxx11::string = std::__cxx11::basic_string<char>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:263:71:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:413:43: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::__cxx11::basic_string<char> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                         for (int i = 0; i < vec->size(); i++) {
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:415:39: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<std::__cxx11::basic_string<char> >::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                                 if (i < vec->size()-1) {
-                                     ~~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In instantiation of ‘std::__cxx11::string ESMCI::Attribute::attrValuesToString(const std::vector<T>*) const [with T = int; std::__cxx11::string = std::__cxx11::basic_string<char>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:269:71:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:413:43: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                         for (int i = 0; i < vec->size(); i++) {
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:415:39: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                                 if (i < vec->size()-1) {
-                                     ~~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In instantiation of ‘std::__cxx11::string ESMCI::Attribute::attrValuesToString(const std::vector<T>*) const [with T = long long int; std::__cxx11::string = std::__cxx11::basic_string<char>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:275:71:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:413:43: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long long int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                         for (int i = 0; i < vec->size(); i++) {
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:415:39: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<long long int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                                 if (i < vec->size()-1) {
-                                     ~~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In instantiation of ‘std::__cxx11::string ESMCI::Attribute::attrValuesToString(const std::vector<T>*) const [with T = float; std::__cxx11::string = std::__cxx11::basic_string<char>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:281:71:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:413:43: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<float>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                         for (int i = 0; i < vec->size(); i++) {
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:415:39: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<float>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                                 if (i < vec->size()-1) {
-                                     ~~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In instantiation of ‘std::__cxx11::string ESMCI::Attribute::attrValuesToString(const std::vector<T>*) const [with T = double; std::__cxx11::string = std::__cxx11::basic_string<char>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:287:71:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:413:43: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                         for (int i = 0; i < vec->size(); i++) {
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:415:39: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                                 if (i < vec->size()-1) {
-                                     ~~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C: In instantiation of ‘std::__cxx11::string ESMCI::Attribute::attrValuesToString(const std::vector<T>*) const [with T = ESMC_Logical; std::__cxx11::string = std::__cxx11::basic_string<char>]’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:293:71:   required from here
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:413:43: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMC_Logical>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                         for (int i = 0; i < vec->size(); i++) {
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_AttributeWriteJSON.C:415:39: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<ESMC_Logical>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-                                 if (i < vec->size()-1) {
-                                     ~~^~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C: In member function ‘int ESMCI::Attribute::AttrModifyValue(const ESMC_TypeKind_Flag&, int, void*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:4302:22: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-           for (i=0; i<numitems; i++)
-                     ~^~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:4308:22: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-           for (i=0; i<numitems; i++)
-                     ~^~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:4314:22: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-           for (i=0; i<numitems; i++)
-                     ~^~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:4320:22: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-           for (i=0; i<numitems; i++)
-                     ~^~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:4326:22: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-           for (i=0; i<numitems; i++)
-                     ~^~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:4332:22: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-           for (i=0; i<numitems; i++)
-                     ~^~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C: In member function ‘int ESMCI::Attribute::ESMC_Deserialize(char*, int*)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:4600:16: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-     for (i=0; i<attrCount; i++) {
-               ~^~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/src/ESMCI_Attribute.C:4615:16: warning: comparison of integer expressions of different signedness: ‘unsigned int’ and ‘int’ [-Wsign-compare]
-     for (i=0; i<packCount; i++) {
-               ~^~~~~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:30:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C: In function ‘void c_esmc_attpackget_(ESMC_Base**, ESMCI::Attribute**, int*, char*, int*, ESMC_AttNest_Flag*, ESMC_Logical*, int*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:149:11: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI_FortranStrLenArg’ {aka ‘long unsigned int’} [-Wsign-compare]
-     if (j > slen) {
-         ~~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C: In function ‘void c_esmc_attpackaddattribute_(ESMC_Base**, char*, int*, char*, int*, int*, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:317:11: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI_FortranStrLenArg’ {aka ‘long unsigned int’} [-Wsign-compare]
-     if (j > slen) {
-         ~~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C: In function ‘void c_esmc_attpackcreatecustom_(ESMC_Base**, int*, char*, int*, ESMCI::Attribute**, int*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:403:11: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI_FortranStrLenArg’ {aka ‘long unsigned int’} [-Wsign-compare]
-     if (j > slen) {
-         ~~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C: In function ‘void c_esmc_attpackcreatestandard_(ESMC_Base**, int*, char*, int*, int*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:477:11: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI_FortranStrLenArg’ {aka ‘long unsigned int’} [-Wsign-compare]
-     if (j > slen) {
-         ~~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C: In function ‘void c_esmc_attpacknest_(ESMC_Base**, int*, char*, int*, int*, char*, char*, int*, int*, int*, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:600:11: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI_FortranStrLenArg’ {aka ‘long unsigned int’} [-Wsign-compare]
-     if (j > slen) {
-         ~~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C: In function ‘void c_esmc_attpackcreatestdnest_(ESMC_Base**, char*, char*, char*, char*, char*, int*, int*, int*, int*, char*, int*, int*, int*, int*, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:910:35: warning: comparison of integer expressions of different signedness: ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (cnapinamelist[i].length() > nestAttPackInstanceNameLens[i]) {
-         ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C: In function ‘void c_esmc_attpackgetapinstnames_(ESMC_Base**, ESMCI::Attribute**, char*, int*, int*, int*, ESMC_AttNest_Flag*, int*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:1507:34: warning: comparison of integer expressions of different signedness: ‘std::__cxx11::basic_string<char>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (capinamelist[i].length() > attPackInstanceNameLens[i]) {
-         ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C: In function ‘void c_esmc_attpacksetcharlist_(ESMC_Base**, char*, ESMC_TypeKind_Flag*, int*, char*, int*, ESMCI::Attribute**, ESMC_AttNest_Flag*, int*, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:1853:11: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI_FortranStrLenArg’ {aka ‘long unsigned int’} [-Wsign-compare]
-     if (j > vlen) {
-         ~~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C: In function ‘void c_esmc_attpacksetvalue_(ESMC_Base**, char*, ESMC_TypeKind_Flag*, int*, void*, ESMCI::Attribute**, ESMC_AttNest_Flag*, int*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:1983:9: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
-         for (int i=0; i<*count; i++)
-         ^~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:1985:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
-           status = attr->AttrModifyValue(*tk, *count, &temp);
-           ^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:1992:9: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
-         for (int i=0; i<*count; i++)
-         ^~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:1994:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
-           status = attr->AttrModifyValue(*tk, *count, &temp);
-           ^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:2001:9: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
-         for (int i=0; i<*count; i++)
-         ^~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:2003:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
-           status = attr->AttrModifyValue(*tk, *count, &temp);
-           ^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:2010:9: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
-         for (int i=0; i<*count; i++)
-         ^~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:2012:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
-           status = attr->AttrModifyValue(*tk, *count, &temp);
-           ^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:2019:9: warning: this ‘for’ clause does not guard... [-Wmisleading-indentation]
-         for (int i=0; i<*count; i++)
-         ^~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:2021:11: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
-           status = attr->AttrModifyValue(*tk, *count, &temp);
-           ^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C: In function ‘void c_esmc_attributesetcharlist_(ESMC_Base**, char*, ESMC_TypeKind_Flag*, int*, char*, int*, int*, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Attribute/interface/ESMCI_Attribute_F.C:3366:11: warning: comparison of integer expressions of different signedness: ‘int’ and ‘ESMCI_FortranStrLenArg’ {aka ‘long unsigned int’} [-Wsign-compare]
-     if (j > vlen) {
-         ~~^~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/State/src/ESMF_StateAPI.F90:2438:0:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/State/src/ESMF_StateAPI.F90:1894:0:
 
-         end function ESMF_StateCreate
+     end function ESMF_StateCreate
  
 Warning: control reaches end of non-void function [-Wreturn-type]
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
@@ -9221,19 +10396,31 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
      if (labelLen>=0){
          ~~~~~~~~^~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C: In function ‘void c_esmc_methodtableaddshobj_(ESMCI::MethodTable**, const char*, int*, const char*, const char*, int*, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C:122:17: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C:115:17: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+     if (labelLen>=0){
+         ~~~~~~~~^~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C: In function ‘void c_esmc_methodtableaddrep_(ESMCI::MethodTable**, const char*, int*, void*, int*, ESMCI_FortranStrLenArg)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C:147:17: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+     if (labelLen>=0){
+         ~~~~~~~~^~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C: In function ‘void c_esmc_methodtableaddrepshobj_(ESMCI::MethodTable**, const char*, int*, const char*, const char*, int*, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg, ESMCI_FortranStrLenArg)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C:177:17: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+     if (labelLen>=0){
+         ~~~~~~~~^~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C: In function ‘void c_esmc_methodtableget_(ESMCI::MethodTable**, const char*, int*, ESMC_Logical*, int*, ESMCI_FortranStrLenArg)’:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C:209:17: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
      if (labelLen>=0){
          ~~~~~~~~^~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C: In function ‘void c_esmc_methodtableremove_(ESMCI::MethodTable**, const char*, int*, int*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C:160:17: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C:237:17: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
      if (labelLen>=0){
          ~~~~~~~~^~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C: In function ‘void c_esmc_methodtableexecute_(ESMCI::MethodTable**, const char*, int*, void*, int*, int*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C:195:17: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C:265:17: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
      if (labelLen>=0){
          ~~~~~~~~^~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C: In function ‘void c_esmc_methodtableexecuteef_(ESMCI::MethodTable**, const char*, int*, void*, ESMC_Logical*, int*, int*, ESMCI_FortranStrLenArg)’:
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C:231:17: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_MethodTable.C:294:17: warning: comparison of unsigned expression >= 0 is always true [-Wtype-limits]
      if (labelLen>=0){
          ~~~~~~~~^~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_CompTunnel.C: In member function ‘int ESMCI::CompTunnel::dual2actual(void*, int, double)’:
@@ -9244,6 +10431,11 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMCI_CompTunnel.C:939:24: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<int>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
          for (int i=0; i<localSendToPetList.size(); i++)
                        ~^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMF_Comp.F90:2146:0:
+
+       lowerOpenMpHandling = ESMF_UtilStringLowerCase(openMpHandling, rc=localrc)
+ 
+Warning: ‘.loweropenmphandling’ may be used uninitialized in this function [-Wmaybe-uninitialized]
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/Component/src/ESMF_CplComp.F90:479:0:
 
    end function ESMF_CplCompCreate
@@ -9411,6 +10603,1687 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/InfoAPI/src/ESMC_InfoCacheCDef.C:19:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/InfoAPI/src/ESMC_InfoDescribeCDef.C:14:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/InfoAPI/interface/ESMF_InfoDescribe.F90:406:0:
+
+         l_uname = trim(c_vmid)//"-"//trim(c_id_base)//"-"//trim(name)
+ 
+Warning: ‘.l_uname’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:2404:0:
+
+       local_convention = TRIM(convention)
+ 
+Warning: ‘.local_convention’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:2409:0:
+
+       local_purpose = TRIM(purpose)
+ 
+Warning: ‘.local_purpose’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:48123:0:
+
+   key = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:48126:0:
+
+   c_output = ESMF_InfoDump(attpack%getPayload(), key=key, rc=localrc)
+ 
+Warning: ‘.c_output’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:44968:0:
+
+   key = "/"//TRIM(convention)//"/"//TRIM(purpose)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:44761:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:44568:0:
+
+   key = "/"//TRIM(convention)//"/"//TRIM(purpose)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:44361:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:44168:0:
+
+   key = "/"//TRIM(convention)//"/"//TRIM(purpose)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:43961:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:43768:0:
+
+   key = "/"//TRIM(convention)//"/"//TRIM(purpose)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:43561:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:43368:0:
+
+   key = "/"//TRIM(convention)//"/"//TRIM(purpose)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:43161:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:42968:0:
+
+   key = "/"//TRIM(convention)//"/"//TRIM(purpose)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:42761:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:42568:0:
+
+   key = "/"//TRIM(convention)//"/"//TRIM(purpose)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:42361:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:42168:0:
+
+   key = "/"//TRIM(convention)//"/"//TRIM(purpose)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:41961:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:41768:0:
+
+   key = "/"//TRIM(convention)//"/"//TRIM(purpose)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:41561:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:41368:0:
+
+   key = "/"//TRIM(convention)//"/"//TRIM(purpose)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:41161:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:40968:0:
+
+   key = "/"//TRIM(convention)//"/"//TRIM(purpose)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:40761:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:40568:0:
+
+   key = "/"//TRIM(convention)//"/"//TRIM(purpose)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:40361:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:40095:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:39959:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:39823:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:39687:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:39551:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:39415:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:39279:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:39143:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:39007:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:38871:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:38735:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:38599:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:38463:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:38327:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:38191:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:38055:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:37919:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:37783:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:37647:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:37511:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:37375:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:37239:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:37103:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:36967:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:36831:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:36695:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:36559:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:36423:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:36287:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:36151:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:36015:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:35879:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:35743:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:35607:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:35471:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:35335:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:35199:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:35063:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:34927:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:34791:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:34655:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:34519:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:34383:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:34247:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:34111:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:33975:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:33839:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:33703:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:33567:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:33431:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:33295:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:33159:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:33023:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:32887:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:32751:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:32615:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:32479:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:32343:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:32207:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:32071:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:31935:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:31799:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:31663:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:31527:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:31391:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:31255:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:31119:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:30983:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:30847:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:30711:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:30575:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:30439:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:30287:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:30138:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:29989:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:29840:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:29691:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:29542:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:29393:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:29244:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:29095:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:28946:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:28797:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:28648:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:28499:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:28350:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:28201:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:28052:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:27903:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:27754:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:27605:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:27456:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:27307:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:27158:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:27009:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:26860:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:26711:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:26562:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:26413:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:26264:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:26115:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:25966:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:25817:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:25668:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:25519:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:25370:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:25221:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:25072:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:24923:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:24774:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:24625:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:24476:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:24327:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:24178:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:24029:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:23880:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:23731:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:23582:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:23433:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:23284:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:23135:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:22986:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:22837:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:22688:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:22539:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:22390:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:22241:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:22092:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:21943:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:21794:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:21645:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:21496:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:21347:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:21198:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:21049:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:20900:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:20751:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:20602:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:20453:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:20304:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:20155:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:20006:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:19857:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:19708:0:
+
+   key = attpack%formatKey(name=name, rc=localrc)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:19588:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:19472:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:19356:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:19240:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:19124:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:19008:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:18892:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:18776:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:18660:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:18544:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:18428:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:18312:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:18196:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:18080:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:17964:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:17848:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:17732:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:17616:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:17500:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:17384:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:17268:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:17152:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:17036:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:16920:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:16804:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:16688:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:16572:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:16456:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:16340:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:16224:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:16108:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:15992:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:15876:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:15760:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:15644:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:15528:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:15412:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:15296:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:15180:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:15064:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:14948:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:14832:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:14716:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:14600:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:14484:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:14368:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:14252:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:14136:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:14020:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:13904:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:13788:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:13672:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:13556:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:13440:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:13324:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:13208:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:13092:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:12976:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:12860:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:12744:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:12628:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:12512:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:12396:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:12280:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:12164:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:12048:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:11932:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:11816:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:11700:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:11584:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:11468:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:11352:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:11236:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:11120:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:11004:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:10888:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:10772:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:10656:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:10540:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:10424:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:10308:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:10192:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:10076:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:9960:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:9844:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:9728:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:9612:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:9496:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:9380:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:9264:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:9148:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:9032:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:8916:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:8800:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:8684:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:8568:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:8452:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:8336:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:8220:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:8104:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:7988:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:7872:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:7756:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:7640:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:7524:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:7408:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:7292:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:7176:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:7060:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:6944:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:6828:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:6712:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:6596:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:6480:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:6364:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:6248:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:6132:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:6016:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:5900:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:5784:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:5668:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:5552:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:5436:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:5320:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:5204:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:5088:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:4972:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:4856:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:4740:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:4624:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:4508:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:4392:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:4276:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:4160:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:4044:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:3928:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:3812:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:3696:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:3580:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:3464:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:3348:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:3232:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:3116:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:3000:0:
+
+   pkey = attpack%formatKey(rc=localrc)
+ 
+Warning: ‘.pkey’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:2565:0:
+
+   key = "/"//TRIM(convention)//"/"//TRIM(purpose)
+ 
+Warning: ‘.key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:2567:0:
+
+     key_nest_get = "/"//TRIM(nestConvention)//"/"//TRIM(nestPurpose)
+ 
+Warning: ‘.key_nest_get’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:2568:0:
+
+     key_nest_set = key//key_nest_get
+ 
+Warning: ‘.key_nest_set’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:2479:0:
+
+   jptr_trim = TRIM(jptr)
+ 
+Warning: ‘.jptr_trim’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:46210:0:
+
+     keyChild = name
+ 
+Warning: ‘.keychild’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:46105:0:
+
+     keyChild = name
+ 
+Warning: ‘.keychild’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:46000:0:
+
+     keyChild = name
+ 
+Warning: ‘.keychild’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:45895:0:
+
+     keyChild = name
+ 
+Warning: ‘.keychild’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:45790:0:
+
+     keyChild = name
+ 
+Warning: ‘.keychild’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:45685:0:
+
+     keyChild = name
+ 
+Warning: ‘.keychild’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:45580:0:
+
+     keyChild = name
+ 
+Warning: ‘.keychild’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:45475:0:
+
+     keyChild = name
+ 
+Warning: ‘.keychild’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:45370:0:
+
+     keyChild = name
+ 
+Warning: ‘.keychild’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:45265:0:
+
+     keyChild = name
+ 
+Warning: ‘.keychild’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:45160:0:
+
+     keyChild = name
+ 
+Warning: ‘.keychild’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/AttributeAPI/interface/ESMF_Attribute.F90:45055:0:
+
+     keyChild = name
+ 
+Warning: ‘.keychild’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Comp.h:32,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/WebServices/src/../include/ESMCI_WebServComponentSvr.h:23,
                  from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/WebServices/src/ESMCI_WebServComponentSvr.C:32:
@@ -9439,7 +12312,7 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
    end function ESMFIO_Create
  
 Warning: control reaches end of non-void function [-Wreturn-type]
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/PreESMFMod/src/ESMF_RegridWeightGen.F90:3905:29:
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Superstructure/PreESMFMod/src/ESMF_RegridWeightGen.F90:4024:29:
 
                  A(:,right) = tempI
                              1
@@ -9464,22 +12337,47 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
   ^~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/epilogue/src/ESMCI_Test.C: In function ‘bool ESMCI::TestMaxPETs(int, char*, int, int)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/epilogue/src/ESMCI_Test.C:247:21: warning: ‘%s’ directive writing up to 159 bytes into a region of size 154 [-Wformat-overflow=]
-     sprintf(msgbuf, "SKIP  %s, %s, line %d\n", failMsg, file, line);
-                     ^~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/epilogue/src/ESMCI_Test.C:247:12: note: ‘sprintf’ output 18 or more bytes (assuming 177) into a destination of size 160
-     sprintf(msgbuf, "SKIP  %s, %s, line %d\n", failMsg, file, line);
-     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     sprintf(msgbuf, "SKIP  %s, %s, line %d", failMsg, file, line);
+                     ^~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/epilogue/src/ESMCI_Test.C:247:12: note: ‘sprintf’ output 17 or more bytes (assuming 176) into a destination of size 160
+     sprintf(msgbuf, "SKIP  %s, %s, line %d", failMsg, file, line);
+     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/epilogue/src/ESMCI_Test.C: In function ‘bool ESMCI::TestMinPETs(int, char*, int, int)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/epilogue/src/ESMCI_Test.C:319:21: warning: ‘%s’ directive writing up to 159 bytes into a region of size 154 [-Wformat-overflow=]
-     sprintf(msgbuf, "SKIP  %s, %s, line %d\n", failMsg, file, line);
-                     ^~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/epilogue/src/ESMCI_Test.C:319:12: note: ‘sprintf’ output 18 or more bytes (assuming 177) into a destination of size 160
-     sprintf(msgbuf, "SKIP  %s, %s, line %d\n", failMsg, file, line);
-     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     sprintf(msgbuf, "SKIP  %s, %s, line %d", failMsg, file, line);
+                     ^~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/epilogue/src/ESMCI_Test.C:319:12: note: ‘sprintf’ output 17 or more bytes (assuming 176) into a destination of size 160
+     sprintf(msgbuf, "SKIP  %s, %s, line %d", failMsg, file, line);
+     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/epilogue/src/ESMCI_Test.C: In function ‘bool ESMCI::TestNumPETs(int, char*, int, int)’:
 /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/epilogue/src/ESMCI_Test.C:391:21: warning: ‘%s’ directive writing up to 159 bytes into a region of size 154 [-Wformat-overflow=]
-     sprintf(msgbuf, "SKIP  %s, %s, line %d\n", failMsg, file, line);
-                     ^~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~
-/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/epilogue/src/ESMCI_Test.C:391:12: note: ‘sprintf’ output 18 or more bytes (assuming 177) into a destination of size 160
-     sprintf(msgbuf, "SKIP  %s, %s, line %d\n", failMsg, file, line);
-     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     sprintf(msgbuf, "SKIP  %s, %s, line %d", failMsg, file, line);
+                     ^~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/epilogue/src/ESMCI_Test.C:391:12: note: ‘sprintf’ output 17 or more bytes (assuming 176) into a destination of size 160
+     sprintf(msgbuf, "SKIP  %s, %s, line %d", failMsg, file, line);
+     ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/addon/NUOPC/src/NUOPC_Connector.F90:7748:25:
+
+           rhListMatch = (rhListE%extrapDistExponent==extrapDistExponent)
+                         1
+Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Comp.h:32,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h:17,
+                 from wrappers_mpi.C:19:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Comp.h:32,
+                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h:17,
+                 from preload_mpi.C:31:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
