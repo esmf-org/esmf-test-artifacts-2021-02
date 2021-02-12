@@ -1476,15 +1476,6 @@ PGF90-W-0435-Array declared with zero size (/work/noaa/da/mpotts/pgi_2019_openmp
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Base/src/ESMCI_Info
-          .C", line 766: warning: variable "ret" is used before its value is
-          set
-                try { check_overflow(ret, at_index); }
-                                     ^
-          detected during instantiation of "T ESMCI::Info::get(ESMCI::key_t &,
-                    const T *, const int *, bool, std::string *, bool) const
-                    [with T=float]" at line 839
-
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
           warning: pointless comparison of unsigned integer with zero
           const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
@@ -1521,6 +1512,15 @@ PGF90-W-0435-Array declared with zero size (/work/noaa/da/mpotts/pgi_2019_openmp
                       NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Base/src/ESMCI_Info
+          .C", line 766: warning: variable "ret" is used before its value is
+          set
+                try { check_overflow(ret, at_index); }
+                                     ^
+          detected during instantiation of "T ESMCI::Info::get(ESMCI::key_t &,
+                    const T *, const int *, bool, std::string *, bool) const
+                    [with T=float]" at line 839
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Base/src/ESMCI_Info
           .C", line 766: warning: variable "ret" is used before its value is
@@ -1584,15 +1584,15 @@ PGF90-W-0435-Array declared with zero size (/work/noaa/da/mpotts/pgi_2019_openmp
    static const char *const version = "$Id$";
                             ^
 
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Base/src/ESMCI_Info
-          .C", line 44: warning: variable "version" was declared but never
-          referenced
-   static const char *const version = "$Id$";
-                            ^
-
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Base/src/ESMC_InfoC
           DefGeneric.C", line 52: warning: variable "version" was declared but
           never referenced
+   static const char *const version = "$Id$";
+                            ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Base/src/ESMCI_Info
+          .C", line 44: warning: variable "version" was declared but never
+          referenced
    static const char *const version = "$Id$";
                             ^
 
@@ -5713,12 +5713,6 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
        int pdim=*pdim_ptr;
            ^
 
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
-          _GToM_Glue.C", line 589: warning: variable "buf" was declared but
-          never referenced
-     char buf[512];
-          ^
-
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
           warning: pointless comparison of unsigned integer with zero
           const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
@@ -5755,6 +5749,12 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
                       NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
+          _GToM_Glue.C", line 589: warning: variable "buf" was declared but
+          never referenced
+     char buf[512];
+          ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
           _GToM_Glue.C", line 1423: warning: variable "nonde_index" was
@@ -5816,6 +5816,18 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
   static const char *const version = "$Id$";
                            ^
 
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
+          _Regrid_Glue.C", line 117: warning: variable "srcarray" was declared
+          but never referenced
+    ESMCI::Array &srcarray = **arraysrcpp;
+                  ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
+          _Regrid_Glue.C", line 118: warning: variable "dstarray" was declared
+          but never referenced
+    ESMCI::Array &dstarray = **arraydstpp;
+                  ^
+
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
           warning: pointless comparison of unsigned integer with zero
           const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
@@ -5854,31 +5866,19 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
-          _Regrid_Glue.C", line 117: warning: variable "srcarray" was declared
-          but never referenced
-    ESMCI::Array &srcarray = **arraysrcpp;
-                  ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
-          _Regrid_Glue.C", line 118: warning: variable "dstarray" was declared
-          but never referenced
-    ESMCI::Array &dstarray = **arraydstpp;
-                  ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
-          _Regrid_Glue.C", line 1761: warning: variable "rc" was declared but
+          _Regrid_Glue.C", line 1777: warning: variable "rc" was declared but
           never referenced
    int rc;
        ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
-          _Regrid_Glue.C", line 1811: warning: variable "rc" was declared but
+          _Regrid_Glue.C", line 1827: warning: variable "rc" was declared but
           never referenced
    int rc;
        ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
-          _Regrid_Glue.C", line 1867: warning: variable "rc" was declared but
+          _Regrid_Glue.C", line 1883: warning: variable "rc" was declared but
           never referenced
       int rc;
           ^
@@ -5975,6 +5975,18 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
   static void triangulate(int sdim, int num_p, double *p, double *td, int *ti, int *tri_ind,
               ^
 
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
+          .C", line 2088: warning: pointless comparison of unsigned integer
+          with zero
+         if ((orig_owner < 0) || (orig_owner > num_procs-1)) {
+                         ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
+          .C", line 2114: warning: pointless comparison of unsigned integer
+          with zero
+         if ((orig_owner < 0) || (orig_owner > num_procs-1)) {
+                         ^
+
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
           warning: pointless comparison of unsigned integer with zero
           const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
@@ -6012,18 +6024,6 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
-          .C", line 2088: warning: pointless comparison of unsigned integer
-          with zero
-         if ((orig_owner < 0) || (orig_owner > num_procs-1)) {
-                         ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
-          .C", line 2114: warning: pointless comparison of unsigned integer
-          with zero
-         if ((orig_owner < 0) || (orig_owner > num_procs-1)) {
-                         ^
-
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_OTre
           e.C", line 41: warning: variable "version" was declared but never
           referenced
@@ -6031,7 +6031,7 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
                            ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Mesh
-          _Regrid_Glue.C", line 1170: warning: function
+          _Regrid_Glue.C", line 1186: warning: function
           "cnsrv_check_for_mesh_errors" was declared but never referenced
   static void cnsrv_check_for_mesh_errors(Mesh &mesh, bool ignore_degenerate, bool *concave, bool *clockwise, bool *degenerate) {
               ^
@@ -6294,6 +6294,12 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
     int merr;
         ^
 
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Sear
+          ch_NearestNPnts.C", line 42: warning: variable "version" was declared
+          but never referenced
+  static const char *const version = "$Id$";
+                           ^
+
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
           sh.C", line 247: warning: variable "localrc" was declared but never
           referenced
@@ -6311,12 +6317,6 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
           referenced
     int localrc, merr;
         ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_Sear
-          ch_NearestNPnts.C", line 42: warning: variable "version" was declared
-          but never referenced
-  static const char *const version = "$Id$";
-                           ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
           sh.C", line 468: warning: expression has no effect
@@ -6602,6 +6602,18 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
       int localrc, merr;
           ^
 
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
+          sh_Bilinear.C", line 88: warning: variable "merr" was declared but
+          never referenced
+      int merr, localrc;
+          ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
+          sh_Bilinear.C", line 88: warning: variable "localrc" was declared but
+          never referenced
+      int merr, localrc;
+                ^
+
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
           warning: pointless comparison of unsigned integer with zero
           const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
@@ -6646,18 +6658,6 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
                            ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
-          sh_Bilinear.C", line 88: warning: variable "merr" was declared but
-          never referenced
-      int merr, localrc;
-          ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
-          sh_Bilinear.C", line 88: warning: variable "localrc" was declared but
-          never referenced
-      int merr, localrc;
-                ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
           sh_Conserve.C", line 428: warning: variable "num_sintd_nodes" was
           declared but never referenced
       int num_sintd_nodes;
@@ -6699,55 +6699,12 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
       MPI_Comm mpi_comm;
                ^
 
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
-          warning: pointless comparison of unsigned integer with zero
-          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
-                                                                                               ^
-          detected during:
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
-                      (NumberType) [with
-                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
-                      std::string, bool, int64_t, uint64_t, double,
-                      std::allocator, nlohmann::adl_serializer>,
-                      NumberType=uint64_t, <unnamed>=0]" at line 14005
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump(const
-                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
-                      [with BasicJsonType=nlohmann::basic_json<std::map,
-                      std::vector, std::string, bool, int64_t, uint64_t,
-                      double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 16570
-            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
-                      StringType, BooleanType, NumberIntegerType,
-                      NumberUnsignedType, NumberFloatType, AllocatorType,
-                      JSONSerializer>::string_t
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::dump(int, char, bool,
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::error_handler_t) const [with
-                      ObjectType=std::map, ArrayType=std::vector,
-                      StringType=std::string, BooleanType=bool,
-                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
-                      NumberFloatType=double, AllocatorType=std::allocator,
-                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
-
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
           sh_Bilinear.C", line 51: warning: variable "version" was declared but
           never referenced
   static const char *const version = "$Id$";
                            ^
 
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
-          sh_Glue.C", line 73: warning: variable "merr" was declared but never
-          referenced
-      int localrc, merr;
-                   ^
-
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
           warning: pointless comparison of unsigned integer with zero
           const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
@@ -6784,6 +6741,12 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
                       NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
+          sh_Glue.C", line 73: warning: variable "merr" was declared but never
+          referenced
+      int localrc, merr;
+                   ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
           sh_Glue.C", line 124: warning: variable "merr" was declared but never
@@ -6796,6 +6759,61 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
           never referenced
       ESMC_CoordSys_Flag coordSys=mbmp->coordsys;
                          ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
+          warning: pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
+          sh_Glue.C", line 1189: warning: variable "tmp_coords" was declared
+          but never referenced
+    double tmp_coords[MAX_NUM_POLY_COORDS];
+           ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
+          sh_Glue.C", line 1426: warning: variable "sdim" was declared but
+          never referenced
+      int sdim=mbmp->sdim;
+          ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
+          sh_Glue.C", line 1427: warning: variable "pdim" was declared but
+          never referenced
+      int pdim=mbmp->pdim;
+          ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
           sh_GToM_Glue.C", line 184: warning: integer conversion resulted in a
@@ -6814,6 +6832,12 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
           never used
          int index[2];
              ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
+          sh_Glue.C", line 1711: warning: variable "mesh" was declared but
+          never referenced
+      Interface *mesh=mbmp->mesh;
+                 ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
           sh_GToM_Glue.C", line 701: warning: variable "index" was set but
@@ -6840,30 +6864,6 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
          ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
-          sh_Glue.C", line 1189: warning: variable "tmp_coords" was declared
-          but never referenced
-    double tmp_coords[MAX_NUM_POLY_COORDS];
-           ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
-          sh_Glue.C", line 1426: warning: variable "sdim" was declared but
-          never referenced
-      int sdim=mbmp->sdim;
-          ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
-          sh_Glue.C", line 1427: warning: variable "pdim" was declared but
-          never referenced
-      int pdim=mbmp->pdim;
-          ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
-          sh_Glue.C", line 1711: warning: variable "mesh" was declared but
-          never referenced
-      Interface *mesh=mbmp->mesh;
-                 ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
           sh_Glue.C", line 2196: warning: variable "merr" was declared but
           never referenced
       int localrc, merr;
@@ -6876,6 +6876,12 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
            ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
+          sh_Glue.C", line 2502: warning: variable "orig_sdim" was declared but
+          never referenced
+      int orig_sdim=meshp->orig_sdim;
+          ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
           sh_Conserve.C", line 52: warning: variable "version" was declared but
           never referenced
   static const char *const version = "$Id$";
@@ -6886,12 +6892,6 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
           never referenced
   static bool debug=false;
               ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
-          sh_Glue.C", line 2502: warning: variable "orig_sdim" was declared but
-          never referenced
-      int orig_sdim=meshp->orig_sdim;
-          ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
           sh_Mapping.C", line 878: warning: statement is unreachable
@@ -7091,6 +7091,12 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
                ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
+          sh_Glue.C", line 52: warning: variable "version" was declared but
+          never referenced
+   static const char *const version = "$Id$";
+                            ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
           sh_Redist.C", line 219: warning: variable "merr" was declared but
           never referenced
       int merr;
@@ -7150,12 +7156,6 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
           ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
-          sh_Glue.C", line 52: warning: variable "version" was declared but
-          never referenced
-   static const char *const version = "$Id$";
-                            ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
           sh_Redist.C", line 1454: warning: missing return statement at end of
           non-void function "ESMCI::calc_size_from_buff_elem_comm"
   }
@@ -7180,16 +7180,16 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
                    ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
-          sh_Redist.C", line 2218: warning: variable "merr" was declared but
-          never referenced
-      int localrc, merr;
-                   ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
           sh_ShapeFunc.C", line 21: warning: variable "version" was declared
           but never referenced
   static const char *const version = "$Id$";
                            ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
+          sh_Redist.C", line 2218: warning: variable "merr" was declared but
+          never referenced
+      int localrc, merr;
+                   ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/ESMCI_MBMe
           sh_Redist.C", line 2614: warning: variable "localrc" was declared but
@@ -7726,12 +7726,6 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
                                ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Legacy/ESM
-          CI_MeshGen.C", line 25: warning: variable "version" was declared but
-          never referenced
-  static const char *const version = "$Id$";
-                           ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Legacy/ESM
           CI_MeshMerge.C", line 1538: warning: variable "cd_sph" was declared
           but never referenced
               double *cd_sph, *clip_cd_sph;
@@ -7747,6 +7741,12 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
           CI_MeshNC.C", line 888: warning: statement is unreachable
     return true;
     ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Legacy/ESM
+          CI_MeshGen.C", line 25: warning: variable "version" was declared but
+          never referenced
+  static const char *const version = "$Id$";
+                           ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Legacy/ESM
           CI_MeshObjPack.C", line 19: warning: variable "version" was declared
@@ -7779,14 +7779,14 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
                            ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Legacy/ESM
-          CI_MeshPartition.C", line 36: warning: variable "version" was
-          declared but never referenced
+          CI_MeshPNC.C", line 28: warning: variable "version" was declared but
+          never referenced
   static const char *const version = "$Id$";
                            ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Legacy/ESM
-          CI_MeshPNC.C", line 28: warning: variable "version" was declared but
-          never referenced
+          CI_MeshPartition.C", line 36: warning: variable "version" was
+          declared but never referenced
   static const char *const version = "$Id$";
                            ^
 
@@ -7809,6 +7809,12 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
                            ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Legacy/ESM
+          CI_MeshRefine.C", line 27: warning: variable "version" was declared
+          but never referenced
+  static const char *const version = "$Id$";
+                           ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Legacy/ESM
           CI_MeshVTK.C", line 469: warning: variable "i" was declared but never
           referenced
       for (UInt i = 0; ei != ee; ++ei) {
@@ -7819,12 +7825,6 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
           referenced
       for (UInt i = 0; ni != ne; ++ni) {
                 ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Legacy/ESM
-          CI_MeshRefine.C", line 27: warning: variable "version" was declared
-          but never referenced
-  static const char *const version = "$Id$";
-                           ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Legacy/ESM
           CI_MeshVTK.C", line 934: warning: variable "sdim" was declared but
@@ -8563,12 +8563,6 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
                     SPATIAL_DIM=2, PARAMETRIC_DIM=2]" at line 1000
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Regridding
-          /ESMCI_Conserve2ndInterp.C", line 39: warning: variable "version" was
-          declared but never referenced
-  static const char *const version = "$Id$";
-                           ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Regridding
           /ESMCI_Mapping.C", line 360: warning: statement is unreachable
       if (is_outside_hex_sph3D_xyz(mdata, point)) {
       ^
@@ -8591,6 +8585,12 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
                     SFUNC_TYPE=ESMCI::quad_shape_func,
                     MPTRAITS=ESMCI::MPTraits<double, ESMCI::fad_type>,
                     SPATIAL_DIM=2, PARAMETRIC_DIM=2]" at line 1007
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Regridding
+          /ESMCI_Conserve2ndInterp.C", line 39: warning: variable "version" was
+          declared but never referenced
+  static const char *const version = "$Id$";
+                           ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Regridding
           /ESMCI_Mapping.C", line 360: warning: statement is unreachable
@@ -8707,6 +8707,12 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
     static void _add_weights_from_CreepNode(CreepNode *cnode, WMat &wts) {
                 ^
 
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Regridding
+          /ESMCI_Extrap.C", line 21: warning: variable "version" was declared
+          but never referenced
+   static const char *const version = "$Id$";
+                            ^
+
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
           warning: pointless comparison of unsigned integer with zero
           const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
@@ -8743,12 +8749,6 @@ PGF90-W-0435-Array declared with zero size (piodarray.F90.in: 237)
                       NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Regridding
-          /ESMCI_Extrap.C", line 21: warning: variable "version" was declared
-          but never referenced
-   static const char *const version = "$Id$";
-                            ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/Mesh/src/Regridding
           /ESMCI_MeshRegrid.C", line 24: warning: variable "version" was
@@ -9332,43 +9332,6 @@ PGF90-W-0130-Floating point underflow. Check constants and constant expressions 
       int sideBIndex_base0=sideBIndex+1;
           ^
 
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
-          warning: pointless comparison of unsigned integer with zero
-          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
-                                                                                               ^
-          detected during:
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
-                      (NumberType) [with
-                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
-                      std::string, bool, int64_t, uint64_t, double,
-                      std::allocator, nlohmann::adl_serializer>,
-                      NumberType=uint64_t, <unnamed>=0]" at line 14005
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump(const
-                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
-                      [with BasicJsonType=nlohmann::basic_json<std::map,
-                      std::vector, std::string, bool, int64_t, uint64_t,
-                      double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 16570
-            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
-                      StringType, BooleanType, NumberIntegerType,
-                      NumberUnsignedType, NumberFloatType, AllocatorType,
-                      JSONSerializer>::string_t
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::dump(int, char, bool,
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::error_handler_t) const [with
-                      ObjectType=std::map, ArrayType=std::vector,
-                      StringType=std::string, BooleanType=bool,
-                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
-                      NumberFloatType=double, AllocatorType=std::allocator,
-                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
-
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Infrastructure/XGrid/interface/ESM
           CI_XGrid_F.C", line 81: warning: variable "i" was declared but never
           referenced
@@ -9422,6 +9385,43 @@ PGF90-W-0130-Floating point underflow. Check constants and constant expressions 
           never referenced
       char * ptr = (char *)(buffer + *offset);
              ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
+          warning: pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
           warning: pointless comparison of unsigned integer with zero
@@ -10098,12 +10098,6 @@ PGF90-W-0130-Floating point underflow. Check constants and constant expressions 
   static const char *const version = "$Id$";
                            ^
 
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Superstructure/State/interface/ESM
-          C_State.C", line 45: warning: variable "version" was declared but
-          never referenced
-  static const char *const version = "$Id$";
-                           ^
-
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
           warning: pointless comparison of unsigned integer with zero
           const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
@@ -10140,6 +10134,12 @@ PGF90-W-0130-Floating point underflow. Check constants and constant expressions 
                       NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
                       NumberFloatType=double, AllocatorType=std::allocator,
                       JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Superstructure/State/interface/ESM
+          C_State.C", line 45: warning: variable "version" was declared but
+          never referenced
+  static const char *const version = "$Id$";
+                           ^
 
 "/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/Superstructure/State/interface/ESM
           CI_State_F.C", line 34: warning: variable "version" was declared but
@@ -11048,90 +11048,4 @@ PGF90-W-0130-Floating point underflow. Check constants and constant expressions 
           43: warning: variable "version" was declared but never referenced
   static const char *const version = "$Id$";
                            ^
-
-"wrappers_mpi.h", line 173: warning: last line of file ends without a newline
-  #endif
-        ^
-
-"wrappers_mpi.C", line 1146: warning: last line of file ends without a newline
-  #endif
-        ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
-          warning: pointless comparison of unsigned integer with zero
-          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
-                                                                                               ^
-          detected during:
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
-                      (NumberType) [with
-                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
-                      std::string, bool, int64_t, uint64_t, double,
-                      std::allocator, nlohmann::adl_serializer>,
-                      NumberType=uint64_t, <unnamed>=0]" at line 14005
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump(const
-                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
-                      [with BasicJsonType=nlohmann::basic_json<std::map,
-                      std::vector, std::string, bool, int64_t, uint64_t,
-                      double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 16570
-            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
-                      StringType, BooleanType, NumberIntegerType,
-                      NumberUnsignedType, NumberFloatType, AllocatorType,
-                      JSONSerializer>::string_t
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::dump(int, char, bool,
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::error_handler_t) const [with
-                      ObjectType=std::map, ArrayType=std::vector,
-                      StringType=std::string, BooleanType=bool,
-                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
-                      NumberFloatType=double, AllocatorType=std::allocator,
-                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
-
-"wrappers_mpi.h", line 173: warning: last line of file ends without a newline
-  #endif
-        ^
-
-"/work/noaa/da/mpotts/pgi_2019_openmpi_O/src/include/json.hpp", line 14370:
-          warning: pointless comparison of unsigned integer with zero
-          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
-                                                                                               ^
-          detected during:
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
-                      (NumberType) [with
-                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
-                      std::string, bool, int64_t, uint64_t, double,
-                      std::allocator, nlohmann::adl_serializer>,
-                      NumberType=uint64_t, <unnamed>=0]" at line 14005
-            instantiation of "void
-                      nlohmann::detail::serializer<BasicJsonType>::dump(const
-                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
-                      [with BasicJsonType=nlohmann::basic_json<std::map,
-                      std::vector, std::string, bool, int64_t, uint64_t,
-                      double, std::allocator, nlohmann::adl_serializer>]" at
-                      line 16570
-            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
-                      StringType, BooleanType, NumberIntegerType,
-                      NumberUnsignedType, NumberFloatType, AllocatorType,
-                      JSONSerializer>::string_t
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::dump(int, char, bool,
-                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
-                      BooleanType, NumberIntegerType, NumberUnsignedType,
-                      NumberFloatType, AllocatorType,
-                      JSONSerializer>::error_handler_t) const [with
-                      ObjectType=std::map, ArrayType=std::vector,
-                      StringType=std::string, BooleanType=bool,
-                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
-                      NumberFloatType=double, AllocatorType=std::allocator,
-                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
