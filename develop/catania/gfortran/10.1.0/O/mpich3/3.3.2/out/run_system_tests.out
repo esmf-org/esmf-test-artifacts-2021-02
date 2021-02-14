@@ -46,9 +46,15 @@ tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortr
 tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_ArrayBundleRedist
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=ArrayBundleRedist NP=6 stest
 /project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 6 ./ESMF_ArrayBundleRedistSTest 1> ./ESMF_ArrayBundleRedistSTest.stdout 2>&1
-tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_FieldSparseMatMul
-/Library/Developer/CommandLineTools/usr/bin/make TNAME=FieldSparseMatMul NP=6 stest
-/project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 6 ./ESMF_FieldSparseMatMulSTest 1> ./ESMF_FieldSparseMatMulSTest.stdout 2>&1
+tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_ArrayRedistOpenMP
+env OMP_WAIT_POLICY=passive /Library/Developer/CommandLineTools/usr/bin/make TNAME=ArrayRedistOpenMP NP=8 stest
+/project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 8 ./ESMF_ArrayRedistOpenMPSTest 1> ./ESMF_ArrayRedistOpenMPSTest.stdout 2>&1
+tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_ArrayRedistOpenACC
+/Library/Developer/CommandLineTools/usr/bin/make TNAME=ArrayRedistOpenACC NP=8 stest
+/project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 8 ./ESMF_ArrayRedistOpenACCSTest 1> ./ESMF_ArrayRedistOpenACCSTest.stdout 2>&1
+tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_ArraySharedDeSSI
+env OMP_WAIT_POLICY=passive /Library/Developer/CommandLineTools/usr/bin/make TNAME=ArraySharedDeSSI NP=6 stest
+/project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 6 ./ESMF_ArraySharedDeSSISTest 1> ./ESMF_ArraySharedDeSSISTest.stdout 2>&1
 tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_ConcurrentComponent
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=ConcurrentComp NP=8 stest
 /project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 8 ./ESMF_ConcurrentCompSTest 1> ./ESMF_ConcurrentCompSTest.stdout 2>&1
@@ -109,6 +115,12 @@ tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortr
 tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_FieldRegridMeshToMesh
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=FieldRegridMeshToMesh NP=4 stest
 /project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 4 ./ESMF_FieldRegridMeshToMeshSTest 1> ./ESMF_FieldRegridMeshToMeshSTest.stdout 2>&1
+tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_FieldSparseMatMul
+/Library/Developer/CommandLineTools/usr/bin/make TNAME=FieldSparseMatMul NP=6 stest
+/project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 6 ./ESMF_FieldSparseMatMulSTest 1> ./ESMF_FieldSparseMatMulSTest.stdout 2>&1
+tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_FieldSharedDeSSI
+env OMP_WAIT_POLICY=passive /Library/Developer/CommandLineTools/usr/bin/make TNAME=FieldSharedDeSSI NP=6 stest
+/project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 6 ./ESMF_FieldSharedDeSSISTest 1> ./ESMF_FieldSharedDeSSISTest.stdout 2>&1
 tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_FieldLSRedistArb2Arb
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=FieldLSRedistArb2Arb NP=6 stest
 /project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 6 ./ESMF_FieldLSRedistArb2ArbSTest 1> ./ESMF_FieldLSRedistArb2ArbSTest.stdout 2>&1
@@ -133,15 +145,6 @@ tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortr
 tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_ConcurrentEnsemble
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=ConcurrentEnsemble NP=8 stest
 /project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 8 ./ESMF_ConcurrentEnsembleSTest 1> ./ESMF_ConcurrentEnsembleSTest.stdout 2>&1
-tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_ArrayRedistOpenMP
-env OMP_WAIT_POLICY=passive /Library/Developer/CommandLineTools/usr/bin/make TNAME=ArrayRedistOpenMP NP=8 stest
-/project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 8 ./ESMF_ArrayRedistOpenMPSTest 1> ./ESMF_ArrayRedistOpenMPSTest.stdout 2>&1
-tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_ArrayRedistOpenACC
-/Library/Developer/CommandLineTools/usr/bin/make TNAME=ArrayRedistOpenACC NP=8 stest
-/project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 8 ./ESMF_ArrayRedistOpenACCSTest 1> ./ESMF_ArrayRedistOpenACCSTest.stdout 2>&1
-tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_ArraySharedDeSSI
-env OMP_WAIT_POLICY=passive /Library/Developer/CommandLineTools/usr/bin/make TNAME=ArraySharedDeSSI NP=6 stest
-/project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 6 ./ESMF_ArraySharedDeSSISTest 1> ./ESMF_ArraySharedDeSSISTest.stdout 2>&1
 tree_run_system_tests in: /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/src/system_tests/ESMF_DirectCoupling
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=DirectCoupling NP=6 stest
 /project/esmf/himanshu/GCC/Homebrew/10.1.0/mpich/3.3.2/bin/mpirun -np 6 ./ESMF_DirectCouplingSTest 1> ./ESMF_DirectCouplingSTest.stdout 2>&1
@@ -207,6 +210,7 @@ FAIL: mpich3/O: src/system_tests/ESMF_FieldRegridDisjoint/ESMF_FieldRegridDisjoi
 FAIL: mpich3/O: src/system_tests/ESMF_FieldRegridMesh/ESMF_FieldRegridMeshSTest.F90
 FAIL: mpich3/O: src/system_tests/ESMF_FieldRegridMeshToMesh/ESMF_FieldRegridMeshToMeshSTest.F90
 FAIL: mpich3/O: src/system_tests/ESMF_FieldRegridOverlap/ESMF_FieldRegridOverlapSTest.F90
+FAIL: mpich3/O: src/system_tests/ESMF_FieldSharedDeSSI/ESMF_FieldSharedDeSSISTest.F90
 FAIL: mpich3/O: src/system_tests/ESMF_FieldSparseMatMul/ESMF_FieldSparseMatMulSTest.F90
 FAIL: mpich3/O: src/system_tests/ESMF_SequentialEnsemble/ESMF_SequentialEnsembleSTest.F90
 FAIL: mpich3/O: src/system_tests/ESMF_Trace/ESMF_TraceSTest.F90
@@ -221,6 +225,6 @@ The stdout files for the system_tests can be found at:
 /project/esmf/himanshu/esmf_test/cronjobs/daily/gfortran/esmf/test/testO/Darwin.gfortran.64.mpich3.default
 
 
-Found 47 multi-processor system tests, 13 passed and 34 failed.
+Found 48 multi-processor system tests, 13 passed and 35 failed.
 
-Fri Feb 12 15:30:06 MST 2021
+Sun Feb 14 02:11:01 MST 2021
