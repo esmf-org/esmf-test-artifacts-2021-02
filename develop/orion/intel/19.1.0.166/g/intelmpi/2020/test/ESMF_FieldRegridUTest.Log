@@ -1,537 +1,537 @@
-20210215 165757.741 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165757.741 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
-20210215 165757.741 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
-20210215 165757.741 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
-20210215 165757.741 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
-20210215 165757.741 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165757.741 INFO             PET0 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_45-12-ge8ae332
-20210215 165757.741 INFO             PET0 ESMF library build date/time: "Feb 15 2021" "16:31:39"
-20210215 165757.742 INFO             PET0 ESMF library build location : /home/hpillai/esmf_test/intel/esmf
-20210215 165757.742 INFO             PET0 ESMF_COMM                   : intelmpi
-20210215 165757.742 INFO             PET0 ESMF_MOAB                   : enabled
-20210215 165757.742 INFO             PET0 ESMF_LAPACK                 : enabled
-20210215 165757.742 INFO             PET0 ESMF_NETCDF                 : enabled
-20210215 165757.742 INFO             PET0 ESMF_PNETCDF                : disabled
-20210215 165757.742 INFO             PET0 ESMF_PIO                    : enabled
-20210215 165757.742 INFO             PET0 ESMF_YAMLCPP                : enabled
-20210215 165757.742 INFO             PET0  Beginning Test, file ESMF_FieldRegridUTest.F90, line 61
-20210215 165757.742 INFO             PET0  NUMBER_OF_PROCESSORS           4
-20210215 165757.800 WARNING          PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165757.801 WARNING          PET0 !!! Calling regrid weight generation                  !!!
-20210215 165757.801 WARNING          PET0 !!! (e.g. ESMF_FieldRegridStore()) with checkFlag on. !!!
-20210215 165757.801 WARNING          PET0 !!! Extra checking comes at the cost of performance.  !!!
-20210215 165757.801 WARNING          PET0 !!! Only use for debugging, NOT for production!       !!!
-20210215 165757.801 WARNING          PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165758.589 INFO             PET0  PASS  Regrid between a 0 to 360 sphere and a -180 to 180 sphere, ESMF_FieldRegridUTest.F90, line 84
-20210215 165758.644 INFO             PET0  PASS  Regrid between two Fields with ungridded dimensions, ESMF_FieldRegridUTest.F90, line 103
-20210215 165759.302 INFO             PET0  PASS  Regrid between two Fields on Grids with indices switched, ESMF_FieldRegridUTest.F90, line 122
-20210215 165800.199 INFO             PET0  PASS  Bilinear regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 138
-20210215 165800.247 INFO             PET0  PASS  Nearest STOD regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 153
-20210215 165800.293 INFO             PET0  PASS  Nearest DTOS regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 169
-20210215 165800.302 INFO             PET0  PASS  Bilinear regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 186
-20210215 165800.308 INFO             PET0  PASS  Nearest STOD regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 202
-20210215 165800.314 INFO             PET0  PASS  Nearest DTOS regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 218
-20210215 165800.340 INFO             PET0  PASS  Regrid with destination masks, ESMF_FieldRegridUTest.F90, line 234
-20210215 165800.350 INFO             PET0  PASS  Regrid with completely masked destination, ESMF_FieldRegridUTest.F90, line 249
-20210215 165800.355 INFO             PET0  PASS  Regrid with source and destination disjoint, ESMF_FieldRegridUTest.F90, line 264
-20210215 165800.486 INFO             PET0  PASS  Regrid with source masks, ESMF_FieldRegridUTest.F90, line 279
-20210215 165800.664 INFO             PET0  PASS  Regrid sphere with source masks, ESMF_FieldRegridUTest.F90, line 295
-20210215 165801.060 INFO             PET0  PASS  Regrid with R4 coordinates, ESMF_FieldRegridUTest.F90, line 337
-20210215 165801.110 INFO             PET0  PASS  Regrid with corner stagger, ESMF_FieldRegridUTest.F90, line 353
-20210215 165801.110 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.110 INFO             PET0 !!!        MOAB turned ON             !!!
-20210215 165801.110 INFO             PET0 !!! Meshes now created using MOAB     !!!
-20210215 165801.110 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.113 WARNING          PET0 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
-20210215 165801.198 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.198 INFO             PET0 !!!        MOAB turned OFF            !!!
-20210215 165801.198 INFO             PET0 !!! Meshes now created using native   !!!
-20210215 165801.198 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.198 INFO             PET0  PASS  MOAB bilinear regrid on Grid corner stagger, ESMF_FieldRegridUTest.F90, line 379
-20210215 165801.224 INFO             PET0  PASS  Regrid with edge stagger, ESMF_FieldRegridUTest.F90, line 395
-20210215 165801.237 INFO             PET0  PASS  Regrid from Mesh to Grid, ESMF_FieldRegridUTest.F90, line 410
-20210215 165801.256 INFO             PET0  PASS  Regrid from Spherical Mesh to Grid, ESMF_FieldRegridUTest.F90, line 425
-20210215 165801.266 INFO             PET0  PASS  Regrid from Grid to Mesh, ESMF_FieldRegridUTest.F90, line 440
-20210215 165801.273 INFO             PET0  PASS  Regrid from Mesh to Mesh, ESMF_FieldRegridUTest.F90, line 455
-20210215 165801.286 INFO             PET0  PASS  Regrid from Mesh to Mesh using Patch, ESMF_FieldRegridUTest.F90, line 472
-20210215 165801.337 INFO             PET0  PASS  Regrid from Mesh to Grid 3D, ESMF_FieldRegridUTest.F90, line 493
-20210215 165801.419 INFO             PET0  PASS  Regrid from 3D spherical Mesh to 3D spherical Grid, ESMF_FieldRegridUTest.F90, line 528
-20210215 165806.696 INFO             PET0  PASS  Regrid between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 543
-20210215 165807.498 INFO             PET0  PASS  Nearest STOD between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 558
-20210215 165808.306 INFO             PET0  PASS  Nearest DTOS between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 573
-20210215 165808.336 INFO             PET0  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NONE, ESMF_FieldRegridUTest.F90, line 589
-20210215 165808.374 INFO             PET0  PASS  Test regridding Sphere with ESMF_POLEMETHOD_ALLAVG, ESMF_FieldRegridUTest.F90, line 604
-20210215 165808.410 INFO             PET0  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NPNTAVG, ESMF_FieldRegridUTest.F90, line 619
-20210215 165808.444 INFO             PET0  PASS  Test regridding Sphere with ESMF_POLEMETHOD_TEETH, ESMF_FieldRegridUTest.F90, line 634
-20210215 165808.783 INFO             PET0  PASS  Test regridding from distgrid connections, ESMF_FieldRegridUTest.F90, line 649
-20210215 165808.814 INFO             PET0  PASS  Test using matrix (factorList, factorIndexList) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 666
-20210215 165808.818 WARNING          PET0 The use of argument 'indices' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorIndexList' instead.
-20210215 165808.818 WARNING          PET0 The use of argument 'weights' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorList' instead.
-20210215 165808.845 INFO             PET0  PASS  Test using DEPRECATED matrix arguments (weights, indices) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 683
-20210215 165809.296 INFO             PET0  PASS  Test regridding on a grid with indexflag=ESMF_INDEX_DELOCAL, ESMF_FieldRegridUTest.F90, line 700
-20210215 165809.638 INFO             PET0  PASS  Test regridding on a grid with an irregular distribution, ESMF_FieldRegridUTest.F90, line 718
-20210215 165809.651 INFO             PET0  PASS  Test regridding on a spherical grids with NEAREST_STOD regridding, ESMF_FieldRegridUTest.F90, line 735
-20210215 165809.657 INFO             PET0  PASS  Regrid from Mesh to Mesh with NEAREST_STOD interp., ESMF_FieldRegridUTest.F90, line 752
-20210215 165809.662 INFO             PET0  PASS  Regrid from Mesh to Mesh with NEAREST_DTOS interp., ESMF_FieldRegridUTest.F90, line 770
-20210215 165809.676 INFO             PET0  PASS  Test regridding on a spherical grids with NEAREST_DTOS regridding, ESMF_FieldRegridUTest.F90, line 788
-20210215 165809.730 INFO             PET0  PASS  Test unmapped destination point list, ESMF_FieldRegridUTest.F90, line 807
-20210215 165809.775 INFO             PET0  PASS  Test regridding from a 2 tile distgrid, ESMF_FieldRegridUTest.F90, line 823
-20210215 165811.108 INFO             PET0  PASS  Test regridding with holes in srcGrid, ESMF_FieldRegridUTest.F90, line 839
-20210215 165811.117 INFO             PET0  PASS  Test Mesh masking during regrid, ESMF_FieldRegridUTest.F90, line 854
-20210215 165811.712 INFO             PET0  PASS  Test regridding with sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 870
-20210215 165812.100 INFO             PET0  PASS  Test regridding with coarse sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 886
-20210215 165812.107 INFO             PET0  PASS  Regrid from Mesh to Mesh with Pentagon and Hexagon, ESMF_FieldRegridUTest.F90, line 902
-20210215 165812.118 INFO             PET0  PASS  Regrid from Mesh to Mesh On Cell Centers, ESMF_FieldRegridUTest.F90, line 918
-20210215 165812.126 INFO             PET0  PASS  Regrid Mesh with collapsed quads, ESMF_FieldRegridUTest.F90, line 933
-20210215 165812.132 INFO             PET0  PASS  Regrid from LocStream to LocStream with Nearest Neighbor interp., ESMF_FieldRegridUTest.F90, line 949
-20210215 165812.138 INFO             PET0  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 965
-20210215 165812.144 INFO             PET0  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 980
-20210215 165812.150 INFO             PET0  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 996
-20210215 165812.156 INFO             PET0  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 1011
-20210215 165812.163 INFO             PET0  PASS  Regrid from LocStream with clustering to Mesh using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1026
-20210215 165812.174 INFO             PET0  PASS  Regrid from LocStream to Grid using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1043
-20210215 165816.185 INFO             PET0  PASS  Regrid from Grid to a LocStream with regular distribution, bilinear and patch, ESMF_FieldRegridUTest.F90, line 1060
-20210215 165816.305 INFO             PET0  PASS  Regrid from Grid to a LocStream with a local count, ESMF_FieldRegridUTest.F90, line 1081
-20210215 165816.347 INFO             PET0  PASS  Regrid from 3d Grid to a 3d LocStream, ESMF_FieldRegridUTest.F90, line 1097
-20210215 165816.355 INFO             PET0  PASS  Regrid from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1115
-20210215 165816.368 INFO             PET0  PASS  Patch regridding from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1132
-20210215 165816.434 INFO             PET0  PASS  Regrid from Grid to Grid/Mesh/LocStream (GML) with identical points, ESMF_FieldRegridUTest.F90, line 1152
-20210215 165816.448 INFO             PET0  PASS  Regrid from Mesh containing pentagons and hexagons to Grid, ESMF_FieldRegridUTest.F90, line 1169
-20210215 165816.795 INFO             PET0  PASS  Regrid with periodic and non-periodic uniform grid creates, ESMF_FieldRegridUTest.F90, line 1184
-20210215 165816.795 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165816.795 INFO             PET0 !!!        MOAB turned ON             !!!
-20210215 165816.795 INFO             PET0 !!! Meshes now created using MOAB     !!!
-20210215 165816.795 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165816.804 WARNING          PET0 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
-20210215 165817.321 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165817.321 INFO             PET0 !!!        MOAB turned OFF            !!!
-20210215 165817.321 INFO             PET0 !!! Meshes now created using native   !!!
-20210215 165817.321 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165817.321 INFO             PET0  PASS  MOAB bilinear regrid on Grid center stagger, ESMF_FieldRegridUTest.F90, line 1211
-20210215 165817.896 INFO             PET0  PASS  Regrid with grid and ESMF_FieldRegrid() on only part of VM., ESMF_FieldRegridUTest.F90, line 1228
-20210215 165817.905 INFO             PET0  PASS  Test regrid per location status Field, ESMF_FieldRegridUTest.F90, line 1244
-20210215 165817.912 INFO             PET0  PASS  Test regrid per location status Field for Nearest Source to Destination, ESMF_FieldRegridUTest.F90, line 1258
-20210215 165817.941 INFO             PET0  PASS  Test regrid smm on an arbitrary grid, ESMF_FieldRegridUTest.F90, line 1273
-20210215 165818.230 INFO             PET0  PASS  Test regrid extrap nearest_stod, ESMF_FieldRegridUTest.F90, line 1290
-20210215 165818.555 INFO             PET0  PASS  Test regrid extrap inverse distance weighted average, ESMF_FieldRegridUTest.F90, line 1308
-20210215 165818.977 INFO             PET0  PASS  Test regrid extrap creep fill, ESMF_FieldRegridUTest.F90, line 1324
-20210215 165818.987 INFO             PET0  PASS  Test creep fill on mesh, ESMF_FieldRegridUTest.F90, line 1341
-20210215 165818.996 INFO             PET0  PASS  Test per location status output with extrap, ESMF_FieldRegridUTest.F90, line 1359
-20210215 165819.479 INFO             PET0  PASS  Test regrid extrap creep fill nearest destination., ESMF_FieldRegridUTest.F90, line 1376
-20210215 165819.838 INFO             PET0  PASS  Test regrid extrap nearest destination., ESMF_FieldRegridUTest.F90, line 1394
-20210215 165820.117 INFO             PET0  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1412
-20210215 165820.117 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.117 INFO             PET0 !!!        MOAB turned ON             !!!
-20210215 165820.117 INFO             PET0 !!! Meshes now created using MOAB     !!!
-20210215 165820.117 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.353 WARNING          PET0 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
-20210215 165820.531 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.531 INFO             PET0 !!!        MOAB turned OFF            !!!
-20210215 165820.531 INFO             PET0 !!! Meshes now created using native   !!!
-20210215 165820.531 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.531 INFO             PET0  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1429
-20210215 165820.531 INFO             PET0  Ending Test, file ESMF_FieldRegridUTest.F90, line 1434
-20210215 165820.531 INFO             PET0 Finalizing ESMF
-20210215 165757.741 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165757.741 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
-20210215 165757.741 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
-20210215 165757.741 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
-20210215 165757.741 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
-20210215 165757.741 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165757.741 INFO             PET1 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_45-12-ge8ae332
-20210215 165757.741 INFO             PET1 ESMF library build date/time: "Feb 15 2021" "16:31:39"
-20210215 165757.741 INFO             PET1 ESMF library build location : /home/hpillai/esmf_test/intel/esmf
-20210215 165757.741 INFO             PET1 ESMF_COMM                   : intelmpi
-20210215 165757.742 INFO             PET1 ESMF_MOAB                   : enabled
-20210215 165757.742 INFO             PET1 ESMF_LAPACK                 : enabled
-20210215 165757.742 INFO             PET1 ESMF_NETCDF                 : enabled
-20210215 165757.742 INFO             PET1 ESMF_PNETCDF                : disabled
-20210215 165757.742 INFO             PET1 ESMF_PIO                    : enabled
-20210215 165757.742 INFO             PET1 ESMF_YAMLCPP                : enabled
-20210215 165757.742 INFO             PET1  Beginning Test, file ESMF_FieldRegridUTest.F90, line 61
-20210215 165757.742 INFO             PET1  NUMBER_OF_PROCESSORS           4
-20210215 165757.801 WARNING          PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165757.801 WARNING          PET1 !!! Calling regrid weight generation                  !!!
-20210215 165757.801 WARNING          PET1 !!! (e.g. ESMF_FieldRegridStore()) with checkFlag on. !!!
-20210215 165757.801 WARNING          PET1 !!! Extra checking comes at the cost of performance.  !!!
-20210215 165757.801 WARNING          PET1 !!! Only use for debugging, NOT for production!       !!!
-20210215 165757.801 WARNING          PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165758.588 INFO             PET1  PASS  Regrid between a 0 to 360 sphere and a -180 to 180 sphere, ESMF_FieldRegridUTest.F90, line 84
-20210215 165758.644 INFO             PET1  PASS  Regrid between two Fields with ungridded dimensions, ESMF_FieldRegridUTest.F90, line 103
-20210215 165759.302 INFO             PET1  PASS  Regrid between two Fields on Grids with indices switched, ESMF_FieldRegridUTest.F90, line 122
-20210215 165800.199 INFO             PET1  PASS  Bilinear regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 138
-20210215 165800.247 INFO             PET1  PASS  Nearest STOD regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 153
-20210215 165800.293 INFO             PET1  PASS  Nearest DTOS regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 169
-20210215 165800.302 INFO             PET1  PASS  Bilinear regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 186
-20210215 165800.308 INFO             PET1  PASS  Nearest STOD regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 202
-20210215 165800.314 INFO             PET1  PASS  Nearest DTOS regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 218
-20210215 165800.340 INFO             PET1  PASS  Regrid with destination masks, ESMF_FieldRegridUTest.F90, line 234
-20210215 165800.350 INFO             PET1  PASS  Regrid with completely masked destination, ESMF_FieldRegridUTest.F90, line 249
-20210215 165800.355 INFO             PET1  PASS  Regrid with source and destination disjoint, ESMF_FieldRegridUTest.F90, line 264
-20210215 165800.486 INFO             PET1  PASS  Regrid with source masks, ESMF_FieldRegridUTest.F90, line 279
-20210215 165800.664 INFO             PET1  PASS  Regrid sphere with source masks, ESMF_FieldRegridUTest.F90, line 295
-20210215 165801.060 INFO             PET1  PASS  Regrid with R4 coordinates, ESMF_FieldRegridUTest.F90, line 337
-20210215 165801.110 INFO             PET1  PASS  Regrid with corner stagger, ESMF_FieldRegridUTest.F90, line 353
-20210215 165801.110 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.110 INFO             PET1 !!!        MOAB turned ON             !!!
-20210215 165801.110 INFO             PET1 !!! Meshes now created using MOAB     !!!
-20210215 165801.110 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.113 WARNING          PET1 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
-20210215 165801.198 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.198 INFO             PET1 !!!        MOAB turned OFF            !!!
-20210215 165801.198 INFO             PET1 !!! Meshes now created using native   !!!
-20210215 165801.198 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.198 INFO             PET1  PASS  MOAB bilinear regrid on Grid corner stagger, ESMF_FieldRegridUTest.F90, line 379
-20210215 165801.224 INFO             PET1  PASS  Regrid with edge stagger, ESMF_FieldRegridUTest.F90, line 395
-20210215 165801.237 INFO             PET1  PASS  Regrid from Mesh to Grid, ESMF_FieldRegridUTest.F90, line 410
-20210215 165801.256 INFO             PET1  PASS  Regrid from Spherical Mesh to Grid, ESMF_FieldRegridUTest.F90, line 425
-20210215 165801.266 INFO             PET1  PASS  Regrid from Grid to Mesh, ESMF_FieldRegridUTest.F90, line 440
-20210215 165801.273 INFO             PET1  PASS  Regrid from Mesh to Mesh, ESMF_FieldRegridUTest.F90, line 455
-20210215 165801.286 INFO             PET1  PASS  Regrid from Mesh to Mesh using Patch, ESMF_FieldRegridUTest.F90, line 472
-20210215 165801.337 INFO             PET1  PASS  Regrid from Mesh to Grid 3D, ESMF_FieldRegridUTest.F90, line 493
-20210215 165801.419 INFO             PET1  PASS  Regrid from 3D spherical Mesh to 3D spherical Grid, ESMF_FieldRegridUTest.F90, line 528
-20210215 165806.696 INFO             PET1  PASS  Regrid between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 543
-20210215 165807.498 INFO             PET1  PASS  Nearest STOD between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 558
-20210215 165808.306 INFO             PET1  PASS  Nearest DTOS between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 573
-20210215 165808.336 INFO             PET1  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NONE, ESMF_FieldRegridUTest.F90, line 589
-20210215 165808.374 INFO             PET1  PASS  Test regridding Sphere with ESMF_POLEMETHOD_ALLAVG, ESMF_FieldRegridUTest.F90, line 604
-20210215 165808.410 INFO             PET1  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NPNTAVG, ESMF_FieldRegridUTest.F90, line 619
-20210215 165808.444 INFO             PET1  PASS  Test regridding Sphere with ESMF_POLEMETHOD_TEETH, ESMF_FieldRegridUTest.F90, line 634
-20210215 165808.783 INFO             PET1  PASS  Test regridding from distgrid connections, ESMF_FieldRegridUTest.F90, line 649
-20210215 165808.814 INFO             PET1  PASS  Test using matrix (factorList, factorIndexList) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 666
-20210215 165808.818 WARNING          PET1 The use of argument 'indices' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorIndexList' instead.
-20210215 165808.818 WARNING          PET1 The use of argument 'weights' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorList' instead.
-20210215 165808.845 INFO             PET1  PASS  Test using DEPRECATED matrix arguments (weights, indices) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 683
-20210215 165809.296 INFO             PET1  PASS  Test regridding on a grid with indexflag=ESMF_INDEX_DELOCAL, ESMF_FieldRegridUTest.F90, line 700
-20210215 165809.638 INFO             PET1  PASS  Test regridding on a grid with an irregular distribution, ESMF_FieldRegridUTest.F90, line 718
-20210215 165809.651 INFO             PET1  PASS  Test regridding on a spherical grids with NEAREST_STOD regridding, ESMF_FieldRegridUTest.F90, line 735
-20210215 165809.657 INFO             PET1  PASS  Regrid from Mesh to Mesh with NEAREST_STOD interp., ESMF_FieldRegridUTest.F90, line 752
-20210215 165809.662 INFO             PET1  PASS  Regrid from Mesh to Mesh with NEAREST_DTOS interp., ESMF_FieldRegridUTest.F90, line 770
-20210215 165809.676 INFO             PET1  PASS  Test regridding on a spherical grids with NEAREST_DTOS regridding, ESMF_FieldRegridUTest.F90, line 788
-20210215 165809.730 INFO             PET1  PASS  Test unmapped destination point list, ESMF_FieldRegridUTest.F90, line 807
-20210215 165809.775 INFO             PET1  PASS  Test regridding from a 2 tile distgrid, ESMF_FieldRegridUTest.F90, line 823
-20210215 165811.109 INFO             PET1  PASS  Test regridding with holes in srcGrid, ESMF_FieldRegridUTest.F90, line 839
-20210215 165811.117 INFO             PET1  PASS  Test Mesh masking during regrid, ESMF_FieldRegridUTest.F90, line 854
-20210215 165811.712 INFO             PET1  PASS  Test regridding with sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 870
-20210215 165812.100 INFO             PET1  PASS  Test regridding with coarse sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 886
-20210215 165812.107 INFO             PET1  PASS  Regrid from Mesh to Mesh with Pentagon and Hexagon, ESMF_FieldRegridUTest.F90, line 902
-20210215 165812.118 INFO             PET1  PASS  Regrid from Mesh to Mesh On Cell Centers, ESMF_FieldRegridUTest.F90, line 918
-20210215 165812.126 INFO             PET1  PASS  Regrid Mesh with collapsed quads, ESMF_FieldRegridUTest.F90, line 933
-20210215 165812.132 INFO             PET1  PASS  Regrid from LocStream to LocStream with Nearest Neighbor interp., ESMF_FieldRegridUTest.F90, line 949
-20210215 165812.138 INFO             PET1  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 965
-20210215 165812.144 INFO             PET1  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 980
-20210215 165812.150 INFO             PET1  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 996
-20210215 165812.156 INFO             PET1  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 1011
-20210215 165812.163 INFO             PET1  PASS  Regrid from LocStream with clustering to Mesh using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1026
-20210215 165812.174 INFO             PET1  PASS  Regrid from LocStream to Grid using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1043
-20210215 165816.185 INFO             PET1  PASS  Regrid from Grid to a LocStream with regular distribution, bilinear and patch, ESMF_FieldRegridUTest.F90, line 1060
-20210215 165816.305 INFO             PET1  PASS  Regrid from Grid to a LocStream with a local count, ESMF_FieldRegridUTest.F90, line 1081
-20210215 165816.347 INFO             PET1  PASS  Regrid from 3d Grid to a 3d LocStream, ESMF_FieldRegridUTest.F90, line 1097
-20210215 165816.355 INFO             PET1  PASS  Regrid from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1115
-20210215 165816.368 INFO             PET1  PASS  Patch regridding from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1132
-20210215 165816.434 INFO             PET1  PASS  Regrid from Grid to Grid/Mesh/LocStream (GML) with identical points, ESMF_FieldRegridUTest.F90, line 1152
-20210215 165816.448 INFO             PET1  PASS  Regrid from Mesh containing pentagons and hexagons to Grid, ESMF_FieldRegridUTest.F90, line 1169
-20210215 165816.795 INFO             PET1  PASS  Regrid with periodic and non-periodic uniform grid creates, ESMF_FieldRegridUTest.F90, line 1184
-20210215 165816.795 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165816.795 INFO             PET1 !!!        MOAB turned ON             !!!
-20210215 165816.795 INFO             PET1 !!! Meshes now created using MOAB     !!!
-20210215 165816.795 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165816.803 WARNING          PET1 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
-20210215 165817.321 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165817.321 INFO             PET1 !!!        MOAB turned OFF            !!!
-20210215 165817.321 INFO             PET1 !!! Meshes now created using native   !!!
-20210215 165817.321 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165817.321 INFO             PET1  PASS  MOAB bilinear regrid on Grid center stagger, ESMF_FieldRegridUTest.F90, line 1211
-20210215 165817.894 INFO             PET1  PASS  Regrid with grid and ESMF_FieldRegrid() on only part of VM., ESMF_FieldRegridUTest.F90, line 1228
-20210215 165817.905 INFO             PET1  PASS  Test regrid per location status Field, ESMF_FieldRegridUTest.F90, line 1244
-20210215 165817.912 INFO             PET1  PASS  Test regrid per location status Field for Nearest Source to Destination, ESMF_FieldRegridUTest.F90, line 1258
-20210215 165817.941 INFO             PET1  PASS  Test regrid smm on an arbitrary grid, ESMF_FieldRegridUTest.F90, line 1273
-20210215 165818.230 INFO             PET1  PASS  Test regrid extrap nearest_stod, ESMF_FieldRegridUTest.F90, line 1290
-20210215 165818.555 INFO             PET1  PASS  Test regrid extrap inverse distance weighted average, ESMF_FieldRegridUTest.F90, line 1308
-20210215 165818.977 INFO             PET1  PASS  Test regrid extrap creep fill, ESMF_FieldRegridUTest.F90, line 1324
-20210215 165818.987 INFO             PET1  PASS  Test creep fill on mesh, ESMF_FieldRegridUTest.F90, line 1341
-20210215 165818.996 INFO             PET1  PASS  Test per location status output with extrap, ESMF_FieldRegridUTest.F90, line 1359
-20210215 165819.479 INFO             PET1  PASS  Test regrid extrap creep fill nearest destination., ESMF_FieldRegridUTest.F90, line 1376
-20210215 165819.838 INFO             PET1  PASS  Test regrid extrap nearest destination., ESMF_FieldRegridUTest.F90, line 1394
-20210215 165820.117 INFO             PET1  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1412
-20210215 165820.117 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.117 INFO             PET1 !!!        MOAB turned ON             !!!
-20210215 165820.117 INFO             PET1 !!! Meshes now created using MOAB     !!!
-20210215 165820.117 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.353 WARNING          PET1 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
-20210215 165820.521 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.521 INFO             PET1 !!!        MOAB turned OFF            !!!
-20210215 165820.521 INFO             PET1 !!! Meshes now created using native   !!!
-20210215 165820.521 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.522 INFO             PET1  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1429
-20210215 165820.522 INFO             PET1  Ending Test, file ESMF_FieldRegridUTest.F90, line 1434
-20210215 165820.522 INFO             PET1 Finalizing ESMF
-20210215 165757.740 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165757.740 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
-20210215 165757.740 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
-20210215 165757.740 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
-20210215 165757.740 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
-20210215 165757.740 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165757.740 INFO             PET2 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_45-12-ge8ae332
-20210215 165757.740 INFO             PET2 ESMF library build date/time: "Feb 15 2021" "16:31:39"
-20210215 165757.740 INFO             PET2 ESMF library build location : /home/hpillai/esmf_test/intel/esmf
-20210215 165757.740 INFO             PET2 ESMF_COMM                   : intelmpi
-20210215 165757.741 INFO             PET2 ESMF_MOAB                   : enabled
-20210215 165757.741 INFO             PET2 ESMF_LAPACK                 : enabled
-20210215 165757.741 INFO             PET2 ESMF_NETCDF                 : enabled
-20210215 165757.741 INFO             PET2 ESMF_PNETCDF                : disabled
-20210215 165757.741 INFO             PET2 ESMF_PIO                    : enabled
-20210215 165757.741 INFO             PET2 ESMF_YAMLCPP                : enabled
-20210215 165757.742 INFO             PET2  Beginning Test, file ESMF_FieldRegridUTest.F90, line 61
-20210215 165757.742 INFO             PET2  NUMBER_OF_PROCESSORS           4
-20210215 165757.801 WARNING          PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165757.801 WARNING          PET2 !!! Calling regrid weight generation                  !!!
-20210215 165757.801 WARNING          PET2 !!! (e.g. ESMF_FieldRegridStore()) with checkFlag on. !!!
-20210215 165757.801 WARNING          PET2 !!! Extra checking comes at the cost of performance.  !!!
-20210215 165757.801 WARNING          PET2 !!! Only use for debugging, NOT for production!       !!!
-20210215 165757.801 WARNING          PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165758.588 INFO             PET2  PASS  Regrid between a 0 to 360 sphere and a -180 to 180 sphere, ESMF_FieldRegridUTest.F90, line 84
-20210215 165758.644 INFO             PET2  PASS  Regrid between two Fields with ungridded dimensions, ESMF_FieldRegridUTest.F90, line 103
-20210215 165759.302 INFO             PET2  PASS  Regrid between two Fields on Grids with indices switched, ESMF_FieldRegridUTest.F90, line 122
-20210215 165800.199 INFO             PET2  PASS  Bilinear regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 138
-20210215 165800.247 INFO             PET2  PASS  Nearest STOD regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 153
-20210215 165800.293 INFO             PET2  PASS  Nearest DTOS regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 169
-20210215 165800.302 INFO             PET2  PASS  Bilinear regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 186
-20210215 165800.308 INFO             PET2  PASS  Nearest STOD regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 202
-20210215 165800.314 INFO             PET2  PASS  Nearest DTOS regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 218
-20210215 165800.340 INFO             PET2  PASS  Regrid with destination masks, ESMF_FieldRegridUTest.F90, line 234
-20210215 165800.350 INFO             PET2  PASS  Regrid with completely masked destination, ESMF_FieldRegridUTest.F90, line 249
-20210215 165800.355 INFO             PET2  PASS  Regrid with source and destination disjoint, ESMF_FieldRegridUTest.F90, line 264
-20210215 165800.486 INFO             PET2  PASS  Regrid with source masks, ESMF_FieldRegridUTest.F90, line 279
-20210215 165800.664 INFO             PET2  PASS  Regrid sphere with source masks, ESMF_FieldRegridUTest.F90, line 295
-20210215 165801.060 INFO             PET2  PASS  Regrid with R4 coordinates, ESMF_FieldRegridUTest.F90, line 337
-20210215 165801.110 INFO             PET2  PASS  Regrid with corner stagger, ESMF_FieldRegridUTest.F90, line 353
-20210215 165801.110 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.110 INFO             PET2 !!!        MOAB turned ON             !!!
-20210215 165801.110 INFO             PET2 !!! Meshes now created using MOAB     !!!
-20210215 165801.110 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.113 WARNING          PET2 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
-20210215 165801.198 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.198 INFO             PET2 !!!        MOAB turned OFF            !!!
-20210215 165801.198 INFO             PET2 !!! Meshes now created using native   !!!
-20210215 165801.198 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.198 INFO             PET2  PASS  MOAB bilinear regrid on Grid corner stagger, ESMF_FieldRegridUTest.F90, line 379
-20210215 165801.224 INFO             PET2  PASS  Regrid with edge stagger, ESMF_FieldRegridUTest.F90, line 395
-20210215 165801.237 INFO             PET2  PASS  Regrid from Mesh to Grid, ESMF_FieldRegridUTest.F90, line 410
-20210215 165801.256 INFO             PET2  PASS  Regrid from Spherical Mesh to Grid, ESMF_FieldRegridUTest.F90, line 425
-20210215 165801.266 INFO             PET2  PASS  Regrid from Grid to Mesh, ESMF_FieldRegridUTest.F90, line 440
-20210215 165801.273 INFO             PET2  PASS  Regrid from Mesh to Mesh, ESMF_FieldRegridUTest.F90, line 455
-20210215 165801.286 INFO             PET2  PASS  Regrid from Mesh to Mesh using Patch, ESMF_FieldRegridUTest.F90, line 472
-20210215 165801.337 INFO             PET2  PASS  Regrid from Mesh to Grid 3D, ESMF_FieldRegridUTest.F90, line 493
-20210215 165801.419 INFO             PET2  PASS  Regrid from 3D spherical Mesh to 3D spherical Grid, ESMF_FieldRegridUTest.F90, line 528
-20210215 165806.696 INFO             PET2  PASS  Regrid between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 543
-20210215 165807.498 INFO             PET2  PASS  Nearest STOD between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 558
-20210215 165808.306 INFO             PET2  PASS  Nearest DTOS between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 573
-20210215 165808.336 INFO             PET2  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NONE, ESMF_FieldRegridUTest.F90, line 589
-20210215 165808.374 INFO             PET2  PASS  Test regridding Sphere with ESMF_POLEMETHOD_ALLAVG, ESMF_FieldRegridUTest.F90, line 604
-20210215 165808.410 INFO             PET2  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NPNTAVG, ESMF_FieldRegridUTest.F90, line 619
-20210215 165808.444 INFO             PET2  PASS  Test regridding Sphere with ESMF_POLEMETHOD_TEETH, ESMF_FieldRegridUTest.F90, line 634
-20210215 165808.783 INFO             PET2  PASS  Test regridding from distgrid connections, ESMF_FieldRegridUTest.F90, line 649
-20210215 165808.814 INFO             PET2  PASS  Test using matrix (factorList, factorIndexList) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 666
-20210215 165808.818 WARNING          PET2 The use of argument 'indices' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorIndexList' instead.
-20210215 165808.818 WARNING          PET2 The use of argument 'weights' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorList' instead.
-20210215 165808.845 INFO             PET2  PASS  Test using DEPRECATED matrix arguments (weights, indices) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 683
-20210215 165809.296 INFO             PET2  PASS  Test regridding on a grid with indexflag=ESMF_INDEX_DELOCAL, ESMF_FieldRegridUTest.F90, line 700
-20210215 165809.638 INFO             PET2  PASS  Test regridding on a grid with an irregular distribution, ESMF_FieldRegridUTest.F90, line 718
-20210215 165809.651 INFO             PET2  PASS  Test regridding on a spherical grids with NEAREST_STOD regridding, ESMF_FieldRegridUTest.F90, line 735
-20210215 165809.657 INFO             PET2  PASS  Regrid from Mesh to Mesh with NEAREST_STOD interp., ESMF_FieldRegridUTest.F90, line 752
-20210215 165809.662 INFO             PET2  PASS  Regrid from Mesh to Mesh with NEAREST_DTOS interp., ESMF_FieldRegridUTest.F90, line 770
-20210215 165809.676 INFO             PET2  PASS  Test regridding on a spherical grids with NEAREST_DTOS regridding, ESMF_FieldRegridUTest.F90, line 788
-20210215 165809.730 INFO             PET2  PASS  Test unmapped destination point list, ESMF_FieldRegridUTest.F90, line 807
-20210215 165809.775 INFO             PET2  PASS  Test regridding from a 2 tile distgrid, ESMF_FieldRegridUTest.F90, line 823
-20210215 165811.108 INFO             PET2  PASS  Test regridding with holes in srcGrid, ESMF_FieldRegridUTest.F90, line 839
-20210215 165811.117 INFO             PET2  PASS  Test Mesh masking during regrid, ESMF_FieldRegridUTest.F90, line 854
-20210215 165811.712 INFO             PET2  PASS  Test regridding with sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 870
-20210215 165812.100 INFO             PET2  PASS  Test regridding with coarse sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 886
-20210215 165812.107 INFO             PET2  PASS  Regrid from Mesh to Mesh with Pentagon and Hexagon, ESMF_FieldRegridUTest.F90, line 902
-20210215 165812.118 INFO             PET2  PASS  Regrid from Mesh to Mesh On Cell Centers, ESMF_FieldRegridUTest.F90, line 918
-20210215 165812.126 INFO             PET2  PASS  Regrid Mesh with collapsed quads, ESMF_FieldRegridUTest.F90, line 933
-20210215 165812.132 INFO             PET2  PASS  Regrid from LocStream to LocStream with Nearest Neighbor interp., ESMF_FieldRegridUTest.F90, line 949
-20210215 165812.138 INFO             PET2  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 965
-20210215 165812.144 INFO             PET2  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 980
-20210215 165812.150 INFO             PET2  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 996
-20210215 165812.156 INFO             PET2  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 1011
-20210215 165812.163 INFO             PET2  PASS  Regrid from LocStream with clustering to Mesh using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1026
-20210215 165812.174 INFO             PET2  PASS  Regrid from LocStream to Grid using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1043
-20210215 165816.185 INFO             PET2  PASS  Regrid from Grid to a LocStream with regular distribution, bilinear and patch, ESMF_FieldRegridUTest.F90, line 1060
-20210215 165816.305 INFO             PET2  PASS  Regrid from Grid to a LocStream with a local count, ESMF_FieldRegridUTest.F90, line 1081
-20210215 165816.347 INFO             PET2  PASS  Regrid from 3d Grid to a 3d LocStream, ESMF_FieldRegridUTest.F90, line 1097
-20210215 165816.355 INFO             PET2  PASS  Regrid from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1115
-20210215 165816.368 INFO             PET2  PASS  Patch regridding from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1132
-20210215 165816.434 INFO             PET2  PASS  Regrid from Grid to Grid/Mesh/LocStream (GML) with identical points, ESMF_FieldRegridUTest.F90, line 1152
-20210215 165816.448 INFO             PET2  PASS  Regrid from Mesh containing pentagons and hexagons to Grid, ESMF_FieldRegridUTest.F90, line 1169
-20210215 165816.795 INFO             PET2  PASS  Regrid with periodic and non-periodic uniform grid creates, ESMF_FieldRegridUTest.F90, line 1184
-20210215 165816.795 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165816.795 INFO             PET2 !!!        MOAB turned ON             !!!
-20210215 165816.795 INFO             PET2 !!! Meshes now created using MOAB     !!!
-20210215 165816.795 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165816.804 WARNING          PET2 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
-20210215 165817.321 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165817.321 INFO             PET2 !!!        MOAB turned OFF            !!!
-20210215 165817.321 INFO             PET2 !!! Meshes now created using native   !!!
-20210215 165817.321 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165817.321 INFO             PET2  PASS  MOAB bilinear regrid on Grid center stagger, ESMF_FieldRegridUTest.F90, line 1211
-20210215 165817.894 INFO             PET2  PASS  Regrid with grid and ESMF_FieldRegrid() on only part of VM., ESMF_FieldRegridUTest.F90, line 1228
-20210215 165817.905 INFO             PET2  PASS  Test regrid per location status Field, ESMF_FieldRegridUTest.F90, line 1244
-20210215 165817.912 INFO             PET2  PASS  Test regrid per location status Field for Nearest Source to Destination, ESMF_FieldRegridUTest.F90, line 1258
-20210215 165817.941 INFO             PET2  PASS  Test regrid smm on an arbitrary grid, ESMF_FieldRegridUTest.F90, line 1273
-20210215 165818.230 INFO             PET2  PASS  Test regrid extrap nearest_stod, ESMF_FieldRegridUTest.F90, line 1290
-20210215 165818.555 INFO             PET2  PASS  Test regrid extrap inverse distance weighted average, ESMF_FieldRegridUTest.F90, line 1308
-20210215 165818.977 INFO             PET2  PASS  Test regrid extrap creep fill, ESMF_FieldRegridUTest.F90, line 1324
-20210215 165818.987 INFO             PET2  PASS  Test creep fill on mesh, ESMF_FieldRegridUTest.F90, line 1341
-20210215 165818.996 INFO             PET2  PASS  Test per location status output with extrap, ESMF_FieldRegridUTest.F90, line 1359
-20210215 165819.479 INFO             PET2  PASS  Test regrid extrap creep fill nearest destination., ESMF_FieldRegridUTest.F90, line 1376
-20210215 165819.838 INFO             PET2  PASS  Test regrid extrap nearest destination., ESMF_FieldRegridUTest.F90, line 1394
-20210215 165820.117 INFO             PET2  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1412
-20210215 165820.117 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.117 INFO             PET2 !!!        MOAB turned ON             !!!
-20210215 165820.117 INFO             PET2 !!! Meshes now created using MOAB     !!!
-20210215 165820.117 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.353 WARNING          PET2 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
-20210215 165820.531 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.531 INFO             PET2 !!!        MOAB turned OFF            !!!
-20210215 165820.531 INFO             PET2 !!! Meshes now created using native   !!!
-20210215 165820.531 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.531 INFO             PET2  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1429
-20210215 165820.531 INFO             PET2  Ending Test, file ESMF_FieldRegridUTest.F90, line 1434
-20210215 165820.531 INFO             PET2 Finalizing ESMF
-20210215 165757.741 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165757.741 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
-20210215 165757.741 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
-20210215 165757.741 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
-20210215 165757.741 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
-20210215 165757.741 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165757.741 INFO             PET3 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_45-12-ge8ae332
-20210215 165757.741 INFO             PET3 ESMF library build date/time: "Feb 15 2021" "16:31:39"
-20210215 165757.741 INFO             PET3 ESMF library build location : /home/hpillai/esmf_test/intel/esmf
-20210215 165757.741 INFO             PET3 ESMF_COMM                   : intelmpi
-20210215 165757.742 INFO             PET3 ESMF_MOAB                   : enabled
-20210215 165757.742 INFO             PET3 ESMF_LAPACK                 : enabled
-20210215 165757.742 INFO             PET3 ESMF_NETCDF                 : enabled
-20210215 165757.742 INFO             PET3 ESMF_PNETCDF                : disabled
-20210215 165757.742 INFO             PET3 ESMF_PIO                    : enabled
-20210215 165757.742 INFO             PET3 ESMF_YAMLCPP                : enabled
-20210215 165757.742 INFO             PET3  Beginning Test, file ESMF_FieldRegridUTest.F90, line 61
-20210215 165757.742 INFO             PET3  NUMBER_OF_PROCESSORS           4
-20210215 165757.800 WARNING          PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165757.800 WARNING          PET3 !!! Calling regrid weight generation                  !!!
-20210215 165757.800 WARNING          PET3 !!! (e.g. ESMF_FieldRegridStore()) with checkFlag on. !!!
-20210215 165757.800 WARNING          PET3 !!! Extra checking comes at the cost of performance.  !!!
-20210215 165757.800 WARNING          PET3 !!! Only use for debugging, NOT for production!       !!!
-20210215 165757.800 WARNING          PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165758.588 INFO             PET3  PASS  Regrid between a 0 to 360 sphere and a -180 to 180 sphere, ESMF_FieldRegridUTest.F90, line 84
-20210215 165758.644 INFO             PET3  PASS  Regrid between two Fields with ungridded dimensions, ESMF_FieldRegridUTest.F90, line 103
-20210215 165759.302 INFO             PET3  PASS  Regrid between two Fields on Grids with indices switched, ESMF_FieldRegridUTest.F90, line 122
-20210215 165800.199 INFO             PET3  PASS  Bilinear regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 138
-20210215 165800.247 INFO             PET3  PASS  Nearest STOD regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 153
-20210215 165800.293 INFO             PET3  PASS  Nearest DTOS regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 169
-20210215 165800.302 INFO             PET3  PASS  Bilinear regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 186
-20210215 165800.308 INFO             PET3  PASS  Nearest STOD regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 202
-20210215 165800.314 INFO             PET3  PASS  Nearest DTOS regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 218
-20210215 165800.340 INFO             PET3  PASS  Regrid with destination masks, ESMF_FieldRegridUTest.F90, line 234
-20210215 165800.350 INFO             PET3  PASS  Regrid with completely masked destination, ESMF_FieldRegridUTest.F90, line 249
-20210215 165800.355 INFO             PET3  PASS  Regrid with source and destination disjoint, ESMF_FieldRegridUTest.F90, line 264
-20210215 165800.486 INFO             PET3  PASS  Regrid with source masks, ESMF_FieldRegridUTest.F90, line 279
-20210215 165800.664 INFO             PET3  PASS  Regrid sphere with source masks, ESMF_FieldRegridUTest.F90, line 295
-20210215 165801.060 INFO             PET3  PASS  Regrid with R4 coordinates, ESMF_FieldRegridUTest.F90, line 337
-20210215 165801.110 INFO             PET3  PASS  Regrid with corner stagger, ESMF_FieldRegridUTest.F90, line 353
-20210215 165801.110 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.110 INFO             PET3 !!!        MOAB turned ON             !!!
-20210215 165801.110 INFO             PET3 !!! Meshes now created using MOAB     !!!
-20210215 165801.110 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.113 WARNING          PET3 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
-20210215 165801.198 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.198 INFO             PET3 !!!        MOAB turned OFF            !!!
-20210215 165801.198 INFO             PET3 !!! Meshes now created using native   !!!
-20210215 165801.198 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165801.198 INFO             PET3  PASS  MOAB bilinear regrid on Grid corner stagger, ESMF_FieldRegridUTest.F90, line 379
-20210215 165801.224 INFO             PET3  PASS  Regrid with edge stagger, ESMF_FieldRegridUTest.F90, line 395
-20210215 165801.237 INFO             PET3  PASS  Regrid from Mesh to Grid, ESMF_FieldRegridUTest.F90, line 410
-20210215 165801.256 INFO             PET3  PASS  Regrid from Spherical Mesh to Grid, ESMF_FieldRegridUTest.F90, line 425
-20210215 165801.266 INFO             PET3  PASS  Regrid from Grid to Mesh, ESMF_FieldRegridUTest.F90, line 440
-20210215 165801.273 INFO             PET3  PASS  Regrid from Mesh to Mesh, ESMF_FieldRegridUTest.F90, line 455
-20210215 165801.286 INFO             PET3  PASS  Regrid from Mesh to Mesh using Patch, ESMF_FieldRegridUTest.F90, line 472
-20210215 165801.337 INFO             PET3  PASS  Regrid from Mesh to Grid 3D, ESMF_FieldRegridUTest.F90, line 493
-20210215 165801.419 INFO             PET3  PASS  Regrid from 3D spherical Mesh to 3D spherical Grid, ESMF_FieldRegridUTest.F90, line 528
-20210215 165806.696 INFO             PET3  PASS  Regrid between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 543
-20210215 165807.498 INFO             PET3  PASS  Nearest STOD between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 558
-20210215 165808.306 INFO             PET3  PASS  Nearest DTOS between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 573
-20210215 165808.336 INFO             PET3  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NONE, ESMF_FieldRegridUTest.F90, line 589
-20210215 165808.374 INFO             PET3  PASS  Test regridding Sphere with ESMF_POLEMETHOD_ALLAVG, ESMF_FieldRegridUTest.F90, line 604
-20210215 165808.410 INFO             PET3  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NPNTAVG, ESMF_FieldRegridUTest.F90, line 619
-20210215 165808.444 INFO             PET3  PASS  Test regridding Sphere with ESMF_POLEMETHOD_TEETH, ESMF_FieldRegridUTest.F90, line 634
-20210215 165808.783 INFO             PET3  PASS  Test regridding from distgrid connections, ESMF_FieldRegridUTest.F90, line 649
-20210215 165808.814 INFO             PET3  PASS  Test using matrix (factorList, factorIndexList) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 666
-20210215 165808.818 WARNING          PET3 The use of argument 'indices' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorIndexList' instead.
-20210215 165808.818 WARNING          PET3 The use of argument 'weights' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorList' instead.
-20210215 165808.845 INFO             PET3  PASS  Test using DEPRECATED matrix arguments (weights, indices) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 683
-20210215 165809.296 INFO             PET3  PASS  Test regridding on a grid with indexflag=ESMF_INDEX_DELOCAL, ESMF_FieldRegridUTest.F90, line 700
-20210215 165809.638 INFO             PET3  PASS  Test regridding on a grid with an irregular distribution, ESMF_FieldRegridUTest.F90, line 718
-20210215 165809.651 INFO             PET3  PASS  Test regridding on a spherical grids with NEAREST_STOD regridding, ESMF_FieldRegridUTest.F90, line 735
-20210215 165809.657 INFO             PET3  PASS  Regrid from Mesh to Mesh with NEAREST_STOD interp., ESMF_FieldRegridUTest.F90, line 752
-20210215 165809.662 INFO             PET3  PASS  Regrid from Mesh to Mesh with NEAREST_DTOS interp., ESMF_FieldRegridUTest.F90, line 770
-20210215 165809.676 INFO             PET3  PASS  Test regridding on a spherical grids with NEAREST_DTOS regridding, ESMF_FieldRegridUTest.F90, line 788
-20210215 165809.730 INFO             PET3  PASS  Test unmapped destination point list, ESMF_FieldRegridUTest.F90, line 807
-20210215 165809.775 INFO             PET3  PASS  Test regridding from a 2 tile distgrid, ESMF_FieldRegridUTest.F90, line 823
-20210215 165811.108 INFO             PET3  PASS  Test regridding with holes in srcGrid, ESMF_FieldRegridUTest.F90, line 839
-20210215 165811.117 INFO             PET3  PASS  Test Mesh masking during regrid, ESMF_FieldRegridUTest.F90, line 854
-20210215 165811.712 INFO             PET3  PASS  Test regridding with sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 870
-20210215 165812.100 INFO             PET3  PASS  Test regridding with coarse sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 886
-20210215 165812.107 INFO             PET3  PASS  Regrid from Mesh to Mesh with Pentagon and Hexagon, ESMF_FieldRegridUTest.F90, line 902
-20210215 165812.118 INFO             PET3  PASS  Regrid from Mesh to Mesh On Cell Centers, ESMF_FieldRegridUTest.F90, line 918
-20210215 165812.126 INFO             PET3  PASS  Regrid Mesh with collapsed quads, ESMF_FieldRegridUTest.F90, line 933
-20210215 165812.132 INFO             PET3  PASS  Regrid from LocStream to LocStream with Nearest Neighbor interp., ESMF_FieldRegridUTest.F90, line 949
-20210215 165812.138 INFO             PET3  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 965
-20210215 165812.144 INFO             PET3  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 980
-20210215 165812.150 INFO             PET3  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 996
-20210215 165812.156 INFO             PET3  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 1011
-20210215 165812.163 INFO             PET3  PASS  Regrid from LocStream with clustering to Mesh using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1026
-20210215 165812.174 INFO             PET3  PASS  Regrid from LocStream to Grid using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1043
-20210215 165816.185 INFO             PET3  PASS  Regrid from Grid to a LocStream with regular distribution, bilinear and patch, ESMF_FieldRegridUTest.F90, line 1060
-20210215 165816.305 INFO             PET3  PASS  Regrid from Grid to a LocStream with a local count, ESMF_FieldRegridUTest.F90, line 1081
-20210215 165816.347 INFO             PET3  PASS  Regrid from 3d Grid to a 3d LocStream, ESMF_FieldRegridUTest.F90, line 1097
-20210215 165816.355 INFO             PET3  PASS  Regrid from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1115
-20210215 165816.368 INFO             PET3  PASS  Patch regridding from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1132
-20210215 165816.434 INFO             PET3  PASS  Regrid from Grid to Grid/Mesh/LocStream (GML) with identical points, ESMF_FieldRegridUTest.F90, line 1152
-20210215 165816.448 INFO             PET3  PASS  Regrid from Mesh containing pentagons and hexagons to Grid, ESMF_FieldRegridUTest.F90, line 1169
-20210215 165816.795 INFO             PET3  PASS  Regrid with periodic and non-periodic uniform grid creates, ESMF_FieldRegridUTest.F90, line 1184
-20210215 165816.795 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165816.795 INFO             PET3 !!!        MOAB turned ON             !!!
-20210215 165816.795 INFO             PET3 !!! Meshes now created using MOAB     !!!
-20210215 165816.795 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165816.803 WARNING          PET3 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
-20210215 165817.321 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165817.321 INFO             PET3 !!!        MOAB turned OFF            !!!
-20210215 165817.321 INFO             PET3 !!! Meshes now created using native   !!!
-20210215 165817.321 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165817.321 INFO             PET3  PASS  MOAB bilinear regrid on Grid center stagger, ESMF_FieldRegridUTest.F90, line 1211
-20210215 165817.892 INFO             PET3  PASS  Regrid with grid and ESMF_FieldRegrid() on only part of VM., ESMF_FieldRegridUTest.F90, line 1228
-20210215 165817.905 INFO             PET3  PASS  Test regrid per location status Field, ESMF_FieldRegridUTest.F90, line 1244
-20210215 165817.912 INFO             PET3  PASS  Test regrid per location status Field for Nearest Source to Destination, ESMF_FieldRegridUTest.F90, line 1258
-20210215 165817.941 INFO             PET3  PASS  Test regrid smm on an arbitrary grid, ESMF_FieldRegridUTest.F90, line 1273
-20210215 165818.230 INFO             PET3  PASS  Test regrid extrap nearest_stod, ESMF_FieldRegridUTest.F90, line 1290
-20210215 165818.555 INFO             PET3  PASS  Test regrid extrap inverse distance weighted average, ESMF_FieldRegridUTest.F90, line 1308
-20210215 165818.977 INFO             PET3  PASS  Test regrid extrap creep fill, ESMF_FieldRegridUTest.F90, line 1324
-20210215 165818.987 INFO             PET3  PASS  Test creep fill on mesh, ESMF_FieldRegridUTest.F90, line 1341
-20210215 165818.996 INFO             PET3  PASS  Test per location status output with extrap, ESMF_FieldRegridUTest.F90, line 1359
-20210215 165819.478 INFO             PET3  PASS  Test regrid extrap creep fill nearest destination., ESMF_FieldRegridUTest.F90, line 1376
-20210215 165819.838 INFO             PET3  PASS  Test regrid extrap nearest destination., ESMF_FieldRegridUTest.F90, line 1394
-20210215 165820.117 INFO             PET3  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1412
-20210215 165820.117 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.117 INFO             PET3 !!!        MOAB turned ON             !!!
-20210215 165820.117 INFO             PET3 !!! Meshes now created using MOAB     !!!
-20210215 165820.117 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.353 WARNING          PET3 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
-20210215 165820.528 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.528 INFO             PET3 !!!        MOAB turned OFF            !!!
-20210215 165820.528 INFO             PET3 !!! Meshes now created using native   !!!
-20210215 165820.528 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-20210215 165820.528 INFO             PET3  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1429
-20210215 165820.528 INFO             PET3  Ending Test, file ESMF_FieldRegridUTest.F90, line 1434
-20210215 165820.528 INFO             PET3 Finalizing ESMF
-Mon Feb 15 23:18:35 CST 2021
+20210216 210008.417 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210008.417 INFO             PET0 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20210216 210008.417 INFO             PET0 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20210216 210008.417 INFO             PET0 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20210216 210008.417 INFO             PET0 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20210216 210008.417 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210008.417 INFO             PET0 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_46-1-gfab5eab
+20210216 210008.417 INFO             PET0 ESMF library build date/time: "Feb 16 2021" "20:33:53"
+20210216 210008.417 INFO             PET0 ESMF library build location : /home/hpillai/esmf_test/intel/esmf
+20210216 210008.417 INFO             PET0 ESMF_COMM                   : intelmpi
+20210216 210008.417 INFO             PET0 ESMF_MOAB                   : enabled
+20210216 210008.417 INFO             PET0 ESMF_LAPACK                 : enabled
+20210216 210008.417 INFO             PET0 ESMF_NETCDF                 : enabled
+20210216 210008.417 INFO             PET0 ESMF_PNETCDF                : disabled
+20210216 210008.417 INFO             PET0 ESMF_PIO                    : enabled
+20210216 210008.417 INFO             PET0 ESMF_YAMLCPP                : enabled
+20210216 210008.418 INFO             PET0  Beginning Test, file ESMF_FieldRegridUTest.F90, line 61
+20210216 210008.418 INFO             PET0  NUMBER_OF_PROCESSORS           4
+20210216 210008.476 WARNING          PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210008.476 WARNING          PET0 !!! Calling regrid weight generation                  !!!
+20210216 210008.476 WARNING          PET0 !!! (e.g. ESMF_FieldRegridStore()) with checkFlag on. !!!
+20210216 210008.476 WARNING          PET0 !!! Extra checking comes at the cost of performance.  !!!
+20210216 210008.476 WARNING          PET0 !!! Only use for debugging, NOT for production!       !!!
+20210216 210008.476 WARNING          PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210009.245 INFO             PET0  PASS  Regrid between a 0 to 360 sphere and a -180 to 180 sphere, ESMF_FieldRegridUTest.F90, line 84
+20210216 210009.299 INFO             PET0  PASS  Regrid between two Fields with ungridded dimensions, ESMF_FieldRegridUTest.F90, line 103
+20210216 210009.952 INFO             PET0  PASS  Regrid between two Fields on Grids with indices switched, ESMF_FieldRegridUTest.F90, line 122
+20210216 210010.833 INFO             PET0  PASS  Bilinear regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 138
+20210216 210010.878 INFO             PET0  PASS  Nearest STOD regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 153
+20210216 210010.924 INFO             PET0  PASS  Nearest DTOS regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 169
+20210216 210010.933 INFO             PET0  PASS  Bilinear regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 186
+20210216 210010.938 INFO             PET0  PASS  Nearest STOD regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 202
+20210216 210010.944 INFO             PET0  PASS  Nearest DTOS regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 218
+20210216 210010.970 INFO             PET0  PASS  Regrid with destination masks, ESMF_FieldRegridUTest.F90, line 234
+20210216 210010.979 INFO             PET0  PASS  Regrid with completely masked destination, ESMF_FieldRegridUTest.F90, line 249
+20210216 210010.983 INFO             PET0  PASS  Regrid with source and destination disjoint, ESMF_FieldRegridUTest.F90, line 264
+20210216 210011.113 INFO             PET0  PASS  Regrid with source masks, ESMF_FieldRegridUTest.F90, line 279
+20210216 210011.286 INFO             PET0  PASS  Regrid sphere with source masks, ESMF_FieldRegridUTest.F90, line 295
+20210216 210011.673 INFO             PET0  PASS  Regrid with R4 coordinates, ESMF_FieldRegridUTest.F90, line 337
+20210216 210011.722 INFO             PET0  PASS  Regrid with corner stagger, ESMF_FieldRegridUTest.F90, line 353
+20210216 210011.722 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.722 INFO             PET0 !!!        MOAB turned ON             !!!
+20210216 210011.722 INFO             PET0 !!! Meshes now created using MOAB     !!!
+20210216 210011.722 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.725 WARNING          PET0 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
+20210216 210011.810 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.810 INFO             PET0 !!!        MOAB turned OFF            !!!
+20210216 210011.810 INFO             PET0 !!! Meshes now created using native   !!!
+20210216 210011.810 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.810 INFO             PET0  PASS  MOAB bilinear regrid on Grid corner stagger, ESMF_FieldRegridUTest.F90, line 379
+20210216 210011.836 INFO             PET0  PASS  Regrid with edge stagger, ESMF_FieldRegridUTest.F90, line 395
+20210216 210011.848 INFO             PET0  PASS  Regrid from Mesh to Grid, ESMF_FieldRegridUTest.F90, line 410
+20210216 210011.866 INFO             PET0  PASS  Regrid from Spherical Mesh to Grid, ESMF_FieldRegridUTest.F90, line 425
+20210216 210011.876 INFO             PET0  PASS  Regrid from Grid to Mesh, ESMF_FieldRegridUTest.F90, line 440
+20210216 210011.883 INFO             PET0  PASS  Regrid from Mesh to Mesh, ESMF_FieldRegridUTest.F90, line 455
+20210216 210011.895 INFO             PET0  PASS  Regrid from Mesh to Mesh using Patch, ESMF_FieldRegridUTest.F90, line 472
+20210216 210011.946 INFO             PET0  PASS  Regrid from Mesh to Grid 3D, ESMF_FieldRegridUTest.F90, line 493
+20210216 210012.028 INFO             PET0  PASS  Regrid from 3D spherical Mesh to 3D spherical Grid, ESMF_FieldRegridUTest.F90, line 528
+20210216 210017.257 INFO             PET0  PASS  Regrid between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 543
+20210216 210018.089 INFO             PET0  PASS  Nearest STOD between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 558
+20210216 210018.918 INFO             PET0  PASS  Nearest DTOS between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 573
+20210216 210018.948 INFO             PET0  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NONE, ESMF_FieldRegridUTest.F90, line 589
+20210216 210018.986 INFO             PET0  PASS  Test regridding Sphere with ESMF_POLEMETHOD_ALLAVG, ESMF_FieldRegridUTest.F90, line 604
+20210216 210019.021 INFO             PET0  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NPNTAVG, ESMF_FieldRegridUTest.F90, line 619
+20210216 210019.055 INFO             PET0  PASS  Test regridding Sphere with ESMF_POLEMETHOD_TEETH, ESMF_FieldRegridUTest.F90, line 634
+20210216 210019.393 INFO             PET0  PASS  Test regridding from distgrid connections, ESMF_FieldRegridUTest.F90, line 649
+20210216 210019.424 INFO             PET0  PASS  Test using matrix (factorList, factorIndexList) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 666
+20210216 210019.428 WARNING          PET0 The use of argument 'indices' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorIndexList' instead.
+20210216 210019.428 WARNING          PET0 The use of argument 'weights' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorList' instead.
+20210216 210019.456 INFO             PET0  PASS  Test using DEPRECATED matrix arguments (weights, indices) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 683
+20210216 210019.931 INFO             PET0  PASS  Test regridding on a grid with indexflag=ESMF_INDEX_DELOCAL, ESMF_FieldRegridUTest.F90, line 700
+20210216 210020.272 INFO             PET0  PASS  Test regridding on a grid with an irregular distribution, ESMF_FieldRegridUTest.F90, line 718
+20210216 210020.285 INFO             PET0  PASS  Test regridding on a spherical grids with NEAREST_STOD regridding, ESMF_FieldRegridUTest.F90, line 735
+20210216 210020.290 INFO             PET0  PASS  Regrid from Mesh to Mesh with NEAREST_STOD interp., ESMF_FieldRegridUTest.F90, line 752
+20210216 210020.296 INFO             PET0  PASS  Regrid from Mesh to Mesh with NEAREST_DTOS interp., ESMF_FieldRegridUTest.F90, line 770
+20210216 210020.308 INFO             PET0  PASS  Test regridding on a spherical grids with NEAREST_DTOS regridding, ESMF_FieldRegridUTest.F90, line 788
+20210216 210020.362 INFO             PET0  PASS  Test unmapped destination point list, ESMF_FieldRegridUTest.F90, line 807
+20210216 210020.405 INFO             PET0  PASS  Test regridding from a 2 tile distgrid, ESMF_FieldRegridUTest.F90, line 823
+20210216 210021.747 INFO             PET0  PASS  Test regridding with holes in srcGrid, ESMF_FieldRegridUTest.F90, line 839
+20210216 210021.756 INFO             PET0  PASS  Test Mesh masking during regrid, ESMF_FieldRegridUTest.F90, line 854
+20210216 210022.354 INFO             PET0  PASS  Test regridding with sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 870
+20210216 210022.738 INFO             PET0  PASS  Test regridding with coarse sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 886
+20210216 210022.746 INFO             PET0  PASS  Regrid from Mesh to Mesh with Pentagon and Hexagon, ESMF_FieldRegridUTest.F90, line 902
+20210216 210022.756 INFO             PET0  PASS  Regrid from Mesh to Mesh On Cell Centers, ESMF_FieldRegridUTest.F90, line 918
+20210216 210022.764 INFO             PET0  PASS  Regrid Mesh with collapsed quads, ESMF_FieldRegridUTest.F90, line 933
+20210216 210022.770 INFO             PET0  PASS  Regrid from LocStream to LocStream with Nearest Neighbor interp., ESMF_FieldRegridUTest.F90, line 949
+20210216 210022.775 INFO             PET0  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 965
+20210216 210022.780 INFO             PET0  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 980
+20210216 210022.786 INFO             PET0  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 996
+20210216 210022.792 INFO             PET0  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 1011
+20210216 210022.798 INFO             PET0  PASS  Regrid from LocStream with clustering to Mesh using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1026
+20210216 210022.809 INFO             PET0  PASS  Regrid from LocStream to Grid using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1043
+20210216 210026.843 INFO             PET0  PASS  Regrid from Grid to a LocStream with regular distribution, bilinear and patch, ESMF_FieldRegridUTest.F90, line 1060
+20210216 210026.963 INFO             PET0  PASS  Regrid from Grid to a LocStream with a local count, ESMF_FieldRegridUTest.F90, line 1081
+20210216 210027.005 INFO             PET0  PASS  Regrid from 3d Grid to a 3d LocStream, ESMF_FieldRegridUTest.F90, line 1097
+20210216 210027.013 INFO             PET0  PASS  Regrid from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1115
+20210216 210027.026 INFO             PET0  PASS  Patch regridding from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1132
+20210216 210027.088 INFO             PET0  PASS  Regrid from Grid to Grid/Mesh/LocStream (GML) with identical points, ESMF_FieldRegridUTest.F90, line 1152
+20210216 210027.101 INFO             PET0  PASS  Regrid from Mesh containing pentagons and hexagons to Grid, ESMF_FieldRegridUTest.F90, line 1169
+20210216 210027.450 INFO             PET0  PASS  Regrid with periodic and non-periodic uniform grid creates, ESMF_FieldRegridUTest.F90, line 1184
+20210216 210027.450 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.450 INFO             PET0 !!!        MOAB turned ON             !!!
+20210216 210027.450 INFO             PET0 !!! Meshes now created using MOAB     !!!
+20210216 210027.450 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.458 WARNING          PET0 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
+20210216 210027.998 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.998 INFO             PET0 !!!        MOAB turned OFF            !!!
+20210216 210027.998 INFO             PET0 !!! Meshes now created using native   !!!
+20210216 210027.998 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.998 INFO             PET0  PASS  MOAB bilinear regrid on Grid center stagger, ESMF_FieldRegridUTest.F90, line 1211
+20210216 210028.584 INFO             PET0  PASS  Regrid with grid and ESMF_FieldRegrid() on only part of VM., ESMF_FieldRegridUTest.F90, line 1228
+20210216 210028.593 INFO             PET0  PASS  Test regrid per location status Field, ESMF_FieldRegridUTest.F90, line 1244
+20210216 210028.600 INFO             PET0  PASS  Test regrid per location status Field for Nearest Source to Destination, ESMF_FieldRegridUTest.F90, line 1258
+20210216 210028.629 INFO             PET0  PASS  Test regrid smm on an arbitrary grid, ESMF_FieldRegridUTest.F90, line 1273
+20210216 210028.918 INFO             PET0  PASS  Test regrid extrap nearest_stod, ESMF_FieldRegridUTest.F90, line 1290
+20210216 210029.246 INFO             PET0  PASS  Test regrid extrap inverse distance weighted average, ESMF_FieldRegridUTest.F90, line 1308
+20210216 210029.675 INFO             PET0  PASS  Test regrid extrap creep fill, ESMF_FieldRegridUTest.F90, line 1324
+20210216 210029.685 INFO             PET0  PASS  Test creep fill on mesh, ESMF_FieldRegridUTest.F90, line 1341
+20210216 210029.694 INFO             PET0  PASS  Test per location status output with extrap, ESMF_FieldRegridUTest.F90, line 1359
+20210216 210030.180 INFO             PET0  PASS  Test regrid extrap creep fill nearest destination., ESMF_FieldRegridUTest.F90, line 1376
+20210216 210030.542 INFO             PET0  PASS  Test regrid extrap nearest destination., ESMF_FieldRegridUTest.F90, line 1394
+20210216 210030.822 INFO             PET0  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1412
+20210216 210030.822 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210030.822 INFO             PET0 !!!        MOAB turned ON             !!!
+20210216 210030.822 INFO             PET0 !!! Meshes now created using MOAB     !!!
+20210216 210030.822 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210031.083 WARNING          PET0 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
+20210216 210031.263 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210031.263 INFO             PET0 !!!        MOAB turned OFF            !!!
+20210216 210031.263 INFO             PET0 !!! Meshes now created using native   !!!
+20210216 210031.263 INFO             PET0 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210031.263 INFO             PET0  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1429
+20210216 210031.263 INFO             PET0  Ending Test, file ESMF_FieldRegridUTest.F90, line 1434
+20210216 210031.263 INFO             PET0 Finalizing ESMF
+20210216 210008.416 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210008.416 INFO             PET1 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20210216 210008.416 INFO             PET1 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20210216 210008.416 INFO             PET1 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20210216 210008.416 INFO             PET1 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20210216 210008.416 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210008.416 INFO             PET1 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_46-1-gfab5eab
+20210216 210008.416 INFO             PET1 ESMF library build date/time: "Feb 16 2021" "20:33:53"
+20210216 210008.416 INFO             PET1 ESMF library build location : /home/hpillai/esmf_test/intel/esmf
+20210216 210008.416 INFO             PET1 ESMF_COMM                   : intelmpi
+20210216 210008.417 INFO             PET1 ESMF_MOAB                   : enabled
+20210216 210008.417 INFO             PET1 ESMF_LAPACK                 : enabled
+20210216 210008.417 INFO             PET1 ESMF_NETCDF                 : enabled
+20210216 210008.417 INFO             PET1 ESMF_PNETCDF                : disabled
+20210216 210008.417 INFO             PET1 ESMF_PIO                    : enabled
+20210216 210008.417 INFO             PET1 ESMF_YAMLCPP                : enabled
+20210216 210008.418 INFO             PET1  Beginning Test, file ESMF_FieldRegridUTest.F90, line 61
+20210216 210008.418 INFO             PET1  NUMBER_OF_PROCESSORS           4
+20210216 210008.476 WARNING          PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210008.476 WARNING          PET1 !!! Calling regrid weight generation                  !!!
+20210216 210008.476 WARNING          PET1 !!! (e.g. ESMF_FieldRegridStore()) with checkFlag on. !!!
+20210216 210008.476 WARNING          PET1 !!! Extra checking comes at the cost of performance.  !!!
+20210216 210008.476 WARNING          PET1 !!! Only use for debugging, NOT for production!       !!!
+20210216 210008.476 WARNING          PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210009.245 INFO             PET1  PASS  Regrid between a 0 to 360 sphere and a -180 to 180 sphere, ESMF_FieldRegridUTest.F90, line 84
+20210216 210009.299 INFO             PET1  PASS  Regrid between two Fields with ungridded dimensions, ESMF_FieldRegridUTest.F90, line 103
+20210216 210009.952 INFO             PET1  PASS  Regrid between two Fields on Grids with indices switched, ESMF_FieldRegridUTest.F90, line 122
+20210216 210010.833 INFO             PET1  PASS  Bilinear regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 138
+20210216 210010.878 INFO             PET1  PASS  Nearest STOD regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 153
+20210216 210010.924 INFO             PET1  PASS  Nearest DTOS regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 169
+20210216 210010.933 INFO             PET1  PASS  Bilinear regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 186
+20210216 210010.938 INFO             PET1  PASS  Nearest STOD regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 202
+20210216 210010.944 INFO             PET1  PASS  Nearest DTOS regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 218
+20210216 210010.969 INFO             PET1  PASS  Regrid with destination masks, ESMF_FieldRegridUTest.F90, line 234
+20210216 210010.979 INFO             PET1  PASS  Regrid with completely masked destination, ESMF_FieldRegridUTest.F90, line 249
+20210216 210010.983 INFO             PET1  PASS  Regrid with source and destination disjoint, ESMF_FieldRegridUTest.F90, line 264
+20210216 210011.113 INFO             PET1  PASS  Regrid with source masks, ESMF_FieldRegridUTest.F90, line 279
+20210216 210011.286 INFO             PET1  PASS  Regrid sphere with source masks, ESMF_FieldRegridUTest.F90, line 295
+20210216 210011.673 INFO             PET1  PASS  Regrid with R4 coordinates, ESMF_FieldRegridUTest.F90, line 337
+20210216 210011.722 INFO             PET1  PASS  Regrid with corner stagger, ESMF_FieldRegridUTest.F90, line 353
+20210216 210011.722 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.722 INFO             PET1 !!!        MOAB turned ON             !!!
+20210216 210011.722 INFO             PET1 !!! Meshes now created using MOAB     !!!
+20210216 210011.722 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.725 WARNING          PET1 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
+20210216 210011.810 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.810 INFO             PET1 !!!        MOAB turned OFF            !!!
+20210216 210011.810 INFO             PET1 !!! Meshes now created using native   !!!
+20210216 210011.810 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.810 INFO             PET1  PASS  MOAB bilinear regrid on Grid corner stagger, ESMF_FieldRegridUTest.F90, line 379
+20210216 210011.836 INFO             PET1  PASS  Regrid with edge stagger, ESMF_FieldRegridUTest.F90, line 395
+20210216 210011.848 INFO             PET1  PASS  Regrid from Mesh to Grid, ESMF_FieldRegridUTest.F90, line 410
+20210216 210011.866 INFO             PET1  PASS  Regrid from Spherical Mesh to Grid, ESMF_FieldRegridUTest.F90, line 425
+20210216 210011.876 INFO             PET1  PASS  Regrid from Grid to Mesh, ESMF_FieldRegridUTest.F90, line 440
+20210216 210011.883 INFO             PET1  PASS  Regrid from Mesh to Mesh, ESMF_FieldRegridUTest.F90, line 455
+20210216 210011.895 INFO             PET1  PASS  Regrid from Mesh to Mesh using Patch, ESMF_FieldRegridUTest.F90, line 472
+20210216 210011.946 INFO             PET1  PASS  Regrid from Mesh to Grid 3D, ESMF_FieldRegridUTest.F90, line 493
+20210216 210012.028 INFO             PET1  PASS  Regrid from 3D spherical Mesh to 3D spherical Grid, ESMF_FieldRegridUTest.F90, line 528
+20210216 210017.257 INFO             PET1  PASS  Regrid between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 543
+20210216 210018.089 INFO             PET1  PASS  Nearest STOD between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 558
+20210216 210018.918 INFO             PET1  PASS  Nearest DTOS between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 573
+20210216 210018.948 INFO             PET1  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NONE, ESMF_FieldRegridUTest.F90, line 589
+20210216 210018.986 INFO             PET1  PASS  Test regridding Sphere with ESMF_POLEMETHOD_ALLAVG, ESMF_FieldRegridUTest.F90, line 604
+20210216 210019.021 INFO             PET1  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NPNTAVG, ESMF_FieldRegridUTest.F90, line 619
+20210216 210019.055 INFO             PET1  PASS  Test regridding Sphere with ESMF_POLEMETHOD_TEETH, ESMF_FieldRegridUTest.F90, line 634
+20210216 210019.393 INFO             PET1  PASS  Test regridding from distgrid connections, ESMF_FieldRegridUTest.F90, line 649
+20210216 210019.424 INFO             PET1  PASS  Test using matrix (factorList, factorIndexList) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 666
+20210216 210019.428 WARNING          PET1 The use of argument 'indices' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorIndexList' instead.
+20210216 210019.428 WARNING          PET1 The use of argument 'weights' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorList' instead.
+20210216 210019.456 INFO             PET1  PASS  Test using DEPRECATED matrix arguments (weights, indices) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 683
+20210216 210019.931 INFO             PET1  PASS  Test regridding on a grid with indexflag=ESMF_INDEX_DELOCAL, ESMF_FieldRegridUTest.F90, line 700
+20210216 210020.272 INFO             PET1  PASS  Test regridding on a grid with an irregular distribution, ESMF_FieldRegridUTest.F90, line 718
+20210216 210020.285 INFO             PET1  PASS  Test regridding on a spherical grids with NEAREST_STOD regridding, ESMF_FieldRegridUTest.F90, line 735
+20210216 210020.290 INFO             PET1  PASS  Regrid from Mesh to Mesh with NEAREST_STOD interp., ESMF_FieldRegridUTest.F90, line 752
+20210216 210020.296 INFO             PET1  PASS  Regrid from Mesh to Mesh with NEAREST_DTOS interp., ESMF_FieldRegridUTest.F90, line 770
+20210216 210020.308 INFO             PET1  PASS  Test regridding on a spherical grids with NEAREST_DTOS regridding, ESMF_FieldRegridUTest.F90, line 788
+20210216 210020.362 INFO             PET1  PASS  Test unmapped destination point list, ESMF_FieldRegridUTest.F90, line 807
+20210216 210020.405 INFO             PET1  PASS  Test regridding from a 2 tile distgrid, ESMF_FieldRegridUTest.F90, line 823
+20210216 210021.747 INFO             PET1  PASS  Test regridding with holes in srcGrid, ESMF_FieldRegridUTest.F90, line 839
+20210216 210021.756 INFO             PET1  PASS  Test Mesh masking during regrid, ESMF_FieldRegridUTest.F90, line 854
+20210216 210022.354 INFO             PET1  PASS  Test regridding with sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 870
+20210216 210022.738 INFO             PET1  PASS  Test regridding with coarse sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 886
+20210216 210022.746 INFO             PET1  PASS  Regrid from Mesh to Mesh with Pentagon and Hexagon, ESMF_FieldRegridUTest.F90, line 902
+20210216 210022.756 INFO             PET1  PASS  Regrid from Mesh to Mesh On Cell Centers, ESMF_FieldRegridUTest.F90, line 918
+20210216 210022.764 INFO             PET1  PASS  Regrid Mesh with collapsed quads, ESMF_FieldRegridUTest.F90, line 933
+20210216 210022.770 INFO             PET1  PASS  Regrid from LocStream to LocStream with Nearest Neighbor interp., ESMF_FieldRegridUTest.F90, line 949
+20210216 210022.775 INFO             PET1  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 965
+20210216 210022.780 INFO             PET1  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 980
+20210216 210022.786 INFO             PET1  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 996
+20210216 210022.792 INFO             PET1  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 1011
+20210216 210022.798 INFO             PET1  PASS  Regrid from LocStream with clustering to Mesh using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1026
+20210216 210022.809 INFO             PET1  PASS  Regrid from LocStream to Grid using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1043
+20210216 210026.843 INFO             PET1  PASS  Regrid from Grid to a LocStream with regular distribution, bilinear and patch, ESMF_FieldRegridUTest.F90, line 1060
+20210216 210026.963 INFO             PET1  PASS  Regrid from Grid to a LocStream with a local count, ESMF_FieldRegridUTest.F90, line 1081
+20210216 210027.005 INFO             PET1  PASS  Regrid from 3d Grid to a 3d LocStream, ESMF_FieldRegridUTest.F90, line 1097
+20210216 210027.013 INFO             PET1  PASS  Regrid from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1115
+20210216 210027.026 INFO             PET1  PASS  Patch regridding from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1132
+20210216 210027.088 INFO             PET1  PASS  Regrid from Grid to Grid/Mesh/LocStream (GML) with identical points, ESMF_FieldRegridUTest.F90, line 1152
+20210216 210027.101 INFO             PET1  PASS  Regrid from Mesh containing pentagons and hexagons to Grid, ESMF_FieldRegridUTest.F90, line 1169
+20210216 210027.450 INFO             PET1  PASS  Regrid with periodic and non-periodic uniform grid creates, ESMF_FieldRegridUTest.F90, line 1184
+20210216 210027.450 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.450 INFO             PET1 !!!        MOAB turned ON             !!!
+20210216 210027.450 INFO             PET1 !!! Meshes now created using MOAB     !!!
+20210216 210027.450 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.458 WARNING          PET1 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
+20210216 210027.998 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.998 INFO             PET1 !!!        MOAB turned OFF            !!!
+20210216 210027.998 INFO             PET1 !!! Meshes now created using native   !!!
+20210216 210027.998 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.998 INFO             PET1  PASS  MOAB bilinear regrid on Grid center stagger, ESMF_FieldRegridUTest.F90, line 1211
+20210216 210028.583 INFO             PET1  PASS  Regrid with grid and ESMF_FieldRegrid() on only part of VM., ESMF_FieldRegridUTest.F90, line 1228
+20210216 210028.593 INFO             PET1  PASS  Test regrid per location status Field, ESMF_FieldRegridUTest.F90, line 1244
+20210216 210028.600 INFO             PET1  PASS  Test regrid per location status Field for Nearest Source to Destination, ESMF_FieldRegridUTest.F90, line 1258
+20210216 210028.628 INFO             PET1  PASS  Test regrid smm on an arbitrary grid, ESMF_FieldRegridUTest.F90, line 1273
+20210216 210028.918 INFO             PET1  PASS  Test regrid extrap nearest_stod, ESMF_FieldRegridUTest.F90, line 1290
+20210216 210029.245 INFO             PET1  PASS  Test regrid extrap inverse distance weighted average, ESMF_FieldRegridUTest.F90, line 1308
+20210216 210029.675 INFO             PET1  PASS  Test regrid extrap creep fill, ESMF_FieldRegridUTest.F90, line 1324
+20210216 210029.685 INFO             PET1  PASS  Test creep fill on mesh, ESMF_FieldRegridUTest.F90, line 1341
+20210216 210029.694 INFO             PET1  PASS  Test per location status output with extrap, ESMF_FieldRegridUTest.F90, line 1359
+20210216 210030.180 INFO             PET1  PASS  Test regrid extrap creep fill nearest destination., ESMF_FieldRegridUTest.F90, line 1376
+20210216 210030.542 INFO             PET1  PASS  Test regrid extrap nearest destination., ESMF_FieldRegridUTest.F90, line 1394
+20210216 210030.822 INFO             PET1  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1412
+20210216 210030.822 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210030.822 INFO             PET1 !!!        MOAB turned ON             !!!
+20210216 210030.822 INFO             PET1 !!! Meshes now created using MOAB     !!!
+20210216 210030.822 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210031.083 WARNING          PET1 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
+20210216 210031.260 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210031.260 INFO             PET1 !!!        MOAB turned OFF            !!!
+20210216 210031.261 INFO             PET1 !!! Meshes now created using native   !!!
+20210216 210031.261 INFO             PET1 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210031.261 INFO             PET1  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1429
+20210216 210031.261 INFO             PET1  Ending Test, file ESMF_FieldRegridUTest.F90, line 1434
+20210216 210031.261 INFO             PET1 Finalizing ESMF
+20210216 210008.416 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210008.416 INFO             PET2 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20210216 210008.416 INFO             PET2 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20210216 210008.417 INFO             PET2 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20210216 210008.417 INFO             PET2 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20210216 210008.417 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210008.417 INFO             PET2 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_46-1-gfab5eab
+20210216 210008.417 INFO             PET2 ESMF library build date/time: "Feb 16 2021" "20:33:53"
+20210216 210008.417 INFO             PET2 ESMF library build location : /home/hpillai/esmf_test/intel/esmf
+20210216 210008.417 INFO             PET2 ESMF_COMM                   : intelmpi
+20210216 210008.417 INFO             PET2 ESMF_MOAB                   : enabled
+20210216 210008.417 INFO             PET2 ESMF_LAPACK                 : enabled
+20210216 210008.417 INFO             PET2 ESMF_NETCDF                 : enabled
+20210216 210008.417 INFO             PET2 ESMF_PNETCDF                : disabled
+20210216 210008.417 INFO             PET2 ESMF_PIO                    : enabled
+20210216 210008.417 INFO             PET2 ESMF_YAMLCPP                : enabled
+20210216 210008.418 INFO             PET2  Beginning Test, file ESMF_FieldRegridUTest.F90, line 61
+20210216 210008.418 INFO             PET2  NUMBER_OF_PROCESSORS           4
+20210216 210008.476 WARNING          PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210008.476 WARNING          PET2 !!! Calling regrid weight generation                  !!!
+20210216 210008.476 WARNING          PET2 !!! (e.g. ESMF_FieldRegridStore()) with checkFlag on. !!!
+20210216 210008.476 WARNING          PET2 !!! Extra checking comes at the cost of performance.  !!!
+20210216 210008.476 WARNING          PET2 !!! Only use for debugging, NOT for production!       !!!
+20210216 210008.476 WARNING          PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210009.245 INFO             PET2  PASS  Regrid between a 0 to 360 sphere and a -180 to 180 sphere, ESMF_FieldRegridUTest.F90, line 84
+20210216 210009.299 INFO             PET2  PASS  Regrid between two Fields with ungridded dimensions, ESMF_FieldRegridUTest.F90, line 103
+20210216 210009.952 INFO             PET2  PASS  Regrid between two Fields on Grids with indices switched, ESMF_FieldRegridUTest.F90, line 122
+20210216 210010.833 INFO             PET2  PASS  Bilinear regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 138
+20210216 210010.878 INFO             PET2  PASS  Nearest STOD regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 153
+20210216 210010.924 INFO             PET2  PASS  Nearest DTOS regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 169
+20210216 210010.933 INFO             PET2  PASS  Bilinear regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 186
+20210216 210010.938 INFO             PET2  PASS  Nearest STOD regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 202
+20210216 210010.944 INFO             PET2  PASS  Nearest DTOS regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 218
+20210216 210010.970 INFO             PET2  PASS  Regrid with destination masks, ESMF_FieldRegridUTest.F90, line 234
+20210216 210010.979 INFO             PET2  PASS  Regrid with completely masked destination, ESMF_FieldRegridUTest.F90, line 249
+20210216 210010.983 INFO             PET2  PASS  Regrid with source and destination disjoint, ESMF_FieldRegridUTest.F90, line 264
+20210216 210011.113 INFO             PET2  PASS  Regrid with source masks, ESMF_FieldRegridUTest.F90, line 279
+20210216 210011.286 INFO             PET2  PASS  Regrid sphere with source masks, ESMF_FieldRegridUTest.F90, line 295
+20210216 210011.673 INFO             PET2  PASS  Regrid with R4 coordinates, ESMF_FieldRegridUTest.F90, line 337
+20210216 210011.722 INFO             PET2  PASS  Regrid with corner stagger, ESMF_FieldRegridUTest.F90, line 353
+20210216 210011.722 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.722 INFO             PET2 !!!        MOAB turned ON             !!!
+20210216 210011.722 INFO             PET2 !!! Meshes now created using MOAB     !!!
+20210216 210011.722 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.725 WARNING          PET2 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
+20210216 210011.810 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.810 INFO             PET2 !!!        MOAB turned OFF            !!!
+20210216 210011.810 INFO             PET2 !!! Meshes now created using native   !!!
+20210216 210011.810 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.810 INFO             PET2  PASS  MOAB bilinear regrid on Grid corner stagger, ESMF_FieldRegridUTest.F90, line 379
+20210216 210011.836 INFO             PET2  PASS  Regrid with edge stagger, ESMF_FieldRegridUTest.F90, line 395
+20210216 210011.848 INFO             PET2  PASS  Regrid from Mesh to Grid, ESMF_FieldRegridUTest.F90, line 410
+20210216 210011.866 INFO             PET2  PASS  Regrid from Spherical Mesh to Grid, ESMF_FieldRegridUTest.F90, line 425
+20210216 210011.876 INFO             PET2  PASS  Regrid from Grid to Mesh, ESMF_FieldRegridUTest.F90, line 440
+20210216 210011.883 INFO             PET2  PASS  Regrid from Mesh to Mesh, ESMF_FieldRegridUTest.F90, line 455
+20210216 210011.895 INFO             PET2  PASS  Regrid from Mesh to Mesh using Patch, ESMF_FieldRegridUTest.F90, line 472
+20210216 210011.946 INFO             PET2  PASS  Regrid from Mesh to Grid 3D, ESMF_FieldRegridUTest.F90, line 493
+20210216 210012.028 INFO             PET2  PASS  Regrid from 3D spherical Mesh to 3D spherical Grid, ESMF_FieldRegridUTest.F90, line 528
+20210216 210017.257 INFO             PET2  PASS  Regrid between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 543
+20210216 210018.089 INFO             PET2  PASS  Nearest STOD between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 558
+20210216 210018.918 INFO             PET2  PASS  Nearest DTOS between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 573
+20210216 210018.948 INFO             PET2  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NONE, ESMF_FieldRegridUTest.F90, line 589
+20210216 210018.986 INFO             PET2  PASS  Test regridding Sphere with ESMF_POLEMETHOD_ALLAVG, ESMF_FieldRegridUTest.F90, line 604
+20210216 210019.021 INFO             PET2  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NPNTAVG, ESMF_FieldRegridUTest.F90, line 619
+20210216 210019.055 INFO             PET2  PASS  Test regridding Sphere with ESMF_POLEMETHOD_TEETH, ESMF_FieldRegridUTest.F90, line 634
+20210216 210019.393 INFO             PET2  PASS  Test regridding from distgrid connections, ESMF_FieldRegridUTest.F90, line 649
+20210216 210019.424 INFO             PET2  PASS  Test using matrix (factorList, factorIndexList) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 666
+20210216 210019.428 WARNING          PET2 The use of argument 'indices' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorIndexList' instead.
+20210216 210019.428 WARNING          PET2 The use of argument 'weights' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorList' instead.
+20210216 210019.456 INFO             PET2  PASS  Test using DEPRECATED matrix arguments (weights, indices) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 683
+20210216 210019.931 INFO             PET2  PASS  Test regridding on a grid with indexflag=ESMF_INDEX_DELOCAL, ESMF_FieldRegridUTest.F90, line 700
+20210216 210020.272 INFO             PET2  PASS  Test regridding on a grid with an irregular distribution, ESMF_FieldRegridUTest.F90, line 718
+20210216 210020.285 INFO             PET2  PASS  Test regridding on a spherical grids with NEAREST_STOD regridding, ESMF_FieldRegridUTest.F90, line 735
+20210216 210020.290 INFO             PET2  PASS  Regrid from Mesh to Mesh with NEAREST_STOD interp., ESMF_FieldRegridUTest.F90, line 752
+20210216 210020.296 INFO             PET2  PASS  Regrid from Mesh to Mesh with NEAREST_DTOS interp., ESMF_FieldRegridUTest.F90, line 770
+20210216 210020.308 INFO             PET2  PASS  Test regridding on a spherical grids with NEAREST_DTOS regridding, ESMF_FieldRegridUTest.F90, line 788
+20210216 210020.362 INFO             PET2  PASS  Test unmapped destination point list, ESMF_FieldRegridUTest.F90, line 807
+20210216 210020.406 INFO             PET2  PASS  Test regridding from a 2 tile distgrid, ESMF_FieldRegridUTest.F90, line 823
+20210216 210021.747 INFO             PET2  PASS  Test regridding with holes in srcGrid, ESMF_FieldRegridUTest.F90, line 839
+20210216 210021.756 INFO             PET2  PASS  Test Mesh masking during regrid, ESMF_FieldRegridUTest.F90, line 854
+20210216 210022.354 INFO             PET2  PASS  Test regridding with sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 870
+20210216 210022.738 INFO             PET2  PASS  Test regridding with coarse sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 886
+20210216 210022.746 INFO             PET2  PASS  Regrid from Mesh to Mesh with Pentagon and Hexagon, ESMF_FieldRegridUTest.F90, line 902
+20210216 210022.756 INFO             PET2  PASS  Regrid from Mesh to Mesh On Cell Centers, ESMF_FieldRegridUTest.F90, line 918
+20210216 210022.764 INFO             PET2  PASS  Regrid Mesh with collapsed quads, ESMF_FieldRegridUTest.F90, line 933
+20210216 210022.770 INFO             PET2  PASS  Regrid from LocStream to LocStream with Nearest Neighbor interp., ESMF_FieldRegridUTest.F90, line 949
+20210216 210022.775 INFO             PET2  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 965
+20210216 210022.780 INFO             PET2  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 980
+20210216 210022.786 INFO             PET2  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 996
+20210216 210022.792 INFO             PET2  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 1011
+20210216 210022.798 INFO             PET2  PASS  Regrid from LocStream with clustering to Mesh using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1026
+20210216 210022.809 INFO             PET2  PASS  Regrid from LocStream to Grid using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1043
+20210216 210026.843 INFO             PET2  PASS  Regrid from Grid to a LocStream with regular distribution, bilinear and patch, ESMF_FieldRegridUTest.F90, line 1060
+20210216 210026.963 INFO             PET2  PASS  Regrid from Grid to a LocStream with a local count, ESMF_FieldRegridUTest.F90, line 1081
+20210216 210027.005 INFO             PET2  PASS  Regrid from 3d Grid to a 3d LocStream, ESMF_FieldRegridUTest.F90, line 1097
+20210216 210027.013 INFO             PET2  PASS  Regrid from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1115
+20210216 210027.026 INFO             PET2  PASS  Patch regridding from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1132
+20210216 210027.088 INFO             PET2  PASS  Regrid from Grid to Grid/Mesh/LocStream (GML) with identical points, ESMF_FieldRegridUTest.F90, line 1152
+20210216 210027.101 INFO             PET2  PASS  Regrid from Mesh containing pentagons and hexagons to Grid, ESMF_FieldRegridUTest.F90, line 1169
+20210216 210027.450 INFO             PET2  PASS  Regrid with periodic and non-periodic uniform grid creates, ESMF_FieldRegridUTest.F90, line 1184
+20210216 210027.450 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.450 INFO             PET2 !!!        MOAB turned ON             !!!
+20210216 210027.450 INFO             PET2 !!! Meshes now created using MOAB     !!!
+20210216 210027.450 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.458 WARNING          PET2 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
+20210216 210027.998 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.998 INFO             PET2 !!!        MOAB turned OFF            !!!
+20210216 210027.998 INFO             PET2 !!! Meshes now created using native   !!!
+20210216 210027.998 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.998 INFO             PET2  PASS  MOAB bilinear regrid on Grid center stagger, ESMF_FieldRegridUTest.F90, line 1211
+20210216 210028.583 INFO             PET2  PASS  Regrid with grid and ESMF_FieldRegrid() on only part of VM., ESMF_FieldRegridUTest.F90, line 1228
+20210216 210028.593 INFO             PET2  PASS  Test regrid per location status Field, ESMF_FieldRegridUTest.F90, line 1244
+20210216 210028.600 INFO             PET2  PASS  Test regrid per location status Field for Nearest Source to Destination, ESMF_FieldRegridUTest.F90, line 1258
+20210216 210028.629 INFO             PET2  PASS  Test regrid smm on an arbitrary grid, ESMF_FieldRegridUTest.F90, line 1273
+20210216 210028.918 INFO             PET2  PASS  Test regrid extrap nearest_stod, ESMF_FieldRegridUTest.F90, line 1290
+20210216 210029.246 INFO             PET2  PASS  Test regrid extrap inverse distance weighted average, ESMF_FieldRegridUTest.F90, line 1308
+20210216 210029.675 INFO             PET2  PASS  Test regrid extrap creep fill, ESMF_FieldRegridUTest.F90, line 1324
+20210216 210029.685 INFO             PET2  PASS  Test creep fill on mesh, ESMF_FieldRegridUTest.F90, line 1341
+20210216 210029.694 INFO             PET2  PASS  Test per location status output with extrap, ESMF_FieldRegridUTest.F90, line 1359
+20210216 210030.180 INFO             PET2  PASS  Test regrid extrap creep fill nearest destination., ESMF_FieldRegridUTest.F90, line 1376
+20210216 210030.542 INFO             PET2  PASS  Test regrid extrap nearest destination., ESMF_FieldRegridUTest.F90, line 1394
+20210216 210030.822 INFO             PET2  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1412
+20210216 210030.822 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210030.822 INFO             PET2 !!!        MOAB turned ON             !!!
+20210216 210030.822 INFO             PET2 !!! Meshes now created using MOAB     !!!
+20210216 210030.822 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210031.083 WARNING          PET2 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
+20210216 210031.263 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210031.263 INFO             PET2 !!!        MOAB turned OFF            !!!
+20210216 210031.263 INFO             PET2 !!! Meshes now created using native   !!!
+20210216 210031.263 INFO             PET2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210031.263 INFO             PET2  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1429
+20210216 210031.263 INFO             PET2  Ending Test, file ESMF_FieldRegridUTest.F90, line 1434
+20210216 210031.263 INFO             PET2 Finalizing ESMF
+20210216 210008.416 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210008.416 INFO             PET3 !!! THE ESMF_LOG IS SET TO OUTPUT ALL LOG MESSAGES !!!
+20210216 210008.416 INFO             PET3 !!!     THIS MAY CAUSE SLOWDOWN IN PERFORMANCE     !!!
+20210216 210008.416 INFO             PET3 !!! FOR PRODUCTION RUNS, USE:                      !!!
+20210216 210008.416 INFO             PET3 !!!                   ESMF_LOGKIND_Multi_On_Error  !!!
+20210216 210008.416 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210008.416 INFO             PET3 Running with ESMF Version   : ESMF_8_1_0_beta_snapshot_46-1-gfab5eab
+20210216 210008.416 INFO             PET3 ESMF library build date/time: "Feb 16 2021" "20:33:53"
+20210216 210008.416 INFO             PET3 ESMF library build location : /home/hpillai/esmf_test/intel/esmf
+20210216 210008.416 INFO             PET3 ESMF_COMM                   : intelmpi
+20210216 210008.417 INFO             PET3 ESMF_MOAB                   : enabled
+20210216 210008.417 INFO             PET3 ESMF_LAPACK                 : enabled
+20210216 210008.417 INFO             PET3 ESMF_NETCDF                 : enabled
+20210216 210008.417 INFO             PET3 ESMF_PNETCDF                : disabled
+20210216 210008.417 INFO             PET3 ESMF_PIO                    : enabled
+20210216 210008.417 INFO             PET3 ESMF_YAMLCPP                : enabled
+20210216 210008.418 INFO             PET3  Beginning Test, file ESMF_FieldRegridUTest.F90, line 61
+20210216 210008.418 INFO             PET3  NUMBER_OF_PROCESSORS           4
+20210216 210008.476 WARNING          PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210008.476 WARNING          PET3 !!! Calling regrid weight generation                  !!!
+20210216 210008.476 WARNING          PET3 !!! (e.g. ESMF_FieldRegridStore()) with checkFlag on. !!!
+20210216 210008.476 WARNING          PET3 !!! Extra checking comes at the cost of performance.  !!!
+20210216 210008.476 WARNING          PET3 !!! Only use for debugging, NOT for production!       !!!
+20210216 210008.476 WARNING          PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210009.245 INFO             PET3  PASS  Regrid between a 0 to 360 sphere and a -180 to 180 sphere, ESMF_FieldRegridUTest.F90, line 84
+20210216 210009.299 INFO             PET3  PASS  Regrid between two Fields with ungridded dimensions, ESMF_FieldRegridUTest.F90, line 103
+20210216 210009.952 INFO             PET3  PASS  Regrid between two Fields on Grids with indices switched, ESMF_FieldRegridUTest.F90, line 122
+20210216 210010.833 INFO             PET3  PASS  Bilinear regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 138
+20210216 210010.878 INFO             PET3  PASS  Nearest STOD regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 153
+20210216 210010.924 INFO             PET3  PASS  Nearest DTOS regrid between 3D Cart. Grids, ESMF_FieldRegridUTest.F90, line 169
+20210216 210010.933 INFO             PET3  PASS  Bilinear regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 186
+20210216 210010.938 INFO             PET3  PASS  Nearest STOD regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 202
+20210216 210010.944 INFO             PET3  PASS  Nearest DTOS regrid between 3D Cart. Meshes, ESMF_FieldRegridUTest.F90, line 218
+20210216 210010.969 INFO             PET3  PASS  Regrid with destination masks, ESMF_FieldRegridUTest.F90, line 234
+20210216 210010.979 INFO             PET3  PASS  Regrid with completely masked destination, ESMF_FieldRegridUTest.F90, line 249
+20210216 210010.983 INFO             PET3  PASS  Regrid with source and destination disjoint, ESMF_FieldRegridUTest.F90, line 264
+20210216 210011.113 INFO             PET3  PASS  Regrid with source masks, ESMF_FieldRegridUTest.F90, line 279
+20210216 210011.286 INFO             PET3  PASS  Regrid sphere with source masks, ESMF_FieldRegridUTest.F90, line 295
+20210216 210011.673 INFO             PET3  PASS  Regrid with R4 coordinates, ESMF_FieldRegridUTest.F90, line 337
+20210216 210011.722 INFO             PET3  PASS  Regrid with corner stagger, ESMF_FieldRegridUTest.F90, line 353
+20210216 210011.722 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.722 INFO             PET3 !!!        MOAB turned ON             !!!
+20210216 210011.722 INFO             PET3 !!! Meshes now created using MOAB     !!!
+20210216 210011.722 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.725 WARNING          PET3 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
+20210216 210011.810 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.810 INFO             PET3 !!!        MOAB turned OFF            !!!
+20210216 210011.810 INFO             PET3 !!! Meshes now created using native   !!!
+20210216 210011.810 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210011.810 INFO             PET3  PASS  MOAB bilinear regrid on Grid corner stagger, ESMF_FieldRegridUTest.F90, line 379
+20210216 210011.836 INFO             PET3  PASS  Regrid with edge stagger, ESMF_FieldRegridUTest.F90, line 395
+20210216 210011.848 INFO             PET3  PASS  Regrid from Mesh to Grid, ESMF_FieldRegridUTest.F90, line 410
+20210216 210011.866 INFO             PET3  PASS  Regrid from Spherical Mesh to Grid, ESMF_FieldRegridUTest.F90, line 425
+20210216 210011.876 INFO             PET3  PASS  Regrid from Grid to Mesh, ESMF_FieldRegridUTest.F90, line 440
+20210216 210011.883 INFO             PET3  PASS  Regrid from Mesh to Mesh, ESMF_FieldRegridUTest.F90, line 455
+20210216 210011.895 INFO             PET3  PASS  Regrid from Mesh to Mesh using Patch, ESMF_FieldRegridUTest.F90, line 472
+20210216 210011.946 INFO             PET3  PASS  Regrid from Mesh to Grid 3D, ESMF_FieldRegridUTest.F90, line 493
+20210216 210012.028 INFO             PET3  PASS  Regrid from 3D spherical Mesh to 3D spherical Grid, ESMF_FieldRegridUTest.F90, line 528
+20210216 210017.257 INFO             PET3  PASS  Regrid between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 543
+20210216 210018.089 INFO             PET3  PASS  Nearest STOD between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 558
+20210216 210018.918 INFO             PET3  PASS  Nearest DTOS between two 3D Spherical Global Grids, ESMF_FieldRegridUTest.F90, line 573
+20210216 210018.948 INFO             PET3  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NONE, ESMF_FieldRegridUTest.F90, line 589
+20210216 210018.986 INFO             PET3  PASS  Test regridding Sphere with ESMF_POLEMETHOD_ALLAVG, ESMF_FieldRegridUTest.F90, line 604
+20210216 210019.021 INFO             PET3  PASS  Test regridding Sphere with ESMF_POLEMETHOD_NPNTAVG, ESMF_FieldRegridUTest.F90, line 619
+20210216 210019.055 INFO             PET3  PASS  Test regridding Sphere with ESMF_POLEMETHOD_TEETH, ESMF_FieldRegridUTest.F90, line 634
+20210216 210019.393 INFO             PET3  PASS  Test regridding from distgrid connections, ESMF_FieldRegridUTest.F90, line 649
+20210216 210019.424 INFO             PET3  PASS  Test using matrix (factorList, factorIndexList) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 666
+20210216 210019.428 WARNING          PET3 The use of argument 'indices' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorIndexList' instead.
+20210216 210019.428 WARNING          PET3 The use of argument 'weights' in call ESMF_FieldRegridStore() is DEPRECATED! Use argumemt 'factorList' instead.
+20210216 210019.456 INFO             PET3  PASS  Test using DEPRECATED matrix arguments (weights, indices) from ESMF_FieldRegridStore() in ESMF_FieldSMMStore(), ESMF_FieldRegridUTest.F90, line 683
+20210216 210019.931 INFO             PET3  PASS  Test regridding on a grid with indexflag=ESMF_INDEX_DELOCAL, ESMF_FieldRegridUTest.F90, line 700
+20210216 210020.272 INFO             PET3  PASS  Test regridding on a grid with an irregular distribution, ESMF_FieldRegridUTest.F90, line 718
+20210216 210020.285 INFO             PET3  PASS  Test regridding on a spherical grids with NEAREST_STOD regridding, ESMF_FieldRegridUTest.F90, line 735
+20210216 210020.290 INFO             PET3  PASS  Regrid from Mesh to Mesh with NEAREST_STOD interp., ESMF_FieldRegridUTest.F90, line 752
+20210216 210020.296 INFO             PET3  PASS  Regrid from Mesh to Mesh with NEAREST_DTOS interp., ESMF_FieldRegridUTest.F90, line 770
+20210216 210020.308 INFO             PET3  PASS  Test regridding on a spherical grids with NEAREST_DTOS regridding, ESMF_FieldRegridUTest.F90, line 788
+20210216 210020.362 INFO             PET3  PASS  Test unmapped destination point list, ESMF_FieldRegridUTest.F90, line 807
+20210216 210020.405 INFO             PET3  PASS  Test regridding from a 2 tile distgrid, ESMF_FieldRegridUTest.F90, line 823
+20210216 210021.747 INFO             PET3  PASS  Test regridding with holes in srcGrid, ESMF_FieldRegridUTest.F90, line 839
+20210216 210021.756 INFO             PET3  PASS  Test Mesh masking during regrid, ESMF_FieldRegridUTest.F90, line 854
+20210216 210022.354 INFO             PET3  PASS  Test regridding with sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 870
+20210216 210022.738 INFO             PET3  PASS  Test regridding with coarse sphere and gc bilinear, ESMF_FieldRegridUTest.F90, line 886
+20210216 210022.746 INFO             PET3  PASS  Regrid from Mesh to Mesh with Pentagon and Hexagon, ESMF_FieldRegridUTest.F90, line 902
+20210216 210022.756 INFO             PET3  PASS  Regrid from Mesh to Mesh On Cell Centers, ESMF_FieldRegridUTest.F90, line 918
+20210216 210022.764 INFO             PET3  PASS  Regrid Mesh with collapsed quads, ESMF_FieldRegridUTest.F90, line 933
+20210216 210022.770 INFO             PET3  PASS  Regrid from LocStream to LocStream with Nearest Neighbor interp., ESMF_FieldRegridUTest.F90, line 949
+20210216 210022.775 INFO             PET3  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 965
+20210216 210022.780 INFO             PET3  PASS  Regrid from 2D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 980
+20210216 210022.786 INFO             PET3  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest STOD, ESMF_FieldRegridUTest.F90, line 996
+20210216 210022.792 INFO             PET3  PASS  Regrid from 3D Cart LocStream to LocStream with Nearest DTOS, ESMF_FieldRegridUTest.F90, line 1011
+20210216 210022.798 INFO             PET3  PASS  Regrid from LocStream with clustering to Mesh using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1026
+20210216 210022.809 INFO             PET3  PASS  Regrid from LocStream to Grid using nearest neighbor, ESMF_FieldRegridUTest.F90, line 1043
+20210216 210026.843 INFO             PET3  PASS  Regrid from Grid to a LocStream with regular distribution, bilinear and patch, ESMF_FieldRegridUTest.F90, line 1060
+20210216 210026.963 INFO             PET3  PASS  Regrid from Grid to a LocStream with a local count, ESMF_FieldRegridUTest.F90, line 1081
+20210216 210027.005 INFO             PET3  PASS  Regrid from 3d Grid to a 3d LocStream, ESMF_FieldRegridUTest.F90, line 1097
+20210216 210027.013 INFO             PET3  PASS  Regrid from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1115
+20210216 210027.026 INFO             PET3  PASS  Patch regridding from Mesh to LocStream with mask using Bilinear, ESMF_FieldRegridUTest.F90, line 1132
+20210216 210027.088 INFO             PET3  PASS  Regrid from Grid to Grid/Mesh/LocStream (GML) with identical points, ESMF_FieldRegridUTest.F90, line 1152
+20210216 210027.101 INFO             PET3  PASS  Regrid from Mesh containing pentagons and hexagons to Grid, ESMF_FieldRegridUTest.F90, line 1169
+20210216 210027.450 INFO             PET3  PASS  Regrid with periodic and non-periodic uniform grid creates, ESMF_FieldRegridUTest.F90, line 1184
+20210216 210027.450 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.450 INFO             PET3 !!!        MOAB turned ON             !!!
+20210216 210027.450 INFO             PET3 !!! Meshes now created using MOAB     !!!
+20210216 210027.450 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.458 WARNING          PET3 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
+20210216 210027.998 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.998 INFO             PET3 !!!        MOAB turned OFF            !!!
+20210216 210027.998 INFO             PET3 !!! Meshes now created using native   !!!
+20210216 210027.998 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210027.998 INFO             PET3  PASS  MOAB bilinear regrid on Grid center stagger, ESMF_FieldRegridUTest.F90, line 1211
+20210216 210028.581 INFO             PET3  PASS  Regrid with grid and ESMF_FieldRegrid() on only part of VM., ESMF_FieldRegridUTest.F90, line 1228
+20210216 210028.593 INFO             PET3  PASS  Test regrid per location status Field, ESMF_FieldRegridUTest.F90, line 1244
+20210216 210028.600 INFO             PET3  PASS  Test regrid per location status Field for Nearest Source to Destination, ESMF_FieldRegridUTest.F90, line 1258
+20210216 210028.628 INFO             PET3  PASS  Test regrid smm on an arbitrary grid, ESMF_FieldRegridUTest.F90, line 1273
+20210216 210028.918 INFO             PET3  PASS  Test regrid extrap nearest_stod, ESMF_FieldRegridUTest.F90, line 1290
+20210216 210029.245 INFO             PET3  PASS  Test regrid extrap inverse distance weighted average, ESMF_FieldRegridUTest.F90, line 1308
+20210216 210029.675 INFO             PET3  PASS  Test regrid extrap creep fill, ESMF_FieldRegridUTest.F90, line 1324
+20210216 210029.685 INFO             PET3  PASS  Test creep fill on mesh, ESMF_FieldRegridUTest.F90, line 1341
+20210216 210029.694 INFO             PET3  PASS  Test per location status output with extrap, ESMF_FieldRegridUTest.F90, line 1359
+20210216 210030.180 INFO             PET3  PASS  Test regrid extrap creep fill nearest destination., ESMF_FieldRegridUTest.F90, line 1376
+20210216 210030.542 INFO             PET3  PASS  Test regrid extrap nearest destination., ESMF_FieldRegridUTest.F90, line 1394
+20210216 210030.822 INFO             PET3  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1412
+20210216 210030.822 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210030.822 INFO             PET3 !!!        MOAB turned ON             !!!
+20210216 210030.822 INFO             PET3 !!! Meshes now created using MOAB     !!!
+20210216 210030.822 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210031.083 WARNING          PET3 A polemethod is being used (perhaps by default) in ESMF_FieldRegridStore() when MOAB internal Mesh represenation is on. Polemethods aren't currently implemented in MOAB, so this could lead to unexpected unmapped points.
+20210216 210031.261 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210031.261 INFO             PET3 !!!        MOAB turned OFF            !!!
+20210216 210031.261 INFO             PET3 !!! Meshes now created using native   !!!
+20210216 210031.261 INFO             PET3 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+20210216 210031.261 INFO             PET3  PASS  Test regridding using meshes created via Mesh create from Grid, ESMF_FieldRegridUTest.F90, line 1429
+20210216 210031.261 INFO             PET3  Ending Test, file ESMF_FieldRegridUTest.F90, line 1434
+20210216 210031.261 INFO             PET3 Finalizing ESMF
+Tue Feb 16 21:51:18 CST 2021
