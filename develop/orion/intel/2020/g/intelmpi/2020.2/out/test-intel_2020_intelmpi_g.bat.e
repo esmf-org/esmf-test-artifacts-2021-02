@@ -211,10 +211,36 @@ ESMF_FieldRegridUTest.F90(21526): #warning: keyword redefined: FILE
 ESMF_ContainerUTest.F90(53): warning #6379: The structure contains one or more misaligned fields.   [TESTTYPESTRUCT]
   type TestTypeStruct
 -------^
-user_coupler.o: In function `user_coupler_mp_user_init_':
-/work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/src/system_tests/ESMF_ArrayRedistMPMD/user_coupler.F90:117: undefined reference to `esmf_statereconcile2mod_mp_esmf_statereconcile_'
-/work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/src/system_tests/ESMF_ArrayRedistMPMD/user_coupler.F90:119: undefined reference to `esmf_statereconcile2mod_mp_esmf_statereconcile_'
-make[3]: *** [/work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/test/testg/Linux.intel.64.intelmpi.default/ESMF_ArrayRedistSTestA] Error 1
-make[2]: *** [tree] Error 1
-make[1]: *** [build_system_tests] Error 2
-make: *** [all_tests] Error 2
+ESMF_TraceEx.F90(69): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [RC]
+    subroutine Finalize(gcomp, istate, estate, clock, rc)
+------------------------------------------------------^
+ESMF_TraceEx.F90(59): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [RC]
+    subroutine Run(gcomp, istate, estate, clock, rc)
+-------------------------------------------------^
+ESMF_TraceEx.F90(49): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [RC]
+    subroutine Init(gcomp, istate, estate, clock, rc)
+--------------------------------------------------^
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/src/include/ESMCI_VM.h(41),
+                 from /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/src/include/ESMCI_Base.h(27),
+                 from /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/src/include/ESMCI_RHandle.h(39),
+                 from /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/src/Infrastructure/Mesh/examples/../include/ESMCI_Mesh.h(23),
+                 from ESMC_DCatEx.C(20):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/4.8.5/backward/strstream(51),
+                 from /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/src/include/ESMCI_VM.h(41),
+                 from /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/src/include/ESMCI_Base.h(27),
+                 from /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/src/include/ESMCI_RHandle.h(39),
+                 from /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /work/noaa/da/mpotts/sandbox/intel_2020_intelmpi_g/src/Infrastructure/Mesh/examples/../include/ESMCI_Mesh.h(23),
+                 from ESMC_RefineEx.C(13):
+/usr/include/c++/4.8.5/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
