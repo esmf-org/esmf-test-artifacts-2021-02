@@ -1807,11 +1807,350 @@ Warning: ‘.name_key’ may be used uninitialized in this function [-Wmaybe-uni
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-user_coupler.o: In function `__user_coupler_MOD_user_init':
-/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/system_tests/ESMF_ArrayRedistMPMD/user_coupler.F90:117: undefined reference to `__esmf_statereconcile2mod_MOD_esmf_statereconcile'
-/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/system_tests/ESMF_ArrayRedistMPMD/user_coupler.F90:119: undefined reference to `__esmf_statereconcile2mod_MOD_esmf_statereconcile'
-collect2: error: ld returned 1 exit status
-make[3]: *** [/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/test/testg/Linux.gfortran.64.openmpi.default/ESMF_ArrayRedistSTestA] Error 1
-make[2]: *** [tree] Error 1
-make[1]: *** [build_system_tests] Error 2
-make: *** [all_tests] Error 2
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_FieldRedistSTest.F90:282:13:
+
+         if ((srcdata(i,j) .ne. resdata(i,j)) .OR. &
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_FieldRedistBlk2BlkSTest.F90:283:13:
+
+         if ((srcdata(i,j) .ne. resdata(i,j)) .OR. &
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_FieldRedistBlk2ArbSTest.F90:250:13:
+
+         if ((srcdata(i,j) .ne. resdata(i,j)) .OR. &
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_FieldRedistArb2ArbSTest.F90:262:13:
+
+         if ((srcdata(i) .ne. resdata(i)) .OR. &
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_FieldBundleRedistBlk2BlkSTest.F90:324:13:
+
+         if ((srcdata(i,j) .ne. resdata(i,j)) .OR. &
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_FieldBundleRedistBlk2ArbSTest.F90:269:13:
+
+         if ((srcdata(i,j) .ne. resdata(i,j)) .OR. &
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_FieldBundleRedistArb2ArbSTest.F90:291:13:
+
+         if ((srcdata(i) .ne. resdata(i)) .OR. &
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+user_modelC.F90:194:16:
+
+             if (ftrptr1(i,j) /= solution) count = count+1
+                1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+user_modelC.F90:194:16:
+
+             if (ftrptr1(i,j) /= solution) count = count+1
+                1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ioComp.F90:132:9:
+
+     pi = 3.14159d0
+         1
+Warning: Change of value in conversion from ‘REAL(8)’ to ‘REAL(4)’ at (1) [-Wconversion]
+ioComp.F90:194:47:
+
+         if (abs(result-farrayDstPtr(i,j))>real(1.d-5,ESMF_KIND_R4)) then
+                                               1
+Warning: Change of value in conversion from ‘REAL(8)’ to ‘REAL(4)’ at (1) [-Wconversion]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_InfoTutorialEx.F90:167:0:
+
+     output = ESMF_InfoDump(info, rc=rc)
+ 
+Warning: ‘.output’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ESMF_InfoTutorialEx.F90:35:0:
+
+     program ESMF_InfoTutorial
+ 
+note: ‘.output’ was declared here
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_ConfigOverviewEx.F90:165:7:
+
+     if(radius .ne. 6.37E6)then
+       1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_ConfigOverviewEx.F90:286:10:
+
+       if (param_1 .ne. 3.1415 .or. i_n .ne. 25) then
+          1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_ConfigOverviewEx.F90:381:35:
+
+       if(table(1,3) .ne. 263.0 .or. table(6,1) .ne. 400)then
+                                   1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_ConfigOverviewEx.F90:381:9:
+
+       if(table(1,3) .ne. 263.0 .or. table(6,1) .ne. 400)then
+         1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_RHandleBitForBitEx.F90:462:8:
+
+     if (farrayPtr(1) /= sumA) &
+        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_RHandleBitForBitEx.F90:551:8:
+
+     if (farrayPtr(1) /= sumA) &
+        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_RHandleBitForBitEx.F90:647:8:
+
+     if (farrayPtr(1) /= sumA) &
+        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_RHandleBitForBitEx.F90:741:8:
+
+     if (farrayPtr(1) /= sumB) &
+        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_RHandleBitForBitEx.F90:834:8:
+
+     if (farrayPtr(1) /= sumA) &
+        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_RHandleBitForBitEx.F90:924:8:
+
+     if (farrayPtr(1) /= sumB) &
+        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_RHandleBitForBitEx.F90:1014:8:
+
+     if (farrayPtr(1) /= sumA) &
+        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_RHandleBitForBitEx.F90:1061:8:
+
+     if (farrayPtr(1) /= sumA) &
+        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_RHandleBitForBitEx.F90:1111:8:
+
+     if (farrayPtr(1) /= sumB) &
+        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_RHandleBitForBitEx.F90:1207:8:
+
+     if (farrayPtr(1) /= sumC) &
+        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_RHandleBitForBitEx.F90:1277:8:
+
+     if (farrayPtr(1) /= sumD) &
+        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_RHandleBitForBitEx.F90:1343:8:
+
+     if (farrayPtr(1) /= sumE) &
+        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_RHandleBitForBitEx.F90:1483:10:
+
+       if (farrayPtr(1) /= sumCompare) then
+          1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_RHandleBitForBitEx.F90:1539:8:
+
+     if (farrayPtr(1) /= sumC) &
+        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_RHandleDynamicMaskingEx.F90:215:15:
+
+     matchR4 = (val1 .eq. val2)
+               1
+Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_RHandleDynamicMaskingEx.F90:204:15:
+
+     matchR8 = (val1 .eq. val2)
+               1
+Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_DistGridEx.F90:17:23:
+
+ program ESMF_DistGridEx
+                       1
+Warning: Integer division truncated to constant ‘0’ at (1) [-Winteger-division]
+ESMF_DistGridEx.F90:17:23: Warning: Integer division truncated to constant ‘1’ at (1) [-Winteger-division]
+ESMF_DistGridEx.F90:17:23: Warning: Integer division truncated to constant ‘2’ at (1) [-Winteger-division]
+ESMF_DistGridEx.F90:17:23: Warning: Integer division truncated to constant ‘0’ at (1) [-Winteger-division]
+ESMF_DistGridEx.F90:17:23: Warning: Integer division truncated to constant ‘1’ at (1) [-Winteger-division]
+ESMF_DistGridEx.F90:17:23: Warning: Integer division truncated to constant ‘2’ at (1) [-Winteger-division]
+ESMF_DistGridEx.F90:17:23: Warning: Integer division truncated to constant ‘0’ at (1) [-Winteger-division]
+ESMF_DistGridEx.F90:17:23: Warning: Integer division truncated to constant ‘1’ at (1) [-Winteger-division]
+ESMF_DistGridEx.F90:17:23: Warning: Integer division truncated to constant ‘2’ at (1) [-Winteger-division]
+ESMF_DistGridEx.F90:17:23: Warning: Integer division truncated to constant ‘0’ at (1) [-Winteger-division]
+ESMF_DistGridEx.F90:17:23: Warning: Integer division truncated to constant ‘1’ at (1) [-Winteger-division]
+ESMF_DistGridEx.F90:17:23: Warning: Integer division truncated to constant ‘2’ at (1) [-Winteger-division]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/examples/../include/ESMCI_Mesh.h:23,
+                 from ESMC_DCatEx.C:20:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/examples/../include/ESMCI_Mesh.h:23,
+                 from ESMC_RefineEx.C:13:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+ESMC_RefineEx.C: In function ‘int main(int, char**)’:
+ESMC_RefineEx.C:290:24: warning: comparison of integer expressions of different signedness: ‘ESMCI::UInt’ {aka ‘unsigned int’} and ‘const int’ [-Wsign-compare]
+     for (UInt i = 0; i < nref; i++) {
+                      ~~^~~~~~
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_FieldRepDimEx.F90:213:11:
+
+         if(farray1(ii,ij,ik) .ne. n ) rc = ESMF_FAILURE
+           1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_InternalStateEx.F90:117:40:
+
+   if ((datap%testValue .ne. 4567) .or. (datap%testScaling .ne. 0.5)) then
+                                        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_InternalStateModEx.F90:147:8:
+
+     if (data%testScaling .ne. 0.5) match = .false.  ! test scalar data
+        1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+ESMF_InternalStateModEx.F90:149:10:
+
+       if (data%testArray(i) .ne. real(i)) match = .false. ! test array data
+          1
+Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
