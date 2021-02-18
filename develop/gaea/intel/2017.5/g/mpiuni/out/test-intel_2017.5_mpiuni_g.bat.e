@@ -571,6 +571,9 @@ ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
+ifort: warning #10182: disabling optimization; runtime debug checks enabled
+ifort: warning #10182: disabling optimization; runtime debug checks enabled
+ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ESMF_TraceEx.F90(69): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [RC]
     subroutine Finalize(gcomp, istate, estate, clock, rc)
 ------------------------------------------------------^

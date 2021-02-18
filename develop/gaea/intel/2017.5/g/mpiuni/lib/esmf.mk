@@ -29,15 +29,15 @@ ESMF_LIBSDIR=/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g/lib/libg/Unico
 ESMF_F90COMPILER=ftn
 ESMF_F90LINKER=ftn
 
-ESMF_F90COMPILEOPTS=-g -traceback -check arg_temp_created,bounds,format,output_conversion,stack,uninit -fPIC -assume realloc_lhs  -qopenmp
+ESMF_F90COMPILEOPTS=-g -traceback -check arg_temp_created,bounds,format,output_conversion,stack,uninit -fPIC -assume realloc_lhs   -qopenmp
 ESMF_F90COMPILEPATHS=-I/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g/mod/modg/Unicos.intel.64.mpiuni.default -I/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g/src/include 
-ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_PTHREADS -DESMF_NO_OPENACC -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpiuni -DESMF_DIR=/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g -DESMF_MPIUNI
+ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpiuni -DESMF_DIR=/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g -DESMF_MPIUNI
 ESMF_F90COMPILEFREECPP=
 ESMF_F90COMPILEFREENOCPP=
 ESMF_F90COMPILEFIXCPP=
 ESMF_F90COMPILEFIXNOCPP=
 
-ESMF_F90LINKOPTS=  -Wl,--no-as-needed  -qopenmp
+ESMF_F90LINKOPTS=   -Wl,--no-as-needed  -qopenmp
 ESMF_F90LINKPATHS=-L/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g/lib/libg/Unicos.intel.64.mpiuni.default  
 ESMF_F90ESMFLINKPATHS=-L/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g/lib/libg/Unicos.intel.64.mpiuni.default
 ESMF_F90LINKRPATHS=-Wl,-rpath,/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g/lib/libg/Unicos.intel.64.mpiuni.default 
@@ -48,11 +48,11 @@ ESMF_F90ESMFLINKLIBS=-lesmf  -cxxlib -lrt -ldl
 ESMF_CXXCOMPILER=CC
 ESMF_CXXLINKER=CC
 
-ESMF_CXXCOMPILEOPTS=-std=c++11 -g -traceback -Wcheck -fPIC  -qopenmp
+ESMF_CXXCOMPILEOPTS=-std=c++11 -g -traceback -Wcheck -fPIC -pthread  -qopenmp
 ESMF_CXXCOMPILEPATHS= -I/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g/src/include   -I/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g/src/Infrastructure/stubs/mpiuni -I/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_PTHREADS -DESMF_NO_OPENACC -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpiuni -DESMF_DIR=/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_NO_POSIXIPC -DESMF_NO_GETHOSTID -DESMF_NO_SIGNALS -DESMF_NO_SYSTEMCALL
+ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_NO_OPENACC -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DS64=1 -DESMF_OS_Unicos=1 -DESMF_COMM=mpiuni -DESMF_DIR=/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g -D__SDIR__='' -DESMF_CXXSTD=11 -DESMF_MPIUNI -DESMF_NO_POSIXIPC
 
-ESMF_CXXLINKOPTS=  -Wl,--no-as-needed  -qopenmp
+ESMF_CXXLINKOPTS=  -pthread -Wl,--no-as-needed  -qopenmp
 ESMF_CXXLINKPATHS=-L/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g/lib/libg/Unicos.intel.64.mpiuni.default  -L/opt/intel/compilers_and_libraries_2019.5.281/linux/compiler/lib/intel64_lin/
 ESMF_CXXESMFLINKPATHS=-L/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g/lib/libg/Unicos.intel.64.mpiuni.default
 ESMF_CXXLINKRPATHS=-Wl,-rpath,/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g/lib/libg/Unicos.intel.64.mpiuni.default 
@@ -97,7 +97,7 @@ ESMF_INTERNAL_DIR=/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpiuni_g
 # ESMF_BOPT: g
 # ESMF_COMM: mpiuni
 # ESMF_SITE: default
-# ESMF_PTHREADS: OFF
+# ESMF_PTHREADS: ON
 # ESMF_OPENMP: ON
 # ESMF_OPENACC: OFF
 # ESMF_ARRAY_LITE: FALSE
