@@ -976,6 +976,7 @@ chmod u+rw /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testO/Linux
 gmake TNAME=Field NP=1 ctest
 gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/tests'
 mpirun -np 1 ./ESMC_FieldUTest 1> ./ESMC_FieldUTest.stdout 2>&1
+cat: ./PET*FieldUTest.Log: No such file or directory
 gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/tests'
 rm -f /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testO/Linux.gfortran.64.openmpi.default/meshmeshweights.nc
 gmake TNAME=FieldRegrid NP=1 ctest
@@ -1846,7 +1847,6 @@ PASS: openmpi/O: src/Infrastructure/Field/tests/ESMC_FieldGridRegridUTest.C
 PASS: openmpi/O: src/Infrastructure/Field/tests/ESMC_FieldRegridCsrvUTest.C
 PASS: openmpi/O: src/Infrastructure/Field/tests/ESMC_FieldRegridUTest.C
 PASS: openmpi/O: src/Infrastructure/Field/tests/ESMC_FieldSMMFromFileUTest.C
-PASS: openmpi/O: src/Infrastructure/Field/tests/ESMC_FieldUTest.C
 PASS: openmpi/O: src/Infrastructure/Field/tests/ESMF_FieldArbGridUTest.F90
 PASS: openmpi/O: src/Infrastructure/Field/tests/ESMF_FieldCreateGetUTest.F90
 PASS: openmpi/O: src/Infrastructure/Field/tests/ESMF_FieldGatherUTest.F90
@@ -2009,6 +2009,11 @@ PASS: openmpi/O: src/prologue/tests/ESMF_StringUTest.F90
 PASS: openmpi/O: src/prologue/tests/ESMF_WordsizeUTest.F90
 
 
+The following unit test files failed to build, failed to execute or crashed during execution:
+
+CRASHED: openmpi/O: src/Infrastructure/Field/tests/ESMC_FieldUTest.C
+
+
 The following test harness unit tests pass:
 PASS: openmpi/O: ESMF_array_2_NP1UTest
 PASS: openmpi/O: ESMF_field_1_NP1UTest
@@ -2018,7 +2023,7 @@ The log and stdout files for the unit tests can be found at:
 /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testO/Linux.gfortran.64.openmpi.default
 
 
-Found 8894 exhaustive multi-processor unit tests, 8894 passed and 0 failed.
+Found 8894 exhaustive multi-processor unit tests, 8861 passed and 33 failed.
 
 gmake[1]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf'
-Wed Feb 17 12:39:58 MST 2021
+Thu Feb 18 12:41:11 MST 2021

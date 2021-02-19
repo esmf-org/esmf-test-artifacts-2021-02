@@ -1,0 +1,19 @@
+ 
+Checking ESMF installation:
+ 
+cd /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/installcheck ;\
+	/Library/Developer/CommandLineTools/usr/bin/make clean
+rm -f esmf_application esmc_application *.o *.mod
+cd /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/installcheck ;\
+	/Library/Developer/CommandLineTools/usr/bin/make
+/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpif90 -c -O  -assume realloc_lhs -m64 -pthread -threads  -qopenmp -I/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/install_dir/mod/modO/Darwin.intel.64.mpich3.default -I/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/install_dir/include -I/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/include -I/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/include  esmf_application.f90
+/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpicxx -c -std=c++11 -O -DNDEBUG  -m64 -pthread  -qopenmp  -I/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/install_dir/include  -I/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/include -I/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/prologue/yaml-cpp/include -DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_46-5-g3a89871faa' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_O -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Darwin=1 -DESMF_COMM=mpich3 -DESMF_DIR=/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf -D__SDIR__='' -DESMF_CXXSTD=11 esmc_application.c
+/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpif90 -m64 -pthread -threads  -qopenmp -L/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/install_dir/lib/libO/Darwin.intel.64.mpich3.default -L/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/lib -L/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/lib -L/project/esmf/Intel/19.1.0.166/mpich/3.3.2/lib -L/project/esmf/Intel/19.1.0.166/lib -L/usr/lib -Wl,-rpath,/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/install_dir/lib/libO/Darwin.intel.64.mpich3.default -Wl,-rpath,/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/lib -Wl,-rpath,/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/lib -o esmf_application esmf_application.o -lesmf  -lc++ -liomp5 -lc++ -lSystem -lpthread -lnetcdf -lnetcdff        
+/project/esmf/Intel/19.1.0.166/mpich/3.3.2/bin/mpicxx -m64 -pthread  -qopenmp -L/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/install_dir/lib/libO/Darwin.intel.64.mpich3.default -L/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/lib -L/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/lib -L/opt/intel/compilers_and_libraries_2020.0.166/mac/compiler/lib/ -Wl,-rpath,/project/esmf/himanshu/esmf_test/cronjobs/daily/intel/install_dir/lib/libO/Darwin.intel.64.mpich3.default -Wl,-rpath,/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/lib -Wl,-rpath,/project/esmf/Intel/19.1.0.166/netcdf/4.7.4/lib -Wl,-rpath,/opt/intel/compilers_and_libraries_2020.0.166/mac/compiler/lib/ -o esmc_application esmc_application.o -lesmf  -lmpifort -lpmpi -lifportmt -lifcoremt -limf -lsvml -lipgo -liomp5 -lSystem -lintlc -lpthread -lsvml -lnetcdf -lnetcdff
+cd /project/esmf/himanshu/esmf_test/cronjobs/daily/intel/esmf/src/installcheck ;\
+        /Library/Developer/CommandLineTools/usr/bin/make check
+PASS: check
+ 
+ESMF installation check complete.
+ 
+Thu Feb 18 14:07:24 MST 2021
