@@ -470,7 +470,6 @@ In file included from /usr/include/c++/4.8.5/backward/strstream(51),
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/intel/19.0.5/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/intel/19.0.5/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/intel/19.0.5/mpi/../lib*: No such file or directory
-slurmstepd: error: _is_a_lwp: 1 read() attempts on /proc/90231/status failed: No such process
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/intel/19.0.5/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/intel/19.0.5/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/intel/19.0.5/mpi/../lib*: No such file or directory
