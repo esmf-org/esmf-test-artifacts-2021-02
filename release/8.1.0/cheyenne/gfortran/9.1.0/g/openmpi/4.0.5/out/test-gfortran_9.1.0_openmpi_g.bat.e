@@ -2015,6 +2015,7 @@ ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
+slurmstepd: error: _is_a_lwp: open() /proc/9704/status failed: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
@@ -2035,6 +2036,7 @@ ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
+slurmstepd: error: _is_a_lwp: open() /proc/45221/status failed: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ESMF_FieldRedistSTest.F90:282:13:
