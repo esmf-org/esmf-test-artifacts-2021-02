@@ -1,233 +1,715 @@
 gmake[1]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf'
+rm -rf /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/examples/examplesO/Linux.gfortran.64.mpich3.default/examples_results
+rm -rf /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/examples/examplesO/Linux.gfortran.64.mpich3.default/*Ex.Log
+rm -rf /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/examples/examplesO/Linux.gfortran.64.mpich3.default/*Ex.stdout
+rm -rf /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/examples/examplesO/Linux.gfortran.64.mpich3.default/*.rc
+rm -rf /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/examples/examplesO/Linux.gfortran.64.mpich3.default/*.nc
+rm -rf /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/examples/examplesO/Linux.gfortran.64.mpich3.default/data
 gmake[1]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf'
+gmake ACTION=tree_run_examples tree
 gmake[1]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf'
-rm -rf /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testO/Linux.gfortran.64.mpich3.default/test_harness.*
-rm -rf /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testO/Linux.gfortran.64.mpich3.default/unit_tests_results
-rm -rf /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testO/Linux.gfortran.64.mpich3.default/*UTest.Log
-rm -rf /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testO/Linux.gfortran.64.mpich3.default/*UTest.stdout
-rm -rf /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testO/Linux.gfortran.64.mpich3.default/*.rc
-rm -rf /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testO/Linux.gfortran.64.mpich3.default/*.nc
-rm -rf /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testO/Linux.gfortran.64.mpich3.default/data
-gmake[1]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf'
-gmake ACTION=tree_run_unit_tests tree
-gmake[1]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src
 gmake[2]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests
 gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-gmake TNAME=String NP=2 ftest
-gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-mpirun -np 2 ./ESMF_StringUTest 1> ./ESMF_StringUTest.stdout 2>&1
-gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-gmake TNAME=Wordsize NP=2 ftest
-gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-mpirun -np 2 ./ESMF_WordsizeUTest 1> ./ESMF_WordsizeUTest.stdout 2>&1
-gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-gmake TNAME=F90ArrayPtr NP=4 ftest
-gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-mpirun -np 4 ./ESMF_F90ArrayPtrUTest 1> ./ESMF_F90ArrayPtrUTest.stdout 2>&1
-gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-gmake TNAME=LAPACK NP=2 ftest
-gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-mpirun -np 2 ./ESMF_LAPACKUTest 1> ./ESMF_LAPACKUTest.stdout 2>&1
-gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-gmake TNAME=Feature NP=2 ftest
-gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-mpirun -np 2 ./ESMF_FeatureUTest 1> ./ESMF_FeatureUTest.stdout 2>&1
-gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-gmake TNAME=Exceptions NP=4 citest
-gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-mpirun -np 4 ./ESMCI_ExceptionsUTest 1> ./ESMCI_ExceptionsUTest.stdout 2>&1
-gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-gmake TNAME=Feature NP=2 citest
-gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-mpirun -np 2 ./ESMCI_FeatureUTest 1> ./ESMCI_FeatureUTest.stdout 2>&1
-gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
 gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/tests'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/yaml-cpp
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/yaml-cpp
 gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/yaml-cpp'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/yaml-cpp/src
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/yaml-cpp/src
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/yaml-cpp/src'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/yaml-cpp/src'
 gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue/yaml-cpp'
 gmake[3]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/prologue'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/test_harness
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/test_harness
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/test_harness'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/test_harness/src
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/test_harness/src
 gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/test_harness/src'
 gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/test_harness/src'
 gmake[3]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/test_harness'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure
 gmake[3]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/stubs
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/stubs
 gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/stubs'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/stubs/mpiuni
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/stubs/mpiuni
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/stubs/mpiuni'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/stubs/mpiuni'
 gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/stubs'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util
 gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/src
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/src
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/src'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/src'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/interface
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/interface
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/interface'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/interface'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/tests
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/tests
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/tests'
-gmake TNAME=Util NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/tests'
-mpirun -np 4 ./ESMF_UtilUTest 1> ./ESMF_UtilUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/tests'
-gmake TNAME=FortranWordsize NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/tests'
-mpirun -np 4 ./ESMF_FortranWordsizeUTest 1> ./ESMF_FortranWordsizeUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/tests'
-gmake TNAME=TypeKindGet NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/tests'
-mpirun -np 4 ./ESMF_TypeKindGetUTest 1> ./ESMF_TypeKindGetUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/tests'
-gmake TNAME=InitMacros NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/tests'
-mpirun -np 4 ./ESMF_InitMacrosUTest 1> ./ESMF_InitMacrosUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/tests'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/tests'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/examples
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/examples
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/examples'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/examples'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/doc
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/doc
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/doc'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util/doc'
 gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Util'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr
 gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/src
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/src
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/src'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/src'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/interface
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/interface
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/interface'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/interface'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/examples
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/examples
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/examples'
+gmake EXNAME=LogErr NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/examples'
+mpirun -np 4 ./ESMF_LogErrEx > ./ESMF_LogErrEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/examples'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/examples'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/doc
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/doc
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/doc'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/doc'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/tests
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/tests
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/tests'
-gmake TNAME=LogErr NP=4 ctest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/tests'
-mpirun -np 4 ./ESMC_LogErrUTest 1> ./ESMC_LogErrUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/tests'
-gmake TNAME=LogErrPerf NP=4 ctest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/tests'
-mpirun -np 4 ./ESMC_LogErrPerfUTest 1> ./ESMC_LogErrPerfUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/tests'
-# remove log files of previous test runs
-rm -f /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testO/Linux.gfortran.64.mpich3.default/*Log_Test_File* /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testO/Linux.gfortran.64.mpich3.default/Single_Log_File
-gmake TNAME=LogErr NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/tests'
-mpirun -np 4 ./ESMF_LogErrUTest 1> ./ESMF_LogErrUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/tests'
-gmake TNAME=LogErrPerf NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/tests'
-mpirun -np 4 ./ESMF_LogErrPerfUTest 1> ./ESMF_LogErrPerfUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/tests'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr/tests'
 gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LogErr'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM
 gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/src
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/src
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/src'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/src/acc
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/src/acc
 gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/src/acc'
 gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/src/acc'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/src'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/interface
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/interface
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/interface'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/interface'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/doc
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/doc
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/doc'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/doc'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+gmake EXNAME=VMDefaultBasics NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+mpirun -np 4 ./ESMF_VMDefaultBasicsEx > ./ESMF_VMDefaultBasicsEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+gmake EXNAME=VMGetMPICommunicator NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+mpirun -np 4 ./ESMF_VMGetMPICommunicatorEx > ./ESMF_VMGetMPICommunicatorEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+gmake EXNAME=VMUserMpi NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+mpirun -np 4 ./ESMF_VMUserMpiEx > ./ESMF_VMUserMpiEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+gmake EXNAME=VMUserMpiComm NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+mpirun -np 4 ./ESMF_VMUserMpiCommEx > ./ESMF_VMUserMpiCommEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+gmake EXNAME=VMUserMpiCommMulti NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+mpirun -np 4 ./ESMF_VMUserMpiCommMultiEx > ./ESMF_VMUserMpiCommMultiEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+gmake EXNAME=VMComponent NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+mpirun -np 4 ./ESMF_VMComponentEx > ./ESMF_VMComponentEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+gmake EXNAME=VMSendVMRecv NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+mpirun -np 4 ./ESMF_VMSendVMRecvEx > ./ESMF_VMSendVMRecvEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+gmake EXNAME=VMNonBlocking NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+mpirun -np 4 ./ESMF_VMNonBlockingEx > ./ESMF_VMNonBlockingEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+gmake EXNAME=VMScatterVMGather NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+mpirun -np 4 ./ESMF_VMScatterVMGatherEx > ./ESMF_VMScatterVMGatherEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+gmake EXNAME=VMAllFullReduce NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+mpirun -np 4 ./ESMF_VMAllFullReduceEx > ./ESMF_VMAllFullReduceEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+gmake EXNAME=VMHigherRankData NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
+mpirun -np 4 ./ESMF_VMHigherRankDataEx > ./ESMF_VMHigherRankDataEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
 gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/examples'
-tree_run_unit_tests in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests
 gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VM NP=4 ctest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMC_VMUTest 1> ./ESMC_VMUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VM NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMUTest 1> ./ESMF_VMUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMAcc NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMAccUTest 1> ./ESMF_VMAccUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMOpenMP NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMOpenMPUTest 1> ./ESMF_VMOpenMPUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMUserMpiInit NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMUserMpiInitUTest 1> ./ESMF_VMUserMpiInitUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMSendVMRecv NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMSendVMRecvUTest 1> ./ESMF_VMSendVMRecvUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMSendNbVMRecvNb NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMSendNbVMRecvNbUTest 1> ./ESMF_VMSendNbVMRecvNbUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMSendRecv NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMSendRecvUTest 1> ./ESMF_VMSendRecvUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMSendRecvNb NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMSendRecvNbUTest 1> ./ESMF_VMSendRecvNbUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMScatter NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMScatterUTest 1> ./ESMF_VMScatterUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMGather NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMGatherUTest 1> ./ESMF_VMGatherUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMAllGather NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMAllGatherUTest 1> ./ESMF_VMAllGatherUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMAllGatherV NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMAllGatherVUTest 1> ./ESMF_VMAllGatherVUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMBroadcast NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMBroadcastUTest 1> ./ESMF_VMBroadcastUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMAllToAll NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMAllToAllUTest 1> ./ESMF_VMAllToAllUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMAllToAllV NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMAllToAllVUTest 1> ./ESMF_VMAllToAllVUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMBarrier NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMBarrierUTest 1> ./ESMF_VMBarrierUTest.stdout 2>&1
-gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-gmake TNAME=VMComponent NP=4 ftest
-gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
-mpirun -np 4 ./ESMF_VMComponentUTest 1> ./ESMF_VMComponentUTest.stdout 2>&1
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM/tests'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/VM'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/doc'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/examples'
+env ESMF_RUNTIME_TRACE=ON gmake EXNAME=Trace NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/examples'
+mpirun -np 4 ./ESMF_TraceEx > ./ESMF_TraceEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/examples'
+env ESMF_RUNTIME_TRACE=ON gmake EXNAME=TraceUser NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/examples'
+mpirun -np 4 ./ESMF_TraceUserEx > ./ESMF_TraceUserEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace/examples'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Trace'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/examples'
+gmake EXNAME=InfoTutorial NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/examples'
+mpirun -np 4 ./ESMF_InfoTutorialEx > ./ESMF_InfoTutorialEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/examples'
+gmake EXNAME=InfoGetFromHost NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/examples'
+mpirun -np 4 ./ESMF_InfoGetFromHostEx > ./ESMF_InfoGetFromHostEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/examples'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base/doc'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Base'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
+gmake EXNAME=Time NP=1 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
+mpirun -np 1 ./ESMF_TimeEx > ./ESMF_TimeEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
+gmake EXNAME=TimeInterval NP=1 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
+mpirun -np 1 ./ESMF_TimeIntervalEx > ./ESMF_TimeIntervalEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
+gmake EXNAME=Calendar NP=1 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
+mpirun -np 1 ./ESMF_CalendarEx > ./ESMF_CalendarEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
+gmake EXNAME=Clock NP=1 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
+mpirun -np 1 ./ESMF_ClockEx > ./ESMF_ClockEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
+gmake EXNAME=Alarm NP=1 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
+mpirun -np 1 ./ESMF_AlarmEx > ./ESMF_AlarmEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/examples'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr/doc'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/TimeMgr'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/examples'
+gmake EXNAME=DELayout NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/examples'
+mpirun -np 4 ./ESMF_DELayoutEx > ./ESMF_DELayoutEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/examples'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout/doc'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DELayout'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/examples'
+cp  -f myResourceFile.rc /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/examples/examplesO/Linux.gfortran.64.mpich3.default/myResourceFile.rc
+gmake EXNAME=ConfigOverview NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/examples'
+mpirun -np 4 ./ESMF_ConfigOverviewEx > ./ESMF_ConfigOverviewEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/examples'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/doc'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config/tests'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Config'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/examples'
+gmake EXNAME=ArraySpec NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/examples'
+mpirun -np 4 ./ESMF_ArraySpecEx > ./ESMF_ArraySpecEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/examples'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec/doc'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArraySpec'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray/doc'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocalArray'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/examples'
+gmake EXNAME=RHandleBitForBit NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/examples'
+mpirun -np 4 ./ESMF_RHandleBitForBitEx > ./ESMF_RHandleBitForBitEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/examples'
+gmake EXNAME=RHandleFromRHandle NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/examples'
+mpirun -np 4 ./ESMF_RHandleFromRHandleEx > ./ESMF_RHandleFromRHandleEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/examples'
+gmake EXNAME=RHandleFromFile NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/examples'
+mpirun -np 4 ./ESMF_RHandleFromFileEx > ./ESMF_RHandleFromFileEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/examples'
+gmake EXNAME=RHandleReusability NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/examples'
+mpirun -np 4 ./ESMF_RHandleReusabilityEx > ./ESMF_RHandleReusabilityEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/examples'
+gmake EXNAME=RHandleDynamicMasking NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/examples'
+mpirun -np 4 ./ESMF_RHandleDynamicMaskingEx > ./ESMF_RHandleDynamicMaskingEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/examples'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route/doc'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Route'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/examples'
+gmake EXNAME=DistGrid NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/examples'
+mpirun -np 4 ./ESMF_DistGridEx > ./ESMF_DistGridEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/examples'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid/doc'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/DistGrid'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+gmake EXNAME=ArrayFarray NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+mpirun -np 4 ./ESMF_ArrayFarrayEx > ./ESMF_ArrayFarrayEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+gmake EXNAME=ArrayFarrayHalo NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+mpirun -np 4 ./ESMF_ArrayFarrayHaloEx > ./ESMF_ArrayFarrayHaloEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+gmake EXNAME=ArrayLarray NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+mpirun -np 4 ./ESMF_ArrayLarrayEx > ./ESMF_ArrayLarrayEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+gmake EXNAME=Array NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+mpirun -np 4 ./ESMF_ArrayEx > ./ESMF_ArrayEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+gmake EXNAME=ArrayScatterGather NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+mpirun -np 4 ./ESMF_ArrayScatterGatherEx > ./ESMF_ArrayScatterGatherEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+gmake EXNAME=ArrayHalo NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+mpirun -np 4 ./ESMF_ArrayHaloEx > ./ESMF_ArrayHaloEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+gmake EXNAME=ArrayArbHalo NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+mpirun -np 4 ./ESMF_ArrayArbHaloEx > ./ESMF_ArrayArbHaloEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+gmake EXNAME=ArrayRedist NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+mpirun -np 4 ./ESMF_ArrayRedistEx > ./ESMF_ArrayRedistEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+gmake EXNAME=ArraySparseMatMul NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+mpirun -np 4 ./ESMF_ArraySparseMatMulEx > ./ESMF_ArraySparseMatMulEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+gmake EXNAME=ArrayScatterGatherArb NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+mpirun -np 4 ./ESMF_ArrayScatterGatherArbEx > ./ESMF_ArrayScatterGatherArbEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+gmake EXNAME=ArrayCommNB NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+mpirun -np 4 ./ESMF_ArrayCommNBEx > ./ESMF_ArrayCommNBEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/examples'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array/doc'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Array'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/examples'
+gmake EXNAME=ArrayBundle NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/examples'
+mpirun -np 4 ./ESMF_ArrayBundleEx > ./ESMF_ArrayBundleEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/examples'
+gmake EXNAME=ArrayBundleHalo NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/examples'
+mpirun -np 4 ./ESMF_ArrayBundleHaloEx > ./ESMF_ArrayBundleHaloEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/examples'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle/doc'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/ArrayBundle'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/PIO
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/PIO'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/PIO'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO/doc'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/IO'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/doc'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/examples'
+mkdir -p /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/examples/examplesO/Linux.gfortran.64.mpich3.default/data
+cp -f data/*.nc /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/examples/examplesO/Linux.gfortran.64.mpich3.default/data
+cp -f ../../Field/tests/data/*.nc /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/examples/examplesO/Linux.gfortran.64.mpich3.default/data
+chmod u+rw /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/examples/examplesO/Linux.gfortran.64.mpich3.default/data/*
+gmake EXNAME=GridUsage NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/examples'
+mpirun -np 4 ./ESMF_GridUsageEx > ./ESMF_GridUsageEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/examples'
+gmake EXNAME=GridCreateRegFromDG NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/examples'
+mpirun -np 4 ./ESMF_GridCreateRegFromDGEx > ./ESMF_GridCreateRegFromDGEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid/examples'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Grid'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Legacy
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Legacy'
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Legacy'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Regridding
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Regridding'
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Regridding'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Zoltan
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Zoltan'
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Zoltan'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Lapack
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Lapack'
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Lapack'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/BLAS
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/BLAS'
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/BLAS'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/DiscreteGeometry
+gmake[7]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/DiscreteGeometry'
+gmake[7]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/DiscreteGeometry'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/IntxMesh
+gmake[7]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/IntxMesh'
+gmake[7]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/IntxMesh'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/io
+gmake[7]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/io'
+gmake[7]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/io'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization
+gmake[7]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization'
+gmake[7]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/LocalDiscretization'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/parallel
+gmake[7]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/parallel'
+gmake[7]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/parallel'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/verdict
+gmake[7]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/verdict'
+gmake[7]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab/verdict'
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src/Moab'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/examples'
+cp -r data /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/examples/examplesO/Linux.gfortran.64.mpich3.default
+chmod u+rw /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/examples/examplesO/Linux.gfortran.64.mpich3.default/data/*
+gmake EXNAME=Mesh NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/examples'
+mpirun -np 4 ./ESMF_MeshEx > ./ESMF_MeshEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/examples'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/doc'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh/tests'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Mesh'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGridGeomBase
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGridGeomBase'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGridGeomBase/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGridGeomBase/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGridGeomBase/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGridGeomBase/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGridGeomBase/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGridGeomBase/interface'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGridGeomBase'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GridUtil
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GridUtil'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GridUtil/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GridUtil/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GridUtil/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GridUtil/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GridUtil/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GridUtil/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GridUtil/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GridUtil/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GridUtil/tests'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GridUtil'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/doc'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/examples'
+gmake EXNAME=LocStream NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/examples'
+mpirun -np 4 ./ESMF_LocStreamEx > ./ESMF_LocStreamEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream/examples'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/LocStream'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/doc'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/examples'
+gmake EXNAME=XGrid NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/examples'
+mpirun -np 4 ./ESMF_XGridEx > ./ESMF_XGridEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/examples'
+gmake EXNAME=XGridSparseMat NP=1 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/examples'
+mpirun -np 1 ./ESMF_XGridSparseMatEx > ./ESMF_XGridSparseMatEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid/examples'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/XGrid'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GeomBase
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GeomBase'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GeomBase/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GeomBase/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GeomBase/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GeomBase/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GeomBase/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GeomBase/interface'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/GeomBase'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/PointList
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/PointList'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/PointList/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/PointList/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/PointList/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/PointList/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/PointList/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/PointList/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/PointList/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/PointList/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/PointList/tests'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/PointList'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid/doc'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid/examples'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid/examples'
+gmake[4]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Regrid'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field
+gmake[4]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/src
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/src'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/src'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/interface
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/interface'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/interface'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/doc
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/doc'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/doc'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/tests
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/tests'
+gmake[5]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/tests'
+tree_run_examples in: /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/examples
+gmake[5]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/examples'
+gmake EXNAME=FieldCreate NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/examples'
+mpirun -np 4 ./ESMF_FieldCreateEx > ./ESMF_FieldCreateEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/examples'
+gmake EXNAME=Field NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/examples'
+mpirun -np 4 ./ESMF_FieldEx > ./ESMF_FieldEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/examples'
+gmake EXNAME=FieldRegrid NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/examples'
+mpirun -np 4 ./ESMF_FieldRegridEx > ./ESMF_FieldRegridEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/examples'
+gmake EXNAME=FieldRegridMask NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/examples'
+mpirun -np 4 ./ESMF_FieldRegridMaskEx > ./ESMF_FieldRegridMaskEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/examples'
+gmake EXNAME=FieldSphereRegrid NP=4 exfrun
+gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/examples'
+mpirun -np 4 ./ESMF_FieldSphereRegridEx > ./ESMF_FieldSphereRegridEx.stdout 2>&1
+gmake[6]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/examples'
 gmake EXNAME=FieldMeshRegrid NP=4 exfrun
 gmake[6]: Entering directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/src/Infrastructure/Field/examples'
 mpirun -np 4 ./ESMF_FieldMeshRegridEx > ./ESMF_FieldMeshRegridEx.stdout 2>&1
@@ -825,4 +1307,4 @@ The stdout files for the examples can be found at:
 Found 79 multi-processor examples, 79 passed and 0 failed.
 
 gmake[1]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf'
-Sun Feb 21 14:44:39 MST 2021
+Mon Feb 22 04:37:14 MST 2021
