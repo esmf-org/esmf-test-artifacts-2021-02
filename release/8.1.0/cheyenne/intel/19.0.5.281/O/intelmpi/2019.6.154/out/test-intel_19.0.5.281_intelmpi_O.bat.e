@@ -550,5 +550,6 @@ cat: ./PET*CompTunnelEx*.Log: No such file or directory
 cat: ./PET*AttachMethodsEx*.Log: No such file or directory
 cat: ./PET*StateReconcileEx*.Log: No such file or directory
 cat: ./PET*WebServicesEx*.Log: No such file or directory
+slurmstepd: error: _is_a_lwp: open() /proc/101786/status failed: No such file or directory
 cat: ./PET*NUOPCBasicModelEx*.Log: No such file or directory
 cat: ./PET*NUOPCAtmModelEx*.Log: No such file or directory
