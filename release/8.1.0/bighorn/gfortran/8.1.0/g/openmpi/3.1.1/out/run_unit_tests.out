@@ -664,6 +664,7 @@ gmake[6]: Leaving directory `/project/esmf/bighorn_8.1.0/gfortran/esmf/src/Infra
 gmake TNAME=IO_PIO NP=1 ftest
 gmake[6]: Entering directory `/project/esmf/bighorn_8.1.0/gfortran/esmf/src/Infrastructure/IO/tests'
 mpirun -np 1 ./ESMF_IO_PIOUTest 1> ./ESMF_IO_PIOUTest.stdout 2>&1
+cat: ./PET*IO_PIOUTest.Log: No such file or directory
 gmake[6]: Leaving directory `/project/esmf/bighorn_8.1.0/gfortran/esmf/src/Infrastructure/IO/tests'
 gmake TNAME=IO_PIO NP=1 citest
 gmake[6]: Entering directory `/project/esmf/bighorn_8.1.0/gfortran/esmf/src/Infrastructure/IO/tests'
@@ -993,6 +994,7 @@ gmake[6]: Leaving directory `/project/esmf/bighorn_8.1.0/gfortran/esmf/src/Infra
 gmake TNAME=FieldGridRegrid2 NP=1 ctest
 gmake[6]: Entering directory `/project/esmf/bighorn_8.1.0/gfortran/esmf/src/Infrastructure/Field/tests'
 mpirun -np 1 ./ESMC_FieldGridRegrid2UTest 1> ./ESMC_FieldGridRegrid2UTest.stdout 2>&1
+cat: ./PET*FieldGridRegrid2UTest.Log: No such file or directory
 gmake[6]: Leaving directory `/project/esmf/bighorn_8.1.0/gfortran/esmf/src/Infrastructure/Field/tests'
 gmake TNAME=FieldGridRegridCsrv NP=1 ctest
 gmake[6]: Entering directory `/project/esmf/bighorn_8.1.0/gfortran/esmf/src/Infrastructure/Field/tests'
@@ -1838,7 +1840,6 @@ PASS: openmpi/g: src/Infrastructure/DistGrid/tests/ESMC_DistGridUTest.C
 PASS: openmpi/g: src/Infrastructure/DistGrid/tests/ESMF_DistGridCreateGetUTest.F90
 PASS: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldGridGridRegridCsrvUTest.C
 PASS: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldGridGridRegridUTest.C
-PASS: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldGridRegrid2UTest.C
 PASS: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldGridRegridCsrv2UTest.C
 PASS: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldGridRegridCsrvUTest.C
 PASS: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldGridRegridParUTest.C
@@ -1881,7 +1882,6 @@ PASS: openmpi/g: src/Infrastructure/IO/tests/ESMCI_IO_NetCDFUTest.C
 PASS: openmpi/g: src/Infrastructure/IO/tests/ESMCI_IO_PIOUTest.C
 PASS: openmpi/g: src/Infrastructure/IO/tests/ESMC_IO_InqUTest.C
 PASS: openmpi/g: src/Infrastructure/IO/tests/ESMF_IOUTest.F90
-PASS: openmpi/g: src/Infrastructure/IO/tests/ESMF_IO_PIOUTest.F90
 PASS: openmpi/g: src/Infrastructure/IO/tests/ESMF_IO_YAMLUTest.F90
 PASS: openmpi/g: src/Infrastructure/LocStream/tests/ESMC_LocStreamUTest.C
 PASS: openmpi/g: src/Infrastructure/LocStream/tests/ESMF_LocStreamUTest.F90
@@ -2009,6 +2009,12 @@ PASS: openmpi/g: src/prologue/tests/ESMF_StringUTest.F90
 PASS: openmpi/g: src/prologue/tests/ESMF_WordsizeUTest.F90
 
 
+The following unit test files failed to build, failed to execute or crashed during execution:
+
+CRASHED: openmpi/g: src/Infrastructure/Field/tests/ESMC_FieldGridRegrid2UTest.C
+CRASHED: openmpi/g: src/Infrastructure/IO/tests/ESMF_IO_PIOUTest.F90
+
+
 The following test harness unit tests pass:
 PASS: openmpi/g: ESMF_array_2_NP1UTest
 PASS: openmpi/g: ESMF_field_1_NP1UTest
@@ -2018,7 +2024,7 @@ The log and stdout files for the unit tests can be found at:
 /project/esmf/bighorn_8.1.0/gfortran/esmf/test/testg/Linux.gfortran.64.openmpi.default
 
 
-Found 8894 exhaustive multi-processor unit tests, 8894 passed and 0 failed.
+Found 8894 exhaustive multi-processor unit tests, 8836 passed and 58 failed.
 
 gmake[1]: Leaving directory `/project/esmf/bighorn_8.1.0/gfortran/esmf'
-Mon Feb 22 04:25:51 MST 2021
+Mon Feb 22 10:46:43 MST 2021
