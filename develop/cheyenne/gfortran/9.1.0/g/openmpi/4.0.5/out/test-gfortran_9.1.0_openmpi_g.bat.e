@@ -2012,9 +2012,9 @@ ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
+slurmstepd: error: _is_a_lwp: 1 read() attempts on /proc/74247/status failed: No such process
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
-slurmstepd: error: _is_a_lwp: open() /proc/57775/status failed: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
@@ -2451,3 +2451,4 @@ ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/9.1.0/mpi/../lib*: No such file or directory
+slurmstepd: error: _is_a_lwp: open() /proc/6569/status failed: No such file or directory
