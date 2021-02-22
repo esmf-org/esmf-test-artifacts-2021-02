@@ -189,6 +189,7 @@ ESMF_FieldRegridUTest.F90(21526): #warning: keyword redefined: FILE
 ESMF_ContainerUTest.F90(53): warning #6379: The structure contains one or more misaligned fields.   [TESTTYPESTRUCT]
   type TestTypeStruct
 -------^
+slurmstepd: error: _is_a_lwp: open() /proc/28931/status failed: No such file or directory
 ESMF_TraceEx.F90(69): warning #6843: A dummy argument with an explicit INTENT(OUT) declaration is not given an explicit value.   [RC]
     subroutine Finalize(gcomp, istate, estate, clock, rc)
 ------------------------------------------------------^
