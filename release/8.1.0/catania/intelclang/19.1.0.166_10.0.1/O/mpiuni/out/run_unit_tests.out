@@ -81,7 +81,6 @@ tree_run_unit_tests_uni in: /project/esmf/himanshu/esmf_test/cronjobs/release_8.
 /project/esmf/himanshu/esmf_test/cronjobs/release_8.1.0/intelclang/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMF_VMSendNbVMRecvNbUTest 1> ./ESMF_VMSendNbVMRecvNbUTest.stdout 2>&1
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=VMSendRecv NP=1 ftest
 /project/esmf/himanshu/esmf_test/cronjobs/release_8.1.0/intelclang/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMF_VMSendRecvUTest 1> ./ESMF_VMSendRecvUTest.stdout 2>&1
-cat: ./PET*VMSendRecvUTest.Log: No such file or directory
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=VMSendRecvNb NP=1 ftest
 /project/esmf/himanshu/esmf_test/cronjobs/release_8.1.0/intelclang/esmf/src/Infrastructure/stubs/mpiuni/mpirun -np 1 ./ESMF_VMSendRecvNbUTest 1> ./ESMF_VMSendRecvNbUTest.stdout 2>&1
 /Library/Developer/CommandLineTools/usr/bin/make TNAME=VMScatter NP=1 ftest
@@ -747,6 +746,7 @@ PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRedistArbUTest.F90
 PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridCSUTest.F90
 PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridCsrv2ndUTest.F90
 PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridCsrvUTest.F90
+PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridUTest.F90
 PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridXGUTest.F90
 PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldSMMFromFileUTest.F90
 PASS: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldStressUTest.F90
@@ -816,6 +816,7 @@ PASS: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMOpenMPUTest.F90
 PASS: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMScatterUTest.F90
 PASS: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMSendNbVMRecvNbUTest.F90
 PASS: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMSendRecvNbUTest.F90
+PASS: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMSendRecvUTest.F90
 PASS: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMUTest.F90
 PASS: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMUserMpiInitUTest.F90
 PASS: mpiuni/O: src/Infrastructure/XGrid/tests/ESMC_XGridUTest.C
@@ -876,21 +877,6 @@ PASS: mpiuni/O: src/prologue/tests/ESMF_StringUTest.F90
 PASS: mpiuni/O: src/prologue/tests/ESMF_WordsizeUTest.F90
 
 
-The following unit test files failed to build, failed to execute or crashed during execution:
-
-CRASHED: mpiuni/O: src/Infrastructure/VM/tests/ESMF_VMSendRecvUTest.F90
-
-
-The following unit test files had failed unit tests:
-
-FAIL: mpiuni/O: src/Infrastructure/Field/tests/ESMF_FieldRegridUTest.F90
-
-
-The following individual unit tests fail:
-
-   FAIL: mpiuni/O:   Test regrid extrap nearest destination., ESMF_FieldRegridUTest.F90, line 1394:  Test unsuccessful
-
-
 The following test harness unit tests pass:
 PASS: mpiuni/O: ESMF_array_default_NP1UTest
 PASS: mpiuni/O: ESMF_field_default_NP1UTest
@@ -900,6 +886,6 @@ The log and stdout files for the unit tests can be found at:
 /project/esmf/himanshu/esmf_test/cronjobs/release_8.1.0/intelclang/esmf/test/testO/Darwin.intelclang.64.mpiuni.default
 
 
-Found 7389 exhaustive single processor unit tests, 7380 passed and 9 failed.
+Found 7389 exhaustive single processor unit tests, 7389 passed and 0 failed.
 
-Sat Feb 20 20:53:14 MST 2021
+Sun Feb 21 20:19:42 MST 2021
