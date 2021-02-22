@@ -46,7 +46,31 @@
   PASS  NUOPC_CompAttributeGet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 308
   PASS  ESMF_UtilString2Int() for Verbosity Test, ESMF_NUOPC_UTest.F90, line 318
   PASS  NUOPC_DriverGetComp() Test, ESMF_NUOPC_UTest.F90, line 326
- NUOPC_DriverPrint for PET:           1
+ NUOPC_DriverPrint for PET:           0
+   Model, Mediator, and Driver components, in the order
+   that they were added to the Driver:
+           1 :  testComp1
+           2 :  testComp2
+   Connector components, in the order
+   that they were added to the Driver:
+           1 :  testComp1-TO-testComp2
+NUOPC_RunSequenceArrayPrint: element     1 out of      1
+runSeq::
+ runElementPrint:      1     2     1
+ runElementPrint:      2     1     1
+ runElementPrint:      1    -1     1
+ runElementPrint:      2    -1     1
+ runElementPrint:     -1    -1     0
+::
+  PASS  NUOPC_DriverPrint() Test, ESMF_NUOPC_UTest.F90, line 334
+  PASS  NUOPC_DriverGet() slotCount Test, ESMF_NUOPC_UTest.F90, line 342
+  PASS  NUOPC_DriverGet() slotCount validate Test, ESMF_NUOPC_UTest.F90, line 349
+  PASS  NUOPC_DriverSetRunSequence() with correct slot Test, ESMF_NUOPC_UTest.F90, line 357
+  PASS  NUOPC_CompGet() Test, ESMF_NUOPC_UTest.F90, line 299
+  PASS  NUOPC_CompAttributeGet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 308
+  PASS  ESMF_UtilString2Int() for Verbosity Test, ESMF_NUOPC_UTest.F90, line 318
+  PASS  NUOPC_DriverGetComp() Test, ESMF_NUOPC_UTest.F90, line 326
+ NUOPC_DriverPrint for PET:           2
    Model, Mediator, and Driver components, in the order
    that they were added to the Driver:
            1 :  testComp1
@@ -94,31 +118,7 @@ runSeq::
   PASS  NUOPC_CompAttributeGet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 308
   PASS  ESMF_UtilString2Int() for Verbosity Test, ESMF_NUOPC_UTest.F90, line 318
   PASS  NUOPC_DriverGetComp() Test, ESMF_NUOPC_UTest.F90, line 326
- NUOPC_DriverPrint for PET:           0
-   Model, Mediator, and Driver components, in the order
-   that they were added to the Driver:
-           1 :  testComp1
-           2 :  testComp2
-   Connector components, in the order
-   that they were added to the Driver:
-           1 :  testComp1-TO-testComp2
-NUOPC_RunSequenceArrayPrint: element     1 out of      1
-runSeq::
- runElementPrint:      1     2     1
- runElementPrint:      2     1     1
- runElementPrint:      1    -1     1
- runElementPrint:      2    -1     1
- runElementPrint:     -1    -1     0
-::
-  PASS  NUOPC_DriverPrint() Test, ESMF_NUOPC_UTest.F90, line 334
-  PASS  NUOPC_DriverGet() slotCount Test, ESMF_NUOPC_UTest.F90, line 342
-  PASS  NUOPC_DriverGet() slotCount validate Test, ESMF_NUOPC_UTest.F90, line 349
-  PASS  NUOPC_DriverSetRunSequence() with correct slot Test, ESMF_NUOPC_UTest.F90, line 357
-  PASS  NUOPC_CompGet() Test, ESMF_NUOPC_UTest.F90, line 299
-  PASS  NUOPC_CompAttributeGet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 308
-  PASS  ESMF_UtilString2Int() for Verbosity Test, ESMF_NUOPC_UTest.F90, line 318
-  PASS  NUOPC_DriverGetComp() Test, ESMF_NUOPC_UTest.F90, line 326
- NUOPC_DriverPrint for PET:           2
+ NUOPC_DriverPrint for PET:           1
    Model, Mediator, and Driver components, in the order
    that they were added to the Driver:
            1 :  testComp1
@@ -349,13 +349,20 @@ Printing stopTime to stdout:    0  1  1  0 30  0   0
   PASS  NUOPC_FreeFormatDestroy() Test, ESMF_NUOPC_UTest.F90, line 803
   PASS  NUOPC_GetTimestamp() for Field Test, ESMF_NUOPC_UTest.F90, line 811
   PASS  NUOPC_IsAtTime() for Field Test, ESMF_NUOPC_UTest.F90, line 819
-  PASS  ESMF_GridCreate1PeriDimUfrm() Test, ESMF_NUOPC_UTest.F90, line 830
-  PASS  Complete field for further testing Test, ESMF_NUOPC_UTest.F90, line 840
-  PASS  NUOPC_Write() Test, ESMF_NUOPC_UTest.F90, line 864
-  PASS  NUOPC_CompAreServicesSet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 872
-  PASS  NUOPC_CompAttributeInit() for GridComp Test, ESMF_NUOPC_UTest.F90, line 880
-  PASS  NUOPC_CompAttributeAdd() for GridComp Test, ESMF_NUOPC_UTest.F90, line 888
-  PASS  NUOPC_CompAttributeSet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 896
+, ESMF_NUOPC_UTest.F90, line 771
+  PASS  NUOPC_FieldDictionarySetup() Test, ESMF_NUOPC_UTest.F90, line 779
+  PASS  NUOPC_FieldDictionaryEgest() Test, ESMF_NUOPC_UTest.F90, line 787
+  PASS  NUOPC_FreeFormatLog() for fdFF Test, ESMF_NUOPC_UTest.F90, line 795
+  PASS  NUOPC_FreeFormatDestroy() Test, ESMF_NUOPC_UTest.F90, line 803
+  PASS  NUOPC_GetTimestamp() for Field Test, ESMF_NUOPC_UTest.F90, line 811
+  PASS  NUOPC_IsAtTime() for Field Test, ESMF_NUOPC_UTest.F90, line 819
+, ESMF_NUOPC_UTest.F90, line 771
+  PASS  NUOPC_FieldDictionarySetup() Test, ESMF_NUOPC_UTest.F90, line 779
+  PASS  NUOPC_FieldDictionaryEgest() Test, ESMF_NUOPC_UTest.F90, line 787
+  PASS  NUOPC_FreeFormatLog() for fdFF Test, ESMF_NUOPC_UTest.F90, line 795
+  PASS  NUOPC_FreeFormatDestroy() Test, ESMF_NUOPC_UTest.F90, line 803
+  PASS  NUOPC_GetTimestamp() for Field Test, ESMF_NUOPC_UTest.F90, line 811
+  PASS  NUOPC_IsAtTime() for Field Test, ESMF_NUOPC_UTest.F90, line 819
 , ESMF_NUOPC_UTest.F90, line 771
   PASS  NUOPC_FieldDictionarySetup() Test, ESMF_NUOPC_UTest.F90, line 779
   PASS  NUOPC_FieldDictionaryEgest() Test, ESMF_NUOPC_UTest.F90, line 787
@@ -364,19 +371,8 @@ Printing stopTime to stdout:    0  1  1  0 30  0   0
   PASS  NUOPC_GetTimestamp() for Field Test, ESMF_NUOPC_UTest.F90, line 811
   PASS  NUOPC_IsAtTime() for Field Test, ESMF_NUOPC_UTest.F90, line 819
   PASS  ESMF_GridCreate1PeriDimUfrm() Test, ESMF_NUOPC_UTest.F90, line 830
-  PASS  Complete field for further testing Test, ESMF_NUOPC_UTest.F90, line 840
-  PASS  NUOPC_Write() Test, ESMF_NUOPC_UTest.F90, line 864
-  PASS  NUOPC_CompAreServicesSet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 872
-  PASS  NUOPC_CompAttributeInit() for GridComp Test, ESMF_NUOPC_UTest.F90, line 880
-  PASS  NUOPC_CompAttributeAdd() for GridComp Test, ESMF_NUOPC_UTest.F90, line 888
-  PASS  NUOPC_CompAttributeSet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 896
-, ESMF_NUOPC_UTest.F90, line 771
-  PASS  NUOPC_FieldDictionarySetup() Test, ESMF_NUOPC_UTest.F90, line 779
-  PASS  NUOPC_FieldDictionaryEgest() Test, ESMF_NUOPC_UTest.F90, line 787
-  PASS  NUOPC_FreeFormatLog() for fdFF Test, ESMF_NUOPC_UTest.F90, line 795
-  PASS  NUOPC_FreeFormatDestroy() Test, ESMF_NUOPC_UTest.F90, line 803
-  PASS  NUOPC_GetTimestamp() for Field Test, ESMF_NUOPC_UTest.F90, line 811
-  PASS  NUOPC_IsAtTime() for Field Test, ESMF_NUOPC_UTest.F90, line 819
+  PASS  ESMF_GridCreate1PeriDimUfrm() Test, ESMF_NUOPC_UTest.F90, line 830
+  PASS  ESMF_GridCreate1PeriDimUfrm() Test, ESMF_NUOPC_UTest.F90, line 830
   PASS  ESMF_GridCreate1PeriDimUfrm() Test, ESMF_NUOPC_UTest.F90, line 830
   PASS  Complete field for further testing Test, ESMF_NUOPC_UTest.F90, line 840
   PASS  NUOPC_Write() Test, ESMF_NUOPC_UTest.F90, line 864
@@ -384,14 +380,18 @@ Printing stopTime to stdout:    0  1  1  0 30  0   0
   PASS  NUOPC_CompAttributeInit() for GridComp Test, ESMF_NUOPC_UTest.F90, line 880
   PASS  NUOPC_CompAttributeAdd() for GridComp Test, ESMF_NUOPC_UTest.F90, line 888
   PASS  NUOPC_CompAttributeSet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 896
-, ESMF_NUOPC_UTest.F90, line 771
-  PASS  NUOPC_FieldDictionarySetup() Test, ESMF_NUOPC_UTest.F90, line 779
-  PASS  NUOPC_FieldDictionaryEgest() Test, ESMF_NUOPC_UTest.F90, line 787
-  PASS  NUOPC_FreeFormatLog() for fdFF Test, ESMF_NUOPC_UTest.F90, line 795
-  PASS  NUOPC_FreeFormatDestroy() Test, ESMF_NUOPC_UTest.F90, line 803
-  PASS  NUOPC_GetTimestamp() for Field Test, ESMF_NUOPC_UTest.F90, line 811
-  PASS  NUOPC_IsAtTime() for Field Test, ESMF_NUOPC_UTest.F90, line 819
-  PASS  ESMF_GridCreate1PeriDimUfrm() Test, ESMF_NUOPC_UTest.F90, line 830
+  PASS  Complete field for further testing Test, ESMF_NUOPC_UTest.F90, line 840
+  PASS  NUOPC_Write() Test, ESMF_NUOPC_UTest.F90, line 864
+  PASS  NUOPC_CompAreServicesSet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 872
+  PASS  NUOPC_CompAttributeInit() for GridComp Test, ESMF_NUOPC_UTest.F90, line 880
+  PASS  NUOPC_CompAttributeAdd() for GridComp Test, ESMF_NUOPC_UTest.F90, line 888
+  PASS  NUOPC_CompAttributeSet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 896
+  PASS  Complete field for further testing Test, ESMF_NUOPC_UTest.F90, line 840
+  PASS  NUOPC_Write() Test, ESMF_NUOPC_UTest.F90, line 864
+  PASS  NUOPC_CompAreServicesSet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 872
+  PASS  NUOPC_CompAttributeInit() for GridComp Test, ESMF_NUOPC_UTest.F90, line 880
+  PASS  NUOPC_CompAttributeAdd() for GridComp Test, ESMF_NUOPC_UTest.F90, line 888
+  PASS  NUOPC_CompAttributeSet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 896
   PASS  Complete field for further testing Test, ESMF_NUOPC_UTest.F90, line 840
   PASS  NUOPC_Write() Test, ESMF_NUOPC_UTest.F90, line 864
   PASS  NUOPC_CompAreServicesSet() for GridComp Test, ESMF_NUOPC_UTest.F90, line 872
@@ -626,7 +626,7 @@ Printing time to stdout:    0  1  1  0  0  0   0
   PASS  NUOPC_CompSearchPhaseMap() for CplComp Test, ESMF_NUOPC_UTest.F90, line 1208
   PASS  NUOPC_CompSetServices() for GridComp Test, ESMF_NUOPC_UTest.F90, line 1226
   Ending Test, file ESMF_NUOPC_UTest.F90, line 1253
-  PET           0  Test Elapsed Time    65.680000000000021       msec.
-  PET           2  Test Elapsed Time    66.457999999999984       msec.
-  PET           1  Test Elapsed Time    66.209000000000017       msec.
-  PET           3  Test Elapsed Time    66.581000000000003       msec.
+  PET           1  Test Elapsed Time    66.528999999999982       msec.
+  PET           3  Test Elapsed Time    66.762000000000015       msec.
+  PET           0  Test Elapsed Time    66.425000000000011       msec.
+  PET           2  Test Elapsed Time    66.438999999999993       msec.
