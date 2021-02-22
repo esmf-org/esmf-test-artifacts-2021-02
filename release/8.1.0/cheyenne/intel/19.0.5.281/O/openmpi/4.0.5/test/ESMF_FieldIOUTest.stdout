@@ -17,10 +17,12 @@
   PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90,
   line 168
   PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 179
-  PASS  Write Fortran array in Field, ESMF_FieldIOUTest.F90, line 210
-  PASS  Create a field from grid and fortran dummy array without halo, ESMF_Fiel
- dIOUTest.F90, line 220
-  PASS  Get Farray_w from nohalo field, ESMF_FieldIOUTest.F90, line 231
+  PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90,
+  line 168
+  PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 179
+  PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90,
+  line 168
+  PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 179
   PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90,
   line 168
   PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 179
@@ -28,16 +30,14 @@
   PASS  Create a field from grid and fortran dummy array without halo, ESMF_Fiel
  dIOUTest.F90, line 220
   PASS  Get Farray_w from nohalo field, ESMF_FieldIOUTest.F90, line 231
-  PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90,
-  line 168
-  PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 179
   PASS  Write Fortran array in Field, ESMF_FieldIOUTest.F90, line 210
   PASS  Create a field from grid and fortran dummy array without halo, ESMF_Fiel
  dIOUTest.F90, line 220
   PASS  Get Farray_w from nohalo field, ESMF_FieldIOUTest.F90, line 231
-  PASS  Create a field from grid and fortran dummy array, ESMF_FieldIOUTest.F90,
-  line 168
-  PASS  Get Farray_w from field, ESMF_FieldIOUTest.F90, line 179
+  PASS  Write Fortran array in Field, ESMF_FieldIOUTest.F90, line 210
+  PASS  Create a field from grid and fortran dummy array without halo, ESMF_Fiel
+ dIOUTest.F90, line 220
+  PASS  Get Farray_w from nohalo field, ESMF_FieldIOUTest.F90, line 231
   PASS  Write Fortran array in Field, ESMF_FieldIOUTest.F90, line 210
   PASS  Create a field from grid and fortran dummy array without halo, ESMF_Fiel
  dIOUTest.F90, line 220
@@ -269,6 +269,73 @@ ls: cannot access field_2DE.nc: No such file or directory
   PASS  Destroy globally indexed 2DE Grid, ESMF_FieldIOUTest.F90, line 1001
   PASS  Create a 1D arbitrarily distributed distgrid, ESMF_FieldIOUTest.F90, lin
  e 1018
+  PASS  Create a mesh on the 1D elemental distgrid, ESMF_FieldIOUTest.F90, line 
+ 1025
+  PASS  Get Field Bounds based on elem_mesh, ESMF_FieldIOUTest.F90, line 1034
+  PASS  Create a Field on the 1D mesh, ESMF_FieldIOUTest.F90, line 1045
+ Field Print Starts ====>
+ Field base status = Ready
+   Name = 'Field067'
+ Base name    = Field067
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{} Field status =            4
+ gridrank =            1
+--- ESMCI::Array::print start ---
+ Base name    = Array068
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0x251c030:
+            rank = 2, typekind = 6, base_addr = 0x2ba14e69ae80
+            dim[0] = 10  dim[1] = 8  
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  0
+( 2, 1) =  0
+( 3, 1) =  0
+( 4, 1) =  0
+( 5, 1) =  0
+( 6, 1) =  0
+( 7, 1) =  0
+( 8, 1) =  0
+( 9, 1) =  0
+(10, 1) =  0
+  skipping to end ...
+( 1, 8) =  0
+( 2, 8) =  0
+( 3, 8) =  0
+( 4, 8) =  0
+( 5, 8) =  0
+( 6, 8) =  0
+( 7, 8) =  0
+( 8, 8) =  0
+( 9, 8) =  0
+(10, 8) =  0
+dim 1: undistLBound[0]=1            undistUBound[0]=10
+dim 2: [0]: [1 [1 [1, 8] 8] 8]
+--- ESMCI::Array::print end ---
+ arrayrank =            2
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+           2           1          10                0           0
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
+  PASS  Write a Field containing the 1D mesh, ESMF_FieldIOUTest.F90, line 1061
+  PASS  Creating a Grid to use in Field Attribute Tests, ESMF_FieldIOUTest.F90, 
+ line 1078
+  PASS  Create dimensions attribute package on Grid Test, ESMF_FieldIOUTest.F90,
+  line 1088
   PASS  Get Farray_r from field DE 0, ESMF_FieldIOUTest.F90, line 956
   PASS  DE 0 Array comparison test, ESMF_FieldIOUTest.F90, line 969
   PASS  Get Farray_r from field DE 1, ESMF_FieldIOUTest.F90, line 980
@@ -287,24 +354,68 @@ ls: cannot access field_2DE.nc: No such file or directory
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-  PASS  Get Farray_r from field DE 0, ESMF_FieldIOUTest.F90, line 956
-  PASS  DE 0 Array comparison test, ESMF_FieldIOUTest.F90, line 969
-  PASS  Get Farray_r from field DE 1, ESMF_FieldIOUTest.F90, line 980
-  PASS  DE 1 Array comparison test, ESMF_FieldIOUTest.F90, line 993
-  PASS  Destroy globally indexed 2DE Grid, ESMF_FieldIOUTest.F90, line 1001
-  PASS  Create a 1D arbitrarily distributed distgrid, ESMF_FieldIOUTest.F90, lin
- e 1018
-  PASS  Create a mesh on the 1D elemental distgrid, ESMF_FieldIOUTest.F90, line 
- 1025
-  PASS  Get Field Bounds based on elem_mesh, ESMF_FieldIOUTest.F90, line 1034
-  PASS  Create a Field on the 1D mesh, ESMF_FieldIOUTest.F90, line 1045
- Field Print Starts ====>
- Field base status = Ready
-   Name = 'Field067'
- Base name    = Field067
+{} Field status =            4
+ gridrank =            1
+--- ESMCI::Array::print start ---
+ Base name    = Array068
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 1
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 0 ~
+LocalArrayPrint: Array at address 0x11a65d0:
+            rank = 2, typekind = 6, base_addr = 0x2ba0e830f100
+            dim[0] = 10  dim[1] = 8  
+  Real, *8, Dim 2, Data values:
+( 1, 1) =  0
+( 2, 1) =  0
+( 3, 1) =  0
+( 4, 1) =  0
+( 5, 1) =  0
+( 6, 1) =  0
+( 7, 1) =  0
+( 8, 1) =  0
+( 9, 1) =  0
+(10, 1) =  0
+  skipping to end ...
+( 1, 8) =  0
+( 2, 8) =  0
+( 3, 8) =  0
+( 4, 8) =  0
+( 5, 8) =  0
+( 6, 8) =  0
+( 7, 8) =  0
+( 8, 8) =  0
+( 9, 8) =  0
+(10, 8) =  0
+dim 1: undistLBound[0]=1            undistUBound[0]=10
+dim 2: [0]: [1 [1 [1, 8] 8] 8]
+--- ESMCI::Array::print end ---
+ arrayrank =            2
+ gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
+           2           1          10                0           0
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+          -1          -1          -1               -1          -1
+ Field Print Ends   ====>
+  PASS  Write a Field containing the 1D mesh, ESMF_FieldIOUTest.F90, line 1061
+  PASS  Creating a Grid to use in Field Attribute Tests, ESMF_FieldIOUTest.F90, 
+ line 1078
+  PASS  Create dimensions attribute package on Grid Test, ESMF_FieldIOUTest.F90,
+  line 1088
+  PASS  Set dimension label values on Grid Test, ESMF_FieldIOUTest.F90, line 109
+ 9
+  PASS  Create a field for attribute package Test, ESMF_FieldIOUTest.F90, line 1
+ 109
+  PASS  Create attribute package for Field variable Test, ESMF_FieldIOUTest.F90,
+  line 1118
   PASS  Get Farray_r from field DE 0, ESMF_FieldIOUTest.F90, line 956
   PASS  DE 0 Array comparison test, ESMF_FieldIOUTest.F90, line 969
   PASS  Get Farray_r from field DE 1, ESMF_FieldIOUTest.F90, line 980
@@ -336,8 +447,8 @@ DistGrid dimCount = 1
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0x14619f0:
-            rank = 2, typekind = 6, base_addr = 0x2b42605cf100
+LocalArrayPrint: Array at address 0x21fe0b0:
+            rank = 2, typekind = 6, base_addr = 0x2b5f91667100
             dim[0] = 10  dim[1] = 8  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  0
@@ -377,114 +488,21 @@ dim 2: [0]: [1 [1 [1, 8] 8] 8]
   PASS  Write a Field containing the 1D mesh, ESMF_FieldIOUTest.F90, line 1061
   PASS  Creating a Grid to use in Field Attribute Tests, ESMF_FieldIOUTest.F90, 
  line 1078
-{} Field status =            4
- gridrank =            1
---- ESMCI::Array::print start ---
- Base name    = Array068
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 1
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x2a04c70:
-            rank = 2, typekind = 6, base_addr = 0x2ac47c30f100
-            dim[0] = 10  dim[1] = 8  
-  Real, *8, Dim 2, Data values:
-( 1, 1) =  0
-( 2, 1) =  0
-( 3, 1) =  0
-( 4, 1) =  0
-( 5, 1) =  0
-( 6, 1) =  0
-( 7, 1) =  0
-( 8, 1) =  0
-( 9, 1) =  0
-(10, 1) =  0
-  skipping to end ...
-( 1, 8) =  0
-( 2, 8) =  0
-( 3, 8) =  0
-( 4, 8) =  0
-( 5, 8) =  0
-( 6, 8) =  0
-( 7, 8) =  0
-( 8, 8) =  0
-( 9, 8) =  0
-(10, 8) =  0
-dim 1: undistLBound[0]=1            undistUBound[0]=10
-dim 2: [0]: [1 [1 [1, 8] 8] 8]
---- ESMCI::Array::print end ---
- arrayrank =            2
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-           2           1          10                0           0
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
- Field Print Ends   ====>
-  PASS  Write a Field containing the 1D mesh, ESMF_FieldIOUTest.F90, line 1061
-  PASS  Creating a Grid to use in Field Attribute Tests, ESMF_FieldIOUTest.F90, 
- line 1078
-{} Field status =            4
- gridrank =            1
---- ESMCI::Array::print start ---
- Base name    = Array068
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 1
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0x16ee2f0:
-            rank = 2, typekind = 6, base_addr = 0x2b179c30ae80
-            dim[0] = 10  dim[1] = 8  
-  Real, *8, Dim 2, Data values:
-( 1, 1) =  0
-( 2, 1) =  0
-( 3, 1) =  0
-( 4, 1) =  0
-( 5, 1) =  0
-( 6, 1) =  0
-( 7, 1) =  0
-( 8, 1) =  0
-( 9, 1) =  0
-(10, 1) =  0
-  skipping to end ...
-( 1, 8) =  0
-( 2, 8) =  0
-( 3, 8) =  0
-( 4, 8) =  0
-( 5, 8) =  0
-( 6, 8) =  0
-( 7, 8) =  0
-( 8, 8) =  0
-( 9, 8) =  0
-(10, 8) =  0
-dim 1: undistLBound[0]=1            undistUBound[0]=10
-dim 2: [0]: [1 [1 [1, 8] 8] 8]
---- ESMCI::Array::print end ---
- arrayrank =            2
- gridToFieldMap ungriddedLBound ungriddedUBound totalLWidth totalUWidth
-           2           1          10                0           0
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
-          -1          -1          -1               -1          -1
- Field Print Ends   ====>
-  PASS  Write a Field containing the 1D mesh, ESMF_FieldIOUTest.F90, line 1061
-  PASS  Creating a Grid to use in Field Attribute Tests, ESMF_FieldIOUTest.F90, 
- line 1078
+  PASS  Create dimensions attribute package on Grid Test, ESMF_FieldIOUTest.F90,
+  line 1088
+  PASS  Set dimension label values on Grid Test, ESMF_FieldIOUTest.F90, line 109
+ 9
+  PASS  Create a field for attribute package Test, ESMF_FieldIOUTest.F90, line 1
+ 109
+  PASS  Create attribute package for Field variable Test, ESMF_FieldIOUTest.F90,
+  line 1118
+  PASS  Get Farray_r from field DE 0, ESMF_FieldIOUTest.F90, line 956
+  PASS  DE 0 Array comparison test, ESMF_FieldIOUTest.F90, line 969
+  PASS  Get Farray_r from field DE 1, ESMF_FieldIOUTest.F90, line 980
+  PASS  DE 1 Array comparison test, ESMF_FieldIOUTest.F90, line 993
+  PASS  Destroy globally indexed 2DE Grid, ESMF_FieldIOUTest.F90, line 1001
+  PASS  Create a 1D arbitrarily distributed distgrid, ESMF_FieldIOUTest.F90, lin
+ e 1018
   PASS  Create a mesh on the 1D elemental distgrid, ESMF_FieldIOUTest.F90, line 
  1025
   PASS  Get Field Bounds based on elem_mesh, ESMF_FieldIOUTest.F90, line 1034
@@ -509,8 +527,8 @@ DistGrid dimCount = 1
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x292ded0:
-            rank = 2, typekind = 6, base_addr = 0x2b9e4471ee80
+LocalArrayPrint: Array at address 0x2a83470:
+            rank = 2, typekind = 6, base_addr = 0x2b6a463bae80
             dim[0] = 10  dim[1] = 8  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  0
@@ -558,24 +576,6 @@ dim 2: [0]: [1 [1 [1, 8] 8] 8]
  109
   PASS  Create attribute package for Field variable Test, ESMF_FieldIOUTest.F90,
   line 1118
-  PASS  Create dimensions attribute package on Grid Test, ESMF_FieldIOUTest.F90,
-  line 1088
-  PASS  Set dimension label values on Grid Test, ESMF_FieldIOUTest.F90, line 109
- 9
-  PASS  Create a field for attribute package Test, ESMF_FieldIOUTest.F90, line 1
- 109
-  PASS  Create attribute package for Field variable Test, ESMF_FieldIOUTest.F90,
-  line 1118
-  PASS  Create dimensions attribute package on Grid Test, ESMF_FieldIOUTest.F90,
-  line 1088
-  PASS  Set dimension label values on Grid Test, ESMF_FieldIOUTest.F90, line 109
- 9
-  PASS  Create a field for attribute package Test, ESMF_FieldIOUTest.F90, line 1
- 109
-  PASS  Create attribute package for Field variable Test, ESMF_FieldIOUTest.F90,
-  line 1118
-  PASS  Create dimensions attribute package on Grid Test, ESMF_FieldIOUTest.F90,
-  line 1088
   PASS  Set dimension label values on Grid Test, ESMF_FieldIOUTest.F90, line 109
  9
   PASS  Create a field for attribute package Test, ESMF_FieldIOUTest.F90, line 1
@@ -762,7 +762,7 @@ dim 2: [0]: [1 [1 [1, 8] 8] 8]
   PASS  Destroying all Fields, Grids, and DistGrids, ESMF_FieldIOUTest.F90, line
   1556
   Ending Test, file ESMF_FieldIOUTest.F90, line 1566
-  PET           0  Test Elapsed Time    17.7360000000000       msec.
-  PET           1  Test Elapsed Time    31.9910000000000       msec.
-  PET           2  Test Elapsed Time    32.2710000000000       msec.
-  PET           3  Test Elapsed Time    32.4950000000000       msec.
+  PET           1  Test Elapsed Time    32.1600000000000       msec.
+  PET           3  Test Elapsed Time    32.5340000000000       msec.
+  PET           0  Test Elapsed Time    17.0090000000000       msec.
+  PET           2  Test Elapsed Time    31.9430000000000       msec.
