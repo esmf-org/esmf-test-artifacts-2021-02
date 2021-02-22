@@ -6,16 +6,6 @@
 indexTK: Integer*8
 dimCount = 1
 tileCount = 1
---- ESMCI::DistGrid::print start ---
-indexTK: Integer*8
-dimCount = 1
-tileCount = 1
-elementCountPTile: 20 
-regDecomp = NO
---- ESMCI::DistGrid::print start ---
-indexTK: Integer*8
-dimCount = 1
-tileCount = 1
 elementCountPTile: 20 
 regDecomp = NO
 --- ESMCI::DistGrid::print start ---
@@ -25,12 +15,18 @@ tileCount = 1
 elementCountPTile: 20 
 regDecomp = NO
 tileListPDe: 1 1 1 1 
-elementCountPDe: 5 5 5 5 
-contigFlagPDimPDe (dims separated by / ):
+--- ESMCI::DistGrid::print start ---
+indexTK: Integer*8
+dimCount = 1
+tileCount = 1
+elementCountPTile: 20 
+regDecomp = NO
 tileListPDe: 1 1 1 1 
 elementCountPDe: 5 5 5 5 
-contigFlagPDimPDe (dims separated by / ):
- for DE 0: 1 / 
+--- ESMCI::DistGrid::print start ---
+indexTK: Integer*8
+dimCount = 1
+tileCount = 1
 elementCountPTile: 20 
 regDecomp = NO
 tileListPDe: 1 1 1 1 
@@ -38,8 +34,12 @@ elementCountPDe: 5 5 5 5
 contigFlagPDimPDe (dims separated by / ):
  for DE 0: 1 / 
  for DE 1: 1 / 
+contigFlagPDimPDe (dims separated by / ):
+ for DE 0: 1 / 
+ for DE 1: 1 / 
  for DE 2: 1 / 
  for DE 3: 1 / 
+(min,max)IndexPDimPDe (dims separated by / ):
 tileListPDe: 1 1 1 1 
 elementCountPDe: 5 5 5 5 
 contigFlagPDimPDe (dims separated by / ):
@@ -48,14 +48,21 @@ contigFlagPDimPDe (dims separated by / ):
  for DE 2: 1 / 
  for DE 3: 1 / 
 (min,max)IndexPDimPDe (dims separated by / ):
+elementCountPDe: 5 5 5 5 
+contigFlagPDimPDe (dims separated by / ):
  for DE 0: 1 / 
  for DE 1: 1 / 
  for DE 2: 1 / 
  for DE 3: 1 / 
 (min,max)IndexPDimPDe (dims separated by / ):
- for DE 0: (1, 5) / 
  for DE 0: (1, 5) / 
  for DE 1: (6, 10) / 
+ for DE 2: 1 / 
+ for DE 3: 1 / 
+(min,max)IndexPDimPDe (dims separated by / ):
+ for DE 0: (1, 5) / 
+ for DE 1: (6, 10) / 
+ for DE 2: (11, 15) / 
  for DE 2: (11, 15) / 
  for DE 3: (16, 20) / 
 indexListPDimPLocalDe (dims separated by / ):
@@ -71,10 +78,6 @@ Member on this PET appears to be an actual member.
 DistGrid-VM: localPet = 1, CurrentVM: localPet = 1
 DistGrid-VM: petCount = 4, CurrentVM: petCount = 4
 --- ESMCI::DistGrid::print end ---
- for DE 1: 1 / 
- for DE 2: 1 / 
- for DE 3: 1 / 
-(min,max)IndexPDimPDe (dims separated by / ):
  for DE 0: (1, 5) / 
  for DE 1: (6, 10) / 
  for DE 2: (11, 15) / 
@@ -92,7 +95,6 @@ Member on this PET appears to be an actual member.
 DistGrid-VM: localPet = 2, CurrentVM: localPet = 2
 DistGrid-VM: petCount = 4, CurrentVM: petCount = 4
 --- ESMCI::DistGrid::print end ---
-(min,max)IndexPDimPDe (dims separated by / ):
  for DE 0: (1, 5) / 
  for DE 1: (6, 10) / 
  for DE 2: (11, 15) / 
@@ -110,8 +112,6 @@ Member on this PET appears to be an actual member.
 DistGrid-VM: localPet = 0, CurrentVM: localPet = 0
 DistGrid-VM: petCount = 4, CurrentVM: petCount = 4
 --- ESMCI::DistGrid::print end ---
- for DE 1: (6, 10) / 
- for DE 2: (11, 15) / 
  for DE 3: (16, 20) / 
 indexListPDimPLocalDe (dims separated by / ):
  for localDE 0 - DE 3:  (16, 17, 18, 19, 20) /
@@ -142,4 +142,4 @@ DistGrid-VM: petCount = 4, CurrentVM: petCount = 4
  PASS: ESMF_ArrayArbHaloEx.F90
  PASS: ESMF_ArrayArbHaloEx.F90
  PASS: ESMF_ArrayArbHaloEx.F90
-Sat Feb 20 17:59:52 MST 2021
+Mon Feb 22 09:46:35 MST 2021
