@@ -1,27 +1,75 @@
-[bighorn.cgd.ucar.edu:16116] OPAL ERROR: Error in file pmix2x.c at line 326
-[bighorn.cgd.ucar.edu:16116] OPAL ERROR: Error in file pmix2x.c at line 326
-[bighorn.cgd.ucar.edu:16116] OPAL ERROR: Error in file pmix2x.c at line 326
-[bighorn:16116] *** Process received signal ***
-[bighorn:16116] Signal: Segmentation fault (11)
-[bighorn:16116] Signal code: Invalid permissions (2)
-[bighorn:16116] Failing at address: 0x7f4858021108
-[bighorn:16116] [ 0] /lib64/libpthread.so.0(+0xf630)[0x7f4867167630]
-[bighorn:16116] [ 1] /project/esmf/LIBS/gcc-8.1/openmpi-3.1.1/lib/openmpi/mca_pmix_pmix2x.so(pmix2x_value_unload+0x0)[0x7f48648aaae0]
-[bighorn:16116] [ 2] /project/esmf/LIBS/gcc-8.1/openmpi-3.1.1/lib/openmpi/mca_pmix_pmix2x.so(pmix2x_event_hdlr+0x2dd)[0x7f48648ab83d]
-[bighorn:16116] [ 3] /project/esmf/LIBS/gcc-8.1/openmpi-3.1.1/lib/openmpi/mca_pmix_pmix2x.so(pmix_invoke_local_event_hdlr+0x328)[0x7f48648c5f38]
-[bighorn:16116] [ 4] /project/esmf/LIBS/gcc-8.1/openmpi-3.1.1/lib/openmpi/mca_pmix_pmix2x.so(+0x3c9ea)[0x7f48648ca9ea]
-[bighorn:16116] [ 5] /project/esmf/LIBS/gcc-8.1/openmpi-3.1.1/lib/openmpi/mca_pmix_pmix2x.so(+0x3e67e)[0x7f48648cc67e]
-[bighorn:16116] [ 6] /project/esmf/LIBS/gcc-8.1/openmpi-3.1.1/lib/openmpi/mca_pmix_pmix2x.so(pmix_ptl_base_process_msg+0x1cd)[0x7f486493545d]
-[bighorn:16116] [ 7] /project/esmf/LIBS/gcc-8.1/openmpi-3.1.1/lib/libopen-pal.so.40(opal_libevent2022_event_base_loop+0x759)[0x7f4866851509]
-[bighorn:16116] [ 8] /project/esmf/LIBS/gcc-8.1/openmpi-3.1.1/lib/openmpi/mca_pmix_pmix2x.so(+0x80f5e)[0x7f486490ef5e]
-[bighorn:16116] [ 9] /lib64/libpthread.so.0(+0x7ea5)[0x7f486715fea5]
-[bighorn:16116] [10] /lib64/libc.so.6(clone+0x6d)[0x7f4866e8896d]
-[bighorn:16116] *** End of error message ***
--------------------------------------------------------
-Primary job  terminated normally, but 1 process returned
-a non-zero exit code. Per user-direction, the job has been aborted.
--------------------------------------------------------
---------------------------------------------------------------------------
-mpirun noticed that process rank 0 with PID 0 on node bighorn exited on signal 11 (Segmentation fault).
---------------------------------------------------------------------------
-Mon Feb 22 10:46:26 MST 2021
+Beginning Test, file ESMC_FieldGridRegrid2UTest.C, line 70
+NUMBER_OF_PROCESSORS 1
+PASS GridCreate, ESMC_FieldGridRegrid2UTest.C, line 119
+PASS GridAddCoord, ESMC_FieldGridRegrid2UTest.C, line 134
+PASS GridAddItem, ESMC_FieldGridRegrid2UTest.C, line 144
+PASS GridGetItem - mask, ESMC_FieldGridRegrid2UTest.C, line 155
+PASS GridGetCoord - X, ESMC_FieldGridRegrid2UTest.C, line 182
+PASS GridGetCoord - Y, ESMC_FieldGridRegrid2UTest.C, line 202
+Masked value at [1.500000,0.500000]
+Masked value at [1.500000,1.500000]
+Masked value at [1.500000,2.500000]
+Masked value at [1.500000,3.500000]
+
+Destination Grid coords: 
+[0.500000,0.500000]
+[1.500000,0.500000]
+[2.500000,0.500000]
+[3.500000,0.500000]
+[0.500000,1.500000]
+[1.500000,1.500000]
+[2.500000,1.500000]
+[3.500000,1.500000]
+[0.500000,2.500000]
+[1.500000,2.500000]
+[2.500000,2.500000]
+[3.500000,2.500000]
+[0.500000,3.500000]
+[1.500000,3.500000]
+[2.500000,3.500000]
+[3.500000,3.500000]
+
+num_node = 16
+num_node_out=16
+num_elem = 9
+num_elem_out=9
+
+Source Mesh coords: 
+[0.000000,0.000000]
+[1.500000,0.000000]
+[2.500000,0.000000]
+[4.000000,0.000000]
+[0.000000,1.500000]
+[1.500000,1.500000]
+[2.500000,1.500000]
+[4.000000,1.500000]
+[0.000000,2.500000]
+[1.500000,2.500000]
+[2.500000,2.500000]
+[4.000000,2.500000]
+[0.000000,4.000000]
+[1.500000,4.000000]
+[2.500000,4.000000]
+[4.000000,4.000000]
+
+PASS MeshCreate, ESMC_FieldGridRegrid2UTest.C, line 296
+PASS MeshAddNodes, ESMC_FieldGridRegrid2UTest.C, line 304
+PASS MeshAddElements, ESMC_FieldGridRegrid2UTest.C, line 318
+PASS MeshGetLocalNodeCount, ESMC_FieldGridRegrid2UTest.C, line 328
+PASS MeshGetLocalElementCount, ESMC_FieldGridRegrid2UTest.C, line 339
+PASS Create ESMC_Field object from a Grid via TypeKind, ESMC_FieldGridRegrid2UTest.C, line 363
+PASS Create ESMC_Field object from a Mesh via TypeKind, ESMC_FieldGridRegrid2UTest.C, line 372
+PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldGridRegrid2UTest.C, line 385
+PASS Get a void * C pointer to data from ESMC_Field object, ESMC_FieldGridRegrid2UTest.C, line 400
+PASS Create an InterArray for maskValues in ESMC_FieldRegridStore(), ESMC_FieldGridRegrid2UTest.C, line 420
+PASS Create an ESMC_RouteHandle via ESMC_FieldRegridStore(), ESMC_FieldGridRegrid2UTest.C, line 447
+PASS Execute ESMC_FieldRegrid(), ESMC_FieldGridRegrid2UTest.C, line 455
+PASS Release an ESMC_RouteHandle via ESMC_FieldRegridRelease(), ESMC_FieldGridRegrid2UTest.C, line 463
+PASS Regridding Validation, ESMC_FieldGridRegrid2UTest.C, line 500
+PASS Destroy ESMC_Field object, ESMC_FieldGridRegrid2UTest.C, line 512
+PASS Destroy ESMC_Field object, ESMC_FieldGridRegrid2UTest.C, line 520
+PASS Destroy ESMC_Grid object, ESMC_FieldGridRegrid2UTest.C, line 528
+PASS Destroy ESMC_Mesh object, ESMC_FieldGridRegrid2UTest.C, line 536
+Ending Test, file ESMC_FieldGridRegrid2UTest.C, line 542
+ PET 0 Test Elapsed Time  92.541000 msec.
+Tue Feb 23 15:02:30 MST 2021
