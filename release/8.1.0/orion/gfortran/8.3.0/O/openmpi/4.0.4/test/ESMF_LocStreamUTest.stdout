@@ -30,6 +30,7 @@
   PASS  Test ESMF_LocStreamCreate from Regular distribution, ESMF_LocStreamUTest.F90, line 335
   PASS  LocStream equality before assignment Test, ESMF_LocStreamUTest.F90, line 343
   PASS  LocStream assignment and equality Test, ESMF_LocStreamUTest.F90, line 352
+  PASS  LocStreamDestroy Test, ESMF_LocStreamUTest.F90, line 359
   PASS  Testing LocStream IsCreated for uncreated object, ESMF_LocStreamUTest.F90, line 99
   PASS  Testing LocStream IsCreated for uncreated object, ESMF_LocStreamUTest.F90, line 107
   PASS  Create test LocStream for IsCreated, ESMF_LocStreamUTest.F90, line 115
@@ -42,6 +43,7 @@
   PASS  Test ESMF_LocStreamCreate from Regular distribution, ESMF_LocStreamUTest.F90, line 335
   PASS  LocStream equality before assignment Test, ESMF_LocStreamUTest.F90, line 343
   PASS  LocStream assignment and equality Test, ESMF_LocStreamUTest.F90, line 352
+  PASS  LocStreamDestroy Test, ESMF_LocStreamUTest.F90, line 359
   PASS  Testing LocStream IsCreated for uncreated object, ESMF_LocStreamUTest.F90, line 99
   PASS  Testing LocStream IsCreated for uncreated object, ESMF_LocStreamUTest.F90, line 107
   PASS  Create test LocStream for IsCreated, ESMF_LocStreamUTest.F90, line 115
@@ -59,17 +61,15 @@
   PASS  LocStream non-equality after destroy Test, ESMF_LocStreamUTest.F90, line 375
   PASS  LocStreamDestroy Test, ESMF_LocStreamUTest.F90, line 359
   PASS  LocStream equality after destroy Test, ESMF_LocStreamUTest.F90, line 367
-  PASS  LocStreamDestroy Test, ESMF_LocStreamUTest.F90, line 359
+  PASS  LocStream non-equality after destroy Test, ESMF_LocStreamUTest.F90, line 375
+  PASS  Double LocStreamDestroy through alias Test, ESMF_LocStreamUTest.F90, line 382
   PASS  LocStream equality after destroy Test, ESMF_LocStreamUTest.F90, line 367
-  PASS  LocStreamDestroy Test, ESMF_LocStreamUTest.F90, line 359
+  PASS  LocStream non-equality after destroy Test, ESMF_LocStreamUTest.F90, line 375
+  PASS  Double LocStreamDestroy through alias Test, ESMF_LocStreamUTest.F90, line 382
   PASS  LocStream equality after destroy Test, ESMF_LocStreamUTest.F90, line 367
   PASS  LocStream non-equality after destroy Test, ESMF_LocStreamUTest.F90, line 375
   PASS  Double LocStreamDestroy through alias Test, ESMF_LocStreamUTest.F90, line 382
   PASS  Double LocStreamDestroy through alias Test, ESMF_LocStreamUTest.F90, line 382
-  PASS  LocStream non-equality after destroy Test, ESMF_LocStreamUTest.F90, line 375
-  PASS  Double LocStreamDestroy through alias Test, ESMF_LocStreamUTest.F90, line 382
-  PASS  LocStream non-equality after destroy Test, ESMF_LocStreamUTest.F90, line 375
-  PASS  Double LocStreamDestroy through alias Test, ESMF_LocStreamUTest.F90, line 382
   PASS  Test ESMF_LocStreamCreate from Irregular distribution, ESMF_LocStreamUTest.F90, line 534
   PASS  Test ESMF_LocStreamCreate from Irregular distribution, ESMF_LocStreamUTest.F90, line 534
   PASS  Test ESMF_LocStreamCreate from Irregular distribution, ESMF_LocStreamUTest.F90, line 534
@@ -116,16 +116,6 @@
   PASS  Test LocStream Serialize/Deserialize, ESMF_LocStreamUTest.F90, line 1017
  LocStream Print Starts ====>
  Name =     'LocStream048'
- LocStream Print Starts ====>
- Name =     'LocStream048'
- KeyCount =           2
- Keys:
-    A1 - LN1    U1
- KeyCount =           2
- Keys:
-    A1 - LN1    U1
- LocStream Print Starts ====>
- Name =     'LocStream048'
  KeyCount =           2
  Keys:
  LocStream Print Starts ====>
@@ -133,64 +123,74 @@
  KeyCount =           2
  Keys:
     A1 - LN1    U1
+ LocStream Print Starts ====>
+ Name =     'LocStream048'
+ KeyCount =           2
+ Keys:
     A1 - LN1    U1
-     arr(           1 )=    1.9661725771193579E-316
+ LocStream Print Starts ====>
+ Name =     'LocStream048'
+ KeyCount =           2
+ Keys:
+    A1 - LN1    U1
+    A1 - LN1    U1
+     arr(           1 )=    1.5530396270971076E-316
      arr(           2 )=    2.1219957914593380E-314
-     arr(           1 )=    1.3428301096398075E-316
+     arr(           1 )=    9.5256726073729014E-317
+     arr(           2 )=    2.1219957914593380E-314
+     arr(           3 )=    0.0000000000000000     
+     arr(           4 )=    0.0000000000000000     
+     arr(           1 )=    1.4684176442874856E-316
      arr(           2 )=    2.1219957914593380E-314
      arr(           3 )=    0.0000000000000000     
      arr(           4 )=    0.0000000000000000     
      arr(           5 )=    0.0000000000000000     
-     arr(           1 )=    1.9110522421542084E-316
+    A2 - LN2    U2
+     arr(           1 )=    2.0137032732593525E-316
      arr(           2 )=    2.1219957914593380E-314
      arr(           3 )=    0.0000000000000000     
      arr(           4 )=    0.0000000000000000     
      arr(           5 )=    0.0000000000000000     
+    A2 - LN2    U2
      arr(           3 )=    0.0000000000000000     
      arr(           4 )=    0.0000000000000000     
      arr(           5 )=    0.0000000000000000     
     A2 - LN2    U2
+     arr(           5 )=    0.0000000000000000     
     A2 - LN2    U2
-     arr(           1 )=    1.4548747120562020E-316
-     arr(           2 )=    2.1219957914593380E-314
-     arr(           3 )=    1.4548810360964688E-316
+     arr(           1 )=    6.9470658084062578E-310
+     arr(           2 )=    6.9470658084062578E-310
+     arr(           3 )=    0.0000000000000000     
      arr(           4 )=    0.0000000000000000     
-     arr(           5 )=    2.3715151000379834E-322
-    A2 - LN2    U2
-    A2 - LN2    U2
-     arr(           1 )=    1.3428862354971750E-316
-     arr(           2 )=    6.9512938682651600E-310
-     arr(           3 )=    1.2064423207755793E+030
-     arr(           1 )=    0.0000000000000000     
-     arr(           2 )=    6.9401805545945619E-310
-     arr(           3 )=    6.0134700169990685E-154
-     arr(           4 )=    3.9435707174901035E+180
+     arr(           1 )=    6.9378720678173392E-310
+     arr(           2 )=    6.9378720678173392E-310
+     arr(           3 )=    6.9378720678125962E-310
+     arr(           4 )=    6.9378720678125962E-310
+     arr(           1 )=    6.9497352574431697E-310
+     arr(           2 )=    6.9497352574431697E-310
+     arr(           3 )=    9.3126710261378232E-317
+     arr(           4 )=    9.3128528422954928E-317
      arr(           5 )=    2.3715151000379834E-322
  LocStream Print Ends   ====>
-  PASS  Test Print, ESMF_LocStreamUTest.F90, line 1050
-     arr(           1 )=    6.9138341042036986E-310
-     arr(           2 )=    6.9138341042036986E-310
+     arr(           1 )=    6.9066063693083818E-310
+     arr(           2 )=    6.9066063693083818E-310
      arr(           3 )=    0.0000000000000000     
      arr(           4 )=    0.0000000000000000     
      arr(           5 )=    6.0134700169990685E-154
-     arr(           4 )=    6.0134700169990685E-154
-     arr(           5 )=    2.3715151000379834E-322
  LocStream Print Ends   ====>
   PASS  Test Print, ESMF_LocStreamUTest.F90, line 1050
-     arr(           1 )=    6.9473394033872184E-310
-     arr(           2 )=    6.9473394033872184E-310
-     arr(           3 )=    0.0000000000000000     
-     arr(           4 )=    0.0000000000000000     
-     arr(           5 )=    6.9472020200412050E-310
- LocStream Print Ends   ====>
   PASS  Test Print, ESMF_LocStreamUTest.F90, line 1050
+     arr(           5 )=    0.0000000000000000     
+ LocStream Print Ends   ====>
+     arr(           5 )=    0.0000000000000000     
  LocStream Print Ends   ====>
   PASS  Test Print, ESMF_LocStreamUTest.F90, line 1050
   PASS  Test ESMF_LocStreamCreate from Regular distribution, ESMF_LocStreamUTest.F90, line 1202
+  PASS  Test Print, ESMF_LocStreamUTest.F90, line 1050
+  PASS  Test ESMF_LocStreamCreate from Regular distribution, ESMF_LocStreamUTest.F90, line 1202
+  PASS  Test ESMF_LocStreamCreate from Regular distribution, ESMF_LocStreamUTest.F90, line 1202
   PASS  Test ESMF_LocStreamCreate from Regular distribution, ESMF_LocStreamUTest.F90, line 1202
   PASS  Test ESMF_LocStreamCreate from Irregular distribution, ESMF_LocStreamUTest.F90, line 1355
-  PASS  Test ESMF_LocStreamCreate from Regular distribution, ESMF_LocStreamUTest.F90, line 1202
-  PASS  Test ESMF_LocStreamCreate from Regular distribution, ESMF_LocStreamUTest.F90, line 1202
   PASS  Test ESMF_LocStreamCreate from Irregular distribution, ESMF_LocStreamUTest.F90, line 1355
   PASS  Test ESMF_LocStreamCreate from Irregular distribution, ESMF_LocStreamUTest.F90, line 1355
   PASS  Test ESMF_LocStreamCreate from Irregular distribution, ESMF_LocStreamUTest.F90, line 1355
@@ -207,14 +207,14 @@
   PASS  Test ESMF_LocStream Create From Background Grid non-default Align, ESMF_LocStreamUTest.F90, line 1698
   PASS  Test ESMF_LocStream Create From Background Grid non-default Align, ESMF_LocStreamUTest.F90, line 1698
   PASS  Test ESMF_LocStream Create From Background Grid on Sphere, ESMF_LocStreamUTest.F90, line 1714
-  Ending Test, file ESMF_LocStreamUTest.F90, line 1724
   PASS  Test ESMF_LocStream Create From Background Grid on Sphere, ESMF_LocStreamUTest.F90, line 1714
   PASS  Test ESMF_LocStream Create From Background Grid on Sphere, ESMF_LocStreamUTest.F90, line 1714
-  Ending Test, file ESMF_LocStreamUTest.F90, line 1724
   PASS  Test ESMF_LocStream Create From Background Grid on Sphere, ESMF_LocStreamUTest.F90, line 1714
   Ending Test, file ESMF_LocStreamUTest.F90, line 1724
   Ending Test, file ESMF_LocStreamUTest.F90, line 1724
-  PET           0  Test Elapsed Time    12.597999999999999       msec.
-  PET           2  Test Elapsed Time    12.498999999999997       msec.
-  PET           3  Test Elapsed Time    12.726000000000001       msec.
-  PET           1  Test Elapsed Time    12.839000000000004       msec.
+  Ending Test, file ESMF_LocStreamUTest.F90, line 1724
+  Ending Test, file ESMF_LocStreamUTest.F90, line 1724
+  PET           0  Test Elapsed Time    12.439999999999992       msec.
+  PET           2  Test Elapsed Time    12.413999999999994       msec.
+  PET           1  Test Elapsed Time    12.704000000000008       msec.
+  PET           3  Test Elapsed Time    12.758000000000006       msec.
