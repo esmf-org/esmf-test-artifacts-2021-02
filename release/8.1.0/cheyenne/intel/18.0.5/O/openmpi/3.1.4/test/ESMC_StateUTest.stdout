@@ -4,11 +4,11 @@ Beginning Test, file ESMC_StateUTest.C, line 53
 NUMBER_OF_PROCESSORS 4
 PASS StateCreate Unit test, ESMC_StateUTest.C, line 66
 PASS ArraySpecSet, ESMC_StateUTest.C, line 75
-PASS Set up minIndex, ESMC_StateUTest.C, line 85
-PASS Set up maxIndex, ESMC_StateUTest.C, line 96
 PASS StateCreate Unit test, ESMC_StateUTest.C, line 66
 PASS ArraySpecSet, ESMC_StateUTest.C, line 75
 PASS Set up minIndex, ESMC_StateUTest.C, line 85
+PASS Set up minIndex, ESMC_StateUTest.C, line 85
+PASS Set up maxIndex, ESMC_StateUTest.C, line 96
 PASS Set up maxIndex, ESMC_StateUTest.C, line 96
 PASS Create 5 x 10 ESMC_DistGrid object, ESMC_StateUTest.C, line 104
 PASS Create 5 x 10 ESMC_DistGrid object, ESMC_StateUTest.C, line 104
@@ -41,67 +41,95 @@ Array typekind/rank: Integer*4 / 2
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
-~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0x1f6fce0:
-LocalArrayPrint: Array at address 0x29b2c30:
-            rank = 2, typekind = 3, base_addr = 0x2ac52f4b7fa0
-            rank = 2, typekind = 3, base_addr = 0x2b34219ebd40
+~ local data in LocalArray for DE 3 ~
+LocalArrayPrint: Array at address 0x157abc0:
+            rank = 2, typekind = 3, base_addr = 0x2b4e490dffa0
+LocalArrayPrint: Array at address 0xc70b80:
+            rank = 2, typekind = 3, base_addr = 0x2b507bfdfd40
             dim[0] = 2  dim[1] = 10  
   Integer, *4, Dim 2, Data values:
 ( 1, 1) =  1397965136
 ( 2, 1) =  1701987104
 ( 1, 2) =  543519841
 ( 2, 2) =  544743477
+( 1, 3) =  1159737393
+( 2, 3) =  1598246227
+( 1, 4) =  1953720644
             dim[0] = 1  dim[1] = 10  
   Integer, *4, Dim 2, Data values:
-( 1, 1) =  564051200
-( 1, 2) =  11060
+( 1, 1) =  2080242944
+( 1, 2) =  11088
 ( 1, 3) =  544240928
 ( 1, 4) =  1232626029
 ( 1, 5) =  2019910766
 ( 1, 6) =  1397039148
-( 1, 3) =  1159737393
-( 2, 3) =  1598246227
-( 1, 4) =  1953720644
+( 1, 7) =  1398752077
 ( 2, 4) =  1684632135
 ( 1, 5) =  1784835872
-( 1, 7) =  1398752077
-( 1, 8) =  1702125940
-( 1, 9) =  1936020565
-( 1,10) =  742600308
 ( 2, 5) =  745825125
 ( 1, 6) =  1297302816
 ( 2, 6) =  1951620931
 ( 1, 7) =  1432712289
+( 1, 8) =  1702125940
+( 1, 9) =  1936020565
+( 1,10) =  742600308
+dim 1: [0]: [1 [1 [1, 1] 1] 1]
+dim 2: [1]: [1 [1 [1, 10] 10] 10]
 ( 2, 7) =  1953719636
 ( 1, 8) =  539771694
 ( 2, 8) =  1701734764
 ( 1, 9) =  875573536
 ( 2, 9) =  1764717161
+( 1,10) =  1818588270
+( 2,10) =  1701339999
+--- ESMCI::Array::print end ---
+dim 1: [0]: [1 [1 [1, 2] 2] 2]
+dim 2: [1]: [1 [1 [1, 10] 10] 10]
+PASS Print ESMC_Array object, ESMC_StateUTest.C, line 144
+--- ESMCI::Array::print end ---
+PASS Print ESMC_Array object, ESMC_StateUTest.C, line 144
+PASS Add an Array to a State object, ESMC_StateUTest.C, line 151
+PASS Add an Array to a State object, ESMC_StateUTest.C, line 151
+PASS Get an array from a state, based on its name, ESMC_StateUTest.C, line 159
+PASS Get an array from a state, based on its name, ESMC_StateUTest.C, line 159
+PASS Compare array stored into and array retrieved from a state, ESMC_StateUTest.C, line 167
+PASS Compare array stored into and array retrieved from a state, ESMC_StateUTest.C, line 167
+PASS Destroy ESMC_DistGrid object, ESMC_StateUTest.C, line 175
+PASS Destroy ESMC_DistGrid object, ESMC_StateUTest.C, line 175
+PASS Destroy ESMC_Array object, ESMC_StateUTest.C, line 183
+PASS Destroy ESMC_Array object, ESMC_StateUTest.C, line 183
+PASS StateDestroy Unit test, ESMC_StateUTest.C, line 193
+PASS StateDestroy Unit test, ESMC_StateUTest.C, line 193
+Ending Test, file ESMC_StateUTest.C, line 200
+Ending Test, file ESMC_StateUTest.C, line 200
+--- ESMCI::Array::print start ---
+ Base name    = array1
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+{}Array typekind/rank: Integer*4 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
+deCount = 4
+localDeCount = 1
+~ local data in LocalArray for DE 1 ~
+LocalArrayPrint: Array at address 0x1485ba0:
+            rank = 2, typekind = 3, base_addr = 0x2ad308607d40
+            dim[0] = 1  dim[1] = 10  
+  Integer, *4, Dim 2, Data values:
+( 1, 1) =  140541184
+( 1, 2) =  10963
+( 1, 3) =  544240928
+( 1, 4) =  1232626029
+( 1, 5) =  2019910766
+( 1, 6) =  1397039148
+( 1, 7) =  1398752077
+( 1, 8) =  1702125940
+( 1, 9) =  1936020565
+( 1,10) =  742600308
 dim 1: [0]: [1 [1 [1, 1] 1] 1]
 dim 2: [1]: [1 [1 [1, 10] 10] 10]
 --- ESMCI::Array::print end ---
-( 1,10) =  1818588270
-( 2,10) =  1701339999
-PASS Print ESMC_Array object, ESMC_StateUTest.C, line 144
-dim 1: [0]: [1 [1 [1, 2] 2] 2]
-dim 2: [1]: [1 [1 [1, 10] 10] 10]
---- ESMCI::Array::print end ---
-PASS Print ESMC_Array object, ESMC_StateUTest.C, line 144
-PASS Add an Array to a State object, ESMC_StateUTest.C, line 151
-PASS Add an Array to a State object, ESMC_StateUTest.C, line 151
-PASS Get an array from a state, based on its name, ESMC_StateUTest.C, line 159
-PASS Get an array from a state, based on its name, ESMC_StateUTest.C, line 159
-PASS Compare array stored into and array retrieved from a state, ESMC_StateUTest.C, line 167
-PASS Compare array stored into and array retrieved from a state, ESMC_StateUTest.C, line 167
-PASS Destroy ESMC_DistGrid object, ESMC_StateUTest.C, line 175
-PASS Destroy ESMC_DistGrid object, ESMC_StateUTest.C, line 175
-PASS Destroy ESMC_Array object, ESMC_StateUTest.C, line 183
-PASS Destroy ESMC_Array object, ESMC_StateUTest.C, line 183
-PASS StateDestroy Unit test, ESMC_StateUTest.C, line 193
-PASS StateDestroy Unit test, ESMC_StateUTest.C, line 193
-Ending Test, file ESMC_StateUTest.C, line 200
-Ending Test, file ESMC_StateUTest.C, line 200
 --- ESMCI::Array::print start ---
  Base name    = array1
  Status: Base = Ready,  object = Ready
@@ -113,40 +141,12 @@ DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0xd56c20:
-            rank = 2, typekind = 3, base_addr = 0x2af9bb837d40
+LocalArrayPrint: Array at address 0x2227ca0:
+            rank = 2, typekind = 3, base_addr = 0x2b95fe893d40
             dim[0] = 1  dim[1] = 10  
   Integer, *4, Dim 2, Data values:
-( 1, 1) =  -1149010688
-( 1, 2) =  11001
-( 1, 3) =  544240928
-( 1, 4) =  1232626029
-( 1, 5) =  2019910766
-( 1, 6) =  1397039148
-( 1, 7) =  1398752077
-( 1, 8) =  1702125940
-( 1, 9) =  1936020565
-( 1,10) =  742600308
-dim 1: [0]: [1 [1 [1, 1] 1] 1]
-dim 2: [1]: [1 [1 [1, 10] 10] 10]
---- ESMCI::Array::print end ---
---- ESMCI::Array::print start ---
- Base name    = array1
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-{}Array typekind/rank: Integer*4 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x22cad20:
-            rank = 2, typekind = 3, base_addr = 0x2af1de5ebd40
-            dim[0] = 1  dim[1] = 10  
-  Integer, *4, Dim 2, Data values:
-( 1, 1) =  -564216576
-( 1, 2) =  10993
+( 1, 1) =  -24560384
+( 1, 2) =  11157
 ( 1, 3) =  544240928
 ( 1, 4) =  1232626029
 ( 1, 5) =  2019910766
@@ -196,8 +196,8 @@ PASS Destroy ESMC_DistGrid object, ESMC_StateUTest.C, line 175
 PASS Destroy ESMC_Array object, ESMC_StateUTest.C, line 183
 PASS StateDestroy Unit test, ESMC_StateUTest.C, line 193
 Ending Test, file ESMC_StateUTest.C, line 200
- PET 2 Test Elapsed Time  53.246000 msec.
- PET 1 Test Elapsed Time  55.101000 msec.
- PET 0 Test Elapsed Time  55.097000 msec.
- PET 3 Test Elapsed Time  53.944000 msec.
-Mon Feb 22 15:26:16 MST 2021
+ PET 0 Test Elapsed Time  54.256000 msec.
+ PET 2 Test Elapsed Time  52.397000 msec.
+ PET 3 Test Elapsed Time  54.264000 msec.
+ PET 1 Test Elapsed Time  53.062000 msec.
+Tue Feb 23 13:32:17 MST 2021
