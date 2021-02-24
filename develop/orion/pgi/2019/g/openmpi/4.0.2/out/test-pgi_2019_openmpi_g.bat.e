@@ -14,9 +14,321 @@ Export PGI=/apps/pgi-2019/pgi-2019-19.9
 pgc++-Warning-No files to process
 
 sed: can't read /work/noaa/da/mpotts/pgi_2019_openmpi_g/test/testg/Linux.pgi.64.openmpi.default/unit_tests.config: No such file or directory
+"/work/noaa/da/mpotts/pgi_2019_openmpi_g/src/include/json.hpp", line 14370:
+          warning: pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_g/src/include/json.hpp", line 14370:
+          warning: pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_g/src/include/json.hpp", line 14370:
+          warning: pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_g/src/include/json.hpp", line 14370:
+          warning: pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
 "ESMC_VMUTest.C", line 48: warning: variable "vmCurrent" was set but never used
     ESMC_VM vmCurrent;
             ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_g/src/include/json.hpp", line 14370:
+          warning: pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_g/src/include/json.hpp", line 14370:
+          warning: pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"ESMC_NlohmannJSONUTest.C", line 75: warning: variable "rc" was declared but
+          never referenced
+    int rc = ESMF_FAILURE;
+        ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_g/src/include/json.hpp", line 14370:
+          warning: pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_g/src/Infrastructure/Base/tests/../inclu
+          de/ESMCI_Base.h", line 140: warning: delete of pointer to incomplete
+          class
+      void ESMC_BaseDeleteInfo(void) {if (!infoalias) delete info;}
+                                                             ^
+
+"ESMC_InfoUTest.C", line 431: warning: variable "has_key" was set but never
+          used
+    bool has_key;
+         ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_g/src/include/json.hpp", line 14370:
+          warning: pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
 "ESMC_ClockUTest.C", line 51: warning: variable "runDuration" was declared but
           never referenced
@@ -87,6 +399,43 @@ sed: can't read /work/noaa/da/mpotts/pgi_2019_openmpi_g/test/testg/Linux.pgi.64.
           never referenced
     int localrc;
         ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_g/src/include/json.hpp", line 14370:
+          warning: pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
 
 "ESMCI_IO_PIOUTest.C", line 46: warning: variable "iotype" was set but never
           used
@@ -269,6 +618,226 @@ PGF90-W-0435-Array declared with zero size (ESMF_IOUTest.F90: 52)
     int elbnd[dimcount],eubnd[dimcount];
                         ^
 
+"ESMC_MBT.C", line 901: warning: variable "pl" was set but never used
+          PointList *pl;
+                     ^
+
+"ESMC_MBT.C", line 1593: warning: variable "localrc" was declared but never
+          referenced
+          int localrc; 
+              ^
+
+"ESMC_MBT.C", line 1675: warning: variable "localrc" was declared but never
+          referenced
+          int localrc; 
+              ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_g/src/include/json.hpp", line 14370:
+          warning: pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"ESMC_MBT.C", line 901: warning: variable "pl" was set but never used
+          PointList *pl;
+                     ^
+
+"ESMC_MBT.C", line 1593: warning: variable "localrc" was declared but never
+          referenced
+          int localrc; 
+              ^
+
+"ESMC_MBT.C", line 1675: warning: variable "localrc" was declared but never
+          referenced
+          int localrc; 
+              ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_g/src/include/json.hpp", line 14370:
+          warning: pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
+"ESMC_MeshTestGenPL.C", line 342: warning: statement is unreachable
+      return NULL;
+      ^
+
+"ESMC_MeshTestGenPL.C", line 466: warning: statement is unreachable
+      return NULL;
+      ^
+
+"ESMC_MeshTestGenPL.C", line 599: warning: statement is unreachable
+      return NULL;
+      ^
+
+"ESMC_MeshTestGenPL.C", line 723: warning: statement is unreachable
+      return NULL;
+      ^
+
+"ESMC_MBMesh_UtilUTest.C", line 62: warning: variable "num_elem" was declared
+          but never referenced
+    int num_elem = 4;
+        ^
+
+"ESMC_MBMesh_UtilUTest.C", line 63: warning: variable "num_node" was declared
+          but never referenced
+    int num_node = 9;
+        ^
+
+"ESMC_MBMesh_UtilUTest.C", line 65: warning: variable "nodeId_s" was declared
+          but never referenced
+    int nodeId_s [] ={10,20,30,40,50,60,70,80,90};
+        ^
+
+"ESMC_MBMesh_UtilUTest.C", line 66: warning: variable "nodeCoord_s" was
+          declared but never referenced
+    double nodeCoord_s [] ={0.0,0.0, 1.0,0.0, 2.0,0.0,
+           ^
+
+"ESMC_MBMesh_UtilUTest.C", line 69: warning: variable "nodeOwner_s" was
+          declared but never referenced
+    int nodeOwner_s [] ={0,0,0,0,0,0,0,0,0};
+        ^
+
+"ESMC_MBMesh_UtilUTest.C", line 70: warning: variable "nodeMask_s" was declared
+          but never referenced
+    int nodeMask_s [] ={1,1,1,1,1,1,1,1,1};
+        ^
+
+"ESMC_MBMesh_UtilUTest.C", line 71: warning: variable "elemId_s" was declared
+          but never referenced
+    int elemId_s [] ={1,2,3,4};
+        ^
+
+"ESMC_MBMesh_UtilUTest.C", line 73: warning: variable "elemType_s" was declared
+          but never referenced
+    int elemType_s [] ={ESMC_MESHELEMTYPE_QUAD,
+        ^
+
+"ESMC_MBMesh_UtilUTest.C", line 77: warning: variable "elemMask_s" was declared
+          but never referenced
+    int elemMask_s [] ={1,1,1,1};
+        ^
+
+"ESMC_MBMesh_UtilUTest.C", line 78: warning: variable "elemArea_s" was declared
+          but never referenced
+    double elemArea_s [] ={1.0,2.0,3.0,4.0}; // Wrong area, but just to test
+           ^
+
+"ESMC_MBMesh_UtilUTest.C", line 79: warning: variable "elemConn_s" was declared
+          but never referenced
+    int elemConn_s [] ={1,2,5,4,
+        ^
+
+"ESMC_MBMesh_UtilUTest.C", line 83: warning: variable "elemCoord_s" was
+          declared but never referenced
+    double elemCoord_s [] ={0.5,0.5,0.5,1.5,1.5,0.5,1.5,1.5};
+           ^
+
+"ESMC_MBMesh_UtilUTest.C", line 87: warning: variable "orig_sdim" was declared
+          but never referenced
+    int orig_sdim = sdim;
+        ^
+
+"/work/noaa/da/mpotts/pgi_2019_openmpi_g/src/include/json.hpp", line 14370:
+          warning: pointless comparison of unsigned integer with zero
+          const bool is_negative = std::is_same<NumberType, number_integer_t>::value and not(x >= 0); // see issue #755
+                                                                                               ^
+          detected during:
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump_integer
+                      (NumberType) [with
+                      BasicJsonType=nlohmann::basic_json<std::map, std::vector,
+                      std::string, bool, int64_t, uint64_t, double,
+                      std::allocator, nlohmann::adl_serializer>,
+                      NumberType=uint64_t, <unnamed>=0]" at line 14005
+            instantiation of "void
+                      nlohmann::detail::serializer<BasicJsonType>::dump(const
+                      BasicJsonType &, bool, bool, unsigned int, unsigned int)
+                      [with BasicJsonType=nlohmann::basic_json<std::map,
+                      std::vector, std::string, bool, int64_t, uint64_t,
+                      double, std::allocator, nlohmann::adl_serializer>]" at
+                      line 16570
+            instantiation of "nlohmann::basic_json<ObjectType, ArrayType,
+                      StringType, BooleanType, NumberIntegerType,
+                      NumberUnsignedType, NumberFloatType, AllocatorType,
+                      JSONSerializer>::string_t
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::dump(int, char, bool,
+                      nlohmann::basic_json<ObjectType, ArrayType, StringType,
+                      BooleanType, NumberIntegerType, NumberUnsignedType,
+                      NumberFloatType, AllocatorType,
+                      JSONSerializer>::error_handler_t) const [with
+                      ObjectType=std::map, ArrayType=std::vector,
+                      StringType=std::string, BooleanType=bool,
+                      NumberIntegerType=int64_t, NumberUnsignedType=uint64_t,
+                      NumberFloatType=double, AllocatorType=std::allocator,
+                      JSONSerializer=nlohmann::adl_serializer]" at line 22647
+
 "ESMCI_IntegrateUTest.C", line 183: warning: variable "pass" was set but never
           used
     bool pass;
@@ -289,565 +858,19 @@ PGF90-W-0435-Array declared with zero size (ESMF_IOUTest.F90: 52)
     int *elemDistG;
          ^
 
-"ESMC_MBMeshTestUtilMesh.C", line 75: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 146: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 214: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 292: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 829: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1102: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1358: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1608: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1888: warning: variable "elemMask_s" was
-          declared but never referenced
-      int elemMask_s [] ={1,1,1,1,1,1,1,1,1,1};
-          ^
-
-"ESMC_MBMeshTestUtilPL.C", line 342: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 466: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 599: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 723: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 75: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 146: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 214: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 292: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 829: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1102: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1358: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1608: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1888: warning: variable "elemMask_s" was
-          declared but never referenced
-      int elemMask_s [] ={1,1,1,1,1,1,1,1,1,1};
-          ^
-
-"ESMC_MBMeshTestUtilPL.C", line 342: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 466: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 599: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 723: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 75: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 146: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 214: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 292: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 829: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1102: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1358: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1608: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1888: warning: variable "elemMask_s" was
-          declared but never referenced
-      int elemMask_s [] ={1,1,1,1,1,1,1,1,1,1};
-          ^
-
-"ESMC_MBMeshTestUtilPL.C", line 342: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 466: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 599: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 723: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMesh_BilinearSingleElemUTest.C", line 62: warning: white space between
-          backslash and newline in line splice ignored
-    //         /          \ 
-                           ^
-
-"ESMC_MBMesh_BilinearSingleElemUTest.C", line 166: warning: white space between
-          backslash and newline in line splice ignored
-    //         /          \ 
-                           ^
-
-"ESMC_MBMesh_BilinearSingleElemUTest.C", line 482: warning: variable "pi" was
-          declared but never referenced
-    double pi = 3.14159;
-           ^
-
-"ESMC_MBMesh_BilinearSingleElemUTest.C", line 597: warning: variable "cart" is
-          used before its value is set
-    mesh_pent_single = create_mesh_pent_single(rc, cart);
-                                                   ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 75: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 146: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 214: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 292: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 829: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1102: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1358: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1608: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1888: warning: variable "elemMask_s" was
-          declared but never referenced
-      int elemMask_s [] ={1,1,1,1,1,1,1,1,1,1};
-          ^
-
-"ESMC_MBMeshTestUtilPL.C", line 342: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 466: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 599: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 723: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMesh_BilinearEdgeCasesUTest.C", line 342: warning: variable "pi" was
-          declared but never referenced
-    double pi = 3.14159;
-           ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 75: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 146: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 214: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMesh.C", line 292: warning: variable "nodeMask_s" was
-          declared but never referenced
-    int nodeMask_s [] ={1,1,1,1,1,1,1,1};
-        ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 829: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1102: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1358: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1608: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1888: warning: variable "elemMask_s" was
-          declared but never referenced
-      int elemMask_s [] ={1,1,1,1,1,1,1,1,1,1};
-          ^
-
-"ESMC_MBMeshTestUtilPL.C", line 342: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 466: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 599: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 723: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMesh_BilinearEdgeCases3DUTest.C", line 250: warning: variable "pi" was
-          declared but never referenced
-    double pi = 3.14159;
-           ^
-
-"ESMC_MBMesh_BilinearEdgeCases3DUTest.C", line 432: warning: variable
-          "collapsed" was declared but never referenced
-    bool collapsed = false;
-         ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 829: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1102: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1358: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1608: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1888: warning: variable "elemMask_s" was
-          declared but never referenced
-      int elemMask_s [] ={1,1,1,1,1,1,1,1,1,1};
-          ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 829: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1102: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1358: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1608: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1888: warning: variable "elemMask_s" was
-          declared but never referenced
-      int elemMask_s [] ={1,1,1,1,1,1,1,1,1,1};
-          ^
-
-"ESMC_MBMeshTestUtilPL.C", line 342: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 466: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 599: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 723: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 829: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1102: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1358: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1608: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1888: warning: variable "elemMask_s" was
-          declared but never referenced
-      int elemMask_s [] ={1,1,1,1,1,1,1,1,1,1};
-          ^
-
-"ESMC_MBMeshTestUtilPL.C", line 342: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 466: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 599: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 723: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 829: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1102: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1358: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1608: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1888: warning: variable "elemMask_s" was
-          declared but never referenced
-      int elemMask_s [] ={1,1,1,1,1,1,1,1,1,1};
-          ^
-
-"ESMC_MBMeshTestUtilPL.C", line 342: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 466: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 599: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 723: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 829: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1102: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1358: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1608: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1888: warning: variable "elemMask_s" was
-          declared but never referenced
-      int elemMask_s [] ={1,1,1,1,1,1,1,1,1,1};
-          ^
-
-"ESMC_MBMeshTestUtilPL.C", line 342: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 466: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 599: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilPL.C", line 723: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMesh_SearchUTest.C", line 134: warning: variable "name" was declared
-          but never referenced
-    char name[80];
-         ^
-
-"ESMC_MBMesh_SearchUTest.C", line 135: warning: variable "failMsg" was declared
-          but never referenced
-    char failMsg[80];
-         ^
-
-"ESMC_MBMesh_SearchUTest.C", line 136: warning: variable "result" was declared
-          but never referenced
-    int result = 0;
-        ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 829: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1102: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1358: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1608: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1888: warning: variable "elemMask_s" was
-          declared but never referenced
-      int elemMask_s [] ={1,1,1,1,1,1,1,1,1,1};
-          ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 829: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1102: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1358: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1608: warning: statement is unreachable
-      return NULL;
-      ^
-
-"ESMC_MBMeshTestUtilMBMesh.C", line 1888: warning: variable "elemMask_s" was
-          declared but never referenced
-      int elemMask_s [] ={1,1,1,1,1,1,1,1,1,1};
-          ^
-
-"ESMC_MBMeshTestUtilPL.C", line 342: warning: statement is unreachable
+"ESMC_MeshTestGenPL.C", line 342: warning: statement is unreachable
       return NULL;
       ^
 
-"ESMC_MBMeshTestUtilPL.C", line 466: warning: statement is unreachable
+"ESMC_MeshTestGenPL.C", line 466: warning: statement is unreachable
       return NULL;
       ^
 
-"ESMC_MBMeshTestUtilPL.C", line 599: warning: statement is unreachable
+"ESMC_MeshTestGenPL.C", line 599: warning: statement is unreachable
       return NULL;
       ^
 
-"ESMC_MBMeshTestUtilPL.C", line 723: warning: statement is unreachable
+"ESMC_MeshTestGenPL.C", line 723: warning: statement is unreachable
       return NULL;
       ^
 
@@ -1802,11 +1825,4 @@ PGF90-W-0435-Array declared with zero size (ESMF_IOUTest.F90: 52)
      int  rc;
           ^
 
-cat: ./PET*MBMesh_DualUTest.Log: No such file or directory
-"user_CComponent.C", line 212: warning: variable "mesh" was declared but never
-          referenced
-    ESMC_Mesh mesh;
-              ^
-
-PGF90-W-0435-Array declared with zero size (user_model1.F90: 32)
-  0 inform,   1 warnings,   0 severes, 0 fatal for user_model1
+slurmstepd: error: *** JOB 1240912 ON Orion-04-51 CANCELLED AT 2021-02-12T06:07:18 DUE TO TIME LIMIT ***

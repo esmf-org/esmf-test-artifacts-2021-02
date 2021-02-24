@@ -5,13 +5,13 @@ Currently Loaded Modules:
 
  
 
-sed: can't read /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/test/testg/Linux.gfortran.64.openmpi.default/unit_tests.config: No such file or directory
+sed: can't read /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/test/testg/Linux.gfortran.64.openmpi.default/unit_tests.config: No such file or directory
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI.h:25,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI.h:25,
                  from ESMCI_WordsizeSubr.C:24:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
@@ -20,20 +20,20 @@ In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI.h:25,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI.h:25,
                  from ESMCI_FeatureSubr.C:21:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI.h:25,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI.h:25,
                  from ESMCI_FeatureUTest.C:14:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
@@ -108,13 +108,9 @@ Warning: Possible change of value in conversion from REAL(8) to INTEGER(4) at (1
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMC_LogErrUTest.C: In function ‘int main()’:
-ESMC_LogErrUTest.C:57:11: warning: enum constant in boolean context [-Wint-in-bool-context]
-   flush = ESMF_FALSE;
-           ^~~~~~~~~~
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from ESMC_LogErrPerfUTest.C:19:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
@@ -434,12 +430,50 @@ Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
                  from ESMC_TraceRegionUTest.C:27:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from ESMC_BaseUTest.C:23:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from ESMC_NlohmannJSONUTest.C:20:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/tests/../include/ESMCI_Info.h:24,
+                 from ESMC_InfoUTest.C:21:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/tests/../include/ESMCI_Info.h:24,
+                 from ESMC_InfoUTest.C:21:
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h: In member function ‘void ESMC_Base::ESMC_BaseDeleteInfo()’:
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:140:60: warning: possible problem detected in invocation of delete operator: [-Wdelete-incomplete]
+     void ESMC_BaseDeleteInfo(void) {if (!infoalias) delete info;}
+                                                            ^~~~
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:140:60: warning: invalid use of incomplete type ‘class ESMCI::Info’
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:70:9: note: forward declaration of ‘class ESMCI::Info’
+   class Info;
+         ^~~~
+/work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Base/tests/../include/ESMCI_Base.h:140:60: note: neither the destructor nor the class-specific operator delete will be called, even if they are declared when the class is defined
+     void ESMC_BaseDeleteInfo(void) {if (!infoalias) delete info;}
+                                                            ^~~~
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
@@ -542,10 +576,10 @@ Warning: Equality comparison for REAL(4) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/tests/../include/ESMCI_IO_NetCDF.h:39,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/IO/tests/../include/ESMCI_IO_NetCDF.h:39,
                  from ESMCI_IO_NetCDFUTest.C:18:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
@@ -618,190 +652,88 @@ ESMF_GridArbitraryUTest.F90:1262:6:
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/Regridding/ESMCI_Interp.h:17,
-                 from ESMCI_IntegrateUTest.C:19:
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh.h:22,
+                 from ESMC_MBMeshUTest.C:24:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MeshCXX.h:16,
-                 from ESMC_MBMeshTestUtilMesh.C:25,
-                 from ESMC_MBMesh_BilinearUTest.C:25:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from ESMC_MBMesh_BilinearUTest.C:26:
-ESMC_MBMeshTestUtilMBMesh.C: In function ‘bool weights_correct(ESMCI::IWeights&, std::vector<double>)’:
-ESMC_MBMeshTestUtilMBMesh.C:68:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-In file included from ESMC_MBMesh_BilinearUTest.C:27:
-ESMC_MBMeshTestUtilPL.C: In function ‘bool weights_correct_nearest(ESMCI::WMat&, std::vector<double>)’:
-ESMC_MBMeshTestUtilPL.C:54:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MeshCXX.h:16,
-                 from ESMC_MBMeshTestUtilMesh.C:25,
-                 from ESMC_MBMesh_BilinearParUTest.C:25:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from ESMC_MBMesh_BilinearParUTest.C:26:
-ESMC_MBMeshTestUtilMBMesh.C: In function ‘bool weights_correct(ESMCI::IWeights&, std::vector<double>)’:
-ESMC_MBMeshTestUtilMBMesh.C:68:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-In file included from ESMC_MBMesh_BilinearParUTest.C:27:
-ESMC_MBMeshTestUtilPL.C: In function ‘bool weights_correct_nearest(ESMCI::WMat&, std::vector<double>)’:
-ESMC_MBMeshTestUtilPL.C:54:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh_Glue.h:31,
-                 from ESMC_MBMesh_BilinearSingleElemUTest.C:24:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-ESMC_MBMesh_BilinearSingleElemUTest.C:61:3: warning: multi-line comment [-Wcomment]
-   //           /      \
+In file included from ESMC_MBMeshUTest.C:26:
+ESMC_MBTGen.C:909:3: warning: multi-line comment [-Wcomment]
+   //  3.1                    / -- 15 -- \
    ^
-ESMC_MBMesh_BilinearSingleElemUTest.C:165:3: warning: multi-line comment [-Wcomment]
-   //           /      \
+ESMC_MBTGen.C:912:3: warning: multi-line comment [-Wcomment]
+   //         |         |         5           \
    ^
-ESMC_MBMesh_BilinearSingleElemUTest.C:366:3: warning: multi-line comment [-Wcomment]
-   //            /  \
+ESMC_MBTGen.C:919:3: warning: multi-line comment [-Wcomment]
+   //         |            \     \         \
    ^
-ESMC_MBMesh_BilinearSingleElemUTest.C:368:3: warning: multi-line comment [-Wcomment]
-   //         /        \
+ESMC_MBTGen.C:921:3: warning: multi-line comment [-Wcomment]
+   //         |                \ |          \
    ^
-In file included from ESMC_MBMesh_BilinearSingleElemUTest.C:28:
-ESMC_MBMeshTestUtilMBMesh.C: In function ‘bool weights_correct(ESMCI::IWeights&, std::vector<double>)’:
-ESMC_MBMeshTestUtilMBMesh.C:68:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-In file included from ESMC_MBMesh_BilinearSingleElemUTest.C:29:
-ESMC_MBMeshTestUtilPL.C: In function ‘bool weights_correct_nearest(ESMCI::WMat&, std::vector<double>)’:
-ESMC_MBMeshTestUtilPL.C:54:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-ESMC_MBMesh_BilinearSingleElemUTest.C: In function ‘int main(int, char**)’:
-ESMC_MBMesh_BilinearSingleElemUTest.C:597:45: warning: ‘cart’ may be used uninitialized in this function [-Wmaybe-uninitialized]
-   mesh_pent_single = create_mesh_pent_single(rc, cart);
-                      ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+ESMC_MBTGen.C:1167:3: warning: multi-line comment [-Wcomment]
+   //  3.1                    / -- 15 -- \
+   ^
+ESMC_MBTGen.C:1170:3: warning: multi-line comment [-Wcomment]
+   //         |         |         5           \
+   ^
+ESMC_MBTGen.C:1177:3: warning: multi-line comment [-Wcomment]
+   //         |            \     \         \
+   ^
+ESMC_MBTGen.C:1179:3: warning: multi-line comment [-Wcomment]
+   //         |                \ |          \
+   ^
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MeshCXX.h:16,
-                 from ESMC_MBMeshTestUtilMesh.C:25,
-                 from ESMC_MBMesh_BilinearEdgeCasesUTest.C:25:
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh.h:22,
+                 from ESMC_MBMeshRegridUTest.C:24:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
-ESMC_MBMesh_BilinearEdgeCasesUTest.C:185:3: warning: multi-line comment [-Wcomment]
-   //            /  \
+In file included from ESMC_MBMeshRegridUTest.C:26:
+ESMC_MBTGen.C:909:3: warning: multi-line comment [-Wcomment]
+   //  3.1                    / -- 15 -- \
    ^
-In file included from ESMC_MBMesh_BilinearEdgeCasesUTest.C:26:
-ESMC_MBMeshTestUtilMBMesh.C: In function ‘bool weights_correct(ESMCI::IWeights&, std::vector<double>)’:
-ESMC_MBMeshTestUtilMBMesh.C:68:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-In file included from ESMC_MBMesh_BilinearEdgeCasesUTest.C:27:
-ESMC_MBMeshTestUtilPL.C: In function ‘bool weights_correct_nearest(ESMCI::WMat&, std::vector<double>)’:
-ESMC_MBMeshTestUtilPL.C:54:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
+ESMC_MBTGen.C:912:3: warning: multi-line comment [-Wcomment]
+   //         |         |         5           \
+   ^
+ESMC_MBTGen.C:919:3: warning: multi-line comment [-Wcomment]
+   //         |            \     \         \
+   ^
+ESMC_MBTGen.C:921:3: warning: multi-line comment [-Wcomment]
+   //         |                \ |          \
+   ^
+ESMC_MBTGen.C:1167:3: warning: multi-line comment [-Wcomment]
+   //  3.1                    / -- 15 -- \
+   ^
+ESMC_MBTGen.C:1170:3: warning: multi-line comment [-Wcomment]
+   //         |         |         5           \
+   ^
+ESMC_MBTGen.C:1177:3: warning: multi-line comment [-Wcomment]
+   //         |            \     \         \
+   ^
+ESMC_MBTGen.C:1179:3: warning: multi-line comment [-Wcomment]
+   //         |                \ |          \
+   ^
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MeshCXX.h:16,
-                 from ESMC_MBMeshTestUtilMesh.C:25,
-                 from ESMC_MBMesh_BilinearEdgeCases3DUTest.C:25:
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_Regrid_Nearest.h:16,
+                 from ESMC_MeshTestGenPL.C:25,
+                 from ESMC_MBMesh_ExtrapolateUTest.C:24:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
-In file included from ESMC_MBMesh_BilinearEdgeCases3DUTest.C:26:
-ESMC_MBMeshTestUtilMBMesh.C: In function ‘bool weights_correct(ESMCI::IWeights&, std::vector<double>)’:
-ESMC_MBMeshTestUtilMBMesh.C:68:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-In file included from ESMC_MBMesh_BilinearEdgeCases3DUTest.C:27:
-ESMC_MBMeshTestUtilPL.C: In function ‘bool weights_correct_nearest(ESMCI::WMat&, std::vector<double>)’:
-ESMC_MBMeshTestUtilPL.C:54:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Bilinear.h:31,
-                 from ESMC_MBMeshTestUtilMBMesh.C:27,
-                 from ESMC_MBMesh_CreateUTest.C:26:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from ESMC_MBMesh_CreateUTest.C:26:
-ESMC_MBMeshTestUtilMBMesh.C: In function ‘bool weights_correct(ESMCI::IWeights&, std::vector<double>)’:
-ESMC_MBMeshTestUtilMBMesh.C:68:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Bilinear.h:31,
-                 from ESMC_MBMeshTestUtilMBMesh.C:27,
-                 from ESMC_MBMesh_CreateParUTest.C:26:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from ESMC_MBMesh_CreateParUTest.C:26:
-ESMC_MBMeshTestUtilMBMesh.C: In function ‘bool weights_correct(ESMCI::IWeights&, std::vector<double>)’:
-ESMC_MBMeshTestUtilMBMesh.C:68:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
 In file included from ESMC_MBMesh_ExtrapolateUTest.C:24:
-ESMC_MBMeshTestUtilPL.C: In function ‘bool weights_correct_nearest(ESMCI::WMat&, std::vector<double>)’:
-ESMC_MBMeshTestUtilPL.C:54:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+ESMC_MeshTestGenPL.C: In function ‘bool weights_correct_nearest(ESMCI::WMat&, std::vector<double>)’:
+ESMC_MeshTestGenPL.C:54:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
      if (weights.size() != ind) correct = false;
          ~~~~~~~~~~~~~~~^~~~~~
 ESMC_MBMesh_ExtrapolateUTest.C: In function ‘bool weights_correct_extrapolate(ESMCI::WMat&, std::vector<double>)’:
@@ -809,234 +741,200 @@ ESMC_MBMesh_ExtrapolateUTest.C:57:24: warning: comparison of integer expressions
      if (weights.size() != ind) correct = false;
          ~~~~~~~~~~~~~~~^~~~~~
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Bilinear.h:31,
-                 from ESMC_MBMeshTestUtilMBMesh.C:27,
-                 from ESMC_MBMesh_RendezvousUTest.C:26:
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh.h:22,
+                 from ESMC_MBMesh_UtilUTest.C:25:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
-In file included from ESMC_MBMesh_RendezvousUTest.C:26:
-ESMC_MBMeshTestUtilMBMesh.C: In function ‘bool weights_correct(ESMCI::IWeights&, std::vector<double>)’:
-ESMC_MBMeshTestUtilMBMesh.C:68:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-In file included from ESMC_MBMesh_RendezvousUTest.C:27:
-ESMC_MBMeshTestUtilPL.C: In function ‘bool weights_correct_nearest(ESMCI::WMat&, std::vector<double>)’:
-ESMC_MBMeshTestUtilPL.C:54:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-ESMC_MBMesh_RendezvousUTest.C: In function ‘int mesh_print(ESMCI::MBMesh*)’:
-ESMC_MBMesh_RendezvousUTest.C:75:10: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
-   printf("MESH PET %d - size = %d\n", localPet, elems.size());
-          ^~~~~~~~~~~~~~~~~~~~~~~~~~~            ~~~~~~~~~~~~
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Bilinear.h:31,
-                 from ESMC_MBMeshTestUtilMBMesh.C:27,
-                 from ESMC_MBMesh_RendezvousParUTest.C:25:
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h:22,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/Regridding/ESMCI_Interp.h:16,
+                 from ESMCI_IntegrateUTest.C:19:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
-In file included from ESMC_MBMesh_RendezvousParUTest.C:25:
-ESMC_MBMeshTestUtilMBMesh.C: In function ‘bool weights_correct(ESMCI::IWeights&, std::vector<double>)’:
-ESMC_MBMeshTestUtilMBMesh.C:68:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-In file included from ESMC_MBMesh_RendezvousParUTest.C:26:
-ESMC_MBMeshTestUtilPL.C: In function ‘bool weights_correct_nearest(ESMCI::WMat&, std::vector<double>)’:
-ESMC_MBMeshTestUtilPL.C:54:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-ESMC_MBMesh_RendezvousParUTest.C: In function ‘int mesh_print(ESMCI::MBMesh*)’:
-ESMC_MBMesh_RendezvousParUTest.C:74:10: warning: format ‘%d’ expects argument of type ‘int’, but argument 3 has type ‘size_t’ {aka ‘long unsigned int’} [-Wformat=]
-   printf("MESH PET %d - size = %d\n", localPet, elems.size());
-          ^~~~~~~~~~~~~~~~~~~~~~~~~~~            ~~~~~~~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Bilinear.h:31,
-                 from ESMC_MBMeshTestUtilMBMesh.C:27,
-                 from ESMC_MBMesh_SearchUTest.C:26:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from ESMC_MBMesh_SearchUTest.C:26:
-ESMC_MBMeshTestUtilMBMesh.C: In function ‘bool weights_correct(ESMCI::IWeights&, std::vector<double>)’:
-ESMC_MBMeshTestUtilMBMesh.C:68:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-In file included from ESMC_MBMesh_SearchUTest.C:27:
-ESMC_MBMeshTestUtilPL.C: In function ‘bool weights_correct_nearest(ESMCI::WMat&, std::vector<double>)’:
-ESMC_MBMeshTestUtilPL.C:54:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-ESMC_MBMesh_SearchUTest.C: In function ‘bool search_gen(ESMCI::MBMesh*, ESMCI::PointList*, std::vector<double*>&, bool)’:
-ESMC_MBMesh_SearchUTest.C:179:16: warning: comparison of integer expressions of different signedness: ‘int’ and ‘std::vector<double*>::size_type’ {aka ‘long unsigned int’} [-Wsign-compare]
-       if (ind1 >= cv.size()) {rc = ESMC_RC_VAL_OUTOFRANGE; break;}
-           ~~~~~^~~~~~~~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Bilinear.h:31,
-                 from ESMC_MBMeshTestUtilMBMesh.C:27,
-                 from ESMC_MBMesh_UtilUTest.C:26:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from ESMC_MBMesh_UtilUTest.C:26:
-ESMC_MBMeshTestUtilMBMesh.C: In function ‘bool weights_correct(ESMCI::IWeights&, std::vector<double>)’:
-ESMC_MBMeshTestUtilMBMesh.C:68:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h:23,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h:18,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h:17,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_MBMesh_Bilinear.h:31,
-                 from ESMC_MBMeshTestUtilMBMesh.C:27,
-                 from ESMC_MBMesh_UtilParUTest.C:25:
-/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
- #warning \
-  ^~~~~~~
-In file included from ESMC_MBMesh_UtilParUTest.C:25:
-ESMC_MBMeshTestUtilMBMesh.C: In function ‘bool weights_correct(ESMCI::IWeights&, std::vector<double>)’:
-ESMC_MBMeshTestUtilMBMesh.C:68:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
-In file included from ESMC_NearestUTest.C:24:
-ESMC_MBMeshTestUtilPL.C: In function ‘bool weights_correct_nearest(ESMCI::WMat&, std::vector<double>)’:
-ESMC_MBMeshTestUtilPL.C:54:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
-     if (weights.size() != ind) correct = false;
-         ~~~~~~~~~~~~~~~^~~~~~
 ESMF_MeshOpUTest.F90:456:0:
 
    end function make_mesh_sph
  
 Warning: control reaches end of non-void function [-Wreturn-type]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_MeshUTest.F90:658:13:
+ESMF_MeshUTest.F90:7155:13:
+
+          if (nodeCoords(k) .ne. nodeCoordsTst(k)) correct=.false.
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_MeshUTest.F90:7197:10:
+
+       if (elemArea(i) .ne. elemAreaTst(i)) correct=.false.
+          1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_MeshUTest.F90:7205:13:
+
+          if (elemCoords(k) .ne. elemCoordsTst(k)) correct=.false.
+             1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_MeshUTest.F90:7282:10:
+
+       if (elemArea(i) .ne. elemAreaTst(i)) correct=.false.
+          1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_MeshUTest.F90:675:13:
 
           if (nodeCoords(2*i-1) .ne. ownedNodeCoords(2*j-1)) correct=.false.
              1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:659:13:
+ESMF_MeshUTest.F90:676:13:
 
           if (nodeCoords(2*i) .ne. ownedNodeCoords(2*j)) correct=.false.
              1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:664:9:
+ESMF_MeshUTest.F90:681:9:
 
       if (elemCoords(2*i-1) .ne. ownedElemCoords(2*i-1)) correct=.false.
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:665:9:
+ESMF_MeshUTest.F90:682:9:
 
       if (elemCoords(2*i) .ne. ownedElemCoords(2*i)) correct=.false.
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:1169:9:
+ESMF_MeshUTest.F90:1189:9:
 
       if (fieldAreaPtr(i) .ne. elemAreas(j)) correct=.false.
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:1884:20:
+ESMF_MeshUTest.F90:1899:20:
 
        if (.not. ALL(ownedNodeCoords .eq. &
                     1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:1899:21:
+ESMF_MeshUTest.F90:1914:21:
 
         if (.not. ALL(ownedNodeCoords .eq. &
                      1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:1908:22:
+ESMF_MeshUTest.F90:1923:22:
 
          if (.not. ALL(ownedNodeCoords .eq. &
                       1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:1915:22:
+ESMF_MeshUTest.F90:1930:22:
 
          if (.not. ALL(ownedNodeCoords .eq. &
                       1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:1922:22:
+ESMF_MeshUTest.F90:1937:22:
 
          if (.not. ALL(ownedNodeCoords .eq. &
                       1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:2538:9:
+ESMF_MeshUTest.F90:2564:9:
 
       if (areaPtr(1) .ne. 7.0) correct=.false.
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:2539:9:
+ESMF_MeshUTest.F90:2565:9:
 
       if (areaPtr(2) .ne. 8.0) correct=.false.
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:2540:9:
+ESMF_MeshUTest.F90:2566:9:
 
       if (areaPtr(3) .ne. 9.0) correct=.false.
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:2541:9:
+ESMF_MeshUTest.F90:2567:9:
 
       if (areaPtr(4) .ne. 10.0) correct=.false.
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:2544:12:
+ESMF_MeshUTest.F90:2570:12:
 
          if (areaPtr(1) .ne. 7.0) correct=.false.
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:2546:12:
+ESMF_MeshUTest.F90:2572:12:
 
          if (areaPtr(1) .ne. 8.0) correct=.false.
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:2548:12:
+ESMF_MeshUTest.F90:2574:12:
 
          if (areaPtr(1) .ne. 9.0) correct=.false.
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_MeshUTest.F90:2550:12:
+ESMF_MeshUTest.F90:2576:12:
+
+         if (areaPtr(1) .ne. 10.0) correct=.false.
+            1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_MeshUTest.F90:2685:9:
+
+      if (areaPtr(1) .ne. 7.0) correct=.false.
+         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_MeshUTest.F90:2686:9:
+
+      if (areaPtr(2) .ne. 8.0) correct=.false.
+         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_MeshUTest.F90:2687:9:
+
+      if (areaPtr(3) .ne. 9.0) correct=.false.
+         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_MeshUTest.F90:2688:9:
+
+      if (areaPtr(4) .ne. 10.0) correct=.false.
+         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_MeshUTest.F90:2691:12:
+
+         if (areaPtr(1) .ne. 7.0) correct=.false.
+            1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_MeshUTest.F90:2693:12:
+
+         if (areaPtr(1) .ne. 8.0) correct=.false.
+            1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_MeshUTest.F90:2695:12:
+
+         if (areaPtr(1) .ne. 9.0) correct=.false.
+            1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_MeshUTest.F90:2697:12:
 
          if (areaPtr(1) .ne. 10.0) correct=.false.
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h:22,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h:19,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/tests/../include/ESMCI_Regrid_Nearest.h:16,
+                 from ESMC_MeshTestGenPL.C:25,
+                 from ESMC_NearestUTest.C:24:
+/apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
+ #warning \
+  ^~~~~~~
+In file included from ESMC_NearestUTest.C:24:
+ESMC_MeshTestGenPL.C: In function ‘bool weights_correct_nearest(ESMCI::WMat&, std::vector<double>)’:
+ESMC_MeshTestGenPL.C:54:24: warning: comparison of integer expressions of different signedness: ‘std::vector<double>::size_type’ {aka ‘long unsigned int’} and ‘int’ [-Wsign-compare]
+     if (weights.size() != ind) correct = false;
+         ~~~~~~~~~~~~~~~^~~~~~
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 ESMF_LocStreamUTest.F90:731:18:
 
@@ -1083,158 +981,163 @@ Warning: control reaches end of non-void function [-Wreturn-type]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_FieldCreateGetUTest.F90:7283:23:
+ESMF_FieldCreateGetUTest.F90:7364:23:
 
                      if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
                        1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:6842:18:
+ESMF_FieldCreateGetUTest.F90:6921:18:
 
                 if(farray1(ii,ij) .ne. n ) localrc = ESMF_FAILURE
                   1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:6623:19:
+ESMF_FieldCreateGetUTest.F90:6702:19:
 
                  if(farray1(ii,ij,ik) .ne. n ) localrc = ESMF_FAILURE
                    1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:6371:19:
+ESMF_FieldCreateGetUTest.F90:6450:19:
 
                  if(farray1(ii,ij,ik) .ne. n ) localrc = ESMF_FAILURE
                    1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:6132:23:
+ESMF_FieldCreateGetUTest.F90:6211:23:
 
                      if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
                        1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:5861:19:
+ESMF_FieldCreateGetUTest.F90:5940:19:
 
                  if(farray1(ii,ij,ik) .ne. n ) localrc = ESMF_FAILURE
                    1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:5631:23:
+ESMF_FieldCreateGetUTest.F90:5710:23:
 
                      if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
                        1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:5389:23:
+ESMF_FieldCreateGetUTest.F90:5468:23:
 
                      if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
                        1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:5106:23:
+ESMF_FieldCreateGetUTest.F90:5185:23:
 
                      if(farray1(ii,ij,ik,il,im,io,ip) /= n) then
                        1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:5149:23:
+ESMF_FieldCreateGetUTest.F90:5228:23:
 
                      if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
                        1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:4925:23:
+ESMF_FieldCreateGetUTest.F90:4994:23:
 
                      if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
                        1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:4691:23:
+ESMF_FieldCreateGetUTest.F90:4758:23:
 
                      if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
                        1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldCreateGetUTest.F90:4467:23:
+ESMF_FieldCreateGetUTest.F90:4534:23:
 
                      if(farray1(ii,ij,ik,il,im,io,ip) .ne. n ) localrc = ESMF_FAILURE
                        1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_FieldRegridCsrvUTest.F90:17676:9:
+ESMF_FieldRegridCsrvUTest.F90:18973:9:
 
       if (srcFracPtr(i1) .ne. 0.0) correct=.false.
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:17689:9:
+ESMF_FieldRegridCsrvUTest.F90:18986:9:
 
       if (dstFracPtr(i1) .ne. 0.0) correct=.false.
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:16726:9:
+ESMF_FieldRegridCsrvUTest.F90:18023:9:
 
       if (dstFracPtr(i1) .ne. 0.0) then
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:16732:9:
+ESMF_FieldRegridCsrvUTest.F90:18029:9:
 
       if (xdstFarrayPtr(i1) .ne. 0.0) then
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:15054:12:
+ESMF_FieldRegridCsrvUTest.F90:16351:12:
 
          if (xfptr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:13450:9:
+ESMF_FieldRegridCsrvUTest.F90:14747:9:
 
       if (xdstFarrayPtr(i1) .ne. 0.0) then
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:12344:9:
+ESMF_FieldRegridCsrvUTest.F90:13641:9:
 
       if (xdstFarrayPtr(i1) .ne. 0.0) then
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:11330:9:
+ESMF_FieldRegridCsrvUTest.F90:12627:9:
 
       if (xdstFarrayPtr(i1) .ne. 0.0) then
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:10336:9:
+ESMF_FieldRegridCsrvUTest.F90:11633:9:
 
       if (xdstFarrayPtr(i1) .ne. 0.0) then
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:9341:9:
+ESMF_FieldRegridCsrvUTest.F90:10638:9:
 
       if (xdstFarrayPtr(i1) .ne. 0.0) then
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:8198:13:
+ESMF_FieldRegridCsrvUTest.F90:9495:13:
 
           if (xfarrayPtr(i1,i2) .ne. 0.0) then
              1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:7440:9:
+ESMF_FieldRegridCsrvUTest.F90:8737:9:
 
       if (xdstFarrayPtr(i1) .ne. 0.0) then
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:5625:12:
+ESMF_FieldRegridCsrvUTest.F90:7649:9:
+
+      if (xdstFarrayPtr(i1) .ne. 0.0) then
+         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_FieldRegridCsrvUTest.F90:5834:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:4773:9:
+ESMF_FieldRegridCsrvUTest.F90:4982:9:
 
       if (xdstFarrayPtr(i1) .ne. 0.0) then
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:3665:12:
+ESMF_FieldRegridCsrvUTest.F90:3874:12:
 
          if (xfptr(i1,i2,i3) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:2805:12:
+ESMF_FieldRegridCsrvUTest.F90:3014:12:
 
          if (xfptr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:2031:12:
+ESMF_FieldRegridCsrvUTest.F90:2240:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCsrvUTest.F90:1278:12:
+ESMF_FieldRegridCsrvUTest.F90:1487:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
@@ -1316,233 +1219,248 @@ ESMF_FieldRegridCsrv2ndUTest.F90:2229:9:
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_FieldRegridUTest.F90:39939:12:
+ESMF_FieldRegridUTest.F90:43148:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:39457:9:
+ESMF_FieldRegridUTest.F90:42628:12:
+
+         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+            1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_FieldRegridUTest.F90:40493:12:
+
+         if (xfarrayPtr(i1,i2) .ne. 0.0) then
+            1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_FieldRegridUTest.F90:39997:9:
 
       if (xdstFarrayPtr(i1) .ne. 0.0) then
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:38265:12:
+ESMF_FieldRegridUTest.F90:39581:9:
+
+      if (xdstFarrayPtr(i1) .ne. 0.0) then
+         1
+Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
+ESMF_FieldRegridUTest.F90:38389:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:37847:12:
+ESMF_FieldRegridUTest.F90:37971:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:37443:10:
+ESMF_FieldRegridUTest.F90:37567:10:
 
        if (xfarrayPtr1D(i1) .ne. 0.0) then
           1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:35274:12:
+ESMF_FieldRegridUTest.F90:35398:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:34802:12:
+ESMF_FieldRegridUTest.F90:34926:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:33597:32:
+ESMF_FieldRegridUTest.F90:33721:32:
 
          farrayPtrXC_R4(i1,i2) = REAL(i1-1)*src_dx
                                 1
 Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1) [-Wconversion]
-ESMF_FieldRegridUTest.F90:33599:32:
+ESMF_FieldRegridUTest.F90:33723:32:
 
          farrayPtrYC_R4(i1,i2) = -90. + (REAL(i2-1)*src_dy + 0.5*src_dy)
                                 1
 Warning: Possible change of value in conversion from REAL(8) to REAL(4) at (1) [-Wconversion]
-ESMF_FieldRegridUTest.F90:33747:12:
+ESMF_FieldRegridUTest.F90:33871:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:32518:12:
+ESMF_FieldRegridUTest.F90:32642:12:
 
          if (xdstPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:28955:12:
+ESMF_FieldRegridUTest.F90:29079:12:
 
          if (xdstPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:26835:12:
+ESMF_FieldRegridUTest.F90:26959:12:
 
          if (xfarrayPtr(i1,i2,i3) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:26327:12:
+ESMF_FieldRegridUTest.F90:26451:12:
 
          if (xfarrayPtr(i1,i2,i3) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:25820:12:
+ESMF_FieldRegridUTest.F90:25944:12:
 
          if (xfarrayPtr(i1,i2,i3) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:25320:12:
+ESMF_FieldRegridUTest.F90:25444:12:
 
          if (xfarrayPtr(i1,i2,i3) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:24604:12:
+ESMF_FieldRegridUTest.F90:24728:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:23881:9:
+ESMF_FieldRegridUTest.F90:24005:9:
 
       if (xfarrayPtr1D(i1) .ne. 0.0) then
          1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:21948:12:
+ESMF_FieldRegridUTest.F90:22072:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:20168:13:
+ESMF_FieldRegridUTest.F90:20292:13:
 
    dst_minx = 0.5
              1
 Warning: Change of value in conversion from ‘REAL(4)’ to ‘INTEGER(4)’ at (1) [-Wconversion]
-ESMF_FieldRegridUTest.F90:20169:13:
+ESMF_FieldRegridUTest.F90:20293:13:
 
    dst_miny = 0.5
              1
 Warning: Change of value in conversion from ‘REAL(4)’ to ‘INTEGER(4)’ at (1) [-Wconversion]
-ESMF_FieldRegridUTest.F90:20171:13:
+ESMF_FieldRegridUTest.F90:20295:13:
 
    dst_maxx = 20.5
              1
 Warning: Change of value in conversion from ‘REAL(4)’ to ‘INTEGER(4)’ at (1) [-Wconversion]
-ESMF_FieldRegridUTest.F90:20172:13:
+ESMF_FieldRegridUTest.F90:20296:13:
 
    dst_maxy = 9.5
              1
 Warning: Change of value in conversion from ‘REAL(4)’ to ‘INTEGER(4)’ at (1) [-Wconversion]
-ESMF_FieldRegridUTest.F90:18071:12:
+ESMF_FieldRegridUTest.F90:18195:12:
 
          if (xdstPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:17677:12:
+ESMF_FieldRegridUTest.F90:17801:12:
 
          if (xdstPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:17283:12:
+ESMF_FieldRegridUTest.F90:17407:12:
 
          if (xdstPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:16385:12:
+ESMF_FieldRegridUTest.F90:16509:12:
 
          if (xdstXtraPtr(i1,i2,i3) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:14883:12:
+ESMF_FieldRegridUTest.F90:15007:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:5341:14:
+ESMF_FieldRegridUTest.F90:5465:14:
 
            if (farrayPtr(i1,i2) /= -1000) then
               1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:4928:14:
+ESMF_FieldRegridUTest.F90:5052:14:
 
            if (farrayPtr(i1,i2) /= -1000) then
               1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:4936:14:
+ESMF_FieldRegridUTest.F90:5060:14:
 
            if (farrayPtrPatch(i1,i2) /= -1000) then
               1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:3146:12:
+ESMF_FieldRegridUTest.F90:3270:12:
 
          if (farrayPtr(i1,i2,i3) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:2674:12:
+ESMF_FieldRegridUTest.F90:2798:12:
 
          if (farrayPtr(i1,i2,i3) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:2200:12:
+ESMF_FieldRegridUTest.F90:2324:12:
 
          if (farrayPtr(i1,i2,i3) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridUTest.F90:1728:12:
+ESMF_FieldRegridUTest.F90:1852:12:
 
          if (farrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_FieldRegridCSUTest.F90:4928:12:
+ESMF_FieldRegridCSUTest.F90:4938:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCSUTest.F90:4436:12:
+ESMF_FieldRegridCSUTest.F90:4446:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCSUTest.F90:3958:12:
+ESMF_FieldRegridCSUTest.F90:3968:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCSUTest.F90:3513:12:
+ESMF_FieldRegridCSUTest.F90:3523:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCSUTest.F90:3147:12:
+ESMF_FieldRegridCSUTest.F90:3157:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCSUTest.F90:2781:12:
+ESMF_FieldRegridCSUTest.F90:2791:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCSUTest.F90:2338:12:
+ESMF_FieldRegridCSUTest.F90:2348:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCSUTest.F90:1847:12:
+ESMF_FieldRegridCSUTest.F90:1857:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCSUTest.F90:1449:12:
+ESMF_FieldRegridCSUTest.F90:1459:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCSUTest.F90:1051:12:
+ESMF_FieldRegridCSUTest.F90:1061:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_FieldRegridCSUTest.F90:655:12:
+ESMF_FieldRegridCSUTest.F90:665:12:
 
          if (xfarrayPtr(i1,i2) .ne. 0.0) then
             1
@@ -1627,291 +1545,251 @@ Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_AttributeArrayUTest.F90:983:7:
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_AttributeArrayUTest.F90:961:7:
 
   .and.(inR8==outR8) &
        1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeArrayUTest.F90:1012:40:
+ESMF_AttributeArrayUTest.F90:990:40:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and.(defaultR8==dfltoutR8), &
                                         1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeArrayUTest.F90:1076:12:
+ESMF_AttributeArrayUTest.F90:1044:12:
 
   .and. all (inR8l==outR8l) &
             1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeArrayUTest.F90:1105:45:
+ESMF_AttributeArrayUTest.F90:1073:45:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and. all (defaultR8l==dfltoutR8l), &
                                              1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeArrayUTest.F90:1117:6:
-
-  all (dfltOutR8l==defaultR8lWrong(1:size(DfltOutR8l))), &
-      1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_AttributeABundleUTest.F90:987:7:
+ESMF_AttributeABundleUTest.F90:965:7:
 
   .and.(inR8==outR8) &
        1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeABundleUTest.F90:1016:40:
+ESMF_AttributeABundleUTest.F90:994:40:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and.(defaultR8==dfltoutR8), &
                                         1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeABundleUTest.F90:1080:12:
+ESMF_AttributeABundleUTest.F90:1048:12:
 
   .and. all (inR8l==outR8l) &
             1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeABundleUTest.F90:1109:45:
+ESMF_AttributeABundleUTest.F90:1077:45:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and. all (defaultR8l==dfltoutR8l), &
                                              1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeABundleUTest.F90:1121:6:
-
-  all (dfltOutR8l==defaultR8lWrong(1:size(DfltOutR8l))), &
-      1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_AttributeCplCompUTest.F90:989:7:
+ESMF_AttributeCplCompUTest.F90:967:7:
 
   .and.(inR8==outR8) &
        1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeCplCompUTest.F90:1018:40:
+ESMF_AttributeCplCompUTest.F90:996:40:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and.(defaultR8==dfltoutR8), &
                                         1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeCplCompUTest.F90:1082:12:
+ESMF_AttributeCplCompUTest.F90:1050:12:
 
   .and. all (inR8l==outR8l) &
             1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeCplCompUTest.F90:1111:45:
+ESMF_AttributeCplCompUTest.F90:1079:45:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and. all (defaultR8l==dfltoutR8l), &
                                              1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeCplCompUTest.F90:1123:6:
-
-  all (dfltOutR8l==defaultR8lWrong(1:size(DfltOutR8l))), &
-      1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_AttributeDistGridUTest.F90:978:7:
+ESMF_AttributeDistGridUTest.F90:956:7:
 
   .and.(inR8==outR8) &
        1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeDistGridUTest.F90:1007:40:
+ESMF_AttributeDistGridUTest.F90:985:40:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and.(defaultR8==dfltoutR8), &
                                         1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeDistGridUTest.F90:1071:12:
+ESMF_AttributeDistGridUTest.F90:1039:12:
 
   .and. all (inR8l==outR8l) &
             1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeDistGridUTest.F90:1100:45:
+ESMF_AttributeDistGridUTest.F90:1068:45:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and. all (defaultR8l==dfltoutR8l), &
                                              1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeDistGridUTest.F90:1112:6:
-
-  all (dfltOutR8l==defaultR8lWrong(1:size(DfltOutR8l))), &
-      1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_AttributeFBundleUTest.F90:987:7:
+ESMF_AttributeFBundleUTest.F90:965:7:
 
   .and.(inR8==outR8) &
        1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeFBundleUTest.F90:1016:40:
+ESMF_AttributeFBundleUTest.F90:994:40:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and.(defaultR8==dfltoutR8), &
                                         1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeFBundleUTest.F90:1080:12:
+ESMF_AttributeFBundleUTest.F90:1048:12:
 
   .and. all (inR8l==outR8l) &
             1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeFBundleUTest.F90:1109:45:
+ESMF_AttributeFBundleUTest.F90:1077:45:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and. all (defaultR8l==dfltoutR8l), &
                                              1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeFBundleUTest.F90:1121:6:
-
-  all (dfltOutR8l==defaultR8lWrong(1:size(DfltOutR8l))), &
-      1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_AttributeFieldUTest.F90:984:7:
+ESMF_AttributeFieldUTest.F90:962:7:
 
   .and.(inR8==outR8) &
        1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeFieldUTest.F90:1013:40:
+ESMF_AttributeFieldUTest.F90:991:40:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and.(defaultR8==dfltoutR8), &
                                         1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeFieldUTest.F90:1077:12:
+ESMF_AttributeFieldUTest.F90:1045:12:
 
   .and. all (inR8l==outR8l) &
             1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeFieldUTest.F90:1106:45:
+ESMF_AttributeFieldUTest.F90:1074:45:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and. all (defaultR8l==dfltoutR8l), &
                                              1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeFieldUTest.F90:1118:6:
-
-  all (dfltOutR8l==defaultR8lWrong(1:size(DfltOutR8l))), &
-      1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_AttributeGridCompUTest.F90:989:7:
+ESMF_AttributeGridCompUTest.F90:967:7:
 
   .and.(inR8==outR8) &
        1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeGridCompUTest.F90:1018:40:
+ESMF_AttributeGridCompUTest.F90:996:40:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and.(defaultR8==dfltoutR8), &
                                         1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeGridCompUTest.F90:1082:12:
+ESMF_AttributeGridCompUTest.F90:1050:12:
 
   .and. all (inR8l==outR8l) &
             1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeGridCompUTest.F90:1111:45:
+ESMF_AttributeGridCompUTest.F90:1079:45:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and. all (defaultR8l==dfltoutR8l), &
                                              1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeGridCompUTest.F90:1123:6:
-
-  all (dfltOutR8l==defaultR8lWrong(1:size(DfltOutR8l))), &
-      1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_AttributeGridUTest.F90:980:7:
+ESMF_AttributeGridUTest.F90:958:7:
 
   .and.(inR8==outR8) &
        1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeGridUTest.F90:1009:40:
+ESMF_AttributeGridUTest.F90:987:40:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and.(defaultR8==dfltoutR8), &
                                         1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeGridUTest.F90:1073:12:
+ESMF_AttributeGridUTest.F90:1041:12:
 
   .and. all (inR8l==outR8l) &
             1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeGridUTest.F90:1102:45:
+ESMF_AttributeGridUTest.F90:1070:45:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and. all (defaultR8l==dfltoutR8l), &
                                              1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeGridUTest.F90:1114:6:
-
-  all (dfltOutR8l==defaultR8lWrong(1:size(DfltOutR8l))), &
-      1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_AttributeLocStreamUTest.F90:976:7:
+ESMF_AttributeLocStreamUTest.F90:954:7:
 
   .and.(inR8==outR8) &
        1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeLocStreamUTest.F90:1005:40:
+ESMF_AttributeLocStreamUTest.F90:983:40:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and.(defaultR8==dfltoutR8), &
                                         1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeLocStreamUTest.F90:1069:12:
+ESMF_AttributeLocStreamUTest.F90:1037:12:
 
   .and. all (inR8l==outR8l) &
             1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeLocStreamUTest.F90:1098:45:
+ESMF_AttributeLocStreamUTest.F90:1066:45:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and. all (defaultR8l==dfltoutR8l), &
                                              1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeLocStreamUTest.F90:1110:6:
-
-  all (dfltOutR8l==defaultR8lWrong(1:size(DfltOutR8l))), &
-      1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_AttributeSciCompUTest.F90:989:7:
+ESMF_AttributeSciCompUTest.F90:967:7:
 
   .and.(inR8==outR8) &
        1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeSciCompUTest.F90:1018:40:
+ESMF_AttributeSciCompUTest.F90:996:40:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and.(defaultR8==dfltoutR8), &
                                         1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeSciCompUTest.F90:1082:12:
+ESMF_AttributeSciCompUTest.F90:1050:12:
 
   .and. all (inR8l==outR8l) &
             1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeSciCompUTest.F90:1111:45:
+ESMF_AttributeSciCompUTest.F90:1079:45:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and. all (defaultR8l==dfltoutR8l), &
                                              1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeSciCompUTest.F90:1123:6:
-
-  all (dfltOutR8l==defaultR8lWrong(1:size(DfltOutR8l))), &
-      1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-ESMF_AttributeStateUTest.F90:994:7:
+ESMF_AttributeStateUTest.F90:972:7:
 
   .and.(inR8==outR8) &
        1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeStateUTest.F90:1023:40:
+ESMF_AttributeStateUTest.F90:1001:40:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and.(defaultR8==dfltoutR8), &
                                         1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeStateUTest.F90:1087:12:
+ESMF_AttributeStateUTest.F90:1055:12:
 
   .and. all (inR8l==outR8l) &
             1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeStateUTest.F90:1116:45:
+ESMF_AttributeStateUTest.F90:1084:45:
 
   call ESMF_Test((rc==ESMF_SUCCESS).and. all (defaultR8l==dfltoutR8l), &
                                              1
 Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
-ESMF_AttributeStateUTest.F90:1128:6:
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_AttributeUtilUTest.F90:88:0:
 
-  all (dfltOutR8l==defaultR8lWrong(1:size(DfltOutR8l))), &
-      1
-Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
+   name_key = "AttributeName"
+ 
+Warning: ‘.name_key’ may be used uninitialized in this function [-Wmaybe-uninitialized]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
@@ -1923,18 +1801,6 @@ Warning: Equality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-cat: ./PET*MBMesh_DualUTest.Log: No such file or directory
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
@@ -2009,6 +1875,8 @@ Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 user_modelC.F90:194:16:
 
              if (ftrptr1(i,j) /= solution) count = count+1
@@ -2020,9 +1888,6 @@ user_modelC.F90:194:16:
              if (ftrptr1(i,j) /= solution) count = count+1
                 1
 Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 ioComp.F90:132:9:
 
@@ -2050,6 +1915,18 @@ Warning: Change of value in conversion from ‘REAL(8)’ to ‘REAL(4)’ at (1
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
+ESMF_InfoTutorialEx.F90:167:0:
+
+     output = ESMF_InfoDump(info, rc=rc)
+ 
+Warning: ‘.output’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+ESMF_InfoTutorialEx.F90:35:0:
+
+     program ESMF_InfoTutorial
+ 
+note: ‘.output’ was declared here
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
@@ -2199,23 +2076,23 @@ ESMF_DistGridEx.F90:17:23: Warning: Integer division truncated to constant ‘2�
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/examples/../include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/examples/../include/ESMCI_Mesh.h:23,
                  from ESMC_DCatEx.C:20:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
   ^~~~~~~
 In file included from /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/strstream:50,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
-                 from /work/noaa/da/mpotts/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/examples/../include/ESMCI_Mesh.h:23,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VMKernel.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_VM.h:41,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_Base.h:27,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/include/ESMCI_RHandle.h:39,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Field/include/ESMCI_Field.h:42,
+                 from /work/noaa/da/mpotts/sandbox/gfortran_8.3.0_openmpi_g/src/Infrastructure/Mesh/examples/../include/ESMCI_Mesh.h:23,
                  from ESMC_RefineEx.C:13:
 /apps/gcc-8/gcc-8.3.0/include/c++/8.3.0/backward/backward_warning.h:32:2: warning: #warning This file includes at least one deprecated or antiquated header which may be removed without further notice at a future date. Please use a non-deprecated interface with equivalent functionality instead. For a listing of replacement headers and interfaces, consult the file backward_warning.h. To disable this warning use -Wno-deprecated. [-Wcpp]
  #warning \
@@ -2254,7 +2131,6 @@ Warning: Inequality comparison for REAL(8) at (1) [-Wcompare-reals]
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 ESMF_InternalStateEx.F90:117:40:
 
    if ((datap%testValue .ne. 4567) .or. (datap%testScaling .ne. 0.5)) then
@@ -2271,14 +2147,6 @@ ESMF_InternalStateModEx.F90:149:10:
        if (data%testArray(i) .ne. real(i)) match = .false. ! test array data
           1
 Warning: Inequality comparison for REAL(4) at (1) [-Wcompare-reals]
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
-/bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5
 /bin/ld: warning: libgfortran.so.3, needed by /apps/openmpi-4.0.4/openmpi-4.0.4/lib/libmpi_usempi.so, may conflict with libgfortran.so.5

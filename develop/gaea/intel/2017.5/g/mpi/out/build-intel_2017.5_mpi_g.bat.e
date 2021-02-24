@@ -45,10 +45,6 @@ Copyright (C) 1985-2019 Intel Corporation.  All rights reserved.
           *out++ = value;
                  ^
 
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/prologue/yaml-cpp/src/convert.cpp(9): warning #2259: non-pointer conversion from "int" to "char" may lose significant bits
-  char ToLower(char ch) { return IsUpper(ch) ? ch + 'a' - 'A' : ch; }
-                                 ^
-
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/prologue/yaml-cpp/src/stream.cpp(163): warning #2259: non-pointer conversion from "int" to "const unsigned char" may lose significant bits
     const unsigned char header = ((1 << lead_bits) - 1) << (8 - lead_bits);
                                  ^
@@ -56,6 +52,10 @@ Copyright (C) 1985-2019 Intel Corporation.  All rights reserved.
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/prologue/yaml-cpp/src/stream.cpp(164): warning #2259: non-pointer conversion from "int" to "const unsigned char" may lose significant bits
     const unsigned char mask = (0xFF >> (lead_bits + 1));
                                ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/prologue/yaml-cpp/src/convert.cpp(9): warning #2259: non-pointer conversion from "int" to "char" may lose significant bits
+  char ToLower(char ch) { return IsUpper(ch) ? ch + 'a' - 'A' : ch; }
+                                 ^
 
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
@@ -84,8 +84,8 @@ In file included from /usr/include/c++/7/backward/strstream(50),
 In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/src/../include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/src/ESMCI_VMKernel.C(13):
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/src/../include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/src/ESMCI_VMKernel.C(13):
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/src/ESMCI_VM.C(40):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
@@ -111,26 +111,26 @@ In file included from /usr/include/c++/7/backward/strstream(50),
     matchTable_vmID[matchTableBound].vmKey[vmKeyWidth-1] =
                                                          ^
 
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/src/ESMCI_VMKernel.C(7302): warning #2259: non-pointer conversion from "double" to "int" may lose significant bits
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/src/ESMCI_VMKernel.C(7353): warning #2259: non-pointer conversion from "double" to "int" may lose significant bits
       int waitSeconds = timeout;
                         ^
 
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/src/ESMCI_VMKernel.C(7303): warning #2259: non-pointer conversion from "double" to "int" may lose significant bits
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/src/ESMCI_VMKernel.C(7354): warning #2259: non-pointer conversion from "double" to "int" may lose significant bits
       int waitMicro   = (timeout - waitSeconds)*1000000;
                         ^
 
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/src/ESMCI_VMKernel.C(7361): warning #2259: non-pointer conversion from "double" to "int" may lose significant bits
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/src/ESMCI_VMKernel.C(7412): warning #2259: non-pointer conversion from "double" to "int" may lose significant bits
       int waitSeconds = timeout;
                         ^
 
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/src/ESMCI_VMKernel.C(7362): warning #2259: non-pointer conversion from "double" to "int" may lose significant bits
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/src/ESMCI_VMKernel.C(7413): warning #2259: non-pointer conversion from "double" to "int" may lose significant bits
       int waitMicro   = (timeout - waitSeconds)*1000000;
                         ^
 
 In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/interface/../include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/interface/../include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/interface/ESMC_VM.C(32):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/interface/ESMCI_VM_F.C(20):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -138,7 +138,7 @@ In file included from /usr/include/c++/7/backward/strstream(50),
 In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/interface/../include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/interface/../include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/interface/ESMCI_VM_F.C(20):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/VM/interface/ESMC_VM.C(32):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -2756,19 +2756,19 @@ In file included from /usr/include/c++/7/backward/strstream(50),
 
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 In file included from /usr/include/c++/7/backward/strstream(50),
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Base/src/../include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Base/src/../include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Base/src/ESMC_InfoCDef.C(26):
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Base/src/ESMC_InfoCDefGeneric.C(36):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Base/src/../include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Base/src/ESMC_InfoCDef.C(26):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -6604,6 +6604,26 @@ In file included from /usr/include/c++/7/backward/strstream(50),
 In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO.h(34),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/ESMCI_IO.C(24):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO_NetCDF.h(39),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C(24):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO_Handler.h(38),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/ESMCI_IO_Handler.C(24):
@@ -6615,18 +6635,8 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO_NetCDF.h(39),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/ESMCI_IO_NetCDF.C(24):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO.h(34),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/ESMCI_IO.C(24):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO_Gridspec.h(32),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/ESMCI_IO_Gridspec.C(24):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -6637,16 +6647,6 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO_Scrip.h(32),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/ESMCI_IO_Scrip.C(24):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/../include/ESMCI_IO_Gridspec.h(32),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/IO/src/ESMCI_IO_Gridspec.C(24):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -6791,10 +6791,10 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_DistGrid.h(36),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Grid/interface/../include/ESMCI_Grid.h(35),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Grid/interface/ESMCI_Grid_F.C(23):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_DistGrid.h(36),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Grid/interface/ESMC_Grid.C(26):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Grid/interface/ESMCI_Grid_F.C(23):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -6806,18 +6806,18 @@ In file included from /usr/include/c++/7/backward/strstream(50),
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C(28):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
 In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_ClumpPnts.C(21):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_Glue.C(28):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -6836,7 +6836,10 @@ In file included from /usr/include/c++/7/backward/strstream(50),
 In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C(19):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Grid.h(35),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h(23),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C(23):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -6862,10 +6865,7 @@ In file included from /usr/include/c++/7/backward/strstream(50),
 In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Grid.h(35),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh_GToM_Glue.h(23),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh_GToM_Glue.C(23):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C(17):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -6873,7 +6873,7 @@ In file included from /usr/include/c++/7/backward/strstream(50),
 In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Dual.C(17):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCXX.C(19):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -6891,8 +6891,7 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Redist.h(17),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C(18):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C(22):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -6912,16 +6911,6 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Extrapolation.C(22):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
@@ -6932,25 +6921,12 @@ In file included from /usr/include/c++/7/backward/strstream(50),
    ^
 
 In file included from /usr/include/c++/7/backward/strstream(50),
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h(20),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h(20),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C(12):
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C(18):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Redist.h(17),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_Rendez_Nearest.C(18):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -6959,34 +6935,34 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h(20),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_Search_Nearest.C(13):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
 In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h(23),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C(29):
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/../include/ESMCI_Mesh.h(23),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshCap.C(29):
+In file included from /usr/include/c++/7/backward/strstream(50),
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
-In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C(19):
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshDual.C(19):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C(18):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -7006,37 +6982,61 @@ In file included from /usr/include/c++/7/backward/strstream(50),
 In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+In file included from /usr/include/c++/7/backward/strstream(50),
+In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MeshRedist.C(18):
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h(20),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_Regrid_Nearest.C(18):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h(20),
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_Search_NearestNPnts.C(12):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_XGridUtil.C(12):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Search_Nearest.h(20),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C(16):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Bilinear.C(16):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_Search_Nearest.C(13):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -7066,6 +7066,14 @@ In file included from /usr/include/c++/7/backward/strstream(50),
       int proc=BAD_PROC;
                ^
 
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C(32):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_Mesh.C(700): warning #2259: non-pointer conversion from "int" to "ESMCI::MeshObj::Relation::ordinal_type={ESMCI::UShort={unsigned short}}" may lose significant bits
                  r.ordinal = obj_ord;
                            ^
@@ -7078,19 +7086,11 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  erel.rotation = obj_type == MeshObj::FACE ? rotations[i] : 0;
                                ^
 
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Glue.C(32):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C(719): warning #592: variable "merr" is used before its value is set
       ESMC_CHECK_MOAB_THROW(merr)
       ^
 
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C(2493): warning #2259: non-pointer conversion from "double" to "int" may lose significant bits
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh.C(2610): warning #2259: non-pointer conversion from "double" to "int" may lose significant bits
           int area=this->get_elem_area(elem);
                    ^
 
@@ -7127,9 +7127,41 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Grid.h(35),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C(27):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Util.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Redist.C(17):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Util.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C(17):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Util.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C(17):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -7143,38 +7175,6 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Patch.C(16):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Grid.h(35),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Regrid_Glue.C(27):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Util.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_Elem.C(17):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh_Util.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/ESMCI_MBMesh_Rendez_EtoP.C(17):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -7239,16 +7239,16 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_DDir.C(60): warning #68: integer conversion resulted in a change of sign
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+    int lmin = std::numeric_limits<UInt>::max(),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_CommReg.C(17):
+               ^
+          detected during instantiation of "void ESMCI::DDir<HASH>::Create(ESMCI::UInt={unsigned int}, const ESMCI::UInt={unsigned int} *, const ESMCI::UInt={unsigned int} *) [with HASH=ESMCI::DDir_lin_hash]" at line 43
+
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_DDir.C(60): warning #68: integer conversion resulted in a change of sign
-    int lmin = std::numeric_limits<UInt>::max(),
-               ^
-          detected during instantiation of "void ESMCI::DDir<HASH>::Create(ESMCI::UInt={unsigned int}, const ESMCI::UInt={unsigned int} *, const ESMCI::UInt={unsigned int} *) [with HASH=ESMCI::DDir_lin_hash]" at line 43
 
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshllField.C(161): warning #2259: non-pointer conversion from "int" to "ESMCI::UChar={unsigned char}" may lose significant bits
       data[offsize+i*free_stride] = i+1;
@@ -7259,53 +7259,14 @@ In file included from /usr/include/c++/7/backward/strstream(50),
               ^
 
 In file included from /usr/include/c++/7/backward/strstream(50),
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_GeomRendezvous.h(18),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C(14):
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_GeomRendezvous.C(12):
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C(24):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C(14):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -7329,7 +7290,33 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEImprint.C(14):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshGen.C(14):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MEField.C(14):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -7343,6 +7330,19 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshMerge.C(15):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_MeshExodus.C(24):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -7596,39 +7596,39 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                    ^
 
 In file included from /usr/include/c++/7/backward/strstream(50),
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C(13):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_WriteWeightsPar.h(18),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeights.C(13):
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_WriteWeightsPar.C(12):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_FindPnts.h(20),
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Legacy/ESMCI_FindPnts.C(12):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
@@ -7660,39 +7660,10 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h(17),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h(16),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Integrate.C(13):
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C(15):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C(15):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C(12):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -7714,11 +7685,86 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Conserve2ndInterp.C(15):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_ConserveInterp.C(15):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Interp.h(16),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Interp.C(12):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C(12):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestLGC.C(12):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h(15),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C(13):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C(15):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -7743,19 +7789,10 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_MeshRegrid.h(15),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Extrap.C(13):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_WMat.C(12):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MEValues.h(17),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Integrate.h(16),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Integrate.C(13):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -7779,18 +7816,6 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C(12):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestNPntsLGC.C(12):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
@@ -7803,32 +7828,7 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_CreepFill.C(12):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_MBMesh.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_WMat.h(19),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Regridding/ESMCI_Search.h(22),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_SearchNearestLGC.C(12):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/include/ESMCI_Field.h(42),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/ESMCI_Mesh.h(23),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/include/Legacy/ESMCI_MeshUtils.h(17),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_PatchRecovery.C(15):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Regridding/ESMCI_Search.C(12):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -7841,9 +7841,17 @@ In file included from /usr/include/c++/7/backward/strstream(50),
         num_border = 4*sqrt((double) num_obj);
                    ^
 
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/check_param.c(92): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
-  		(*result).fval = atof(val);
-  		               ^
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/ch_input_assign.c(70): warning #2259: non-pointer conversion from "int" to "short" may lose significant bits
+  	assignment[0] = read_int(finassign, &end_flag);
+  	              ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/ch_input_read.c(231): warning #2259: non-pointer conversion from "int" to "char" may lose significant bits
+      c = getc(infile);
+        ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/ch_input_read.c(233): warning #2259: non-pointer conversion from "int" to "char" may lose significant bits
+  	c = getc(infile);
+  	  ^
 
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/ch_input_geom.c(56): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
   	xc = read_val(fingeom, &end_flag);
@@ -7857,10 +7865,6 @@ In file included from /usr/include/c++/7/backward/strstream(50),
   	zc = read_val(fingeom, &end_flag);
   	   ^
 
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/ch_input_assign.c(70): warning #2259: non-pointer conversion from "int" to "short" may lose significant bits
-  	assignment[0] = read_int(finassign, &end_flag);
-  	              ^
-
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/ch_input_graph.c(200): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
   	    	weight = read_val(fin, &end_flag);
   	    	       ^
@@ -7869,13 +7873,9 @@ In file included from /usr/include/c++/7/backward/strstream(50),
   		    eweight = read_val(fin, &end_flag);
   		            ^
 
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/ch_input_read.c(231): warning #2259: non-pointer conversion from "int" to "char" may lose significant bits
-      c = getc(infile);
-        ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/ch_input_read.c(233): warning #2259: non-pointer conversion from "int" to "char" may lose significant bits
-  	c = getc(infile);
-  	  ^
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/check_param.c(92): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
+  		(*result).fval = atof(val);
+  		               ^
 
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/coloring.c(420): warning #2259: non-pointer conversion from "double" to "int" may lose significant bits
           rand_key[i] = drand48()*100000000;
@@ -8049,6 +8049,34 @@ In file included from /usr/include/c++/7/backward/strstream(50),
       float ntol=(pw==0.0) ? 0.0 : (tot*hgp->bal_tol*ratios[pno])/pw;
                  ^
 
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c(57): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
+          new_ewgt[i] = (hg->ewgt ? hg->ewgt[i] : 1.0);
+                      ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c(87): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
+            new_ewgt[i] = (hg->ewgt ? hg->ewgt[i] : 1.0) / (size[i]-1.0);
+                        ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c(89): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
+            new_ewgt[i] = (hg->ewgt ? hg->ewgt[i] : 1.0) * 2.0 / 
+                        ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c(169): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
+           hgp->vtx_scal[i] = 1. / sqrt((double)gdegree[i]);
+                            ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c(176): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
+           hgp->vtx_scal[i] = 1. / gdegree[i];
+                            ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c(184): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
+               hgp->vtx_scal[i] = 1. / sqrt((double)hg->vwgt[i]);
+                                ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c(193): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
+              hgp->vtx_scal[i] = 1. / hg->vwgt[i];
+                               ^
+
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_refinement.c(98): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
                 Zoltan_Heap_Change_Value(&heap[part[v]], v, gain[v]);
                                                             ^
@@ -8096,34 +8124,6 @@ In file included from /usr/include/c++/7/backward/strstream(50),
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_refinement.c(932): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
                   float w=hg->vwgt ? hg->vwgt[u] : 1.0;
                           ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c(57): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
-          new_ewgt[i] = (hg->ewgt ? hg->ewgt[i] : 1.0);
-                      ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c(87): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
-            new_ewgt[i] = (hg->ewgt ? hg->ewgt[i] : 1.0) / (size[i]-1.0);
-                        ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c(89): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
-            new_ewgt[i] = (hg->ewgt ? hg->ewgt[i] : 1.0) * 2.0 / 
-                        ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c(169): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
-           hgp->vtx_scal[i] = 1. / sqrt((double)gdegree[i]);
-                            ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c(176): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
-           hgp->vtx_scal[i] = 1. / gdegree[i];
-                            ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c(184): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
-               hgp->vtx_scal[i] = 1. / sqrt((double)hg->vwgt[i]);
-                                ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_scale.c(193): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
-              hgp->vtx_scal[i] = 1. / hg->vwgt[i];
-                               ^
 
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Zoltan/phg_serialpartition.c(299): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
         bal = Zoltan_PHG_Compute_Balance(zz, shg, part_sizes, numPart, new_part); 
@@ -8355,6 +8355,21 @@ ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
+In file included from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/DualTool.cpp(16):
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/moab/DualTool.hpp(66): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
+        {xyz[0] = xyzi[0]; xyz[1] = xyzi[1]; xyz[2] = xyzi[2]; id = idi;}
+                ^
+
+In file included from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/DualTool.cpp(16):
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/moab/DualTool.hpp(66): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
+        {xyz[0] = xyzi[0]; xyz[1] = xyzi[1]; xyz[2] = xyzi[2]; id = idi;}
+                                  ^
+
+In file included from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/DualTool.cpp(16):
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/moab/DualTool.hpp(66): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
+        {xyz[0] = xyzi[0]; xyz[1] = xyzi[1]; xyz[2] = xyzi[2]; id = idi;}
+                                                    ^
+
 In file included from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/BitPage.cpp(1):
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/BitPage.hpp(131): warning #2259: non-pointer conversion from "int" to "unsigned char" may lose significant bits
     unsigned char mask = (unsigned char)(1<<per_ent)-1; // 2^per_ent - 1
@@ -8373,21 +8388,6 @@ In file included from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infr
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/BitPage.cpp(23): warning #2259: non-pointer conversion from "int" to "unsigned char" may lose significant bits
     unsigned char mask = (unsigned char)(1<<per_ent)-1; // 2^per_ent - 1
                          ^
-
-In file included from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/DualTool.cpp(16):
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/moab/DualTool.hpp(66): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
-        {xyz[0] = xyzi[0]; xyz[1] = xyzi[1]; xyz[2] = xyzi[2]; id = idi;}
-                ^
-
-In file included from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/DualTool.cpp(16):
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/moab/DualTool.hpp(66): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
-        {xyz[0] = xyzi[0]; xyz[1] = xyzi[1]; xyz[2] = xyzi[2]; id = idi;}
-                                  ^
-
-In file included from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/DualTool.cpp(16):
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/moab/DualTool.hpp(66): warning #2259: non-pointer conversion from "double" to "float" may lose significant bits
-        {xyz[0] = xyzi[0]; xyz[1] = xyzi[1]; xyz[2] = xyzi[2]; id = idi;}
-                                                    ^
 
 In file included from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/BitTag.cpp(2):
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/BitPage.hpp(131): warning #2259: non-pointer conversion from "int" to "unsigned char" may lose significant bits
@@ -8425,15 +8425,51 @@ In file included from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infr
           int order = i->myDim;
                       ^
 
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/GeomTopoTool.cpp(2091): warning #2259: non-pointer conversion from "moab::ErrorCode" to "bool" may lose significant bits
+    rval = mdbImpl->get_entities_by_type(*child_surfaces.begin(), MBTRI, triangles); MB_CHK_ERR(rval);
+                                                                                     ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/GeomTopoTool.cpp(2094): warning #2259: non-pointer conversion from "moab::ErrorCode" to "bool" may lose significant bits
+    rval = mdbImpl->get_connectivity(&(*triangles.begin()),1,vertices); MB_CHK_ERR(rval);
+                                                                        ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/GeomTopoTool.cpp(2097): warning #2259: non-pointer conversion from "moab::ErrorCode" to "bool" may lose significant bits
+    rval = mdbImpl->get_coords(&(*vertices.begin()), 1 , &(coord[0])); MB_CHK_ERR(rval);
+                                                                       ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/GeomTopoTool.cpp(2101): warning #2259: non-pointer conversion from "moab::ErrorCode" to "bool" may lose significant bits
+    MB_CHK_SET_ERR(rval, "Failed to complete point in volume query.");
+    ^
+
 In file included from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/Core.cpp(44):
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/moab/ScdInterface.hpp(979): warning #2259: non-pointer conversion from "double" to "int" may lose significant bits
       int pi = pfactors[ind];
                ^
 
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/HigherOrderFactory.cpp(60): warning #2259: non-pointer conversion from "short" to "unsigned char" may lose significant bits
+        unsigned char x = canon_map.conn[j][0];
+                          ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/HigherOrderFactory.cpp(61): warning #2259: non-pointer conversion from "short" to "unsigned char" may lose significant bits
+        unsigned char y = canon_map.conn[j][1];
+                          ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/HigherOrderFactory.cpp(62): warning #2259: non-pointer conversion from "int" to "unsigned char" may lose significant bits
+        this_map[x][y] = num_node;
+                       ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/HigherOrderFactory.cpp(63): warning #2259: non-pointer conversion from "int" to "unsigned char" may lose significant bits
+        this_map[y][x] = num_node;
+                       ^
+
 In file included from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/HalfFacetRep.cpp(24):
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/moab/ScdInterface.hpp(979): warning #2259: non-pointer conversion from "double" to "int" may lose significant bits
       int pi = pfactors[ind];
                ^
+
+/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/HigherOrderFactory.cpp(937): warning #2259: non-pointer conversion from "moab::ErrorCode" to "bool" may lose significant bits
+        rval = mMB->get_connectivity(&( target_entity), 1, connectivity, true );MB_CHK_ERR(rval);
+                                                                                ^
 
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/HalfFacetRep.cpp(143): warning #2259: non-pointer conversion from "moab::ErrorCode" to "bool" may lose significant bits
             error = mb->get_entities_by_dimension( this->_rset, 2, felems ); MB_CHK_ERR(error);
@@ -8502,42 +8538,6 @@ In file included from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infr
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/HalfFacetRep.cpp(3225): warning #2259: non-pointer conversion from "moab::ErrorCode" to "bool" may lose significant bits
         MB_SET_ERR(MB_FAILURE,"Requesting non-manifold vertex checks for either (1) 1D mesh or (2) not-implemented entity types");
         ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/HigherOrderFactory.cpp(60): warning #2259: non-pointer conversion from "short" to "unsigned char" may lose significant bits
-        unsigned char x = canon_map.conn[j][0];
-                          ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/HigherOrderFactory.cpp(61): warning #2259: non-pointer conversion from "short" to "unsigned char" may lose significant bits
-        unsigned char y = canon_map.conn[j][1];
-                          ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/HigherOrderFactory.cpp(62): warning #2259: non-pointer conversion from "int" to "unsigned char" may lose significant bits
-        this_map[x][y] = num_node;
-                       ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/HigherOrderFactory.cpp(63): warning #2259: non-pointer conversion from "int" to "unsigned char" may lose significant bits
-        this_map[y][x] = num_node;
-                       ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/HigherOrderFactory.cpp(937): warning #2259: non-pointer conversion from "moab::ErrorCode" to "bool" may lose significant bits
-        rval = mMB->get_connectivity(&( target_entity), 1, connectivity, true );MB_CHK_ERR(rval);
-                                                                                ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/GeomTopoTool.cpp(2091): warning #2259: non-pointer conversion from "moab::ErrorCode" to "bool" may lose significant bits
-    rval = mdbImpl->get_entities_by_type(*child_surfaces.begin(), MBTRI, triangles); MB_CHK_ERR(rval);
-                                                                                     ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/GeomTopoTool.cpp(2094): warning #2259: non-pointer conversion from "moab::ErrorCode" to "bool" may lose significant bits
-    rval = mdbImpl->get_connectivity(&(*triangles.begin()),1,vertices); MB_CHK_ERR(rval);
-                                                                        ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/GeomTopoTool.cpp(2097): warning #2259: non-pointer conversion from "moab::ErrorCode" to "bool" may lose significant bits
-    rval = mdbImpl->get_coords(&(*vertices.begin()), 1 , &(coord[0])); MB_CHK_ERR(rval);
-                                                                       ^
-
-/lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/GeomTopoTool.cpp(2101): warning #2259: non-pointer conversion from "moab::ErrorCode" to "bool" may lose significant bits
-    MB_CHK_SET_ERR(rval, "Failed to complete point in volume query.");
-    ^
 
 /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Mesh/src/Moab/iMOAB.cpp(1960): warning #68: integer conversion resulted in a change of sign
     size_t i = -1;
@@ -8761,23 +8761,23 @@ ifort: warning #10182: disabling optimization; runtime debug checks enabled
   type ESMF_LocStreamType
 -------^
 In file included from /usr/include/c++/7/backward/strstream(50),
+In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/LocStream/interface/../include/ESMCI_LocStream.h(42),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/LocStream/interface/../include/ESMCI_LocStream.h(42),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/LocStream/interface/ESMCI_LocStream.C(27):
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/LocStream/interface/ESMC_LocStream.C(27):
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/LocStream/interface/../include/ESMCI_LocStream.h(42),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/LocStream/interface/ESMCI_LocStream.C(27):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -8813,7 +8813,7 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/XGrid/interface/../include/ESMCI_XGrid.h(42),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/XGrid/interface/ESMC_XGrid.C(28):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/XGrid/interface/ESMCI_XGrid.C(27):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -8824,7 +8824,7 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/XGrid/interface/../include/ESMCI_XGrid.h(42),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/XGrid/interface/ESMCI_XGrid.C(27):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/XGrid/interface/ESMC_XGrid.C(28):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -8880,27 +8880,27 @@ ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
 In file included from /usr/include/c++/7/backward/strstream(50),
 In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/interface/../include/ESMCI_Field.h(42),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/interface/ESMC_Field.C(28):
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/interface/ESMCI_Field_F.C(25):
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_RHandle.h(39),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/interface/../include/ESMCI_Field.h(42),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/interface/../include/ESMCI_Field.h(42),
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/interface/ESMC_Field.C(28):
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Field/interface/ESMCI_Field.C(27):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
@@ -8951,23 +8951,23 @@ ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 In file included from /usr/include/c++/7/backward/strstream(50),
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Array.h(38),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Array.h(38),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Superstructure/State/interface/../include/ESMCI_State.h(37),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Superstructure/State/interface/../include/ESMCI_State.h(37),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Superstructure/State/interface/ESMCI_State.C(27):
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Superstructure/State/interface/ESMCI_State_F.C(24):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Array.h(38),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Superstructure/State/interface/../include/ESMCI_State.h(37),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Superstructure/State/interface/ESMCI_State_F.C(24):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -9034,23 +9034,23 @@ In file included from /usr/include/c++/7/backward/strstream(50),
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 In file included from /usr/include/c++/7/backward/strstream(50),
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Superstructure/InfoAPI/src/ESMC_InfoDescribeCDef.C(14):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Superstructure/InfoAPI/src/ESMC_InfoCacheCDef.C(19):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
@@ -9060,7 +9060,14 @@ ifort: warning #10182: disabling optimization; runtime debug checks enabled
 In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Comp.h(32),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Superstructure/WebServices/src/../include/ESMCI_WebServ.h(21),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Superstructure/WebServices/src/ESMCI_WebServ_F.C(28):
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Comp.h(32),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Superstructure/WebServices/src/../include/ESMCI_WebServComponentSvr.h(23),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Superstructure/WebServices/src/ESMCI_WebServComponentSvr.C(32):
@@ -9068,13 +9075,6 @@ In file included from /usr/include/c++/7/backward/strstream(50),
   #warning \
    ^
 
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Comp.h(32),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Superstructure/WebServices/src/../include/ESMCI_WebServ.h(21),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Superstructure/WebServices/src/ESMCI_WebServ_F.C(28):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -9170,22 +9170,11 @@ ifort: warning #10182: disabling optimization; runtime debug checks enabled
 ifort: warning #10182: disabling optimization; runtime debug checks enabled
 In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
-In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Comp.h(32),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h(17),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Comp.h(32),
                  from wrappers_mpi.C(19):
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h(17),
-                 from wrappers_io.C(22):
-/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
-  #warning \
-   ^
-
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -9202,23 +9191,23 @@ In file included from /usr/include/c++/7/backward/strstream(50),
    ^
 
 In file included from /usr/include/c++/7/backward/strstream(50),
-In file included from /usr/include/c++/7/backward/strstream(50),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Comp.h(32),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Comp.h(32),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h(17),
-                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h(17),
-                 from preload_mpi.C(31):
-                 from preload.C(8):
+                 from wrappers_io.C(22):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
 
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Comp.h(32),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h(17),
+                 from preload_mpi.C(31):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
@@ -9230,6 +9219,17 @@ In file included from /usr/include/c++/7/backward/strstream(50),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Comp.h(32),
                  from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h(17),
                  from preload_io.C(33):
+/usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
+  #warning \
+   ^
+
+In file included from /usr/include/c++/7/backward/strstream(50),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VMKernel.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_VM.h(41),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Base.h(27),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/include/ESMCI_Comp.h(32),
+                 from /lustre/f2/dev/ncep/Mark.Potts/intel_2017.5_mpi_g/src/Infrastructure/Trace/preload/../include/ESMCI_Trace.h(17),
+                 from preload.C(8):
 /usr/include/c++/7/backward/backward_warning.h(32): warning #1224: #warning directive: This file includes at least one deprecated or antiquated header which   may be removed without further notice at a future date. Please use a   non-deprecated interface with equivalent functionality instead. For a   listing of replacement headers and interfaces, consult the file   backward_warning.h. To disable this warning use -Wno-deprecated.
   #warning \
    ^
