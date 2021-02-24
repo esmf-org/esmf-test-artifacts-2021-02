@@ -3,14 +3,11 @@ Lmod is automatically replacing "intel/19.0.5" with "gnu/9.1.0".
 
 
 Due to MODULEPATH changes, the following have been reloaded:
-  1) ncarcompilers/0.5.0     2) openmpi/4.0.5
-
-The following have been reloaded with a version change:
-  1) netcdf/4.7.4 => netcdf/4.7.3
+  1) ncarcompilers/0.5.0     2) netcdf/4.7.4     3) openmpi/4.0.5
 
 
 Currently Loaded Modules:
-  1) ncarenv/1.3   3) ncarcompilers/0.5.0   5) netcdf/4.7.3
+  1) ncarenv/1.3   3) ncarcompilers/0.5.0   5) netcdf/4.7.4
   2) gnu/9.1.0     4) openmpi/4.0.5
 
  
