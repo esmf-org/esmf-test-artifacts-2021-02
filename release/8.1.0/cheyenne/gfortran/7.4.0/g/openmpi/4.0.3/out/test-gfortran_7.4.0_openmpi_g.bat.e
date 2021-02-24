@@ -2166,3 +2166,4 @@ ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/7.4.0/mpi/../lib
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/7.4.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/7.4.0/mpi/../lib*: No such file or directory
 ls: cannot access /glade/u/apps/dav/opt/ncarcompilers/0.5.0/gnu/7.4.0/mpi/../lib*: No such file or directory
+slurmstepd: error: _is_a_lwp: open() /proc/114603/status failed: No such file or directory
