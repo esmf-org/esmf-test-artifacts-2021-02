@@ -4,18 +4,18 @@
  State Reconcile Example 1: Component Creation
  GridComp Create returned, name = Atmosphere
  GridComp Create returned, name = Atmosphere
+ GridComp Create returned, name = Ocean
  GridComp Create returned, name = Atmosphere
+ GridComp Create returned, name = Ocean
  GridComp Create returned, name = Atmosphere
  GridComp Create returned, name = Ocean
- State Create returned, name = Ocn2Atm
- State Example 1 finished
  GridComp Create returned, name = Ocean
  State Create returned, name = Ocn2Atm
  State Example 1 finished
- GridComp Create returned, name = Ocean
  State Create returned, name = Ocn2Atm
  State Example 1 finished
- GridComp Create returned, name = Ocean
+ State Create returned, name = Ocn2Atm
+ State Example 1 finished
  State Create returned, name = Ocn2Atm
  State Example 1 finished
  ready to set entry point 1
@@ -30,55 +30,55 @@
  ready to set entry point 1
  ready to set entry point 2
  ready to call init for comp 1
- ready to call init for comp 2
- i am comp2_init
+ i am comp1_init
  ready to set entry point 1
  ready to set entry point 2
  ready to call init for comp 1
- i am comp1_init
+ ready to call init for comp 2
+ i am comp2_init
  ready to call init for comp 2
  State Example 2 finished
  State before calling StateReconcile()
  State Example 2 finished
  State before calling StateReconcile()
- ready to call init for comp 2
- State Example 2 finished
- State before calling StateReconcile()
- ESMF_StatePrint: (pet 1):
-  State name: Ocn2Atm
-     status: Unspecified intent direction, object count: 0
- State Example 2 finished
- State before calling StateReconcile()
- ESMF_StatePrint: (pet 2):
+ ESMF_StatePrint: (pet 0):
   State name: Ocn2Atm
  ESMF_StatePrint: (pet 3):
   State name: Ocn2Atm
      status: Unspecified intent direction, object count: 0
- ESMF_StatePrint: (pet 0):
-  State name: Ocn2Atm
+     reconcile needed: F
      status: Unspecified intent direction, object count: 0
      reconcile needed: F
- Base name    = Ocn2Atm     status: Unspecified intent direction, object count: 0
+ Base name    = Ocn2Atm Base name    =  ready to call init for comp 2
+ State Example 2 finished
+ State before calling StateReconcile()
+ ESMF_StatePrint: (pet 1):
+  State name: Ocn2Atm
+ State Example 2 finished
+ State before calling StateReconcile()
+ ESMF_StatePrint: (pet 2):
+  State name: Ocn2Atm
+
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+     status: Unspecified intent direction, object count: 0
      reconcile needed: F
-     reconcile needed: F
+     status: Unspecified intent direction, object count: 0
  Base name    = Ocn2Atm     reconcile needed: F
- Base name    = Ocn2Atm
+ Base name    = 
  Status: Base = Ready,  object = Ready
- Proxy        = no
+ Proxy        = Ocn2Atm{}Ocn2Atmno
  Root Info (Attributes):
- Base name    = Ocn2Atm
- Status: Base = Ready,  object = 
+
  Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
 
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-Ready
- Proxy        = no
+{} Proxy        = no
  Root Info (Attributes):
-{}{}{}{}
+{}{}
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
@@ -86,8 +86,8 @@ Backtrace for this error:
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-#0  0x10be1f48d
-#1  0x10be1e8c3
+#0  0x1023d548d
+#1  0x1023d48c3
 #2  0x7fff5dcf7b5c
 
 Program received signal SIGABRT: Process abort signal.
@@ -97,19 +97,19 @@ Backtrace for this error:
 Program received signal SIGABRT: Process abort signal.
 
 Backtrace for this error:
-#0  0x105b6548d
-#1  0x105b648c3
+#0  0x1061a048d
+#1  0x10619f8c3
 #2  0x7fff5dcf7b5c
-#0  0x108cb048d
-#1  0x108caf8c3
+#0  0x10601448d
+#1  0x1060138c3
 #2  0x7fff5dcf7b5c
-#0  0x10c78e48d
-#1  0x10c78d8c3
+#0  0x1072f848d
+#1  0x1072f78c3
 #2  0x7fff5dcf7b5c
 
 ===================================================================================
 =   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
-=   PID 83668 RUNNING AT cgdm-catania
+=   PID 22169 RUNNING AT cgdm-catania
 =   EXIT CODE: 6
 =   CLEANING UP REMAINING PROCESSES
 =   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
@@ -117,4 +117,4 @@ Backtrace for this error:
 YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Abort trap: 6 (signal 6)
 This typically refers to a problem with your application.
 Please see the FAQ page for debugging suggestions
-Tue Feb 23 09:56:33 MST 2021
+Wed Feb 24 17:18:48 MST 2021
