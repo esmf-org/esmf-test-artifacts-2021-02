@@ -7,8 +7,8 @@
   NUMBER_OF_PROCESSORS           4
   NUMBER_OF_PROCESSORS           4
   PASS  Testing ArrayBundle IsCreated for uncreated object, ESMF_ArrayBundleCrea
- teUTest.F90, line 90
   PASS  Testing ArrayBundle IsCreated for uncreated object, ESMF_ArrayBundleCrea
+ teUTest.F90, line 90
  teUTest.F90, line 90
   PASS  Testing ArrayBundle IsCreated for uncreated object, ESMF_ArrayBundleCrea
  teUTest.F90, line 90
@@ -50,9 +50,12 @@
   line 130
   PASS  Destroy test ArrayBundle for IsCreated, ESMF_ArrayBundleCreateUTest.F90,
   line 130
+  PASS  Testing ArrayBundle IsCreated for destroyed object, ESMF_ArrayBundleCrea
+ teUTest.F90, line 138
   PASS  Destroy test ArrayBundle for IsCreated, ESMF_ArrayBundleCreateUTest.F90,
   line 130
   PASS  Testing ArrayBundle IsCreated for destroyed object, ESMF_ArrayBundleCrea
+ teUTest.F90, line 138
   PASS  Destroy test ArrayBundle for IsCreated, ESMF_ArrayBundleCreateUTest.F90,
   line 130
   PASS  Testing ArrayBundle IsCreated for destroyed object, ESMF_ArrayBundleCrea
@@ -60,10 +63,7 @@
   PASS  Testing ArrayBundle IsCreated for destroyed object, ESMF_ArrayBundleCrea
  teUTest.F90, line 138
   PASS  Testing ArrayBundle IsCreated for destroyed object, ESMF_ArrayBundleCrea
- teUTest.F90, line 138
-  PASS  Testing ArrayBundle IsCreated for destroyed object, ESMF_ArrayBundleCrea
  teUTest.F90, line 146
- teUTest.F90, line 138
   PASS  Testing ArrayBundle IsCreated for destroyed object, ESMF_ArrayBundleCrea
  teUTest.F90, line 146
   PASS  Testing ArrayBundle IsCreated for destroyed object, ESMF_ArrayBundleCrea
@@ -74,7 +74,6 @@
   PASS  empty ArrayBundleCreate Test, ESMF_ArrayBundleCreateUTest.F90, line 154
   PASS  empty ArrayBundleCreate Test, ESMF_ArrayBundleCreateUTest.F90, line 154
   PASS  empty ArrayBundleCreate Test, ESMF_ArrayBundleCreateUTest.F90, line 154
---- ESMCI::ArrayBundle::print start ---
 --- ESMCI::ArrayBundle::print start ---
 ArrayBundle: MyEmptyArrayBundle
 arrayCount = 0
@@ -84,15 +83,16 @@ ArrayBundle: MyEmptyArrayBundle
 arrayCount = 0
 --- ESMCI::ArrayBundle::print end ---
   PASS  ArrayBundlePrint Test, ESMF_ArrayBundleCreateUTest.F90, line 161
+  PASS  ArrayBundlePrint Test, ESMF_ArrayBundleCreateUTest.F90, line 161
 --- ESMCI::ArrayBundle::print start ---
 ArrayBundle: MyEmptyArrayBundle
 arrayCount = 0
 --- ESMCI::ArrayBundle::print end ---
   PASS  ArrayBundlePrint Test, ESMF_ArrayBundleCreateUTest.F90, line 161
+--- ESMCI::ArrayBundle::print start ---
 ArrayBundle: MyEmptyArrayBundle
 arrayCount = 0
 --- ESMCI::ArrayBundle::print end ---
-  PASS  ArrayBundlePrint Test, ESMF_ArrayBundleCreateUTest.F90, line 161
   PASS  ArrayBundlePrint Test, ESMF_ArrayBundleCreateUTest.F90, line 161
   PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 168
   PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 168
@@ -126,6 +126,8 @@ arrayCount = 0
  .F90, line 208
   PASS  ArrayBundle equality before assignment Test, ESMF_ArrayBundleCreateUTest
  .F90, line 208
+  PASS  ArrayBundle assignment and equality Test, ESMF_ArrayBundleCreateUTest.F9
+ 0, line 218
   PASS  ArrayBundle assignment and equality Test, ESMF_ArrayBundleCreateUTest.F9
  0, line 218
   PASS  ArrayBundle assignment and equality Test, ESMF_ArrayBundleCreateUTest.F9
@@ -133,8 +135,6 @@ arrayCount = 0
   PASS  ArrayBundle assignment and equality Test, ESMF_ArrayBundleCreateUTest.F9
  0, line 218
   PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 225
-  PASS  ArrayBundle assignment and equality Test, ESMF_ArrayBundleCreateUTest.F9
- 0, line 218
   PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 225
   PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 225
   PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 225
@@ -148,60 +148,60 @@ arrayCount = 0
  , line 233
   PASS  ArrayBundle non-equality after destroy Test, ESMF_ArrayBundleCreateUTest
  .F90, line 241
+  PASS  Double ArrayBundleDestroy through alias Test, ESMF_ArrayBundleCreateUTes
+ t.F90, line 248
   PASS  ArrayBundle non-equality after destroy Test, ESMF_ArrayBundleCreateUTest
  .F90, line 241
   PASS  Double ArrayBundleDestroy through alias Test, ESMF_ArrayBundleCreateUTes
  t.F90, line 248
+  PASS  ArrayBundleCreate Test, ESMF_ArrayBundleCreateUTest.F90, line 256
+  PASS  ArrayBundle non-equality after destroy Test, ESMF_ArrayBundleCreateUTest
+ .F90, line 241
+--- ESMCI::ArrayBundle::print start ---
+ArrayBundle: MyArrayBundle
+arrayCount = 2
+  PASS  ArrayBundleCreate Test, ESMF_ArrayBundleCreateUTest.F90, line 256
   PASS  Double ArrayBundleDestroy through alias Test, ESMF_ArrayBundleCreateUTes
  t.F90, line 248
-  PASS  ArrayBundleCreate Test, ESMF_ArrayBundleCreateUTest.F90, line 256
 --- ESMCI::ArrayBundle::print start ---
 ArrayBundle: MyArrayBundle
 arrayCount = 2
   PASS  ArrayBundleCreate Test, ESMF_ArrayBundleCreateUTest.F90, line 256
+Container::print() multipmap:item=0 key=MyArray value=0x3898090
 --- ESMCI::ArrayBundle::print start ---
 ArrayBundle: MyArrayBundle
 arrayCount = 2
-Container::print() multipmap:item=0 key=MyArray value=0x2ad8120
-Container::print() multipmap:item=0 key=MyArray value=0x2ad8090
-Container::print() multipmap:item=1 key=MyArray2 value=0x2ad8b60
-Container::print() multipmap:item=1 key=MyArray2 value=0x2ad8bf0
-Container::print()      list:item=0 key=MyArray value=0x2ad8120
-Container::print()      list:item=0 key=MyArray value=0x2ad8090
-Container::print()      list:item=1 key=MyArray2 value=0x2ad8b60
+Container::print() multipmap:item=1 key=MyArray2 value=0x3898b60
+Container::print()      list:item=0 key=MyArray value=0x3898090
+Container::print()      list:item=1 key=MyArray2 value=0x3898b60
 --- ESMCI::ArrayBundle::print end ---
-Container::print()      list:item=1 key=MyArray2 value=0x2ad8bf0
+Container::print() multipmap:item=0 key=MyArray value=0x3898120
+Container::print() multipmap:item=1 key=MyArray2 value=0x3898bf0
+Container::print()      list:item=0 key=MyArray value=0x3898120
+Container::print()      list:item=1 key=MyArray2 value=0x3898bf0
+  PASS  ArrayBundlePrint Test, ESMF_ArrayBundleCreateUTest.F90, line 263
 --- ESMCI::ArrayBundle::print end ---
   PASS  ArrayBundlePrint Test, ESMF_ArrayBundleCreateUTest.F90, line 263
-  PASS  ArrayBundlePrint Test, ESMF_ArrayBundleCreateUTest.F90, line 263
+Container::print() multipmap:item=0 key=MyArray value=0x3898200
+Container::print() multipmap:item=1 key=MyArray2 value=0x3898cd0
+Container::print()      list:item=0 key=MyArray value=0x3898200
   PASS  ArrayBundleGet with arrayList Test, ESMF_ArrayBundleCreateUTest.F90, lin
  e 271
   PASS  ArrayBundleGet with arrayList Test, ESMF_ArrayBundleCreateUTest.F90, lin
  e 271
- arrayCount=           2
+Container::print()      list:item=1 key=MyArray2 value=0x3898cd0
+--- ESMCI::ArrayBundle::print end ---
+  PASS  ArrayBundlePrint Test, ESMF_ArrayBundleCreateUTest.F90, line 263
  arrayCount=           2
   PASS  ArrayBundleGet with arrayNameList Test, ESMF_ArrayBundleCreateUTest.F90,
   line 281
+ arrayCount=           2
   PASS  ArrayBundleGet with arrayNameList Test, ESMF_ArrayBundleCreateUTest.F90,
   line 281
  arrayNameList(           1 )=MyArray
  arrayNameList(           2 )=MyArray2
  arrayNameList(           1 )=MyArray
  arrayNameList(           2 )=MyArray2
-  PASS  ArrayBundle non-equality after destroy Test, ESMF_ArrayBundleCreateUTest
- .F90, line 241
-  PASS  Double ArrayBundleDestroy through alias Test, ESMF_ArrayBundleCreateUTes
- t.F90, line 248
-  PASS  ArrayBundleCreate Test, ESMF_ArrayBundleCreateUTest.F90, line 256
---- ESMCI::ArrayBundle::print start ---
-ArrayBundle: MyArrayBundle
-arrayCount = 2
-Container::print() multipmap:item=0 key=MyArray value=0x2ad8260
-Container::print() multipmap:item=1 key=MyArray2 value=0x2ad8d30
-Container::print()      list:item=0 key=MyArray value=0x2ad8260
-Container::print()      list:item=1 key=MyArray2 value=0x2ad8d30
---- ESMCI::ArrayBundle::print end ---
-  PASS  ArrayBundlePrint Test, ESMF_ArrayBundleCreateUTest.F90, line 263
   PASS  ArrayBundleGet with arrayList Test, ESMF_ArrayBundleCreateUTest.F90, lin
  e 271
  arrayCount=           2
@@ -213,6 +213,10 @@ Container::print()      list:item=1 key=MyArray2 value=0x2ad8d30
  , line 292
   PASS  ArrayBundleAdd with existing Array Test, ESMF_ArrayBundleCreateUTest.F90
  , line 292
+  PASS  ArrayBundleAdd with existing Array Test, ESMF_ArrayBundleCreateUTest.F90
+ , line 292
+  PASS  ArrayBundleAdd with existing Array but relaxed Test, ESMF_ArrayBundleCre
+ ateUTest.F90, line 300
   PASS  ArrayBundleAdd with existing Array but relaxed Test, ESMF_ArrayBundleCre
  ateUTest.F90, line 300
   PASS  ArrayBundleAdd with existing Array but relaxed Test, ESMF_ArrayBundleCre
@@ -221,80 +225,100 @@ Container::print()      list:item=1 key=MyArray2 value=0x2ad8d30
  t.F90, line 308
   PASS  ArrayBundleAdd with zero size arrayList Test, ESMF_ArrayBundleCreateUTes
  t.F90, line 308
+  PASS  ArrayBundleAdd with zero size arrayList Test, ESMF_ArrayBundleCreateUTes
+ t.F90, line 308
   PASS  ArrayBundleGet with arrayName not exist Test, ESMF_ArrayBundleCreateUTes
  t.F90, line 317
   PASS  ArrayBundleGet with arrayName not exist Test, ESMF_ArrayBundleCreateUTes
  t.F90, line 317
-  PASS  ArrayBundleAdd with existing Array Test, ESMF_ArrayBundleCreateUTest.F90
- , line 292
+  PASS  ArrayBundleGet with arrayName not exist Test, ESMF_ArrayBundleCreateUTes
+ t.F90, line 317
   PASS  ArrayBundleGet with arrayName not exist isPresent Test, ESMF_ArrayBundle
  CreateUTest.F90, line 325
   PASS  ArrayBundleGet with arrayName not exist isPresent Test, ESMF_ArrayBundle
  CreateUTest.F90, line 325
-  PASS  ArrayBundleAdd with existing Array but relaxed Test, ESMF_ArrayBundleCre
- ateUTest.F90, line 300
+  PASS  ArrayBundleGet with arrayName not exist isPresent Test, ESMF_ArrayBundle
+ CreateUTest.F90, line 325
   PASS  Validate isPresent flag, ESMF_ArrayBundleCreateUTest.F90, line 330
-  PASS  ArrayBundleAdd with zero size arrayList Test, ESMF_ArrayBundleCreateUTes
- t.F90, line 308
+  PASS  Validate isPresent flag, ESMF_ArrayBundleCreateUTest.F90, line 330
   PASS  Validate isPresent flag, ESMF_ArrayBundleCreateUTest.F90, line 330
   PASS  ArrayBundleAdd with arrayList size 1 Test, ESMF_ArrayBundleCreateUTest.F
  90, line 342
   PASS  ArrayBundleAdd with arrayList size 1 Test, ESMF_ArrayBundleCreateUTest.F
  90, line 342
-  PASS  ArrayBundleGet with arrayName not exist Test, ESMF_ArrayBundleCreateUTes
- t.F90, line 317
+  PASS  ArrayBundleAdd with arrayList size 1 Test, ESMF_ArrayBundleCreateUTest.F
+ 90, line 342
   PASS  ArrayBundleGet with arrayName Test, ESMF_ArrayBundleCreateUTest.F90, lin
  e 351
   PASS  ArrayBundleGet with arrayName Test, ESMF_ArrayBundleCreateUTest.F90, lin
  e 351
-  PASS  ArrayBundleGet with arrayName not exist isPresent Test, ESMF_ArrayBundle
- CreateUTest.F90, line 325
+  PASS  ArrayBundleGet with arrayName Test, ESMF_ArrayBundleCreateUTest.F90, lin
+ e 351
 --- ESMCI::Array::print start ---
 --- ESMCI::Array::print start ---
  Base name    = MyArray3
  Base name    = MyArray3
-  PASS  Validate isPresent flag, ESMF_ArrayBundleCreateUTest.F90, line 330
+ Status: Base = Ready,  object = Ready
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
+--- ESMCI::Array::print start ---
+ Base name    = MyArray3
  Status: Base = Ready,  object = Ready
  Proxy        = no
  Root Info (Attributes):
-  PASS  ArrayBundleAdd with arrayList size 1 Test, ESMF_ArrayBundleCreateUTest.F
- 90, line 342
+ Proxy        = no
+ Root Info (Attributes):
 {}Array typekind/rank: Real*8 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
+deCount = 4
 {}Array typekind/rank: Real*8 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
 ~ local data in LocalArray for DE 1 ~
-LocalArrayPrint: Array at address 0x2ad9fd0:
-  PASS  ArrayBundle non-equality after destroy Test, ESMF_ArrayBundleCreateUTest
- .F90, line 241
-  PASS  ArrayBundleGet with arrayName Test, ESMF_ArrayBundleCreateUTest.F90, lin
- e 351
---- ESMCI::Array::print start ---
+LocalArrayPrint: Array at address 0x3899fd0:
+            rank = 2, typekind = 6, base_addr = 0x2b77ba1e7700
+{}Array typekind/rank: Real*8 / 2 
+~ lower class' values ~
+DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
+~ local data in LocalArray for DE 2 ~
+LocalArrayPrint: Array at address 0x389a0b0:
+            rank = 2, typekind = 6, base_addr = 0x2b77ba1e7700
+            dim[0] = 8  dim[1] = 11  
+  Real, *8, Dim 2, Data values:
+localDeCount = 1
 ~ local data in LocalArray for DE 0 ~
-LocalArrayPrint: Array at address 0x2ad9f40:
-            rank = 2, typekind = 6, base_addr = 0x2b8df9d3f700
+LocalArrayPrint: Array at address 0x3899f40:
+            rank = 2, typekind = 6, base_addr = 0x2b77ba1e7700
             dim[0] = 8  dim[1] = 12  
   Real, *8, Dim 2, Data values:
-            rank = 2, typekind = 6, base_addr = 0x2b8df9d3f700
             dim[0] = 7  dim[1] = 12  
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  0
 ( 2, 1) =  0
-  PASS  Double ArrayBundleDestroy through alias Test, ESMF_ArrayBundleCreateUTes
- t.F90, line 248
- Base name    = MyArray3
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
+( 3, 1) =  0
+( 4, 1) =  0
+( 5, 1) =  0
+( 6, 1) =  0
+( 7, 1) =  0
+( 8, 1) =  0
+( 1, 1) =  0
+( 2, 1) =  0
+( 3, 1) =  0
+( 4, 1) =  0
+( 5, 1) =  0
+( 6, 1) =  0
+( 7, 1) =  0
+( 1, 2) =  0
+( 2, 2) =  0
+( 3, 2) =  0
+  skipping to end ...
+( 5,11) =  0
 ( 1, 1) =  0
 ( 2, 1) =  0
 ( 3, 1) =  0
@@ -306,6 +330,17 @@ LocalArrayPrint: Array at address 0x2ad9f40:
 ( 1, 2) =  0
 ( 2, 2) =  0
   skipping to end ...
+( 7,10) =  0
+( 8,10) =  0
+( 1,11) =  0
+( 2,11) =  0
+( 3,11) =  0
+( 4,11) =  0
+( 5,11) =  0
+( 6,11) =  0
+( 1, 2) =  0
+( 2, 2) =  0
+  skipping to end ...
 ( 7,11) =  0
 ( 8,11) =  0
 ( 1,12) =  0
@@ -314,16 +349,11 @@ LocalArrayPrint: Array at address 0x2ad9f40:
 ( 4,12) =  0
 ( 5,12) =  0
 ( 6,12) =  0
-( 3, 1) =  0
-( 4, 1) =  0
-( 5, 1) =  0
-( 6, 1) =  0
-( 7, 1) =  0
-( 1, 2) =  0
-( 2, 2) =  0
-( 3, 2) =  0
-  skipping to end ...
-( 5,11) =  0
+( 7,12) =  0
+( 8,12) =  0
+dim 1: [0]: [1 [1 [1, 8] 8] 8]
+dim 2: [1]: [1 [1 [1, 12] 12] 12]
+--- ESMCI::Array::print end ---
 ( 6,11) =  0
 ( 7,11) =  0
 ( 1,12) =  0
@@ -336,35 +366,332 @@ LocalArrayPrint: Array at address 0x2ad9f40:
 dim 1: [0]: [1 [1 [1, 7] 7] 7]
 dim 2: [1]: [1 [1 [1, 12] 12] 12]
 --- ESMCI::Array::print end ---
+( 7,11) =  0
+( 8,11) =  0
+dim 1: [0]: [1 [1 [1, 8] 8] 8]
+dim 2: [1]: [1 [1 [1, 11] 11] 11]
+--- ESMCI::Array::print end ---
+  PASS  ArrayBundleRemove with arrayNameList size 1 exising Test, ESMF_ArrayBund
+ leCreateUTest.F90, line 361
+  PASS  ArrayBundleRemove with arrayNameList size 1 exising Test, ESMF_ArrayBund
+ leCreateUTest.F90, line 361
+  PASS  ArrayBundleRemove with arrayNameList size 1 exising Test, ESMF_ArrayBund
+ leCreateUTest.F90, line 361
+  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing Test, ESMF_Arra
+ yBundleCreateUTest.F90, line 368
+  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing Test, ESMF_Arra
+ yBundleCreateUTest.F90, line 368
+  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing Test, ESMF_Arra
+ yBundleCreateUTest.F90, line 368
+  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing but relaxed Tes
+ t, ESMF_ArrayBundleCreateUTest.F90, line 376
+  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing but relaxed Tes
+ t, ESMF_ArrayBundleCreateUTest.F90, line 376
+  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing but relaxed Tes
+ t, ESMF_ArrayBundleCreateUTest.F90, line 376
+  PASS  ArrayBundleAdd with arrayList size 3 Test, ESMF_ArrayBundleCreateUTest.F
+ 90, line 394
+  PASS  ArrayBundleAdd with arrayList size 3 Test, ESMF_ArrayBundleCreateUTest.F
+ 90, line 394
+  PASS  ArrayBundleAdd with arrayList size 3 Test, ESMF_ArrayBundleCreateUTest.F
+ 90, line 394
+  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
+ dleCreateUTest.F90, line 402
+  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
+ dleCreateUTest.F90, line 402
+  PASS  ArrayBundle non-equality after destroy Test, ESMF_ArrayBundleCreateUTest
+ .F90, line 241
+  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
+ dleCreateUTest.F90, line 402
+  PASS  ArrayBundleReplace with arrayList 1exist+2notexist relaxed Test, ESMF_Ar
+ rayBundleCreateUTest.F90, line 410
+  PASS  ArrayBundleReplace with arrayList 1exist+2notexist relaxed Test, ESMF_Ar
+ rayBundleCreateUTest.F90, line 410
+  PASS  ArrayBundleReplace with arrayList 1exist+2notexist relaxed Test, ESMF_Ar
+ rayBundleCreateUTest.F90, line 410
+  PASS  Double ArrayBundleDestroy through alias Test, ESMF_ArrayBundleCreateUTes
+ t.F90, line 248
   PASS  ArrayBundleCreate Test, ESMF_ArrayBundleCreateUTest.F90, line 256
 --- ESMCI::ArrayBundle::print start ---
 ArrayBundle: MyArrayBundle
 arrayCount = 2
-( 7,12) =  0
-( 8,12) =  0
-dim 1: [0]: [1 [1 [1, 8] 8] 8]
-dim 2: [1]: [1 [1 [1, 12] 12] 12]
---- ESMCI::Array::print end ---
+Container::print() multipmap:item=0 key=MyArray value=0x3898260
+Container::print() multipmap:item=1 key=MyArray2 value=0x3898d30
+Container::print()      list:item=0 key=MyArray value=0x3898260
+  PASS  ArrayBundleReplace with arrayList 1exist+2notexist strict Test, ESMF_Arr
+ ayBundleCreateUTest.F90, line 417
+Container::print()      list:item=1 key=MyArray2 value=0x3898d30
+--- ESMCI::ArrayBundle::print end ---
+  PASS  ArrayBundlePrint Test, ESMF_ArrayBundleCreateUTest.F90, line 263
+  PASS  ArrayBundleReplace with arrayList 1exist+2notexist strict Test, ESMF_Arr
+ ayBundleCreateUTest.F90, line 417
+  PASS  ArrayBundleReplace with arrayList 1exist+2notexist strict Test, ESMF_Arr
+ ayBundleCreateUTest.F90, line 417
+  PASS  ArrayBundleAddReplace with arrayList 1exist+2notexist Test, ESMF_ArrayBu
+ ndleCreateUTest.F90, line 424
+  PASS  ArrayBundleAddReplace with arrayList 1exist+2notexist Test, ESMF_ArrayBu
+ ndleCreateUTest.F90, line 424
+  PASS  ArrayBundleAddReplace with arrayList 1exist+2notexist Test, ESMF_ArrayBu
+ ndleCreateUTest.F90, line 424
+  PASS  ArrayBundleGet with arrayList Test, ESMF_ArrayBundleCreateUTest.F90, lin
+ e 271
+ arrayCount=           2
+  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
+ dleCreateUTest.F90, line 432
+  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
+ dleCreateUTest.F90, line 432
+  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
+ dleCreateUTest.F90, line 432
+  PASS  ArrayBundleAdd with multiflag #1 Test, ESMF_ArrayBundleCreateUTest.F90, 
+ line 440
+  PASS  ArrayBundleGet with arrayNameList Test, ESMF_ArrayBundleCreateUTest.F90,
+  line 281
+ arrayNameList(           1 )=MyArray
+ arrayNameList(           2 )=MyArray2
+  PASS  ArrayBundleAdd with multiflag #1 Test, ESMF_ArrayBundleCreateUTest.F90, 
+ line 440
+  PASS  ArrayBundleAdd with multiflag #1 Test, ESMF_ArrayBundleCreateUTest.F90, 
+ line 440
+  PASS  ArrayBundleAdd with multiflag #2 Test, ESMF_ArrayBundleCreateUTest.F90, 
+ line 448
+  PASS  ArrayBundleAdd with multiflag #2 Test, ESMF_ArrayBundleCreateUTest.F90, 
+ line 448
+  PASS  ArrayBundleAdd with multiflag #2 Test, ESMF_ArrayBundleCreateUTest.F90, 
+ line 448
+--- ESMCI::ArrayBundle::print start ---
+ArrayBundle: MyArrayBundle
+arrayCount = 9
+--- ESMCI::ArrayBundle::print start ---
+ArrayBundle: MyArrayBundle
+arrayCount = 9
+--- ESMCI::ArrayBundle::print start ---
+ArrayBundle: MyArrayBundle
+arrayCount = 9
+Container::print() multipmap:item=0 key=MyArray2 value=0x3898bf0
+Container::print() multipmap:item=0 key=MyArray2 value=0x3898cd0
+Container::print() multipmap:item=1 key=MyArray4 value=0x389af50
+Container::print() multipmap:item=2 key=MyArray4 value=0x389af50
+Container::print() multipmap:item=3 key=MyArray4 value=0x389af50
+Container::print() multipmap:item=0 key=MyArray2 value=0x3898b60
+Container::print() multipmap:item=1 key=MyArray4 value=0x389ade0
+Container::print() multipmap:item=2 key=MyArray4 value=0x389ade0
+Container::print() multipmap:item=3 key=MyArray4 value=0x389ade0
+Container::print() multipmap:item=1 key=MyArray4 value=0x389ae70
+Container::print() multipmap:item=2 key=MyArray4 value=0x389ae70
+Container::print() multipmap:item=3 key=MyArray4 value=0x389ae70
+Container::print() multipmap:item=4 key=MyArray5 value=0x389c610
+Container::print() multipmap:item=4 key=MyArray5 value=0x389c6f0
+Container::print() multipmap:item=5 key=MyArray5 value=0x389c6f0
+Container::print() multipmap:item=6 key=MyArray6 value=0x389bb70
+Container::print() multipmap:item=7 key=MyArray6 value=0x389bb70
+Container::print() multipmap:item=4 key=MyArray5 value=0x389c580
+Container::print() multipmap:item=5 key=MyArray5 value=0x389c580
+Container::print() multipmap:item=6 key=MyArray6 value=0x389ba00
+Container::print() multipmap:item=7 key=MyArray6 value=0x389ba00
+Container::print() multipmap:item=8 key=MyArray6 value=0x389ba00
+Container::print() multipmap:item=5 key=MyArray5 value=0x389c610
+Container::print() multipmap:item=6 key=MyArray6 value=0x389ba90
+Container::print() multipmap:item=7 key=MyArray6 value=0x389ba90
+Container::print() multipmap:item=8 key=MyArray6 value=0x389ba90
+Container::print() multipmap:item=8 key=MyArray6 value=0x389bb70
+Container::print()      list:item=0 key=MyArray2 value=0x3898cd0
+Container::print()      list:item=1 key=MyArray6 value=0x389bb70
+Container::print()      list:item=2 key=MyArray4 value=0x389af50
+Container::print()      list:item=3 key=MyArray4 value=0x389af50
+Container::print()      list:item=0 key=MyArray2 value=0x3898b60
+Container::print()      list:item=1 key=MyArray6 value=0x389ba00
+Container::print()      list:item=2 key=MyArray4 value=0x389ade0
+Container::print()      list:item=3 key=MyArray4 value=0x389ade0
+Container::print()      list:item=0 key=MyArray2 value=0x3898bf0
+Container::print()      list:item=1 key=MyArray6 value=0x389ba90
+Container::print()      list:item=2 key=MyArray4 value=0x389ae70
+Container::print()      list:item=3 key=MyArray4 value=0x389ae70
+Container::print()      list:item=4 key=MyArray6 value=0x389ba90
+Container::print()      list:item=4 key=MyArray6 value=0x389bb70
+Container::print()      list:item=5 key=MyArray5 value=0x389c6f0
+Container::print()      list:item=6 key=MyArray4 value=0x389af50
+Container::print()      list:item=7 key=MyArray6 value=0x389bb70
+Container::print()      list:item=8 key=MyArray5 value=0x389c6f0
+Container::print()      list:item=4 key=MyArray6 value=0x389ba00
+Container::print()      list:item=5 key=MyArray5 value=0x389c580
+Container::print()      list:item=6 key=MyArray4 value=0x389ade0
+Container::print()      list:item=7 key=MyArray6 value=0x389ba00
+Container::print()      list:item=8 key=MyArray5 value=0x389c580
+--- ESMCI::ArrayBundle::print end ---
+Container::print()      list:item=5 key=MyArray5 value=0x389c610
+Container::print()      list:item=6 key=MyArray4 value=0x389ae70
+Container::print()      list:item=7 key=MyArray6 value=0x389ba90
+Container::print()      list:item=8 key=MyArray5 value=0x389c610
+--- ESMCI::ArrayBundle::print end ---
+--- ESMCI::ArrayBundle::print end ---
+  PASS  ArrayBundleGet with arrayName to get count Test, ESMF_ArrayBundleCreateU
+ Test.F90, line 460
+  PASS  ArrayBundleGet with arrayName to get count Test, ESMF_ArrayBundleCreateU
+ Test.F90, line 460
+  PASS  ArrayBundleGet with arrayName to get count Test, ESMF_ArrayBundleCreateU
+ Test.F90, line 460
+  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 466
+  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 466
+  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 466
+  PASS  ArrayBundleGet arrayList for arrayName Test, ESMF_ArrayBundleCreateUTest
+ .F90, line 477
+  PASS  ArrayBundleAdd with existing Array Test, ESMF_ArrayBundleCreateUTest.F90
+ , line 292
+  PASS  ArrayBundleGet arrayList for arrayName Test, ESMF_ArrayBundleCreateUTest
+ .F90, line 477
+  PASS  ArrayBundleGet arrayList for arrayName Test, ESMF_ArrayBundleCreateUTest
+ .F90, line 477
+  PASS  ArrayBundleAdd with existing Array but relaxed Test, ESMF_ArrayBundleCre
+ ateUTest.F90, line 300
+  PASS  ArrayBundleAdd with zero size arrayList Test, ESMF_ArrayBundleCreateUTes
+ t.F90, line 308
+ name of arrayList(           1 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           1 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           1 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           2 ) is: 
+ MyArray6                                                                       
+                                                                                
+ name of arrayList(           2 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           2 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+  PASS  ArrayBundleGet with arrayName not exist Test, ESMF_ArrayBundleCreateUTes
+ t.F90, line 317
+  PASS  ArrayBundleGet with arrayName not exist isPresent Test, ESMF_ArrayBundle
+ CreateUTest.F90, line 325
+                                                                                
+                    
+ name of arrayList(           3 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+  PASS  Verify Container Get arrayList for arrayname Test, ESMF_ArrayBundleCreat
+ eUTest.F90, line 493
+ name of arrayList(           3 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+  PASS  Verify Container Get arrayList for arrayname Test, ESMF_ArrayBundleCreat
+ eUTest.F90, line 493
+ name of arrayList(           3 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+  PASS  Verify Container Get arrayList for arrayname Test, ESMF_ArrayBundleCreat
+ eUTest.F90, line 493
+  PASS  Validate isPresent flag, ESMF_ArrayBundleCreateUTest.F90, line 330
+  PASS  ArrayBundleGet arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 50
+ 2
+  PASS  ArrayBundleGet arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 50
+ 2
+  PASS  ArrayBundleGet arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 50
+ 2
+  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 508
+  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 508
+  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 508
+  PASS  ArrayBundleAdd with arrayList size 1 Test, ESMF_ArrayBundleCreateUTest.F
+ 90, line 342
+  PASS  ArrayBundleGet with arrayName Test, ESMF_ArrayBundleCreateUTest.F90, lin
+ e 351
+  PASS  ArrayBundleGet arrayList default order (abc) Test, ESMF_ArrayBundleCreat
+ eUTest.F90, line 519
+  PASS  ArrayBundleGet arrayList default order (abc) Test, ESMF_ArrayBundleCreat
+ eUTest.F90, line 519
+  PASS  ArrayBundleGet arrayList default order (abc) Test, ESMF_ArrayBundleCreat
+ eUTest.F90, line 519
+--- ESMCI::Array::print start ---
+ Base name    = MyArray3
+ Status: Base = Ready,  object = Ready
+ Proxy        = no
+ Root Info (Attributes):
+ name of arrayList(           1 ) is: 
+ MyArray2                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           1 ) is: 
+ MyArray2                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           1 ) is: 
+ MyArray2                                                                       
+                                                                                
+                                                                                
+                    
 {}Array typekind/rank: Real*8 / 2 
 ~ lower class' values ~
 DistGrid dimCount = 2
 deCount = 4
 localDeCount = 1
+ name of arrayList(           2 ) is: 
+ MyArray4                                                                       
+                                                                                
+                                                                                
+ name of arrayList(           2 ) is: 
+ MyArray4                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           2 ) is: 
+ MyArray4                                                                       
+                                                                                
+                                                                                
+                    
 ~ local data in LocalArray for DE 3 ~
-LocalArrayPrint: Array at address 0x2ada110:
-            rank = 2, typekind = 6, base_addr = 0x2b8df9d3f880
+LocalArrayPrint: Array at address 0x389a110:
+            rank = 2, typekind = 6, base_addr = 0x2b77ba1e7880
             dim[0] = 7  dim[1] = 11  
-  PASS  ArrayBundleRemove with arrayNameList size 1 exising Test, ESMF_ArrayBund
- leCreateUTest.F90, line 361
-  PASS  ArrayBundleRemove with arrayNameList size 1 exising Test, ESMF_ArrayBund
- leCreateUTest.F90, line 361
-Container::print() multipmap:item=0 key=MyArray value=0x2ad8200
-Container::print() multipmap:item=1 key=MyArray2 value=0x2ad8cd0
   Real, *8, Dim 2, Data values:
 ( 1, 1) =  0
 ( 2, 1) =  0
 ( 3, 1) =  0
 ( 4, 1) =  0
+                    
+ name of arrayList(           3 ) is: 
+ MyArray4                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           3 ) is: 
+ MyArray4                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           4 ) is: 
+ MyArray4                                                                       
+                                                                                
+ name of arrayList(           3 ) is: 
+ MyArray4                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           4 ) is: 
+ MyArray4                                                                       
+                                                                                
+                                                                                
+                    
 ( 5, 1) =  0
 ( 6, 1) =  0
 ( 7, 1) =  0
@@ -372,10 +699,6 @@ Container::print() multipmap:item=1 key=MyArray2 value=0x2ad8cd0
 ( 2, 2) =  0
 ( 3, 2) =  0
   skipping to end ...
-Container::print()      list:item=0 key=MyArray value=0x2ad8200
-Container::print()      list:item=1 key=MyArray2 value=0x2ad8cd0
---- ESMCI::ArrayBundle::print end ---
-  PASS  ArrayBundlePrint Test, ESMF_ArrayBundleCreateUTest.F90, line 263
 ( 5,10) =  0
 ( 6,10) =  0
 ( 7,10) =  0
@@ -389,367 +712,32 @@ Container::print()      list:item=1 key=MyArray2 value=0x2ad8cd0
 dim 1: [0]: [1 [1 [1, 7] 7] 7]
 dim 2: [1]: [1 [1 [1, 11] 11] 11]
 --- ESMCI::Array::print end ---
-  PASS  ArrayBundleGet with arrayList Test, ESMF_ArrayBundleCreateUTest.F90, lin
- e 271
+ name of arrayList(           4 ) is: 
+ MyArray4                                                                       
+                                                                                
+                                                                                
+                    
+                                                                                
+                    
+ name of arrayList(           5 ) is: 
+ MyArray5                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           5 ) is: 
+ MyArray5                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           5 ) is: 
+ MyArray5                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           6 ) is: 
+ MyArray5                                                                       
   PASS  ArrayBundleRemove with arrayNameList size 1 exising Test, ESMF_ArrayBund
  leCreateUTest.F90, line 361
- arrayCount=           2
-  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing Test, ESMF_Arra
- yBundleCreateUTest.F90, line 368
-  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing Test, ESMF_Arra
- yBundleCreateUTest.F90, line 368
-  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing but relaxed Tes
- t, ESMF_ArrayBundleCreateUTest.F90, line 376
-  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing but relaxed Tes
- t, ESMF_ArrayBundleCreateUTest.F90, line 376
-  PASS  ArrayBundleGet with arrayNameList Test, ESMF_ArrayBundleCreateUTest.F90,
-  line 281
- arrayNameList(           1 )=MyArray
- arrayNameList(           2 )=MyArray2
-  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing Test, ESMF_Arra
- yBundleCreateUTest.F90, line 368
-  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing but relaxed Tes
- t, ESMF_ArrayBundleCreateUTest.F90, line 376
-  PASS  ArrayBundleAdd with arrayList size 3 Test, ESMF_ArrayBundleCreateUTest.F
- 90, line 394
-  PASS  ArrayBundleAdd with arrayList size 3 Test, ESMF_ArrayBundleCreateUTest.F
- 90, line 394
-  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
- dleCreateUTest.F90, line 402
-  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
- dleCreateUTest.F90, line 402
-  PASS  ArrayBundleReplace with arrayList 1exist+2notexist relaxed Test, ESMF_Ar
- rayBundleCreateUTest.F90, line 410
-  PASS  ArrayBundleReplace with arrayList 1exist+2notexist relaxed Test, ESMF_Ar
- rayBundleCreateUTest.F90, line 410
-  PASS  ArrayBundleAdd with arrayList size 3 Test, ESMF_ArrayBundleCreateUTest.F
- 90, line 394
-  PASS  ArrayBundleAdd with existing Array Test, ESMF_ArrayBundleCreateUTest.F90
- , line 292
-  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
- dleCreateUTest.F90, line 402
-  PASS  ArrayBundleAdd with existing Array but relaxed Test, ESMF_ArrayBundleCre
- ateUTest.F90, line 300
-  PASS  ArrayBundleReplace with arrayList 1exist+2notexist relaxed Test, ESMF_Ar
- rayBundleCreateUTest.F90, line 410
-  PASS  ArrayBundleAdd with zero size arrayList Test, ESMF_ArrayBundleCreateUTes
- t.F90, line 308
-  PASS  ArrayBundleReplace with arrayList 1exist+2notexist strict Test, ESMF_Arr
- ayBundleCreateUTest.F90, line 417
-  PASS  ArrayBundleReplace with arrayList 1exist+2notexist strict Test, ESMF_Arr
- ayBundleCreateUTest.F90, line 417
-  PASS  ArrayBundleAddReplace with arrayList 1exist+2notexist Test, ESMF_ArrayBu
- ndleCreateUTest.F90, line 424
-  PASS  ArrayBundleAddReplace with arrayList 1exist+2notexist Test, ESMF_ArrayBu
- ndleCreateUTest.F90, line 424
-  PASS  ArrayBundleReplace with arrayList 1exist+2notexist strict Test, ESMF_Arr
- ayBundleCreateUTest.F90, line 417
-  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
- dleCreateUTest.F90, line 432
-  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
- dleCreateUTest.F90, line 432
-  PASS  ArrayBundleGet with arrayName not exist Test, ESMF_ArrayBundleCreateUTes
- t.F90, line 317
-  PASS  ArrayBundleGet with arrayName not exist isPresent Test, ESMF_ArrayBundle
- CreateUTest.F90, line 325
-  PASS  ArrayBundleAddReplace with arrayList 1exist+2notexist Test, ESMF_ArrayBu
- ndleCreateUTest.F90, line 424
-  PASS  ArrayBundleAdd with multiflag #1 Test, ESMF_ArrayBundleCreateUTest.F90, 
- line 440
-  PASS  ArrayBundleAdd with multiflag #1 Test, ESMF_ArrayBundleCreateUTest.F90, 
- line 440
-  PASS  ArrayBundleAdd with multiflag #2 Test, ESMF_ArrayBundleCreateUTest.F90, 
-  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
- dleCreateUTest.F90, line 432
-  PASS  ArrayBundleAdd with multiflag #2 Test, ESMF_ArrayBundleCreateUTest.F90, 
- line 448
- line 448
---- ESMCI::ArrayBundle::print start ---
-ArrayBundle: MyArrayBundle
-arrayCount = 9
-  PASS  Validate isPresent flag, ESMF_ArrayBundleCreateUTest.F90, line 330
-  PASS  ArrayBundleAdd with multiflag #1 Test, ESMF_ArrayBundleCreateUTest.F90, 
- line 440
---- ESMCI::ArrayBundle::print start ---
-ArrayBundle: MyArrayBundle
-arrayCount = 9
-Container::print() multipmap:item=0 key=MyArray2 value=0x2ad8b60
-Container::print() multipmap:item=1 key=MyArray4 value=0x2adade0
-Container::print() multipmap:item=2 key=MyArray4 value=0x2adade0
-Container::print() multipmap:item=3 key=MyArray4 value=0x2adade0
-Container::print() multipmap:item=0 key=MyArray2 value=0x2ad8bf0
-Container::print() multipmap:item=1 key=MyArray4 value=0x2adae70
-Container::print() multipmap:item=2 key=MyArray4 value=0x2adae70
-Container::print() multipmap:item=3 key=MyArray4 value=0x2adae70
-Container::print() multipmap:item=4 key=MyArray5 value=0x2adc610
-Container::print() multipmap:item=5 key=MyArray5 value=0x2adc610
-  PASS  ArrayBundleAdd with multiflag #2 Test, ESMF_ArrayBundleCreateUTest.F90, 
- line 448
---- ESMCI::ArrayBundle::print start ---
-ArrayBundle: MyArrayBundle
-arrayCount = 9
-Container::print() multipmap:item=4 key=MyArray5 value=0x2adc580
-Container::print() multipmap:item=5 key=MyArray5 value=0x2adc580
-Container::print() multipmap:item=6 key=MyArray6 value=0x2adba00
-Container::print() multipmap:item=7 key=MyArray6 value=0x2adba00
-Container::print() multipmap:item=8 key=MyArray6 value=0x2adba00
-Container::print() multipmap:item=6 key=MyArray6 value=0x2adba90
-Container::print() multipmap:item=7 key=MyArray6 value=0x2adba90
-Container::print() multipmap:item=8 key=MyArray6 value=0x2adba90
-Container::print()      list:item=0 key=MyArray2 value=0x2ad8bf0
-  PASS  ArrayBundleAdd with arrayList size 1 Test, ESMF_ArrayBundleCreateUTest.F
- 90, line 342
-  PASS  ArrayBundleGet with arrayName Test, ESMF_ArrayBundleCreateUTest.F90, lin
- e 351
-Container::print() multipmap:item=0 key=MyArray2 value=0x2ad8d30
-Container::print() multipmap:item=1 key=MyArray4 value=0x2adafb0
-Container::print() multipmap:item=2 key=MyArray4 value=0x2adafb0
-Container::print() multipmap:item=3 key=MyArray4 value=0x2adafb0
-Container::print() multipmap:item=4 key=MyArray5 value=0x2adc750
-Container::print()      list:item=0 key=MyArray2 value=0x2ad8b60
-Container::print()      list:item=1 key=MyArray6 value=0x2adba00
-Container::print()      list:item=2 key=MyArray4 value=0x2adade0
-Container::print()      list:item=3 key=MyArray4 value=0x2adade0
-Container::print()      list:item=4 key=MyArray6 value=0x2adba00
-Container::print()      list:item=5 key=MyArray5 value=0x2adc580
-Container::print()      list:item=1 key=MyArray6 value=0x2adba90
-Container::print()      list:item=2 key=MyArray4 value=0x2adae70
-Container::print()      list:item=3 key=MyArray4 value=0x2adae70
-Container::print()      list:item=4 key=MyArray6 value=0x2adba90
-Container::print()      list:item=5 key=MyArray5 value=0x2adc610
-Container::print()      list:item=6 key=MyArray4 value=0x2adae70
-Container::print() multipmap:item=5 key=MyArray5 value=0x2adc750
-Container::print() multipmap:item=6 key=MyArray6 value=0x2adbbd0
-Container::print() multipmap:item=7 key=MyArray6 value=0x2adbbd0
-Container::print() multipmap:item=8 key=MyArray6 value=0x2adbbd0
-Container::print()      list:item=0 key=MyArray2 value=0x2ad8d30
-Container::print()      list:item=1 key=MyArray6 value=0x2adbbd0
-Container::print()      list:item=6 key=MyArray4 value=0x2adade0
-Container::print()      list:item=7 key=MyArray6 value=0x2adba00
-Container::print()      list:item=8 key=MyArray5 value=0x2adc580
---- ESMCI::ArrayBundle::print end ---
-Container::print()      list:item=7 key=MyArray6 value=0x2adba90
-Container::print()      list:item=8 key=MyArray5 value=0x2adc610
---- ESMCI::ArrayBundle::print end ---
-  PASS  ArrayBundleGet with arrayName to get count Test, ESMF_ArrayBundleCreateU
- Test.F90, line 460
---- ESMCI::Array::print start ---
- Base name    = MyArray3
- Status: Base = Ready,  object = Ready
- Proxy        = no
- Root Info (Attributes):
-Container::print()      list:item=2 key=MyArray4 value=0x2adafb0
-Container::print()      list:item=3 key=MyArray4 value=0x2adafb0
-Container::print()      list:item=4 key=MyArray6 value=0x2adbbd0
-Container::print()      list:item=5 key=MyArray5 value=0x2adc750
-Container::print()      list:item=6 key=MyArray4 value=0x2adafb0
-  PASS  ArrayBundleGet with arrayName to get count Test, ESMF_ArrayBundleCreateU
- Test.F90, line 460
-  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 466
-  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 466
-Container::print()      list:item=7 key=MyArray6 value=0x2adbbd0
-Container::print()      list:item=8 key=MyArray5 value=0x2adc750
---- ESMCI::ArrayBundle::print end ---
-  PASS  ArrayBundleGet with arrayName to get count Test, ESMF_ArrayBundleCreateU
- Test.F90, line 460
-  PASS  ArrayBundleGet arrayList for arrayName Test, ESMF_ArrayBundleCreateUTest
- .F90, line 477
-  PASS  ArrayBundleGet arrayList for arrayName Test, ESMF_ArrayBundleCreateUTest
- .F90, line 477
-{}Array typekind/rank: Real*8 / 2 
-~ lower class' values ~
-DistGrid dimCount = 2
-deCount = 4
-localDeCount = 1
-~ local data in LocalArray for DE 2 ~
-LocalArrayPrint: Array at address 0x2ada0b0:
-            rank = 2, typekind = 6, base_addr = 0x2b8df9d3f700
-            dim[0] = 8  dim[1] = 11  
-  Real, *8, Dim 2, Data values:
-  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 466
-( 1, 1) =  0
-( 2, 1) =  0
-( 3, 1) =  0
-( 4, 1) =  0
-( 5, 1) =  0
-( 6, 1) =  0
-( 7, 1) =  0
-( 8, 1) =  0
-  PASS  ArrayBundleGet arrayList for arrayName Test, ESMF_ArrayBundleCreateUTest
- .F90, line 477
-( 1, 2) =  0
-( 2, 2) =  0
-  skipping to end ...
-( 7,10) =  0
-( 8,10) =  0
-( 1,11) =  0
-( 2,11) =  0
-( 3,11) =  0
-( 4,11) =  0
-( 5,11) =  0
-( 6,11) =  0
-( 7,11) =  0
-( 8,11) =  0
-dim 1: [0]: [1 [1 [1, 8] 8] 8]
-dim 2: [1]: [1 [1 [1, 11] 11] 11]
---- ESMCI::Array::print end ---
-  PASS  ArrayBundleRemove with arrayNameList size 1 exising Test, ESMF_ArrayBund
- leCreateUTest.F90, line 361
- name of arrayList(           1 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           1 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           1 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           2 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           2 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           2 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           3 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
-  PASS  Verify Container Get arrayList for arrayname Test, ESMF_ArrayBundleCreat
- eUTest.F90, line 493
- name of arrayList(           3 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
-  PASS  Verify Container Get arrayList for arrayname Test, ESMF_ArrayBundleCreat
- eUTest.F90, line 493
-  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing Test, ESMF_Arra
- yBundleCreateUTest.F90, line 368
-  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing but relaxed Tes
- t, ESMF_ArrayBundleCreateUTest.F90, line 376
- name of arrayList(           3 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
-  PASS  Verify Container Get arrayList for arrayname Test, ESMF_ArrayBundleCreat
- eUTest.F90, line 493
-  PASS  ArrayBundleGet arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 50
- 2
-  PASS  ArrayBundleGet arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 50
- 2
-  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 508
-  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 508
-  PASS  ArrayBundleGet arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 50
- 2
-  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 508
-  PASS  ArrayBundleGet arrayList default order (abc) Test, ESMF_ArrayBundleCreat
- eUTest.F90, line 519
-  PASS  ArrayBundleGet arrayList default order (abc) Test, ESMF_ArrayBundleCreat
- eUTest.F90, line 519
-  PASS  ArrayBundleAdd with arrayList size 3 Test, ESMF_ArrayBundleCreateUTest.F
- 90, line 394
-  PASS  ArrayBundleGet arrayList default order (abc) Test, ESMF_ArrayBundleCreat
- eUTest.F90, line 519
-  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
- dleCreateUTest.F90, line 402
- name of arrayList(           1 ) is: 
- MyArray2                                                                       
-                                                                                
-                                                                                
-                    
-  PASS  ArrayBundleReplace with arrayList 1exist+2notexist relaxed Test, ESMF_Ar
- rayBundleCreateUTest.F90, line 410
- name of arrayList(           1 ) is: 
- MyArray2                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           1 ) is: 
- MyArray2                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           2 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           2 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           2 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           3 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           3 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           3 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           4 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           4 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-                    
-  PASS  ArrayBundleReplace with arrayList 1exist+2notexist strict Test, ESMF_Arr
- ayBundleCreateUTest.F90, line 417
- name of arrayList(           4 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           5 ) is: 
- MyArray5                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           5 ) is: 
- MyArray5                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           5 ) is: 
- MyArray5                                                                       
-                                                                                
-                                                                                
-                    
-  PASS  ArrayBundleAddReplace with arrayList 1exist+2notexist Test, ESMF_ArrayBu
- ndleCreateUTest.F90, line 424
  name of arrayList(           6 ) is: 
  MyArray5                                                                       
                                                                                 
@@ -760,10 +748,11 @@ dim 2: [1]: [1 [1 [1, 11] 11] 11]
                                                                                 
                                                                                 
                     
-  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
- dleCreateUTest.F90, line 432
- name of arrayList(           6 ) is: 
- MyArray5                                                                       
+ name of arrayList(           7 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
                                                                                 
                                                                                 
                     
@@ -777,15 +766,6 @@ dim 2: [1]: [1 [1 [1, 11] 11] 11]
                                                                                 
                                                                                 
                     
- name of arrayList(           7 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
-  PASS  ArrayBundleAdd with multiflag #1 Test, ESMF_ArrayBundleCreateUTest.F90, 
- line 440
-  PASS  ArrayBundleAdd with multiflag #2 Test, ESMF_ArrayBundleCreateUTest.F90, 
- line 448
  name of arrayList(           8 ) is: 
  MyArray6                                                                       
                                                                                 
@@ -806,8 +786,6 @@ dim 2: [1]: [1 [1 [1, 11] 11] 11]
                                                                                 
                                                                                 
                     
-  PASS  Verify Container Get arrayList for arrayname default order (abc) Test, E
- SMF_ArrayBundleCreateUTest.F90, line 545
  name of arrayList(           9 ) is: 
  MyArray6                                                                       
                                                                                 
@@ -822,20 +800,16 @@ dim 2: [1]: [1 [1 [1, 11] 11] 11]
                     
   PASS  Verify Container Get arrayList for arrayname default order (abc) Test, E
  SMF_ArrayBundleCreateUTest.F90, line 545
---- ESMCI::ArrayBundle::print start ---
-ArrayBundle: MyArrayBundle
-arrayCount = 9
-Container::print() multipmap:item=0 key=MyArray2 value=0x2ad8cd0
-Container::print() multipmap:item=1 key=MyArray4 value=0x2adaf50
-Container::print() multipmap:item=2 key=MyArray4 value=0x2adaf50
-Container::print() multipmap:item=3 key=MyArray4 value=0x2adaf50
-Container::print() multipmap:item=4 key=MyArray5 value=0x2adc6f0
-Container::print() multipmap:item=5 key=MyArray5 value=0x2adc6f0
+  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing Test, ESMF_Arra
+ yBundleCreateUTest.F90, line 368
+  PASS  ArrayBundleRemove with arrayNameList size 1 not-existing but relaxed Tes
+ t, ESMF_ArrayBundleCreateUTest.F90, line 376
+  PASS  Verify Container Get arrayList for arrayname default order (abc) Test, E
+ SMF_ArrayBundleCreateUTest.F90, line 545
   PASS  ArrayBundleGet arrayNameList default order (abc) Test, ESMF_ArrayBundleC
  reateUTest.F90, line 552
-Container::print() multipmap:item=6 key=MyArray6 value=0x2adbb70
-Container::print() multipmap:item=7 key=MyArray6 value=0x2adbb70
-Container::print() multipmap:item=8 key=MyArray6 value=0x2adbb70
+  PASS  ArrayBundleGet arrayNameList default order (abc) Test, ESMF_ArrayBundleC
+ reateUTest.F90, line 552
   PASS  ArrayBundleGet arrayNameList default order (abc) Test, ESMF_ArrayBundleC
  reateUTest.F90, line 552
  arrayNameList(           1 ) is: 
@@ -843,6 +817,14 @@ Container::print() multipmap:item=8 key=MyArray6 value=0x2adbb70
                                                                                 
                                                                                 
                     
+ arrayNameList(           2 ) is: 
+ MyArray4                                                                       
+                                                                                
+                                                                                
+                    
+ arrayNameList(           3 ) is: 
+ MyArray4                                                                       
+                                                                                
  arrayNameList(           1 ) is: 
  MyArray2                                                                       
                                                                                 
@@ -858,23 +840,16 @@ Container::print() multipmap:item=8 key=MyArray6 value=0x2adbb70
                                                                                 
                                                                                 
                     
-  PASS  ArrayBundleGet arrayNameList default order (abc) Test, ESMF_ArrayBundleC
- reateUTest.F90, line 552
+ arrayNameList(           4 ) is: 
+ MyArray4                                                                       
+                                                                                
+                                                                                
+                    
  arrayNameList(           1 ) is: 
  MyArray2                                                                       
                                                                                 
                                                                                 
                     
- arrayNameList(           2 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-Container::print()      list:item=0 key=MyArray2 value=0x2ad8cd0
-Container::print()      list:item=1 key=MyArray6 value=0x2adbb70
-Container::print()      list:item=2 key=MyArray4 value=0x2adaf50
-Container::print()      list:item=3 key=MyArray4 value=0x2adaf50
-Container::print()      list:item=4 key=MyArray6 value=0x2adbb70
-Container::print()      list:item=5 key=MyArray5 value=0x2adc6f0
  arrayNameList(           2 ) is: 
  MyArray4                                                                       
                                                                                 
@@ -892,16 +867,6 @@ Container::print()      list:item=5 key=MyArray5 value=0x2adc6f0
                     
  arrayNameList(           5 ) is: 
  MyArray5                                                                       
-                                                                                
-                                                                                
-                    
- arrayNameList(           6 ) is: 
- MyArray5                                                                       
-                                                                                
-                                                                                
-                    
- arrayNameList(           7 ) is: 
- MyArray6                                                                       
                                                                                 
                                                                                 
                     
@@ -933,17 +898,7 @@ Container::print()      list:item=5 key=MyArray5 value=0x2adc6f0
  arrayNameList(           9 ) is: 
  MyArray6                                                                       
                                                                                 
-                    
- arrayNameList(           3 ) is: 
- MyArray4                                                                       
                                                                                 
-                                                                                
-                    
- arrayNameList(           4 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-                    
  arrayNameList(           5 ) is: 
  MyArray5                                                                       
                                                                                 
@@ -962,12 +917,27 @@ Container::print()      list:item=5 key=MyArray5 value=0x2adc6f0
  arrayNameList(           8 ) is: 
  MyArray6                                                                       
                                                                                 
-Container::print()      list:item=6 key=MyArray4 value=0x2adaf50
-Container::print()      list:item=7 key=MyArray6 value=0x2adbb70
-Container::print()      list:item=8 key=MyArray5 value=0x2adc6f0
---- ESMCI::ArrayBundle::print end ---
-  PASS  ArrayBundleGet with arrayName to get count Test, ESMF_ArrayBundleCreateU
- Test.F90, line 460
+                                                                                
+                    
+ arrayNameList(           9 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+  PASS  Verify Container Get arrayNameList for arrayname default order (abc) Tes
+ t, ESMF_ArrayBundleCreateUTest.F90, line 573
+                                                                                
+                    
+ arrayNameList(           6 ) is: 
+ MyArray5                                                                       
+                                                                                
+                                                                                
+                    
+ arrayNameList(           7 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
  arrayNameList(           8 ) is: 
  MyArray6                                                                       
                                                                                 
@@ -980,28 +950,19 @@ Container::print()      list:item=8 key=MyArray5 value=0x2adc6f0
                     
   PASS  Verify Container Get arrayNameList for arrayname default order (abc) Tes
  t, ESMF_ArrayBundleCreateUTest.F90, line 573
-                                                                                
                     
   PASS  Verify Container Get arrayNameList for arrayname default order (abc) Tes
  t, ESMF_ArrayBundleCreateUTest.F90, line 573
-  PASS  ArrayBundleGet arrayList ESMF_ITEMORDER_ADDORDER Test, ESMF_ArrayBundleC
- reateUTest.F90, line 581
-                                                                                
-                    
- arrayNameList(           9 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
-  PASS  Verify Container Get arrayNameList for arrayname default order (abc) Tes
- t, ESMF_ArrayBundleCreateUTest.F90, line 573
+  PASS  ArrayBundleAdd with arrayList size 3 Test, ESMF_ArrayBundleCreateUTest.F
+ 90, line 394
   PASS  ArrayBundleGet arrayList ESMF_ITEMORDER_ADDORDER Test, ESMF_ArrayBundleC
  reateUTest.F90, line 581
   PASS  ArrayBundleGet arrayList ESMF_ITEMORDER_ADDORDER Test, ESMF_ArrayBundleC
  reateUTest.F90, line 581
-  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 466
-  PASS  ArrayBundleGet arrayList for arrayName Test, ESMF_ArrayBundleCreateUTest
- .F90, line 477
+  PASS  ArrayBundleGet arrayList ESMF_ITEMORDER_ADDORDER Test, ESMF_ArrayBundleC
+ reateUTest.F90, line 581
+  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
+ dleCreateUTest.F90, line 402
  name of arrayList(           1 ) is: 
  MyArray2                                                                       
                                                                                 
@@ -1012,6 +973,8 @@ Container::print()      list:item=8 key=MyArray5 value=0x2adc6f0
                                                                                 
                                                                                 
                     
+  PASS  ArrayBundleReplace with arrayList 1exist+2notexist relaxed Test, ESMF_Ar
+ rayBundleCreateUTest.F90, line 410
  name of arrayList(           1 ) is: 
  MyArray2                                                                       
                                                                                 
@@ -1051,9 +1014,8 @@ Container::print()      list:item=8 key=MyArray5 value=0x2adc6f0
  MyArray4                                                                       
                                                                                 
                                                                                 
-                    
- name of arrayList(           1 ) is: 
- MyArray6                                                                       
+ name of arrayList(           4 ) is: 
+ MyArray4                                                                       
                                                                                 
                                                                                 
                     
@@ -1065,35 +1027,28 @@ Container::print()      list:item=8 key=MyArray5 value=0x2adc6f0
  name of arrayList(           5 ) is: 
  MyArray6                                                                       
                                                                                 
-                                                                                
- name of arrayList(           5 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           4 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-                    
-                    
- name of arrayList(           6 ) is: 
- MyArray5                                                                       
-                                                                                
-                                                                                
                     
  name of arrayList(           5 ) is: 
  MyArray6                                                                       
                                                                                 
                                                                                 
                     
- name of arrayList(           2 ) is: 
+                                                                                
+                    
+  PASS  ArrayBundleReplace with arrayList 1exist+2notexist strict Test, ESMF_Arr
+ ayBundleCreateUTest.F90, line 417
+  PASS  ArrayBundleAddReplace with arrayList 1exist+2notexist Test, ESMF_ArrayBu
+ ndleCreateUTest.F90, line 424
+ name of arrayList(           5 ) is: 
  MyArray6                                                                       
                                                                                 
                                                                                 
                     
- name of arrayList(           3 ) is: 
- MyArray6                                                                       
+ name of arrayList(           6 ) is: 
+ MyArray5                                                                       
+                                                                                
+ name of arrayList(           6 ) is: 
+ MyArray5                                                                       
                                                                                 
                                                                                 
                     
@@ -1105,6 +1060,10 @@ Container::print()      list:item=8 key=MyArray5 value=0x2adc6f0
  name of arrayList(           7 ) is: 
  MyArray4                                                                       
                                                                                 
+                    
+ name of arrayList(           7 ) is: 
+ MyArray4                                                                       
+                                                                                
                                                                                 
                     
  name of arrayList(           7 ) is: 
@@ -1112,36 +1071,40 @@ Container::print()      list:item=8 key=MyArray5 value=0x2adc6f0
                                                                                 
                                                                                 
                     
- name of arrayList(           6 ) is: 
+ name of arrayList(           8 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+                                                                                
+                                                                                
+                    
+ name of arrayList(           8 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+  PASS  ArrayBundleRemove with arrayNameList size 2 existing Test, ESMF_ArrayBun
+ dleCreateUTest.F90, line 432
+  PASS  ArrayBundleAdd with multiflag #1 Test, ESMF_ArrayBundleCreateUTest.F90, 
+ line 440
+ name of arrayList(           8 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           9 ) is: 
  MyArray5                                                                       
                                                                                 
                                                                                 
                     
-  PASS  Verify Container Get arrayList for arrayname Test, ESMF_ArrayBundleCreat
- eUTest.F90, line 493
- name of arrayList(           8 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           7 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           8 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
- name of arrayList(           8 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
-  PASS  ArrayBundleGet arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 50
- 2
-  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 508
+  PASS  Verify Container Get arrayList for arrayname ESMF_ITEMORDER_ADDORDER Tes
+ t, ESMF_ArrayBundleCreateUTest.F90, line 607
+  PASS  ArrayBundleAdd with multiflag #2 Test, ESMF_ArrayBundleCreateUTest.F90, 
+ line 448
+--- ESMCI::ArrayBundle::print start ---
+ArrayBundle: MyArrayBundle
+arrayCount = 9
  name of arrayList(           9 ) is: 
  MyArray5                                                                       
                                                                                 
@@ -1156,15 +1119,17 @@ Container::print()      list:item=8 key=MyArray5 value=0x2adc6f0
                     
   PASS  Verify Container Get arrayList for arrayname ESMF_ITEMORDER_ADDORDER Tes
  t, ESMF_ArrayBundleCreateUTest.F90, line 607
- name of arrayList(           9 ) is: 
- MyArray5                                                                       
-                                                                                
-                                                                                
-                    
-  PASS  Verify Container Get arrayList for arrayname ESMF_ITEMORDER_ADDORDER Tes
+Container::print() multipmap:item=0 key=MyArray2 value=0x3898d30
+Container::print() multipmap:item=1 key=MyArray4 value=0x389afb0
+Container::print() multipmap:item=2 key=MyArray4 value=0x389afb0
   PASS  ArrayBundleGet arrayNameList ESMF_ITEMORDER_ADDORDER Test, ESMF_ArrayBun
  dleCreateUTest.F90, line 615
- t, ESMF_ArrayBundleCreateUTest.F90, line 607
+  PASS  ArrayBundleGet arrayNameList ESMF_ITEMORDER_ADDORDER Test, ESMF_ArrayBun
+ dleCreateUTest.F90, line 615
+Container::print() multipmap:item=3 key=MyArray4 value=0x389afb0
+Container::print() multipmap:item=4 key=MyArray5 value=0x389c750
+Container::print() multipmap:item=5 key=MyArray5 value=0x389c750
+Container::print() multipmap:item=6 key=MyArray6 value=0x389bbd0
   PASS  ArrayBundleGet arrayNameList ESMF_ITEMORDER_ADDORDER Test, ESMF_ArrayBun
  dleCreateUTest.F90, line 615
  arrayNameList(           1 ) is: 
@@ -1186,11 +1151,9 @@ Container::print()      list:item=8 key=MyArray5 value=0x2adc6f0
  MyArray4                                                                       
                                                                                 
                                                                                 
-  PASS  ArrayBundleGet arrayNameList ESMF_ITEMORDER_ADDORDER Test, ESMF_ArrayBun
- dleCreateUTest.F90, line 615
- arrayNameList(           1 ) is: 
-  PASS  ArrayBundleGet arrayList default order (abc) Test, ESMF_ArrayBundleCreat
- eUTest.F90, line 519
+                    
+ arrayNameList(           5 ) is: 
+ MyArray6                                                                       
  arrayNameList(           1 ) is: 
  MyArray2                                                                       
                                                                                 
@@ -1216,19 +1179,36 @@ Container::print()      list:item=8 key=MyArray5 value=0x2adc6f0
                                                                                 
                                                                                 
                     
- arrayNameList(           6 ) is: 
- MyArray5                                                                       
+Container::print() multipmap:item=7 key=MyArray6 value=0x389bbd0
+Container::print() multipmap:item=8 key=MyArray6 value=0x389bbd0
+Container::print()      list:item=0 key=MyArray2 value=0x3898d30
+Container::print()      list:item=1 key=MyArray6 value=0x389bbd0
+Container::print()      list:item=2 key=MyArray4 value=0x389afb0
+ arrayNameList(           1 ) is: 
+ MyArray2                                                                       
                                                                                 
                                                                                 
                     
- arrayNameList(           7 ) is: 
+ arrayNameList(           2 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+ arrayNameList(           3 ) is: 
  MyArray4                                                                       
                                                                                 
                                                                                 
                     
+ arrayNameList(           4 ) is: 
+ MyArray4                                                                       
+                                                                                
+                                                                                
                     
  arrayNameList(           5 ) is: 
  MyArray6                                                                       
+                                                                                
+                                                                                
+                    
                                                                                 
                                                                                 
                     
@@ -1251,91 +1231,126 @@ Container::print()      list:item=8 key=MyArray5 value=0x2adc6f0
  MyArray5                                                                       
                                                                                 
                                                                                 
- MyArray2                                                                       
+                    
+ arrayNameList(           6 ) is: 
+ MyArray5                                                                       
                                                                                 
                                                                                 
                     
- arrayNameList(           2 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
- arrayNameList(           3 ) is: 
+ arrayNameList(           7 ) is: 
  MyArray4                                                                       
                                                                                 
                                                                                 
                     
- arrayNameList(           4 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-                    
- arrayNameList(           5 ) is: 
+ arrayNameList(           8 ) is: 
  MyArray6                                                                       
                                                                                 
                                                                                 
                     
+ arrayNameList(           9 ) is: 
+ MyArray5                                                                       
+                                                                                
+                                                                                
+                    
+  PASS  Verify Container Get arrayNameList for arrayname ESMF_ITEMORDER_ADDORDER
+  Test, ESMF_ArrayBundleCreateUTest.F90, line 636
+Container::print()      list:item=3 key=MyArray4 value=0x389afb0
+Container::print()      list:item=4 key=MyArray6 value=0x389bbd0
+Container::print()      list:item=5 key=MyArray5 value=0x389c750
+Container::print()      list:item=6 key=MyArray4 value=0x389afb0
+Container::print()      list:item=7 key=MyArray6 value=0x389bbd0
+Container::print()      list:item=8 key=MyArray5 value=0x389c750
+--- ESMCI::ArrayBundle::print end ---
+ arrayNameList(           6 ) is: 
+ MyArray5                                                                       
+                                                                                
+                                                                                
+                    
+ arrayNameList(           7 ) is: 
+ MyArray4                                                                       
+                                                                                
+                                                                                
+                    
+ arrayNameList(           8 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+ arrayNameList(           9 ) is: 
+ MyArray5                                                                       
+                                                                                
+                                                                                
+                    
+  PASS  Verify Container Get arrayNameList for arrayname ESMF_ITEMORDER_ADDORDER
+  Test, ESMF_ArrayBundleCreateUTest.F90, line 636
+  PASS  Verify Container Get arrayNameList for arrayname ESMF_ITEMORDER_ADDORDER
+  Test, ESMF_ArrayBundleCreateUTest.F90, line 636
+  PASS  ArrayBundleGet with arrayName to get count Test, ESMF_ArrayBundleCreateU
+ Test.F90, line 460
+  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 466
+ computed serialization buffer length =       27948  bytes
+ computed serialization buffer length =       27948  bytes
+  PASS  Computing space for serialization buffer, ESMF_ArrayBundleCreateUTest.F9
+ 0, line 664
+  PASS  Computing space for serialization buffer, ESMF_ArrayBundleCreateUTest.F9
+ 0, line 664
+ computed serialization buffer length =       27948  bytes
+  PASS  Computing space for serialization buffer, ESMF_ArrayBundleCreateUTest.F9
+ 0, line 664
+  PASS  ArrayBundleGet arrayList for arrayName Test, ESMF_ArrayBundleCreateUTest
+ .F90, line 477
+  PASS  Allocate serialization buffer, ESMF_ArrayBundleCreateUTest.F90, line 674
+  PASS  Allocate serialization buffer, ESMF_ArrayBundleCreateUTest.F90, line 674
+  PASS  Allocate serialization buffer, ESMF_ArrayBundleCreateUTest.F90, line 674
+  PASS  Serialization Arraybundle data, ESMF_ArrayBundleCreateUTest.F90, line 69
+ 0
+  PASS  Serialization Arraybundle data, ESMF_ArrayBundleCreateUTest.F90, line 69
+ 0
+  PASS  Serialization Arraybundle data, ESMF_ArrayBundleCreateUTest.F90, line 69
+ 0
+  PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 702
+  PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 702
+  PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 702
+ name of arrayList(           1 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           2 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+ name of arrayList(           3 ) is: 
+ MyArray6                                                                       
+                                                                                
+                                                                                
+                    
+  PASS  Verify Container Get arrayList for arrayname Test, ESMF_ArrayBundleCreat
+ eUTest.F90, line 493
+  Ending Test, file ESMF_ArrayBundleCreateUTest.F90, line 726
+  Ending Test, file ESMF_ArrayBundleCreateUTest.F90, line 726
+  Ending Test, file ESMF_ArrayBundleCreateUTest.F90, line 726
+  PASS  ArrayBundleGet arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 50
+ 2
+  PASS  Check arrayCount Test, ESMF_ArrayBundleCreateUTest.F90, line 508
+  PASS  ArrayBundleGet arrayList default order (abc) Test, ESMF_ArrayBundleCreat
+ eUTest.F90, line 519
  name of arrayList(           1 ) is: 
  MyArray2                                                                       
                                                                                 
                                                                                 
                     
- arrayNameList(           8 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
- arrayNameList(           9 ) is: 
- MyArray5                                                                       
-                                                                                
-                                                                                
-                    
-  PASS  Verify Container Get arrayNameList for arrayname ESMF_ITEMORDER_ADDORDER
-  Test, ESMF_ArrayBundleCreateUTest.F90, line 636
-                    
-  PASS  Verify Container Get arrayNameList for arrayname ESMF_ITEMORDER_ADDORDER
-  Test, ESMF_ArrayBundleCreateUTest.F90, line 636
- arrayNameList(           6 ) is: 
- MyArray5                                                                       
-                                                                                
-                                                                                
-                    
- arrayNameList(           7 ) is: 
- MyArray4                                                                       
-                                                                                
-                                                                                
-                    
- arrayNameList(           8 ) is: 
- MyArray6                                                                       
-                                                                                
-                                                                                
-                    
- arrayNameList(           9 ) is: 
- MyArray5                                                                       
-                                                                                
-                                                                                
-                    
-  PASS  Verify Container Get arrayNameList for arrayname ESMF_ITEMORDER_ADDORDER
  name of arrayList(           2 ) is: 
  MyArray4                                                                       
                                                                                 
                                                                                 
                     
-  Test, ESMF_ArrayBundleCreateUTest.F90, line 636
  name of arrayList(           3 ) is: 
  MyArray4                                                                       
                                                                                 
                                                                                 
                     
- computed serialization buffer length =       27948  bytes
- computed serialization buffer length =       27948  bytes
-  PASS  Computing space for serialization buffer, ESMF_ArrayBundleCreateUTest.F9
- 0, line 664
-  PASS  Computing space for serialization buffer, ESMF_ArrayBundleCreateUTest.F9
- 0, line 664
- computed serialization buffer length =       27948  bytes
-  PASS  Computing space for serialization buffer, ESMF_ArrayBundleCreateUTest.F9
- 0, line 664
  name of arrayList(           4 ) is: 
  MyArray4                                                                       
                                                                                 
@@ -1346,33 +1361,21 @@ Container::print()      list:item=8 key=MyArray5 value=0x2adc6f0
                                                                                 
                                                                                 
                     
-  PASS  Allocate serialization buffer, ESMF_ArrayBundleCreateUTest.F90, line 674
-  PASS  Allocate serialization buffer, ESMF_ArrayBundleCreateUTest.F90, line 674
-  PASS  Allocate serialization buffer, ESMF_ArrayBundleCreateUTest.F90, line 674
  name of arrayList(           6 ) is: 
  MyArray5                                                                       
                                                                                 
                                                                                 
                     
-  PASS  Serialization Arraybundle data, ESMF_ArrayBundleCreateUTest.F90, line 69
- 0
  name of arrayList(           7 ) is: 
  MyArray6                                                                       
                                                                                 
                                                                                 
                     
-  PASS  Serialization Arraybundle data, ESMF_ArrayBundleCreateUTest.F90, line 69
- 0
-  PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 702
-  PASS  Serialization Arraybundle data, ESMF_ArrayBundleCreateUTest.F90, line 69
- 0
-  PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 702
  name of arrayList(           8 ) is: 
  MyArray6                                                                       
                                                                                 
                                                                                 
                     
-  PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 702
  name of arrayList(           9 ) is: 
  MyArray6                                                                       
                                                                                 
@@ -1382,9 +1385,6 @@ Container::print()      list:item=8 key=MyArray5 value=0x2adc6f0
  SMF_ArrayBundleCreateUTest.F90, line 545
   PASS  ArrayBundleGet arrayNameList default order (abc) Test, ESMF_ArrayBundleC
  reateUTest.F90, line 552
-  Ending Test, file ESMF_ArrayBundleCreateUTest.F90, line 726
-  Ending Test, file ESMF_ArrayBundleCreateUTest.F90, line 726
-  Ending Test, file ESMF_ArrayBundleCreateUTest.F90, line 726
  arrayNameList(           1 ) is: 
  MyArray2                                                                       
                                                                                 
@@ -1538,8 +1538,8 @@ Container::print()      list:item=8 key=MyArray5 value=0x2adc6f0
  0
   PASS  ArrayBundleDestroy Test, ESMF_ArrayBundleCreateUTest.F90, line 702
   Ending Test, file ESMF_ArrayBundleCreateUTest.F90, line 726
-  PET           1  Test Elapsed Time    3.63800000000000       msec.
-  PET           2  Test Elapsed Time    2.92300000000000       msec.
-  PET           3  Test Elapsed Time    3.42600000000000       msec.
-  PET           0  Test Elapsed Time    3.61500000000000       msec.
-Tue Feb 23 13:18:33 MST 2021
+  PET           3  Test Elapsed Time    2.98600000000000       msec.
+  PET           2  Test Elapsed Time    3.89400000000000       msec.
+  PET           0  Test Elapsed Time    3.93000000000000       msec.
+  PET           1  Test Elapsed Time    3.93000000000000       msec.
+Fri Feb 26 07:56:14 MST 2021
