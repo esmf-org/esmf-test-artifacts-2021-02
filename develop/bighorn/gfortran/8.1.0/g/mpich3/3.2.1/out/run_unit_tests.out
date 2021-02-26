@@ -1813,7 +1813,6 @@ PASS: mpich3/g: src/Infrastructure/Array/tests/ESMF_ArrayDataUTest.F90
 PASS: mpich3/g: src/Infrastructure/Array/tests/ESMF_ArrayGatherUTest.F90
 PASS: mpich3/g: src/Infrastructure/Array/tests/ESMF_ArrayHaloUTest.F90
 PASS: mpich3/g: src/Infrastructure/Array/tests/ESMF_ArrayIOUTest.F90
-PASS: mpich3/g: src/Infrastructure/Array/tests/ESMF_ArrayRedistPerfUTest.F90
 PASS: mpich3/g: src/Infrastructure/Array/tests/ESMF_ArrayRedistUTest.F90
 PASS: mpich3/g: src/Infrastructure/Array/tests/ESMF_ArraySMMFromFileUTest.F90
 PASS: mpich3/g: src/Infrastructure/Array/tests/ESMF_ArraySMMUTest.F90
@@ -1976,7 +1975,6 @@ PASS: mpich3/g: src/Superstructure/AttributeAPI/tests/ESMF_AttributeUpdateUTest.
 PASS: mpich3/g: src/Superstructure/AttributeAPI/tests/ESMF_AttributeUtilUTest.F90
 PASS: mpich3/g: src/Superstructure/Component/tests/ESMC_ComponentUTest.C
 PASS: mpich3/g: src/Superstructure/Component/tests/ESMF_CompSetServUTest.F90
-PASS: mpich3/g: src/Superstructure/Component/tests/ESMF_CompTunnelUTest.F90
 PASS: mpich3/g: src/Superstructure/Component/tests/ESMF_ComponentUTest.F90
 PASS: mpich3/g: src/Superstructure/Component/tests/ESMF_CplCompCreateUTest.F90
 PASS: mpich3/g: src/Superstructure/Component/tests/ESMF_GridCompCreateUTest.F90
@@ -2009,6 +2007,38 @@ PASS: mpich3/g: src/prologue/tests/ESMF_StringUTest.F90
 PASS: mpich3/g: src/prologue/tests/ESMF_WordsizeUTest.F90
 
 
+The following unit test files failed to build, failed to execute or crashed during execution:
+
+CRASHED: mpich3/g: src/Superstructure/Component/tests/ESMF_CompTunnelUTest.F90
+
+
+The following unit test files had failed unit tests:
+
+FAIL: mpich3/g: src/Infrastructure/Array/tests/ESMF_ArrayRedistPerfUTest.F90
+
+
+The following individual unit tests fail:
+
+   FAIL: mpich3/g:   Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243:  ArrayRedistStore() performance problem!    23.051082372665405      >   20.000000000000000
+   FAIL: mpich3/g:   Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243:  ArrayRedistStore() performance problem!    23.062663078308105      >   20.000000000000000
+   FAIL: mpich3/g:   Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243:  ArrayRedistStore() performance problem!    23.042643308639526      >   20.000000000000000
+   FAIL: mpich3/g:   Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243:  ArrayRedistStore() performance problem!    23.052504539489746      >   20.000000000000000
+   FAIL: mpich3/g:   Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243:  ArrayRedistStore() performance problem!    23.055786371231079      >   20.000000000000000
+   FAIL: mpich3/g:   Check ArrayRedistStore() performance - Test, ESMF_ArrayRedistPerfUTest.F90, line 243:  ArrayRedistStore() performance problem!    23.044349908828735      >   20.000000000000000
+   FAIL: mpich3/g:   Check time delay on timeout ServiceLoop Actual Component E, ESMF_CompTunnelUTest.F90, line 1373:  Incorrect time delay
+   FAIL: mpich3/g:   ServiceLoop for the Actual Component E - timeoutFlag, ESMF_CompTunnelUTest.F90, line 1399:  Did not return ESMF_SUCCESS
+   FAIL: mpich3/g:   Testing timeoutFlag, ESMF_CompTunnelUTest.F90, line 1406:  timeoutFlag wrong
+   FAIL: mpich3/g:   ServiceLoop for the Actual Component E - default timeout, ESMF_CompTunnelUTest.F90, line 1664:  Did not return ESMF_SUCCESS
+   FAIL: mpich3/g:   Wating for non-blocking Initialize on dual E, while actual E is disconnected, ESMF_CompTunnelUTest.F90, line 1533:  Did return ESMF_SUCCESS
+   FAIL: mpich3/g:   Testing timeoutFlag, ESMF_CompTunnelUTest.F90, line 1557:  timeoutFlag wrong
+   FAIL: mpich3/g:   Initialize (blocking) on dual E, while actual E is disconnected, ESMF_CompTunnelUTest.F90, line 1607:  Did return ESMF_SUCCESS
+   FAIL: mpich3/g:   Run (blocking) on dual E, while actual E is disconnected, ESMF_CompTunnelUTest.F90, line 1621:  Did return ESMF_SUCCESS
+   FAIL: mpich3/g:   Finalize (blocking) on dual E, while actual E is disconnected, ESMF_CompTunnelUTest.F90, line 1635:  Did return ESMF_SUCCESS
+   FAIL: mpich3/g:   Initialize (blocking) on dual E, while actual E is disconnected, ESMF_CompTunnelUTest.F90, line 1607:  Did return ESMF_SUCCESS
+   FAIL: mpich3/g:   Run (blocking) on dual E, while actual E is disconnected, ESMF_CompTunnelUTest.F90, line 1621:  Did return ESMF_SUCCESS
+   FAIL: mpich3/g:   Finalize (blocking) on dual E, while actual E is disconnected, ESMF_CompTunnelUTest.F90, line 1635:  Did return ESMF_SUCCESS
+
+
 The following test harness unit tests pass:
 PASS: mpich3/g: ESMF_array_2_NP1UTest
 PASS: mpich3/g: ESMF_field_1_NP1UTest
@@ -2018,7 +2048,7 @@ The log and stdout files for the unit tests can be found at:
 /scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf/test/testg/Linux.gfortran.64.mpich3.default
 
 
-Found 8894 exhaustive multi-processor unit tests, 8894 passed and 0 failed.
+Found 8894 exhaustive multi-processor unit tests, 8889 passed and 5 failed.
 
 gmake[1]: Leaving directory `/scratch/esmf/esmf_test/cronjobs/trunk/gfortran/esmf'
-Thu Feb 25 03:52:39 MST 2021
+Fri Feb 26 07:37:29 MST 2021
