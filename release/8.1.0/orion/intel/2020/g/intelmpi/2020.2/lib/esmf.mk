@@ -13,7 +13,7 @@
 
 #----------------------------------------------
 ESMF_VERSION_STRING=8.1.0 beta snapshot
-ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_47
+ESMF_VERSION_STRING_GIT=ESMF_8_1_0_beta_snapshot_47-18-g3fd6502
 #----------------------------------------------
 
 ESMF_VERSION_MAJOR=8
@@ -32,35 +32,35 @@ ESMF_F90COMPILER=mpiifort
 ESMF_F90LINKER=mpiifort
 
 ESMF_F90COMPILEOPTS=-g -traceback -check arg_temp_created,bounds,format,output_conversion,stack,uninit -fPIC -assume realloc_lhs -m64 -mcmodel=small -pthread -threads  -qopenmp
-ESMF_F90COMPILEPATHS=-I/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/mod/modg/Linux.intel.64.intelmpi.default -I/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/src/include 
-ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_47' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g
+ESMF_F90COMPILEPATHS=-I/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/mod/modg/Linux.intel.64.intelmpi.default -I/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/src/include -I/apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/include -I/apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/include
+ESMF_F90COMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_47-18-g3fd6502' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g
 ESMF_F90COMPILEFREECPP=
 ESMF_F90COMPILEFREENOCPP=
 ESMF_F90COMPILEFIXCPP=
 ESMF_F90COMPILEFIXNOCPP=
 
 ESMF_F90LINKOPTS=  -m64 -mcmodel=small -pthread -threads -Wl,--no-as-needed  -qopenmp
-ESMF_F90LINKPATHS=-L/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/lib/libg/Linux.intel.64.intelmpi.default  
+ESMF_F90LINKPATHS=-L/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/lib/libg/Linux.intel.64.intelmpi.default -L/apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/lib -L/apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/lib 
 ESMF_F90ESMFLINKPATHS=-L/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/lib/libg/Linux.intel.64.intelmpi.default
-ESMF_F90LINKRPATHS=-Wl,-rpath,/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/lib/libg/Linux.intel.64.intelmpi.default 
+ESMF_F90LINKRPATHS=-Wl,-rpath,/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/lib/libg/Linux.intel.64.intelmpi.default -Wl,-rpath,/apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/lib -Wl,-rpath,/apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/lib
 ESMF_F90ESMFLINKRPATHS=-Wl,-rpath,/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/lib/libg/Linux.intel.64.intelmpi.default
-ESMF_F90LINKLIBS= -cxxlib -lrt -ldl
-ESMF_F90ESMFLINKLIBS=-lesmf  -cxxlib -lrt -ldl
+ESMF_F90LINKLIBS= -cxxlib -lrt -ldl -lnetcdf -lnetcdff
+ESMF_F90ESMFLINKLIBS=-lesmf  -cxxlib -lrt -ldl -lnetcdf -lnetcdff
 
 ESMF_CXXCOMPILER=mpiicpc
 ESMF_CXXLINKER=mpiicpc
 
 ESMF_CXXCOMPILEOPTS=-std=c++11 -g -traceback -Wcheck -fPIC -m64 -mcmodel=small -pthread  -qopenmp
-ESMF_CXXCOMPILEPATHS= -I/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/src/include   -I/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/src/prologue/yaml-cpp/include
-ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_47' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g -D__SDIR__='' -DESMF_CXXSTD=11
+ESMF_CXXCOMPILEPATHS= -I/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/src/include  -I/apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/include -I/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/src/prologue/yaml-cpp/include
+ESMF_CXXCOMPILECPPFLAGS=-DESMF_NO_INTEGER_1_BYTE -DESMF_NO_INTEGER_2_BYTE -DESMFVERSIONGIT='ESMF_8_1_0_beta_snapshot_47-18-g3fd6502' -DESMF_MOAB=1 -DESMF_LAPACK=1 -DESMF_LAPACK_INTERNAL=1 -DESMF_NO_ACC_SOFTWARE_STACK=1 -DESMF_NETCDF=1 -DESMF_YAMLCPP=1 -DESMF_YAML=1 -DESMF_PIO=1 -DESMF_MPIIO -DESMF_NO_OPENACC -DESMF_TESTEXHAUSTIVE -DESMF_BOPT_g -DESMF_TESTCOMPTUNNEL -DESMF_TESTWITHTHREADS -DSx86_64_small=1 -DESMF_OS_Linux=1 -DESMF_COMM=intelmpi -DESMF_DIR=/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g -D__SDIR__='' -DESMF_CXXSTD=11
 
 ESMF_CXXLINKOPTS=  -m64 -mcmodel=small -pthread -Wl,--no-as-needed  -qopenmp
-ESMF_CXXLINKPATHS=-L/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/lib/libg/Linux.intel.64.intelmpi.default  -L/apps/intel-2020.2/intel-2020.2/compilers_and_libraries_2020.2.254/linux/compiler/lib/intel64_lin/
+ESMF_CXXLINKPATHS=-L/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/lib/libg/Linux.intel.64.intelmpi.default -L/apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/lib -L/apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/lib -L/apps/intel-2020.2/intel-2020.2/compilers_and_libraries_2020.2.254/linux/compiler/lib/intel64_lin/
 ESMF_CXXESMFLINKPATHS=-L/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/lib/libg/Linux.intel.64.intelmpi.default
-ESMF_CXXLINKRPATHS=-Wl,-rpath,/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/lib/libg/Linux.intel.64.intelmpi.default  -Wl,-rpath,/apps/intel-2020.2/intel-2020.2/compilers_and_libraries_2020.2.254/linux/compiler/lib/intel64_lin/
+ESMF_CXXLINKRPATHS=-Wl,-rpath,/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/lib/libg/Linux.intel.64.intelmpi.default -Wl,-rpath,/apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/lib -Wl,-rpath,/apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/lib -Wl,-rpath,/apps/intel-2020.2/intel-2020.2/compilers_and_libraries_2020.2.254/linux/compiler/lib/intel64_lin/
 ESMF_CXXESMFLINKRPATHS=-Wl,-rpath,/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g/lib/libg/Linux.intel.64.intelmpi.default
-ESMF_CXXLINKLIBS= -ldl -lrt -lpthread -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -ldl -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl
-ESMF_CXXESMFLINKLIBS=-lesmf  -ldl -lrt -lpthread -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -ldl -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl
+ESMF_CXXLINKLIBS= -ldl -lrt -lpthread -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -ldl -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl -lnetcdf -lnetcdff
+ESMF_CXXESMFLINKLIBS=-lesmf  -ldl -lrt -lpthread -lifport -lifcoremt -limf -lsvml -lm -lipgo -liomp5 -lintlc -lpthread -lsvml -ldl -lgcc -lgcc_s -lirc_s -ldl -lrt -ldl -lnetcdf -lnetcdff
 
 ESMF_SO_F90COMPILEOPTS=-fPIC
 ESMF_SO_F90LINKOPTS=-shared
@@ -115,5 +115,13 @@ ESMF_INTERNAL_DIR=/work/noaa/nems/hpillai/release_8.1.0/intel_2020_intelmpi_g
 # ESMF_MOAB:              internal
 # ESMF_LAPACK:            internal
 # ESMF_ACC_SOFTWARE_STACK:            none
+# ESMF_NETCDF:            nc-config
+# ESMF_NETCDF_INCLUDE:    /apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/include
+# ESMF_NETCDF_LIBS:       -lnetcdf
+# ESMF_NETCDF_LIBPATH:    /apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/lib
+# ESMF_NFCONFIG:          nf-config
+# ESMF_NETCDFF_INCLUDE:   /apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/include
+# ESMF_NETCDFF_LIBS:      -lnetcdff
+# ESMF_NETCDFF_LIBPATH:   /apps/intel-2020.2/impi-2020.2/netcdf-4.7.4/lib
 # ESMF_PIO:               internal
 # ESMF_YAMLCPP:           internal
